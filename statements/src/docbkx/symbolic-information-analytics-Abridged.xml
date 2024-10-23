@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="CSS/docbook.xml.css"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <info>
+        <title>Integrated Knowledge Management</title>
+        <subtitle>A Treatise on Symbolic Data Systems           <inlinemediaobject>
+                <imageobject>
+                    <imagedata fileref="images/cover%20page.png"/>
+                </imageobject>
+            </inlinemediaobject></subtitle>
+    </info>
+    <part>
+        <title>Introduction</title>
+        <xi:include href="Introduction.xml"/>
+        <xi:include href="Background.xml"/>
+        <xi:include href="Terminology-Knowledge.xml"/>
+        <xi:include href="Foundational-Architecture.xml"/>
+    </part>
+    <part>
+        <title>Integrated Knowledge Management (IKM) Overview</title>
+        <xi:include href="Integrated%20Knowledge%20Management.xml"/>
+    </part>
+    <part>
+        <title>Komet User Guide</title>
+        <xi:include href="Komet-User-Guide.xml"/>
+    </part>
+    <part>
+        <title>Next Steps and Open-Source Collaboration</title>
+        <xi:include href="Open-Source.xml"/>
+    </part>
+</book>

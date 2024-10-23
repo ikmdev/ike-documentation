@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <info>
+        <title>Integrated Knowledge Management</title>
+        <subtitle>A Treatise on Symbolic Data Systems           <inlinemediaobject>
+            <imageobject>
+                <imagedata fileref="images/cover%20page.png"/>
+            </imageobject>
+        </inlinemediaobject></subtitle>
+                </info>
+    <part>
+        <title>Introduction</title>
+        <xi:include href="Introduction.xml"/>
+    </part>
+    <part>
+        <title>Background</title>
+        <xi:include href="Background.xml"/>
+        <xi:include href="sof-current-state.xml"></xi:include>
+    </part>
+    <part>
+        <title>Integrated Knowledge Management (IKM) </title>
+        <xi:include href="Integrated%20Knowledge%20Management.xml"/>
+        <xi:include href="1.2.2.xml"/>
+        <xi:include href="Playbook%20of%20Current%20Knowledge%20Management%20Technologies,%20Industry%20Coding%20Standards,%20and%20Knowledge%20Management%20Hosting%20Options.xml"></xi:include>
+        <xi:include href="Framework%20Considerations%20for%20Knowledge%20Management%20(KM)%201.2.3"/>
+    
+    </part>
+    <part>
+        <title>Foundational Architecture</title>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/complete-glossary/complete-glossary.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/introduction/introduction.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/business-requirements/business-requirements.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/tinkar-reference-model/tinkar-reference-model.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/reference-implementation/reference-implementation.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/implications/implications.xml"/>
+        <xi:include
+            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/conclusion/conclusion.xml"/>
+    </part>
+    <xi:include
+        href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/abbreviated-glossary/abbreviated-glossary.xml"/>
+    <part>
+        <xi:include href="Foundational-Architecture.xml"/>
+    </part>
+    <part>
+        <title>Terminology Knowledge</title>
+        <xi:include href="Terminology-Knowledge.xml"/>
+    </part>
+    <part>
+        <title>Statement Model</title>
+        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/introduction/introduction.xml"/>
+        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-reference-model/anf-reference-model.xml"/>
+        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-clinical-statements/anf-clinical-statements.xml"/>
+        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/analysis-normal-form/analysis-normal-form.xml"/>
+        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/transformation/transformation.xml"/>
+        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/precision/precision.xml"/>
+        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/conclusion/conclusion.xml"/>
+        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/clinical-input-form/clinical-input-form.xml"/>
+        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-cif-differences/differences-between-anf-and-cif.xml"/>
+        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/appendix.xml"/>
+        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/examples.xml"/>
+        <xi:include href="Statement-Model.xml"/>
+    </part>
+    <part>
+        <title>Assertional Knowledge</title>
+        <xi:include href="SOLOR-assertional.xml"/>
+    </part>
+    <part>
+        <title>Procedural Knowledge</title>
+        <xi:include href="Procedural-Knowledge.xml"/>
+    </part>
+    <part>
+        <title>Use Cases</title>
+        <xi:include href="4.1.1.xml"/>
+        <xi:include href="Summary%20of%20Findings%20%E2%80%93%20RWE%20Search%20and%20Query%20Methods.xml"/>
+        <xi:include href="Use-Case-Chapter.xml"></xi:include>
+    </part>
+    <part>
+        <title>Ecosystem</title>
+        <xi:include href="Ecosystem.xml"/>
+        <xi:include href="2.2.4.xml"/>
+    </part>
+    <part>
+        <title>Open Source and Next Steps</title>
+        <xi:include href="Open-Source.xml"></xi:include>
+    </part>
+    
+
+
+    
+    <part>
+        <title>Motivation and foundation</title>
+        <xi:include href="solor-intro.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <!--<xi:include href="SOLOR-blocks.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->        
+        <!--<xi:include href="isaac.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+        <!--<xi:include href="design.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+        
+    </part>
+    <part>
+        <title>Foundational</title>
+        <xi:include href="solor-foundation.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </part>
+    <!--<part>
+        <title>Language representation</title>
+        <xi:include href="language.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="SOLOR-language.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </part>
+    
+    <part>
+        <title>Definitional representation</title>
+        <xi:include href="definitional.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </part>-->
+    <part>
+        <title>Terminology</title>
+        <xi:include href="terminology-intro.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="terminology_conceptsandcodes.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="language.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <!--<xi:include href="SOLOR-language.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+        <xi:include href="definitional.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="terminology_application.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </part>
+
+    <part>
+        <title>Statement Model</title>
+        <!-- Statement Principles -->
+         <chapter>
+            <title>Statement Model Principles</title>
+            <xi:include href="statement-intro-begin.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>   
+            <xi:include href="statement-intro-patterns.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        </chapter>
+
+        <!-- Statement Historical Implementations Chapter-->
+        <chapter>
+            <title>Statement Historical Implementations</title>
+            <xi:include href="statement-openehr.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+            <xi:include href="statement-clinical-input-form.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        </chapter>
+
+        <!-- Analysis Normal Form Chapter -->   
+        <chapter>
+            <title>Analysis Normal Form</title>
+
+            <!-- ANF Ballot Introduction -->
+            <xi:include href="statement-why-analysis-normal-form.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude"/>
+            <!-- <xi:include href="statement-separation-of-concerns.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>  -->
+            <!-- <xi:include href="statement-hl7-background.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>  -->
+
+            <!-- ANF Reference Model -->
+            <xi:include href="statement-anf-reference-model-intro.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+            <xi:include href="statement-anf-reference-model-uml-report.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+            <!-- ANF Clinical Statements -->
+            <xi:include href="statement-anf-clinical-statements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+            <!-- Analysis Normal Form -->
+            <xi:include href="statement-analysis-normal-form.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+            <xi:include href="statement-editorial-rules.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+            <!-- ANF-CIF Differences-->
+            <xi:include href="statement-differences-between-anf-and-cif.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+            <!-- Examples -->
+            <xi:include href="statement-examples-section.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        </chapter>
+        
+    </part>
+    <part>
+        <title>Assertional representation</title>
+        <!--<xi:include href="assertions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+        <xi:include href="SOLOR-assertional.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </part>
+    <part>
+        <title>Procedural representation</title>
+        <!--<xi:include href="procedural.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+        <xi:include href="knart-procedural.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+   </part>
+    <part>
+        <title>Informatics Architecture Lifecycle</title>
+        <xi:include href="roundtrip-usecase.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </part>
+    <part>
+        <title>Solor Tooling</title>
+        <xi:include href="komet-building-blocks.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <!--<xi:include href="komet-language.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+        <!--<xi:include href="komet-description-logic.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+        <!--<xi:include href="komet-statements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+        <!--<xi:include href="komet-assertions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+        <!--<xi:include href="komet-procedural.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+    </part>
+    <part>
+        <title>Volume Series</title>
+        <xi:include href="Volume%201%20-%20Introduction.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Volume%202%20-%20Background.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Volume%203%20-%20IKM%20Overview.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Volume%204%20-%20References.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Volume%205%20-%20Knowledge%20Layers.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        
+        <xi:include href="Volume%207%20-%20Use%20Cases.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Volume%208%20-%20Komet%20User%20Guide.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Volume%209%20-%20Wisdom%20of%20Crowds.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Volume%2010%20-%20Patient%20Data%20Privacy.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Volume%2011%20-%20Healthcare%20Data%20Management.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Volume%2012%20-%20Healthcare%20Quality%20Improvement.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Volume%2013%20-%20Global%20Health%20and%20International%20Collaboration.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Volume%2016%20-%20Emergency%20Preparedness.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Volume%2017%20-%20Return%20on%20Investment.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Volume%20Appendix.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </part>
+    <part>
+        <title>Miscellaneous Work</title>
+        <xi:include href="CAP%20Deliverable%200324.xml"/>
+        <xi:include href="CAP%20Deliverable%202_7.xml"/>
+        <xi:include href="Document%20Data%20Transmission%20Infrastructure%20CAP.xml"/>
+        <xi:include href="Laboratory%20Data%20Touch%20Points,%20Methods,%20and%20Associated%20Risks%20CAP.xml"/>
+        <xi:include href="Self%20and%20External%20Assessment%20Evaluation%20Approach%20for%20Laboratory%20Data%20Coding%20Quality%20CAP.xml"/>
+        <xi:include href="Pizza%20Ontology.xml"/>
+        <xi:include href="Synensys%20Deliverable%201%20.xml"/>
+        
+        <xi:include href="Synensys%20Task%201-3.xml"/>
+    </part>
+    
+    <!--<part>-->
+        <!--<title>Instance representation</title>-->
+        <!--<xi:include href="registries.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+        <!--<xi:include href="instance-persistence.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+    <!--</part>-->
+    <!-- bibliography section --> 
+    <xi:include href="statement-glossary.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    
+    
+    <!-- bibliography section --> 
+    <xi:include href="bibliography.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+   
+    <!--<part>-->
+        <!--<title>Appendices</title>-->
+        <!--<xi:include href="use-cases.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+        <!--<xi:include href="statement-use-case.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+        <!--<xi:include href="statement-examples.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+        <!--<xi:include href="query.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+        <!--<xi:include href="statement-glossary.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+        <!--<xi:include href="terms-glossary.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+        <!--<xi:include href="parking-lot.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+
+        <!--<xi:include href="maven.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+        <!--<xi:include href="git.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+        <!--<xi:include href="docbook.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+        <!--<xi:include href="specifications.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+        <!--<xi:include href="services.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+        <!--<xi:include href="tools.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+        <!--<xi:include href="content.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+        <!--<xi:include href="collaborating-guideline.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>       -->
+        <!---->
+        <!--&lt;!&ndash; Commented out because there is some ID reference issue - MVN will not build properly-->
+        <!--<xi:include href="../../../transformation-language/src/docbkx/transformation-language-article.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+        <!--&ndash;&gt;-->
+        <!---->
+        <!--<xi:include href="requirements-enumeration.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+        <!--<xi:include href="solor-references.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+        <!---->
+        <!--<xi:include href="absence_representation_requirement.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+        <!---->
+    <!--</part>-->
+    
+</book>
