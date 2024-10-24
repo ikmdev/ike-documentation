@@ -292,11 +292,11 @@
       </plugins>
    </reporting>
    <modules>
-      <module>anf-ballot-submission</module>
+      <!-- <module>anf-ballot-submission</module>
       <module>tinkar-doc</module>
-      <module>appendices</module>
+      <module>appendices</module> -->
       <module>statements</module>
-      <module>bibliography-db</module>
+      <!-- <module>bibliography-db</module>
       <module>cem-cimi</module>
       <module>cimi</module>
       <module>clin-obs-modeling</module>
@@ -320,7 +320,7 @@
       <module>citation-editor-plugin</module>
       <module>hl7-cimi-anf</module>
       <module>hl7-anf-ballot</module>
-      <module>user-tool-doc</module>
+      <module>user-tool-doc</module> -->
    </modules>
    <profiles>
       <profile>
