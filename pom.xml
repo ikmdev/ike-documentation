@@ -291,19 +291,19 @@
          </plugin>
       </plugins>
    </reporting>
-   <modules>
+  <modules>
       <!-- <module>anf-ballot-submission</module>
       <module>tinkar-doc</module>
       <module>appendices</module> -->
       <module>statements</module>
+      <module>docbook-customization</module>
+      <module>doc-logging</module>
       <!-- <module>bibliography-db</module>
       <module>cem-cimi</module>
       <module>cimi</module>
       <module>clin-obs-modeling</module>
       <module>clinical-data-elements</module>
       <module>design</module>
-      <module>doc-logging</module>
-      <module>docbook-customization</module>
       <module>foundation</module>
       <module>implementation</module>
       <module>isaacs-komet-abridged</module>
