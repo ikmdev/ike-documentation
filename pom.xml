@@ -298,6 +298,7 @@
       <module>statements</module>
       <module>docbook-customization</module>
       <module>doc-logging</module>
+      <module>bibliography-db</module>
       <!-- <module>bibliography-db</module>
       <module>cem-cimi</module>
       <module>cimi</module>
