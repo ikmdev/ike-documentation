@@ -292,13 +292,15 @@
       </plugins>
    </reporting>
   <modules>
+      <module>volumes/volume1</module>
       <!-- <module>anf-ballot-submission</module>
       <module>tinkar-doc</module>
       <module>appendices</module> -->
-      <module>statements</module>
+      <!-- <module>volumes</module>
       <module>docbook-customization</module>
       <module>doc-logging</module>
       <module>bibliography-db</module>
+      <module>citation-editor-plugin</module> -->
       <!-- <module>bibliography-db</module>
       <module>cem-cimi</module>
       <module>cimi</module>
