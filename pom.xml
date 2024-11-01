@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
    <modelVersion>4.0.0</modelVersion>
 
-   <artifactId>SOLOR-DOC-POC</artifactId>
+   <artifactId>isaacs-komet-doc</artifactId>
    <groupId>sh.isaac.komet.doc</groupId>
    <version>0.13-SNAPSHOT</version>
    <packaging>pom</packaging>
@@ -293,6 +293,8 @@
    </reporting>
   <modules>
       <module>volumes/volume1</module>
+     <module>doc-logging</module>
+     <module>docbook-customization</module>
       <!-- <module>anf-ballot-submission</module>
       <module>tinkar-doc</module>
       <module>appendices</module> -->
