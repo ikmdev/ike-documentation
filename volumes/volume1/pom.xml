@@ -11,11 +11,24 @@
    <name>Volume1</name>
    <description>Description of Volumes models for Analysis Normal Form and Clinical Input Form</description>
    <packaging>pom</packaging>
-
-   <properties>
-      <!-- <docbook.root>End-of-Year Report.xml</docbook.root> -->
+    <profiles>
+    <!-- Profile for volume 1 -->
+      <profile>
+         <id>volume1</id>
+         <properties>
       <docbook.root>Volume 1 - Introduction.xml</docbook.root>
    </properties>
+      </profile>
+   
+   <!-- Profile for volume 2 -->
+      <profile>
+         <id>volume2</id>
+         <properties>
+      <docbook.root>Volume 2 - Background.xml</docbook.root>
+   </properties>
+      </profile>
+    </profiles>
+   
    <dependencies>
       <dependency>
          <groupId>${project.groupId}</groupId>
