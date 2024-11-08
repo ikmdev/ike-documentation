@@ -292,9 +292,11 @@
       </plugins>
    </reporting>
   <modules>
+     <module>book</module>
      <module>volume1</module>
-     <module>dependencies/doc-logging</module>
-     <module>dependencies/docbook-customization</module> 
+     <module>volume1/chapter1</module>
+     <module>doc-logging</module>
+     <module>docbook-customization</module> 
    </modules>
    <profiles>
       <profile>
