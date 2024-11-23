@@ -4,7 +4,6 @@
         <groupId>sh.isaac.komet.doc</groupId>
         <artifactId>volume1</artifactId>
         <version>0.13-SNAPSHOT</version>
-        <relativePath>../..</relativePath> <!-- Correct relative path to the volume POM -->
     </parent>
     <artifactId>chapter1</artifactId>
     <packaging>pom</packaging>
