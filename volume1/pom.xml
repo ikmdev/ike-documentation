@@ -3,7 +3,6 @@
       <groupId>sh.isaac.komet.doc</groupId>
       <artifactId>isaacs-komet-doc</artifactId>
       <version>0.13-SNAPSHOT</version>
-      <relativePath>../..</relativePath>
    </parent>
    <modelVersion>4.0.0</modelVersion>
 

@@ -2,11 +2,10 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>sh.isaac.komet.doc</groupId>
-        <artifactId>volume1</artifactId>
+        <artifactId>book</artifactId>
         <version>0.13-SNAPSHOT</version>
-        <relativePath>../..</relativePath> <!-- Correct relative path to the volume POM -->
     </parent>
-    <artifactId>chapter1</artifactId>
+    <artifactId>chapterlevel</artifactId>
     <packaging>pom</packaging>
     <name>chapter1</name>
 
