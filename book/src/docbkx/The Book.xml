@@ -18,8 +18,8 @@
     </part>
     <part>
         <title>IKM Overview</title>
-        <xi:include href="../../chapter4/src/docbkx/Book%20Content/Book%20Integrated%20Knowledge%20Management.xml"/>
-        <xi:include href="../../chapter5/src/docbkx/Book%20Content/Book%201.2.2.xml"/>
+        <xi:include href="../../chapter4/src/docbkx/Book%20Integrated%20Knowledge%20Management.xml"/>
+        <xi:include href="../../chapter5/src/docbkx/Book%201.2.2.xml"/>
         <?oxy_comment_start author="rgeorgacopoulos" timestamp="20240625T162627-0500" comment="We can add teh solor-foundation.xml here as part of the ikm overview and write a 2 sentence intro to solor? "?>
     </part>
     <!-- <part>
@@ -37,16 +37,16 @@
         <xi:include href="Foundational-Architecture.xml"/>
         <xi:include href="Volume%204%20-%20References.xml"/>
     </part> -->
-    <!-- <part>
+    <part>
         <title>Terminology Knowledge</title>
-        <xi:include href="Book%20Content/Book%20terminology-intro.xml"
+        <xi:include href="../../chapter13/src/docbkx/Book%20terminology-intro.xml"
             xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="Book%20Content/Book%20Terminology-Knowledge.xml"
             xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="definitional.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="terminology_application.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     </part>
-    <part>
+    <!-- <part>
         <title>Statement Model</title>
         <chapter>
             <title>Statement Model Principles</title>
@@ -77,7 +77,7 @@
         <xi:include
             href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/bibliography.xml"
         />
-    </part>
+    </part> -->
     <part>
         <title>Assertional Knowledge</title>
         <xi:include href="SOLOR-assertional.xml"/>
@@ -131,5 +131,5 @@
     <part>
         <title>Appendix</title>
         <xi:include href="Quick%20Reference%20Guide.xml"/>
-    </part> -->
+    </part>
 </book>
