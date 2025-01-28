@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.1">
+    <title>Definitional</title>
+    <section>
+        <title>Introduction</title>
+        <para>We, as humans, are able to express individual concepts and expand on just the name of
+            the concept, because we are able to associate certain characteristics to individual
+            concepts to further describe itself, as well as establishing connections or
+            relationships between concepts. Once concepts have a meaning beyond just a name, and
+            have relationships to other meaningful concepts, then reasoning can occur. </para>
+        <para>While the purpose of
+            <?oxy_comment_start author="steph" timestamp="20190305T154953-0700" comment="Again, as a novice, I look to the PASTA diagram to see the various layers of the architecture and I don&apos;t see a layer for language.  I may have missed it but where does the language layer lie within PASTA?  Same question for Definitional layer and any other layers that aren&apos;t shown or related to those layers shown in the PASTA diagram.  If they are sub-layers, can you add them to the diagram?" id="cql_rpc_1hb" flag="done" mid="1"?><?oxy_comment_start author="erhwang" timestamp="20190307T083059-0700" comment="This section was written before PASTA became PASTA - old architecture had Language then Definitional layer. I believe these two are now subsection of Terminology Knowledge layer now. I do not have in-depth knowledge of how this new layer is structured, so I suggest author who would review the document from a higher level address this issue." parentID="cql_rpc_1hb" flag="done" mid="2"?><?oxy_comment_start author="steph" timestamp="20190402T154330-0600" comment="Does that mean this needs to be run by Keith?  If yes, are you going to ask him?" id="czh_llf_3hb" flag="done"?><?oxy_comment_start author="timowilliams" timestamp="20190405T102134-0500" comment="Language used to be a separate Layer, but is now lumped in with Terminology.  I just removed the Layer part and I think it makes sense now." parentID="czh_llf_3hb" flag="done" mid="3"?>Language<?oxy_comment_end mid="3"?><?oxy_comment_end?><?oxy_comment_end mid="2"?><?oxy_comment_end mid="1"?>
+            is to provide necessary vocabulary to express various domains of medicine, the purpose
+            of the Definitions are to expand on just a name to go with an idea - single concepts
+            with a name by itself adds no value. In other words, a system must be capable of
+            capturing not just the words of the concept, but also provide a mechanism to express
+            characteristics of that concept (it has the color white [assuming color and white are
+            already defined]) and relationships between concepts (it is a beta-blocker).
+            <?oxy_comment_start author="steph" timestamp="20190305T155326-0700" comment="Change to &quot;Additionally&quot;." id="ew3_mpc_1hb" flag="done" mid="5"?><?oxy_comment_start author="erhwang" timestamp="20190307T082930-0700" comment="Fixed" parentID="ew3_mpc_1hb" flag="done"?>Additionally<?oxy_comment_end?><?oxy_comment_end mid="5"?>,
+            once relationships of meaningful concepts are established, reasoning can occur
+            (beta-blocker is used to treat high blood pressure, therefore,
+            <?oxy_comment_start author="steph" timestamp="20190305T155453-0700" comment="I don&apos;t understand what the example of XYZ has a color white has to do with it being a beta-blocker." id="ugp_gqc_1hb" flag="done" mid="7"?><?oxy_comment_start author="erhwang" timestamp="20190307T083525-0700" comment="XYZ - it was used as a random set of letters to represent a thing - was trying to represent a &apos;concept&apos; without actually giving it a meaning. Removed since it doesn&apos;t seem to get that point across." parentID="ugp_gqc_1hb" flag="done" mid="8"?><?oxy_comment_start author="steph" timestamp="20190402T154553-0600" comment="Okay" flag="done"?>it<?oxy_comment_end?><?oxy_comment_end mid="8"?><?oxy_comment_end mid="7"?>
+            treats high blood pressure).</para>
+        <para>Once a system is able to 'digest' the meaning of concepts, it can begin to utilize
+            logic to conduct reasoning. In the field of computer science, the study of Description
+            Logic is to represent the domain, then using these concepts to specify properties of
+            objects and individuals occuring in the domain. Additionally, another feature of
+            Description Logic is the capability to conduct reasoning on represented knowledge<footnote>
+                <para> Badder, F., Nutt, W. (2003). The description logic handbook. Retrieved from
+                    https://www.inf.unibz.it/~franconi/dl/course/dlhb/dlhb-02.pdf</para>
+            </footnote>. The goal of this section is to first provide a primer to those who may not
+            be fully immersed in the study of description logic, then an introduction to Solor
+            designs to allow for a robust representation and relationships of concepts, followed by
+            topics or concerns from Solor developers and contributors that necessitate a discussion
+            on why these concerns could affect a system to conduct reasoning properly or
+            successfully. </para>
+    </section>
+        
+    <xi:include href="definitional_primer.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="definitional_solorDesign.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="definitional_topicsOfConcern.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    
+    
+    
+    
+</chapter>
