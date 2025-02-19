@@ -21,5 +21,5 @@
             href="../../../volume4/chapter5/src/docbkx/conclusion.xml"/>
         <xi:include href="../../../volume4/chapter6/src/docbkx/Foundational-Architecture.xml"/>
     </part>
-    <xi:include href="../../../volume4/src/docbkx/Volume%204%20-%20References.xml"/>
+    <xi:include href="../../../volume4/chapter7/src/docbkx/Volume%204%20-%20References.xml"/>
 </book>
