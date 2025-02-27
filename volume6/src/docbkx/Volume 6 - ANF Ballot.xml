@@ -9,8 +9,8 @@
     </info>
     <part>
         <title>ANF Ballot</title>
-        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/introduction/introduction.xml"/>
-        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-reference-model/anf-reference-model.xml"/>
+        <xi:include href="../../../volume6/chapter1/src/docbkx/introduction.xml"/>
+        <xi:include href="../../../volume6/chapter1/src/docbkx/anf-reference-model.xml"/>
         <xi:include
             href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-clinical-statements/anf-clinical-statements.xml"/>
         <xi:include
