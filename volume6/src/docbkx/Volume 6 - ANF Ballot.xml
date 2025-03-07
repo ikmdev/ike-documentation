@@ -10,15 +10,15 @@
     <part>
         <title>ANF Ballot</title>
         <xi:include href="../../../volume6/chapter1/src/docbkx/introduction.xml"/>
-        <xi:include href="../../../volume6/chapter1/src/docbkx/anf-reference-model.xml"/>
+        <xi:include href="../../../volume6/chapter2/src/docbkx/anf-reference-model.xml"/>
         <xi:include
-            href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-clinical-statements/anf-clinical-statements.xml"/>
+            href="../../../volume6/chapter3/src/docbkx/anf-clinical-statements.xml"/>
         <xi:include
-            href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/analysis-normal-form/analysis-normal-form.xml"/>
-        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/transformation/transformation.xml"/>
+            href="../../../volume6/chapter4/src/docbkx/analysis-normal-form.xml"/>
+        <xi:include href="../../../volume6/chapter5/src/docbkx//transformation.xml"/>
         <xi:include
-            href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/precision/precision.xml"/>
-        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/conclusion/conclusion.xml"/>
-        <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/bibliography.xml"/>
+            href="../../../volume6/chapter6/src/docbkx/precision.xml"/>
+        <xi:include href="../../../volume6/chapter7/src/docbkx/conclusion.xml"/>
+        <xi:include href="../../../volume6/chapter8/src/docbkx/bibliography.xml"/>
     </part>
 </book>
