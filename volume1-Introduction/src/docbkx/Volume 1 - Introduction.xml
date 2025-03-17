@@ -9,6 +9,6 @@
     </info>
     <part>
         <title>IKM Introduction</title>
-        <xi:include href="../../../volume1/chapter1/src/docbkx/Introduction.xml"/>
+        <xi:include href="../../../volume1-Introduction.xml/chapter1/src/docbkx/Introduction.xml"/>
     </part>
 </book>
