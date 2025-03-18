@@ -5,9 +5,9 @@
         <artifactId>volume1</artifactId>
         <version>0.13-SNAPSHOT</version>
     </parent>
-    <artifactId>chapter1</artifactId>
+    <artifactId>chapter1-introduction</artifactId>
     <packaging>pom</packaging>
-    <name>chapter1</name>
+    <name>chapter1-introduction</name>
 
     <dependencies>
         <!-- Chapter-specific dependencies -->

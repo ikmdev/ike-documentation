@@ -6,9 +6,9 @@
         <version>0.13-SNAPSHOT</version>
         <relativePath>../..</relativePath> <!-- Correct relative path to the volume POM -->
     </parent>
-    <artifactId>chapter1</artifactId>
+    <artifactId>chapter7-references</artifactId>
     <packaging>pom</packaging>
-    <name>chapter1</name>
+    <name>chapter7-references</name>
 
     <dependencies>
         <!-- Chapter-specific dependencies -->
