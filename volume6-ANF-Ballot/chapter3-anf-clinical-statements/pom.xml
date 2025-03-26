@@ -6,9 +6,9 @@
         <version>0.13-SNAPSHOT</version>
         <relativePath>../..</relativePath> <!-- Correct relative path to the volume POM -->
     </parent>
-    <artifactId>chapter1</artifactId>
+    <artifactId>chapter3-anf-clinical-statements</artifactId>
     <packaging>pom</packaging>
-    <name>chapter1</name>
+    <name>chapter3-anf-clinical-statements</name>
 
     <dependencies>
         <!-- Chapter-specific dependencies -->
