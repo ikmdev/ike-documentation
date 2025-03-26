@@ -9,12 +9,12 @@
     </info>
     <part>
         <title>Wisdom of Crowds and Open-Source</title>
-        <xi:include href="../../../volume9/chapter1/src/docbkx/Wisdom%20of%20Crowds.xml"/>
-        <xi:include href="../../../volume9/chapter2/src/docbkx/Open-Source.xml"/>
-        <xi:include href="../../../volume9/chapter3/src/docbkx/2.2.4.xml"/>
+        <xi:include href="../../../volume9-wisdom-of-crowds/chapter1-wisdom-of-crowds/src/docbkx/Wisdom%20of%20Crowds.xml"/>
+        <xi:include href="../../../volume9-wisdom-of-crowds/chapter2-open-source/src/docbkx/Open-Source.xml"/>
+        <xi:include href="../../../volume9-wisdom-of-crowds/chapter3-2.2.4-version/src/docbkx/2.2.4.xml"/>
     </part>
     <part>
         <title>Ecosystem Engagement</title>
-        <xi:include href="../../../volume9/chapter4/src/docbkx/Ecosystem.xml"/>
+        <xi:include href="../../../volume9-wisdom-of-crowds/chapter4-ecosystem/src/docbkx/Ecosystem.xml"/>
         </part>
 </book>
