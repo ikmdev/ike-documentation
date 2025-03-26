@@ -9,16 +9,16 @@
     </info>
     <part>
         <title>ANF Ballot</title>
-        <xi:include href="../../../volume6/chapter1/src/docbkx/introduction.xml"/>
-        <xi:include href="../../../volume6/chapter2/src/docbkx/anf-reference-model.xml"/>
+        <xi:include href="../../../volume6-anf-ballot/chapter1-introduction-anf/src/docbkx/introduction.xml"/>
+        <xi:include href="../../../volume6-anf-ballot/chapter2-anf-reference-model/src/docbkx/anf-reference-model.xml"/>
         <xi:include
-            href="../../../volume6/chapter3/src/docbkx/anf-clinical-statements.xml"/>
+            href="../../../volume6-anf-ballot/chapter3-anf-clinical-statements/src/docbkx/anf-clinical-statements.xml"/>
         <xi:include
-            href="../../../volume6/chapter4/src/docbkx/analysis-normal-form.xml"/>
-        <xi:include href="../../../volume6/chapter5/src/docbkx//transformation.xml"/>
+            href="../../../volume6-anf-ballot/chapter4-analysis-normal-form/src/docbkx/analysis-normal-form.xml"/>
+        <xi:include href="../../../volume6-anf-ballot/chapter5-transformation/src/docbkx/transformation.xml"/>
         <xi:include
-            href="../../../volume6/chapter6/src/docbkx/precision.xml"/>
-        <xi:include href="../../../volume6/chapter7/src/docbkx/conclusion.xml"/>
-        <xi:include href="../../../volume6/chapter8/src/docbkx/bibliography.xml"/>
+            href="../../../volume6-anf-ballot/chapter6-precision/src/docbkx/precision.xml"/>
+        <xi:include href="../../../volume6-anf-ballot/chapter7-conclusion/src/docbkx/conclusion.xml"/>
+        <xi:include href="../../../volume6-anf-ballot/chapter8-bibliography/src/docbkx/bibliography.xml"/>
     </part>
 </book>
