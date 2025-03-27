@@ -13,6 +13,6 @@
     </part>
     <part>
         <title>Advanced Examination of Temporal Relationships</title>
-        <xi:include href="../../chapter2-temporal-description-reasoning/src/docbkx/Temporal%20and%20Description%20Reasoning%20in%20Healthcare_Advanced%20Applications%20and%20Integrations.xml"/>
+        <xi:include href="../../chapter2-temporal-description-reasonings/src/docbkx/Temporal%20and%20Description%20Reasoning%20in%20Healthcare_Advanced%20Applications%20and%20Integrations.xml"/>
     </part>
         </book>
