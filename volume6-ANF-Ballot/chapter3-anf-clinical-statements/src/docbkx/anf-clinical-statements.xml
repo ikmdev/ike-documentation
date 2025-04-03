@@ -23,7 +23,7 @@
                 <emphasis role="bold">request</emphasis>; the criteria for differentiating them for
             are described as <emphasis role="bold">editorial rules</emphasis>: <xref
                 linkend="anf-editorialrule-performanceRequest"/></para>
-        <xi:include href="../analysis-normal-form/editorial-rules.xml"
+        <xi:include href="editorial-rules.xml"
             xpointer="element(anf-editorialrule-performanceRequest-content)">
             <xi:fallback/>
         </xi:include>
@@ -137,18 +137,18 @@ Doing family history, donor statements using subject of information is now the n
 
                 <para>
                     <xref linkend="anf-editorialrule-topicsAreActions"/></para>
-                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                <xi:include href="editorial-rules.xml"
                     xpointer="element(anf-editorialrule-topicsAreActions-content)">
                     <xi:fallback/>
                 </xi:include>
                 <para>
                     <xref linkend="anf-editorialrule-timing"/></para>
-                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                <xi:include href="editorial-rules.xml"
                     xpointer="element(anf-editorialrule-timing-content)">
                     <xi:fallback/>
                 </xi:include>
                 <para/>
-                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                <xi:include href="editorial-rules.xml"
                     xpointer="element(anf-editorialrule-presenceAbsence-content)">
                     <xi:fallback/>
                 </xi:include>
@@ -224,13 +224,13 @@ Doing family history, donor statements using subject of information is now the n
                 <title>Test/Screening or Procedure and Resultant Value</title>
                 <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
                         linkend="anf-editorialrule-resultsRangedQuantity"/></para>
-                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                <xi:include href="editorial-rules.xml"
                     xpointer="element(anf-editorialrule-resultsRangedQuantity-content)">
                     <xi:fallback/>
                 </xi:include>
                 <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
                         linkend="anf-editorialrule-techniques"/></para>
-                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                <xi:include href="editorial-rules.xml"
                     xpointer="element(anf-editorialrule-techniques-content)">
                     <xi:fallback/>
                 </xi:include>
@@ -326,7 +326,7 @@ Doing family history, donor statements using subject of information is now the n
                     form here: <xref linkend="table_perform_pulse"/></para>
                 <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
                         linkend="anf-editorialrule-prerequisites"/></para>
-                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                <xi:include href="editorial-rules.xml"
                     xpointer="element(anf-editorialrule-prerequisites-content)">
                     <xi:fallback/>
                 </xi:include>
@@ -486,13 +486,13 @@ The table representation is correct." mid="24"?>
                     </editorial-rule>--></para>
                 <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
                         linkend="anf-editorialrule-separateCompoundTopics"/></para>
-                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                <xi:include href="editorial-rules.xml"
                     xpointer="element(anf-editorialrule-separateCompoundTopics-content)">
                     <xi:fallback/>
                 </xi:include>
                 <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
                         linkend="anf-editorialrule-associatedStatement"/></para>
-                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                <xi:include href="editorial-rules.xml"
                     xpointer="element(anf-editorialrule-associatedStatement-content)">
                     <xi:fallback/>
                 </xi:include>
@@ -546,10 +546,11 @@ The table representation is correct." mid="24"?>
                         linkend="anf-editorialrule-topicsAreActions"/></para>
                 <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
                         linkend="anf-editorialrule-purpose"/></para>
-                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                <xi:include href="editorial-rules.xml"
                     xpointer="element(anf-editorialrule-purpose-content)">
                     <xi:fallback/>
                 </xi:include>
+
                 <!--<editorial-rule>
                     <title>Administration of Medication Topic - Performance of Action</title>
                     <mathphrase>To represent the performance of an administration of medication, the
@@ -636,7 +637,7 @@ The table representation is correct." mid="24"?>
                 </editorial-rule>-->
                 <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
                         linkend="anf-editorialrule-subjectOfInformation"/></para>
-                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                <xi:include href="editorial-rules.xml"
                     xpointer="element(anf-editorialrule-subjectOfInformation-content)">
                     <xi:fallback/>
                 </xi:include>
@@ -658,13 +659,13 @@ The table representation is correct." mid="24"?>
                     family.</para>
                 <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
                         linkend="anf-editorialrule-normalRange"/></para>
-                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                <xi:include href="editorial-rules.xml"
                     xpointer="element(anf-editorialrule-normalRange-content)">
                     <xi:fallback/>
                 </xi:include>
                 <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
                         linkend="anf-editorialrule-healthRisk"/></para>
-                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                <xi:include href="editorial-rules.xml"
                     xpointer="element(anf-editorialrule-healthRisk-content)">
                     <xi:fallback/>
                 </xi:include>
@@ -743,7 +744,7 @@ The distinction with a performance clinical statement concerning giving him educ
                 </editorial-rule>-->
                 <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
                         linkend="anf-editorialrule-priority"/></para>
-                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                <xi:include href="editorial-rules.xml"
                     xpointer="element(anf-editorialrule-priority-content)">
                     <xi:fallback/>
                 </xi:include>
@@ -823,7 +824,7 @@ The distinction with a performance clinical statement concerning giving him educ
                 </editorial-rule>-->
                 <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
                         linkend="anf-editorialrule-repetition"/></para>
-                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                <xi:include href="editorial-rules.xml"
                     xpointer="element(anf-editorialrule-repetition-content)">
                     <xi:fallback/>
                 </xi:include>
