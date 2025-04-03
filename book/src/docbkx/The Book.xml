@@ -22,21 +22,21 @@
         <xi:include href="Book%20Content/Book%201.2.2.xml"/>
         <?oxy_comment_start author="rgeorgacopoulos" timestamp="20240625T162627-0500" comment="We can add teh solor-foundation.xml here as part of the ikm overview and write a 2 sentence intro to solor? "?>
     </part>
-    <!-- <part>
+    <part>
         <title>Foundational Architecture</title>
         <xi:include
-            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/introduction/introduction.xml"/>
+            href="../../../volume4-tinkar-ballot/chapter1-introduction-tinkar/src/docbkx/introduction.xml"/>
         <xi:include
-            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/business-requirements/business-requirements.xml"/>
+            href="../../../volume4-tinkar-ballot/chapter2-business-requirements/src/docbkx/business-requirements.xml"/>
         <xi:include
-            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/tinkar-reference-model/tinkar-reference-model.xml"/>
+            href="../../../volume4-tinkar-ballot/chapter3-tinkar-reference-model/src/docbkx/tinkar-reference-model.xml"/>
         <xi:include
-            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/implications/implications.xml"/>
+            href="../../../volume4-tinkar-ballot/chapter4-implications/src/docbkx/implications.xml"/>
         <xi:include
-            href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/conclusion/conclusion.xml"/>
-        <xi:include href="Foundational-Architecture.xml"/>
-        <xi:include href="Volume%204%20-%20References.xml"/>
-    </part> -->
+            href="../../../volume4-tinkar-ballot/chapter5-conclusion/src/docbkx/conclusion.xml"/>
+        <xi:include href="../../../volume4-tinkar-ballot/chapter6-foundational-architecture/src/docbkx/Foundational-Architecture.xml"/>
+        <xi:include href="../../../volume4-tinkar-ballot/chapter7-references/src/docbkx/Volume%204%20-%20References.xml"/>
+    </part>
     <part>
         <title>Terminology Knowledge</title>
         <xi:include href="Book%20Content/Book%20terminology-intro.xml"
@@ -58,27 +58,27 @@
             <xi:include href="statement-clinical-input-form.xml"
                 xmlns:xi="http://www.w3.org/2001/XInclude"/>
         </chapter>
-        <!-- <xi:include
-            href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/introduction/introduction.xml"/>
         <xi:include
-            href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-reference-model/anf-reference-model.xml"/>
+            href="../../../volume6-anf-ballot/chapter1-introduction-anf/src/docbkx/introduction.xml"/>
         <xi:include
-            href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-clinical-statements/anf-clinical-statements.xml"/>
+            href="../../../volume6-anf-ballot/chapter2-anf-reference-model/src/docbkx/anf-reference-model.xml"/>
         <xi:include
-            href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/analysis-normal-form/analysis-normal-form.xml"/>
+            href="../../../volume6-anf-ballot/chapter3-anf-clinical-statements/src/docbkx/anf-clinical-statements.xml"/>
         <xi:include
-            href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/transformation/transformation.xml"/>
+            href="../../../volume6-anf-ballot/chapter4-analysis-normal-form/src/docbkx/analysis-normal-form.xml"/>
         <xi:include
-            href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/precision/precision.xml"/>
+            href="../../../volume6-anf-ballot/chapter5-transformation/src/docbkx/transformation.xml"/>
         <xi:include
-            href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/conclusion/conclusion.xml"/>
+            href="../../../volume6-anf-ballot/chapter6-precision/src/docbkx/precision.xml"/>
         <xi:include
-            href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/bibliography.xml"
-        /> -->
+            href="../../../volume6-anf-ballot/chapter7-conclusion/src/docbkx/conclusion.xml"/>
+        <xi:include
+            href="../../../volume6-anf-ballot/chapter8-bibliography/src/docbkx/bibliography.xml"
+        />
     </part>
     <part>
         <title>Assertional Knowledge</title>
-        <xi:include href="SOLOR-assertional.xml"/>
+        <xi:include href="../../../volume5-knowledge-layers/chapter2-solor-assertional/src/docbkx/SOLOR-assertional.xml"/>
     </part>
     <part>
         <title>Procedural Representation</title>
@@ -103,17 +103,17 @@
             ><?oxy_comment_end?></xi:include>
         <xi:include
             href="Book%20Content/Book%20Summary%20of%20Findings%20%E2%80%93%20Functional%20and%20Non-Functional%20Issues%20Related%20to%20Knowledge%20Management%20Proof%20of%20Concept.xml"/>
-        <xi:include href="Komet-User-Guide.xml"/>
+        <xi:include href="../../../volume8-komet-user-guide/chapter1-komet-user-guides/src/docbkx/Komet-User-Guide.xml"/>
     </part>
     <part>
         <title>Use Cases and Summary of Findings</title>
-        <xi:include href="Use-Case-Chapter.xml"/>
+        <xi:include href="../../../volume7-use-cases/chapter3-use-case/src/docbkx/Use-Case-Chapter.xml"/>
         <xi:include
-            href="Summary%20of%20Findings%20%E2%80%93%20RWE%20Search%20and%20Query%20Methods.xml"/>
+            href="../../../volume7-use-cases/chapter2-summary-of-findings/src/docbkx/Summary%20of%20Findings%20%E2%80%93%20RWE%20Search%20and%20Query%20Methods.xml"/>
     </part>
     <part>
         <title>Real World Applications</title>
-        <xi:include href="Patient%20Data%20Privacy.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="../../../volume10-patient-data-privacy/chapter1-patient-data-privacys/src/docbkx/Patient%20Data%20Privacy.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="Book%20Content/Book%20Healthcare%20Data%20Management.xml"
             xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="Book%20Content/Book%20Healthcare%20Quality%20Improvement.xml"
@@ -128,6 +128,6 @@
     </part>
     <part>
         <title>Appendix</title>
-        <xi:include href="Quick%20Reference%20Guide.xml"/>
+        <xi:include href="../../../volume-appendix/quick-reference-guide/src/docbkx/Quick%20Reference%20Guide.xml"/>
     </part>
 </book>
