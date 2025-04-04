@@ -6,8 +6,8 @@
    </parent>
    <modelVersion>4.0.0</modelVersion>
 
-   <artifactId>volume1</artifactId>
-   <name>volume1</name>
+   <artifactId>volume7-use-cases</artifactId>
+   <name>volume7-use-cases</name>
    <description>Description of Volumes models for Analysis Normal Form and Clinical Input Form</description>
    <packaging>pom</packaging>
    <!-- <profiles>

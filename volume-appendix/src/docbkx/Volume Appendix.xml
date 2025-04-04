@@ -9,6 +9,6 @@
     </info>
     <part>
         <title>Appendix</title>
-        <xi:include href="../../../volume%20appendix/appendix/src/docbkx/Quick%20Reference%20Guide.xml"/>
+        <xi:include href="../../../volume-appendix/quick-reference-guide/src/docbkx/Quick%20Reference%20Guide.xml"/>
     </part>
 </book>

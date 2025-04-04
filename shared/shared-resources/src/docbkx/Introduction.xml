@@ -2,18 +2,9 @@
 <?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title>Introduction to the Integrated Knowledge Management (IKM) Book</title>
+    <title>Introduction to the Integrated Knowledge Management (IKM) Volumes</title>
     <section>
-        <title>Preface</title>
-        <para>“The discipline of bringing all knowledge resources into a unified paradigm where the
-            resources all share a common underlying representation that integrates version control,
-            configuration management, modularity, concept-oriented representation, and standardized
-            viewing, collaborative editing, and extension development capabilities within a shared
-            knowledge-management environment.”</para>
-        <para>Keith E. Campbell, MD, PhD</para>
-    </section>
-    <section>
-        <title>IKM Book Motivation</title>
+        <title>IKM Volumes Motivation</title>
         <para>In today’s healthcare ecosystem, providers continually rely on data from an increasing
             number of sources to make informed clinical decisions. While this data is a critical
             component of providing patients with the best care possible, major challenges exist with
@@ -46,23 +37,22 @@
             efficient manner.</para>
     </section>
     <section>
-        <title>Overview of the IKM Book</title>
-        <para>The Integrated Knowledge Management (IKM) Book serves as an educational resource to
-            allow stakeholders to perform a deep dive into the IKM Architecture this team has worked
-            to develop. </para>
+        <title>Overview of IKM Volumes</title>
+        <para>These Integrated Knowledge Management (IKM) Volumes serve as an educational resource
+            to allow stakeholders to perform a deep dive into the IKM Architecture this team has
+            worked to develop. </para>
         <section>
-            <title><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240611T141231-0500" comment="Propose that we summarize and reword so that it is in paragraph format. As is it makes it seem more like a report or short written piece?"?>Purpose
-                of This Document<?oxy_comment_end?></title>
-            <para>This Book will act as 1) a reference for understanding the complex, multi-layered,
-                and highly inter-dependent Health IT landscape, and 2) a framework for the
-                implementation of a layered, architecture-based approach to integrating and managing
-                knowledge in the healthcare ecosystem that will seek to solve the previously
-                identified issues.</para>
-            <para>This framework, referred to throughout the Book as the Knowledge Architecture, is
-                a methodology seeking to enable the concept of Integrated Knowledge Management
+            <title>Purpose of This Document</title>
+            <para>These volumes will act as 1) a reference for understanding the complex,
+                multi-layered, and highly inter-dependent Health IT landscape, and 2) a framework
+                for the implementation of a layered, architecture-based approach to integrating and
+                managing knowledge in the healthcare ecosystem that will seek to solve the
+                previously identified issues.</para>
+            <para>This framework, referred to throughout the volumes as the Knowledge Architecture,
+                is a methodology seeking to enable the concept of Integrated Knowledge Management
                 throughout the healthcare ecosystem.</para>
-            <para>Through examples and illustrations, this Book seeks to demonstrate that such an
-                approach for managing knowledge will allow for:</para>
+            <para>Through examples and illustrations, these volumes seeks to demonstrate that such
+                an approach for managing knowledge will allow for:</para>
             <itemizedlist>
                 <listitem>
                     <para><emphasis role="italic">The ability to recognize equivalence between
@@ -86,9 +76,9 @@
                             technologies and policies are implemented.</emphasis></para>
                 </listitem>
             </itemizedlist>
-            <para>The intent of the IKM Book is to have a direct connection to real world events and
-                circumstances. For a granular and detailed breakdown of real world examples, please
-                refer to the forthcoming
+            <para>The intent of the IKM Volumes is to have a direct connection to real world events
+                and circumstances. For a granular and detailed breakdown of real world examples,
+                please refer to the forthcoming
                 <?oxy_comment_start author="rgeorgacopoulos" timestamp="20231121T165717-0500" comment="add link to appendix when created "?>Appendix<?oxy_comment_end?>.</para>
         </section>
         <section>
@@ -107,8 +97,8 @@
                 standards development organizations. In these cases, SoC allows teams to
                 simultaneously work independently and in coordination with each other and reuse the
                 resulting artifacts.</para>
-            <para>The architecture presented in this Book is inspired by core evolutionary design
-                principles called “Understandable, Reproducible, and Useful,” upon which
+            <para>The architecture presented in these volumes is inspired by core evolutionary
+                design principles called “Understandable, Reproducible, and Useful,” upon which
                 Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT®) development is
                 still based. [1, 2] These criteria describe an approach for improving data quality
                 and increasing data integrity and agility: </para>
@@ -131,7 +121,7 @@
                 </listitem>
             </itemizedlist>
             <para>In order to produce highly reliable software, the following tenets must be applied
-                within a tooling’s software development methodology: use-case driven,
+                within a tooling’s software development methodology: Use-case driven,
                 architecture-centric, iterative and incremental.<itemizedlist>
                     <listitem>
                         <para><emphasis role="bold">Use-case Driven</emphasis>: Defining,
@@ -223,20 +213,15 @@
     </section>
     <section>
         <title>The Knowledge Architecture</title>
-        <para><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240611T142558-0500" comment="add a sentence that give an intro to what knowledge architecture is, such as an architecture 101. 
-
-for example &quot;in this book we will often refer to the knowledge archtircutre..... this KA is a core componenet of our work.....&quot;
-
-it will give this section a more understandable launching point. "?>Increased<?oxy_comment_end?>
-            reliance on computerized health records, including EHR Systems, requires standardized
-            medical terminology to encode health information consistently across systems and
-            enterprises. Clinicians require not only objective quantitative measurements (e.g., 90
-            beats per minute for a patient’s pulse), but also procedural context (e.g., pulse
-            oximetry, manual) about past observations or requests for future interventions. While
-            two quantitative measurements may be the same, the procedural information could indicate
-            meaningful semantic differences and lead to different clinical interpretation and
-            treatment. As information is exchanged across systems, the solution requires a common
-            understanding of data, a method to support knowledge representation, and clinical
+        <para>Increased reliance on computerized health records, including EHR Systems, requires
+            standardized medical terminology to encode health information consistently across
+            systems and enterprises. Clinicians require not only objective quantitative measurements
+            (e.g., 90 beats per minute for a patient’s pulse), but also procedural context (e.g.,
+            pulse oximetry, manual) about past observations or requests for future interventions.
+            While two quantitative measurements may be the same, the procedural information could
+            indicate meaningful semantic differences and lead to different clinical interpretation
+            and treatment. As information is exchanged across systems, the solution requires a
+            common understanding of data, a method to support knowledge representation, and clinical
             decision rules based on common terminology and statements. Each component must address
             an aspect and together need to address the requirements of clinicians. Current HL7
             standard implementations rely on profiles and templates to disambiguate statement and
@@ -360,13 +345,11 @@ it will give this section a more understandable launching point. "?>Increased<?o
             </itemizedlist></para>
     </section>
     <section>
-        <title>
-            <?oxy_comment_start author="rgeorgacopoulos" timestamp="20240611T141711-0500" comment="Make this the first section/opener to the book "?>Preface
-            from Keith Campbell</title><?oxy_comment_end?>
+        <title> Preface from Keith Campbell</title>
         <para>This section is currently a placeholder.</para>
     </section>
     <section>
-        <title> IKM Book Introduction</title>
+        <title> IKM Volumes Introduction</title>
         <section>
             <title>The Promise of Health Information Technology</title>
             <para>Health Information Technology (IT), or the use of computer hardware, software, or
@@ -957,5 +940,3 @@ it will give this section a more understandable launching point. "?>Increased<?o
         </para>
     </section>
 </chapter>
-
-
