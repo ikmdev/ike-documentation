@@ -11,14 +11,6 @@
             represent FDA’s views or policies.</para>
     </section>
     <section>
-        <title>Table of Contents</title>
-        <para/>
-    </section>
-    <section>
-        <title>Table of Figures</title>
-        <para/>
-    </section>
-    <section>
         <title>Purpose</title>
         <para>In today’s healthcare ecosystem, there is a need for high-quality and accurate data as
             healthcare organizations becoming increasingly reliant on electronic health records
@@ -120,14 +112,16 @@
                     defined, refined, and prioritized. These epics are then decomposed into user
                     stories with defined acceptance criteria for the development teams to develop
                     against in 3 week increments or sprints. [1]</para>
-                <para><emphasis role="bold">Figure 1: IKM Product Backlog Epic
-                    Board</emphasis></para>
-                <para><inlinemediaobject>
-                        <imageobject>
-                            <imagedata
-                                fileref="../images/IKM%20Product%20Backlog%20Epic%20Board.png"/>
-                        </imageobject>
-                    </inlinemediaobject></para>
+                <para><figure xml:id="IKMProductBacklogEpicBoard">
+                        <title>IKM Product Backlog Epic Board</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/IKM%20Product%20Backlog%20Epic%20Board.svg"
+                                    scale="100" align="center"/> 
+                            </imageobject>
+                        </mediaobject>
+                </figure>
+                </para>
                 <para>As the IKM community grows, we will leverage the open-source nature of the
                     project to track feature requests through submitted GitHub issues. [2] This
                     external issue tracker will be integrated more fully in the future but will
@@ -151,27 +145,29 @@
                     defined epics and prioritization are revisited weekly to ensure that the teams
                     are focused on the highest priority tasks and that the requirements are
                     clear.</para>
-                <para><emphasis role="bold">Figure 2: IKM Epic Backlog Story Map in
-                    Jira</emphasis></para>
-                <para><inlinemediaobject>
-                        <imageobject>
-                            <imagedata
-                                fileref="../images/IKM%20Epic%20Backlog%20Story%20Map%20in%20Jira.png"
-                            />
-                        </imageobject>
-                    </inlinemediaobject></para>
+                <para><figure xml:id="IKMEpicBacklogStoryMapinJira">
+                        <title>IKM Epic Backlog Story Map in Jira</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/IKM%20Epic%20Backlog%20Story%20Map%20in%20Jira.svg"
+                                    scale="100" align="center"/> 
+                            </imageobject>
+                        </mediaobject>
+                </figure>
+                </para>
                 <para>Ticket linking, depicted in Figure 3, enables us to track dependencies and
                     relationships between tasks, ensuring that work is seamlessly coordinated across
                     different teams. </para>
-                <para><emphasis role="bold">Figure 3: View of Epic with Cross Team Story
-                        Dependencies</emphasis></para>
-                <para><inlinemediaobject>
-                        <imageobject>
-                            <imagedata
-                                fileref="../images/View%20of%20Epic%20with%20Cross%20Team%20Story%20Dependencies.png"
-                            />
-                        </imageobject>
-                    </inlinemediaobject></para>
+                <para><figure xml:id="ViewofEpicwithCrossTeamStoryDependencies">
+                        <title>Name of Image Normally Written</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/View%20of%20Epic%20with%20Cross%20Team%20Story%20Dependencies.svg"
+                                    scale="100" align="center"/> 
+                            </imageobject>
+                        </mediaobject>
+                </figure>
+                </para>
                 <para>Furthermore, we have shifted our focus from a broad array of features to
                     prioritizing high-impact features that align with our strategic objectives. This
                     prioritization ensures that our development efforts are concentrated on
@@ -533,12 +529,16 @@
                 stakeholders. The following (Figure 4) graphic serves as the base communication
                 curve for FDA SHIELD on how to capture, educate, and ultimately build loyalty with
                 potential users. </para>
-            <para><emphasis role="bold">Figure 4: FDA SHIELD Communications Curve</emphasis></para>
-            <para><inlinemediaobject>
-                    <imageobject>
-                        <imagedata fileref="../images/FDA%20SHIELD%20Communications%20Curve.png"/>
-                    </imageobject>
-                </inlinemediaobject></para>
+            <para><figure xml:id="FDASHIELDCommunicationsCurve">
+                    <title>FDA SHIELD Communications Curve</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/FDA%20SHIELD%20Communications%20Curve.svg"
+                                scale="50" align="center"/> 
+                        </imageobject>
+                    </mediaobject>
+            </figure>
+            </para>
             <para>To date, the IKM Solution Adoption team has worked to identify key stakeholders
                 and tailor content to enhance their understanding of both the FDA SHIELD Program and
                 the goals of IKM. In the phase of increasing awareness, the team has developed and
