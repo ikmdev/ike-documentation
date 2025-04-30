@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>GSRS/UNII Demonstration Project Progress Report (Months 13-24)</title>
+    <section>
+        <title>Purpose</title>
+        <para>There is an increasing need for high-quality and accurate data as healthcare
+            organizations are becoming more reliant on electronic health records (EHRs), laboratory
+            information systems (LISs), and other electronic information systems. A primary tool for
+            many organizations, terminology standards work to improve the quality and accuracy of
+            data. Terminology standards aim to ensure information is captured and represented in a
+            repeatable and standardized format so that other organizations have a common
+            understanding of the data. While terminology standards are a useful tool, extensive
+            knowledge management (KM) is needed to identify, manage, and share the standardized data
+            that these systems and standards capture. As data flows within and between healthcare
+            systems, the use of different terminology standards, KM processes, and systems
+            themselves can pose a threat to the integrity of data. A recent study found that only
+            22-68% of data integrity is maintained in a single trip, posing challenges around
+            interpretation, and resulting accuracy around patient care [1].</para>
+        <para>Integrated Knowledge Management (IKM) is an approach to data management that aims to
+            maintain the meaning, integrity, and quality of data as it travels within and between
+            healthcare systems. IKM is an evolving approach to manage disparate terminology
+            standards using a common, centralized, and repeatable representation of data. The use of
+            a common model supports the interoperability of data between disparate terminology
+            standards, well documented version control even when different terminology standards
+            employ their own versioning practices, and the incorporation of new or emerging
+            terminology standards. IKM will use an iterative approach to build upon previous work on
+            Resource Description Frameworks (RDFs) and property graphs with novel ideas and
+            concepts. There is no reference or best practice guide for how an IKM solution can or
+            should operate and will therefore require extensive research, prototyping, and
+            development.</para>
+        <para>The Food and Drug Administration (FDA) created a Global Substance Registration System
+            (GSRS) to facilitate the efficient and accurate information exchange on substances
+            within regulated products. The creation of the GSRS knowledge base allowed for
+            standardized, scientific descriptions of substances across regulatory lines, such as
+            within and between countries. The collection and dependencies of knowledge within GSRS
+            presents a direct use case in which IKM and its capabilities can improve GSRS.</para>
+    </section>
+    <section>
+        <title>Aims</title>
+        <para>The aims of this document serve as a collection of landscape analyses of the GSRS
+            system and its parts within the domains of Integrated Knowledge Management: Ecosystem
+            Engagement and User Interface/User Experience (UI/UX).</para>
+    </section>
+    <section>
+        <title>Global Substance Registration System (GSRS)/Unique Ingredient Identifier (UNII) Demonstrations</title>
+        <section>
+            <title>Ecosystem Engagement: GSRS/UNII Demonstration Project Progress Report [Task
+                2.3.1]</title>
+            <para><emphasis role="bold">Progress Report Week 26</emphasis></para>
+            <section>
+                <title>Introduction</title>
+                <para>Ecosystem engagement approach details the current state and interactions of
+                    systems as well as aims to educate on benefits of solutions to the overall
+                    system when IKM is utilized. This encompasses investigation of challenges,
+                    authorship of materials such as whitepapers, and connecting various entities
+                    across numerous fields such as federal, academia, and industry. The culmination
+                    of these efforts works to advance data interoperability and integration of
+                    knowledge between systems in line with IKM’s mission.</para>
+                <para>This portion of the program report provides an overview of GSRS, including its
+                    history and interactions with relevant parties, such as with the FDA and
+                    relevant terminologies. Key findings indicate challenges around inconsistencies
+                    in data quality across regulatory domains, challenges managing proprietary
+                    information, and difficulties with standardizing substance identification across
+                    diverse chemical structures.</para>
+            </section>
+            <section>
+                <title>Investigation of GSRS</title>
+                <para>The U.S. FDA’s Informatics Team, the National Institutes of Health (NIH)
+                    National Center for Advancing Translational Sciences (NCATS), and the European
+                    Medicines Agency (EMA) collaborated to create the Global Substance Registration
+                    System (GSRS) to meet the need for an accurate, shared substance repository [2].
+                    Instead of relying on conventional names, which vary across regulatory domains,
+                    the GSRS knowledge base defines substances by standardized, scientific
+                    descriptions, allowing for accurate global exchange of critical ingredient
+                    information.</para>
+                <para>Today, few drugs are sourced within only one jurisdiction due to increasingly
+                    globalized supply chains [2]. The growing number of imported FDA-regulated
+                    products and ingredients spurred the need for collaboration with international
+                    parties to facilitate knowledge sharing through common standards. In 2006, FDA
+                    began developing the Substance Registration System (SRS) with the ability to
+                    generate and record a Unique Ingredient Identifier for any substance “from an
+                    atom to an organism” [4]. The FDA SRS served as the model for the Global
+                    Substances Registration System now used around the world.</para>
+                <para>The Unique Ingredient Identifier (UNII) was originally developed by the
+                    International Union of Pure and Applied Chemistry as a non-proprietary, free,
+                    unique, unambiguous, non-semantic, alphanumeric identifier based on a
+                    substance’s molecular structure, protein and nucleic sequences, and/or
+                    descriptive information [2]. A substance may be defined as a chemical, protein,
+                    nucleic acid, polymer, mixture, or structurally diverse. UNIIs can be generated
+                    at any time in the regulatory life cycle of a drug, biologic, food, or
+                    device.</para>
+            </section>
+            <section>
+                <title>Mandate for International Collaboration</title>
+                <para>The International Organization for Standardization (ISO) is a global network
+                    of 172 countries that collaborate on developing international standards [5]. ISO
+                    has developed over 20,000 international standards through these members and
+                    technical experts on a range of topics. The Health Informatics-Identification of
+                    Medicinal Products (IDMP) is a group of 5 Health Informatics ISO standards that
+                    includes Medicinal Product Identification (MPID), Pharmaceutical Product
+                    Identifier (PhPID), Substance Identification (SubID), Dosage Form and Route of
+                    Administration, and Units of Measurement. All 5 standards are associated with an
+                    ISO code and a technical specifications-implementation guide.</para>
+                <para>Implementation of the Identification of Medicinal Products (IDMP) standards is
+                    up to individual international organizations who must create their own policies
+                    and implementation guidelines. Correspondingly, it is FDA’s goal to harmonize
+                    standards for international exchange of medicinal product data, from which it
+                    has historically used ISO IDMP standards such as the National Drug Code. The FDA
+                    Global Substance Registration System (GSRS) adheres to ISO standards, and
+                    includes the U.S. National Drug Code, Unique Ingredient Identifier, and the
+                    Unified Code for Units of Measure which conform to ISO 11615, ISO 11238, and ISO
+                    11240, respectively. FDA is working with World Health Organization- Uppsala
+                    Monitoring Centre (WHO-UMC), HL7, ISO, Global IDMP Working Group (GIDWG), and
+                    International Conference on Harmonisation (ICH) to implement IDMP standards, and
+                    are members of the GIDWG which aim to demonstrate successful implementation of
+                    ISO IDMP standards and maintenance of global identifiers [6,7].</para>
+                <para>The GSRS facilitates accurate exchange of substances identifying information
+                    through their Unique Ingredient Identifiers (UNIIs). UNIIs are generated using
+                    ISO 11238 specifications [8, 9]. ISO 11238 “provides the conceptual framework
+                    for defining Substances and Specified Substances and for assigning unique
+                    identifiers in the context of the ISO IDMP standards” and describes how to
+                    distinguish substances based on their scientific identity [10,11]. In line with
+                    international efforts to implement these IDMP standards, the European Union uses
+                    GSRS software developed by the FDA.</para>
+            </section>
+            <section>
+                <title>FDA Interactions with GSRS</title>
+                <para>FDA uses GSRS to register unique substances and control substance data as it
+                    pertains to FDA regulated products such as food, pharmaceuticals, and cosmetic
+                    products. There are over 157,000 substance records in the most recent volume.
+                    Currently, the FDA only focuses on regulated, marketed products. FDA uses UNII
+                    throughout product lifecycles, including clinical trial phases, marketing, and
+                    post-market surveillance. If a substance is not already registered with GSRS, a
+                    submission can be made via the PrecisionFDA website, and a GSRS registrar will
+                    review the substance. A UNII will be assigned if the substance is approved
+                    [12].</para>
+                <para>Users can filter and export GSRS public data from PrecisionFDA and create GSRS
+                    JSON (JavaScript Object Notation) records in their own user space. They can also
+                    use a PrecisionFDA shared space to collaborate with the FDA-SRS team [2].</para>
+            </section>
+            <section>
+                <title>GSRS and Other Data Standards</title>
+                <para>While other standards may not always use GSRS directly, standards can instead
+                    utilize UNII as identifiers. For example, the FDA Structured Product Label (SPL)
+                    is one of RxNorm’s data sources and as a result, the drug is required to be
+                    listed in RxNorm. According to the SPL Implementation Guide, pharmaceutical
+                    companies should submit drug information, including UNIIs, to the FDA SPL
+                    database. FDA will then list the record on the NIH’s National Library of
+                    Medicine’s pharmaceutical product labeling database, DailyMed. All drug products
+                    listed in DailyMed are automatically passed through to RxNorm and assigned an
+                    RXCUI.</para>
+            </section>
+            <section>
+                <title>Assessment of Constraints within GSRS</title>
+                <para>Current concerns and limitations of GSRS include inconsistencies in data
+                    quality across regulatory domains, challenges managing proprietary information,
+                    and difficulties with standardizing substance identification across diverse
+                    chemical structures. A 2019 IDMP workshop facilitated by the World Health
+                    Organization (WHO) including representatives from the U.S. FDA, EMA, Health
+                    Canada, the WHO Programme for International Drug Monitoring, and other national
+                    health agencies outlined some of these issues and discussed the need for
+                    comprehensive solutions. [13]</para>
+                <para>The IDMP workshop identified the need to access trade secrets and commercially
+                    confidential information, especially for premarket products, to create global
+                    substance identifiers as a potential sticking point. The workshop also
+                    recognized the possibility that different regulatory standards across countries
+                    could result in inconsistent granularity and quality of data included in the
+                    GSRS.</para>
+                <para>Furthermore, semantic redundancies and the need to identify substances across
+                    diverse classes and levels of organization create added complexity. Research
+                    published by the NIH NCATS found each substance record includes 6 name synonyms
+                    on average, with one record having 240 different names. The study found 1,000
+                    examples where the same name can refer to two different substances. Table 1
+                    below shows examples of overlap from the public dataset in which common elements
+                    between substances can be represented, creating spaces in ambiguity. [3]<table
+                        frame="all">
+                        <title><emphasis>Table 1: Homographs from Public Dataset</emphasis></title>
+                        <tgroup cols="4">
+                            <colspec colnum="1" colname="c1"/>
+                            <colspec colnum="2" colname="c2"/>
+                            <colspec colnum="3" colname="c3"/>
+                            <colspec colnum="4" colname="c4"/>
+                            <thead>
+                                <row>
+                                    <entry>Substance Homonym</entry>
+                                    <entry>Description A</entry>
+                                    <entry>Description B</entry>
+                                    <entry>Reasoning</entry>
+                                </row>
+                            </thead>
+                            <tbody>
+                                <row>
+                                    <entry><emphasis role="bold">Alpha-Tocopherol</emphasis></entry>
+                                    <entry>
+                                        <para>Synthetic Vitamin E</para>
+                                        <para>UNII H4N855PNZ1</para>
+                                    </entry>
+                                    <entry>
+                                        <para>Natural Extract Vitamin E</para>
+                                        <para>UNII N9PR3490H9</para>
+                                    </entry>
+                                    <entry>Stereochemical Ambiguity</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Azithromycin</emphasis></entry>
+                                    <entry>
+                                        <para>Azithromycin Trihydrate</para>
+                                        <para>UNII 5FD1131I7S</para>
+                                    </entry>
+                                    <entry>
+                                        <para>Azithromycin Anhydrous</para>
+                                        <para>UNII J2KLZ20U1M</para>
+                                    </entry>
+                                    <entry>Implicit vs explicit hydration</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Lobelia</emphasis></entry>
+                                    <entry>
+                                        <para>Indian Tobacco Leaf</para>
+                                        <para>UNII 7QFT17RLRG</para>
+                                    </entry>
+                                    <entry>
+                                        <para>Lobelia Inflata L. Plant</para>
+                                        <para>UNII 9PP1T3TC5U</para>
+                                    </entry>
+                                    <entry>Whole versus part of plant</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Lime</emphasis></entry>
+                                    <entry>
+                                        <para>Lime (calcium oxide)</para>
+                                        <para>UNII C7X2M0VVNH</para>
+                                    </entry>
+                                    <entry>
+                                        <para>Lime (citrus)</para>
+                                        <para>UNII 8CZS546954</para>
+                                    </entry>
+                                    <entry>Ambiguity of Language</entry>
+                                </row>
+                            </tbody>
+                        </tgroup>
+                    </table></para>
+                <para>This issue extends to structure-based identifiers for chemical substances.
+                    Researchers found over 5,000 GSRS chemical records have two or more IUPAC
+                    (International Union of Pure and Applied Chemistry) International Chemical
+                    Identifiers referring to the same substance, and over 1,200 InChI keys are
+                    shared by two or more substances. The same is true for Chemical Abstract Service
+                    and other registry numbers, often because more specific substances refer to a
+                    more general concept registry number. [3]</para>
+                <para>The NIH NCATS study concluded that market forces will continue to drive
+                    innovation and the creation of entirely new classes of products. Thus, the GSRS
+                    standard must continue to accommodate “new and unusual materials in ways that
+                    have traditionally challenged other standards.” [3]</para>
+            </section>
+            <section>
+                <title>Benefits of GSRS to IKM</title>
+                <para>The ability to represent GSRS data comprehensively and accurately in IKM
+                    systems adds to the functionality of IKM. In a previous report, GSRS data
+                    elements were identified that could be represented by existing Terminology
+                    Knowledge Architecture (Tinkar) components. TAs described previously, the
+                    Knowledge Representation team expanded the Tinkar framework to accommodate new
+                    patterns for GSRS data elements, allowing for even more robust data modeling as
+                    part of IKM.</para>
+                <para>The ability to model GSRS substance records further expands the Knowledge
+                    Management Environment’s (Komet) utility. Users could include more granular
+                    substance data in new and existing LIDR records, ensuring that substance
+                    information is seamlessly integrated with clinical and laboratory data. This
+                    integration of additional supplemental information may allow IKM to support more
+                    robust research, regulation, and clinical decision-making by tying substances to
+                    assays and reagents used in other laboratorial settings for example. Overall,
+                    growing to accommodate GSRS data expands IKM’s strategy to improve data
+                    quality.</para>
+            </section>
+            <section>
+                <title>Benefits of IKM to GSRS</title>
+                <para>The Global Substance Registration System could benefit from integration with
+                    IKM in two ways: first, by expanding the usability and interoperability of GSRS
+                    substance records and, second, by improving the quality and maintenance of GSRS
+                    data.</para>
+                <para>With the ability to import GSRS records, IKM expands the usability, reach, and
+                    connectedness of GSRS records to other data standards and use-cases. By bringing
+                    GSRS into the Tinkar framework, GSRS data can be a part of comprehensive,
+                    interoperable health records used for research, regulation, and in clinical
+                    contexts. IKM helps to connect GSRS not only to existing pharmaceutical data
+                    standards, such as RxNorm, but also with clinical data standards like LOINC,
+                    SNOMED, and the local coding systems used by labs and health systems across the
+                    country. This connects GSRS to the broader network of health informatics in
+                    practice, such as to laboratory devices and any corresponding methods and
+                    reference ranges.</para>
+                <para>STAMP, a feature of IKM systems, will further expand the utility of GSRS by
+                    providing comprehensive version history, including relevant contextual
+                    information. STAMP, as shown in Figure 1, includes the status of a given
+                    component (e.g., active/inactive), the common standard time a component was
+                    created/modified, the author of a given version, the module, which assigns a
+                    component to the appropriate terminology or terminology component, and path,
+                    which enables testing for provisional content without the constraints of
+                    incorporating an entire terminology library. With STAMP, the Tinkar Reference
+                    Model records key information for capturing a complete record of all changes to
+                    concepts. This allows users to track changes and refer to various versions of
+                    semantic components used to represent data. With Tinkar, a single GSRS record
+                    could be continuously built out and adapted as it moves between systems, while
+                    maintaining version tracking and context. Furthermore, this feature of IKM could
+                    enable GSRS administrators to reconcile knowledge surrounding standardization of
+                    substances and improve the quality of data by reducing outdated information.
+                    Implementing IKM would enable GSRS to continue ingesting new information and
+                    adjust existing records while maintaining reliable substance registration,
+                    providing a complete history and evolution of a substance and its usages.
+                    Comprehensive version tracking can address two of the limitations of GSRS
+                    identified previously: first, inconsistent representation and secondly,
+                    redundant concepts.</para>
+                <figure xml:id="STAMPDiagram"> 
+                    <title>Figure 1: STAMP Diagram</title> 
+                    <mediaobject> 
+                        <imageobject> 
+                            <imagedata fileref="../images/STAMP%20Diagram.svg" 
+                                scale="35" align="center"/> 
+                        </imageobject> 
+                    </mediaobject> 
+                </figure>
+            </section>
+            <section>
+                <title>Current State Use-Case</title>
+                <para>Azithromycin dihydrate is a common antibiotic used to treat bacterial
+                    infections, such as bronchitis and pneumonia. Below, shown in Table 2, is an
+                    excerpt of information present within GSRS from PrecisionFDA [14]:<table
+                        frame="all">
+                        <title><emphasis>Table 2: GSRS Excerpt of Azithromycin
+                            Dihydrate</emphasis></title>
+                        <tgroup cols="2">
+                            <colspec colnum="1" colname="c1" colwidth="1*"/>
+                            <colspec colnum="2" colname="c2" colwidth="3.5*"/>
+                            <thead>
+                                <row>
+                                    <entry namest="c1" nameend="c2">AZITHROMYCIN DIHYDRATE
+                                        (CHEMICAL)           UNII5FD1131I7S (Salt/Solvate
+                                        UNII)</entry>
+                                </row>
+                            </thead>
+                            <tbody>
+                                <row>
+                                    <entry>Substance Hierarchy</entry>
+                                    <entry>
+                                        <para>Azithromycin Anhydrous (Chemical) - UNII J2KLZ20U1M
+                                            (Active Form)</para>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Azithromycin Hemiethanolate Monohydrate - UNII
+                                                  S548K9P0TK (Active Form)</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Azithromycin Anhydrous - UNII J2KLZ20U1M
+                                                  (Active Form)</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Azithromycin Hydrogencitrate - UNII T7I43X3J2A
+                                                  (Active Form)</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Azithromycin Lactobionate - UNII 4G45QWD7VU
+                                                  (Active Form)</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Azithromycin Sulfate - UNII FF2VAQ5BGN
+                                                  (Salt/Solvate UNII)</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para><emphasis role="bold">Azithromycin
+                                                  Dihydrate</emphasis> - UNII 5FD1131I7S
+                                                  (Salt/Solvate UNII)</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Azithromycin Sodium Dihydrogen Phosphate -
+                                                  UNII ADV7FS82PV (Salt/Solvate UNII)</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Azithromycin Fumarate - UNII 2GMV4359ZJ
+                                                  (Salt/Solvate UNII)</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Azithromycin, Unspecified Form - UNII
+                                                  F94OW58Y8V (Salt/Solvate UNII)</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Azithromycin - UNII F94OW58Y8V (Salt/Solvate
+                                                  UNII)</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Azithromycin Maleate - UNII MB33AVA3ZK
+                                                  (Salt/Solvate UNII)</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Azithromycin Dihydrochloride - UNII 4WY75EB7AG
+                                                  (Salt/Solvate UNII)</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Azithromycin Monohydrate - UNII JTE4MNN1MD
+                                                  (Salt/Solvate UNII)</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Azithromycin - UNII F94OW58Y8V (Salt/Solvate
+                                                  UNII)</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Azithromycin Isopropanolate Monohydrate - UNII
+                                                  QKX96Y66IE (Salt/Solvate UNII)</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Azithromycin Aspartate - UNII 7YDL43V3U2
+                                                  (Salt/Solvate UNII)</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Azithromycin Monohydrochloride - UNII
+                                                  WWL9UK9T02 (Salt/Solvate UNII)</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para><emphasis role="bold">Azithromycin
+                                                  Dihydrate</emphasis> - UNII 5FD1131I7S
+                                                  (Salt/Solvate UNII)</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                        <para>
+                                            <itemizedlist>
+                                                <listitem>
+                                                  <para>Azithromycin Isopropanolate Monohydrate -
+                                                  UNII QKX96Y66IE (Salt/Solvate UNII)</para>
+                                                </listitem>
+                                            </itemizedlist>
+                                        </para>
+                                    </entry>
+                                </row>
+                                <row>
+                                    <entry>Names and Synonyms</entry>
+                                    <entry>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Azithromycin Dihydrate</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Azithromycin (as Dihydrate)</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Azithromycin Dihydrate [EP Monograph]</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Azithromycin Dihydrate [MI]</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Azithromycin Dihydrate [Orange Book]</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Azithromycin Dihydrate [USP Monograph]</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Azithromycin Dihydrate [VANDF]</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Azithromycin Dihydrate [WHO-DD]</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Azithromycin Hydrate</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Azithromycin Hydrate [JAN]</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Azithromycin [MART.]</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>N-METHYL-11-AZA-10-DEOXO-10-DIHYDROERYTHROMYCIN
+                                                  A DIHYDRATE</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Zithromax</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>ZMAX</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                    </entry>
+                                </row>
+                            </tbody>
+                        </tgroup>
+                    </table></para>
+                <para>The GSRS system for azithromycin dihydrate contains information such as the
+                    UNII, substance hierarchy, chemical structure, classification codes and
+                    identifier codes, names and synonyms, and more. For this substance, there are 14
+                    names and synonyms from various sources, with many being the same. Additionally,
+                    the substance hierarchy nests azithromycin dihydrate under azithromycin
+                    anhydrous, yet is also listed separately twice with the same UNII. There are
+                    other duplicate entries presents within the substance hierarchy besides
+                    azithromycin dihydrate, such as azithromycin isopropanolate monohydrate and
+                    unspecified azithromycin.</para>
+                <para>Assessment of azithromycin dihydrate on the GSRS system showcases partial
+                    implementation of STAMP methodology. Audit information present on the GSRS
+                    system provides the Validated Record Status (Status), Creation and Last Edit
+                    Date (Time), and Created By Admin (Author). There are also forms of Module such
+                    as through connections to 15 differing systems through codes, such as to RxCUI.
+                    The aiding in the implementation of Path through IKM would additionally improve
+                    the quality and usability of GSRS data. For example, separate research data can
+                    be aggregated from various sources over multiple years, with differing names and
+                    local codes are used to represent azithromycin dihydrate. Without version
+                    tracking and integration of GSRS and IKM, a researcher must manually clean and
+                    process data, and potentially some records created using the unspecified parent
+                    concept ‘azithromycin’ could have been lost upon data transfer. The researcher
+                    is not able to analyze useful information included in the substances GSRS
+                    record, such as RxNorm Concept Unique Identifier (RxCUI) or molecular
+                    formula.</para>
+            </section>
+            <section>
+                <title>Conclusion</title>
+                <section>
+                    <title>Summary of Findings</title>
+                    <para>The GSRS system is a diverse resource for substance registration and
+                        management. Challenges persist around difficulties with standardizing substance
+                        identification across multiple chemical structures, challenges managing
+                        proprietary information, and inconsistencies in data quality across regulatory
+                        domains. Adapting the Tinkar Model to accommodate more knowledge in the GSRS
+                        expands IKM’s functionality to users for research, regulation, and clinical
+                        decision making. Conversely, IKM adds value to GSRS by expands the usability,
+                        reach, and connectedness of GSRS records to other data standards and use-cases.
+                        The use of a Tinkar feature, STAMP, will ensure IKM-integrated GSRS concepts
+                        have comprehensive version tracking and will help GSRS administrators improve
+                        quality and cut back on redundancies.</para>
+                </section>
+                <section>
+                    <title>Recommendation</title>
+                    <para>Implementation of IKM can allow GSRS to reconcile knowledge surrounding
+                        standardization and lead to improvements in data quality. Through this, the
+                        GSRS system can continue to ingest added information as well as adjust
+                        existing contributions to meet the increasingly interconnected nature of
+                        health systems, working to maintain accurate and reliable substance
+                        registration. Additionally, crossover between GSRS and IKM will require
+                        coordination between relevant parties to successfully implement and build
+                        upon existing knowledge.</para>
+                </section>
+            </section>
+        </section>
+    </section>
+    <section>
+        <title>UI/UX: GSRS/UNII Demonstration Project Progress Report [Task 1.3.2]</title>
+        <para><emphasis role="bold">Progress Report Week 26</emphasis></para>
+        <section>
+            <title>Introduction</title>
+            <para>The GSRS provides a system that offers a comprehensive framework for the
+                definition and identification of substances used in medicinal products, dietary
+                supplements, foods, and cosmetics; capturing relationships between substances and
+                references, referencing data to their respective authoritative sources [15].</para>
+            <para>While comprehensive, the GSRS has limitations as it functions as a static database
+                with limited real-time collaboration and lacks multitasking abilities compared to
+                Komet. This analysis compares the user experience of the Global Substance
+                Registration System (GSRS) with that of the Next-Gen Komet Platform; specifically
+                focusing on the enhanced authoring experience Komet provides that the GSRS does not.
+                The enhanced authoring experience can be broken down into the below key
+                areas.</para>
+        </section>
+        <section>
+            <title>Unified Knowledge Framework Enhancing Data Reliability</title>
+            <para>he GSRS is designed specifically for tracking substances in regulatory approvals,
+                safety monitoring, and pharmacovigilance. In contrast, Komet serves as a general
+                authoring platform, enabling interoperability across regulatory and healthcare
+                organizations.</para>
+            <para><emphasis><emphasis role="bold">Knowledge Framework Features of
+                    Komet</emphasis></emphasis></para>
+            <para><emphasis role="bold">Multipurpose Support</emphasis>: As shown in Figure 2 Komet
+                employs an open knowledge graph methodology, interconnecting substances,
+                medications, laboratory tests, and diseases within a cohesive framework. This
+                approach facilitates seamless access and utilization of knowledge for researchers,
+                regulators, and clinicians. By integrating these diverse domains, Komet reduces the
+                reliance on multiple knowledge tools, thereby streamlining learning, adoption, and
+                system maintenance for organizations.</para>
+            <figure xml:id="KometGeneralDiGraphEditing"> 
+                <title>Figure 2: Komet General DiGraph Editing</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/Komet%20General%20DiGraph%20Editing.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure>
+            <para><emphasis role="bold">Breaking Down Silos</emphasis>: Komet’s integrated knowledge
+                framework effectively eliminates traditional healthcare data silos, facilitating
+                direct connections between regulators and real-world clinical practice. This
+                integration streamlines the monitoring of substance usage in treatments and reduces
+                redundant efforts across various healthcare and regulatory systems.</para>
+            <para><emphasis role="bold">Improved Data Quality</emphasis>: By harmonizing healthcare
+                knowledge, Komet significantly enhances data accuracy and consistency; leading to a
+                superior safety monitoring, improved insights into real-world clinical effects, and
+                greater efficiency compared to the GSRS system.</para>
+        </section>
+        <section>
+            <title>Modern User Experience Focused on Personalized Multitasking</title>
+            <para>The GSRS functions as a basic substance search and submission platform but
+                provides limited support for personalized workflows and collaboration. Although the
+                GSRS is user-friendly, it does not offer the productivity and efficiency tools
+                available within Komet. Komet introduces a modern user experience to healthcare
+                knowledge management, aligning with the advanced usability standards prevalent in
+                other industries in several ways.</para>
+            <para><emphasis><emphasis role="bold">Multitasking Features of Komet compared to
+                        GSRS</emphasis></emphasis></para>
+            <para><emphasis role="bold">Project Journals</emphasis>: GSRS has limited
+                functionalities for organizing and tracking work. As illustrated in Figure 3,
+                Komet’s Knowledge Journals offer a robust solution, enabling users to document,
+                track, and share projects within a structured framework. These journals maintain a
+                comprehensive history of completed work, track status updates, and provide real-time
+                alerts, thereby ensuring seamless workflow management.</para>
+            <figure xml:id="KometLandingPageProjectJournals"> 
+                <title>Figure 3: Komet Landing Page – Project Journals</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/Komet%20Landing%20Page%20–%20Project%20Journals.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure>
+            <para><emphasis role="bold">Infinite Workspace</emphasis>: GSRS requires users to work
+                in a linear, sequential manner, thereby limiting multitasking and flexible authoring
+                processes. In contrast, Komet provides an expansive, panel-based workspace, as shown
+                in Figure 4, that enables users to personalize their workflows, seamlessly switch
+                between related tasks, and optimize productivity.</para>
+            <figure xml:id="InfiniteWorkspaceOpenConcepts"> 
+                <title>Figure 4: Infinite Workspace – Open Concepts</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/Infinite%20Workspace%20–%20Open%20Concepts.svg" 
+                            scale="50" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure>
+            <para><emphasis role="bold">Extension and Development Path Management:</emphasis> GSRS
+                lacks robust extension and development features, limiting its adaptability in
+                collaborative environments. Komet empowers users with customizable development
+                paths, ranging from personal sandboxes to production environments, enabling version
+                control, seamless knowledge sharing, and structured contributions.</para>
+            <para><emphasis role="bold">Robust Comparison Tools</emphasis>: GSRS offers basic search
+                and browsing capabilities but lacks advanced comparison tools essential for
+                effective healthcare knowledge management. In contrast, Komet’s panel-based
+                information design and detailed knowledge history tracking allows users to compare
+                knowledge across different healthcare concepts, hierarchical structures, and system
+                extensions. These advanced tools help identify and prevent inaccuracies,
+                duplications, and errors from propagating within the knowledge base.</para>
+            <para><emphasis role="bold">Duplicate &amp; Favorite Functionality:</emphasis> Komet
+                introduces efficient duplication and favoriting tools to streamline repetitive tasks
+                and workflows. These features allow users to reuse existing knowledge assets created
+                by others, thereby significantly enhancing speed, collaboration, and knowledge
+                dissemination.</para>
+        </section>
+        <section>
+            <title>Enhanced Collaboration for More Accurate and Up-to-Date Knowledge</title>
+            <para>GSRS primarily functions as a static database with limited real-time collaboration
+                between researchers, regulators, and industry experts. Updates require formal
+                submissions and reviews, resulting in a slow reflection of new discoveries. Whereas
+                Komet is designed as an open framework that actively encourages cross-disciplinary
+                collaboration to enhance the acquisition and accuracy of healthcare
+                knowledge.</para>
+            <para><emphasis><emphasis role="bold">Collaboration Features of
+                    Komet</emphasis></emphasis></para>
+            <para><emphasis role="bold">Open-Source Integrated Knowledge Foundation</emphasis>: GSRS
+                lacks an open framework that would enable dynamic, real-time contributions to
+                maintain and expand healthcare knowledge. Komet’s open-source approach fosters
+                greater flexibility, broader adoption, and increased momentum, ensuring that
+                healthcare knowledge remains current and continuously evolving.</para>
+            <para><emphasis role="bold">Multi-User Collaboration, Sharing, and Real-Time
+                    Feedback</emphasis>: GSRS does not provide an intuitive mechanism for
+                collaboration or feedback on substance information. Komet introduces multi-user
+                capabilities, allowing multiple contributors to work on the same task
+                simultaneously. Additionally, as shown below in Figure 5, Komet provides built-in
+                tools for users to share content, leave notes, add comments, and offer feedback
+                throughout the knowledge creation and validation process. Flexible sharing controls
+                also allow users to personalize collaboration settings to engage with others in a
+                meaningful way.</para>
+            <figure xml:id="KometReal-timeReasoner"> 
+                <title>Figure 5: Komet Real-time Reasoner</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/Komet%20Real-time%20Reasoner.svg" 
+                            scale="35" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure>
+            <para>Transparent Knowledge History &amp; Version Tracking: GSRS lacks a detailed
+                version history, making it challenging to track changes, provide feedback, and
+                collaborate effectively. Komet’s framework ensures full transparency by maintaining
+                a comprehensive, and accessible record of knowledge updates. As depicted in Figure 6
+                &amp; 7, this enables users to review, build upon, improve, or correct previous
+                work, ensuring that knowledge remains accurate and continuously refined.</para>
+            <figure xml:id="KometConceptHistoryandTimeTravelOne"> 
+                <title>Figure 6: Komet Concept History &amp; Time Travel 1</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/Komet%20Concept%20History%20and%20Time%20Travel%20One.svg" 
+                            scale="35" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure> 
+            <figure xml:id="KometConceptHistoryandTimeTravelTwo"> 
+                <title>Figure 7: Komet Concept History &amp; Time Travel 2</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/Komet%20Concept%20History%20and%20Time%20Travel%20Two.svg" 
+                            scale="35" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure>
+        </section>
+        <section>
+            <title>Customization Features to Support Unique Information Needs</title>
+            <para>GSRS operates as a one-size-fits-all application with limited customization
+                options. In contrast, Komet offers a range of customization features, allowing
+                organizations and users to tailor the platform to fit their specific workflows and
+                processes. This enhances adoption rates and enables Komet to serve as a flexible
+                solution for breaking down healthcare knowledge silos.</para>
+            <para><emphasis><emphasis role="bold">Customization Features of
+                    Komet</emphasis></emphasis></para>
+            <para><emphasis role="bold">Customizable Data Views</emphasis>: GSRS offers only
+                pre-defined views of its substance data, restricting users' ability to adjust the
+                display to their specific needs. Komet, on the other hand, empowers organizations
+                and users with tools to create customized information panels, as shown in Figure 8
+                &amp; 9, ensuring they can adapt the platform to support knowledge authors,
+                researchers, regulators, and clinicians in a manner that best fits their
+                workflow.</para>
+            <figure xml:id="KometMasterViewEditor-CustomizedInformationTemplates"> 
+                <title>Figure 8: Komet Master View Editor - Customized Information Templates</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/Komet Master%20View%20Editor%20-%20Customized%20Information%20Templates.svg" 
+                            scale="35" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure>
+            <figure xml:id="KometLIDRRecord-CustomInformationPanel"> 
+                <title>Figure 9: Komet LIDR Record - Custom Information Panel</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/Komet%20LIDR%20Record%20-%20Custom%20Information%20Panel.svg" 
+                            scale="35" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure>
+            <para><emphasis role="bold">Plug-In Support for Extended Functionality</emphasis>: Komet
+                features a plug-in framework, akin to modern open-source platforms, allowing users
+                and third-party providers to contribute new features and enhancements. This
+                decentralized approach expands Komet’s authoring capabilities, encouraging broader
+                adoption, and increasing the overall usefulness of its integrated knowledge
+                foundation.</para>
+        </section>
+        <section>
+            <title>Conclusion</title>
+            <para>In conclusion, while the GSRS remains a useful tool for exploring definitions and
+                identifications of substances, Komet offers an enhanced alternative with its
+                integrated and clinical context, advanced visualization, search and filtering, and
+                user-friendly interface. Komet is designed to facilitate a more comprehensive
+                understanding of clinical concepts and foster a community-driven approach to
+                refining these concepts. Its interactive comments section allows users to share
+                observations, insights, and resolve queries, thereby enhancing the overall
+                efficiency and efficacy of healthcare professionals.</para>
+        </section>
+    </section>
+    <section>
+        <title>Conclusion</title>
+        <para>This deliverable serves as an updated progress report of the GSRS system in the
+            context of IKM and its respective domains. This document details the arenas in which IKM
+            expertise can improve areas of concern within GSRS. Our summary of findings identifies
+            areas of focus to be addressed in subsequent reports and will require additional and
+            continued efforts to improve the implementation, functionality, and adoption of IKM
+            solutions into GSRS. GSRS serves as just one area of opportunity in which IKM can make
+            substantive improvements to its systems and result in better quality of data.</para>
+    </section>
+    <section>
+        <title>References</title>
+        <orderedlist>
+            <listitem>
+                <para>Cholan, R. A., et al. (2022). Encoding laboratory testing data: case studies
+                    of the national implementation of HHS requirements and related standards in five
+                    laboratories. Journal of the American Medical Informatics Association, 29(8),
+                    1372–1380. https://doi.org/10.1093/jamia/ocac072</para>
+            </listitem>
+            <listitem>
+                <para>(2022, September 29). FDA’s Global Substance Registration System. FDA.
+                    https://www.fda.gov/industry/fda-data-standards-advisory-board/fdas-global-substance-registration-system</para>
+            </listitem>
+            <listitem>
+                <para>Peryea, T., et al (2020). Global Substance Registration System: consistent
+                    scientific descriptions for substances related to health. Nucleic Acids
+                    Research, 49(D1), D1179–D1185. https://doi.org/10.1093/nar/gkaa962</para>
+            </listitem>
+            <listitem>
+                <para>Unique Ingredient Identifier (UNII). (2019). Va.gov.
+                    https://www.oit.va.gov/Services/TRM/StandardPage.aspx?tid=5227</para>
+            </listitem>
+            <listitem>
+                <para>(2016). What we do. ISO. https://www.iso.org/what-we-do.html</para>
+            </listitem>
+            <listitem>
+                <para>Fitzmartin, R., Chen, T.-J., &amp; Perkins, V. (2022). Toward Global
+                    Identification of Medicinal Products (IDMP) Implementation: A Focus on Biologics
+                    1. https://sbiaevents.com/files2022/IDMP-Webinar-2022-10-27.pdf</para>
+            </listitem>
+            <listitem>
+                <para>Toward Global IDMP Implementation: A Focus on Global Use Cases. (2023). U.S.
+                    Food and Drug Administration.
+                    https://www.fda.gov/drugs/news-events-human-drugs/toward-global-idmp-implementation-focus-global-use-cases-11282023</para>
+            </listitem>
+            <listitem>
+                <para>FDA’s Global Substance Registration System. (n.d.). Precision.fda.gov.
+                    https://precision.fda.gov/uniisearch</para>
+            </listitem>
+            <listitem>
+                <para>(2022). Identification of Medicinal Products (IDMP). FDA.
+                    https://www.fda.gov/industry/fda-data-standards-advisory-board/identification-medicinal-products-idmp</para>
+            </listitem>
+            <listitem>
+                <para>(2018). Health informatics — Identification of medicinal products — Data
+                    elements and structures for the unique identification and exchange of regulated
+                    information on substances [Review of Health informatics — Identification of
+                    medicinal products — Data elements and structures for the unique identification
+                    and exchange of regulated information on substances].
+                    https://www.iso.org/obp/ui/en/#iso:std:iso:11238:ed-2:v1:en</para>
+            </listitem>
+            <listitem>
+                <para>(2018). Health informatics — Identification of medicinal products (IDMP) —
+                    Implementation guidelines for ISO 11238 for data elements and structures for the
+                    unique identification and exchange of regulated information on substances
+                    [Review of Health informatics — Identification of medicinal products (IDMP) —
+                    Implementation guidelines for ISO 11238 for data elements and structures for the
+                    unique identification and exchange of regulated information on substances].
+                    https://www.iso.org/obp/ui/en/#iso:std:iso:ts:19844:ed-3:v1:en</para>
+            </listitem>
+            <listitem>
+                <para>(2024, March 18). Registering chemicals or proteins in FDA’s Global Substance
+                    Registration System within precisionFDA [Review of Registering chemicals or
+                    proteins in FDA’s Global Substance Registration System within precisionFDA].
+                    Food and Drug Administration.
+                    https://www.fda.gov/media/169513/download?attachment</para>
+            </listitem>
+            <listitem>
+                <para>NOTES FROM A WORKSHOP ON THE IDENTIFICATION OF MEDICINAL PRODUCTS (IDMP).
+                    (2019).
+                    https://admin.iprp.global/sites/default/files/2020-04/IPRP_IDMPWG_Minutes_11-12Sep2019Workshop_2020_0310.pdf</para>
+            </listitem>
+            <listitem>
+                <para>GSRS. (2025). Fda.gov.
+                    https://precision.fda.gov/ginas/app/ui/substances/f7e56a5b-ae71-4663-bda9-29d291956e26</para>
+            </listitem>
+            <listitem>
+                <para>Peryea, T., Southall, N., Miller, M., Katzel, D. A., Anderson, N., Neyra, J.,
+                    Stemann, S., Nguyen, D.-T., Dammika Amugoda, Archana Newatia, Ramez Ghazzaoui,
+                    Johanson, E., Diederik, H., Callahan, L., &amp; Switzer, F. (2020). Global
+                    Substance Registration System: consistent scientific descriptions for substances
+                    related to health. Nucleic Acids Research, 49(D1), D1179–D1185.
+                    https://doi.org/10.1093/nar/gkaa962</para>
+            </listitem>
+        </orderedlist>
+    </section>
+</chapter>
