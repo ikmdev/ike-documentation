@@ -5,11 +5,11 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <info>
         <title>Integrated Knowledge Management (IKM) Volume 2</title>
-        <subtitle>Version 2 - Last Updated 05/14/2024</subtitle>
+        <subtitle>Version 2 - Last Updated 03/4/2025</subtitle>
     </info>
     <part>
         <title>IKM Background</title>
-        <xi:include href="../../../volume2-Background/chapter1-background/src/docbkx/Background - For Vol 2.xml"/>
-        <xi:include href="../../../volume2-Background/chapter2-sof-current-state/src/docbkx/sof-current-state - For Vol 2.xml"/>
+        <xi:include href="Background - For Vol 2.xml"/>
+        <xi:include href="sof-current-state - For Vol 2.xml"/>
     </part>
 </book>
