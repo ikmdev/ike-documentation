@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Summary of Findings - Advanced Analytics Scaling Best Practices (Months 13-24)</title>
+    <section>
+        <title>Purpose</title>
+        <para>The purpose of this document is to provide an overview of the current state of
+            advanced analytics capabilities within Integrated Knowledge Management (IKM), summarize
+            best practices for performing advanced analytics at scale and describe opportunities to
+            further advance and scale data analytic capabilities with the goal of improving
+            Real-World Data (RWD) within the in vitro diagnostic (IVD) ecosystem.</para>
+    </section>
+    <section>
+        <title>Methodology</title>
+        <para>Under the Systemic Harmonization and Interoperability Enhancement for Laboratory Data
+            (SHIELD) program, we have developed an initial reference architecture that integrates
+            multiple commonly used laboratory data standards using one logical model, Terminology
+            Knowledge Architecture (Tinkar), that can represent all knowledge the same way and has a
+            user-friendly interface for easily viewing, editing, and authoring of Tinkar concepts.
+            Through this research and development, we’ve been able to explore the complexities of
+            storing, versioning, retrieving and analyzing integrated knowledge at scale.</para>
+        <section>
+            <title>Foundational Data Architecture</title>
+            <para>Last year, we were able to successfully transform Systematized Nomenclature of
+                Medicine (SNOMED), Logical Observation Identifiers, Names, and Codes (LOINC) and
+                SNOMED-LOINC collaboration terminology data into the Tinkar format and recently
+                completed progress on transforming the Laboratory Interoperability Device Reference
+                (LIDR). Conceived by the SHIELD Collaborative Community, LIDR serves as an
+                authoritative source for the standardized digital representation of laboratory tests
+                and provides guidance on which LOINC/SNOMED code to use for which test on which
+                device and will enable linking laboratory analyzers with information to support the
+                comparison of test results by using the same laboratory codes.</para>
+            <para>Currently, we have developed a robust methodology in which foundational knowledge
+                data is stored and maintained. Once data artifacts are Tinkarized, they are stored
+                on an internal web-based file storage platform for individual download and use when
+                running Komet.</para>
+            <para>During the past year, we have also made strides in developing a robust data
+                architecture, which has allowed us to successfully Tinkarize the knowledge standards
+                previously mentioned. Additionally, the new architecture includes additions to
+                integration testing which identifies discrepancies in the data or data loss. These
+                improvements have allowed us to generate new databases efficiently and easily for
+                new users, with scalability as a key driver.</para>
+        </section>
+        <section>
+            <title>Querying Services</title>
+            <para>IKM uses knowledge graphs, in the form of description logic, to express the
+                complex details of individual Tinkar concepts. These details are further versioned
+                over time and, ultimately, enable the semantic meaning of a concept to gracefully
+                evolve in a fully transparent and measurable way. Effectively storing such graph
+                datatypes requires a tailored database architecture that uses a mixture of a
+                key-value store and spined array objects to quickly retrieve any Tinkar data
+                element. Due to this design, there is not a simple way to query the data store to
+                retrieve the needed data. Custom Application Programming Interfaces (APIs), known as
+                View Calculators, have been developed to retrieve data to be displayed on the user
+                interface known as Komet. View Calculators enable you to retrieve Status, Time,
+                Author, Module and Path (STAMP), Concept, Semantic, Pattern and Axiom data based on
+                when a change occurred, such as creation, edit or retirement of components.</para>
+            <para>There are four different types of View Calculators:</para>
+            <itemizedlist>
+                <listitem>
+                    <para>STAMP Calculator – Accesses all Tinkar components based on STAMP values
+                        (e.g., Status, Time, Author, Module, Path)</para>
+                </listitem>
+                <listitem>
+                    <para>Language Calculator – Accesses descriptions for components, fully
+                        qualified name, semantic text and preferred description text</para>
+                </listitem>
+                <listitem>
+                    <para>Navigation Calculator – Access the hierarchy of concept relationships such
+                        as “descendentsOf”</para>
+                </listitem>
+                <listitem>
+                    <para>Logic Calculator – Access the axiom details in a tree graph from a given
+                        component</para>
+                </listitem>
+            </itemizedlist>
+            <para>The Komet user interface leverages these view calculators to retrieve data to be
+                displayed on the user interface.</para>
+        </section>
+        <section>
+            <title>Analysis Normal Form (ANF)</title>
+            <para>Critical to the realization of the ability to query RWD and retrieve reliable
+                clinical data is the development of a data structure which increases data integrity
+                to ensure patient’s receive proper care. ANF embraces the idea that terminology
+                knowledge is an effective way to normalize individual data points (statements)
+                across a large collection of data and that advanced analytics improves greatly when
+                able to query data at a fine-grained level.</para>
+            <para>We first illustrated the utility of ANF for clinical statements through a general
+                demo of a draft model at the September 2024 Connectathon. For the Connectathon, a
+                COVID-19 based scenario was developed to demonstrate functionality of specific
+                components of the IKM and ADR (Analytical Data Repository). To demonstrate these
+                scenarios, 25 fictitious patients, with associated health and demographic data, and
+                the associated ANF statements were created.</para>
+            <para>For the Connectathon scenarios, fictitious patient record needed to contain
+                information about age (either chronological or Date of Birth (DOB)), testing history
+                and results for COVID-19 (using one of 4 different COVID-19 tests), any history of
+                chronic lung disease, presence or absence of a rash, cough or fever and information
+                on Body Mass Index (BMI) (BMI number, BMI category or height and weight). The four
+                COVID-19 tests had different interpretations associated with them, such as positive,
+                detected, and presumptive positive as well as negative, and undetected. The patient
+                data was created to ensure that all combinations of these attributes were accounted
+                for.</para>
+            <para>For each of the 25 fictitious patients for the Connectathon scenarios, a patient
+                narrative was created detailing the specific information associated with their
+                patient record. For example, for patient 1 the narrative was as follows:</para>
+                 <para>
+                <emphasis>Positive COVID-19 Test (Test A), 21 years old, history of chronic lung
+                    disease, no rash, cough, no fever, healthy                  BMI (patient
+                    #1)[Chronic pulmonary edema (disorder)] Test and form date
+                8/1/2024.</emphasis></para>
+            <para>To create the required ANF statements for each of the patients, we needed to
+                identify the key components of the narrative. We first created a master template of
+                all possible “concerns” based on the required scenario information. For the patient
+                narrative, each “concern” or item in the narrative must be dealt with individually
+                in the ANF statements as separate Topics (which essentially identify “what is the
+                procedure” or “intent of the event”).</para>
+            <para>
+                <emphasis>The concerns based on the 25 patient narratives were as
+                    follows:</emphasis></para>
+            <itemizedlist>
+                    <listitem>
+                        <para><emphasis>Detected COVID-19 test results</emphasis></para>
+                    </listitem>
+                <listitem>
+                    <para><emphasis>Positive COVID-19 test results</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Presumptive Positive COVID-19 test results</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Not Detected COVID-19 test results</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Negative COVID-19 test results</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Current Chronological Age</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Patient Date of Birth</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Chronic Lung Disease</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>No Chronic Lung Disease</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Rash</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>No Rash</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Cough</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>No Cough</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Fever</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>No Fever</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>BMI Value</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>BMI Category</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Height</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Weight</emphasis></para>
+                </listitem>
+            </itemizedlist>
+            <para>Then, for each patient, the individual concerns relative to that patient, based on
+                the patient narrative, were identified. The goal was to demonstrate that specific
+                queries could be performed on patient data within the Analytic Data Repository. For
+                example, a query could be run and data collected for all patients with a positive
+                Covid-19 test, and a BMI over 30. Multiple queries were run at the September
+                Connectathon to demonstrate the capability of the draft model.</para>
+            <para>After the Connectathon, we needed to ensure that the draft model worked with more
+                complicated clinical narratives. In collaboration with the FDA, we created a method
+                to stress test the draft ANF data structure model using real clinical use cases
+                provided by SHIELD partner Cooperative of American Physicians (CAP). CAP provided 8
+                specific, clinically accurate use cases that would exercise the specific attributes
+                in the draft ANF model to vet and help clarify the utility of the model and
+                highlight areas for further analysis and development. For each of the specific use
+                cases, we created clinical narratives for fictious patients that could be used to
+                build the ANF statements associated with that narrative such as we did for the
+                Connectathon.</para>
+            <para>As a starting point, we first identified all of the details from the clinical
+                narratives that would need to be captured in ANF statements and built a template to
+                contain those statements. We mapped the clinical details of each narrative to the
+                appropriate ANF statement and noted areas that needed more analysis and
+                refinement.</para>
+        </section>
+        <section>
+            <title>Analytical Data Repository</title>
+            <para>In collaboration with SafeHealth Systems, we used ANF statements generated during
+                the stress testing of the ANF model to demonstrate the ability of SafeHealth’s Form
+                Builder and Form Renderer Applications to capture and store clinical data in the
+                ADR. SafeHealth Systems demonstrated the ability to query that data based on
+                specific search criteria.</para>
+        </section>
+    </section>
+    <section>
+        <title>Findings</title>
+        <para>Through our research and development, we’ve described our findings with the current
+            state of implementation below and identified possible solutions aimed to resolve these
+            issues.</para>
+        <section>
+            <title>Foundational Data Architecture</title>
+            <para>Transforming knowledge standards like SNOMED, LOINC and LIDR requires a complex
+                Extract Transform Load (ETL) process that requires the creation of foundational
+                starter data for each standard to accurately transform into Tinkar data. Once each
+                standard is transformed into Tinkar, it must be stored as Tinkarized data artifacts.
+                Adding to the complexity is the fact that each knowledge standard is managed in
+                released versions or editions of different versions, which leads to the creation of
+                numerous permutations of Tinkarized data artifacts. Finally, each standard requires
+                a generated Java bindings file to programmatically make the starter data concepts
+                available to be referenced within the IKM environment.</para>
+            <para>LIDR is a great representation of the complexity of integrated knowledge as it is
+                a knowledge standard that depends on two other knowledge standards, LOINC and SNOMED
+                CT. Each of these standards have their own versions and resulting representative
+                data artifacts with inherent dependencies between them. Thus, one of the challenges
+                the team faced is being able to manage data in an efficient way that supports agile
+                development and scalability.</para>
+            <para>Inspired by these challenges in data management, the team implemented a new data
+                pipeline that moves to a more automated and standardized way of creating data
+                artifacts using the following methods and supporting tools:</para>
+            <itemizedlist>
+                <listitem>
+                    <para>Use Maven plugins and the Maven lifecycle for faster adoption of
+                        manipulating our complex data.</para>
+                </listitem>
+                <listitem>
+                    <para>Structure repositories with the same file pattern for uniformity in data
+                        manipulation.</para>
+                </listitem>
+                <listitem>
+                    <para>Use the combination of semantic versioning and original metadata to
+                        support more permutations in versioning.</para>
+                </listitem>
+                <listitem>
+                    <para>Export supporting code (e.g., starter data, bindings) for each knowledge
+                        standard version/edition as their own artifacts that can be individually
+                        imported into the transformation process.</para>
+                </listitem>
+                <listitem>
+                    <para>Package Tinkar data artifacts with ample metadata and coordinates for
+                        integration testing and future querying.</para>
+                </listitem>
+                <listitem>
+                    <para>Release data artifacts to an artifact repository hosted in a cloud
+                        server.</para>
+                </listitem>
+                <listitem>
+                    <para>Mirror the software release process for data releases.</para>
+                </listitem>
+            </itemizedlist>
+            <para>The above methods were used in the creation and deployment of data artifacts, and
+                is represented in three main phases:</para>
+            <para>         Phase I: Preparation of the origin data</para>
+            <para>          Phase II: Data transformation from origin to Tinkar data</para>
+            <para>          Phase III: Packaging and deployment of Tinkar data</para>
+            <section>
+                <title>Phase I: Preparing the Origin Data Artifact for Transformation</title>
+                <para>As shown in Figure 1: Origin Data Artifacts Extraction / Packaging /
+                    Deployment, the first step in the data transformation process is extracting the
+                    origin data from its respective data source using a Maven plugin. The origin
+                    data is preserved as-is to ensure a lossless transformation process so that the
+                    transformed data stays true to its source. Once data is extracted successfully,
+                    the plugin will execute its next goal and package the origin data into a zip
+                    file following a standard file structure for each knowledge standard. The zip
+                    file—or the origin data artifact—will be enriched with metadata meant to
+                    facilitate integration and roundtrip testing. Once the artifact is completely
+                    packaged, it will then be deployed to the artifact repository for easy
+                    distribution and importation into the transformation process.</para>
+                <figure xml:id="OriginDataArtifactsExtraction-Packaging-Deployment "> 
+                    <title>Figure 1: Origin Data Artifacts Extraction / Packaging /
+                        Deployment</title> 
+                    <mediaobject> 
+                        <imageobject> 
+                            <imagedata fileref="../images/Origin%20Data%20Artifacts%20Extraction%20-%20Packaging%20-%20Deployment.svg" 
+                                scale="35" align="center"/> 
+                        </imageobject> 
+                    </mediaobject> 
+                </figure> 
+            </section>
+            <section>
+                <title>Phase II: Transforming the Origin Data Artifact into a Tinkar Data Artifact</title>
+                <para>The next phase in the data architecture is the data transformation phase.
+                    Figure 2: Data Transformation and Release Workflow depicts a simplified
+                    representation of the data transformation workflow. The transformation process
+                    requires three artifacts: the origin data artifact to be transformed, a
+                    foundational starter data schema, and a Java bindings file. Starter data and
+                    Java bindings are a set of business logic and knowledge management rules
+                    specific to the selected origin data and play a crucial role in defining the
+                    transformation process.</para>
+                <para>Before starting the transformation process, these three artifacts must be
+                    created and prepared to be imported into the transformer. The origin data
+                    artifact should already have been pushed to the artifact repository from Phase
+                    I. On the other hand, the starter data and bindings file need to be generated
+                    within the IKM environment. The starter data schema is manually authored by a
+                    user in the IKM Platform whereas Java bindings are automatically generated based
+                    on the authored starter data. Both artifacts are then exported for use.</para>
+                <para>Once all artifacts are ready, they are imported into the data transformer,
+                    which applies the rules from the starter data and bindings file to the origin
+                    data to transform it into Tinkarized data.</para>
+                <figure xml:id="DataTransformationandReleaseWorkflow"> 
+                    <title>Figure 2: Data Transformation and Release Workflow </title> 
+                    <mediaobject> 
+                        <imageobject> 
+                            <imagedata fileref="../images/Data%20Transformation%20and%20Release%20Workflow.svg" 
+                                scale="35" align="center"/> 
+                        </imageobject> 
+                    </mediaobject> 
+                </figure>   
+            </section>
+            <section>
+                <title>Phase III: Packaging and Deploying a Tinkar Data Artifact</title>
+                <para>As shown in Figure 3: Tinkar Data Artifacts Packaging / Deployment, once the
+                    data transformation is complete, a second Maven plugin is initiated to package
+                    the transformed data into a zip file—the Tinkar data artifact—with metadata and
+                    Maven coordinates. Maven coordinates will make it possible for these artifacts
+                    to be detectable in future querying. Version control will be enforced by
+                    stringing together the origin data release version and the data transformer
+                    release version, which is based on semantic versioning. The final artifact is
+                    then deployed to the server along with release notes that briefly describe what
+                    changes were made in the current version of the artifact since the previous
+                    version. This data release model mirrors how software is released so that it can
+                    handle managing large amounts of data artifacts across several project folders.
+                    Additionally, note that this process is repeated for every edition and version
+                    of each knowledge standard. The purpose of standardizing the creation of
+                    individual data artifacts is so that the team can easily manage and view the
+                    chronological context of all the different knowledge standard releases.</para>
+                <figure xml:id="TinkarDataArtifactsPackaging-Deployment"> 
+                    <title>Figure 3: Tinkar Data Artifacts Packaging / Deployment</title> 
+                    <mediaobject> 
+                        <imageobject> 
+                            <imagedata fileref="../images/Tinkar%20Data%20Artifacts%20Packaging%20-%20Deployment.svg" 
+                                scale="35" align="center"/> 
+                        </imageobject> 
+                    </mediaobject> 
+                </figure>
+                <para>In closing, the objective of this data architecture establishes a standardized
+                    system for creating, importing, and exporting data artifacts to produce reliable
+                    and scalable data and, ultimately, improve data analytics. Data analytics can
+                    only get better and provide meaningful insights with more data, and a scalable
+                    data architecture will enable us to introduce new data into our growing
+                    datastore more easily with new knowledge standard releases each year. The system
+                    has already been used to seamlessly import new versions of the SNOMED CT data,
+                    proving that it can easily be run and tested to identify anomalies or changes to
+                    a knowledge standard.</para>
+            </section>
+        </section>
+        <section>
+            <title>Querying Services</title>
+            <para>While the current query method, View Calculator APIs, enable the access of data,
+                they must be pre-defined for each business case and do not allow for the dynamic
+                querying of data. In working with SafeHealth Systems as a consumer of Tinkar data
+                and libraries, it is clear that an additional dynamic query mechanism will be needed
+                to support future data retrieval requirements. As new Komet capabilities are
+                developed, this would allow data to be queried more dynamically without requiring
+                updates to the existing calculator methods or knowledge of how to use them.</para>
+            <para>Through our research, we’ve identified an initial proposed solution of creating a
+                FLWOR (FOR, LET, WHERE, ORDER BY, RETURN) query provider to allow SQL-like
+                statements to be passed to the query provider and results returned. This will
+                require a significant decrease in custom code and provide a generalized mechanism of
+                data retrieval.</para>
+            <para>Currently, the IKM reference architecture is scoped to an installed desktop
+                application where a user’s data is hosted locally on their computer. As we look into
+                the future of advanced data analytics, we will need to architect a cloud-based
+                solution that enables a centrally hosted database where data can be accessed and
+                retrieved at scale for advanced data analytics. </para>
+            <para>Through our initial research, we believe we could leverage Google’s gRPC (Remote
+                Procedure Calls), a high-performance, open-source Remote Procedural Call (RPC)
+                framework to sit over the Tinkar spined array datastore or another graph database.
+                It would efficiently connect disparate Komet-installed instances to allow for a
+                syncing mechanism with the database of record and comes with pluggable support for
+                load balancing, tracing, health checking and authentication.</para>
+        </section>
+        <section>
+            <title>ANF</title>
+            <para>The creation and demo of the draft ANF model at the September 2024 Connectathon
+                successfully illustrated the ability to express clinical statements in Analysis
+                Normal Form, store ANF patient data in the ADR and query that data based on concerns
+                of interest.</para>
+            <para>In order for SafeHealth Systems to effectively create Analysis Normal Form (ANF)
+                backed questionnaires through their Form Builder, it was necessary to stress test
+                the ANF model using real world clinical use cases. As discussed in the Methodology
+                section, we used the 8 clinical use cases from CAP and built specific clinical
+                narratives that were used as the basis for creation of associated ANF
+                statements.</para>
+            <para>Using the at home Syphilis test use case as an example, you can see in Figure 3
+                the clinical narrative that was created for this use case, and the identification of
+                the specific clinical details which serve as candidate ANF statements.</para>
+            <figure xml:id="ClinicalNarrativefromUseCase"> 
+                <title>Figure 4: Clinical Narrative from Use Case</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/Clinical%20Narrative%20from%20Use%20Case.svg" 
+                            scale="35" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure>
+            <para>The candidate ANF statements identified from the clinical narrative were used as
+                the basis for building out the complete complement of ANF statements for the use
+                case narrative. Again, using the at home Syphilis test use case, you can see in
+                Figure 4, screenshots of the spreadsheet displaying some of attributes of the
+                “Chronological Age” ANF statement. The template column, in yellow, describes the
+                attributes that would be populated in the ANF statement, and the blue column
+                illustrates the attribute populated based on the clinical narrative.</para>
+            <figure xml:id="ExamplesofANFTemplateandStatements"> 
+                <title>Figure 5: Examples of ANF Template and Statements</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/Examples%20of%20ANF%20Template%20and%20Statements.svg" 
+                            scale="50" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure> 
+            <para>We continued this process with all of the 8 use cases, starting with the least
+                complex and then progressing to the more complex uses cases like Invasive Breast
+                Cancer. Through this development and analysis of the ANF statements, we both refined
+                the definition and use of many of the attributes and added additional attributes to
+                the model to ensure broad applicability and compliance with required data elements
+                from United States Core Data for Interoperability (USCDI). The refined ANF statement
+                model was used by SafeHealth systems to update their prototype Form Builder
+                Application.</para>
+        </section>
+        <section>
+            <title>Analytical Data Store</title>
+            <para>The ANF statements developed during the stress testing were used to create forms
+                in SafeHealth’s Form Builder App. Input data from those forms was successfully
+                stored in the Analytic Data Repository (ADR). To demonstrate broad applicability of
+                the Form Builder app, we demonstrated that a relative lay user was able to
+                successfully navigate the app and create a form using ANF statements for a
+                clinically relevant use case.</para>
+        </section>
+     </section>
+    <section>
+        <title>Conclusion and Next Steps</title>
+        <para>In conclusion, this analysis provided insights into how an improved data architecture
+            can help with analytics and scalability, explored preliminary findings for query service
+            options, and highlighted components needed to successfully collaborate with SafeHealth
+            at the May and September 2024 HL7 Connectathons. The following steps will be taken next
+            in continuation of these efforts:</para>
+        <section>
+            <title>Foundational Data Architecute</title>
+            <para>The team will continue to implement the described data architecture for additional
+                knowledge standards and evaluate areas for further improvement of data pipelines,
+                specifically around releasing data artifacts. We will also continue to explore the
+                current state of Java bindings to resolve data programmatic dependency issues and
+                research whether a redesign is worth considering.</para>
+        </section>
+        <section>
+            <title>Querying Services</title>
+            <para>The team will continue to explore the advantages and disadvantages of using FLWOR,
+                gRPC, and other query services with the new data architecture to research a more
+                dynamic and intuitive way to query Tinkar data. Additionally, the team will explore
+                applying the query service at the SearchService layer as opposed to the
+                EntityService layer for a more intuitive separation of tasks between existing
+                services.</para>
+        </section>
+        <section>
+            <title>ANF</title>
+            <para>The utility and robustness of the ANF data model has been demonstrated through
+                both the September 2024 connectathon and the add on use case studies. The ANF model
+                is a work in progress and continues to evolve. To move the model forward, we need to
+                engage internal and external stakeholders and continue to stress test the model.
+                Goals and objectives for next steps are as follows:</para>
+            <orderedlist>
+                <listitem>
+                    <para>Engage stakeholders and solicit feedback. Ask the question: “Does the
+                        model make sense?”</para>
+                </listitem>
+                <listitem>
+                    <para>Determine areas of focus to further refine the model.</para>
+                </listitem>
+                <listitem>
+                    <para>Determine how well the ANF model handles the SNOMED situation with
+                        explicit context.</para>
+                </listitem>
+                <listitem>
+                    <para>Identify concerns that are cross cutting and which are unique to a
+                        particular domain.</para>
+                </listitem>
+            </orderedlist>
+            <para>The findings identified in these studies will be used to update both the ANF user
+                guide and the ANF ballot to be consistent with the refined ANF model.</para>
+        </section>
+        <section>
+            <title>Analytical Data Store</title>
+            <para>The team will determine the steps towards the integration and use of the Analytic
+                Data Repository.</para>
+        </section>
+    </section>
+</chapter>
