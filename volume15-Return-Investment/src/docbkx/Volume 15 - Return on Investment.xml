@@ -7,8 +7,8 @@
         <title>Integrated Knowledge Management (IKM) Volume 15</title>
         <subtitle>Version 2 - Last Updated 3/4/2025</subtitle>
     </info>
-    <part>
+     <part>
         <title>IKM Return on Investment (ROI)</title>
-        <xi:include href="ROI.XML"/>
+        <xi:include href="../../../volume15-Return-Investment/chapter1-roi/src/docbkx/ROI.xml"/>
     </part>
 </book>

@@ -7,8 +7,8 @@
         <title>Integrated Knowledge Management (IKM) Volume 12</title>
         <subtitle>Version 3 - Last Updated 03/4/2025</subtitle>
     </info>
-    <part>
+      <part>
         <title>Healthcare Quality Improvement</title>
-        <xi:include href="Healthcare%20Quality%20Improvement.xml"/>
+        <xi:include href="../../../volume12-Healthcare-Quality-Improvement/chapter1-healthcare-quality-improvements/src/docbkx/Healthcare%20Quality%20Improvement.xml"/>
     </part>
 </book>

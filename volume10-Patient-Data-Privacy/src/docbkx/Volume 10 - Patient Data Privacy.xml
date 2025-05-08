@@ -7,9 +7,9 @@
         <title>Integrated Knowledge Management (IKM) Volume 10</title>
         <subtitle>Version 2 - Last Updated 3/4/2025</subtitle>
     </info>
-    <part>
+     <part>
         <title>Patient Data Privacy</title>
         
     </part>
-    <xi:include href="Patient%20Data%20Privacy.xml"/>
+    <xi:include href="../../../volume10-Patient-Data-Privacy/chapter1-patient-data-privacys/src/docbkx/Patient%20Data%20Privacy.xml"/>
 </book>
