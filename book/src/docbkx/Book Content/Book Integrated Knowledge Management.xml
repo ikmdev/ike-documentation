@@ -76,6 +76,23 @@
             the ecosystem as organizations use inconsistent and varied concept representation.
             Although there are standardized codes and formats, there are many ways to use these
             standards. </para>
+        <figure xml:id="IKMinPractice"> 
+            
+            <title>Integrated Knowledge Management in Practice</title> 
+            
+            <mediaobject> 
+                
+                <imageobject> 
+                    
+                    <imagedata fileref="../images/IKMinPractice.svg" 
+                        
+                        scale="25" align="center"/> 
+                    
+                </imageobject> 
+                
+            </mediaobject> 
+            
+        </figure> 
         <para>Our IKM approach employs a common model for data representation to support the
             integration of these disparate standards and improve the quality and interoperability of
             data. One of the goals of this body of work is to develop both a common model and the
@@ -85,6 +102,23 @@
             Improved data quality will cascade to other refinements within the healthcare ecosystem,
             such as improved research capabilities, identification of real-world data trends, and
             real-time public health information.</para>
+        <figure xml:id="CreatingIKM.svg"> 
+            
+            <title>Creating Integrated Knowledge Management</title> 
+            
+            <mediaobject> 
+                
+                <imageobject> 
+                    
+                    <imagedata fileref="../images/CreatingIKM.svg" 
+                        
+                        scale="25" align="center"/> 
+                    
+                </imageobject> 
+                
+            </mediaobject> 
+            
+        </figure> 
         <para>To support the common model, our team is developing a tool and authoring environment
             that supports a variety of functionalities across all knowledge standards and frameworks
             to address the differences in management and structure across disparate terminology
@@ -141,6 +175,23 @@
             identity, versioning, modularity, and knowledge representation. In this foundational
             architecture layer, we find the shared module system where version and configuration
             management provide the foundation for interoperability and the common model. </para>
+        <figure xml:id="SeparationofConcerns"> 
+            
+            <title>Separation of Concerns</title> 
+            
+            <mediaobject> 
+                
+                <imageobject> 
+                    
+                    <imagedata fileref="../images/SeparationofConcerns.svg" 
+                        
+                        scale="25" align="center"/> 
+                    
+                </imageobject> 
+                
+            </mediaobject> 
+            
+        </figure> 
     </section>
     <section>
         <title>TermINology Knowledge Architecture (Tinkar) Overview</title>
@@ -168,6 +219,23 @@
             concepts in Tinkar can be tested and previewed before deployment to a live environment
             and historic versioning of metadata is perpetually maintained to support iterative
             authoring, development, and versioning. [5]</para>
+        <figure xml:id="TinkarLogicalModel"> 
+            
+            <title>Tinkar Logical Model</title> 
+            
+            <mediaobject> 
+                
+                <imageobject> 
+                    
+                    <imagedata fileref="../images/TinkarLogicalModel.svg" 
+                        
+                        scale="25" align="center"/> 
+                    
+                </imageobject> 
+                
+            </mediaobject> 
+            
+        </figure> 
         <para>Tinkar aims to improve the quality of patient care across the healthcare enterprise by
             creating a cross-cutting and common model that can integrate other terminology standards
             and use a repeatable and standardized process to convert disparate clinical statements
