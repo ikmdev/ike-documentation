@@ -151,6 +151,23 @@
                     </listitem>
                 </orderedlist>
             </para>
+                <figure xml:id="STAMP"> 
+                    
+                    <title>STAMP</title> 
+                    
+                    <mediaobject> 
+                        
+                        <imageobject> 
+                            
+                            <imagedata fileref="../images/STAMP.svg" 
+                                
+                                scale="25" align="center"/> 
+                            
+                        </imageobject> 
+                        
+                    </mediaobject> 
+                    
+                </figure> 
                 
             <para>STAMP is not only used to version Tinkar data, but it is also a requirement for
                 all Tinkar assets, existing and new. Ensuring all data follows this syntax supports
@@ -278,6 +295,23 @@
                 integration and continuous deployment (CI/CD) tools. Komet supports plug ins and
                 extensions for developers to customize workflows and needs. [12] All standard
                 harmonization will be facilitated within Komet. </para>
+                <figure xml:id="KometUI"> 
+                    
+                    <title>Komet User Interface</title> 
+                    
+                    <mediaobject> 
+                        
+                        <imageobject> 
+                            
+                            <imagedata fileref="../images/KometUI.svg" 
+                                
+                                scale="25" align="center"/> 
+                            
+                        </imageobject> 
+                        
+                    </mediaobject> 
+                    
+                </figure>
             </section>
             <section>
                 <title>Coordinates</title>
