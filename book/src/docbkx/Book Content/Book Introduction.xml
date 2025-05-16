@@ -210,7 +210,7 @@
                 
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../images/New%20PASTF.svg" scale="10" align="center"/>
+                            <imagedata fileref="../images/PASTF%20Updated.svg" scale="20" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -426,7 +426,16 @@
                 configured to satisfy organization-specific needs, resulting in differences in data
                 handling within systems. While this variation is not an innate issue, the difficulty
                 exchanging data between systems and the lack of interoperability compromises data
-                quality and ultimately patient safety. </para>
+                quality and ultimately patient safety. </para><figure xml:id="ExampleDataExchangePath">
+                    <title>Example Data Exchange Path</title>
+                    
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/Example%20Data%20Exchange%20Path.svg" scale="20" align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure> 
+            
         </section>
     </section>
     
