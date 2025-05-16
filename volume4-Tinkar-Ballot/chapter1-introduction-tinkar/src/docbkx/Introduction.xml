@@ -269,11 +269,12 @@
                 
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/New%20PASTF.svg" scale="10" align="center"/>
+                            <imagedata fileref="../../../src/docbkx/images/New%20PASTF.svg"
+                        scale="10" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
-            
+                  
         <para>Detailed descriptions of each layer will be spelled out in the chapters that follow,
             but brief descriptions of each can be found below:</para>
         <para><emphasis role="bold">Foundational Architecture</emphasis> – The foundational layer of
@@ -579,7 +580,7 @@
                         <title>Structural Interoperability</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Structural%20Interoperability2.svg" scale="30" align="center"/>
+                                <imagedata fileref="../../../src/docbkx/images/Structural%20Interoperability2.svg" scale="30" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -598,7 +599,7 @@
                                 <title>Meaning Interoperability</title>
                 <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Meaning%20Interoperability%202.svg" scale="30" align="center"/>
+                            <imagedata fileref="../../../src/docbkx/images/Meaning%20Interoperability%202.svg" scale="30" align="center"/>
                         </imageobject>
                     </mediaobject> 
                 </figure>
@@ -662,7 +663,7 @@
                     <title>Erroneous LOINC® Mapping</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Erroneous%20Loinc%20Mapping.svg" scale="55" align="center"/>
+                            <imagedata fileref="../../../src/docbkx/images/Erroneous%20Loinc%20Mapping.svg" scale="55" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>

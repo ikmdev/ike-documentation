@@ -144,7 +144,9 @@
                     <title>Interface Term</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/InterfaceTerm_DL.svg" scale="80" align="center"/>
+                            <imagedata
+                            fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/InterfaceTerm_DL.svg"
+                            scale="80" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>

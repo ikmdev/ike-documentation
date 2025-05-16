@@ -309,7 +309,7 @@
                     occur.
                     [<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>2<?oxy_custom_end?>1]</para>
                 <para>Although the Sentinel System has already provided measurable impact since its
-                    implementation, it has some desirable holes. The most notable one reveals the
+                    implementation, it has some undesirable holes. The most notable one reveals the
                     limitations inherent to the data sources Sentinel accesses. The majority of
                     Sentinel’s data is derived from administrative claims data, which often lacks
                     the precision and accuracy required to perform sound analytics on health
