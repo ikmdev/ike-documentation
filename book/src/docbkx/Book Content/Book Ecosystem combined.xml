@@ -42,17 +42,18 @@
             hold special rights to the software. Reasonable guidelines, such as extensive
             documentation procedures, enhance the benefits and trust in open-source solutions, while
             simultaneously preventing an “anything goes” mentality.<?oxy_comment_end?></para>
-        <para>The current restrictive and proprietary nature of software licensing within the
-            healthcare ecosystem significantly hinders interoperability, particularly by preventing
-            or restricting community engagement and contributions that could improve the software or
-            code to meet emerging needs. To achieve lossless data exchanges between and within
-            systems, the Health IT community must consider open-source software and open-source
-            licensing models. While these licenses enable use, regardless of intent, and the ability
-            to modify, adapt, and extend software with minimal restrictions, they also establish
-            rules of the road and codify best practices to ensure adoptability and ease of use for
-            both the initial user and the broader downstream community. Open-source licensing will
-            support the public-private consortium needed to address gaps created by varying rates of
-            adoption and implementation of proprietary software.</para>
+        <para>The current restrictive and proprietary nature of software licensing (in addition to
+            content and terminology licensing fees) within the healthcare ecosystem significantly
+            hinders interoperability, particularly by preventing or restricting community engagement
+            and contributions that could improve the software or code to meet emerging needs. To
+            achieve lossless data exchanges between and within systems, the Health IT community must
+            consider open-source software and open-source licensing models. While these licenses
+            enable use, regardless of intent, and the ability to modify, adapt, and extend software
+            with minimal restrictions, they also establish rules of the road and codify best
+            practices to ensure adoptability and ease of use for both the initial user and the
+            broader downstream community. Open-source licensing will support the public-private
+            consortium needed to address gaps created by varying rates of adoption and
+            implementation of proprietary software.</para>
         <para>Due to the decentralization and wide-spread availability of open-source software,
             errors and bugs are found much quicker because the code is utilized in a variety of
             contexts and stretched much farther. Instead of a single development team being tasked
@@ -60,9 +61,6 @@
             addressing errors much faster. As a result, open-source software employs a high degree
             of modularity where it can be adaptive and flexible to the wide ranging needs of its
             users.</para>
-        <para>Allowing for open licensing encourages improvements to terminology and standards by
-            ancillary bodies. The open licensing also creates a more robust and flexible system that
-            can adapt to the varying needs of organizations.</para>
         <para>Open-source software is preferred and is managed through open-source licensing. A
             permissive license will provide source code to users, carries minimal restriction over
             adaption, modification, and distribution of intellectual property of organizations, and
@@ -106,13 +104,13 @@
     <section>
         <title>What is the Impact of Wisdom of Crowds on Healthcare?</title>
         <para>Precious Porter, RN, BSN, introduces the Netflix documentary series “Diagnosis” in her
-            article “Crowdsourcing: Using the wisdom of the crowd in health care”. [5] Dr. Lisa
+            article “Crowdsourcing: Using the Wisdom of the Crowd in Health Care”. [5] Dr. Lisa
             Sander treated patients with mysterious illnesses and helped them find a support group
             via the internet. The “crowd” consisted of medical doctors, psychologists, caregivers,
             patients, and readers from all over the world. The collective knowledge from these
             stakeholders provided direction for treatment options and, most importantly, kindled the
             source of shared hope to bring a sense of humanity during difficult times. </para>
-        <para>Another example of the impact of Crowdsourcing or Wisdom of Crowds is the COVID-19
+        <para>Another example of the impact of crowdsourcing or wisdom of crowds is the COVID-19
             pandemic. Crowdsourcing was used to track the development and availability of COVID-19
             vaccines all around the world and facilitated the 3D-printing of medical supplies, such
             as protective gear, masks, face shields, and mechanical ventilators, for healthcare
