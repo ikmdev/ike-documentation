@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="22.0">
+<project>
     <meta>
         <filters directoryPatterns=".git" filePatterns=".git,.DS_Store,.gitignore" positiveFilePatterns="" showHiddenFiles="true"/>
         <options>
-            <serialized version="22.0" xml:space="preserve">
+            <serialized xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
                         <String>enable.project.master.files.support</String>
@@ -403,5 +403,6 @@
         </folder>
         <folder path="."/>
         <folder path="statements/src/docbkx/CSS/"/>
+        <file name="book/src/docbkx/Book%20Content/Book%20Integrated%20Knowledge%20Management.xml"/>
     </projectTree>
 </project>
