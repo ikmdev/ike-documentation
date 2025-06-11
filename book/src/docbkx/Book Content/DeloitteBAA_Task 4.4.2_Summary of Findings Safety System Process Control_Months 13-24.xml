@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>DeloitteBAA_Task 4.4.2_Summary of Findings Safety System Process Control_Months 13-24</title>
+    <section>
+        <title><anchor xml:id="Toc191567544"/>Disclaimers and Notes</title>
+        <para>This document reflects the views of the authors and should not be construed to
+            represent Food and Drug Administration’s (FDA’s) views or policies.</para>
+    </section>
+    <section>
+        <title>Purpose</title>
+        <para>The goal of this paper is to document the standard operating procedures used when
+            transforming a new knowledge standard. This includes how the transformation is completed
+            and released for Systemic Harmonization and Interoperability Enhancement for Laboratory
+            Data (SHIELD) Integrated Knowledge Management (IKM) reference implementation. By
+            comprehensively testing and documenting the transformation process, inadequacies and
+            gaps in laboratory data standards can better be addressed to maintain systems
+            safety.</para>
+        <para>Additionally, this paper will demonstrate the transformations and findings. It will
+            provide an analysis of how future transformations can improve standards, ensuring that
+            our systems remain robust, reliable, and capable of meeting evolving data requirements.
+            Through this documentation, we aim to establish a clear and consistent framework for
+            data transformations that supports ongoing improvements in laboratory data standards and
+            system safety.</para>
+    </section>
+    <section>
+        <title>Introduction</title>
+        <para>Over the past year, we have identified several issues within our data transformation
+            processes that have impacted the accuracy and reliability of our systems. To address
+            these challenges and enhance overall system safety, we made the strategic decision to
+            automate the data transformation process. Automation offers significant advantages,
+            including improved consistency, accuracy, and efficiency, which are critical for
+            maintaining high safety standards.</para>
+        <para>By automating integration testing, we can quickly verify the integrity of data
+            transformations, ensuring that any potential issues are detected and resolved promptly.
+            The automated pipeline we implemented has already demonstrated its value by enabling
+            efficient processing of larger datasets, such as the latest Systematized Nomenclature of
+            Medicine Clinical Terms (SNOMED CT) international origin data, and identifying
+            inefficiencies within our internal processes. This capability not only enhances our
+            efficiency but also ensures that our systems can scale effectively to handle increasing
+            data volumes.</para>
+        <para>Furthermore, automation provides continuous monitoring and generates detailed
+            documentation, which are essential for auditing, compliance, and maintaining high safety
+            standards. By standardizing our procedures and protocols through automation, we ensure
+            that all safety measures are applied uniformly, thereby enhancing the overall
+            reliability of our systems.</para>
+    </section>
+    <section>
+        <title>Methodology</title>
+        <para>The following sections will delve into various knowledge standards as examples,
+            illustrating the data transformation process to achieve "tinkarization." Alongside the
+            initial steps, we have implemented testing methods and quality assurance processes to
+            ensure data integrity validation. Ultimately, these methods define the standard
+            operating procedure for representing a new knowledge standard and illustrate how these
+            steps enhance system safety. </para>
+        <section>
+            <title>Develop Knowledge Resource Patterns</title>
+            <para>A template for defining patterns for new knowledge resources was developed using
+                Excel. This template includes essential data types, meanings, and purposes for each
+                pattern to be represented in the Terminology Knowledge Architecture (Tinkar) Schema.
+                It enables consistent encoding and future management of these values, while also
+                preventing duplication by utilizing Komet for their generation. Subject matter
+                experts must reach a consensus on the meaning and purpose of each element within
+                both the fields and the pattern itself. This agreement ensures process control as
+                the data is utilized across various systems.</para>
+            <para>Figure 1 below illustrates how a pattern is defined in the Tinkar Data, as shown
+                through the Komet reference implementation.</para>
+            <para><figure xml:id="ScreenshotofaPatternDefinitioninKomet">
+                    <title>Screenshot of a Pattern Definition in Komet</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/Screenshot%20of%20a%20Pattern%20Definition%20in%20Komet.svg"
+                                scale="80" align="center"/> 
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </para>
+        </section>
+        <section>
+            <title>Data Pipeline Architecture</title>
+            <para>In order to standardize and create an efficient way of “tinkarizing” new knowledge
+                standards, the team developed a data pipeline that utilizes Maven and GitHub (Figure
+                2). The pipeline can be broken down into the following phases.</para>
+            <section>
+                <title>Setup</title>
+                <para>Before the pipeline is executed there are several setup plugins and processes
+                    that are performed for each standard. These plugins and processes are tailored
+                    specifically to the design and desired transformation outcome of each standard
+                    respectively. The first and most important process is to identify all necessary
+                    versions of artifacts that will be used within the lifecycle of the pipeline. In
+                    Figure 2, this is called the Pipeline properties, which is a properties file
+                    elaborating all details necessary for the pipeline to reproducibly be run. The
+                    goal is that the same inputs to the pipeline will provide the same outputs each
+                    time, this is known as an Idempotent process, which is ideal for having high
+                    quality safe health systems.</para>
+                <para>Additionally, the standard’s “raw” source data (generally in a zip format)
+                    will be processed to extract relevant data and repackaged into what is called an
+                    Origin file. This both standardizes how a pipeline represents data from a
+                    standard, but also enable said data to be more accommodating for further
+                    processing and transformations.</para>
+                <para>Finally, starter data is generated, either from the IKM-based knowledge
+                    editing application Komet or the appropriate Tinkar Application Programming
+                    Interface (API). This starter data is packaged using our Google Protocol Buffers
+                    file format and zipped up for distribution and retrieval within the pipeline.
+                    Additionally, the starter data will have a Java (.jar) file generated containing
+                    Java fields that represent all elements within the starter data file. This is
+                    known as a “binding” and helps to ensure compile time compliance when developing
+                    any Tinkar-based transformation processes. </para>
+            </section>
+            <section>
+                <title>Transformation</title>
+                <para>Directly following the setup processes and plugin executions is the
+                    transformation stage of the IKM pipeline. All transformation processes are
+                    executed from a standard specific Maven plugin, which focuses on correctly
+                    extracting, transforming, and loading origin data (from the origin file) into a
+                    Tinkar-compliant database. All previous configurations and origin file processes
+                    are applied to this transformation plugin and all transformation specific
+                    configuration is further defined and controlled by appropriate Maven Project
+                    Object Model (POM) files. This further enables the pipeline to build on the idea
+                    of idempotency, which was established at the beginning of the setup
+                    phase.</para>
+            </section>
+            <section>
+                <title>Post-Processing</title>
+                <para>Once the transformation stage and its associated Maven transformation plugin
+                    have been successfully completed, additional optional Maven plugins can be
+                    integrated into the pipeline. These plugins further process the now Tinkarized
+                    origin data, enhancing the overall data transformation workflow. These optional
+                    plugins include the Web Ontology Language (OWL) transformation plugin, which
+                    adapts the OWL syntax data into a logical structure suitable for advanced
+                    reasoning and semantic processing, and the IKM Reasoner plugin, which applies
+                    logical inferences to the transformed data to ensure consistency and semantic
+                    accuracy.</para>
+            </section>
+            <section>
+                <title>Testing</title>
+                <para>Finally, Maven executed integration tests are ran to verify that the generated
+                    data integrates correctly with other systems and contains the expected
+                    terminology from the origin. These tests ensure the overall integrity and
+                    reliability of the data, confirming that all components and transformations work
+                    together seamlessly. This comprehensive and systematic approach ensures that the
+                    data is accurately prepared, transformed, and validated for subsequent
+                    use.</para>
+            </section>
+        </section>
+        <section>
+            <title>Starter Data</title>
+            <para>Starter data is developed from a subset of concepts, definitions, synonyms, and
+                navigation semantics specific to the knowledge standard undergoing transformation.
+                These concepts are meticulously crafted to accurately Tinkarize the knowledge
+                standard data. This process is currently facilitated by the Tinkar-data Maven
+                pipeline architecture, which provides users with an automated method to generate
+                Tinkarized starter data using a single Maven command.</para>
+            <para>Figure 3 below illustrates a subset of SNOMED CT – Logical Observation
+                Identifiers, Names, and Codes (LOINC) starter data concepts. Certain knowledge
+                standards may require additional starter data that can be Tinkarized using
+                alternative Maven pipeline architectures, such as those provided for SNOMED CT or
+                LOINC. These architectures utilize the defined concepts to generate the necessary
+                classes. Should additional data need to be captured, the design document should be
+                consulted to ascertain whether similar starter data already exists that can be
+                utilized. If no such data exists, modifications to the starter data should be made
+                in consultation with subject matter experts to ensure accuracy and
+                consistency.</para>
+            <para>
+                <figure xml:id="SubsetofSNOMEDCTLOINCstarterdataconcepts">
+                    <title>Subset of SNOMED CT – LOINC starter data
+                        concepts</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/Subset%20of%20SNOMED%20CT%20%E2%80%93%20LOINC%20starter%20data%20concepts.svg"
+                                scale="80" align="center"/> 
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </para>
+        </section>
+        <section>
+            <title>Data Parsing</title>
+            <para>Data parsing involves processing the knowledge standard data files, a crucial step
+                in the data transformation process. Depending on the format of the origin files, the
+                data is parsed for specific syntax, which organizes the data to be programmatically
+                accessible. After reviewing the specifications for the knowledge standard to
+                understand its logical and physical models, it can be mapped to our logical model
+                and stored in our physical model.</para>
+            <para>For SNOMED CT, this entails understanding the various origin files, their formats,
+                and the OWL syntax they utilize, followed by parsing the data accordingly. By
+                thoroughly comprehending the parsable representation of the knowledge standard,
+                developers can minimize risks associated with data parsing, ensuring accurate data
+                representation and robust transformation and reasoning.</para>
+        </section>
+        <section>
+            <title>Data Transformation</title>
+            <para>From the parsed data, the information is transformed into entities and Tinkarized,
+                enabling the data to be viewable and navigable in Komet. For example, with SNOMED
+                CT, each origin file undergoes the Tinkarization process, resulting in entities for
+                concepts, descriptions, text definitions, OWL expressions, and language. These
+                entities are then compiled into a single file that is consumable in Komet. This step
+                is crucial not only to prevent the loss of meaning but also to provide an
+                opportunity for the addition of further semantic information. In the case of LOINC,
+                additional axiom semantic data can be incorporated during the transformation,
+                allowing the data to be reasoned and ensuring a minimum level of navigable
+                data.</para>
+            <para>Figure 4 details the interaction between the Minimum Navigable Data, which focuses
+                on the process and elements involved in navigation and reasoning, and the Minimum
+                Viewable Data, which emphasizes the descriptions and identifiers necessary for
+                viewing data. Further sections will elaborate on the specific roles and interactions
+                of these components, providing a comprehensive understanding of the data flow and
+                relationships depicted.</para>
+            <para>
+                <figure xml:id="DiagramofdataelementsthatcomposeMinimumViewableDataandMinimumNavigableData">
+                    <title>Diagram of data elements that compose Minimum Viewable Data and Minimum Navigable Data</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/Diagram%20of%20data%20elements%20that%20compose%20Minimum%20Viewable%20Data%20and%20Minimum%20Navigable%20Data.svg"
+                                scale="80" align="center"/> 
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </para>
+        </section>
+        <section>
+            <title>Minimum Viewable Data</title>
+            <para>Once the data has been Tinkarized, it can then be imported into Komet. This allows
+                the transformed knowledge standard to be viewable in the concept panel of Komet.
+                From there, the concepts, Status, Time, Author, Module and Path (STAMPS),
+                descriptions, states, etc., are available to the user. This defines the minimum
+                viewable data for the knowledge standard. Building a strong foundation with the
+                pattern development is critical to making sure the data accurately displays in the
+                Komet User Interface (UI). </para>
+            <para>In the below screenshots <emphasis role="italic">(Figure 5,6,7) </emphasis>you can
+                see the description semantics, identifier patterns, and language descriptions that
+                are active for the Chronic lung disease disorder in the Komet UI.</para>
+            <para><figure xml:id="ScreenshotoftheChronicLungDiseaseconceptinKometpart1">
+                    <title>Screenshot of the Chronic Lung Disease concept in Komet (part 1)</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/Screenshot%20of%20the%20Chronic%20Lung%20Disease%20concept%20in%20Komet%20(part%201).svg"
+                                scale="80" align="center"/> 
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </para>
+            <para><figure xml:id="ScreenshotoftheChronicLungDiseaseconceptinKometpart2">
+                    <title>Screenshot of the Chronic Lung Disease concept in
+                        Komet (part 2)</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/Screenshot%20of%20the%20Chronic%20Lung%20Disease%20concept%20in%20Komet%20(part%202).svg"
+                                scale="80" align="center"/> 
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </para>
+            <para><figure xml:id="ScreenshotoftheChronicLungDiseaseconceptinKometpart3">
+                    <title>Screenshot of the Chronic Lung Disease concept in Komet (part 3)</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/Screenshot%20of%20the%20Chronic%20Lung%20Disease%20concept%20in%20Komet%20(part%203).svg"
+                                scale="80" align="center"/> 
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </para>
+        </section>
+        <section>
+            <title>Minimum Navigable Data</title>
+            <para>To see the minimum navigable data, the OWL transformation and Reasoner must be
+                run. First, the OWL transformation is run which takes the axiom syntax from the
+                transformation and creates the stated axioms and stated navigation. From there the
+                Reasoner can be run, which takes the stated axioms and produces the inferred axioms
+                and inferred navigation. At that point, the user can navigate the transformed data
+                in Komet in the concept navigator and see any relationship origins or destinations.
+                The ability to use the Maven pipeline gives the user the flexibility to take any
+                SNOMED CT, SNOMED CT- LOINC or LOINC origin data and generate all the minimum
+                navigable data in one step. </para>
+        </section>
+        <section>
+            <title>Integration Testing</title>
+            <para>Integration testing is conducted once the transformation is complete. This process
+                involves generating a protobuf file of the transformation and re-importing it back
+                into the system. Counts of concepts, patterns, and semantics are taken prior to the
+                export and compared to the counts once the data is re-imported. Additionally, data
+                values are compared post-import to the original data source to validate accuracy.
+                This can be achieved by comparing a list of complex concepts to the SNOMED CT
+                browser and against the transformed and viewable concepts in the Komet UI. Any
+                discrepancies are investigated, and the root cause is identified and documented,
+                enhancing the safety and reliability of our systems.</para>
+            <para>Over the past year, we have significantly expanded our integration testing
+                procedures to address the issues identified in our data transformation processes. We
+                have increased the scope of our integration tests to provide consistency across data
+                sets and standardize our practices. This expansion ensures that tests go through
+                both raw data and the outputted datastore, offering a wide breadth of testing to
+                ensure completeness and accuracy. Importantly, these tests are transformation
+                agnostic, meaning they can be applied to any data transformation process without
+                modification. We also implemented an automated testing framework that continuously
+                runs integration tests as part of our development and deployment pipeline. This
+                automation ensures that tests are consistently executed, reducing the risk of human
+                error and increasing the reliability of our testing processes. Enhanced monitoring
+                and reporting capabilities have been integrated into our testing framework, allowing
+                for real-time detection of issues and immediate feedback on test results, enabling
+                quicker identification and resolution of potential problems. Additionally, we have
+                incorporated regression testing to ensure that new changes do not negatively impact
+                existing functionalities, helping maintain the stability and reliability of our
+                systems as we introduce new features and improvements.</para>
+            <para>Currently, IT implementations utilize the Maven-failsafe-plugin version 3.5.2,
+                which focuses on the execution of integration tests and verifies their successful
+                execution during the building and compilation of the repository. Common integration
+                tests for any repository include IdentifierSemanticIT, DefinitionSemanticIT,
+                DescriptionSemanticIT, ConceptSemanticIT, and AxiomSemanticIT.</para>
+            <para>The expanded integration tests and the implementation of an automated testing
+                framework have significantly improved system safety in several ways. By increasing
+                test coverage and automating the testing process, we can detect issues early in the
+                development cycle. This proactive approach allows us to address potential problems
+                before they escalate, reducing the risk of system failures. Furthermore, integration
+                tests are executed consistently and accurately, eliminating the variability
+                associated with manual testing. This consistency enhances the reliability of our
+                testing processes and the overall safety of our systems. Automated testing minimizes
+                the risk of human error, which is a common source of issues in manual testing
+                processes. By relying on automated tests, we can ensure that all scenarios are
+                thoroughly tested without oversight. Real-time monitoring and reporting enable
+                quicker identification and resolution of issues, which is crucial for maintaining
+                system safety and preventing potential disruptions. Regression testing ensures that
+                new changes do not introduce new issues or negatively impact existing
+                functionalities, helping maintain the stability and reliability of our systems, even
+                as we continue to evolve and improve them. The end-product is better after being
+                more thoroughly tested, as more tests provide faster and earlier detection of bugs,
+                ensuring that the final output is of higher quality and reliability.</para>
+            <para>In summary, the expanded integration tests and automated testing framework have
+                significantly enhanced our ability to maintain high safety standards. These
+                improvements ensure that our data transformation processes are robust, reliable, and
+                capable of supporting the ongoing needs of our systems.</para>
+        </section>
+    </section>
+    <section>
+        <title>Findings</title>
+        <para>In this section, we will highlight the key insights and areas where systems can be
+            implemented to streamline the data transformation process and ensure robust testing
+            mechanisms. We will also explore the implications of these implementations for system
+            safety and knowledge management, with the goal of establishing a strong foundation for
+            interoperable data. By focusing on the integration of advanced technologies and
+            methodologies, we aim to enhance the accuracy, reliability, and efficiency of data
+            transformations. This approach not only mitigates potential risks but also promotes a
+            cohesive and comprehensive framework for managing and utilizing data across various
+            platforms and applications.</para>
+        <section>
+            <title>Automated Quality Assurance</title>
+            <para>Through the transformation process, a key finding was the necessity for an
+                automated and robust process to ensure data quality by conducting end-to-end
+                testing. Previously, manual validation of data was performed by comparing the source
+                of truth to the transformed data in Komet. Since the data could not be viewed at the
+                database level, it was challenging to determine whether discrepancies were due to
+                the transformation logic or the user interface. By implementing automated
+                integration testing, a comprehensive evaluation of the tools and processes enabled
+                us to identify the root causes of discrepancies. For instance, building round-trip
+                integration tests that evaluate all parts of the SNOMED CT origin files ensures
+                detailed data accuracy. We developed complex testing procedures that validate the
+                data from all aspects of the transformation, ensuring traceability of detected
+                discrepancies.</para>
+            <para>The current quality assurance (QA) measures being implemented within the
+                integration tests focus on validating the accuracy of the data obtained and
+                transformed from the origin files. This includes validating the semantics in the
+                Identifier, Definition, Description, Concepts, and Axioms.</para>
+            <para>Previously, running such test scripts took hours, but we were able to reduce the
+                time to mere seconds by customizing and optimizing the memory assigned to the Java
+                Virtual Machine (JVM) through the new approach to integration tests. This approach
+                has been applied to repositories such as SNOMED-CT-data and SNOMED-CT-LOINC-data and
+                will be implemented in other repositories like LOINC-data and more, per client’s
+                requirement. </para>
+        </section>
+        <section>
+            <title>Versioning of Data</title>
+            <para>Versioning of knowledge standards, such as those from SNOMED CT and LOINC, is a
+                crucial aspect of the data transformation process that must be carefully considered.
+                Data can exist in multiple versions, which can vary significantly based on
+                publication dates and the countries releasing the data. For example, SNOMED CT has
+                different release dates and versions tailored for different countries, reflecting
+                the unique healthcare terminologies and requirements of each region. Additionally,
+                some knowledge standards are still under development. When sharing and validating
+                data transformations, it is essential to have a standardized method for naming and
+                sharing the data; otherwise, understanding the origin of the data becomes virtually
+                impossible. By creating an automated system for versioning starter data,
+                transformation data, and code, system safety can be more easily implemented. Maven,
+                a build automation tool, utilizes plugins to allow users to pull data or code from a
+                centralized repository. Similarly, these plugins enable users to develop different
+                variations of the data through standard naming conventions and metadata files. These
+                variations can then be published to a central repository, making them available to
+                other users and providing additional data to other data models or projects. This
+                project structure facilitates easier management of changesets and existing
+                transformations by including a MANIFEST.MF document, which supplies additional
+                context and information.</para>
+        </section>
+        <section>
+            <title>Reasoning Knowledge Standards</title>
+            <para>The Maven pipeline architecture offers significant advantages by addressing and
+                resolving several issues that were prevalent in previous data transformation
+                processes. One of the primary benefits is the automation of data reasoning, which
+                significantly reduces the complexity and manual effort required. This automation
+                ensures that errors in the data can be avoided and managed more effectively when
+                identified, thereby enhancing the robustness of data modeling.</para>
+            <para>As part of IKM, the use of specific technologies has enabled the prevention and
+                management of data errors. The reasoner, a critical component of this architecture,
+                creates inferred axioms that prevent the duplication of concepts and validate the
+                uniqueness of each concept. This capability was particularly beneficial during the
+                recent SNOMED – LOINC collaboration data transformation, where it also identified
+                areas for data expansion.</para>
+            <para>During the OWL transformation process, an orphaned concept was identified,
+                highlighting the complexity of the original data syntax. The OWL transformation
+                struggled to define the relationship of this entity to its parent concept. This
+                issue underscores the opportunity to leverage more of the OWL syntax to parse the
+                original files more comprehensively and model additional data. Furthermore, the
+                ability to validate transformations is enhanced by using reasoner results and
+                comparing them to the SNOMED CT browser. This comparison involves validating the
+                parent and child concepts to ensure they are accurately represented and match the
+                expected outcomes.</para>
+            <para>In summary, the Maven pipeline architecture allows for automatic reasoning of
+                data, which not only reduces the complexity and manual workload but also enhances
+                the accuracy and robustness of data transformations. This approach ensures that data
+                errors are managed effectively, and the overall data modeling process is more
+                reliable and efficient.</para>
+        </section>
+        <section>
+            <title>Dependency Management</title>
+            <para>When completing the transformation of SNOMED CT-LOINC collaboration data, it came
+                to the team’s attention that the version of SNOMED CT used was the international
+                version. This discrepancy arose during the transformation because our technology was
+                able to identify a missing concept in the SNOMED CT US version. By having a
+                repeatable process for transformation, the discrepancy was easily detected. This
+                highlights the importance of having a robust dependency management system in
+                place.</para>
+            <para>Dependency management is crucial in ensuring that all components and versions of
+                data standards are correctly aligned and used during transformations. The Maven
+                pipeline architecture, with its automated processes, helps maintain consistency and
+                accuracy by managing dependencies effectively. This reduces the risk of using
+                incorrect versions of data standards, which can lead to significant errors in the
+                transformation process.</para>
+            <para>The identification of the missing concept underscores the need for a process for
+                reporting these discrepancies and the necessity for better documentation in the
+                specifications. Developers rely heavily on accurate and comprehensive specifications
+                to perform successful transformations. Therefore, having the most accurate
+                information is essential for a successful transformation.</para>
+        </section>
+    </section>
+    <section>
+        <title>Conclusion and Next Steps</title>
+        <para>In conclusion, the process of integrating knowledge is inherently complex and presents
+            numerous opportunities for errors to be introduced. However, by leveraging advanced
+            technology and the implementation of a standardized data transformation process,
+            significant strides have been made in preventing system safety issues and identifying
+            areas for further improvement.</para>
+        <para>As more data transformations are completed, the standard operating procedures for
+            Tinkar Importing and Data Transformation will be further refined, ensuring quality and
+            consistency. Notably, we were able to identify errors within the Tinkar core codebase by
+            utilizing the Maven pipeline to create a dataset based on the latest SNOMED CT
+            international origin data. The larger size of the origin data, which was 5-10% greater
+            than previous SNOMED CT editions, exposed inefficiencies within our internal
+            transformation processes. The ease of use of the pipeline allowed a member from another
+            team to process the SNOMED CT origin data, detect a problem, and enable our team to
+            enhance the efficiency of our code in processing all datasets. This task would have been
+            more tedious and time-consuming without the automated pipeline.</para>
+        <para>Additionally, we will focus on optimizing the performance of our transformation
+            processes to handle larger datasets more efficiently and continue leveraging the
+            automated pipeline to detect and address inefficiencies promptly. These steps will help
+            us maintain high-quality data transformations and improve overall system reliability and
+            efficiency.</para>
+    </section>
+    <section>
+        <title>References</title>
+        <orderedlist>
+            <listitem>
+                <para>SNOMED CT Browser [Internet]. [cited 2025 Feb 19]. Available from: <link
+                        xlink:href="https://browser.ihtsdotools.org/"
+                        >https://browser.ihtsdotools.org/</link></para>
+            </listitem>
+        </orderedlist>
+    </section>
+</chapter>

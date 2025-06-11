@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?> 
+<chapter xmlns="http://docbook.org/ns/docbook" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1"> 
+    <title>Summary of Findings - Safety Systems Framework for Knowledge Management and Advanced
+        Analytics</title> 
+    <section> 
+        
+        <title>Executive Summary</title>
+        <para>Real-World Data (RWD) and Real-World Evidence (RWE) are frequently low-quality despite
+            FDA efforts to ensure rigorous labeling for devices, prescription drugs, and over the
+            counter (OTC) medications [1]. These labels may include Medication Guides, Patient
+            Package Inserts, and Instructions for Use and are available with the device or drug.
+            Information within these labels could be used as a resource to improve the quality and
+            utility of RWD and RWE if properly processed. </para>
+        <para>These labels are frequently the primary source of guidance associated with a Food and
+            Drug Administration (FDA) regulated product; however, the information in these labels is
+            underutilized [2]. Product users and prescribers might avoid or have a difficult time
+            with these labels because they can be lengthy or take the form of a high-density,
+            multi-panel, origami-like leaflet. The language used on these labels often includes
+            complex medical terminology and jargon that can be difficult for users to understand.
+            The layout and organization of the information can also contribute to the difficulty, as
+            important details may be buried within dense blocks of text or presented in a confusing
+            manner. The necessity to include extensive information to comply with regulatory
+            requirements can result in overcrowded labels, where critical usage instructions and
+            warnings are not easily distinguishable. Using these labels to directly improve
+            health-care quality and subsequent RWD quality is even more challenging secondary to the
+            unencoded state of these labels. </para>
+        <para>Secondary benefits that could be derived from encoding the knowledge contained within
+            these labels—such as codifying indications for use, proper data encoding of an implanted
+            device, or proper encoding of test results generated from a regulated instrument and
+            test kit—are unrealized because the underlying knowledge remains largely in a textual
+            form intended for human consumption, rather than also being provided in a structured and
+            encoded form optimized for clinical, regulatory, and public health decision making,
+            automated decision support, and RWD generation and quality assurance [2]. </para>
+        <para>For instance, having specific manufacturer, method, and target information for a test
+            encoded in both human-readable and machine processable ways could help better understand
+            the significance of test performance in the community during viral evolution and
+            changing disease prevalence, and can also help ensure that the underlying RWD is
+            properly encoded and transmitted. The following example shows a textual example of the
+            types of knowledge that are contained within these labels:</para>
+        <para><emphasis role="italic">The product is a lateral flow immunochromatographic assay
+                intended for in vitro rapid, simultaneous qualitative detection and differentiation
+                of influenza A and influenza B nucleoprotein antigens and SARS-CoV-2 nucleocapsid
+                antigen directly from anterior nasal swab specimens of individuals with signs and
+                symptoms of respiratory infection consistent with COVID-19 [3]</emphasis></para>
+        <para>Because these types of narrative text cannot easily be ingested by Electronic Health
+            Records (EHR), Laboratory Information Systems (LIS), public health databases, and other
+            systems without the help of extensive manual intervention or inconsistently trained
+            Natural Language Processing (NLP) tools at the organizational level, Real World Data
+            (RWD) across the entire ecosystem—from the patient to the regulatory levels—is
+            represented in inconsistent and often erroneous ways.</para>
+        <para>If FDA product knowledge were instead encoded into a machine-processible knowledge
+            representation, health IT and other systems could leverage this knowledge in
+            increasingly powerful ways, such as generating more accurate and insightful clinical
+            decision support alerts, more accurate predictive population health analytics, and
+            faster, more informed regulatory decision making.</para> 
+        
+    </section>
+    <section>
+        <title>Background</title>
+        <section>
+            <title>Laboratory Interoperability Device Reference (LIDR) Summary</title>
+            <para>Laboratory Real-World Data (RWD) is encoded inconsistently and incompletely, which
+                limits its value for clinical, regulatory, and public health and creates patient
+                safety risks. To improve the quality and interoperability of laboratory data, Unique
+                Device Identifiers (UDIs) link each In-vitro Diagnostic Device (IVD) to a database
+                that contains metadata about the test, including the units of measurement, LOINC®
+                code, and more. This database, known as Laboratory Interoperability Device Reference
+                (LIDR), ensures that laboratories can be a source of safe, high-quality, and
+                interoperable RWD, suitable for use in regulatory submissions, review, and
+                post-market surveillance as well as into clinical care, public health, and coverage
+                determination. By implementing Artificial Intelligence (AI) tools in conjunction
+                with the LIDR repository, a streamlined and validified knowledge base can be created
+                and maintained to equip clinicians with easy access to decision guiding resources. A
+                shared knowledge base, as shown in Figure 1, can be used to simplify the
+                relationships across disparate knowledge standards by extracting common elements and
+                representing them in a common form. </para>
+            <figure xml:id="NameofImageWithNoSpaces"> 
+                <title>Shared Knowledge Base Overview</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/4.4.1.1.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject>
+                <para>These principles of building a shared knowledge base can also be applied to
+                    healthcare terminology where hierarchal concepts and their relationships can be
+                    represented in this form. New concepts can build on this pre-existing
+                    representation. AI can aid in extracting these unique elements as well as the
+                    meaning and purpose of their respective concepts in a reproducible
+                    format.</para> 
+            </figure> 
+        </section>
+        <section>
+            <title>Overview of Approach</title>
+            <para>AI can improve the granularity, consistency, and overall quality of data generated
+                by and about FDA approved products by translating the existing, human-readable FDA
+                product labels into a machine-processable, proof-of-concept knowledge base that can
+                be published by the FDA and made available to the entire healthcare ecosystem. </para>
+            <para>Consider the lateral flow assay example provided in the previous section, the
+                textual information can be machine processed to propose the best way to encode data
+                derived from the referenced assay, which can then be reviewed by subject matter
+                experts within a rigorous statistical process control framework [4]. The statement
+                that the assay detects the SARS-CoV-2 nucleocapsid antigen can be linked to the
+                Global Substance Registration System entry,<superscript/>and if also associated with
+                the FDA Unique Device Identifier in the resulting RWD, can enhance the ability to
+                capture high-quality data, and to use complete information about the product for
+                pre-market, post-market, clinical research, and other public health purposes [5]. </para>
+            <para>Machine learning and large language models can be applied to FDA product labels to
+                generate proposed facts (assertions and propositions) and represent those facts as
+                knowledge graphs (a <link
+                    xlink:href="https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)"
+                    >graph</link>-structured <link
+                    xlink:href="https://en.wikipedia.org/wiki/Data_model">data model</link>), which
+                can be processed by machine reasoners and included in analytic processes.
+                Statistical process control with expert human review then assures the quality of
+                generated facts and ensure the resulting statistics can deliver a curated knowledge
+                resource with the statistical quality assurance and validity needed to function as a
+                reliable training set for machine learning and a safe and effective resource for
+                clinical, regulatory, and public-health decision making. </para>
+            <para>These knowledge graphs will be represented using standard encoding systems, such
+                as the clinical terminologies used to represent RWD (Logical Observation
+                Identifiers, Names, and Codes [LOINC®], Systematized Nomenclature of Medicine
+                Clinical Terms [SNOMED CT®], RxNorm®, and the National Drug Code [NDC] Codes). These
+                knowledge graphs will also include representations of supporting systems, such as
+                the FDA’s Global Substance Registration System (GSRS), which generates Unique
+                Ingredient Identifiers (UNIIs) used in electronic listings like DailyMed and other
+                regulatory activities throughout the product lifecycle [5]. These activities include
+                clinical trial phases, product marketing, and post-market surveillance. Existing,
+                FDA-approved devices, medications, biologics, and other products will be used to
+                serve as a proof-of-concept to gauge the accuracy and feasibility of converting
+                existing data into a machine processable knowledge representation. Statistical
+                Independent Verification and Validation (IV&amp;V) methodologies would be employed
+                with product manufacturers and subject matter experts (SME) to quantify the accuracy
+                of the AI tool and to also support continuous process improvement [6]. </para>
+            <para>Eventually, these knowledge graphs could be integrated into device, biologic, and
+                medication extensions to SNOMED®, LOINC®, and RxNorm® as part of the FDA SHIELD
+                program’s effort to provide integrated knowledge management and integrated knowledge
+                exchange capabilities. As extensions, this encoded knowledge can be made generally
+                available and consumable by the FDA, other HHS and health-care focused agencies,
+                health IT providers, health-care providers, and the citizenry at large. </para>
+            <para>General knowledge organized by domain, written in a formal language, and combined
+                with expert curation and human validation of generated knowledge will allow
+                enterprises to tap into and utilize knowledge previously locked away in disparate
+                documents, sources, and systems. In the process, they enable faster and more
+                accurate decision-making. </para>
+        </section>
+    </section>
+    <section>
+        <title>Methods</title>
+        <section>
+            <title>Objectives and Purpose</title>
+            <para>This AI project will open the door for extensive secondary use of knowledge
+                derived from FDA product labels that will provide insights and information
+                previously either inaccessible—or of poor or inconsistent quality—due to the high
+                resource and time commitment needed to manually query data. </para>
+            <para>The team would first work to develop a process to transcode data from the existing
+                human-readable and text-based files into a highly structured, machine-readable, and
+                standardized format which the FDA SHIELD program has been developing as part of
+                their HL7 standards activities [7]. AI models would need to be trained on existing
+                FDA labels for approved products and existing medical terminology standard
+                specifications (e.g., SNOMED®, LOINC®, RxNorm®, etc.), and a small subset of FDA
+                products (drugs, devices, biologics, etc.) would need to be selected for testing and
+                creation of a proof of concept to validate processes and begin statistical process
+                control efforts. </para>
+            <para>Once the knowledge base has matured and grown, organizations and individuals
+                submitting products to the FDA centers for review can use this resource to identify
+                a standardized and repeatable way to represent the pertinent medical terminology
+                concepts, codes, and information associated with their products. This information
+                can then be shared with manufactures, health systems, and users to drastically
+                improve the standardization and representation of FDA-approved products across the
+                healthcare ecosystem and the quality, interoperability, and queryability of data
+                associated with these products. </para>
+            <para>Finally, once this resource has been approved for public use, healthcare
+                professionals will be able to query the knowledge base to gain new insight into
+                various healthcare products, like understanding the specific LOINC code to use for a
+                laboratory test, the excipient ingredients in each medication, and the correct units
+                of measure to report the results of a test.</para>
+        </section>
+        <section>
+            <title>Systems Safety Framework</title>
+            <para>To incorporate AI capabilities in LIDR database management, utilizing a system
+                safety framework to diagnose, control, and solve safety hazards can proactively
+                identify and mitigate hazards before they occur. This framework analyzes and
+                considers the dependencies present between components of the system and their
+                culmination to produce safety hazards. It details <emphasis role="italic"
+                    >how</emphasis> hazards occurred with the surrounding context, not just simply
+                what caused them. </para>
+            <para>System Safety analyses the hierarchical control structures with a system using a
+                top-down approach. Differing from other transitional forms of hazard management,
+                Systems Safety views the pieces of systems and systems as more than a linear chain
+                of events and rather accounts for complexities that other approaches do not. </para>
+            <para>It is important for this change effort to be synchronized, rigorous, and optimized
+                to achieve the desired goals at scale. To facilitate the type of change required to
+                build a machine-processible knowledge representation, it is necessary to embrace a
+                system engineering approach for redesigning the current health data ecosystem to be
+                more trustworthy, reliable, and safe. Taking a system approach, we have been able to
+                address safety and quality management in a holistic manner – instead of a fragmented
+                approach which could produce small improvements in one part of the system while
+                simultaneously jeopardizing quality in other parts of the system.</para>
+        </section>
+        <section>
+            <title>Required Data and Information</title>
+            <para>Existing FDA Product labeling information, in a variety of forms, would need to be
+                collected from different sources. In most cases, this information is publicly
+                available [7]. Some of these files are stored in the FDA’s Structured Product
+                Labeling (SPL) archive and can be accessed via the FDALabel or the National Library
+                of Medicine’s DailyMed web-based applications [8,9].<superscript/></para>
+        </section>
+        <section>
+            <title>Potential Risks</title>
+            <para>This approach does not pose any direct safety issues to patients, the public, or
+                general users beyond what is present in the current process. While any errors or
+                incorrect entries in the standardized representation of these labels should be
+                caught by FDA during the review process, submitters are strongly encouraged to
+                manually review and verify these inputs for accuracy and applicability. </para>
+            <para>Embarking on this effort and adding statistical process control to validate the
+                encoding and curation of these labels will improve the quality, safety, and
+                effectiveness of FDA product labels and of the products associated with these
+                labels. </para>
+        </section>
+    </section>
+    <section>
+        <title>Benefits of Approach</title>
+        <para><anchor xml:id="Toc121912435"/>This approach will benefit a wide range of individuals
+            in the healthcare ecosystem at every stage of the Total Product Lifecycle (TPLC) [10].
+            By providing a highly structured knowledge base that captures critical information
+            associated with FDA-approved products and provides guidance on how to encode this
+            information, FDA can help to ensure safer patient care through improved RWD quality. </para>
+        <para>The first group that will benefit are the individuals, groups, or organizations that
+            are submitting medical products to the various centers at FDA for review and approval.
+            This proposition will help them represent pertinent information regarding their product
+            in a standardized way that can be shared with other organizations to improve data
+            capture and secondary use. </para>
+        <para>The other organizations or systems using their product, like health informaticists
+            encoding a new medication into their electronic health record system or laboratories
+            reporting tests and test results, will benefit by using the knowledge base to gain
+            access to clear, authoritative guidance and information for how to encode data generated
+            by or about FDA-approved products. </para>
+        <para>Once product developers and health systems have standardized the representation of
+            their products, FDA and the various centers that perform review processes, like the
+            Center for Drug Evaluation and Research (CDER), the Center for Biologics Evaluation and
+            Research (CBER), the Center for Veterinary Medicine (CVM), the Center for Devices and
+            Radiological Health (CDRH) will have more accurate, reliable, and impactful RWD for use
+            in review and determination. By converting human-readable, text-based information into a
+            more machine-processable format and standardizing the representation of the devices,
+            medications, biologics, and products they are reviewing, these centers will have precise
+            information to gather insights and perform expansive analyses in a more resource and
+            cost-efficient way. </para>
+        <para>This approach also opens the door for extensive secondary use and could lead to a
+            drastic increase in the use and impact of data associated with FDA-approved products,
+            while simultaneously improving the efficiency and accuracy of encoding said information.
+            Ultimately, the improvements to the quality of data being used by these various
+            healthcare professionals, organizations, and FDA will lead to improved patient outcomes,
+            more informed policy making, and faster reactions to emerging health conditions as
+            reliable and trustworthy data is more readily accessible.</para>
+        <para>Finally, this effort would increase the output quality of other healthcare-based AI
+            tools. As the knowledge base we propose is increasingly used by players in the
+            healthcare ecosystem, the consistency, granularity, and reproducibility of RWD will
+            improve, which will thereby enable secondary-use, custom AI tools (EHR AI-based Clinical
+            Decision Support) and mega-LLMs (e.g., ChatGPT) to be trained on better inputs and
+            generate more useful, actionable outputs.</para>
+    </section>
+    <section>
+        <title>Discussion</title>
+        <para>Tools developed through this effort will be highly leveraged, providing widely
+            available—as well as high value—knowledge resources while only requiring a limited set
+            of expert reviewers to curate the knowledge. In addition, the provided knowledge
+            resources can be used in training sets, and in test sets, further leveraging the upfront
+            investment. Hundreds of thousands of healthcare professionals and citizens will be able
+            to use the knowledge base and associated products. </para>
+        <para>First, experts in data representation and SMEs from the CDER, CBER, CVM, CDRH, and
+            others are anticipated to use our tool to verify and validate the accurate conversion of
+            human-readable data into the highly structured computer-readable knowledge base. Once
+            the tool and knowledge base have matured, manufacturers could directly use these tools
+            to encode their product labels as part of their submission to the FDA. These tools could
+            reduce the manufactures documentation burden, improve the quality and utility of the
+            submitted application, and speed time to market. </para>
+        <para>The FDA, organizations, clinicians, researchers, laboratorians, health policy experts,
+            informaticists and other healthcare professionals around the country are expected to
+            query the resulting FDA regulated product knowledge base as a source of critical
+            information on medications, tests, biologics, and devices and as a guide for encoding
+            FDA-approved products and associated information. </para>
+        <para>This tool is center-agnostic and would impact medications, biologics, devices, and
+            other products reviewed by CDER, CBER, CVM, and CDRH.</para>
+        <section>
+            <title><anchor xml:id="Toc192080261"/>Quantitative Impact:</title>
+            <para>As of November 18th, 2024, the FDA, and its respective centers oversee roughly
+                175,000 medical devices, 97,000 over-the-counter medications, 58,000 prescription
+                drugs and biological products, 3,000 animal medications, and more
+                [11].<superscript/></para>
+            <para>This approach would provide guidance for how to encode all relevant information
+                associated with these products in a standardized and repeatable way that replaces
+                the current unstandardized and manual process of encoding FDA-approved product
+                information. It would provide guidance on the existing medications, biologics,
+                devices, and products to ensure they are accurately represented and encoded around
+                the country and provide recommendations for novel products that have not been
+                reviewed previously. FDA’s CDER approved 55 new drugs in 2023, all of which would
+                benefit from knowledge base entries that representing product information and
+                guidance on how to represent them in RWD and in analytics [12]. Detailing how to
+                encode these products would then support secondary use of the data in a way that
+                would save users countless hours and extensive manual review as they could easily,
+                accurately, and efficiently query a large knowledge base for pertinent and impactful
+                information.</para>
+            <para>Improving the quality of the RWD used by FDA will also have substantial financial
+                benefits as poor data quality costs organizations, on average, $12.9 million per
+                year and the US $3.1 trillion per year [13,14]. Perhaps the greatest quantitative
+                impact would be on patient safety. Improving the quality of data could reduce the
+                250,000 annual patient deaths cause by preventable medical and electronic health
+                record errors [15].<superscript/></para>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc192080262"/>Qualitative Impact:</title>
+            <para>This approach would improve the quality, interoperability, and reusability of data
+                collected by the FDA and would enhance the use and impact of RWD. </para>
+            <para>By developing a process to standardize how devices, products, medications, tests,
+                and pertinent information are encoded, the FDA and other organizations will gain
+                unprecedented insight into the data associated with these products. Currently, these
+                products are encoded in non-standardized and suboptimal ways, which limits the
+                ability to query and collect comprehensive and complete information on a product. If
+                the query is not manually built in an extremely accurate way to capture all the
+                potential representations, the results could be incomplete and provide only a
+                partial picture. </para>
+            <para> Implementing AI would reduce the variation in representation of data about or
+                generated by FDA-approved products and would allow users to query our knowledge base
+                to extract trustworthy information, trends, and changes to inform decision making
+                and the delivery of care. This proposal would open the door for secondary use that
+                is currently not viable due to suboptimal data representation. It would also
+                drastically improve the interoperability and reusability of data, as all parties in
+                the healthcare ecosystem would have the same understanding and representation of a
+                product.</para>
+        </section>
+    </section>
+    <section>
+        <title>References</title>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para>U.S. Food and Drug Administration. (2021, August 27). Considerations for
+                        the use of real-world data and real-world evidence to support regulatory
+                        decision-making for drug and biological products. FDA. 
+                    <link
+                        xlink:href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/considerations-use-real-world-data-and-real-world-evidence-support-regulatory-decision-making-drug"
+                        >https://www.fda.gov/regulatory-information/search-fda-guidance-documents/considerations-use-real-world-data-and-real-world-evidence-support-regulatory-decision-making-drug</link>
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>U.S. Food and Drug Administration. (n.d.). FDA's labeling resources for
+                        human prescription drugs. FDA. <link
+                            xlink:href="https://www.fda.gov/drugs/laws-acts-and-rules/fdas-labeling-resources-human-prescription-drugs"
+                            >https://www.fda.gov/drugs/laws-acts-and-rules/fdas-labeling-resources-human-prescription-drugs</link></para>
+                </listitem>
+                <listitem>
+                    <para>U.S. Food and Drug Administration. (2023, September). Mifepristone REMS
+                        program: Patient agreement form. FDA. <link
+                            xlink:href="https://www.fda.gov/media/177984/download"
+                            >https://www.fda.gov/media/177984/download</link></para>
+                </listitem>
+                <listitem>
+                    <para>National Center for Advancing Translational Sciences. (n.d.). Substance
+                        record for d3a9972a-392a-4ce8-b10f-d1120b4b393b. Global Substance
+                        Registration System. <link
+                            xlink:href="https://gsrs.ncats.nih.gov/ginas/app/ui/substances/d3a9972a-392a-4ce8-b10f-d1120b4b393b"
+                            >https://gsrs.ncats.nih.gov/ginas/app/ui/substances/d3a9972a-392a-4ce8-b10f-d1120b4b393b</link></para>
+                </listitem>
+                <listitem>
+                    <para>U.S. Food and Drug Administration. (n.d.). FDA's global substance
+                        registration system. FDA. <link
+                            xlink:href="https://www.fda.gov/industry/fda-data-standards-advisory-board/fdas-global-substance-registration-system"
+                            >https://www.fda.gov/industry/fda-data-standards-advisory-board/fdas-global-substance-registration-system</link></para>
+                </listitem>
+                <listitem>
+                    <para>U.S. Food and Drug Administration. (2015, July). Analytical procedures and
+                        methods validation for drugs and biologics. FDA. <link
+                            xlink:href="https://www.fda.gov/files/drugs/published/Analytical-Procedures-and-Methods-Validation-for-Drugs-and-Biologics.pdf"
+                            >https://www.fda.gov/files/drugs/published/Analytical-Procedures-and-Methods-Validation-for-Drugs-and-Biologics.pdf</link></para>
+                </listitem>
+                <listitem>
+                    <para>U.S. Food and Drug Administration. (n.d.). Structured product labeling
+                        resources. FDA. <link
+                            xlink:href="https://www.fda.gov/industry/fda-data-standards-advisory-board/structured-product-labeling-resources"
+                            >https://www.fda.gov/industry/fda-data-standards-advisory-board/structured-product-labeling-resources</link></para>
+                </listitem>
+                <listitem>
+                    <para>U.S. Food and Drug Administration. (n.d.). FDA labels by application
+                        number. FDA. <link xlink:href="https://labels.fda.gov/applicationnumber.cfm"
+                            >https://labels.fda.gov/applicationnumber.cfm</link></para>
+                </listitem>
+                <listitem>
+                    <para>National Library of Medicine. (n.d.). DailyMed. U.S. National Institutes
+                        of Health. Retrieved [today's date], from <link
+                            xlink:href="https://www.dailymed.nlm.nih.gov/dailymed/index.cfm"
+                            >https://www.dailymed.nlm.nih.gov/dailymed/index.cfm</link></para>
+                </listitem>
+                <listitem>
+                    <para>U.S. Food and Drug Administration. (n.d.). Total product life cycle
+                        advisory program (TAP). FDA. <link
+                            xlink:href="https://www.fda.gov/medical-devices/how-study-and-market-your-device/total-product-life-cycle-advisory-program-tap"
+                            >https://www.fda.gov/medical-devices/how-study-and-market-your-device/total-product-life-cycle-advisory-program-tap</link></para>
+                </listitem>
+                <listitem>
+                    <para>U.S. Food and Drug Administration. (n.d.). What does FDA regulate? FDA.
+                            <link
+                            xlink:href="https://www.fda.gov/about-fda/what-we-do/what-does-fda-regulate"
+                            >https://www.fda.gov/about-fda/what-we-do/what-does-fda-regulate</link></para>
+                </listitem>
+                <listitem>
+                    <para>U.S. Food and Drug Administration. (n.d.). Novel drug approvals for 2023.
+                        FDA. <link
+                            xlink:href="https://www.fda.gov/drugs/novel-drug-approvals-fda/novel-drug-approvals-2023"
+                            >https://www.fda.gov/drugs/novel-drug-approvals-fda/novel-drug-approvals-2023</link></para>
+                </listitem>
+                <listitem>
+                    <para>Wealth DCI. (2023). The hidden cost of bad data [White paper]. <link
+                            xlink:href="https://www.wealth-dci.com/wp-content/uploads/2023/01/dci-whitepaper-the_hidden_cost_of_bad_data.pdf"
+                            >https://www.wealth-dci.com/wp-content/uploads/2023/01/dci-whitepaper-the_hidden_cost_of_bad_data.pdf</link></para>
+                </listitem>
+                <listitem>
+                    <para>Anodot. (2022, March 15). The price you pay for poor data quality. <link
+                            xlink:href="https://www.anodot.com/blog/price-pay-poor-data-quality/"
+                            >https://www.anodot.com/blog/price-pay-poor-data-quality/</link></para>
+                </listitem>
+                <listitem>
+                    <para>Mack, H. (2018, February 22). Medical errors are the third-leading cause
+                        of death in America. <link>CNBC.
+                            https://www.cnbc.com/2018/02/22/medical-errors-third-leading-cause-of-death-in-america.html</link></para>
+                </listitem>
+            </orderedlist>
+        </para>
+    </section> 
+    
+</chapter> 
