@@ -10,14 +10,29 @@
             <orderedlist>
                 <listitem>
                     <para>Use the following link to <link
-                            xlink:href="https://github.com/ikmdev/komet/releases">download the
-                            latest Komet release build</link> for your appropriate operating
-                        system</para>
+                        xlink:href="https://github.com/ikmdev/komet/releases">access and view
+                        the latest Komet release builds.</link> Each release will include
+                        release notes that detail what updates were made.</para>
+                    <figure xml:id="KometReleaseVersion">
+                        <title>Komet Release Version</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata
+                                    fileref="../../../../book/src/docbkx/images/Komet%20Release%20Version.svg"
+                                    scale="30" align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Scroll down on this webpage to the latest release's "Assests" and select
+                        the installer based on your operating system and central processing unit
+                        chip, when appropriate (Mac M1 versus Mac Intel chip).</para>
                     <figure xml:id="KometDownload">
                         <title>Komet Download</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../src/docbkx/images/Komet%20Download.svg" scale="30"
+                                <imagedata fileref="../../../../book/src/docbkx/images/Komet%20Download.svg" scale="30"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -40,14 +55,18 @@
                 <listitem>
                     <para>From your browser’s downloads, open the Komet Installer file</para>
                     <figure xml:id="KometInstallerFile">
-                        <title>Komet Installer File</title>
+                        <title>Komet Windows Installer File</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../src/docbkx/images/Komet%20Installer%20File.svg" scale="60"
+                                <imagedata fileref="../../../../book/src/docbkx/images/Komet%20Installer%20File.svg" scale="60"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
+                </listitem>
+                <listitem>
+                    <para>If you experience a windows defender or other similar anti-virus pop-ups,
+                        proceed through the required steps to confirm the download</para>
                 </listitem>
                 <listitem>
                     <para>A message will pop up asking if you want to run the Komet Installer File,
@@ -56,7 +75,7 @@
                         <title>Run Komet</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../src/docbkx/images/Run%20Komet.svg" scale="60"
+                                <imagedata fileref="../../../../book/src/docbkx/images/Run%20Komet.svg" scale="60"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -69,16 +88,17 @@
                         <title>Komet Mac Installer File</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../src/docbkx/images/Komet%20Mac%20Installer%20File.svg"
+                                <imagedata fileref="../../../../book/src/docbkx/images/Komet%20Mac%20Installer%20File.svg"
                                     scale="20" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
                 </listitem>
                 <listitem>
-                    <para>Once complete, nothing will automatically pop-up, so you will need to
-                        verify the install was successful by searching in your applications folder
-                        or your Operating System’s search feature for the Komet app</para>
+                    <para>Once complete, you should see a pop-up, but if nothing automatically
+                        appears, you can verify the install was successful by searching in your
+                        applications folder or your Operating System’s search feature for the Komet
+                        app</para>
                 </listitem>
             </orderedlist>
         </para>
@@ -89,17 +109,19 @@
             <orderedlist>
                 <listitem>
                     <para>For Windows, go to your search bar or apps folder and search for “Komet”.
-                        For Mac, go to your applications folder, search for Komet, and run the
-                        desktop version Komet contributed application.</para>
+                        For Mac, go to your applications folder or press Command+space, search for
+                        Komet, and run the latest desktop version of Komet. The application will be
+                        named Komet [version number], so for example "Komet 1.48.0"</para>
                 </listitem>
+                
                 <listitem>
-                    <para>The below Komet Startup window will open. Change data source to “Open
-                        SpinedArrayStore”</para>
+                    <para>The below Komet Startup window will open. Ensure the Data Source select is
+                        “Open SpinedArrayStore”</para>
                     <figure xml:id="OpenSpinedArrayStore">
                         <title>Open SpinedArrayStore</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../src/docbkx/images/Open%20SpinedArrayStore.svg" scale="60"
+                                <imagedata fileref="../../../../book/src/docbkx/images/Open%20SpinedArrayStore.svg" scale="60"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -116,11 +138,31 @@
                 </listitem>
                 <listitem>
                     <para>Right click the desired data zip file and select "Unzip Here" so the data
-                        is stored in the Solor folder</para>
+                        is stored in the Solor folder. Ensure the unzipped data files are placed
+                        directly in the unzipped data folder, not inside any subfolders within the
+                        unzipped data folder</para>
+                    <figure xml:id="UnzippedDataFolder">
+                        <title>Unzipped Data Folder</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Unzipped%20Data%20Folder.svg" scale="30"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
                 </listitem>
                 <listitem>
                     <para>Exit and re-open Komet. Change the data source to “Open SpinedArrayStore”;
-                        your data source should appear</para>
+                        your data source should now appear</para>
+                    <figure xml:id="NewData">
+                        <title>New Data</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/New%20Data.svg" scale="30"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
                 </listitem>
                 <listitem>
                     <para>Select the data source you would like to use and click “Ok” in the bottom
@@ -132,7 +174,7 @@
                         <title>Komet Interface</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../src/docbkx/images/Landing%20Page.svg" scale="30"
+                                <imagedata fileref="../../../../book/src/docbkx/images/Landing%20Page.svg" scale="30"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -150,7 +192,7 @@
                         <title>New Journal</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../src/docbkx/images/New%20Journal%20Panel.svg" scale="45"
+                                <imagedata fileref="../../../../book/src/docbkx/images/New%20Journal%20Panel.svg" scale="45"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -167,16 +209,17 @@
         <para>
             <orderedlist>
                 <listitem>
-                    <para>Select the magnifying glass icon at the top of the left-hand bar</para>
+                    <para>To find a concept, first open a new journal, or in an existing and open
+                        journal, and select the comment icon in the left-hand bar</para>
                 </listitem>
                 <listitem>
-                    <para>Type the keyword or concept name into the "enter search query" bar at the
-                        top of the left-hand panel to find a concept</para>
+                    <para>Type the keyword or concept name into the search bar at the top of the
+                        left-hand panel to find a concept</para>
                     <figure xml:id="ConceptSearch">
                         <title>Komet Concept Search</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../src/docbkx/images/Concept%20Search.svg" scale="30"
+                                <imagedata fileref="../../../../book/src/docbkx/images/Concept%20Search.svg" scale="30"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -184,7 +227,9 @@
                 </listitem>
                 <listitem>
                     <para>Results containing the keyword will populate in the field below the search
-                        bar, with keywords highlighted in green</para>
+                        bar. You can also use a "+" symbol in front of each word when you know
+                        exactly what concept you are searching for to return only exact matches
+                        (e.g., +chronic +lung +disease)</para>
                 </listitem>
             </orderedlist>
         </para>
@@ -192,22 +237,24 @@
             <title>How to View Details</title>
             <orderedlist>
                 <listitem>
-                    <para>To view a concept, double click on a result to view more details in the
-                        center panel </para>
+                    <para>To view a concept, double click on a search result, drag the concept to
+                        the center panel, or right click a concept and select "Populate Concept
+                        Option"</para>
                 </listitem>
                 <listitem>
-                    <para>You can click the magnifying glass icon at the top of the left-hand bar
-                        again to minimize the search panel for more space (this can be done for any
-                        icon in the left-hand bar)</para>
+                    <para>You can click the comment icon at the top of the left-hand bar again to
+                        minimize the search panel for more space (this can be done for any icon in
+                        the left-hand bar)</para>
                 </listitem>
                 <listitem>
-                    <para>Use the icons at the top of the concept window to view various details and
-                        information about the selected concept</para>
+                    <para>Toggle the "Properties" button on and use the icons at the top right-had
+                        side of the concept window to view various details and information about the
+                        selected concept</para>
                     <figure xml:id="ViewConceptDetails">
                         <title>View Concept Details</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../src/docbkx/images/Concept%20Details.svg" scale="45"
+                                <imagedata fileref="../../../../book/src/docbkx/images/Concept%20Details.svg" scale="45"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -235,17 +282,29 @@
             <para>
                 <orderedlist>
                     <listitem>
-                        <para>To view hierarchical relationships, select the Hierarchical
-                            Relationships icon in the left-hand bar and drag the desired concept
-                            from the Axioms section into the Hierarchical Relationships panel.
-                            Inferred navigation pattern information will appear on the left-hand
-                            side. </para>
+                        <para>To view hierarchical relationships, select the Navigator icon in the
+                            left-hand bar</para>
+                        <figure xml:id="HierarchicalRelationshipsIcon">
+                            <title>Hierarchical Relationships Icon</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata
+                                        fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Hierarchical%20Relationships%20Icon.svg"
+                                        scale="15" align="center"/>
+                                </imageobject>
+                            </mediaobject>
+                        </figure>
+                    </listitem>
+                    <listitem>
+                        <para>Drag the desired concept from the Axioms section into the Hierarchical
+                            Relationships panel. Inferred navigation pattern information will appear
+                            on the left-hand side. </para>
                         <figure xml:id="HierarchicalNavigation">
                             <title>Hierarchical Navigation</title>
                             <mediaobject>
                                 <imageobject>
                                     <imagedata
-                                        fileref="../../../src/docbkx/images/Visualize%20Hierarchical%20Relationships.svg" scale="15" align="center"/>
+                                        fileref="../../../../book/src/docbkx/images/Visualize%20Hierarchical%20Relationships.svg" scale="15" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -254,12 +313,12 @@
                         <para>Hierarchical Relationships can also be viewed in the center panel by
                             toggling the "Properties" button on and selecting the "Hierarchy" icon
                             at the top of the concept window </para>
-                        <figure xml:id="OtherHierarchicalNavigation">
+                        <figure xml:id="AlternativeHierarchicalNavigation">
                             <title>Alternative Hierarchical Navigation</title>
                             <mediaobject>
                                 <imageobject>
                                     <imagedata
-                                        fileref="../../../src/docbkx/images/Other%20Hierarchical%20Relationship%20View.svg"
+                                        fileref="../../../../book/src/docbkx/images/Other%20Hierarchical%20Relationship%20View.svg"
                                         scale="35" align="center"/>
                                 </imageobject>
                             </mediaobject>
@@ -268,6 +327,20 @@
                     <listitem>
                         <para>Utilize the arrows within either Hierarchical Relationships panel to
                             collapse or expand relationships, as needed</para>
+                    </listitem>
+                    <listitem>
+                        <para>Finally, you can view Hierarchical Relationships by clicking the
+                            pop-out icon in the Axiom section of the concept window</para>
+                        <figure xml:id="AxiomHierarchicalRelationshipView">
+                            <title>Axiom Hierarchical Relationship View</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata
+                                        fileref="../../../../book/src/docbkx/images/Axiom%20Hierarchical%20Relationship%20View.svg"
+                                        scale="35" align="center"/>
+                                </imageobject>
+                            </mediaobject>
+                        </figure>
                     </listitem>
                 </orderedlist>
             </para>
@@ -280,19 +353,36 @@
             axiom changes were made.</para>
         <orderedlist>
             <listitem>
+                <para>To view versioning, first open a new journal, or in an existing and open
+                    journal, and follow the steps to view a concept in Section 1.4</para>
+            </listitem>
+            <listitem>
                 <para>In the tool ribbon at the top left of the concept window, click the Time
                     Travel button</para>
                 <figure xml:id="GettoVersioning">
                     <title>Versioning Panel</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../src/docbkx/images/Get%20to%20Versioning.svg" scale="35"
+                            <imagedata fileref="../../../../book/src/docbkx/images/Get%20to%20Versioning.svg" scale="35"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
                 <para>The Timeline panel opens to the right. The blue lines in the Timeline panel
                     represent different data extensions.</para>
+            </listitem>
+            <listitem>
+                <para>Click the elipsis in the top right of the Timeline panel to see additional
+                    information on the Path and Extensions that the timelines represent</para>
+                <figure xml:id="TimelineInformation">
+                    <title>Timeline Information</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Timeline%20Information.svg" scale="25"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
             </listitem>
             <listitem>
                 <para>Toggle the "Properties" button on in the top right of the concept
@@ -304,7 +394,7 @@
                     <title>Viewing Versioning</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../src/docbkx/images/Viewing%20Versioning.svg" scale="60"
+                            <imagedata fileref="../../../../book/src/docbkx/images/Viewing%20Versioning.svg" scale="60"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -323,7 +413,7 @@
                     <title>Version Nodes</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../src/docbkx/images/Viewing%20Versioning2.svg" scale="60"
+                            <imagedata fileref="../../../../book/src/docbkx/images/Viewing%20Versioning2.svg" scale="60"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -333,10 +423,10 @@
                 <para>You can further narrow the versioning by selecting the "All" drop down arrow
                     to filter historical events by Concept, Description, and Axiom changes.</para>
                 <figure xml:id="ConceptHistoryOptions">
-                    <title>Concept Version Options</title>
+                    <title>Concept History Options</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../src/docbkx/images/Concept%20History%20Options.svg" scale="35"
+                            <imagedata fileref="../../../../book/src/docbkx/images/Concept%20History%20Options.svg" scale="35"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -349,28 +439,31 @@
         <para>Users may want to create a concept to represent new or emerging clinical conditions or
             create temporary concepts while Standards Developing Organizations create official
             representations. Creating a concept allows users to enter associated information like
-            STAMP, stated relationships, and more.</para>
+            Status, Time, Author, Module, and Path (STAMP), stated relationships, and more.</para>
         <orderedlist>
             <listitem>
-                <para>To create a concept, click the "+" icon at the top of the Komet window and
-                    select "New Concept"</para>
+                <para>To create a concept, first open a new journal, in an existing and open
+                    journal, and click the "+" icon at the top of the Komet window and select "New
+                    Concept"</para>
+            </listitem>
+            <listitem>
                 <figure xml:id="CreateNewConcept">
                     <title>Creating a Concept</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../src/docbkx/images/Create%20New%20Concept.svg" scale="35" align="center"
+                            <imagedata fileref="../../../../book/src/docbkx/images/Create%20New%20Concept.svg" scale="35" align="center"
                             />
                         </imageobject>
                     </mediaobject>
                 </figure>
             </listitem>
             <listitem>
-                <para>A new concept viewing window will appear</para>
+                <para>A new concept template will appear</para>
                 <figure xml:id="NewConcept">
                     <title>New Concept</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../src/docbkx/images/New%20Concept.svg" scale="35" align="center"
+                            <imagedata fileref="../../../../book/src/docbkx/images/New%20Concept.svg" scale="35" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -378,12 +471,13 @@
             </listitem>
             <listitem>
                 <para>To add STAMP properties of the new concept, select the ellipsis in the top
-                    right of the concept window</para>
+                    right of the concept window and select the appropriate options within each drop
+                    down menu to edit the appropriate information for STAMP</para>
                 <figure xml:id="EditSTAMP">
                     <title>Creating STAMP Properties</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../src/docbkx/images/Edit%20STAMP.svg" scale="35" align="center"
+                            <imagedata fileref="../../../../book/src/docbkx/images/Edit%20STAMP.svg" scale="35" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -391,27 +485,106 @@
             </listitem>
             <listitem>
                 <para>Select the pencil icon on the right-hand side of the description section of
-                    the concept window to add a description, including a fully qualified name or
-                    other name</para>
+                    the concept window to add a description</para>
                 <figure xml:id="NewDescription">
                     <title>Adding a Description</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../src/docbkx/images/New%20Description.svg" scale="35" align="center"
+                            <imagedata fileref="../../../../book/src/docbkx/images/New%20Description.svg" scale="35" align="center"
                             />
                         </imageobject>
                     </mediaobject>
                 </figure>
             </listitem>
             <listitem>
-                <para>Finally, select the pencil icon on the right-hand side of the description
-                    section of the concept window to add axiom information, including sufficient and
-                    necessary sets</para>
+                <para>Select "Add Fully Qualified Name" and fill out the necessary
+                    information</para>
+                <figure xml:id="NewFullyQualifiedName">
+                    <title>New Fully Qualified Name
+                    </title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/New%20Fully%20Qualified%20Name.svg" scale="25" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>When complete, scroll to the bottom of the panel and select "Submit"</para>
+                <figure xml:id="SubmitFullyQualifiedName">
+                    <title>Submit Fully Qualified Name
+                    </title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Submit%20Fully%20Qualified%20Name.svg" scale="25" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>Select the pencil icon again on the right-hand side of the description section
+                    to add an Other Name, as needed</para>
+                <figure xml:id="NewOtherName">
+                    <title>New Other Name</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/New%20Other%20Name.svg" scale="25" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>Finally, select the pencil icon on the right-hand side of the axiom section of
+                    the concept window to add axiom information, including sufficient and necessary
+                    sets</para>
                 <figure xml:id="NewAxiom">
                     <title>Adding an Axiom</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../src/docbkx/images/New%20Axiom.svg" scale="35" align="center"
+                            <imagedata fileref="../../../../book/src/docbkx/images/New%20Axiom.svg" scale="35" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>Once you add a Sufficient of Necessary Set, it will appear in the Axioms
+                    section, where you can thens elect the pencil icon to add another Sufficient or
+                    Necessary set</para>
+                <figure xml:id="AdditionalSets">
+                    <title>Additional Sets</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../../book/src/docbkx/images/Additional%20Sets.svg" scale="35" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>After a Sufficient or Necessary set is added, a unique identifier will
+                    automatically be generated for your concept</para>
+                <figure xml:id="UniqueIdentifier">
+                    <title>Unique Identifier</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../../book/src/docbkx/images/Unique%20Identifier.svg" scale="35" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>Your concept will then appear in the concept search bar on the left hand
+                    side</para>
+                <figure xml:id="CreatedConcept">
+                    <title>Created Concept</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../../book/src/docbkx/images/Created%20Concept.svg" scale="35" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -420,60 +593,91 @@
         </orderedlist>
     </section>
     <section>
-        <title>Editing/Modifying a Concept</title>
+        <title>Editing a Concept</title>
         <para>Users may want to edit or modify a concept to reflect new and emerging real-world data
             or real-world evidence.</para>
         <orderedlist>
             <listitem>
-                <para>To edit a concept, ensure the "Properties" button is toggled on and select the
-                    "Edit" icon at the top right of the concept viewing window</para>
-                <figure xml:id="EditingaConcept">
+                <para>To edit a concept, first open a new journal, or in an existing and open
+                    journal, and find the concept you want to edit, double-click or drag the concept
+                    into the main viewing window, and turn the "Properties" button is toggled
+                    on.</para>
+                <para>Of note, if you are editing a concept you just created, you must first exit
+                    out of the concept window, find the new concept with the search feature, and
+                    then double click or drag the new concept back into the viewing window</para>
+            </listitem>
+            <listitem>
+                <para>You can directly edit a Fully Qualified Name or Other Name by clicking
+                    the respective name in the concept window</para>
+                <figure xml:id="EditaConcept2">
                     <title>Editing a Concept</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../src/docbkx/images/Edit%20Concept.svg" scale="35" align="center"
+                            <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Edit%20Concept2.svg" scale="35" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <para>You can also select the "Add/Edit" pencil icon at the top right of the concept viewing
+                    window</para>
+                <figure xml:id="EditingaConcept">
+                    <title>Alternate Editing a Concept</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../../book/src/docbkx/images/Edit%20Concept.svg" scale="35" align="center"
                             />
                         </imageobject>
                     </mediaobject>
                 </figure>
             </listitem>
+           
         </orderedlist>
         <section>
             <title>Edit Descriptions</title>
             <orderedlist>
                 <listitem>
                     <para>Selecting "Edit Description" leads to two additional options</para>
-                    <figure xml:id="EditDescription">
-                        <title>Edit Description</title>
+                    <figure xml:id="EditingaDescription">
+                        <title>Editing a Description</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../src/docbkx/images/Editing%20a%20Concept.svg" scale="35"
+                                <imagedata fileref="../../../../book/src/docbkx/images/Editing%20a%20Description.svg" scale="35"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
-                </listitem>
-                <listitem>
                     <para>Selecting "Edit Fully Qualified" allows you to edit the selected concept's
                         Fully Qualified Name and associated information</para>
-                    <figure xml:id="EditingaConcept2">
+                    <figure xml:id="EditingaFullyQualifiedName">
                         <title>Editing a Fully Qualified Name</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../src/docbkx/images/Editing%20a%20Concept2.svg" scale="35"
+                                <imagedata fileref="../../../../book/src/docbkx/images/Editing%20a%20Fully%20Qualified%20Name.svg" scale="35"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                    <para>Selecting "Add Other Name" allows you to add a new description of the
+                        concept and associated information</para>
+                    <figure xml:id="AddingOtherName">
+                        <title>Adding Other Name</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../../book/src/docbkx/images/Adding%20Other%20Name.svg" scale="35"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
                 </listitem>
                 <listitem>
-                    <para>Selecting "Add Other Name" allows you to add a new description of the
-                        concept and associated information</para>
-                    <figure xml:id="EditingaConcept3">
-                        <title>Adding a New Description</title>
+                    <para>Once you have changed the Fully Qualified Name or added an Other Name,
+                        scroll to the bottom of the edit panel and select submit. You can also write
+                        a comment to provide additional information on the changes. </para>
+                    <figure xml:id="SubmitanEdit">
+                        <title>Submit and Edit</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../src/docbkx/images/Editing%20a%20Concept3.svg" scale="35"
+                                <imagedata fileref="../../../../book/src/docbkx/images/Editing%20a%20Concept3.svg" scale="35"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -485,16 +689,23 @@
             <title>Edit Axiom</title>
             <orderedlist>
                 <listitem>
-                    <para>Button isn't functional as of 4/10/24</para>
-                </listitem>
-                <listitem>
-                    <para>Axioms can also be edited by selecting the Pencil Icon next to the Axiom's
-                        concept and selecting the appropriate action from the drop down menu</para>
+                    <para>Axioms can also be edited at various hierarchical levels by selecting the
+                        Pencil Icon next to the Axiom's concept and selecting the appropriate action
+                        from the drop down menu</para>
                     <figure xml:id="AxiomEditing">
                         <title>Editing an Axiom</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../src/docbkx/images/Axiom%20Editing2.svg" scale="45"
+                                <imagedata fileref="../../../../book/src/docbkx/images/Axiom%20Editing.svg" scale="45"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                    <figure xml:id="AxiomEditing2">
+                        <title>Further Editing an Axiom</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../../book/src/docbkx/images/Axiom%20Editing2.svg" scale="45"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -504,15 +715,182 @@
         </section>
     </section>
     <section>
+        <title>Creating and Editing a Pattern</title>
+        <para>Users may want to create or edit a pattern to provide additional, important, context
+            to a concept.</para>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para>To create a new pattern, first open a new journal, or in an existing and
+                        open journal, and click the "+" icon at the top of the Komet window and
+                        select "New Pattern"</para>
+                    <figure xml:id="NewPattern">
+                        <title>New Pattern</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/New%20Pattern.svg" scale="35" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>A new pattern editing window will appear, where you can select the
+                        ellipsis to add STAMP information</para>
+                    <figure xml:id="AddPatternSTAMP">
+                        <title>Add Pattern STAMP</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Add%20Pattern%20STAMP.svg" scale="25" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Next, select the Pencil Icon in the Pattern Definition section to add
+                        Semantic Purpose and Semantic Meaning</para>
+                    <figure xml:id="AddPatternDefinition">
+                        <title>Add Pattern Definition</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Add%20Pattern%20Definition.svg" scale="25" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Concepts for both Semantic Purpose and Semantic Meaning can be found by
+                        selecting the Comment Icon on the left-hand bar and searching for desired
+                        Concepts. These can then be drag-and-dropped into Purpose or Meaning.</para>
+                    <figure xml:id="PatternDefinitionOptions">
+                        <title>Pattern Definition Options</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Pattern%20Definition%20Options.svg" scale="35" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Once you have added concepts for Semantic Purpose and Semantic Meaning,
+                        click "Done" in the Properties panel</para>
+                </listitem>
+                <listitem>
+                    <para>Next, select the Pencil Icon in the Description section to add a Fully
+                        Qualified Name and/or Other Name</para>
+                    <figure xml:id="EditDescriptions">
+                        <title>Edit Descriptions</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Edit%20Descriptions.svg" scale="35" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Selecting "Add Fully Qualified Name" or "Add Other Name" opens the
+                        Properties panel for users to fill out various components of a Pattern's
+                        description</para>
+                    <figure xml:id="EditFullyQualifiedName">
+                        <title>Edit Fully Qualified Name</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Edit%20Fully%20Qualified%20Name.svg" scale="25" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Once all necessary components are complete, select "Done"</para>
+                </listitem>
+                <listitem>
+                    <para>If needed, select the Pencil Icon in the Fields section to add additional
+                        information. This step is optional</para>
+                    <figure xml:id="EditFields">
+                        <title>Edit Fields</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Edit%20Fields.svg" scale="35" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Once you have entered all the necessary details, click "Done". You can add
+                        additional Fields by clicking the Pencil icon again. These additional fields
+                        will be labeled with increasing Field Order numbers.</para>
+                    <figure xml:id="AddMultipleFields">
+                        <title>Add Multiple Fields</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Add%20Multiple%20Fields.svg" scale="35" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>You can edit Fields by right clicking the desired Field Number in the
+                        Fields Section and selecting "Edit"</para>
+                    <figure xml:id="ReviseFields">
+                        <title>Revise Fields</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Revise%20Fields.svg" scale="35" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Once all sections have been completed for the Pattern, select the Globe
+                        icon to save the pattern</para>
+                    <figure xml:id="AddIdentifier">
+                        <title>Add Identifier</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Add%20Identifier.svg" scale="35" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                    <para>If completed properly, an identifier will be generated underneath the
+                        Pattern name in the concept window and the Pattern will appear within the
+                        list of Patterns that can be accessed by selecting the Concept Navigator
+                        icon on the left-hand bar and then Patterns.</para>
+                    <figure xml:id="ViewPatternNavigator">
+                        <title>View Pattern Navigator</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/View%20Pattern%20Navigator.svg" scale="35" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+            </orderedlist>
+        </para>
+    </section>
+    <section>
         <title>Creating LIDR Data</title>
+        <para>Users may want to create a device extension, which can help tie additional information
+            related to devices to the concept that extend beyond the original terminology standard
+            requirements. In this case, we are authoring a LIDR record</para>
         <orderedlist>
             <listitem>
-                <para>To create LIDR Data, select the "+" at the top of the project journal</para>
+                <para>To create LIDR data, first open a new journal, or in an existing and open
+                    journal and select the "+" at the top of the project journal</para>
                 <figure xml:id="NewLIDRRecord">
                     <title>New LIDR Record</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../src/docbkx/images/NewLIDRRecord.svg" scale="45"
+                            <imagedata fileref="../../../../book/src/docbkx/images/NewLIDRRecord.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -524,7 +902,7 @@
                     <title>LIDR Viewer</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../src/docbkx/images/LIDR%20Viewer.svg" scale="45"
+                            <imagedata fileref="../../../../book/src/docbkx/images/LIDR%20Viewer.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -537,7 +915,7 @@
                     <title>Author LIDR STAMP</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../src/docbkx/images/Author%20LIDR%20STAMP.svg" scale="45"
+                            <imagedata fileref="../../../../book/src/docbkx/images/Author%20LIDR%20STAMP.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -552,7 +930,7 @@
                     <title>LIDR STAMP</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../src/docbkx/images/LIDR%20STAMP.svg" scale="45"
+                            <imagedata fileref="../../../../book/src/docbkx/images/LIDR%20STAMP.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -565,7 +943,7 @@
                     <title>Edit Device Summary</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../src/docbkx/images/Edit%20Device%20Summary.svg" scale="45"
+                            <imagedata fileref="../../../../book/src/docbkx/images/Edit%20Device%20Summary.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -580,7 +958,7 @@
                     <title>Add Device by Dragging</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../src/docbkx/images/Add%20Device.svg" scale="45"
+                            <imagedata fileref="../../../../book/src/docbkx/images/Add%20Device.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -590,7 +968,7 @@
                     <title>Confirm Device</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../src/docbkx/images/Confirm%20Device.svg" scale="45"
+                            <imagedata fileref="../../../../book/src/docbkx/images/Confirm%20Device.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -603,7 +981,7 @@
                     <title>Device Summary</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../src/docbkx/images/Device%20Summary.svg" scale="45"
+                            <imagedata fileref="../../../../book/src/docbkx/images/Device%20Summary.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -620,17 +998,13 @@
                     <title>Add LIDR Record Details</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../src/docbkx/images/Add%20LIDR%20Record%20Details.svg" scale="45"
+                            <imagedata fileref="../../../../book/src/docbkx/images/Add%20LIDR%20Record%20Details.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
                 <para>Users can add multiple Targets, Result Constraints, and Specimen but are
-                    limited to a single Analyte. If you manually add any data, such as a Result
-                    Constraint, be sure to run the reasoner once you are finished so that the data
-                    is added to the appropriate Hierarchical Relationship path. See <link
-                        linkend="RunningTheReasoner">Running the Reasoner</link> for further
-                    instructions</para>
+                    limited to a single Analyte.</para>
             </listitem>
             <listitem>
                 <para>Once you click "Done" in the bottom right of the LIDR Record Details panel, it
@@ -639,7 +1013,7 @@
                     <title>View LIDR Record Details</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../src/docbkx/images/View%20LIDR%20Record%20Details.svg" scale="45"
+                            <imagedata fileref="../../../../book/src/docbkx/images/View%20LIDR%20Record%20Details.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -656,81 +1030,416 @@
         </orderedlist>
     </section>
     <section>
-        <title>Exporting and Sharing Data (Placeholder)</title>
-        <section>
-            <title>Komet Interface</title>
+        <title>Exporting Datasets</title>
+        <para>Users may want to export a dataset to share some of their authoring work with other
+            users</para>
+        
             <para>
                 <orderedlist>
                     <listitem>
-                        <para>Select the concept or concepts you would like to export on the
-                            Navigation activity stream (default location: left panel) </para>
-                        <orderedlist>
-                            <listitem>
-                                <para>Use shift or control click to select multiple concepts</para>
-                            </listitem>
-                        </orderedlist>
-                    </listitem>
-                    <listitem>
-                        <para>Right click and select export OR use the “+” dropdown menu and select
-                            "Export Artifact"</para>
-                        <figure xml:id="ExportArtifact">
-                            <title>Export Artifact</title>
+                    <para>To export a dataset, first open a new journal, or in an existing and open
+                        journal select "File" in the upper left-hand side of the application window
+                        and select "Export Dataset"</para>
+                        <figure xml:id="ExportDataSet">
+                            <title>Export Dataset</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata fileref="../../../src/docbkx/images/export%20artifact.svg" scale="30"
+                                    <imagedata fileref="../../../../book/src/docbkx/images/Export%20Data%20Set.svg" scale="30"
                                         align="center"/>
+                                </imageobject>
+                            </mediaobject>
+                        </figure>
+                </listitem>
+                <listitem>
+                    <para>Complete all of the necessary fields, including Time Period. Time Period
+                        can be any changes made during the Current Date or can be changed to a
+                        Custom Range to export changes made during a specific time period</para>
+                    <figure xml:id="ExportCustomRange">
+                        <title>Export Custom Range</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../../book/src/docbkx/images/Export%20Time%20Period.svg" scale="30"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Once you have entered all pertinent information, click "Export" and a
+                        progress bar will appear in the bottom left-hand side of Komet</para>
+                    <figure xml:id="Exporting">
+                        <title>Exporting</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../../book/src/docbkx/images/Exporting.svg" scale="30"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                </orderedlist>
+            </para>
+    </section>
+    <section>
+        <title>Importing Datasets</title>
+        <para>Users may want to import a dataset to view changes or authoring done by other users<orderedlist>
+                <listitem>
+                    <para>To import a dataset, first open a new journal, or in an existing and open
+                        journal select "File" in the upper left-hand side of the application window
+                        and select "Import Dataset"</para>
+                </listitem>
+                <listitem>
+                    <para>Once the following pop-up opens, drag your desired dataset into Komet or
+                        browse for the specific files and click "Import"</para>
+                    <figure xml:id="ImportDataSet">
+                        <title>Import Dataset</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata
+                                    fileref="../../../../book/src/docbkx/images/Import%20Data%20Set.svg"
+                                    scale="30" align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Once you select "Import", a progress bar will appear in the bottom
+                        left-hand side of Komet</para>
+                    <figure xml:id="Importing">
+                        <title>Importing</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata
+                                    fileref="../../../../book/src/docbkx/images/Importing.svg"
+                                    scale="40" align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+            </orderedlist></para>
+    </section>
+    <section>
+        <title>Git Sync</title>
+        <para>Users may want to use Git Sync to connect to their GitHub account in the Komet
+            application so they can pull and sync change sets to a repository that they have
+            created</para>
+        <orderedlist>
+            <listitem>
+                <para>To get started, you will need to be signed into your personal GitHub account.
+                    If you do not have an account, create one at <link
+                        xlink:href="https://github.com/">GitHub</link></para>
+            </listitem>
+            </orderedlist>  
+        <section>
+            <title>Personal Access Token</title>
+        <orderedlist>
+            <listitem>
+                <para>Next, create a Personal Access Token (PAT), which is a secure alternative to
+                        your password when authenticating, by logging into your GitHub account,
+                        selecting your user icon in the top-right hand corner of the page and
+                        selecting "Settings". Instead of entering your password in Komet, you will
+                        use the PAT, which is a unique, long string of characters, to authorize your
+                        actions</para>
+                <figure xml:id="AccountSettings">
+                    <title>Account Settings</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../../book/src/docbkx/images/PAT%20Settings_TestingScript.svg" scale="45" align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>Now go to "Developer Settings"</para>
+                <figure xml:id="DeveloperSettings">
+                    <title>Developer Settings</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../../book/src/docbkx/images/PAT%20Developer%20Settings_TestingScript.svg" scale="45" align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>Select "Personal access tokens"</para>
+                <figure xml:id="Personalaccesstokens">
+                    <title>Personal Access Tokens</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../../book/src/docbkx/images/PAT%20Step 4_TestingScript.svg" scale="45" align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>Select "Tokens (classic)"</para>
+                <figure xml:id="ClassicTokens">
+                    <title>Classic Tokens</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../../book/src/docbkx/images/PAT Step 5_TestingScript.svg" scale="45" align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>From the Generate New Token dropdown, select "Generate new token
+                    (classic)"</para>
+                <figure xml:id="GenerateNewToken">
+                    <title>Generate New Token</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../../book/src/docbkx/images/PAT Step 6_TestingScript.svg" scale="45" align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <para>You will now be prompted to enter your password or authentication</para>
+            </listitem>
+            <listitem>
+                <para>You will need to enter a note (this note should help you differentiate this
+                        token from other similar tokens), under "Select scopes" select "repo", and
+                        then select "Generate token" at the bottom of the page</para>
+                <figure xml:id="NoteAndRepo">
+                    <title>Note and Repo</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../../book/src/docbkx/images/PAT Step 7B_TestingScript.svg" scale="45" align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <figure xml:id="GenerateToken">
+                    <title>Generate Token</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../../book/src/docbkx/images/PAT Step 7C_TestingScript.svg" scale="45" align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>You will then be redirected to your newly created token, where you should copy
+                        and save the token number (using the copy icon next to the passkey) for a
+                        later step</para>
+                <figure xml:id="CopyToken">
+                    <title>Copy Token</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../../book/src/docbkx/images/PAT Step 8_TestingScript.svg" scale="45" align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+        </orderedlist>
+        </section>
+        <section>
+            <title>Creating a Repository</title>
+            <para>Users will need to create a repository (repo) in their personal GitHub account to
+                pull or sync change sets from Komet to GitHub</para>
+            <orderedlist>
+                <listitem>
+                    <para>Select the your user icon in the top left corner and navigate to "Your
+                        repositories"</para>
+                    <figure xml:id="YourRepositories">
+                        <title>Your Repositories</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../../book/src/docbkx/images/Repo Step1_TestingScript.svg" scale="45" align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Select "New" to create a new repo</para>
+                    <figure xml:id="NewRepo">
+                        <title>New Repository</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../../book/src/docbkx/images/Repo Step2_TestingScript.svg" scale="45" align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>You will then need to name the repo (it is suggested to chose a name that
+                        will help identify the work you are doing), choose if you would like it to
+                        be a "Public or "Private" repo, and select "Add a README file" before
+                        selecting "Create Repository"</para>
+                    <figure xml:id="CreateRepo">
+                        <title>Create a Repository</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../../book/src/docbkx/images/Repo Step3_TestingScript.svg" scale="45" align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Select the green "Code" button and, from the dropdown menu, ensure "HTTPS'
+                        is selected. Then copy the repository web address and save for a later
+                        step</para>
+                    <figure xml:id="RepositoryAddress">
+                        <title>Repository Web Address</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../../book/src/docbkx/images/Repo Step4_TestingScript.svg" scale="45" align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+            </orderedlist>
+        </section>
+        <section>
+            <title>Using Git Sync</title>
+            <para>There are several functions of Git Sync that a user may want to use in
+                Komet;</para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Info</emphasis> - Connects Komet to GitHub
+                            without pulling or syncing any changesets</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Pull</emphasis> - Pulls the changesets from the
+                            GitHub repo that the connection was made with, loads them into Komet and
+                            then automatically runs the Reasoner.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Sync </emphasis>- Pulls the changesets from the
+                            repository, loads them into Komet, runs the Reasoner, and then pushes
+                            the changesets to the repository. </para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+               <section>
+                    <title>Git Sync Info</title>
+                <orderedlist>
+                    <listitem>
+                        <para>To use Git Sync Info, first open a new journal with the desired
+                            database you would like to use to generate a change set. The Komet
+                            landing page will open and the GitHub Status will show as
+                            disconnected</para>
+                        <figure xml:id="GitSyncStatus">
+                            <title>Git Sync Status</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="../../../../book/src/docbkx/images/Sync Step1_TestingScript.svg" scale="45" align="center"/>
+                                </imageobject>
+                            </mediaobject>
+                        </figure>
+                    </listitem>
+                    <listitem>
+                        <para>Select "Exchange" in the top left-hand side of the application window
+                            and select "Info"</para>
+                        <figure xml:id="GitSyncInfo">
+                            <title>Git Sync Info</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="../../../../book/src/docbkx/images/GitSync Step2_TestingScript.svg" scale="45" align="center"/>
+                                </imageobject>
+                            </mediaobject>
+                        </figure>
+                    </listitem>
+                    <listitem>
+                        <para>Fill in the various fields that appear in the Info window and then
+                            press "Connect"; Git URL is the URL we saved in an earlier step, Git
+                            Email is the personal email you used to create your GitHub account, Git
+                            User Name is your personal GitHub username that you created, and Git
+                            Password is the repository passkey that we saved in an earlier
+                            step.</para>
+                        <figure xml:id="GitSyncInfoPreferences">
+                            <title>Git Sync Info Preferences</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="../../../../book/src/docbkx/images/GitSync Step3A_TestingScript.svg" scale="45" align="center"/>
+                                </imageobject>
+                            </mediaobject>
+                        </figure>
+                    </listitem>
+                    <listitem>
+                        <para>When done correctly, you will see the GitHub Status showing as
+                            "Connected" with a progress popup window appearing</para>
+                        <figure xml:id="GitSyncInfoConnected">
+                            <title>Git Sync Info Connected</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="../../../../book/src/docbkx/images/GitSync Step3B_TestingScript.svg" scale="45" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
                     </listitem>
                 </orderedlist>
-            </para>
+            
         </section>
-    </section>
-    <section>
-        <title>Importing and Reading-In Data (Placeholder)</title>
-        <para><emphasis role="bold">Note</emphasis>: This process is to import data after you have
-            finished the initial Komet download and install process</para>
-        <para>
-            <orderedlist>
-                <listitem>
-                    <para>In the Detail Viewer activity stream (default location: center panel)
-                        click drop down button “+”, and click “Import Artifact"</para>
-                    <figure xml:id="ImportArtifact">
-                        <title>Import Artifact</title>
-                        <mediaobject>
-                            <imageobject>
-                                <imagedata fileref="../../../src/docbkx/images/Import%20Artifact.svg" scale="30"
-                                    align="center"/>
-                            </imageobject>
-                        </mediaobject>
-                    </figure>
-                </listitem>
-                <listitem>
-                    <para>A “Select your file for import” window will pop up. Click on “Select A
-                        File” button </para>
-                    <figure xml:id="SelectFile">
-                        <title>Select File</title>
-                        <mediaobject>
-                            <imageobject>
-                                <imagedata fileref="../../../src/docbkx/images/Select%20File.svg" scale="30"
-                                    align="center"/>
-                            </imageobject>
-                        </mediaobject>
-                    </figure>
-                </listitem>
-                <listitem>
-                    <para>Browse and select the zip file of your choice and click “Open”</para>
-                </listitem>
-                <listitem>
-                    <para>A progress bar will monitor the import of your files</para>
-                </listitem>
-                <listitem>
-                    <para>The files will be displayed in the left panel under “Concept
-                        Navigator”</para>
-                </listitem>
-            </orderedlist>
-        </para>
+            <section>
+                <title>Git Sync Pull</title>
+                <orderedlist>
+                    <listitem>
+                        <para>To use Git Sync Pull, first open a new journal with the desired
+                            database you would like to use to generate a change set. From the
+                            landing page, select "Exchange" in the top left-hand side of the
+                            application window and select "Pull"</para>
+                        <figure xml:id="GitSyncPull">
+                            <title>Git Sync Pull</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="../../../../book/src/docbkx/images/Pull Step2_TestingScript.svg" scale="45" align="center"/>
+                                </imageobject>
+                            </mediaobject>
+                        </figure>
+                    </listitem>
+                    <listitem>
+                        <para>Any change sets that were in the GitHub repo will then be pulled into
+                            Komet and a progress popup will appear</para>
+                        <figure xml:id="GitSyncPullProgress">
+                            <title>Git Sync Pull Progress</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="../../../../book/src/docbkx/images/Pull Step2B_TestingScript.svg" scale="45" align="center"/>
+                                </imageobject>
+                            </mediaobject>
+                        </figure>
+                    </listitem>
+                </orderedlist>
+            </section>
+            <section>
+                <title>Git Sync Sync</title>
+                <orderedlist>
+                    <listitem>
+                        <para>To use Git Sync Sync, first open a new journal with the desired
+                            database you would like to use to generate a change set. From the
+                            landing page, select "Exchange" in the top left-hand side of the
+                            application window and select "Sync".</para>
+                        <para>Of note, you will need to complete the steps outlined in Git Sync Info
+                            first.</para>
+                        <figure xml:id="GitSyncSync">
+                            <title>Git Sync Sync</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="../../../../book/src/docbkx/images/Sync Step2A_TestingScript.svg" scale="45" align="center"/>
+                                </imageobject>
+                            </mediaobject>
+                        </figure>
+                    </listitem>
+                    <listitem>
+                        <para>You will see the below popup while the Sync processes</para>
+                        <figure xml:id="GitSyncProgress">
+                            <title>Git Sync Progress</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="../../../../book/src/docbkx/images/Sync Step2B_TestingScript.svg" scale="45" align="center"/>
+                                </imageobject>
+                            </mediaobject>
+                        </figure>
+                    </listitem>
+                    <listitem>
+                        <para>To ensure the Sync completed successfully, go to the repository you
+                            created earlier to validate that the change sets were successfully
+                            completed. This process can take a minute or so, as the changesets are
+                            pushed to GitHub</para>
+                    </listitem>
+                </orderedlist>
+            </section>
+        </section>
     </section>
     <section>
         <title xml:id="RunningTheReasoner">Running the Reasoner</title>
@@ -740,13 +1449,14 @@
             names, to detect equivalences, and more.</para>
         <orderedlist>
             <listitem>
-                <para>To run the reasoner, select the Reasoner icon at the top of the concept
+                <para>To run the reasoner, first open a new journal, or in an existing and open
+                    journal select a concept, and select the Reasoner icon at the top of the concept
                     window</para>
                 <figure xml:id="OpenReasoner">
                     <title>Open Reasoner</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../src/docbkx/images/Open%20Reasoner.svg" scale="45" align="center"/>
+                            <imagedata fileref="../../../../book/src/docbkx/images/Open%20Reasoner.svg" scale="45" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -758,7 +1468,7 @@
                     <title>Reasoner</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../src/docbkx/images/Reasoner.svg" scale="45" align="center"/>
+                            <imagedata fileref="../../../../book/src/docbkx/images/Reasoner.svg" scale="45" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -770,7 +1480,7 @@
                     <title>Run the Reasoner</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../src/docbkx/images/Run%20Reasoner.svg" scale="45"
+                            <imagedata fileref="../../../../book/src/docbkx/images/Run%20Reasoner.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -784,7 +1494,7 @@
                     <title>Reasoner In Action</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../src/docbkx/images/Reasoner%20In%20Action.svg" scale="45"
+                            <imagedata fileref="../../../../book/src/docbkx/images/Reasoner%20In%20Action.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -799,20 +1509,20 @@
                     <title>Reasoner Results</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../src/docbkx/images/Reasoner%20Results.svg" scale="45"
+                            <imagedata fileref="../../../../book/src/docbkx/images/Reasoner%20Results.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
             </listitem>
             <listitem>
-                <para>You can then compare the equivalent concepts by selecting each concept, right
-                    clicking, and choosing "Compare Concepts"</para>
+                <para>You can then compare the equivalent concepts by clicking on each concept,
+                    right clicking, and choosing "Compare Concepts"</para>
                 <figure xml:id="CompareResults">
                     <title>Compare Results</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../src/docbkx/images/Compare%20Results.svg" scale="45"
+                            <imagedata fileref="../../../../book/src/docbkx/images/Compare%20Results.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -823,7 +1533,7 @@
                     <title>Understand Equivalents</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../src/docbkx/images/Understand%20Equivalents.svg" scale="45"
+                            <imagedata fileref="../../../../book/src/docbkx/images/Understand%20Equivalents.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
