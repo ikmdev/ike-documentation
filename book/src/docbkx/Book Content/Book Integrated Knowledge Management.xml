@@ -86,7 +86,7 @@
                     
                     <imagedata fileref="../images/IKMinPractice.svg" 
                         
-                        scale="25" align="center"/> 
+                        scale="35" align="center"/> 
                     
                 </imageobject> 
                 
@@ -112,7 +112,7 @@
                     
                     <imagedata fileref="../images/CreatingIKM.svg" 
                         
-                        scale="50" align="center"/> 
+                        scale="35" align="center"/> 
                     
                 </imageobject> 
                 
@@ -186,7 +186,7 @@
                     
                     <imagedata fileref="../images/SeparationofConcerns.svg" 
                         
-                        scale="40" align="center"/> 
+                        scale="35" align="center"/> 
                     
                 </imageobject> 
                 
@@ -231,7 +231,7 @@
                     
                     <imagedata fileref="../images/TinkarLogicalModel.svg" 
                         
-                        scale="25" align="center"/> 
+                        scale="19" align="center"/> 
                     
                 </imageobject> 
                 
