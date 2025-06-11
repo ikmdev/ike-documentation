@@ -76,6 +76,23 @@
             the ecosystem as organizations use inconsistent and varied concept representation.
             Although there are standardized codes and formats, there are many ways to use these
             standards. </para>
+        <figure xml:id="IKMinPractice"> 
+            
+            <title>Integrated Knowledge Management in Practice</title> 
+            
+            <mediaobject> 
+                
+                <imageobject> 
+                    
+                    <imagedata fileref="../images/IKMinPractice.svg" 
+                        
+                        scale="25" align="center"/> 
+                    
+                </imageobject> 
+                
+            </mediaobject> 
+            
+        </figure> 
         <para>Our IKM approach employs a common model for data representation to support the
             integration of these disparate standards and improve the quality and interoperability of
             data. One of the goals of this body of work is to develop both a common model and the
@@ -84,7 +101,24 @@
             high-quality data, and accurate transmission within and between healthcare systems.
             Improved data quality will cascade to other refinements within the healthcare ecosystem,
             such as improved research capabilities, identification of real-world data trends, and
-            real-time public health information.</para>
+            real-time public health information as outlined in the following figure.</para>
+        <figure xml:id="CreatingIKM.svg"> 
+            
+            <title>Creating Integrated Knowledge Management</title> 
+            
+            <mediaobject> 
+                
+                <imageobject> 
+                    
+                    <imagedata fileref="../images/CreatingIKM.svg" 
+                        
+                        scale="50" align="center"/> 
+                    
+                </imageobject> 
+                
+            </mediaobject> 
+            
+        </figure> 
         <para>To support the common model, our team is developing a tool and authoring environment
             that supports a variety of functionalities across all knowledge standards and frameworks
             to address the differences in management and structure across disparate terminology
@@ -136,11 +170,29 @@
             </itemizedlist></para>
         <para>Employing the architectural design principle of Separation of Concerns (SoC), a system
             can be divided into sections and each section can be addressed and allowed to evolve
-            irrespective of other sections. In our apporach to IKM and our knowledge architecture,
-            the foundational layer provides the common elements of interoperability including object
-            identity, versioning, modularity, and knowledge representation. In this foundational
-            architecture layer, we find the shared module system where version and configuration
-            management provide the foundation for interoperability and the common model. </para>
+            irrespective of other sections as shown in the figure below. In our apporach to IKM and
+            our knowledge architecture, the foundational layer provides the common elements of
+            interoperability including object identity, versioning, modularity, and knowledge
+            representation. In this foundational architecture layer, we find the shared module
+            system where version and configuration management provide the foundation for
+            interoperability and the common model. </para>
+        <figure xml:id="SeparationofConcerns"> 
+            
+            <title>Separation of Concerns</title> 
+            
+            <mediaobject> 
+                
+                <imageobject> 
+                    
+                    <imagedata fileref="../images/SeparationofConcerns.svg" 
+                        
+                        scale="40" align="center"/> 
+                    
+                </imageobject> 
+                
+            </mediaobject> 
+            
+        </figure> 
     </section>
     <section>
         <title>TermINology Knowledge Architecture (Tinkar) Overview</title>
@@ -162,12 +214,30 @@
             for effective and scalable querying of data, concepts, and information. Using locally
             defined concepts, Tinkar can integrate various terminology standards into the common
             model by accommodating, managing, and defining granular components and their respective
-            data sources to support interoperability of semantics. Having the ability to manage
-            complex and individual elements of each standard then allows continual process
-            improvement, including rapid extension development. Edits to concepts or newly authored
-            concepts in Tinkar can be tested and previewed before deployment to a live environment
-            and historic versioning of metadata is perpetually maintained to support iterative
-            authoring, development, and versioning. [5]</para>
+            data sources to support interoperability of semantics (see <xref
+                linkend="TinkarLogicalModel"/> below). Having the ability to manage complex and
+            individual elements of each standard then allows continual process improvement,
+            including rapid extension development. Edits to concepts or newly authored concepts in
+            Tinkar can be tested and previewed before deployment to a live environment and historic
+            versioning of metadata is perpetually maintained to support iterative authoring,
+            development, and versioning. [5]</para>
+        <figure xml:id="TinkarLogicalModel"> 
+            
+            <title>Tinkar Logical Model</title> 
+            
+            <mediaobject> 
+                
+                <imageobject> 
+                    
+                    <imagedata fileref="../images/TinkarLogicalModel.svg" 
+                        
+                        scale="25" align="center"/> 
+                    
+                </imageobject> 
+                
+            </mediaobject> 
+            
+        </figure> 
         <para>Tinkar aims to improve the quality of patient care across the healthcare enterprise by
             creating a cross-cutting and common model that can integrate other terminology standards
             and use a repeatable and standardized process to convert disparate clinical statements

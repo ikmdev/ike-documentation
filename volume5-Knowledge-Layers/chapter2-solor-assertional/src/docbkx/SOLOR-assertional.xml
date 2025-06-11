@@ -144,14 +144,15 @@
                     <title>Interface Term</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/InterfaceTerm_DL.svg" scale="80" align="center"/>
+                            <imagedata
+                            fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/InterfaceTerm_DL.svg"
+                            scale="80" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
             <para>Concepts can also have relationships with patient populations. An example of a
                 relationship between a clinical concept and patient population is pregnancy is not
-                present in men or women who have had a hysterectomy or who are
-                post-menopausal.</para>
+                present in women who have had a hysterectomy or who are post-menopausal.</para>
         </section>
     </section>
     <section>

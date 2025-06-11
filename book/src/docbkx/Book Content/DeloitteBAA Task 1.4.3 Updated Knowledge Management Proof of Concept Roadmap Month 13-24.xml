@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?> 
+<chapter xmlns="http://docbook.org/ns/docbook" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1"> 
+    <title>Updated Knowledge Management Proof-of-Concept Roadmap</title> 
+    <section> 
+        
+        <title>Purpose</title> 
+        <para>Integrated Knowledge Management (IKM) is an evolving approach to data management with
+            the primary goal of improving patient care by maintaining the integrity, meaning, and
+            quality of data as it is shared within and between healthcare systems. Our work aims to
+            drive IKM practices forward to improve the quality and interoperability of healthcare
+            data and, ultimately, provide the U.S. Food and Drug Administration (FDA) with
+            up-to-date real-world data (RWD) that can be used to make informed policy, public
+            health, and other decisions. Over the past year, our team has been developing an IKM
+            reference implementation that would serve as one of the tools that support IKM practices
+            and the lossless transfer of data. As we continue our efforts, our team will support the
+            development of other IKM tools that will facilitate IKM adoption, implementation, and
+            optimization, such as General Authoring, Application Program Interfaces (API), and data
+            quality validation harnesses. The purpose of this document is to highlight recent
+            efforts and outline key objectives and events through September 2025 that will progress
+            IKM forward. </para> 
+        
+    </section>
+    <section>
+        <title>Background</title>
+        <para>One of the FDA Systemic Harmonization and Interoperability Enhancement for Laboratory
+            Data (SHIELD)’s team’s primary focuses over the past two years has been the development
+            of an IKM reference implementation. While IKM is not a novel concept itself, a tool that
+            facilitates and supports the integration, management, editing, and authoring of multiple
+            clinical terminology standards is relatively new. Our efforts have been comprehensive,
+            ranging from user interface/user experience (UI/UX) to back-end development to technical
+            communications and more. This IKM prototype leverages Terminology Knowledge Architecture
+            (Tinkar), a self-describing data structure and logical model that provides a
+            standardized and repeatable way of representing various clinical terminology standards.
+            Tinkar supports the identification of equivalent concepts and aims to address the
+            differences in the management and structure of disparate terminology standards, local
+            concepts, and code lists/value sets by normalizing the representation of concepts,
+            properties, and associated information within and between terminology standards. A
+            current version of the IKM reference implementation showcased the latest IKM
+            capabilities during the October 2023 Systematized Nomenclature of Medicine Clinical
+            Terms (SNOMED CT®) conference. </para>
+        <para>In early 2024, the SHIELD community released the initial draft of the Laboratory
+            Interoperability Data Repository (LIDR) data design. Once populated, LIDR will provide
+            an authoritative source of which SNOMED CT® and Logical Observation Identifiers Names
+            and Codes (LOINC®) codes are assigned to tests performed on various laboratory devices.
+            An authoring environment is needed for the SHIELD community where LIDR records can be
+            authored and reliably integrate knowledge from disparate sources, such as SNOMED CT® and
+            LOINC®, in real-time to produce high-quality, interoperable, and accurate data. </para>
+        <para>As our team refines the IKM reference implementation and drives IKM forwards, we will
+            continue to collaborate with a variety of stakeholders and communities, particularly the
+            Health Level Seven (HL7) community and Diagnostic Data Program (DxD). </para>
+        <orderedlist>
+            <listitem>
+                <para><emphasis role="bold">HL7</emphasis>: HL7 has developed a robust suite of
+                    technical standards that define mechanisms for the management and exchange of
+                    electronic health data across healthcare systems. As part of its role as a
+                    standards development organization, HL7 hosts several Connect-a-thons throughout
+                    the year that offer stakeholders the opportunity to test their work with
+                    real-world scenarios and subject matter experts (SMEs), improving both their
+                    implementations and the HL7 standards they use in the process. One HL7 standard
+                    is Fast Healthcare Interoperability Resources (FHIR), which is a flexible and
+                    adaptable set of rules and specifications for the exchange of health information
+                    that builds upon previous HL7 data format standards. FHIR is a leading data
+                    exchange format in the healthcare ecosystem and will serve as a key format for
+                    testing and validation exercises. [1-2] </para>
+            </listitem>
+        </orderedlist>
+        <orderedlist>
+            <listitem>
+                <para><emphasis role="bold">(DxD)</emphasis>: The DxD program aims to improve the
+                    collection, usability, and portability of data collected in laboratories and
+                    from at-home tests and other, non-laboratory data collection instances. The
+                    program defines these focus areas as the Systemic Harmonization and
+                    Interoperability Enhancement for Laboratory Data (SHIELD) and Digital
+                    Diagnostics: Over the Counter (OTC) and Point-of-Care (POC). Collaboration with
+                    this group is essential and will support IKM and Tinkar’s integration with FDA’s
+                    RWD repository to support informed and timely decision making. [3] </para>
+            </listitem>
+        </orderedlist>
+    </section>
+    <section>
+        <title>Proof of Concept Roadmap</title>
+        <para>The following roadmap, depicted in Figure 1, details the key objectives and events
+            from February 2024 through September 2025. While our team is planning and working
+            towards these milestones, they are subject to change based on client priorities and
+            requests. </para><figure xml:id="Figure1KnowledgeManagementProofofConceptRoadmap"> 
+            <title>Knowledge Management Proof of Concept Roadmap</title> 
+            <mediaobject> 
+                <imageobject> 
+                    <imagedata fileref="../images/1.4.3.1.svg" 
+                        scale="25" align="center"/> 
+                </imageobject> 
+            </mediaobject> 
+        </figure>   
+        <para><emphasis role="bold">March 2024</emphasis>
+        </para>
+        <para>Throughout March 2024, our team worked to author an HL7 standard, based on Tinkar and
+            HL7’s Fast Healthcare Interoperability Resources (FHIR), that will enable data agility
+            in the standardized distribution of terminology change sets, such as those needing rapid
+            distribution during a pandemic response context. At the same time, we developed a modern
+            IKM authoring environment, known as Komet. We successfully transformed both the SNOMED
+            CT® and SNOMED CT®-LOINC® Collaborative Agreement terminology data into the Tinkar
+            format to be viewable, editable, and extensible within Komet. The team also focused on
+            LIDR-to-Tinkar transformations and custom LIDR user interfaces, so that the SHIELD
+            community can benefit from the power of integrated knowledge management as it authors
+            and maintains LIDR data within Komet. </para>
+        <para>By the end of March 2024, our team drafted an HL7 FHIR standard for the computable
+            exchange of terminology change sets related to in vitro diagnostic (IVD) data encoding
+            guidelines, specifically SNOMED CT® and LOINC®. </para>
+        <para><emphasis role="bold">May 2024</emphasis>
+        </para>
+        <para>Once initial LIDR authoring and terminology change set capabilities were ready within
+            Komet, we coordinated with laboratory and terminology experts to test and validate our
+            work at the May 18th – 19thHL7 Connect-a-thon in Dallas, Texas. Testing validated our
+            ability to author new or edit existing SNOMED CT®, LOINC®, and LIDR concepts that could
+            then be exchanged in FHIR or native Google Protocol Buffers formats. These tests
+            demonstrated users’ ability to author provisional codes for new or evolving medical
+            conditions, tests, diagnoses, and more using Komet and Tinkar and successfully exchange
+            them with other Connect-a-thon participants. Rather than waiting months for disparate
+            terminology standards to issue official codes, these provisional Tinkar codes can serve
+            as placeholders so that critical health data and information can be shared across health
+            systems. </para>
+        <para>Secondly, in close coordination with SafeHealth Systems, we demonstrated how the
+            exchange of clinical terminology change sets can be used to inform immediate changes
+            within electronic forms so that Real World Data (RWD) can be captured more accurately as
+            clinical knowledge advances. For example, if a new test kit becomes available on the
+            market, we can leverage IKM principles and open-source tools to quickly author and
+            publish a LIDR change set with the new test kit information and encoding guidelines.
+            Then a data capture application, like a mobile application used to capture COVID-19 test
+            results at rapid testing sites, could utilize the latest LIDR records to dynamically
+            update and show the new test kit and begin to capture RWD results associated with it,
+            consistently encoding them in alignment with the LIDR guidance. </para>
+        <para><emphasis role="bold">September 2024</emphasis>
+        </para>
+        <para>Following the successes of the May 2024 Connect-a-thon, we continued to iterate on
+            integrated solutions with the SafeHealth team to demonstrate additional advanced
+            analytic capabilities at the September 2024 Connect-a-thon. We had two demonstration
+            goals: </para>
+        <orderedlist>
+            <listitem>
+                <para>Showcase the power of IKM to make knowledge changes that inform advanced
+                    analytics </para>
+            </listitem>
+        </orderedlist>
+        <orderedlist>
+            <listitem>
+                <para>Exchange FHIR-based terminology change sets with another system </para>
+            </listitem>
+        </orderedlist>
+        <para>In the first demonstration, we showed how the Analytic Data Repository (ADR), built by
+            SafeHealth Systems, could consume IKM change sets that inform the results of the
+            constructed queries and run against staged RWD stored in the ADR. The real-world
+            scenario we used for this demonstration was based on the fact that, early in the
+            development of IVD COVID-19 Test Kits, test kit manufacturers included a result of
+            “presumptive positive” which was interpreted to be equivalent to positive or detected.
+            For this scenario, we proposed that a researcher is interested in understanding the
+            implications of the inclusion or exclusion of the presumptive positive result in the
+            number of positive COVID-19 results. First, a query was built in the Query Builder and
+            executed with the knowledge that “presumptive positive” was included in the definition
+            of a positive COVID-19 test result. We then authored a change to that knowledge to
+            remove “presumptive positive” from that definition, exported the knowledge, and
+            exchanged the change set with the ADR system. Subsequently, the original query was
+            re-run to show a change in the number of positive COVID-19 results returned after that
+            knowledge was updated. </para>
+        <para>In the second demonstration, we showed how rapidly new knowledge could be defined and
+            distributed through IKM. For this scenario, we proposed that there was an emerging
+            outbreak of a newly identified “Cyclops Rash”, as shown in Figure 2 below. We defined
+            the new concept with all relevant attributes and description logic in Komet, exported it
+            in FHIR format and uploaded it to our FHIR server. Clinical Architecture was then able
+            to retrieve the change set, consume it, and show the new concept in their Symedical
+            system, as shown in Figure 3. </para>
+        <figure xml:id="Figure2-TableofingesteddatashowingtheCyclopsRashconceptbeingsuccesfullyingestedintoSymedical"> 
+            <title>Table of ingested data, showing the "Cyclops Rash" concept being succesfully
+                ingested into Symedical</title> 
+            <mediaobject> 
+                <imageobject> 
+                    <imagedata fileref="../images/1.4.3.2.svg" 
+                        scale="25" align="center"/> 
+                </imageobject> 
+            </mediaobject> 
+        </figure>
+        <figure xml:id="Figure3"> 
+            <title> Visualization of Relationship between new concept and its parent concepts
+                ('Eruption of skin of face' and 'Papular eruption') in Sydmedical</title>
+            <mediaobject>
+                <imageobject> 
+                    <imagedata fileref="../images/1.4.3.3.svg" 
+                        scale="25" align="center"/> 
+                </imageobject> 
+            </mediaobject> 
+        </figure>
+        <para><emphasis role="bold">January 2025</emphasis>
+        </para>
+        <para>From October 2024 through January 2025, the team has focused on developing General
+            Authoring capabilities within Komet. General Authoring allows for the standardized
+            representation of knowledge from disparate sources, such as SNOMED CT® and LOINC®. We
+            have made substantial strides towards functionalities supporting the development and
+            editing of patterns and general semantic editing. In January 2025, the team focused on
+            General Semantic Editing capabilities for Strings, Integers, Boolean Logic, Floats,
+            Components, Component sets, Component Lists, and Images. The team also confirmed that
+            users can edit these data types and refresh and save changes to the data. </para>
+        <para>As we continue to iterate and refine General Authoring, our team will explore
+            opportunities for piloting this capability with a variety of stakeholders through
+            outreach and developer previews. We met with representatives from SNOMED CT®, LOINC®,
+            the Department of Veteran Affairs (VA), the National Institute of Health (NIH), and
+            more. </para>
+        <para><emphasis role="bold">May 2025</emphasis>
+        </para>
+        <para>Ensuring General Authoring is implemented in a comprehensive and accurate way will
+            require an iterative approach. From January 2025 through May 2025, the team will
+            continue to work on General Authoring, using varied use cases as opportunities for
+            process improvement and issue resolution. By the end of May 2025, the team aims to
+            demonstrate the ability to comprehensively author health data from a variety of
+            terminology standards in Komet using concepts, patterns, and semantics to properly
+            capture all pertinent information. </para>
+        <para>Another focus for our team in May 2025 will be further exploring the implementation of
+            a plug-in architecture. Plug-ins are a type of software that support enhancements and
+            customizations or improve the functionality of existing software without having to
+            recode or rebuild the program. Plug-ins will help support the continued evolution of the
+            IKM environment as data from new knowledge sources are added to Komet. </para>
+        <para><emphasis role="bold">September 2025</emphasis>
+        </para>
+        <para>September 2025 will culminate in an extensive effort to demonstrate and validate our
+            ability to comprehensively and accurately author Laboratory in vitro diagnostic (LIVD)
+            and/or LIDR data through general authoring capabilities. The LIDR data model is still in
+            development by the SHIELD Collaborative Community and may not be available in time to
+            incorporate into our demonstration by September. However, LIVD provides a mature data
+            model and is planned to have the LIVD-on-FHIR specification released in March-April of
+            2025. </para>
+        <para>Our team will work with critical stakeholders and industry partners to run end-to-end
+            validation exercises and data quality checks on the General Authoring capabilities to
+            ensure LIVD, LIDR, and other knowledge can be authored, stored, and exported in a way
+            that supports improved data quality and interoperability through transmission. </para>
+        <para><emphasis role="bold">Key Events</emphasis>
+        </para>
+        <para>Our team is focusing on the September 13th - 14th 2025 Pittsburgh HL7 Connect-a-thon
+            as the next key event. While this is our primary focus, events may arise that our team
+            will look to participate in to gain industry and Subject Matter Expert (SME) feedback.
+            This Connect-a-thons could be used to determine if our data encoding and capturing
+            guidelines are specific enough to produce functional, high-quality, and interoperable
+            data. </para>
+    </section>
+    <section>
+        <title>Conclusion</title>
+        <para>Our primary goal is to demonstrate that IKM can measurably improve laboratory data
+            quality and interoperability to ultimately feed into RWD so that FDA can make informed,
+            real-time regulatory decisions. While this document outlines a variety of milestone
+            targets, the exact timing of certain events leading up to the end-to-end validation
+            study in September 2025 may change depending on client priorities, challenges, and
+            results. </para>
+        <para><emphasis role="bold">Beyond September 2025</emphasis>
+        </para>
+        <para>As the team looks beyond September 2025 and once we have developed the ability to
+            successfully author and manage LIVD and/or LIDR through General Authoring capabilities,
+            next steps would include furthering how these encoding guidelines can be distributed and
+            used to improve the quality of RWD in collaboration with data experts and DxD
+            stakeholders. One example of how this could be accomplished is through building a data
+            quality validation harness that could be used to assess and validate IVD data captured
+            as part of the FDA RWD sandbox and ensure that it meets the established LIVD or LIDR
+            encoding guidelines.</para>
+    </section>
+    <section>
+        <title>References</title>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para>Health Level Seven international [Internet]. [cited 2024 Feb 21].
+                        Available from: <link
+                            xlink:href="https://www.hl7.org/about/index.cfm?ref=nav"><emphasis
+                                role="underline"
+                                >https://www.hl7.org/about/index.cfm?ref=nav</emphasis></link>
+                    </para>
+                </listitem>
+            </orderedlist>
+            <orderedlist>
+                <listitem>
+                    <para>Welcome to the HL7 FHIR Foundation [Internet]. [cited 2024 Mar 7].
+                        Available from: <link xlink:href="https://fhir.org/"><emphasis
+                                role="underline">https://fhir.org/</emphasis></link>
+                    </para>
+                </listitem>
+            </orderedlist>
+            <orderedlist>
+                <listitem>
+                    <para>Diagnostic Data Program [Internet]. FDA; [cited 2024 Feb 21]. Available
+                        from: <link
+                            xlink:href="https://www.fda.gov/medical-devices/digital-health-center-excellence/diagnostic-data-program"
+                                ><emphasis role="underline"
+                                >https://www.fda.gov/medical-devices/digital-health-center-excellence/diagnostic-data-program</emphasis></link>
+                    </para>
+                </listitem>
+            </orderedlist>
+        </para>
+    </section> 
+    
+</chapter> 

@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>GSRS/UNII Demonstration Project Progress Report
+        (Months 13-24)</title>
+    <section>
+        <title>Purpose</title>
+        <para>There is an increasing need for high-quality and accurate data as healthcare
+            organizations becoming more reliant on electronic health records (EHRs), laboratory
+            information systems (LISs), and other electronic information systems. A primary tool for
+            many organizations, terminology standards work to improve the quality and accuracy of
+            data. Terminology standards aim to ensure information is captured and represented in a
+            repeatable and standardized format so that other organizations have a common
+            understanding of the data. While terminology standards are a useful tool, extensive
+            knowledge management (KM) is needed to identify, manage, and share the standardized data
+            that these systems and standards capture. As data flows within and between healthcare
+            systems, the use of different terminology standards, KM processes, and systems
+            themselves can pose a threat to the integrity of data. A recent study found that only
+            22-68% of data integrity is maintained in a single trip, posing challenges around
+            interpretation, and resulting accuracy around patient care [1].</para>
+        <para>Integrated Knowledge Management (IKM) is an approach to data management that aims to
+            maintain the meaning, integrity, and quality of data as it travels within and between
+            healthcare systems. IKM is an evolving approach to manage disparate terminology
+            standards using a common, centralized, and repeatable representation of data. The use of
+            a common model supports the interoperability of data between disparate terminology
+            standards, well documented version control even when different terminology standards
+            employ their own versioning practices, and the incorporation of new or emerging
+            terminology standards. IKM will use an iterative approach to build upon previous work on
+            Resource Description Frameworks (RDFs) and property graphs with novel ideas and
+            concepts. There is no reference or best practice guide for how an IKM solution can or
+            should operate and will therefore require extensive research, prototyping, and
+            development.</para>
+        <para>The Food and Drug Administration (FDA) created a Global Substance Registration System
+            (GSRS) to facilitate the efficient and accurate information exchange on substances
+            within regulated products. The creation of the GSRS knowledge base allowed for
+            standardized, scientific descriptions of substances across regulatory lines, such as
+            within and between countries. The collection and dependencies of knowledge within GSRS
+            presents a direct use case in which IKM and its capabilities can improve GSRS.</para>
+    </section>
+    <section>
+        <title>Aims</title>
+        <para>The aims of this document serve as a collection of landscape analyses of the GSRS
+            system and its parts within the domains of Integrated Knowledge Management: Knowledge
+            Management, and Knowledge Representation.</para>
+    </section>
+    <section>
+        <title>Global Substance Registration System (GSRS)/Unique Ingredient Identifier (UNII) Demonstrations</title>
+        <section>
+            <title>Knowledge Management: GSRS/UNII Demonstration Project Progress Report [Task
+                1.3.2]</title>
+            <para><emphasis role="bold">Progress Report Week 26</emphasis></para>
+            <section>
+                <title>Temporal Change Assessment of GSRS</title>
+                <para>GSRS is a comprehensive system designed to manage and track information about
+                    substances, particularly in the context of regulatory compliance and safety. It
+                    ensures that updates and modifications to its data are accurately managed and
+                    recorded through several key mechanisms.</para>
+                <para><emphasis role="bold">Version Control</emphasis></para>
+                <para>GSRS employs a simple version control system to keep track of changes to its
+                    data. With the use of its unique identifier, any modifications to the record
+                    result in the creation of a new version. This allows users to track the history
+                    of changes made to a substance, compare different versions of a substance record
+                    and revert to previous versions, if necessary [2].</para>
+                <para><emphasis role="bold">Audit Trails</emphasis></para>
+                <para>An audit trail is maintained for each substance record, documenting every
+                    change made to the data. This includes the nature of the change (e.g., addition,
+                    deletion, modification), the date and time of the change, the user or system
+                    that made the change, and the specific fields that were altered. Audit trails
+                    ensure transparency and accountability, making it possible to review the history
+                    of a substance and understand the context of each change [3].</para>
+                <para><emphasis role="bold">Data Validation and Quality Control</emphasis></para>
+                <para>GSRS incorporates data validation and quality control processes to ensure that
+                    updates are accurate and consistent. These processes include automated
+                    validation checks that verify the integrity and correctness of the data before
+                    it is saved, and manual review and approval workflows where changes must be
+                    reviewed and approved by authorized personnel before they are finalized
+                    [4].</para>
+                <para><emphasis role="bold">Role-Based Access Control</emphasis></para>
+                <para>GSRS uses role-based access control (RBAC) to manage who can view and modify
+                    substance data. Different roles (e.g., data entry, reviewer, administrator) have
+                    different levels of access and permissions. This helps prevent unauthorized
+                    changes and ensures that only qualified personnel can make updates [5].</para>
+                <para><emphasis role="bold">Data Archiving</emphasis></para>
+                <para>Older versions of substance records and audit logs are archived to ensure that
+                    the system remains efficient and performant. Archived data can be retrieved if
+                    needed, providing a complete historical record without cluttering the active
+                    database [6].</para>
+                <para><emphasis role="bold">Integration with External Systems</emphasis></para>
+                <para>GSRS can integrate with other regulatory and data management systems with the
+                    use of its Application Programming Interface (API), ensuring that updates made
+                    in GSRS are propagated to other systems as needed [7]. This integration helps
+                    maintain consistency across different platforms and reduces the risk of
+                    discrepancies.</para>
+                <para><emphasis role="bold">Reporting and Analytics</emphasis></para>
+                <para>GSRS provides reporting and analytics capabilities via its API that allow
+                    users to generate reports on changes made to substance data [7]. These reports
+                    can be used for regulatory submissions, internal audits, and other purposes.
+                    Analytics tools can also help identify trends and patterns in the data,
+                    supporting better decision-making.</para>
+                <para>IKM can significantly enhance GSRS by providing a structured framework for
+                    capturing, storing, and managing data changes. By creating a centralized
+                    repository, IKM ensures that all modifications to substance records are
+                    consistently documented, including metadata, such as the date, time, user, and
+                    rationale for each change. This facilitates robust version control, allowing
+                    users to track, compare, and revert to different versions of records as needed.
+                    Additionally, IKM enhances audit trails by providing detailed records of all
+                    actions taken on substance data, supporting regulatory compliance, and internal
+                    audits. Improved data validation and quality control processes, along with
+                    enhanced reporting and analytics capabilities, enable GSRS to maintain data
+                    integrity and gain insights into data change patterns. Overall, IKM promotes
+                    transparency, accountability, and collaboration among stakeholders, ensuring
+                    that data changes are accurately tracked and managed over time.</para>
+            </section>
+            <section>
+                <title>GSRS Release Process</title>
+                <para>The FDA's Global Substance Registration System (GSRS) releases new versions of
+                    data by updating its public database with new substance information, typically
+                    through a scheduled update process, and makes the updated data accessible via
+                    its online platform, allowing users to search and download the latest
+                    information using unique ingredient identifiers (UNIIs) as the primary access
+                    point. New versions are often accompanied by version numbers and release dates
+                    to indicate changes made to the dataset [8].</para>
+                <para>The release process for new data versions in the Global Substance Registration
+                    System (GSRS) is a meticulously structured procedure designed to ensure the
+                    integrity, accuracy, and compliance of substance information. This process
+                    begins with the identification and documentation of necessary updates or
+                    modifications to existing substance records. These changes can stem from new
+                    regulatory requirements, scientific discoveries, or corrections to previously
+                    entered data. Once the need for an update is identified, the proposed changes
+                    undergo an initial review by subject matter experts who assess the validity and
+                    implications of the modifications.</para>
+                <para><emphasis role="bold">Staging and Data Validation</emphasis></para>
+                <para>Following the initial review, the changes are entered into a staging
+                    environment within the GSRS, where they are subjected to automated validation
+                    checks. These checks verify the integrity and correctness of the data, ensuring
+                    that it adheres to predefined standards and formats. If the data passes these
+                    automated checks, it moves on to a manual review process. During this phase,
+                    authorized personnel, typically comprising senior data managers or regulatory
+                    experts, meticulously examine the changes. They ensure that the updates are not
+                    only accurate but also compliant with relevant regulatory guidelines and
+                    standards [7].</para>
+                <para><emphasis role="bold">Notifications to Stakeholders</emphasis></para>
+                <para>GSRS utilizes its public website as the primary communication platform to
+                    inform users about new updates and developments. The website is regularly
+                    updated with the latest information, including new substance registrations,
+                    regulatory changes, and enhancements to the system. Users can access detailed
+                    announcements, release notes, and documentation that provide insights into the
+                    updates. Additionally, the GSRS website may feature newsletters, alerts, and
+                    other resources to ensure that users are well-informed and can seamlessly
+                    integrate the latest changes into their workflows. This proactive approach helps
+                    maintain transparency and keeps stakeholders engaged with the ongoing
+                    improvements in the system [9].</para>
+                <para><emphasis role="bold">Deployment and Documentation</emphasis></para>
+                <para>The final step in the release process involves the actual deployment of the
+                    new data version into the live GSRS environment. This deployment is carefully
+                    monitored to ensure it proceeds smoothly and that the system remains functional
+                    and efficient. Post-release, the system maintains an audit trail documenting
+                    every change made to the data, including the nature of the change, the date and
+                    time, the user or system that made the change, and the specific fields that were
+                    altered. This audit trail ensures transparency and accountability, making it
+                    possible to review the history of a substance and understand the context of each
+                    change [10].</para>
+                <para>An opportunity for GSRS seems to be enhancing its version control system,
+                    which currently relies on the use of its unique identifier system. IKM can help
+                    GSRS with versioning and the release of new data versions by providing a
+                    centralized platform for managing and tracking changes. IKM ensures that all
+                    updates and modifications are documented and version-controlled, allowing for
+                    clear visibility of changes over time. It facilitates the creation and
+                    maintenance of release notes and documentation for each new data version,
+                    ensuring that all stakeholders are informed of updates. Additionally, IKM
+                    supports the coordination and communication among team members, streamlining the
+                    release process and ensuring that new data versions are deployed efficiently and
+                    accurately.</para>
+                <para>To elaborate more on IKM’s versioning capabilities, it facilitates the
+                    systematic tracking of data changes, ensuring that every modification is
+                    documented with detailed metadata, including timestamps, user information, and
+                    change descriptions. This meticulous version control allows for precise auditing
+                    and rollback capabilities, ensuring data integrity and consistency. By
+                    implementing IKM, GSRS can maintain a comprehensive history of all data entries
+                    and updates, which is crucial for regulatory compliance and accurate substance
+                    registration. Furthermore, IKM supports collaboration among multiple users by
+                    preventing data conflicts and ensuring that the most current and accurate
+                    information is always available. This leads to enhanced data reliability,
+                    streamlined workflows, and improved decision-making processes within the GSRS
+                    framework.</para>
+            </section>
+            <section>
+                <title>Conclusion</title>
+                <para><emphasis role="bold">Summary of Findings</emphasis></para>
+                <para>The GSRS system is a robust and comprehensive platform for substance
+                    registration and management. Its open-source nature, combined with community
+                    contributions and adherence to international standards, makes it a valuable tool
+                    for the pharmaceutical and chemical industries. The system's functionalities,
+                    user-friendly interface, and compliance support are key strengths that enhance
+                    its utility and effectiveness.</para>
+                <para><emphasis role="bold">Recommendations</emphasis></para>
+                <para>To further improve the GSRS system, the following recommendations are
+                    proposed:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Enhance User Training</emphasis>: Provide
+                            additional training resources and support to help users maximize the
+                            system's capabilities.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Increase Community Engagement</emphasis>:
+                            Encourage greater participation from the community to drive innovation
+                            and continuous improvement.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Strengthen Data Security</emphasis>: Implement
+                            advanced security measures to protect sensitive substance data and
+                            ensure compliance with data protection regulations.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Integrate Advanced Analytics</emphasis>:
+                            Incorporate advanced analytics tools to provide deeper insights into
+                            substance data and support decision-making processes.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Expand Data Model</emphasis>: Conduct additional
+                            analysis to understand how database can be expanded by integrating into
+                            other knowledge standards.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Utilize Validation Tools</emphasis>: Integrate
+                            automated validation tools where possible to assist with routine checks,
+                            reducing the burden on manual processes and minimizing human
+                            error.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Implement More Robust Version
+                                Tracking</emphasis>: Integrate an IKM system that helps track and
+                            log every change made to substance data, including detailed metadata
+                            such as user information, timestamps, and change descriptions to enhance
+                            data integrity, facilitate auditing, and ensure accurate version
+                            control.</para>
+                    </listitem>
+                </itemizedlist>
+                <para>By implementing these recommendations, GSRS can continue to evolve and meet
+                    the growing needs of the pharmaceutical and chemical industries, ensuring
+                    accurate and reliable substance registration and management.</para>
+            </section>
+        </section>
+        <section>
+            <title>Knowledge Representation: GSRS/UNII Demonstration Project Progress Report [Task
+                3.3.1]</title>
+            <para><emphasis role="bold">Progress Report Week 26</emphasis></para>
+            <section>
+                <title>Introduction</title>
+                <para>Following the completion of the initial investigation and the designation of
+                    data elements that can be represented by existing Tinkar components, we
+                    continued with our representation of GSRS by establishing the additional data
+                    used, authoring this starter data in Komet, and creating transformation logic to
+                    be used to generate the data set. Our focus has been on expanding the Tinkar
+                    framework to accommodate new patterns for data elements that could not be
+                    represented by existing concepts. These enhancements are designed to provide a
+                    more comprehensive and accurate representation of GSRS data and is part of our
+                    broader IKM strategy, which aims to facilitate seamless data sharing and
+                    collaboration across different regulatory and scientific databases.</para>
+            </section>
+            <section>
+                <title>Modeling GSRS</title>
+                <para>Out of the 23 data elements, GSRS includes five key data elements that are
+                    consistently present: UNII, Display Name, Ingredient Type, Substance Type, and
+                    Universally Unique Identifier (UUID). UNII, Display Name, Substance Type, and
+                    UUID can be represented using existing Tinkar concepts, as highlighted in Table
+                    1. However, Ingredient Type could not be represented using an existing Tinkar
+                    concept, so a new pattern was created for Ingredient Type.</para>
+                <para>The team also created new patterns for Molecular Formula (MF) and Simplified
+                    Molecular-Input Line-Entry System (SMILES). MF is the chemical formula that
+                    lists all the elements, plus how many atoms of each element, are present in a
+                    chemical compound [11]. It specifies the chemical proportions of the atoms
+                    within a particular GSRS substance ingredient. The MF describes useful
+                    information on the substance and is beneficial in ensuring accurate data. SMILES
+                    stands for the Simplified Molecular-Input Line-Entry System and represents the
+                    structure of a molecule using a simple string of characters [12]. It translates
+                    the MF into a text format that is easier to understand and manipulate. Each
+                    substances corresponding SMILES is useful in verifying consistency in the
+                    data.</para>
+                <para>The team included an identifier for RxCUI. RxCUI stands for RxNorm Concept
+                    Unique Identifier and is a unique numeric code that identifies a drug entity in
+                    RxNorm [13]. RxNorm is a data standard that includes normalized names for
+                    clinical drugs. RxCUIs are used to support the semantic interoperation between
+                    drug terminologies and various pharmacy knowledge base systems like GSRS. Since
+                    RxNorm is also part of our greater IKM, RxCUI is a GSRS element that supports
+                    the integration of drug and ingredient information and facilitates
+                    interoperability across different systems.</para>
+                <para>These eight elements serve as the first representation of GSRS. Table 1
+                    details how this starter set was modeled.<table frame="all">
+                        <title>
+                            <emphasis>Table 1: GSRS Modeled Starter Data</emphasis></title>
+                        <tgroup cols="2">
+                            <colspec colnum="1" colname="c1"/>
+                            <colspec colnum="2" colname="c2"/>
+                            <thead>
+                                <row>
+                                    <entry namest="c1" nameend="c2">Description Semantics</entry>
+                                </row>
+                            </thead>
+                            <tbody>
+                                <row>
+                                    <entry><emphasis role="bold">Display Name</emphasis></entry>
+                                    <entry>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Preferred Term - Preferred Substance Name -
+                                                  Display Name</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>FQN - Use the Official Name</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                    </entry>
+                                </row>
+                                <row>
+                                    <entry namest="c1" nameend="c2" align="center"><emphasis role="bold">Identifier
+                                            Semantics</emphasis></entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">UNII</emphasis></entry>
+                                    <entry>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>FQN – Unique Ingredient Identifier</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                    </entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">UUID</emphasis></entry>
+                                    <entry>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>FQN – Global Substance Registration System
+                                                  Universal Unique Identifier</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                    </entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">RxCUI</emphasis></entry>
+                                    <entry>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>FQN – RxNorm Concept Unique Identifier</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                    </entry>
+                                </row>
+                                <row>
+                                    <entry namest="c1" nameend="c2" align="center"><emphasis role="bold">Stated Definition
+                                        Semantics</emphasis></entry>
+                                </row>
+                                <row>
+                                    <entry>
+                                        <para><emphasis role="bold">Substance_Type</emphasis> – for
+                                            substances with NO RxCUI ID</para>
+                                    </entry>
+                                    <entry>
+                                        <para>The ISO 11238 substance type used for the primary
+                                            substance identity including:</para>
+                                        <para>chemicals, nucleic acids, proteins, polymers,
+                                            structurally diverse, mixtures and concepts
+                                            (SpecifiedSubstanceG1).</para>
+                                        <para>All substances will have at least a “simple” stated
+                                            definition of what substance they are.</para>
+                                    </entry>
+                                </row>
+                                <row>
+                                    <entry>
+                                        <para><emphasis role="bold">Substance_Type</emphasis> – for
+                                            substances with a RxCUI ID</para>
+                                    </entry>
+                                    <entry>The substances that have an RXCUI ID will have a more
+                                        hierarchical logical definition if RxNorm and SNOMED have
+                                        been loaded and the reasoner has been run. The RXCUI ID will
+                                        link to RxNorm to then link to a SNOMED CT concept code. The
+                                        corresponding SNOMED CT concept code will provide a
+                                        hierarchical logical definition.</entry>
+                                </row>
+                                <row>
+                                    <entry namest="c1" nameend="c2" align="center"><emphasis role="bold">New
+                                            Patterns</emphasis></entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Molecular Formula
+                                        (MF)</emphasis></entry>
+                                    <entry>
+                                        <para>Semantic Purpose:</para>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Molecular Formula Semantic</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                        <para>Semantic Meaning</para>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Molecular Formula Semantic</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                        <para>Field 1:</para>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Meaning: Molecular Formula</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Purpose: Molecular Formula</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Field Type: String</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                    </entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">SMILES</emphasis></entry>
+                                    <entry>
+                                        <para>Semantic Purpose:</para>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>SMILES Semantic</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                        <para>Semantic Meaning</para>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>SMILES Semantic</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                        <para>Field 1:</para>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Meaning: SMILES</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Purpose: SMILES</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                        <para>Field Type: String</para>
+                                    </entry>
+                                </row>
+                                <row>
+                                    <entry>
+                                        <para><emphasis role="bold">Ingredient_Type</emphasis> –
+                                            UNII grouping based on intended role: Ionic Moiety,
+                                            Ingredient Substance, Molecular Fragment, Specified
+                                            Substance, Unspecified Ingredient.</para>
+                                    </entry>
+                                    <entry>
+                                        <para>Semantic Purpose:</para>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Ingredient Type Semantic</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                        <para>Semantic Meaning</para>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Ingredient Type Semantic</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                        <para>Field 1:</para>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Meaning: Ingredient Type</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Purpose: Ingredient Type</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Field Type: Component Field</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                        <para>New Concepts for:</para>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Ionic Moiety</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Molecular Fragment</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Ingredient Substance</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Specified Substance</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Unspecific Ingredient</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                    </entry>
+                                </row>
+                            </tbody>
+                        </tgroup>
+                    </table></para>
+                <para>The remaining 15 data elements were not included in the GSRS starter data as
+                    analysis concluded they are not essential for ensuring consistency, accuracy,
+                    and interoperability across various systems. While the team was focused on
+                    creating a starter set that encompassed the major areas of GSRS that form the
+                    foundation of the shared knowledge base, these elements could be included as
+                    Identifier Semantics in the future to build off the pre-existing relationships.
+                    Table 2 highlights these elements and why they were not included for this
+                    starter set.<table frame="all">
+                        <title><emphasis>Table 2: GSRS Data That Is Not Included</emphasis></title>
+                        <tgroup cols="2">
+                            <colspec colnum="1" colname="c1"/>
+                            <colspec colnum="2" colname="c2"/>
+                            <thead>
+                                <row>
+                                    <entry>Data Element</entry>
+                                    <entry>Why this element was not included</entry>
+                                </row>
+                            </thead>
+                            <tbody>
+                                <row>
+                                    <entry>
+                                        <para><emphasis role="bold">EC</emphasis></para>
+                                        <para>European Chemicals Agency registry number (formerly
+                                            known EINECS)</para>
+                                    </entry>
+                                    <entry>This identifier is specific to chemical substances
+                                        registered in Europe and may not be relevant for datasets
+                                        focusing on broader or different geographical
+                                        regions.</entry>
+                                </row>
+                                <row>
+                                    <entry>
+                                        <para><emphasis role="bold">NCIT</emphasis></para>
+                                        <para>NCI Thesaurus Concept Code</para>
+                                    </entry>
+                                    <entry>This code is specific to the National Cancer Institute's
+                                        thesaurus, which might be too specialized for datasets not
+                                        focused on cancer research or related fields.</entry>
+                                </row>
+                                <row>
+                                    <entry>
+                                        <para><emphasis role="bold">RN</emphasis></para>
+                                        <para>Registry Number used by many public chemical
+                                            information systems particularly CAS Common
+                                            Chemistry</para>
+                                    </entry>
+                                    <entry>While useful for chemical databases, this number might be
+                                        too specific for general datasets that do not require
+                                        detailed chemical information.</entry>
+                                </row>
+                                <row>
+                                    <entry>
+                                        <para><emphasis role="bold">PUBCHEM</emphasis></para>
+                                        <para>PubChem Compound ID</para>
+                                    </entry>
+                                    <entry>This ID is specific to the PubChem database, which may
+                                        not be necessary for datasets that do not require detailed
+                                        chemical compound information.</entry>
+                                </row>
+                                <row>
+                                    <entry>
+                                        <para><emphasis role="bold">INCHIKEY</emphasis></para>
+                                        <para>A fixed-length string created from the IUPAC
+                                            International Chemical Identifier (InChI)</para>
+                                    </entry>
+                                    <entry>This identifier is highly specific to chemical
+                                        informatics and may not be relevant for datasets that do not
+                                        require precise chemical structure information.</entry>
+                                </row>
+                                <row>
+                                    <entry>
+                                        <para><emphasis role="bold">EPA_CompTox</emphasis></para>
+                                        <para> EPA Substance ID</para>
+                                    </entry>
+                                    <entry>This ID is specific to the Environmental Protection
+                                        Agency's CompTox database, which might be too specialized
+                                        for datasets not focused on environmental
+                                        toxicology.</entry>
+                                </row>
+                                <row>
+                                    <entry>
+                                        <para><emphasis role="bold">CATALOGUE_OF_LIFE</emphasis></para>
+                                        <para> Catalogue of Life organism ID</para>
+                                    </entry>
+                                    <entry>This identifier is specific to biological taxonomy and
+                                        may not be relevant for datasets that do not focus on
+                                        biodiversity or taxonomic classification</entry>
+                                </row>
+                                <row>
+                                    <entry>
+                                        <para><emphasis role="bold">ITIS</emphasis></para>
+                                        <para>Integrated Taxonomic Information System Taxonomic
+                                            Serial Number (ITIS TSN)</para>
+                                    </entry>
+                                    <entry>Similar to the Catalogue of Life ID, this is specific to
+                                        taxonomic classification and may not be necessary for
+                                        datasets not focused on biological taxonomy.</entry>
+                                </row>
+                                <row>
+                                    <entry>
+                                        <para><emphasis role="bold">NCBI</emphasis></para>
+                                        <para>NCBI taxonomy organism ID</para>
+                                    </entry>
+                                    <entry>This ID is specific to the National Center for
+                                        Biotechnology Information's taxonomy database and may be too
+                                        specialized for datasets not focused on genetic or
+                                        biological research.</entry>
+                                </row>
+                                <row>
+                                    <entry>
+                                        <para><emphasis role="bold">PLANTS</emphasis></para>
+                                        <para>USDA PLANTS organism ID</para>
+                                    </entry>
+                                    <entry>This identifier is specific to the USDA PLANTS database
+                                        and may not be relevant for datasets that do not focus on
+                                        plant taxonomy or agriculture.</entry>
+                                </row>
+                                <row>
+                                    <entry>
+                                        <para><emphasis role="bold">GRIN</emphasis></para>
+                                        <para>USDA Agricultural Research Service Germplasm Resources
+                                            Information Network (GRIN) nomen ID</para>
+                                    </entry>
+                                    <entry>This ID is specific to the GRIN database and may be too
+                                        specialized for datasets not focused on agricultural
+                                        research or germplasm resources.</entry>
+                                </row>
+                                <row>
+                                    <entry>
+                                        <para><emphasis role="bold">MPNS</emphasis></para>
+                                        <para>Kew Gardens Medicinal Plants Name Service Record ID
+                                            (includes source database prefix)</para>
+                                    </entry>
+                                    <entry>This identifier is specific to medicinal plants and may
+                                        not be relevant for datasets that do not focus on medicinal
+                                        botany or pharmacognosy.</entry>
+                                </row>
+                                <row>
+                                    <entry>
+                                        <para><emphasis role="bold">INN_ID</emphasis></para>
+                                        <para> Sequential number assigned by World Health
+                                            Organization's International Nonproprietary Name (INN)
+                                            Programme</para>
+                                    </entry>
+                                    <entry>This ID is specific to the WHO's INN Programme and may be
+                                        too specialized for datasets not focused on pharmaceutical
+                                        substances.</entry>
+                                </row>
+                                <row>
+                                    <entry>
+                                        <para><emphasis role="bold">USAN_ID</emphasis></para>
+                                        <para> Alphanumeric code used by American Medical
+                                            Association’s United States Adopted Names (USAN)
+                                            Council</para>
+                                    </entry>
+                                    <entry>This identifier is specific to the USAN Council and may
+                                        not be relevant for datasets that do not focus on
+                                        pharmaceutical naming conventions.</entry>
+                                </row>
+                                <row>
+                                    <entry>
+                                        <para><emphasis role="bold">DAILYMED</emphasis></para>
+                                        <para>UNIIs known to be associated with regulated product
+                                            listings on DailyMed</para>
+                                    </entry>
+                                    <entry>This ID is specific to the DailyMed database and may be
+                                        too specialized for datasets not focused on regulated
+                                        pharmaceutical products.</entry>
+                                </row>
+                            </tbody>
+                        </tgroup>
+                    </table></para>
+                <para>There are types of names that are not included in this starter set, but can be
+                    included in the future. Systematic Name (sys), Common Name (cn), Code (cd), and
+                    Brand/Trade Name (bn) can be added as identifier semantics.</para>
+            </section>
+            <section>
+                <title>GSRS Transformation Logic</title>
+                <para>The transformation logic is used to create Java code that uses raw data from
+                    GSRS to generate its corresponding Tinkar representation.</para>
+                <para> First, the user will select the UNII data they need from <link xlink:href="https://precision.fda.gov/uniisearch/archive">https://precision.fda.gov/uniisearch/archive</link> and download the file.
+                    They will unzip the file and open UNII_Records_DATE in excel. As shown in Table
+                    3, The STAMP coordinate for GSRS is based on the UNII data file used.<table frame="all">
+                        <title><emphasis>Table 3: GSRS STAMP Coordinates</emphasis></title>
+                        <tgroup cols="5">
+                            <colspec colnum="1" colname="c1"/>
+                            <colspec colnum="2" colname="c2"/>
+                            <colspec colnum="3" colname="c3"/>
+                            <colspec colnum="4" colname="c4"/>
+                            <colspec colnum="5" colname="c5"/>
+                            <thead>
+                                <row>
+                                    <entry>Status</entry>
+                                    <entry>Time</entry>
+                                    <entry>Author</entry>
+                                    <entry>Module</entry>
+                                    <entry>Path</entry>
+                                </row>
+                            </thead>
+                            <tbody>
+                                <row>
+                                    <entry>Active</entry>
+                                    <entry>
+                                        <para>Date of File</para>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>EX: the file UNII_Data_20241220 has a Time
+                                                  value of 2024-12-20</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                    </entry>
+                                    <entry>GSRS Author Concept</entry>
+                                    <entry>GSRS Module Concept</entry>
+                                    <entry>Master Path</entry>
+                                </row>
+                            </tbody>
+                        </tgroup>
+                    </table></para>
+                <para>Status defaults to active because the component is in use. Time is based on
+                    the date written in the name of the UNII data file that was previously
+                    downloaded. Author is GSRS Author Concept because it represents the author
+                    responsible for authoring the change. Module is GSRS Module Concept because it
+                    is an assignment based on the corresponding terminology. Path is Master Path
+                    because it is currently the default branch for components.</para>
+                <para>The user will begin by creating a new concept with the Name space and its
+                    corresponding UNII. This single concept will have three different UUIDs: UNII,
+                    RxCUI UUID, and FDA UUID. If RxCUI is not present, then the concept will not get
+                    that value and will have only a UNII and an FDA UUID. Every semantic that gets
+                    created has its own UUID. The description semantic that is created will have a
+                    reference component to the above UNII and follow the description pattern. The
+                    Language field will be the [English Language] concept. The Description Text
+                    value will be the literal string provided in the display name column. The Case
+                    Specificity field would be the [Case Insensitive] concept because the case
+                    sensitivity does not matter. The Description Type would be the [Fully Qualified
+                    Name].</para>
+                <para>Next, the user will create three semantics of the identifier pattern for UNII,
+                    RxCUI, and FDA UUID. Beginning with UNII, the Identifier Source will be UNII,
+                    and the Identifier Value will be the literal string provided in the UNII column.
+                    For RxCUI, the Identifier Source will be RxCUI, and the Identifier Value will be
+                    the literal string provided in the RxCUI column. For FDA UUID, the Identifier
+                    Source will be FDA UUID and the Identifier Value will be the literal string
+                    provided in the UUID column.</para>
+                <para>Then, the user will create a new semantics of the three patterns previously
+                    discussed. Beginning with Molecular Formula, Field 1 will be the literal string
+                    provided in the MF column. For SMILES, Field 1 will be the literal string
+                    provided in the SMILES column. For Ingredient Type, Field 1 is a Component Field
+                    of the five starter data ingredient types that have been created: Ionic Moiety,
+                    Molecular Fragment, Ingredient Substance, Specified Substance, and Unspecific
+                    Ingredient.</para>
+                <para>Finally, the user will create a new axiom semantic for Substance Type. The
+                    Substance Type concept is a subclass of UNII. The substance types are Chemicals,
+                    Concepts, Mixtures, Nucleic Acids, Polymers, Proteins, and Structurally diverse
+                    and are all starter data concepts that have been created.</para>
+            </section>
+            <section>
+                <title>Conclusion</title>
+                <section>
+                    <title>Summary of Findings</title>
+                    <para>This deliverable builds upon the initial progress report by further
+                        detailing the modeling and representation of the GSRS data elements in the
+                        context of IKM and its respective domains. The creation of new patterns has
+                        expanded the capability of Tinkar to accurately represent the complex data
+                        inherent in GSRS. Additionally, the inclusion of RxCUI identifiers enhances
+                        the interoperability of GSRS with other drug and ingredient information
+                        systems, facilitating seamless data integration and consistency. The
+                        outlined transformation logic provides a clear and systematic approach for
+                        converting raw GSRS data into its corresponding Tinkar representation,
+                        ensuring that the data is accurately and efficiently processed. This logic
+                        not only supports the initial data elements but also lays the groundwork for
+                        future expansions to include additional identifiers and semantic
+                        patterns.</para>
+                </section>
+                <section>
+                    <title>Next Steps</title>
+                    <para>As we move forward, the focus will be on refining these models, addressing
+                        any gaps found in the current representation, and exploring the inclusion of
+                        the remaining data elements as needed. By continuing to build on this
+                        foundation, we aim to enhance the quality, consistency, and interoperability
+                        of GSRS data, ultimately contributing to more robust and integrated
+                        knowledge management systems. The progress made thus far demonstrates the
+                        potential for substantial improvements in data quality and accessibility in
+                        healthcare, setting the stage for continued advancements in the
+                        field.</para>
+                </section>
+            </section>
+        </section>
+    </section>
+    <section>
+        <title>Conclusion</title>
+        <para>This deliverable serves as the initial progress report of the GSRS system in the
+            context of IKM and its respective domains. This document details the two arenas in which
+            IKM expertise can improve areas of concern within GSRS. Our summary of findings
+            identifies areas of focus to be addressed in subsequent reports and will require
+            additional and continued efforts to improve the implementation, functionality, and
+            adoption of IKM solutions into GSRS. GSRS serves as just one area of opportunity in
+            which IKM can make substantive improvements to its systems and result in better quality
+            of data.</para>
+    </section>
+    <section>
+        <title>References</title>
+        <orderedlist>
+            <listitem>
+                <para>Cholan, R. A., et al. (2022). Encoding laboratory testing data: case studies
+                    of the national implementation of HHS requirements and related standards in five
+                    laboratories. Journal of the American Medical Informatics Association, 29(8),
+                    1372–1380. https://doi.org/10.1093/jamia/ocac072</para>
+            </listitem>
+            <listitem>
+                <para>(2022, September 29). FDA’s Global Substance Registration System. Food and
+                    Drug Administration.
+                    https://www.fda.gov/industry/fda-data-standards-advisory-board/fdas-global-substance-registration-system</para>
+            </listitem>
+            <listitem>
+                <para>Nielsen, B., &amp; Alliance, P. (2024, August 29). GLOBAL SUBSTANCE
+                    REGISTRATION SYSTEM (GSRS) CONSORTIUM ROUND TABLE MEETING, from
+                    https://marketing.pistoiaalliance.org/hubfs/GSRS%20Round%20table%20discussion.pdf</para>
+            </listitem>
+            <listitem>
+                <para>Schmuff, N. (n.d.). Standardizing Quality Submissions and Assessments: PQ/CMC
+                    and KASA. Food and Drug Administration. Retrieved February 20, 2025, from
+                    https://www.fda.gov/media/168947/download</para>
+            </listitem>
+            <listitem>
+                <para>ncats. (2022, February 28). Admin: Group or Role. GitHub.
+                    https://github.com/ncats/gsrs3-main-deployment/wiki/Admin:-Group-or-Role</para>
+            </listitem>
+            <listitem>
+                <para>UNII - Archive. (2024). Food and Drug Administration. Retrieved February 20,
+                    2025, from https://precision.fda.gov/uniisearch/archive</para>
+            </listitem>
+            <listitem>
+                <para>ncats. (2024, November 19). Frequently Asked Questions. GitHub.
+                    https://github.com/ncats/gsrs3-main-deployment/wiki/Frequently-Asked-Questions#application-programming-interface-api</para>
+            </listitem>
+            <listitem>
+                <para>Peryea, T., et al. (2021). Global Substance Registration System: consistent
+                    scientific descriptions for substances related to health. Nucleic acids
+                    research, 49(D1), D1179–D1185. https://doi.org/10.1093/nar/gkaa962</para>
+            </listitem>
+            <listitem>
+                <para>1 GSRS (n.d.). Global Substance Registration System - GSRS. Retrieved February
+                    27, 2025, from https://gsrs.ncats.nih.gov/</para>
+            </listitem>
+            <listitem>
+                <para>ncats. (2022). Instructions to Install and Configure a Single Tomcat Instance,
+                    Pull and Build the Code, Deploy, Configure and Test GSRS v3.0 on Red Hat Linux
+                    (RHEL) GitHub. from
+                    https://github.com/ncats/gsrs3-main-deployment/blob/main/docs/public_example_instructions_to_install_%26_configure_Tomcat_pull_%26_build_the_code_deploy_configure_and_test_GSR</para>
+            </listitem>
+            <listitem>
+                <para>Illustrated Glossary of Organic Chemistry. (n.d.). Molecular formula (chemical
+                    formula). UCLA. Retrieved November 21, 2024, from
+                    https://www.chem.ucla.edu/~harding/IGOC/M/molecular_formula.html#:~:text=Molecular%20formula%20(chemical%20formula)%3A%20A%20list%20of%20all,present%3B%20in%20this%20case%20no%20subscript%20is%20used.</para>
+            </listitem>
+            <listitem>
+                <para>Environmental Protection Agency. (2016). SMILES Tutorial. EPA. Retrieved
+                    November 21, 2024, from
+                    https://archive.epa.gov/med/med_archive_03/web/html/smiles.html</para>
+            </listitem>
+            <listitem>
+                <para>Peryea, T., Southall, N., Miller, M., Katzel, D., Anderson, N., et al. (2021).
+                    Global substance registration system: Consistent scientific descriptions for
+                    substances related to health. NIH National Library of Medicine. Retrieved
+                    November 26, 2024, from
+                    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7779023/</para>
+            </listitem>
+        </orderedlist>
+    </section>
+</chapter>

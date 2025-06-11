@@ -1,0 +1,1154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Summary of Findings – Deployment Frameworks (Months 13-24)</title>
+    <section>
+        <title>Purpose</title>
+        <para>This document will serve as a summary of findings of the most efficient and effective
+            deployment tools and methodologies needed to manage and deploy the Systemic
+            Harmonization and Interoperability Enhancement for Laboratory Data (SHIELD) Integrated
+            Knowledge Management (IKM) platform to the open-source community. This understanding is
+            crucial for IKM as it will help to streamline the deployment processes, enhance
+            operational efficiency, and reduce potential risks. This analysis will enable the IKM to
+            make informed decisions about deployment strategies and identify areas for improvement
+            within the existing system. By providing valuable insights into the strengths and
+            weaknesses of various alternatives, IKM can optimize its deployment strategies and
+            improve the management and protection of data. Moreover, the findings from this paper
+            will guide the IKM in establishing a more robust and efficient deployment system.</para>
+        <para>This work serves as an initial report that will evolve as we continue to understand
+            the requirements, priorities, and needs of IKM and its users.</para>
+    </section>
+    <section>
+        <title>Methodology</title>
+        <para>In this section, we discuss the comprehensive methodology for evaluating and selecting
+            deployment tools and strategies within the context of DevOps practices. The methodology
+            is designed to evaluate key objectives of IKM software deployment best practices to
+            mitigate inefficiencies through the adoption of suitable tools and enhance security and
+            quality processes. Therefore, we will complete this analysis by examining 1) the tools
+            needed to store, build, and deploy both software and data artifacts and 2) the processes
+            used to complete the deployment.</para>
+        <para>Our approach for this evaluation involved the following process:</para>
+        <orderedlist>
+            <listitem>
+                <para>Identifying the types of software tools needed to support our intended
+                    deployment framework.</para>
+            </listitem>
+            <listitem>
+                <para>Formulating requirements or evaluation criteria of each tool type.</para>
+            </listitem>
+            <listitem>
+                <para>Researching and identifying available tools in the marketplace.</para>
+            </listitem>
+            <listitem>
+                <para>Completing an analysis of tool capabilities against the identified
+                    criteria.</para>
+            </listitem>
+            <listitem>
+                <para>Design and execute a proof of concept to validate research findings.</para>
+            </listitem>
+        </orderedlist>
+        <section>
+            <title>Deployment Tool Evaluation Methodology</title>
+            <para>As a first step to defining our deployment framework, we first needed to evaluate
+                the most suitable tools required to successfully deploy Integrated Knowledge
+                Environment (IKE) solutions, based on our chosen technology and project constraints.
+                As part of this analysis, we identified the need for the following tools to support
+                the deployment of IKE solutions:</para>
+            <para><emphasis role="bold">Version Control</emphasis> – Version control tools are
+                crucial for managing codebases, facilitating collaboration, and tracking changes.
+                Utilizing software tools such as Git, version control maintains a comprehensive
+                record of modifications made to the source code. This system allows multiple
+                developers to work simultaneously on the same codebase, enhancing both collaboration
+                and efficiency. In the event of errors, users can easily revert to previous
+                versions, rectifying issues with minimal disruption. By enabling seamless
+                collaboration, version control boosts efficiency and allows teams to operate with
+                greater agility and precision. For developer 5 teams, it significantly reduces
+                development time and increases the success rate of deployments. This functionality
+                is particularly vital for open-source tools, like IKM, where community collaboration
+                is encouraged. Users can propose changes, create feature branches, and submit pull
+                requests—fostering a dynamic and interactive development environment.</para>
+            <para><emphasis role="bold">Continuous Integration Continuous Delivery (CI/CD) Tools
+                </emphasis>– CI/CD tools are software tools that facilitate the implementation of
+                Continuous Integration (CI) and Continuous Deployment/Delivery (CD) practices. These
+                tools automate various stages of the software development lifecycle, including code
+                integration, building, testing, and deployment, to ensure a smooth and efficient
+                workflow. By managing build environments and automating repetitive tasks, these
+                tools enhance efficiency, allowing developers to concentrate on coding. CI/CD tools
+                ensure consistency throughout the build process, which is especially important in
+                environments with multiple interconnected projects. Furthermore, they help organize
+                builds to prevent disruptions when multiple users are working on various projects
+                simultaneously.</para>
+            <para><emphasis role="bold">Artifact Repository </emphasis>– Artifact repositories are
+                essential for storing and managing build artifacts, dependencies and binary files.
+                They play a pivotal role in maintaining consistency within CI/CD workflows by acting
+                as both a source for necessary build artifacts and a target for deployment artifacts
+                generated during the build process. By reducing the time spent on downloading
+                dependencies and optimizing the transition from source code to compiled binary
+                artifacts, artifact repositories significantly enhance efficiency. They also
+                contribute to the organization of builds, ensuring that multiple projects managed by
+                various users do not interfere with one another. All the above contributes to
+                consistent, reproducible builds that are consistent across various
+                environments.</para>
+            <para><emphasis role="bold">Code Quality/Security Tools</emphasis> – Code quality and
+                security tools analyze codebases for potential issues, vulnerabilities, and
+                maintainability. They measure code quality, which is pivotal to software quality and
+                affects its safety, security, and reliability. Additionally, they ensure code
+                security, which is vital for software reliability, and prevent breaches that could
+                compromise the software and its users. Code quality and security tools identify
+                potential issues such as bugs, security vulnerabilities, and performance problems,
+                thereby facilitating the maintenance and improvement of code quality. Moreover,
+                these tools enforce coding standards and best practices to create consistency across
+                the codebase and make it easier for developers to understand, modify, and maintain
+                code. Furthermore, code quality and security tools integrate with version control
+                systems and collaboration platforms, fostering a collaborative environment and
+                enabling teams to conduct code reviews and work together on improvements.</para>
+            <section>
+                <title>Deployment Tool Evaluation Criteria</title>
+                <para>To conduct an analysis and determine the most fitting deployment framework
+                    tools and methodologies, we must first define evaluation criteria for what is
+                    required by each tool.</para>
+                <para>Across all tool types, there are a few factors that must be considered:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Maintenance: Considering maintenance time and costs such as
+                            infrastructure, accounts, connectivity, etc. For example,
+                            Software-as-a-Service (SaaS) models tend to reduce maintenance overhead
+                            as compared to self-hosted solutions.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Accessibility: Assessing how easily external stakeholders and
+                            community participants can use/interact with and contribute to the code
+                            base.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Price: Considering the cost-effectiveness of the tool in relation to
+                            its features and capabilities.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Compliance: Assessing compliance with contract restrictions, such as
+                            audit client restrictions or Federal Information Security Modernization
+                            Act (FISMA) compliance.</para>
+                    </listitem>
+                </itemizedlist>
+                <para>The following criteria were identified for each type of software tool included
+                    in the analysis conducted.</para>
+                <para><emphasis role="bold">Version Control Tools:</emphasis></para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Branch/Tag Protection: Evaluating the capability to enforce
+                            permissions and restrictions on branch/tag creation and
+                            modification.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Release Assets / Notes: Examining features related to managing and
+                            documenting release assets and release notes.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Tool Integrations: Ability to integrate into other tools used within
+                            IKM (ex: Atlassian products).</para>
+                    </listitem>
+                    <listitem>
+                        <para>Authentication: Ease of configuring authentication.</para>
+                    </listitem>
+                </itemizedlist>
+                <para><emphasis role="bold">CI/CD Tools:</emphasis></para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Supported Platforms: Assessing the compatibility of the tool with
+                            various operating systems and development environments.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Documentation: The amount of “how to” documentation that
+                            exists.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Tool Integrations: Ability to integrate into other tools used within
+                            IKM (e.g. GitLab).</para>
+                    </listitem>
+                </itemizedlist>
+                <para><emphasis role="bold">Artifact Repositories:</emphasis></para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Supports the storage of private artifacts that are not publicly
+                            accessible.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Compatible with Maven build/release processes.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Provides simple authentication (username/password) to support external
+                            access.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Open-source hosting to reduce costs and prevent break in funding
+                            scenarios.</para>
+                    </listitem>
+                    <listitem>
+                        <para>SaaS managed service to prevent future maintenance support and
+                            funding.</para>
+                    </listitem>
+                </itemizedlist>
+                <para><emphasis role="bold">Code Quality/Security Scanning Tools</emphasis>:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Rule Customization: Assessing the flexibility and ease of customizing
+                            code quality and security rules to align with project
+                            requirements.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Reporting: Evaluating the comprehensiveness and clarity of the tool's
+                            reporting capabilities for code quality and security issues.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Code Analysis: Examining the depth and accuracy of code analysis
+                            performed by the tool.</para>
+                    </listitem>
+                </itemizedlist>
+            </section>
+            <section>
+                <title>Resources Used to Conduct Analysis</title>
+                <para>The research and resulting analysis were developed using a variety of
+                    resources, including but not limited to online documentation provided by
+                    software vendors, industry research papers and publications, insights from
+                    DevOps Subject Matters Experts (SMEs) and internal discussions and consultations
+                    with stakeholders.</para>
+            </section>
+        </section>
+        <section>
+            <title>Deployment Process Evaluation Methodology</title>
+            <para>As a second step to defining our deployment framework, once we have evaluated and
+                selected appropriate tools required to successfully deploy IKE solutions, we must
+                then evaluate what processes we will implement to complete the deployment. As part
+                of this analysis, we identified the following methods of deploying IKE
+                solutions:</para>
+            <para><emphasis role="bold">Installer Packages </emphasis>– Deploying a Java application
+                as an installer package serves several important purposes. Firstly, it simplifies
+                the installation process for end-users by providing a straightforward, guided setup
+                experience, often through a graphical user interface. This helps ensure that all
+                necessary components, dependencies, and configurations are correctly installed and
+                set up, reducing the risk of user error. Secondly, an installer package can bundle
+                the Java Runtime Environment (JRE) including specific libraries required by the
+                application, ensuring compatibility and reducing the need for users to manually
+                install these dependencies. Additionally, installer packages can automate tasks such
+                as creating shortcuts, setting environment variables, and registering the
+                application with the operating system, enhancing the overall user experience.
+                Lastly, deploying as an installer package can facilitate easier updates and
+                uninstallation processes, helping maintain the application's integrity and ensuring
+                a clean removal if needed.</para>
+            <para><emphasis role="bold">Virtual Machines</emphasis> – Deploying a Java application
+                on a virtual machine (VM) serves several key purposes. Firstly, it provides a
+                controlled and isolated environment, ensuring that the application runs consistently
+                regardless of the underlying hardware or operating system. This isolation helps
+                prevent conflicts with other applications and dependencies, enhancing stability and
+                reliability. Secondly, VMs offer scalability and flexibility, allowing resources
+                such as Central Processing Unit (CPU), memory, and storage to be adjusted based on
+                the application's needs, which is particularly useful for handling varying
+                workloads. Additionally, deploying on a VM facilitates easier management and
+                maintenance, as snapshots and backups can be taken to quickly restore the system in
+                case of issues. VMs also enhance security by isolating the application from the host
+                system and other VMs, reducing the risk of vulnerabilities spreading. Lastly, using
+                VMs supports better resource utilization and cost efficiency, as multiple VMs can
+                run on a single physical server, optimizing hardware usage.</para>
+            <para><emphasis role="bold">Containers</emphasis> – Deploying a Java application as a
+                container, such as with Docker, ensures consistency across different environments by
+                encapsulating the application and its dependencies into a single, portable unit,
+                eliminating the "it works on my machine" problem. Containers are lightweight and
+                efficient, sharing the host system's kernel, which results in faster startup times
+                and reduced resource consumption compared to traditional virtual machines. They
+                enhance scalability and flexibility, supporting microservices architecture and
+                enabling easy scaling based on demand. Containers also facilitate continuous
+                integration and continuous deployment (CI/CD) practices, streamlining the build,
+                test, and deployment processes for faster and more reliable releases. Additionally,
+                they improve isolation and security by running applications in separate environments
+                and simplify management through orchestration tools like Kubernetes, which automate
+                deployment, scaling, and operations.</para>
+            <para><emphasis role="bold">Digital Distribution Platforms</emphasis> – Deploying a Java
+                application on a digital distribution platform like app stores significantly
+                increases its visibility and accessibility, allowing a broad audience to easily
+                discover, download, and install the application, leading to higher user adoption and
+                engagement. App stores provide a centralized and trusted platform for distribution,
+                enhancing the application's credibility among users. They streamline processes for
+                updates and patches, ensuring users receive the latest features and security
+                improvements quickly. Additionally, app stores handle various aspects of
+                distribution, such as payment processing, user authentication, and analytics,
+                reducing the administrative burden on developers and allowing them to focus on
+                development. They also facilitate user feedback and reviews, providing valuable
+                insights for continuous improvement.</para>
+            <para><emphasis role="bold">Custom Scripts </emphasis>– Using custom scripts to deploy a
+                Java application provides flexibility and control over the deployment process,
+                allowing you to tailor steps to specific requirements and environments. They can
+                also automate repetitive tasks, reducing human error and ensuring consistency across
+                deployments. Custom scripts can integrate with tools like version control, CI/CD
+                pipelines, and monitoring solutions, creating an efficient workflow. They enable
+                handling of complex scenarios, such as multi-tier applications and
+                environment-specific configurations and can include custom logic for tasks like
+                database migrations and service restarts. Additionally, they enhance security by
+                incorporating checks and managing sensitive information securely.</para>
+            <para><emphasis role="bold">Build Automation Tools </emphasis>– Using a build automation
+                tool to deploy Java applications streamlines and enhances the development and
+                deployment processes by automating builds, ensuring consistent compilation, testing,
+                and packaging across environments. Build automation tools such as Gradle, Ant, and
+                Maven reduce manual effort, minimize errors, and effectively manage dependencies and
+                configurations. These tools integrate well with CI/CD pipelines, enabling automated,
+                repeatable deployments that improve efficiency and reliability. They support complex
+                project structures and provide standardized lifecycles, promoting consistency and
+                best practices across development teams. Each tool offers unique features while
+                benefiting from extensive ecosystems and community support,</para>
+            <section>
+                <title>Deployment Process Evaluation Criteria</title>
+                <para>The following criteria was identified for each type of deployment process
+                    included in the analysis conducted:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Technology Compatibility: Ensure the deployment tool is compatible
+                            with existing technologies, frameworks, and platforms used in your
+                            environment.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Integration Capabilities: Assess the tool’s ability to integrate with
+                            current CI/CD pipelines, version control systems, and other development
+                            tools.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Scalability: Determine the tool’s ability to handle the project scale,
+                            including support for large codebases and multiple environments.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Ease of Use: Consider the user-friendliness of the tool, including its
+                            learning curve, documentation, and user interface.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Level of Effort: Assess the time and effort required to implement,
+                            configure, and maintain the deployment tool.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Performance: Evaluate the tool’s performance in terms of deployment
+                            speed, reliability, and resource usage.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Open-Source Support: Check for the availability of community support,
+                            plug-ins, and extensions.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Vendor Support: Evaluate the quality and availability of vendor
+                            support, including response times, expertise, and available
+                            resources.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Customization and Flexibility: Assess the tool’s ability to be
+                            customized to meet specific needs and its flexibility to adapt to
+                            changing requirements.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Documentation and Training: Consider the availability and quality of
+                            documentation, tutorials, and training resources.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Community and Ecosystem: Evaluate the strength and activity of the
+                            tool’s user community and the availability of third-party integrations
+                            and extensions.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Cost and Licensing: Analyze the total cost of ownership, including
+                            initial setup costs, licensing fees, infrastructure / hosting costs and
+                            any additional costs for scaling or advanced features.</para>
+                    </listitem>
+                </itemizedlist>
+            </section>
+        </section>
+    </section>
+    <section>
+        <title>Findings</title>
+        <para>After an extensive analysis of various deployment tools and methodologies, this
+            section encapsulates the key findings.</para>
+        <section>
+            <title>Deployment Tool Analysis Findings</title>
+            <section>
+                <title>Version Control Tool Options</title>
+                <para>The following version control tools were analyzed against the identified
+                    criteria and key findings provided below and Table 1:</para>
+                <para><emphasis role="bold">GitLab (Cloud)</emphasis></para>
+                <para>Strengths of GitLab's tools include integration with GitLab's ecosystem,
+                    offering a seamless experience with other GitLab features such as CI/CD
+                    pipelines and issue tracking. Weaknesses of Gitlab's tools include limited
+                    integration with external tools and platforms compared to GitHub.</para>
+                <para><emphasis role="bold">GitHub (Cloud)</emphasis></para>
+                <para>GitHub's strengths include its wide adoption and integration with various
+                    third-party tools and services. There is robust community support and extensive
+                    documentation. A drawback of GitHub is the lack of some features that are
+                    available in GitLab's integrated ecosystem.</para>
+                <para><emphasis role="bold">Bitbucket</emphasis></para>
+                <para>Bitbucket's strength includes tight integration with Atlassian's suite of
+                    tools, which is suitable for teams already using Jira and Confluence. A
+                    disadvantage of Bitbucket is that it is less popular than GitHub and GitLab,
+                    potentially leading to fewer community resources and integrations.<table frame="all">
+                        <title><emphasis>Table 1: Evaluation of Version Control
+                            Options</emphasis></title>
+                        <tgroup cols="4">
+                            <colspec colnum="1" colname="c1" colwidth="1.01*"/>
+                            <colspec colnum="2" colname="c2" colwidth="1.02*"/>
+                            <colspec colnum="3" colname="c3" colwidth="1*"/>
+                            <colspec colnum="4" colname="c4" colwidth="1.01*"/>
+                            <thead>
+                                <row>
+                                    <entry/>
+                                    <entry>GitLab (Cloud)</entry>
+                                    <entry>GitHub (Cloud)</entry>
+                                    <entry>BitBucket</entry>
+                                </row>
+                            </thead>
+                            <tbody>
+                                <row>
+                                    <entry><emphasis role="bold">Branch/Tag
+                                        Protections</emphasis></entry>
+                                    <entry>Yes</entry>
+                                    <entry>Yes, if open source</entry>
+                                    <entry>Yes</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Release
+                                        Assets/Notes</emphasis></entry>
+                                    <entry>Yes</entry>
+                                    <entry>Yes</entry>
+                                    <entry>Some - supports notes but not assets</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Price</emphasis></entry>
+                                    <entry>$</entry>
+                                    <entry>Free, if open source. Must buy server for licensing.
+                                        Limited features for free closed source</entry>
+                                    <entry>Free</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Other Evaluation
+                                            Consideration</emphasis></entry>
+                                    <entry>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Lighter learning curve since IKM is currently
+                                                  using GitLab</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Works well if using GitLab CI and GitLab
+                                                  Security</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Not a restricted entity</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                    </entry>
+                                    <entry>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Currently being used as the repository for
+                                                  promoted, open-source code</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Restricted entity</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                    </entry>
+                                    <entry>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Free and integrates well with JIRA. Allows for
+                                                  good pulgin integrations with tools like
+                                                  Snyk</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Not a restricted entity</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                    </entry>
+                                </row>
+                            </tbody>
+                        </tgroup>
+                    </table></para>
+            </section>
+            <section>
+                <title>CI/CD Tool Options</title>
+                <para>The following CI/CD tools were analyzed against the identified criteria and
+                    key findings provided below and in Table 2:</para>
+                <para><emphasis role="bold">GitLab CI (Cloud)</emphasis></para>
+                <para>GitLab CI's strengths include its native integration with GitLab, enabling
+                    easy setup and configuration of CI/CD pipelines directly from the repository.
+                    GitLab CI's weakness is its limitation to GitLab's ecosystem; therefore, it
+                    potentially lacks some features provided by standalone CI/CD tools.</para>
+                <para><emphasis role="bold">GitHub Actions (Cloud)</emphasis></para>
+                <para>Strengths of GitHub Actions include offering flexible and customizable
+                    workflows with tight integration with GitHub repositories. GitHub Actions
+                    supports a wide range of programming languages and platforms. A drawback of
+                    GitHub Actions is that it requires more manual setup than fully integrated CI/CD
+                    platforms like GitLab CI.</para>
+                <para><emphasis role="bold">Jfrog Pipelines</emphasis></para>
+                <para>Jfrog's strengths include providing advanced pipeline orchestration
+                    capabilities, which integrate seamlessly with Jfrog Artifactory for artifact
+                    management. A weakness of Jfrog is that there may be a steeper learning curve
+                    compared to more straightforward CI/CD solutions.</para>
+                <para><emphasis role="bold">Amazon Web Services (AWS) CodeBuild</emphasis></para>
+                <para>AWS CodeBuild's strengths include a fully managed build service, which scales
+                    automatically to accommodate varying workloads. Additionally, there is deep
+                    integration with other AWS services. A disadvantage of AWS CodeBuild is that it
+                    is limited to the AWS ecosystem and may not be the best choice for multi-cloud
+                    environments.</para>
+                <para><emphasis role="bold">TeamCity (Cloud)</emphasis></para>
+                <para>TeamCity's power is its feature-rich CI/CD tool with support for complex build
+                    pipelines and extensive customization options. TeamCity's shortcoming is that it
+                    requires more setup and maintenance than cloud-native solutions like GitLab CI
+                    or GitHub Actions.<table frame="all">
+                        <title><emphasis>Table 2: Evaluation of Build Tool
+                            Options</emphasis></title>
+                        <tgroup cols="6">
+                            <colspec colnum="1" colname="c1" colwidth="1*"/>
+                            <colspec colnum="2" colname="c2" colwidth="1*"/>
+                            <colspec colnum="3" colname="c3" colwidth="1*"/>
+                            <colspec colnum="4" colname="c4" colwidth="1*"/>
+                            <colspec colnum="5" colname="c5" colwidth="1*"/>
+                            <colspec colnum="6" colname="c6" colwidth="1*"/>
+                            <thead>
+                                <row>
+                                    <entry/>
+                                    <entry>GitLab CI (Cloud)</entry>
+                                    <entry>GitHub Actions (Cloud)</entry>
+                                    <entry>Jfrog Pipelines</entry>
+                                    <entry>AWS CodeBuild</entry>
+                                    <entry>Team City (Cloud)</entry>
+                                </row>
+                            </thead>
+                            <tbody>
+                                <row>
+                                    <entry><emphasis role="bold">Supported
+                                        Platforms</emphasis></entry>
+                                    <entry>Yes (emulation to get x86-64)</entry>
+                                    <entry>Yes, low cores and arm not included - cannot improve on
+                                        this platform but can expand to AWS</entry>
+                                    <entry>None, but can control cloud/kubernetes</entry>
+                                    <entry>Yes</entry>
+                                    <entry>Some (Linux, x86, and Win - and anything on AWS)</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Price</emphasis></entry>
+                                    <entry>$</entry>
+                                    <entry>Free for all - open source</entry>
+                                    <entry>$</entry>
+                                    <entry>$</entry>
+                                    <entry>$$</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Other Evaluation
+                                            Consideration</emphasis></entry>
+                                    <entry>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Covers all the build needs</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Integrates well with GitLab</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Not restricted entity</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                    </entry>
+                                    <entry>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Matches the build for GitHub, but may run into
+                                                  limitations</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Restricted entity</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                    </entry>
+                                    <entry>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Newer service with limited
+                                                  documentation</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Can run against any Git system build</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Not restricted entity</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                    </entry>
+                                    <entry>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Works if using AWS entirely</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Not restricted entity</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                    </entry>
+                                    <entry>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Can run against any Git system as the primary
+                                                  build</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Not restricted entity</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                    </entry>
+                                </row>
+                            </tbody>
+                        </tgroup>
+                    </table></para>
+            </section>
+            <section>
+                <title>Artifact Repository Options</title>
+                <para>The following artifact repository tools were analyzed against the identified
+                    criteria and key findings provided below and in Table 3:</para>
+                <para><emphasis role="bold">Sonatype Nexus Repository (Hosted)</emphasis></para>
+                <para>Sonatype Nexus Repository offers comprehensive format support, efficient
+                    dependency management, robust security and access control, high scalability and
+                    performance, seamless integration with CI/CD tools, and a user-friendly
+                    interface. It benefits from an active community and commercial support options.
+                    However, it can be costly for the Pro version; has a learning curve and
+                    complexity in setup; is resource-intensive; requires ongoing maintenance; has
+                    limited built-in analytics in the OSS version; and may add integration
+                    complexity with external tools.</para>
+                <para><emphasis role="bold">GitHub Packages (Cloud)</emphasis></para>
+                <para>A strength of GitHub Packages is its tight integration with GitHub
+                    repositories, providing private package hosting for various package types (e.g.,
+                    npm, Maven, Docker). A drawback of GitHub Packages is a limitation of GitHub's
+                    ecosystem, potentially leading to a lack of some features offered by dedicated
+                    artifact repositories.</para>
+                <para><emphasis role="bold">JFrog Artifactory (Cloud / Hosted)</emphasis></para>
+                <para>JFrog Artifactory's strengths include an enterprise-grade artifact repository
+                    supporting multiple package types and providing advanced features like artifact
+                    metadata management and access control. JFrog Artifactory's disadvantage
+                    includes requiring additional setup and configuration compared to more
+                    straightforward, cloud-native solutions. JFrog offers both a hosted solution and
+                    a cloud service.</para>
+                <para><emphasis role="bold">AWS S3 Bucket</emphasis></para>
+                <para>Using AWS S3 to store software artifacts offers several benefits, including
+                    high durability and availability, as S3 automatically replicates data across
+                    multiple facilities. It provides virtually unlimited storage capacity with a
+                    pay-as-you-go pricing model, making it cost-effective for varying storage needs.
+                    S3 integrates seamlessly with other AWS services, enhancing automation and
+                    scalability within existing CI/CD pipelines. It also offers robust security
+                    features, including encryption and fine-grained access control, ensuring that
+                    our artifacts are securely stored and managed. Additionally, S3's global
+                    infrastructure allows for low-latency access to artifacts from anywhere in the
+                    world. However, there are some cons, such as potential costs associated with
+                    data transfer and storage, the need for proper configuration to avoid security
+                    vulnerabilities, and the lack of built-in artifact management features like
+                    versioning and metadata handling, which may require additional tools or
+                    services.</para>
+                <para><emphasis role="bold">Maven Central</emphasis></para>
+                <para>Using Maven Central to store software artifacts offers several benefits,
+                    including widespread accessibility and reliability, high availability and
+                    redundancy, and seamless integration with Maven and other build tools,
+                    simplifying dependency management and version control. It also enhances
+                    visibility and distribution, allowing artifacts to be easily discovered and used
+                    by other developers. However, there are some cons, such as the strict
+                    requirements and validation processes for publishing artifacts, potential delays
+                    in artifact propagation, the inability to remove published artifacts, the public
+                    nature of all published artifacts and limited support for non-Java artifacts,
+                    which may necessitate additional repositories for other types of software
+                    components.</para>
+                <para>
+                    <table frame="all">
+                        <title><emphasis>Table 3: Evaluation of Artifact Repository
+                                Options</emphasis></title>
+                        <tgroup cols="7">
+                            <colspec colnum="1" colname="c1" colwidth="1*"/>
+                            <colspec colnum="2" colname="c2" colwidth="1*"/>
+                            <colspec colnum="3" colname="c3" colwidth="1*"/>
+                            <colspec colnum="4" colname="c4" colwidth="1*"/>
+                            <colspec colnum="5" colname="c5" colwidth="1*"/>
+                            <colspec colnum="6" colname="c6" colwidth="1*"/>
+                            <colspec colnum="7" colname="c7" colwidth="1*"/>
+                            <thead>
+                                <row>
+                                    <entry/>
+                                    <entry>Sonatype Nexus (Hosted)</entry>
+                                    <entry>JFrog Artifactory (Cloud)</entry>
+                                    <entry>JFrog Artifactory (Hosted)</entry>
+                                    <entry>GitHub Packages</entry>
+                                    <entry>AWS S3</entry>
+                                    <entry>Maven Central</entry>
+                                </row>
+                            </thead>
+                            <tbody>
+                                <row>
+                                    <entry><emphasis role="bold">Can store private data
+                                            artifacts</emphasis></entry>
+                                    <entry>Yes</entry>
+                                    <entry>Yes</entry>
+                                    <entry>Yes</entry>
+                                    <entry>No - Artifact files sizes exceed max in data
+                                        transfer</entry>
+                                    <entry>Yes</entry>
+                                    <entry>No</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Compatible with
+                                        Maven</emphasis></entry>
+                                    <entry>Yes</entry>
+                                    <entry>Yes</entry>
+                                    <entry>Yes</entry>
+                                    <entry>Yes</entry>
+                                    <entry>Yes</entry>
+                                    <entry>Yes</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Allows third-party
+                                            access</emphasis></entry>
+                                    <entry>No - Deloitte requires VPN + MFA</entry>
+                                    <entry>No - requires all users to be part of same
+                                        organization</entry>
+                                    <entry>No - Deloitte requires VPN + MFA</entry>
+                                    <entry>No - requires adding external users to GitHub
+                                        organization to access</entry>
+                                    <entry>Yes</entry>
+                                    <entry>Yes</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Open-source SaaS
+                                        hosting</emphasis></entry>
+                                    <entry>No</entry>
+                                    <entry>No - Deloitte restricted entity + not FISMA compliant
+                                        (FDA requirement)</entry>
+                                    <entry>No</entry>
+                                    <entry>Yes</entry>
+                                    <entry>No</entry>
+                                    <entry>Yes</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Does not require hosting
+                                            management</emphasis></entry>
+                                    <entry>No</entry>
+                                    <entry>Yes</entry>
+                                    <entry>No</entry>
+                                    <entry>Yes</entry>
+                                    <entry>Yes</entry>
+                                    <entry>Yes</entry>
+                                </row>
+                            </tbody>
+                        </tgroup>
+                    </table>
+                </para>
+            </section>
+            <section>
+                <title>Code Quality/Security Options</title>
+                <para>The following code quality and security tools were analyzed against the
+                    identified criteria and key findings provided below and Table 4:</para>
+                <para><emphasis role="bold">SonarCloud</emphasis></para>
+                <para>A strength of SonarCloud is that it is a cloud-based code analysis platform
+                    that supports multiple programming languages and provides detailed reports and
+                    actionable insights. A drawback of SonarCloud is that it has limited integration
+                    options compared to some other solutions.</para>
+                <para><emphasis role="bold">GitHub CodeQL (Cloud)</emphasis></para>
+                <para>A strength of GitHub CodeQL is its advanced code analysis tool that leverages
+                    semantic code search to detect security vulnerabilities and compliance issues. A
+                    limitation of GitHub CodeQL is the restriction to GitHub's ecosystem,
+                    potentially not supporting all programming languages.</para>
+                <para><emphasis role="bold">JetBrains Qodana</emphasis></para>
+                <para>A strength of JetBrains Qodana is its comprehensive code analysis and quality
+                    assurance tool that supports various programming languages and IDEs. A weakness
+                    of JetBrains Qodana is that it requires integration with JetBrains IDEs for full
+                    functionality.</para>
+                <para><emphasis role="bold">JFrog X-Ray/Advanced Security</emphasis></para>
+                <para>A strength of JFrog X-Ray/Advanced Security is that it provides comprehensive
+                    vulnerability analysis for container images and binary artifacts integrated with
+                    the JFrog Artifactory. A weakness is that it may require additional setup and
+                    configuration for full functionality.</para>
+                <para><emphasis role="bold">GitLab Scanning (Cloud)</emphasis></para>
+                <para>GitLab Scanning's strength is integration directly into GitLab CI/CD
+                    pipelines, providing seamless code scanning and vulnerability detection. GitLab
+                    Scanning's disadvantage is the limitation of GitLab's ecosystem, which may not
+                    offer as many features as standalone security scanning tools.</para>
+                <para><emphasis role="bold">Snyk</emphasis></para>
+                <para>Synk's strength is specializing in identifying and fixing vulnerabilities in
+                    open-source dependencies, offering actionable insights and automated
+                    remediation. A drawback of Synk is that it requires extra setup and
+                    configuration to integrate with CI/CD pipelines.<table frame="all">
+                        <title><emphasis>Table 4: Evaluation of Code Quality/Security
+                                Options</emphasis></title>
+                        <tgroup cols="7">
+                            <colspec colnum="1" colname="c1" colwidth="1*"/>
+                            <colspec colnum="2" colname="c2" colwidth="1*"/>
+                            <colspec colnum="3" colname="c3" colwidth="1*"/>
+                            <colspec colnum="4" colname="c4" colwidth="1*"/>
+                            <colspec colnum="5" colname="c5" colwidth="1*"/>
+                            <colspec colnum="6" colname="c6" colwidth="1*"/>
+                            <colspec colnum="7" colname="c7" colwidth="1*"/>
+                            <thead>
+                                <row>
+                                    <entry/>
+                                    <entry>GitLab Scanning (Cloud)</entry>
+                                    <entry>GitHub CodeQL (Cloud)</entry>
+                                    <entry>SonarCloud</entry>
+                                    <entry>Snyk</entry>
+                                    <entry>JetBrains Qodona</entry>
+                                    <entry>JFrog X-Ray/Advanced Security</entry>
+                                </row>
+                            </thead>
+                            <tbody>
+                                <row>
+                                    <entry><emphasis role="bold">Price</emphasis></entry>
+                                    <entry>$</entry>
+                                    <entry>Free for public repositories, cannot use for
+                                        private</entry>
+                                    <entry>Free for public repositories, cannot use for
+                                        private</entry>
+                                    <entry>$</entry>
+                                    <entry>Free community support, additional features for
+                                        teams</entry>
+                                    <entry>$</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Notes</emphasis></entry>
+                                    <entry>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Good fir with GitLab CI </para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Would require adding each repository to
+                                                  settings.xml</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Need to figure out how to handle orphaned
+                                                  artifacts</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Not restricted entity</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                    </entry>
+                                    <entry>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Would require adding each repository to
+                                                  settings.xml</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Need to figure out how to handle orphaned
+                                                  artifacts</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Restricted entity</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                    </entry>
+                                    <entry>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Can only use on public Github
+                                                  repositories</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Restricted entity</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                    </entry>
+                                    <entry>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Integrates easily with BitBucket (maybe even
+                                                  free)</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Works independently with all others</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Not restricted entity</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                    </entry>
+                                    <entry>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Built into IDE, connects to any git
+                                                  repo</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Can be used in pipeline if wanting to execute
+                                                  docker container</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Not restricted entity</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                    </entry>
+                                    <entry>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>Probably best when coupled with Artifactory
+                                                  and/or JFrog Platform</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>Not restricted entity</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                    </entry>
+                                </row>
+                            </tbody>
+                        </tgroup>
+                    </table></para>
+            </section>    
+        </section>
+        <section>
+            <title>Deployment Process Analysis Findings</title>
+            <para>After iterative development and analysis of different deployment processes, we’ve
+                identified the following key findings regarding the various deployment methods we’ve
+                investigated.</para>
+            <para><emphasis role="bold">Installer Packages</emphasis></para>
+            <para>Our current CI/CD pipeline efficiently generates installer packages to support
+                multiple operating systems, ensuring a seamless and consistent deployment process.
+                This approach is lightweight and user-friendly, allowing users to easily access the
+                latest installer by visiting the GitHub releases page. The automated generation of
+                installer packages not only simplifies the installation process for end-users but
+                also ensures that they always have access to the most up-to-date version of the
+                software. Additional benefits of using installer packages include streamlined
+                distribution, reduced installation errors, and enhanced user experience, as the
+                packages are pre-configured and tested for compatibility across different
+                environments. This method significantly improves the overall efficiency and
+                reliability of our software deployment.</para>
+            <figure xml:id="ScreenshotofKometreleasespagewithgeneratedinstallerpackages"> 
+                <title>Figure 1: Screenshot of Komet releases page with generated installer
+                    packages</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/Screenshot%20of%20Komet%20releases%20page%20with%20generated%20installer%20packages.svg" scale="50" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure>
+            <para><emphasis role="bold">Virtual Machines</emphasis></para>
+            <para>We have not yet conducted extensive research or proof of concept (PoC) development
+                on leveraging virtual machines, but it is an option we are considering for future
+                scalability and to address installation security requirements on Government
+                Furnished Equipment (GFEs). Utilizing virtual machines could provide a robust
+                solution for scaling our deployment processes, offering greater flexibility and
+                control over the environment. This approach would allow us to create isolated,
+                secure instances that comply with stringent government security protocols, thereby
+                bypassing installation restrictions and ensuring compliance. As we explore this
+                option further, we anticipate that virtual machines could enhance our ability to
+                deliver secure, scalable, and efficient solutions to meet the evolving needs of our
+                clients.</para>
+            <para><emphasis role="bold">Containers</emphasis></para>
+            <para>As part of our research to bring IKM solutions into the web, we’ve been able to
+                successfully run Komet with JPro in a docker container. Running our web version of
+                IKM in a Docker container offers numerous benefits, enhancing both deployment and
+                operational efficiency. Docker containers provide a consistent and isolated
+                environment, ensuring that the application runs reliably across different systems
+                and stages of the development lifecycle. This containerization simplifies the
+                deployment process, reduces compatibility issues, and accelerates the setup time, as
+                all dependencies and configurations are encapsulated within the container.
+                Additionally, Docker's lightweight nature and efficient resource utilization enable
+                better scalability and performance. By leveraging Docker, we can achieve seamless
+                integration with CI/CD pipelines, streamline updates and rollbacks, and enhance
+                overall system security through container isolation. This approach ultimately leads
+                to a more agile, reliable, and maintainable deployment strategy for our web version
+                of IKM. </para>
+            <para>Currently, our focus is on developing a robust authoring desktop application but
+                as we continue to scale our solutions and take advantage of the power of the cloud,
+                we will do further research into other benefits of containerization.</para>
+            <para><emphasis role="bold">Digital Distribution Platform</emphasis></para>
+            <para>Utilizing digital distribution platforms like the Apple Store to make our
+                application available to users offers significant advantages, including broad reach,
+                streamlined updates, and enhanced visibility. We have done significant research in
+                determining what is required to deploy an application to the Apple Store, forever.
+                Through this research, we determined that we must maintain an Apple Developer
+                account, which incurs an annual fee and requires ongoing management by a single
+                organization. This necessity introduces challenges, particularly in determining who
+                should own and manage the account. Additionally, there are concerns about the
+                continuity of account ownership and application support after the current contract
+                funding ends. Without a clear solution for these issues, we face potential
+                disruptions in application availability and maintenance, which could impact user
+                experience and satisfaction. Once we find an acceptable solution to these issues, we
+                can continue investigating how to leverage digital distribution platforms to release
+                our application more broadly.</para>
+            <para><emphasis role="bold">Custom Scripts</emphasis></para>
+            <para>During our initial research and solutioning for deploying our application, we
+                leveraged custom bash scripts to automate various deployment tasks. This approach
+                provided several benefits, including increased control and flexibility over the
+                deployment process. Custom bash scripts allowed us to tailor the deployment steps to
+                our specific requirements, ensuring that each stage was executed precisely as
+                needed. Additionally, these scripts facilitated rapid iteration and testing,
+                enabling us to quickly identify and resolve issues. The use of bash scripts also
+                enhanced repeatability and consistency, reducing the likelihood of human error and
+                ensuring that deployments were performed uniformly across different environments.
+                Overall, this method proved to be a powerful and efficient way to manage our
+                deployment processes during the early stages of our project.</para>
+            <para><emphasis role="bold">Build Automation Tools</emphasis></para>
+            <para>Maven is a standard build tool widely used in the industry for managing and
+                automating project builds. For example, it is the tool used to manage Systematized
+                Nomenclature of Medicine (SNOMED) data releases, ensuring consistent and reliable
+                deployment of complex medical terminologies. Maven excels at dependency management,
+                automatically resolving transitive dependencies to ensure that all necessary
+                libraries and plugins are available and consistent across different environments. By
+                focusing on "convention over configuration," Maven simplifies project setup and
+                maintenance through a standardized build lifecycle with predefined phases and a
+                standard directory layout. Additionally, Maven boasts a rich ecosystem of plugins
+                and extensions, enabling it to perform a wide range of tasks beyond just building
+                the project. It is versatile enough to be used both locally on a developer's machine
+                and in Continuous Integration (CI) environments, automating the build process and
+                enhancing overall efficiency and reliability.</para>
+            <para>For these reasons, we continue to invest heavily in Maven and its processes. After
+                our initial iteration of deployment processes using custom scripts, we recently
+                moved to using the Maven Release Plugin. By encapsulating the release process within
+                a Maven plugin, we provide a standardized, reusable tool that anyone can use to
+                deploy their version of IKM solutions. This approach ensures that all deployments
+                adhere to the same procedures and configurations, reducing the risk of errors and
+                discrepancies. It simplifies the deployment process, making it more accessible to
+                team members who may not be familiar with the intricacies of the release logic.
+                Additionally, a Maven plugin can be easily integrated into existing build and CI/CD
+                pipelines, streamlining the overall workflow and improving efficiency. Ultimately,
+                this consolidation fosters a more cohesive and reliable deployment strategy,
+                benefiting both developers and end-users.</para>
+        </section>
+    </section>
+    <section>
+        <title>Conclusions and Next Steps</title>
+        <para>In conclusion, this analysis has provided a thorough evaluation of several deployment
+            tools and methodologies. Each tool has its unique strengths and potential areas for
+            improvement, and their effectiveness can vary depending on specific use cases and
+            requirements.</para>
+        <para>Based on the insights gathered from evaluating various options for version control,
+            build tools, artifact repositories, and code quality/security tools, the following
+            recommendations are proposed for future consideration/implementation:</para>
+        <section>
+            <title>Version Control</title>
+            <para>After thorough analysis, it was determined that GitHub was the most appropriate
+                version control tool to be used for IKE. GitHub has widespread adoption within the
+                developer community, especially for open-source development. It is free for
+                open-source projects, provides robust features such as integration with other DevOps
+                tools and was already being leveraged for IKE development. Since the original
+                version of this deliverable, we have migrated fully to utilizing GitHub repositories
+                for version control.</para>
+        </section>
+        <section>
+            <title>CI/CD Tool</title>
+            <para>After careful consideration, we chose to use GitHub Actions for our project due to
+                its open-source nature, which allows us to create reusable actions and leverage
+                contributions from the broader community, thereby making development easier and
+                faster. This collaborative environment enhances productivity by enabling us to build
+                on existing solutions and share our own. GitHub Actions also offers a similar and
+                familiar user experience, reducing the learning curve compared to other tools like
+                Jfrog, and allowing our team to ramp up quickly. Its seamless integration with
+                GitHub ensures a smooth workflow, as it natively connects with our repositories and
+                facilitates continuous integration and deployment processes. Additionally, being
+                cloud-based, GitHub Actions requires less maintenance, freeing our team from
+                managing infrastructure and allowing us to focus more on development and
+                innovation.</para>
+            <para>In contrast, we found Jfrog to have sparse documentation, which posed challenges
+                in understanding and implementing its features. Furthermore, Jfrog was not free,
+                limiting our ability to conduct thorough analysis and testing without incurring
+                costs. Since we were already using GitHub, we could easily perform a proof of
+                concept (POC) and further analysis with GitHub Actions, which satisfied all our
+                needs and was the easiest to implement based on our existing footprint. These
+                factors combined to make GitHub Actions the optimal choice for our CI/CD
+                needs.</para>
+            <para>Since the original version of this deliverable, we have migrated fully to
+                utilizing GitHub Actions for our CI/CD processes.</para>
+        </section>
+        <section>
+            <title>Artifact Repository</title>
+            <para>After our initial research into an artifact repository, we had to conduct another
+                analysis because we were unable to find a cloud-based service that was free for
+                open-source use, could meet our data storage requirements, or was not a restricted
+                entity and therefore unsuitable for this contract. Consequently, we reconsidered
+                self-hosting and decided to go with Nexus because it was already in use within our
+                organization and part of our CI/CD process. Previously, we determined that it did
+                not meet the original criteria around being accessible to third-party users with
+                simple authentication such as username and password and required a VPN to access.
+                However, we were able to identify a solution in which it could be integrated with a
+                separate instance to make data artifacts more easily available. This solution met
+                our needs for accessibility, security, and compliance, making it the best choice for
+                our artifact repository.</para>
+        </section>
+        <section>
+            <title>Code Quality/Security Tools</title>
+            <para>We chose to use SonarCloud for our project due to its seamless integration with
+                GitHub Actions, which allows us to incorporate code quality checks directly into our
+                CI/CD pipeline. Additionally, SonarCloud integrates well with JaCoCo, the Java code
+                quality and code coverage tool we use, enabling us to maintain high standards of
+                code quality and coverage. Its compatibility with Maven is another significant
+                advantage, as we can utilize Maven commands and plugins to streamline the analysis
+                process. Furthermore, SonarCloud provides comprehensive quality metrics that other
+                tools do not offer, giving us deeper insights into code maintainability,
+                reliability, and security. These integrations and unique metrics make SonarCloud an
+                invaluable tool for ensuring the overall quality of our codebase.</para>
+            <para>As a next step, we plan to determine which security tool should be used. Based on
+                our current priorities and the maturity of our product development, we have not
+                needed to address this yet, but it remains an important consideration for the
+                future.</para>
+        </section>
+        <section>
+            <title>Deployment Processes</title>
+            <para>We will continue to investigate the best strategies to deploy our solution to our
+                community, with a specific focus on maturing our use of Maven. By enhancing our
+                Maven practices, we aim to streamline our build and dependency management processes
+                further. Additionally, we will explore the benefits and uses of containerization,
+                which can offer improved scalability, consistency, and portability for our
+                applications. This ongoing investigation will help us refine our deployment
+                strategies, ensuring that we deliver robust and efficient solutions to our
+                community.</para>
+            <para>Next steps involve using these findings to inform the IKM deployment framework and
+                methodologies for FDA SHIELD. Continuous monitoring and evaluation should be
+                conducted to ensure that the chosen tools and methodologies continue to meet the
+                evolving needs of the IKM. Further research and analysis may also be necessary as
+                new deployment tools and methodologies enter the market to be up to date with the
+                latest industry standards and best practices.</para>
+        </section>
+    </section>
+    <section>
+        <title>References</title>
+        <orderedlist>
+            <listitem>
+                <para>JFrog. JFrog Pipelines. [Internet]. Available from:
+                    https://www.jfrog.com/confluence/display/JFROG/JFrog+Pipelines. Accessed on:
+                    February 8, 2024.</para>
+            </listitem>
+            <listitem>
+                <para>GitHub. GitHub Actions. [Internet]. Available from:
+                    https://github.com/features/actions. Accessed on: February 8, 2024</para>
+            </listitem>
+            <listitem>
+                <para>JFrog. JFrog Artifactory. [Internet]. Available from:
+                    https://www.jfrog.com/confluence/display/JFROG/Artifactory. Accessed on:
+                    February 8, 2024.</para>
+            </listitem>
+            <listitem>
+                <para>SonarSource. SonarCloud. [Internet]. Available from: https://sonarcloud.io/.
+                    Accessed on: February 8, 2024.</para>
+            </listitem>
+            <listitem>
+                <para>GitHub. GitHub CodeQL. [Internet]. Available from:
+                    https://github.com/features/security. Accessed on: February 8, 2024.</para>
+            </listitem>
+            <listitem>
+                <para>JetBrains. Qodana. [Internet]. Available from:
+                    https://www.jetbrains.com/qodana/. Accessed on: February 8, 2024.</para>
+            </listitem>
+            <listitem>
+                <para>JFrog. JFrog Xray. [Internet]. Available from:
+                    https://www.jfrog.com/confluence/display/JFROG/Xray. Accessed on: February 8,
+                    2024.</para>
+            </listitem>
+            <listitem>
+                <para>Humble J, Farley D. Continuous Delivery: Reliable Software Releases through
+                    Build, Test, and Deployment Automation. Addison-Wesley Professional;
+                    2010.</para>
+            </listitem>
+            <listitem>
+                <para>Kim G, Behr K, Spafford G. The DevOps Handbook: How to Create World-Class
+                    Agility, Reliability, and Security in Technology Organizations. IT Revolution
+                    Press; 2016.</para>
+            </listitem>
+        </orderedlist>
+    </section>
+</chapter>

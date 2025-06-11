@@ -5,7 +5,7 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <info>
         <title>Integrated Knowledge Management (IKM) Book</title>
-        <subtitle>Version 3 - Last Updated 01/14/2025</subtitle>
+        <subtitle>Version 4 - Last Updated 03/19/2025</subtitle>
     </info>
     <part>
         <title>Introduction</title>
@@ -51,6 +51,8 @@
             <xi:include href="statement-intro-begin.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
             <xi:include href="statement-intro-patterns.xml"
                 xmlns:xi="http://www.w3.org/2001/XInclude"/>
+             <!-- <title xml:id="Summary of Findings">Summary of Findings – Data Collection and Transmission for FDA Medical Device Development Tools</title>
+        <xi:include href="Summary%20of%20Findings%20–%20Data%20Collection%20and%20Transmission%20for%20FDA%20Medical%20Device%20Development%20Tools.xml"/> -->
         </chapter>
         <chapter>
             <title>Statement Historical Implementations</title>

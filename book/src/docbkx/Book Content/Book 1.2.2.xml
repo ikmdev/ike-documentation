@@ -122,8 +122,9 @@
             <section>
                 <title>STAMP</title>
             
-            <para>STAMP is a syntax used to represent current and previous terminology assets
-                (Concepts, patterns, and semantics) in Tinkar using the following five requirements: </para>
+                <para>STAMP (see <xref linkend="STAMP"/> below) is a syntax used to represent
+                current and previous terminology assets (Concepts, patterns, and semantics) in
+                Tinkar using the following five requirements: </para>
                 
             <para>
                 <orderedlist>
@@ -151,6 +152,28 @@
                     </listitem>
                 </orderedlist>
             </para>
+                <figure xml:id="STAMP"> 
+                    
+                    <title>STAMP</title>
+                    
+                    <mediaobject> 
+                        
+                        <imageobject> 
+                            
+                            <imagedata fileref="../images/STAMP.svg" 
+                                
+                                scale="25" align="center"/> 
+                            
+                        </imageobject> 
+                        
+                    </mediaobject> 
+                    
+                </figure>
+            <para>The figure above shows the five requirements of the STAMP syntax used to capture
+                all historical changes with context to maintain semantic meaning. With concepts
+                having detailed version history accessible, users can manage changes to concepts
+                over time and view previous iterations of concept encoding to ensure consistency and
+                accuracy.</para> 
                 
             <para>STAMP is not only used to version Tinkar data, but it is also a requirement for
                 all Tinkar assets, existing and new. Ensuring all data follows this syntax supports
@@ -264,20 +287,37 @@
             <section>
                 <title>Knowledge Management Environment (Komet)</title>
             
-                <para>Knowledge Management Environment (Komet) serves as the knowledge management integrated development environment (IDE)
-                for SHIELD. An IDE is a software used to build applications that combines developer
-                tools into one graphical user interface (GUI). IDE are equipped with a
-                well-integrated UI which allows the developer to write, edit, debug, and compile
-                code and automate tasks for software development. [10] This IDE is open source,
-                meaning the code being developed is open to the public and available for all to edit
-                and distribute. This decentralized production model is a movement in the software
-                community and has led to major advancements in code and is often cheaper, flexible,
-                and has more permanency that private or proprietary software. [11] Komet has
-                automated features such as a text editor, build automation, and debugger, and can
-                support additional features like refactoring, code search, and continuous
-                integration and continuous deployment (CI/CD) tools. Komet supports plug ins and
-                extensions for developers to customize workflows and needs. [12] All standard
-                harmonization will be facilitated within Komet. </para>
+                <para>Knowledge Management Environment (Komet) serves as the knowledge management
+                integrated development environment (IDE) for SHIELD. An IDE is a software used to
+                build applications that combines developer tools into one graphical user interface
+                (GUI). IDE are equipped with a well-integrated UI which allows the developer to
+                write, edit, debug, and compile code and automate tasks for software development.
+                [10] This IDE is open source, meaning the code being developed is open to the public
+                and available for all to edit and distribute. This decentralized production model is
+                a movement in the software community and has led to major advancements in code and
+                is often cheaper, flexible, and has more permanency that private or proprietary
+                software. [11] Komet has automated features such as a text editor, build automation,
+                and debugger, and can support additional features like refactoring, code search, and
+                continuous integration and continuous deployment (CI/CD) tools. Komet supports plug
+                ins and extensions for developers to customize workflows and needs (see <xref linkend="KometUI"/> below). [12] All
+                standard harmonization will be facilitated within Komet. </para>
+                <figure xml:id="KometUI"> 
+                    
+                    <title>Komet User Interface</title> 
+                    
+                    <mediaobject> 
+                        
+                        <imageobject> 
+                            
+                            <imagedata fileref="../images/KometUI.svg" 
+                                
+                                scale="75" align="center"/> 
+                            
+                        </imageobject> 
+                        
+                    </mediaobject> 
+                    
+                </figure>
             </section>
             <section>
                 <title>Coordinates</title>
