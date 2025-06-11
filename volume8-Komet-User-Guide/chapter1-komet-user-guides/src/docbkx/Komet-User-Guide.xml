@@ -17,7 +17,7 @@
                         <title>Komet Download</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Komet%20Download.svg" scale="30"
+                                <imagedata fileref="../../../src/docbkx/images/Komet%20Download.svg" scale="30"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -43,7 +43,7 @@
                         <title>Komet Installer File</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Komet%20Installer%20File.svg" scale="60"
+                                <imagedata fileref="../../../src/docbkx/images/Komet%20Installer%20File.svg" scale="60"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -56,7 +56,7 @@
                         <title>Run Komet</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Run%20Komet.svg" scale="60"
+                                <imagedata fileref="../../../src/docbkx/images/Run%20Komet.svg" scale="60"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -69,7 +69,7 @@
                         <title>Komet Mac Installer File</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Komet%20Mac%20Installer%20File.svg"
+                                <imagedata fileref="../../../src/docbkx/images/Komet%20Mac%20Installer%20File.svg"
                                     scale="20" align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -99,7 +99,7 @@
                         <title>Open SpinedArrayStore</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Open%20SpinedArrayStore.svg" scale="60"
+                                <imagedata fileref="../../../src/docbkx/images/Open%20SpinedArrayStore.svg" scale="60"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -107,23 +107,7 @@
                 </listitem>
                 <listitem>
                     <para>Select the data source you would like to use and click “Ok” in the bottom
-                        right and proceed to Step 8.. There are currently three data sources to
-                        choose from</para>
-                    <orderedlist>
-                        <listitem>
-                            <para>PLACEHOLDER - Currently, solor-ids-256.sa is the data source that
-                                works for me. </para>
-                        </listitem>
-                        <listitem>
-                            <para>SNOMED CT</para>
-                        </listitem>
-                        <listitem>
-                            <para>SNOMED-LOINC Collaboration</para>
-                        </listitem>
-                        <listitem>
-                            <para>LIDR  </para>
-                        </listitem>
-                    </orderedlist>
+                        right and proceed to Step 8</para>
                 </listitem>
                 <listitem>
                     <para>If you do not see a data source, copy and paste the zip file containing
@@ -148,7 +132,7 @@
                         <title>Komet Interface</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Landing%20Page.svg" scale="30"
+                                <imagedata fileref="../../../src/docbkx/images/Landing%20Page.svg" scale="30"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -166,7 +150,7 @@
                         <title>New Journal</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/New%20Journal%20Panel.svg" scale="45"
+                                <imagedata fileref="../../../src/docbkx/images/New%20Journal%20Panel.svg" scale="45"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -192,7 +176,7 @@
                         <title>Komet Concept Search</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Concept%20Search.svg" scale="30"
+                                <imagedata fileref="../../../src/docbkx/images/Concept%20Search.svg" scale="30"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -223,7 +207,7 @@
                         <title>View Concept Details</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Concept%20Details.svg" scale="45"
+                                <imagedata fileref="../../../src/docbkx/images/Concept%20Details.svg" scale="45"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -261,7 +245,7 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata
-                                        fileref="images/Visualize%20Hierarchical%20Relationships.svg" scale="15" align="center"/>
+                                        fileref="../../../src/docbkx/images/Visualize%20Hierarchical%20Relationships.svg" scale="15" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -275,7 +259,7 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata
-                                        fileref="images/Other%20Hierarchical%20Relationship%20View.svg"
+                                        fileref="../../../src/docbkx/images/Other%20Hierarchical%20Relationship%20View.svg"
                                         scale="35" align="center"/>
                                 </imageobject>
                             </mediaobject>
@@ -302,7 +286,7 @@
                     <title>Versioning Panel</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Get%20to%20Versioning.svg" scale="35"
+                            <imagedata fileref="../../../src/docbkx/images/Get%20to%20Versioning.svg" scale="35"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -320,7 +304,7 @@
                     <title>Viewing Versioning</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Viewing%20Versioning.svg" scale="60"
+                            <imagedata fileref="../../../src/docbkx/images/Viewing%20Versioning.svg" scale="60"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -339,7 +323,7 @@
                     <title>Version Nodes</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Viewing%20Versioning2.svg" scale="60"
+                            <imagedata fileref="../../../src/docbkx/images/Viewing%20Versioning2.svg" scale="60"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -352,7 +336,7 @@
                     <title>Concept Version Options</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Concept%20History%20Options.svg" scale="35"
+                            <imagedata fileref="../../../src/docbkx/images/Concept%20History%20Options.svg" scale="35"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -374,7 +358,7 @@
                     <title>Creating a Concept</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Create%20New%20Concept.svg" scale="35" align="center"
+                            <imagedata fileref="../../../src/docbkx/images/Create%20New%20Concept.svg" scale="35" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -386,7 +370,7 @@
                     <title>New Concept</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/New%20Concept.svg" scale="35" align="center"
+                            <imagedata fileref="../../../src/docbkx/images/New%20Concept.svg" scale="35" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -399,7 +383,7 @@
                     <title>Creating STAMP Properties</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Edit%20STAMP.svg" scale="35" align="center"
+                            <imagedata fileref="../../../src/docbkx/images/Edit%20STAMP.svg" scale="35" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -413,7 +397,7 @@
                     <title>Adding a Description</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/New%20Description.svg" scale="35" align="center"
+                            <imagedata fileref="../../../src/docbkx/images/New%20Description.svg" scale="35" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -427,7 +411,7 @@
                     <title>Adding an Axiom</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/New%20Axiom.svg" scale="35" align="center"
+                            <imagedata fileref="../../../src/docbkx/images/New%20Axiom.svg" scale="35" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -447,7 +431,7 @@
                     <title>Editing a Concept</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Edit%20Concept.svg" scale="35" align="center"
+                            <imagedata fileref="../../../src/docbkx/images/Edit%20Concept.svg" scale="35" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -463,7 +447,7 @@
                         <title>Edit Description</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Editing%20a%20Concept.svg" scale="35"
+                                <imagedata fileref="../../../src/docbkx/images/Editing%20a%20Concept.svg" scale="35"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -476,7 +460,7 @@
                         <title>Editing a Fully Qualified Name</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Editing%20a%20Concept2.svg" scale="35"
+                                <imagedata fileref="../../../src/docbkx/images/Editing%20a%20Concept2.svg" scale="35"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -489,7 +473,7 @@
                         <title>Adding a New Description</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Editing%20a%20Concept3.svg" scale="35"
+                                <imagedata fileref="../../../src/docbkx/images/Editing%20a%20Concept3.svg" scale="35"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -510,7 +494,7 @@
                         <title>Editing an Axiom</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Axiom%20Editing2.svg" scale="45"
+                                <imagedata fileref="../../../src/docbkx/images/Axiom%20Editing2.svg" scale="45"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -528,7 +512,7 @@
                     <title>New LIDR Record</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/NewLIDRRecord.svg" scale="45"
+                            <imagedata fileref="../../../src/docbkx/images/NewLIDRRecord.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -540,7 +524,7 @@
                     <title>LIDR Viewer</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/LIDR%20Viewer.svg" scale="45"
+                            <imagedata fileref="../../../src/docbkx/images/LIDR%20Viewer.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -553,7 +537,7 @@
                     <title>Author LIDR STAMP</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Author%20LIDR%20STAMP.svg" scale="45"
+                            <imagedata fileref="../../../src/docbkx/images/Author%20LIDR%20STAMP.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -568,7 +552,7 @@
                     <title>LIDR STAMP</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/LIDR%20STAMP.svg" scale="45"
+                            <imagedata fileref="../../../src/docbkx/images/LIDR%20STAMP.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -581,7 +565,7 @@
                     <title>Edit Device Summary</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Edit%20Device%20Summary.svg" scale="45"
+                            <imagedata fileref="../../../src/docbkx/images/Edit%20Device%20Summary.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -596,7 +580,7 @@
                     <title>Add Device by Dragging</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Add%20Device.svg" scale="45"
+                            <imagedata fileref="../../../src/docbkx/images/Add%20Device.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -606,7 +590,7 @@
                     <title>Confirm Device</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Confirm%20Device.svg" scale="45"
+                            <imagedata fileref="../../../src/docbkx/images/Confirm%20Device.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -619,7 +603,7 @@
                     <title>Device Summary</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Device%20Summary.svg" scale="45"
+                            <imagedata fileref="../../../src/docbkx/images/Device%20Summary.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -636,7 +620,7 @@
                     <title>Add LIDR Record Details</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Add%20LIDR%20Record%20Details.svg" scale="45"
+                            <imagedata fileref="../../../src/docbkx/images/Add%20LIDR%20Record%20Details.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -655,7 +639,7 @@
                     <title>View LIDR Record Details</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/View%20LIDR%20Record%20Details.svg" scale="45"
+                            <imagedata fileref="../../../src/docbkx/images/View%20LIDR%20Record%20Details.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -693,7 +677,7 @@
                             <title>Export Artifact</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata fileref="images/export%20artifact.svg" scale="30"
+                                    <imagedata fileref="../../../src/docbkx/images/export%20artifact.svg" scale="30"
                                         align="center"/>
                                 </imageobject>
                             </mediaobject>
@@ -716,7 +700,7 @@
                         <title>Import Artifact</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Import%20Artifact.svg" scale="30"
+                                <imagedata fileref="../../../src/docbkx/images/Import%20Artifact.svg" scale="30"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -729,7 +713,7 @@
                         <title>Select File</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="images/Select%20File.svg" scale="30"
+                                <imagedata fileref="../../../src/docbkx/images/Select%20File.svg" scale="30"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -762,7 +746,7 @@
                     <title>Open Reasoner</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Open%20Reasoner.svg" scale="45" align="center"/>
+                            <imagedata fileref="../../../src/docbkx/images/Open%20Reasoner.svg" scale="45" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -774,7 +758,7 @@
                     <title>Reasoner</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Reasoner.svg" scale="45" align="center"/>
+                            <imagedata fileref="../../../src/docbkx/images/Reasoner.svg" scale="45" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -786,7 +770,7 @@
                     <title>Run the Reasoner</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Run%20Reasoner.svg" scale="45"
+                            <imagedata fileref="../../../src/docbkx/images/Run%20Reasoner.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -800,7 +784,7 @@
                     <title>Reasoner In Action</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Reasoner%20In%20Action.svg" scale="45"
+                            <imagedata fileref="../../../src/docbkx/images/Reasoner%20In%20Action.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -815,7 +799,7 @@
                     <title>Reasoner Results</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Reasoner%20Results.svg" scale="45"
+                            <imagedata fileref="../../../src/docbkx/images/Reasoner%20Results.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -828,7 +812,7 @@
                     <title>Compare Results</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Compare%20Results.svg" scale="45"
+                            <imagedata fileref="../../../src/docbkx/images/Compare%20Results.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -839,7 +823,7 @@
                     <title>Understand Equivalents</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Understand%20Equivalents.svg" scale="45"
+                            <imagedata fileref="../../../src/docbkx/images/Understand%20Equivalents.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
