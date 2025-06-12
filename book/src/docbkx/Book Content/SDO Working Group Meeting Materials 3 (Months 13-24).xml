@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>SDO Working Group Meeting Materials 3 (Months 13-24)</title>
+    <section>
+        <title>Deliverable Contents</title>
+        <para>To advance the Integrated Knowledge Management (IKM) architecture it is essential to
+            secure buy-in and collaborate with various Standards Development Organizations (SDOs)
+            such as Health Level Seven International (HL7). This involves actively participating in
+            regular meetings, reviewing project documentation, and managing implementation guides.
+            Additionally, the Project Scope Statement (PSS) is in consensus for the upcoming
+            balloting cycle, September 2025. Table 1 outlines the key deliverables associated with
+            these activities, providing a clear overview of our efforts to enhance Knowledge
+            Management within HL7. </para>
+        <para>Table 1: Key Deliverables for Knowledge Management within HL7</para>
+        <informaltable>
+            <tgroup cols="3">
+                <colspec colnum="1" colname="col1"/>
+                <colspec colnum="2" colname="col2"/>
+                <colspec colnum="3" colname="col3"/>
+                <tbody>
+                    <row>
+                        <entry><emphasis role="bold">Deliverable Title</emphasis></entry>
+                        <entry><emphasis role="bold">Description</emphasis></entry>
+                        <entry><emphasis role="bold">Deliverable File / Location</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para> </para>
+                            <para>HL7 Meeting Participation</para>
+                            <para> </para>
+                        </entry>
+                        <entry>Participated in the bi-weekly HL7 Vocabulary recurring conference
+                            call, “Guidelines for Standardized Terminology Knowledgebase (for
+                            Vocabulary).” Agenda and meeting notes included.</entry>
+                        <entry>
+                            <para>URL: <link
+                                    xlink:href="https://confluence.hl7.org/display/VOC/Standardized+Terminology+Knowledgebase+Project+Calls+and+Meetings"
+                                    >https://confluence.hl7.org/display/VOC/Standardized+Terminology+Knowledgebase+Project+Calls+and+Meetings</link></para>
+                            <para><link
+                                    xlink:href="https://confluence.hl7.org/display/VOC/Standardized+Terminology+Knowledgebase+Project+Calls+and+Meetings"
+                                    >https://confluence.hl7.org/display/VOC/Standardized+Terminology+Knowledgebase+Project+Calls+and+Meetings</link></para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>HL7 Project Pages</entry>
+                        <entry>Updated Project Scope Statement for September ballot and socialized
+                            it. Reviewed and triaged suggested changes to the Terminology Change Set
+                            Exchange Implementation guide with the HL7 community. </entry>
+                        <entry>
+                            <para>Project Scope Statement:</para>
+                            <para><link xlink:href="https://jira.hl7.org/browse/PSS-2312"
+                                    >https://jira.hl7.org/browse/PSS-2312</link></para>
+                            <para> </para>
+                            <para>Terminology Change Set Exchange Implementation Guide: <link
+                                    xlink:href="https://build.fhir.org/ig/HL7/termchangeset-ig/index.html"
+                                    >https://build.fhir.org/ig/HL7/termchangeset-ig/index.html</link></para>
+                            <para> </para>
+                            <para>HL7 JIRA Dashboard: <link
+                                    xlink:href="https://jira.hl7.org/secure/Dashboard.jspa?"
+                                    >https://jira.hl7.org/secure/Dashboard.jspa?</link></para>
+                            <para> </para>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+        <para> </para>
+    </section>
+</chapter>
