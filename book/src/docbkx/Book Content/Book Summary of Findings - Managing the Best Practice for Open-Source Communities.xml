@@ -33,13 +33,13 @@
             systems that have been designed to integrate EHRs into the health space can create
             barriers to interoperability through closed, proprietary systems. Multiple, sometimes
             competing, encoding standards have been developed over the last few decades to address
-            the varying formats clinical data embodies. Some clinical standardization forms,
-            however, are very broad in its acceptance criteria resulting in large amounts of
-            variation between encodement while others are too restrictive, limiting the situations
-            in which they can be utilized. As a result, the need for a consistent form to map
-            standards to and between other standards in creation of a common model is required for
-            improvement of interoperability within the healthcare landscape where clinical decisions
-            can be captured regardless of what point they originate in patient care. </para>
+            the varying formats clinical data embody. Some clinical standardization forms, however,
+            are very broad in their acceptance criteria resulting in large amounts of variation
+            between encodement while others are too restrictive, limiting the situations in which
+            they can be utilized. As a result, the need for a consistent form to map standards to
+            and between other standards in creation of a common model is required for improvement of
+            interoperability within the healthcare landscape where clinical decisions can be
+            captured regardless of what point they originate in patient care. </para>
         <section>
             <title>Defining a Key Issue: Restrictive Healthcare Licenses</title>
             <para>The root cause of insufficiencies within Health IT is not limited solely to a
@@ -266,7 +266,7 @@
         <para>Healthcare organizations must adapt to these strict new regulations, and are charged
             with managing patient consent, data portability, and the consequences of non-compliance,
             which could be fines up to €22M+. For U.S. healthcare organization this means complying
-            with GDPR as well as Health Insurance Portability and Accountability Act (HIPPA), which
+            with GDPR as well as Health Insurance Portability and Accountability Act (HIPAA), which
             is a separate level of consent and information the provider has to ensure the patient
             receives. Additionally, GDPR places the burden of proof of consent on the provider, and
             they must implement an audit trail for electronic consents. This example demonstrates

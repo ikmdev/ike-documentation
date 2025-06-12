@@ -11,7 +11,7 @@
             represented by assertional knowledge. For example, shortness of breath may be caused by
             myocardial infarction. Assertional knowledge represents facts related to a domain of
             study and is used to provide nuance and context to a concept, but does not define it.
-            For example, Aspirin is used to treat pain, but it can also be used to treat fevers,
+            For example, aspirin is used to treat pain, but it can also be used to treat fevers,
             prevent blood clots, reduce the risk of stroke and heart attack and many other things.
             The two major goals of including assertional knowledge are to enhance usability and
             improve documentation quality when using a terminology. Additional facts about clinical
@@ -144,7 +144,9 @@
                     <title>Interface Term</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/InterfaceTerm_DL.svg" scale="80" align="center"/>
+                            <imagedata
+                            fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/InterfaceTerm_DL.svg"
+                            scale="80" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
