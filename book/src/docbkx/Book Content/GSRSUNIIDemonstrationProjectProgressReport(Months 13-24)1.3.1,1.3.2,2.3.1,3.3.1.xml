@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>GSRS/UNII Demonstration Project Progress Report</title>
+    <section>
+        <title>Purpose</title>
+        <para>There is an increasing need for high-quality and accurate data as healthcare
+            organizations becoming more reliant on electronic health records (EHRs), laboratory
+            information systems (LISs), and other electronic information systems. Terminology
+            standards, a primary tool for many organizations, work to improve the quality and
+            accuracy of data. Terminology standards aim to ensure information is captured and
+            represented in a repeatable and standardized format so that other organizations have a
+            common understanding of the data. While terminology standards are a useful tool,
+            extensive knowledge management (KM) is needed to identify, manage, and share the
+            standardized data that these systems and standards capture. As data flows within and
+            between healthcare systems, the use of different terminology standards, KM processes,
+            and systems themselves can pose a threat to the integrity of data. A recent study found
+            that only 22-68% of data integrity is maintained in a single trip, posing challenges
+            around interpretation, and resulting accuracy around patient care [1]. </para>
+        <para>Integrated Knowledge Management (IKM) is an approach to data management that aims to
+            maintain the meaning, integrity, and quality of data as it travels within and between
+            healthcare systems. IKM is an evolving approach to manage disparate terminology
+            standards using a common, centralized, and repeatable representation of data. The use of
+            a common model supports the interoperability of data between disparate terminology
+            standards, well documented version control, even when different terminology standards
+            employ their own versioning practices, and the incorporation of new or emerging
+            terminology standards. IKM will use an iterative approach to build upon previous work on
+            Resource Description Frameworks (RDFs) and property graphs with novel ideas and
+            concepts. There is no reference, or best practice guide, for how an IKM solution can or
+            should operate and will therefore require extensive research, prototyping, and
+            development. </para>
+        <para>The Food and Drug Administration (FDA) created a Global Substance Registration System
+            (GSRS) to facilitate the efficient and accurate information exchange on substances
+            within regulated products. The creation of the GSRS knowledge base allowed for
+            standardized, scientific descriptions of substances across regulatory lines, such as
+            within and between countries. The collection and dependencies of knowledge within GSRS
+            presents a direct use case in which IKM and its capabilities can improve GSRS.</para>
+    </section>
+    <section>
+        <title>Aims</title>
+        <para>The aims of this document serve as a collection of landscape analyses of the GSRS
+            system and its parts within the domains of Integrated Knowledge Management: Ecosystem
+            Engagement, Knowledge Representation, User Interface/User Experience (UI/UX), and
+            Knowledge Management.</para>
+    </section>
+    <section>
+        <title>GSRS/UNII Demonstrations</title>
+        <section>
+            <title>Ecosystem Engagement GSRS/UNII Demonstration Project Progress Report Week
+                36</title>
+            <section>
+                <title>The Need for Interoperability Between Health Data Standards</title>
+                <para>The GSRS maintains links to other standard ontologies, which helps users map
+                    different codes representing the same substance. For example, under the GSRS
+                    record for Potassium, as seen in Figure 1, users can find links to the Chemical
+                    Abstracts Service (CAS) record, National Institute of Health (NIH)-National
+                    Library of Medicine (NLM) PubChem record, DailyMed record, and others. In some
+                    cases, multiple codes from the same ontology are given [2]. 61 different Logical
+                    Observation Identifiers, Names, and Codes (LOINC) codes represent various forms
+                    of Potassium across several test uses, analytes, and measurements.</para>
+            <figure xml:id="GSRSUDIIFig1.svg">
+                <title>GSRS Record for Potassium</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="../images/GSRSUDIIFig1.svg" scale="25" align="center"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            <para>Mapping shared meaning between standard ontologies enables GSRS users to operate
+                across disparate knowledge standards and translate records according to their needs.
+                Figure 2, below, shows a Circos diagram of terminological systems containing
+                medication information (including GSRS Unique Ingredient Identifier (UNII)) and
+                connections between systems [3]. The segments around the circle represent different
+                terminological systems that contain medication information. Each segment is labeled
+                with the name of a terminological system, such as Systematized Nomenclature of
+                Medicine Clinical Terms (SNOMED CT), RxNorm, GSRS UNII, etc. The colorful ribbons
+                connecting these segments represent the mappings or relationships between codes in
+                different terminological systems. Each ribbon starts at the segment that contains
+                the source code and ends at a segment that contains the target code. </para>
+            <figure xml:id="GSRSUDIIFig2.svg">
+                <title>Network of Terminological Systems Containing Medication Information</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="../images/GSRSUDIIFig2.svg" scale="25" align="center"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            <para>The interoperability of records across standards supports safe and reliable health
+                data transfer and may be useful in analytical scenarios, like when researchers need
+                to aggregate health records from multiple databases into a common format with a
+                specific concept hierarchy. The concept hierarchies in certain standard ontologies
+                allow researchers to query classes of concepts and automatically retrieve relevant
+                records. Furthermore, certain standard ontologies store additional information that
+                allows researchers to conduct knowledge-based searches, such as those based on the
+                ingredients of a drug or possible side effects<emphasis role="italic"
+                >.</emphasis></para>
+            <para>In one real world example, researchers needing to retrieve patient records that
+                match specific criteria found that a local ontology restricted each drug to a single
+                drug class [3]. This meant that queries for classes of drugs (e.g., “all patients
+                who were prescribed an anxiolytic”) could produce incomplete results. Only by
+                mapping the local terminology to another more integrated data standard, the
+                researchers were able to conduct thorough analyses while maintaining consistent
+                meaning and granularity. </para>
+            </section>
+            <section>
+                <title>The Challenges of Cross-Ontology Mapping</title>
+                <para>The requirement to manually maintain links across standards is complicated by
+                    the fact that they are regularly releasing updates. If Regenstreif-LOINC®
+                    creates or removes a code related to Potassium, for example, the GSRS record for
+                    Potassium would need to be updated to reflect this change. Without continuously
+                    updating records, health data transfer across systems may result in loss of data
+                    quality and research queries may retrieve incomplete results.</para>
+                <para>A methodological review of medication terminological systems and their
+                    linkages, published in the Journal of Biomedical Informatics, found that
+                    automatic mapping of prescribed medication records from one local EHR system to
+                    external terminology systems using existing connections among terminologies was
+                    only possible for 62.5% of source medication codes [3]. 14% of records were
+                    mapped using a semi-automated process based on automatically matching medication
+                    names, with experts manually selecting appropriate codes. 23% of codes had to be
+                    mapped fully manually, and 34 of 7124 investigated drugs could not be mapped due
+                    to missing concepts in the target terminological system. Compound drugs were
+                    especially difficult to map, as only 7.5% could be mapped using the automatic
+                    method. The researchers identified the following challenges to mapping across
+                    terminological systems as seen in the table below:</para>
+                <para>
+                    <table>
+                        <title> Challenges of Mapping Terminology Systems </title>
+                        <tgroup cols="1">
+                            <colspec colnum="1" colname="col1"/>
+                            <tbody>
+                                <row>
+                                    <entry><emphasis role="bold">Finding: The lack of up-to-date
+                                            information to assess the suitability of a given
+                                            terminological system for a particular use case, and to
+                                            assess the quality and completeness of cross-terminology
+                                            links.</emphasis></entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Discussion:</emphasis> Given the
+                                        constant evolution of terminologies, it is often difficult
+                                        to find up-to-date information on the content coverage of
+                                        existing systems or the linkages between systems. This can
+                                        make it challenging to determine the suitability of a
+                                        particular terminology for a specific use-case. In some
+                                        cases, judging suitability might only be possible after
+                                        attempting and evaluating a mapping.</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Finding: The difficulty of
+                                            correctly using complex, rapidly evolving
+                                            terminologies</emphasis></entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Discussion:</emphasis> As
+                                        terminologies become more comprehensive, better linked, and
+                                        more frequently updated, they also become more complex. This
+                                        means that although they are ultimately more useful, they
+                                        are harder to use, and it may be harder to judge their
+                                        applicability to a given use case.</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Finding: The large investment of
+                                            time and effort required to complete and evaluate the
+                                            mapping</emphasis></entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Discussion:</emphasis>
+                                        Comprehensive cross-system mapping and evaluation may
+                                        require significant time, effort, and terminology-specific
+                                        expertise, the amount of which can be hard to predict at the
+                                        start of a project.</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Finding: The need to address
+                                            differences in granularity between the source and target
+                                            terminologies.</emphasis></entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Discussion:</emphasis> It is
+                                        challenging to assess and address differences in granularity
+                                        between mapped terminologies, as well as any intermediate
+                                        terminologies used in the mapping. For some terminological
+                                        systems, these differences may be relatively obvious, but in
+                                        more complex mapping projects, the granularity may vary by
+                                        concept.</entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Finding: The need to continuously
+                                            update the mapping as terminological systems
+                                            evolve.</emphasis></entry>
+                                </row>
+                                <row>
+                                    <entry><emphasis role="bold">Discussion:</emphasis> All mappings
+                                        must be maintained and updated as errors are found and
+                                        corrected, and as the source and target terminologies
+                                        change. Changes to the source terminology often means that
+                                        future data that is flowing into a data warehouse will be
+                                        coded with the new version, whereas pre-existing data
+                                        retains the old coding system.</entry>
+                                </row>
+                            </tbody>
+                        </tgroup>
+                    </table>
+                </para>
+                <para>To address these challenges, the researchers identified the need for better
+                    methods for automatically linking concepts across systems and maintaining these
+                    links, without the considerable manual effort that creating new connections
+                    between systems often requires. They recommend “highly interactive partially
+                    automated mapping tools that are directed by human experts to automate parts of
+                    the mapping process with specific expert input are a promising alternative to
+                    fully automated methods” [3]. Alternatively, they suggested providing users with
+                    a convenient language for logically defining the terms and relations in an
+                    ontology using a common reference model, followed by applying algorithms that
+                    can infer conceptual mappings and class/subclass relationships among terms from
+                    different standards.A combination of these approaches may also be necessary
+                    because automated approaches that do not require significant human intervention
+                    may not be possible without significant advances in artificial intelligence
+                    technology.</para>
+                <para>IKM may play an important role in reducing the manual burden of managing
+                    updates, maintaining cross-terminology mapping, and tracking versioning. This
+                    will help to address the challenges and needed capabilities identified in the
+                    methodological review described above. Further details on how IKM systems will
+                    support these capabilities are described in the following sections of this
+                    progress report.</para>
+            </section>
+        </section>
+        <section>
+            <title>UI/UX: GSRS/UNII Demonstration Project Progress Report Week 36</title>
+            <para>As previously explained, while GSRS provides many excellent services, such as
+                registration of substances and the generation of the resulting Unique Ingredient
+                Identifiers (UNIIs), it falls short in integrating other knowledge standards
+                effectively. For instance, within GSRS, users cannot visualize related data from
+                other knowledge standards, nor can they see which version of the integrated
+                knowledge, such as LOINC, is being referenced. Additionally, because of how these
+                linkages are maintained, users would not be made aware of any changes in those
+                relationships, relying instead on manual release notes. Furthermore, GSRS lacks the
+                capability to visualize how data has changed over time. In the sections below, we
+                provide ideas of how these issues could be resolved within a more robust integrated
+                knowledge environment and our progress towards them.</para>
+            <section>
+                <title>Integration and Comparison</title>
+                <para>As shown in <emphasis role="italic"><emphasis role="bold">Error! Reference
+                            source not found.</emphasis></emphasis>, when viewing a substance within
+                    GSRS, the "codes" section within the substance details page provides a
+                    comprehensive list of various identifiers and codes associated with a substance,
+                    linking it to different regulatory, commercial, and scientific databases [2].
+                    These identifiers are crucial for ensuring accurate identification and
+                    interoperability across multiple databases.</para> 
+                <figure xml:id="GSRSUDIIFig3.svg">
+                        <title>Codes section of a substance within GSRS</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/GSRSUDIIFig3.svg" scale="25"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                </figure>
+                <para>However, the majority of these codes are links or pointers to external
+                    systems, which can pose several challenges. Users are navigated away from GSRS
+                    to other systems to gain additional information and the information provided in
+                    these various sources differs. For example, as show in <emphasis role="italic"
+                        >Figure 4</emphasis>: Screenshot of LOINC Code 4569-4 (Potassium) in LOINC
+                    Browser, the link for a LOINC Code navigates the user to the LOINC web browser
+                    which provides a significant amount of detailed information about that code
+                    [4].</para>
+                <figure xml:id="GSRSUDIIFig4.svg">
+                        <title>Screenshot of LOINC Code 4569-4 (Potassium) in LOINC Browser</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/GSRSUDIIFig4.svg"
+                                scale="25" align="center"/> 
+                        </imageobject>
+                    </mediaobject>
+                    
+                </figure>
+                    <para>The link to an RxNorm ID, however, navigates the user to an Extensible
+                        Markup Language (XML) document with limited, plain text information, as seen
+                        in the figure below:</para>
+                        
+                <figure xml:id="GSRSUDIIFig5">
+                            <title>Screenshot of RxNorm XML File</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="../images/GSRSUDIIFig5.svg" scale="25"
+                                        align="center"/>
+                                </imageobject>
+                            </mediaobject>
+                        </figure>
+                    <para>Since the knowledge from these various standards is not integrated within
+                        GSRS, users face significant challenges when attempting to compare data
+                        across different standards, making it difficult to achieve an "apples to
+                        apples" comparison. This lack of integration hinders the ability to perform
+                        comprehensive data analysis and maintain consistency.</para>
+                    <para>Additionally, the reliance on external systems means that any changes or
+                        updates in those databases may not be immediately reflected in GSRS,
+                        potentially leading to inconsistencies and outdated information. This can
+                        complicate data verification and compliance efforts, as users may struggle
+                        to ensure they are working with the most current and accurate data.</para>
+                    <para>In contrast, our IKM solution seamlessly incorporates relationships
+                        between standards like LOINC and RXNorm directly within the system. This
+                        integration allows users to view and compare data from multiple standards in
+                        a unified interface, facilitating accurate and efficient comparisons.</para><figure xml:id="GSRSUDIIFig6">
+                            <title>Screenshot of viewing a SNOMED Concept next to a LOINC Concept in Komet</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="../images/GSRSUDIIFig6.svg"
+                                        scale="25" align="center"/> 
+                                </imageobject>
+                            </mediaobject>
+                        <para>Screenshot of viewing a SNOMED Concept next to a LOINC Concept in
+                            Komet depicts the ability for a user to view two related concepts from
+                            SNOMED CT and LOINC side-by-side. If the Reasoner, described in more
+                            detail in <emphasis role="italic">Knowledge Management: GSRS/UNII
+                                Demonstration Project Progress Report [Task
+                            1.3.1],</emphasis>identifies concepts as equal then they would be
+                            represented by a single concept but mapped to both identifiers. By
+                            providing a cohesive view of all relevant data, IKM enhances the ability
+                            to manage and analyze health data comprehensively, ensuring that users
+                            can make well-informed decisions based on integrated knowledge.</para>
+                        </figure>
+            </section>
+            <section>
+                <title>Data Version Visibility</title>
+                <para>Another critical element of integrated knowledge is having visibility into
+                    exactly which version of data is being referenced. In GSRS, users cannot easily
+                    see which versions of the other standards, LOINC and RxNorm for example, are
+                    being referenced. This lack of visibility is problematic because different
+                    versions of these standards can contain significant updates, additions, and
+                    corrections that impact data accuracy and interoperability. Without clear
+                    version tracking, users may unknowingly work with outdated or mismatched
+                    versions, leading to inconsistencies and potential errors in data analysis and
+                    reporting. </para>
+                <para>Recognizing the importance of version control, our IKM solution includes
+                    robust version tracking capabilities. Described more in depth in <emphasis
+                        role="bold">Knowledge Representation: GSRS/UNII Demonstration Project
+                        Progress Report [Task 3.3.1]</emphasis>, we have developed a data pipeline
+                    that transforms the original Standards Development Organization (SDO) files
+                    downloaded from source and transforms them into a dataset that can then be
+                    visualized and integrated with other standards in Komet.</para>
+                <para>Through this process, we have identified a strict naming convention to provide
+                    users a clear understanding of what is included in the data set. <emphasis
+                        role="italic">Figure 7</emphasis> displays the contents of the Tinkar
+                    Starter Data version 1.1.1 artifact that has been released to Maven Central [6].
+                    Within each artifact, we provide both a protobuf and spined array version of the
+                    data as well as the data unreasoned and reasoned. Once users generate their data
+                    artifact, they can then easily identify which one they would like to utilize
+                    within Komet.</para>
+                <figure xml:id="GSRSUDIIFig7">
+                        <title>Screenshot of Contents of Tinkar Starter Data Artifact</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/GSRSUDIIFig7.svg"
+                                    scale="25" align="center"/> 
+                            </imageobject>
+                        </mediaobject>
+                </figure>
+                <para>Additionally, during this data transformation process, we capture metadata
+                        about each standard that we transform in a manifest file. Figure X provides
+                        a screenshot of our current MANIFEST.MF file which includes important
+                        metadata such as the date the artifact was generated and a high-level
+                        summary of the contents including total counts for various components and
+                        any identified modules and authors. We plan to iterate on this initial
+                        implementation to add additional information that would be helpful to the
+                        user to know more about the contents of the data file. </para>
+                 <figure xml:id="GSRSUDIIFig8.svg">
+                            <title>MANIFEST.MF File for SNOMED CT Data Artifact</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="../images/GSRSUDIIFig8.svg"
+                                        scale="25" align="center"/> 
+                                </imageobject>
+                            </mediaobject>
+                        </figure>
+                  <para>In the near future, we plan to present the contents of this file to the user
+                    within Komet. In the meantime, users can access the manifest file from within
+                    the data artifacts generated from the data pipeline. By providing transparent
+                    and accessible version information, IKM ensures that users are always aware of
+                    the specific versions they are working with, promoting data integrity, and
+                    facilitating more accurate and reliable comparisons and analyses.</para>
+                
+            </section>
+            <section>
+                <title>Version Control and History Tracking</title>
+                <para>Version control and history tracking are critical components of effective data
+                    management for several reasons. Firstly, they provide transparency, allowing
+                    users to see the full history of changes made to a concept. This transparency is
+                    essential for auditing purposes, ensuring that all modifications are documented
+                    and traceable. It helps in identifying who made specific changes and when, which
+                    is vital for accountability and governance. Secondly, these features support
+                    data integrity and accuracy. By maintaining a detailed log of changes, users can
+                    verify that the data remains consistent and accurate over time. If discrepancies
+                    or errors are discovered, the history log can help pinpoint the exact moment and
+                    nature of the change, facilitating quick corrections and maintaining the
+                    reliability of the data.</para>
+                <para>Moreover, Version Control and History Tracking enhance collaboration and
+                    coordination among team members. When multiple users are working on the same
+                    dataset, these features ensure that everyone is aware of the latest updates and
+                    changes, reducing the risk of conflicts and redundant work. It also allows team
+                    members to revert to previous versions if needed, ensuring that critical data is
+                    not lost or overwritten. Finally, these features are crucial for regulatory
+                    compliance. Many industries are subject to stringent regulations that require
+                    detailed records of data changes. Version Control and History Tracking provide
+                    the necessary documentation to demonstrate compliance with these regulations,
+                    protecting organizations from potential legal and financial penalties.</para>
+                <para>All of this version tracking is made possible by capturing every change with
+                    the audit record, known as STAMP - Status, Time, Author, Module, and Path. The
+                    Status indicates whether a component is active or inactive. Time provides the
+                    timestamp with when the change was made. Author identifies who made the change.
+                    Module provides context for which code system the change is associated with.
+                    Path allows for the separation of testing much like software, including
+                    development, testing, and production paths.</para>
+                <para>The Komet user interface (UI) includes robust features that allow users to
+                    track versions and historical changes over time, ensuring transparency and
+                    accuracy in data management. The History Tab is a central feature that provides
+                    a comprehensive view of versioning, historical associations, and detailed change
+                    logs for each concept. Users can see various changes, such as inactivation of
+                    concepts, description updates, and axiom modifications.</para>
+                <figure xml:id="GSRSUDIIFig9.svg">
+                    <title>Screenshot of Concept Highlighting History and Timeline Features</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/GSRSUDIIFig9.svg"
+                                scale="25" align="center"/> 
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <para>Complementing the History Tab, the Timeline feature offers a consolidated view
+                    of historical changes and versioning. It visually represents changes with white
+                    bubbles, each indicating a specific point in time where modifications were made
+                    to the concept across different data versions. Selecting a white bubble
+                    highlights the corresponding historical change in green within the history log,
+                    providing an intuitive way to navigate through the concept's evolution.</para>
+                <para>Additionally, the Range feature empowers users to filter historical logs by
+                    selecting a specific date range. Using two blue sliders, users can define the
+                    desired period, making it easier to focus on relevant changes within that
+                    timeframe. This is particularly useful as the volume of changes increases over
+                    time, allowing users to efficiently manage and review the historical data. For
+                    example, users can limit the view to only two changes within a selected range,
+                    as illustrated in <emphasis role="italic">Figure 9</emphasis>, streamlining the
+                    review process and enhancing usability.</para>
+                
+            </section>
+            <section>
+                <title>Automated Version Detection and User Notification</title>
+                <para>To enhance user engagement and ensure that users stay informed about updates
+                    happening outside of Komet, we will be implementing a notifications feature.
+                    This feature will allow users to elect to receive notifications across a number
+                    of events, including whenever a new version of a standard, such as SNOMED CT, is
+                    released. This proactive approach ensures that users are always up-to-date with
+                    the latest changes, facilitating better compliance, data management, and
+                    decision-making.</para>
+                <para>Users will have the option to subscribe to specific standards or datasets they
+                    are interested in. This can be done through a simple interface where users can
+                    select from a list of available standards, such as SNOMED CT, LOINC, or RxNorm.
+                    Once subscribed, users will receive notifications whenever a new version of the
+                    selected standard is released. These notifications will be triggered by updates
+                    from the respective standard organizations and will include relevant details
+                    about the new version, such as release notes, key changes, and effective
+                    dates.</para>
+                <figure xml:id="GSRSUDIIFig10.svg">
+                    <title>Wireframe of Komet Home Page with Notifications</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/GSRSUDIIFig10.svg"
+                                scale="25" align="center"/> 
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                    <para>As shown in <emphasis role="italic">Figure 10</emphasis>, the home page
+                        will feature a dedicated section called "New Notifications." This section
+                        will display tiles for each new notification, providing a quick overview of
+                        recent updates. Each tile will include additional details, such as the name
+                        of the standard, a brief description of the update, and the release date.
+                        Users can easily dismiss notifications by clicking the "X" button in the top
+                        corner of each tile. To help users manage their notifications, the feature
+                        will include a filter option that allows users to sort notifications by
+                        type, such as "Standard Updates," "System Alerts," or "User Messages."
+                        Additionally, there will be a "See all notifications" button that directs
+                        users to a comprehensive notifications page where they can view all past and
+                        current notifications in detail.</para>
+                    <para>Users will have the ability to customize their notification preferences.
+                        This includes choosing the frequency of notifications (e.g., instant, daily,
+                        weekly), the delivery method (e.g., email, in-app), and the specific
+                        standards they wish to follow. This customization ensures that users receive
+                        relevant information without being overwhelmed by unnecessary
+                        updates.</para>
+                    <para>This Notifications feature is designed to keep users informed and engaged,
+                        ensuring they have access to the latest information and updates that impact
+                        their work. By providing timely and relevant notifications, we aim to
+                        support users in maintaining compliance, improving data management, and
+                        making informed decisions.</para>
+                
+                
+            </section>
+        </section>
+        <section>
+            <title>Knowledge Management: GSRS/UNII Demonstration Project Progress Report Week
+                36</title>
+            <section>
+                <title>Reasoning in GSRS</title>
+                <para>In the research referenced in <emphasis role="italic">Ecosystem Engagement:
+                        GSRS/UNII Demonstration Project Progress Report [Task 2.3.1],</emphasis>
+                    researchers encountered cross-terminology mapping issues and identified the need
+                    for better methods for automatically linking concepts across systems and
+                    specifically recommended “highly interactive partially automated mapping tools
+                    that are directed by human experts.” GSRS would significantly benefit from such
+                    a tool as well. Despite its strengths, GSRS faces limitations such as the need
+                    for manual intervention in certain tasks and a lack of integration with other
+                    tools, which can lead to data silos and hinder comprehensive data utilization.
+                    Certain classification and mapping tasks may still require manual intervention,
+                    which can be time-consuming and error prone. </para>
+                <para>The IKM reasoner provides this automated capability to integrate knowledge
+                    across standards, providing enhanced data consistency, accuracy, and efficiency
+                    through automated classification and mapping of data. We will further explore
+                    how bringing in this type of capability within GSRS could bring significant
+                    value.</para>
+            </section>
+            <section>
+                <title>Role of Reasoner Management</title>
+                <para>The reasoner within IKM enhances data consistency and accuracy by
+                    automatically inferring relationships and classifications based on the data,
+                    ensuring consistent categorization according to predefined rules and ontologies.
+                    It facilitates the seamless integration of data from various sources, creating a
+                    comprehensive and unified dataset. This automation minimizes human errors in
+                    data entry and classification. Additionally, by creating inferred relationships
+                    and classifications as shown below in <emphasis role="italic">Figure
+                        11</emphasis>, users have an easier time navigating through large datasets
+                    and understanding relationships between entities, helping to uncover new
+                    relationships and insights.</para>
+                <figure xml:id="GSRSUDIIFig11.svg">
+                    <title>Example of Inferred Navigation for the Chronic Lung Disease Concept</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/GSRSUDIIFig11.svg"
+                                scale="25" align="center"/> 
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <para>It enables efficient data management by processing large volumes of data
+                    quickly, which keeps the database current and accurate. The tool is scalable
+                    because it handles increased data loads without requiring proportional manual
+                    effort. Improved regulatory compliance is another significant benefit. The tool
+                    ensures that substances are classified according to international standards and
+                    regulatory requirements, providing a clear and traceable record of substance
+                    categorization for audits and regulatory reviews. </para>
+                <para>Finally, it can support decision making by providing a robust foundation for
+                    making informed decisions about substance registration and management and
+                    supports predictive analytics by analyzing patterns and relationships in the
+                    data.</para>
+                
+            </section>
+            <section>
+                <title>Why Is This Important: Real-World Use Cases. To illustrate the critical
+                    importance of accurate and up-to-date mappings, we provide two real-world
+                    examples of integration between GSRS and other standards and how this affects
+                    patient safety.</title>
+                <section>
+                    <title>Clinical Blood Glucose Testing Example</title>
+                    <para>The integration of standardized systems such as GSRS and the LOINC system
+                        is essential for accurate and consistent data management. An example of this
+                        integration is the blood glucose test, which measures glucose levels in the
+                        blood.</para>
+                    <para>Glucose is cataloged by GSRS with a unique identifier that includes
+                        detailed information such as its chemical structure and molecular formula.
+                        This identifier ensures that glucose is precisely recognized and referenced
+                        across different platforms. Concurrently, the LOINC system assigns unique
+                        codes to laboratory tests, facilitating standardized reporting and data
+                        exchange. For instance, the LOINC code 2339-0 corresponds to "Glucose
+                        [Mass/volume] in Blood," providing a specific identifier for blood glucose
+                        tests.</para>
+                    <para>The incorporation of LOINC codes into the GSRS enables seamless
+                        interoperability and standardization. When a blood glucose test is conducted
+                        and reported using the LOINC code 2339-0, the underlying substance, glucose,
+                        can be accurately linked back to its detailed information in the GSRS. This
+                        connection ensures that the substance information is comprehensive and
+                        standardized, enhancing data reliability.</para>
+                    <para>In a clinical setting, this integration is highly beneficial. For example,
+                        when a patient visits a healthcare provider for a routine check-up, the
+                        provider may order a blood glucose test to monitor the patient's glucose
+                        levels. The laboratory performs the test and reports the results using the
+                        LOINC code 2339-0. These results are then recorded in the patient's EHR. An
+                        EHR system integrated with the GSRS can link the LOINC code to the detailed
+                        information about glucose in the GSRS, ensuring that the data is accurate
+                        and standardized.</para>
+                    <para>Moreover, this standardization is crucial for regulatory reporting. When
+                        healthcare providers need to report test results to regulatory bodies, the
+                        standardized LOINC code ensures that the glucose measurement is consistently
+                        reported. Regulatory bodies can then use the GSRS to access detailed
+                        information about glucose, ensuring comprehensive and standardized
+                        data.</para>
+                    <para>In research and analysis, the integration of LOINC and GSRS facilitates
+                        robust data aggregation and comparison. Researchers analyzing data from
+                        multiple healthcare providers can use the LOINC code 2339-0 to aggregate and
+                        compare blood glucose test results. By linking these results to the glucose
+                        substance in the GSRS, researchers can ensure that their analysis is based
+                        on accurate and standardized substance information, thereby enhancing the
+                        validity of their findings.</para>
+                </section>
+                <section>
+                    <title>Pharmaceutical Substance Registration Example</title>
+                    <para>In the pharmaceutical industry, the accurate and efficient registration of
+                        substances is crucial for regulatory compliance, safety, and market
+                        authorization. A pharmaceutical company preparing to register a new drug
+                        compound with regulatory authorities can leverage the GSRS integrated with
+                        the IKM system, particularly its reasoner capabilities. The reasoner tool
+                        ensures data consistency and accuracy by automatically inferring
+                        relationships and classifications based on predefined rules and ontologies.
+                        It automates the classification of active ingredients and excipients, aligns
+                        substance data with international standards, and enables advanced search and
+                        retrieval functionalities. These features streamline the registration
+                        process, reduce the risk of human error, and facilitate smoother approval
+                        processes by regulatory authorities.</para>
+                    <para>For example, a human error that could occur is the misclassification of an
+                        active ingredient as a different chemical compound due to manual data entry
+                        mistakes. This misclassification could lead to incorrect labeling, potential
+                        safety risks, and delays in regulatory approval. By using the reasoner tool,
+                        such errors are avoided as the system automatically verifies and classifies
+                        substances based on accurate data and predefined rules. This ensures that
+                        the correct chemical structure and pharmacological class are assigned,
+                        preventing potential adverse outcomes such as regulatory non-compliance,
+                        safety recalls, or market withdrawal. </para>
+                    <para>Additionally, the reasoner tool supports predictive analytics by analyzing
+                        patterns and relationships in the data, helping the company anticipate
+                        potential issues such as adverse drug interactions or regulatory challenges.
+                        Integration with a tool like Komet can further enhance data quality through
+                        additional validation and quality checks, as well as provide deeper insights
+                        and advanced analytics capabilities. This combined approach improves overall
+                        efficiency, reduces redundancy, and supports informed decision-making,
+                        ultimately enhancing the effectiveness of the pharmaceutical substance
+                        registration process.</para>
+                    <para>In conclusion, the integration of the GSRS with advanced tools like the
+                        IKM system's reasoner and Komet tool significantly enhances data
+                        consistency, accuracy, and efficiency in the pharmaceutical industry. By
+                        automating classification and mapping tasks, reducing manual intervention,
+                        and ensuring compliance with international standards, these tools address
+                        critical challenges such as cross-terminology mapping issues and data silos.
+                        The combined approach not only streamlines workflows and supports better
+                        decision-making but also ensures regulatory compliance and safety.
+                        Ultimately, this integration fosters a more robust and reliable
+                        pharmaceutical substance registration process, benefiting both regulatory
+                        bodies and the broader healthcare ecosystem.</para>
+                </section>
+            </section>
+        </section>
+        <section>
+            <title>Knowledge Representation: GSRS/UNII Demonstration Project Progress Report  Week
+                36</title>
+            <para>In the research referenced in <emphasis role="italic">Ecosystem Engagement:
+                    GSRS/UNII Demonstration Project Progress Report [Task 2.3.1</emphasis>], it came
+                to the attention of researchers that medication terminologies are frequently updated
+                with new codes, definitions, and structures and keeping mappings up-to-date is a
+                significant challenge, requiring continuous monitoring and updating [3]. Employing a
+                standardized data import process and automating relationship mapping via a reasoner,
+                enables users to manage updates efficiently, support continuous updates, and reduce
+                the time and effort required for data management. The data import process that is
+                leveraged within IKM is structured into several phases to ensure incremental
+                functionality and seamless data integration, addressing the critical need for
+                interoperability between disparate knowledge standards such as GSRS.</para>
+            <section>
+                <title>Managing Updates and Reducing Time and Effort</title>
+                <para>The IKM data pipeline is designed to manage updates effectively and reduce the
+                    time and effort involved in data management through several key features.
+                    Automated data import ensures that updates, such as new releases of SNOMED CT or
+                    LOINC, are quickly and accurately integrated into the system, reducing manual
+                    effort and minimizing errors. Version control allows for precise tracking of
+                    updates and changes, ensuring that all updates are documented and can be viewed
+                    within the system.</para>
+                <para>By handling data as change sets, the pipeline supports incremental updates,
+                    meaning that only the changes are processed and integrated, rather than
+                    reprocessing the entire dataset. This approach significantly reduces the time
+                    and effort required for updates, especially for knowledge standards like GSRS.
+                    The pipeline is designed to handle large volumes of data efficiently, ensuring
+                    that the system can scale with increasing data loads without a proportional
+                    increase in effort.</para>
+                <para>Automation of the import and transformation processes minimizes the need for
+                    manual intervention, speeding up data integration and reducing the potential for
+                    human error. The collaborative authoring and exchange of data facilitate
+                    real-time updates and sharing among multiple stakeholders, enhancing efficiency
+                    and reducing duplication of effort. By using change sets and versioning, the
+                    system allows for modular updates, meaning that updates can be made to specific
+                    parts of the data without affecting the entire dataset, streamlining the update
+                    process.</para>
+            </section>
+            <section>
+                <title>Data Pipeline Process Flow</title>
+                <para>The data pipeline is built leveraging Maven, which will provide a standardized
+                    and automated build process, efficient dependency management, and enhanced
+                    modularity. As data moves through the pipeline – from origin data, to tinkarized
+                    (transformed) data, to reasoned data – artifacts are captured and stored within
+                    our artifact repository, Nexus.</para>
+                <para>The initial steps of this process are taken by the end user, who downloads the
+                    appropriate release version of data from the SDO and stores them locally on
+                    their computer. From there, they run the appropriate Maven command to generate
+                    the origin data file. Assuming that new version does not require significant
+                    changes to either the starter data or transformation logic, the user updates the
+                    configuration file to reference the new origin file version. After committing
+                    and releasing that configuration file change, the Continuous Integration
+                    (CI)/Continuous Development (CD) pipeline will kick off the transformation
+                    workflow automatically with the appropriate properties. The initial SNAPSHOT
+                    data artifacts will be created and stored in Nexus. After those data artifacts
+                    have been validated for quality, the final version of the artifact will be
+                    formally released.</para>
+                <para>Users can then use these resulting data artifacts to either open Komet with as
+                    a spined array database or import in as a protobuf file. At this time, we will
+                    be developing a transformation pipeline for each individual knowledge standard
+                    that IKM supports but users could integrate multiple standards into a single
+                    database using our import feature in Komet. The clear and standard file naming
+                    convention paired with manifest files with additional metadata will help the
+                    user understand exactly which version of the standard they are using. In the
+                    future, we will further improve the Komet user interface to make investigating
+                    the contents of the database easier and allow them to know which versions of the
+                    standards they have imported. For now, we are focused on capturing these details
+                    as part of the artifacts themselves.</para>
+            </section>
+            <section>
+                <title>Phases of Development</title>
+                <para>We are currently developing the data pipeline and integrating changes authored
+                    in Komet into this process. To achieve this iteratively, we are executing the
+                    project in three phases, with each phase introducing more functionality and
+                    managing increasing complexity. This phased approach enables us to utilize the
+                    data pipeline in our knowledge authoring and ingestion processes more
+                    expeditiously, thereby allowing us to make more standards available in
+                    Komet.</para>
+                <para>In <emphasis role="bold">Phase 1: General Starter Data Authoring
+                        Pipeline</emphasis>, a single starter data artifact is authored and
+                    released, serving as the foundation for subsequent data transformations and
+                    updates. This allows users to author starter data in Komet and release it
+                    through the data pipeline to later be incorporated in the data transformation
+                    process.</para>
+                <para>In <emphasis role="bold">Phase 2: Authoring Starter Data as Change
+                        Sets</emphasis> focuses on compiling starter data that are authored as
+                    change sets. Instead of the pipeline treating starter data as a full export, it
+                    will allow users to author incremental updates and then compile those into a
+                    single data artifact. This modular approach allows for easier management of data
+                    changes and supports incremental updates.</para>
+                <para>In <emphasis role="bold">Phase 3: Collaborative Authoring and Exchange of
+                        Data</emphasis>, all data in Komet is authored and exchanged as change sets,
+                    enabling collaborative efforts in data management. This phase supports
+                    continuous updates and real-time collaboration among multiple stakeholders,
+                    ensuring that data updates are seamlessly integrated and shared across the
+                    system.</para>
+            </section>
+            <section>
+                <title>Improved Data Management within GSRS</title>
+                <para>By utilizing a similar pipeline's advanced capabilities, GSRS could improve
+                    data quality and reduce manual effort. With the integration of a reasoner, these
+                    tools can assist in maintaining links to other standard ontologies, ensuring
+                    seamless data integration across disparate knowledge standards. This capability
+                    is crucial for supporting the accurate and efficient exchange of substance data,
+                    enabling GSRS to uphold high data quality standards and facilitate
+                    interoperability among various health data systems.</para>
+            </section>
+        </section>
+    </section>
+    <section>
+        <title>Conclusion</title>
+        <para>This deliverable serves as the initial progress report of the GSRS system in the
+            context of IKM and its respective domains. This document details the four arenas in
+            which IKM expertise can improve areas of concern within GSRS. Our summary of findings
+            identifies areas of focus to be addressed in subsequent reports and will require
+            additional and continued efforts to improve the implementation, functionality, and
+            adoption of IKM solutions into GSRS. GSRS serves as just one area of opportunity in
+            which IKM can make substantive improvements to its systems and result in better quality
+            of data. </para>
+    </section>
+    <section>
+        <title>Citations</title>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para>Cholan, R. A., et al. (2022). <emphasis role="italic"> Encoding laboratory
+                            testing data: case studies of the national implementation of HHS
+                            requirements and related standards in five laboratories.
+                        </emphasis></para>
+                    <para>Journal of the American Medical Informatics Association, 29(8), 1372–1380.
+                            <link xlink:href="https://doi.org/10.1093/jamia/ocac072"
+                            >https://doi.org/10.1093/jamia/ocac072</link></para>
+                </listitem>
+                <listitem>
+                    <para>GSRS. (2025). Nih.gov. <link
+                            xlink:href="https://gsrs.ncats.nih.gov/ginas/app/ui/browse-substance?search=%22potassium%22"
+                            >https://gsrs.ncats.nih.gov/ginas/app/ui/browse-substance?search=%22potassium%22</link></para>
+                </listitem>
+                <listitem>
+                    <para>Saitwal, H., et al. (2012) <emphasis role="italic">Cross-terminology
+                            mapping challenges: A demonstration using medication terminological
+                            systems.</emphasis> Journal of Biomedical Informatics, 45(4), 613-625,
+                            <link xlink:href="https://doi.org/10.1016/j.jbi.2012.06.005"
+                            >https://doi.org/10.1016/j.jbi.2012.06.005</link></para>
+                </listitem>
+                <listitem>
+                    <para><anchor xml:id="Ref195728502"/>Regenstrief Institute. (2025). LOINC
+                        42569-4 — Hemoglobin A1c/Hemoglobin.total in Blood. LOINC. <link
+                            xlink:href="https://loinc.org/42569-4/"
+                            >https://loinc.org/42569-4/</link></para>
+                </listitem>
+                <listitem>
+                    <para><anchor xml:id="Ref195728515"/>National Library of Medicine. (n.d.).
+                            <emphasis role="bold">RxCUI 8588 — All properties</emphasis>. RxNav.
+                            <link
+                            xlink:href="https://rxnav.nlm.nih.gov/REST/rxcui/8588/allProperties.xml?prop=all"
+                            >https://rxnav.nlm.nih.gov/REST/rxcui/8588/allProperties.xml?prop=all</link></para>
+                </listitem>
+                <listitem>
+                    <para><anchor xml:id="Ref195728604"/>Maven Central Repository. (2025). <emphasis
+                            role="bold">Tinkar starter data, version 1.1.1</emphasis><emphasis
+                            role="bold">. </emphasis><link
+                            xlink:href="https://repo1.maven.org/maven2/dev/ikm/data/tinkar/tinkar-starter-data/1.1.1/"
+                            >https://repo1.maven.org/maven2/dev/ikm/data/tinkar/tinkar-starter-data/1.1.1/</link></para>
+                </listitem>
+            </orderedlist>
+        </para>
+    </section>
+</chapter>
