@@ -22,7 +22,7 @@
             <title>Versioned Component</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="VersionedComponent_vF.svg" scalefit="1" width="100%" contentdepth="100%" align="center"/>
+                    <imagedata fileref="../../../src/docbkx/images/VersionedComponent_vF.svg" scalefit="1" width="100%" contentdepth="100%" align="center"/>
                 </imageobject>
             </mediaobject>
             <caption>
@@ -112,8 +112,8 @@
                 <title>Component Types</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="Final_Semantic DefinitionSimple.svg" scalefit="1"
-                            width="100%" contentdepth="100%" align="center"/>
+                        <imagedata fileref="../../../src/docbkx/images/Final_SemanticDefinition.svg"
+                            scalefit="1" width="100%" contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -142,7 +142,7 @@
                 <title>Compositional Semantics</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="Compositional_Semantics.svg" format="PNG" scalefit="1"
+                        <imagedata fileref="../../../src/docbkx/images/Compositional_Semantics.svg" format="PNG" scalefit="1"
                             width="100%" contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
@@ -265,7 +265,7 @@
                                     <title>Multi-Concept Tinkar Output</title>
                                     <mediaobject>
                                         <imageobject>
-                                            <imagedata fileref="propertygraph.svG" format="PNG"
+                                            <imagedata fileref="../../../src/docbkx/images/propertygraph.svG" format="PNG"
                                                 scalefit="1" width="100%" contentdepth="100%"
                                                 align="center"/>
                                         </imageobject>
@@ -314,7 +314,7 @@
                 <title>Pattern</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="Final_SemanticDefinition.svg" format="PNG" scalefit="1"
+                        <imagedata fileref="../../../src/docbkx/images/Final_SemanticDefinition.svg" format="PNG" scalefit="1"
                             width="100%" contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
@@ -336,7 +336,7 @@
                 <title>Overall Tinkar Architecture</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="Final_TinkarArchitecture.svg" format="PNG" scalefit="1"
+                        <imagedata fileref="../../../src/docbkx/images/Final_TinkarArchitecture.svg" format="PNG" scalefit="1"
                             width="100%" contentdepth="100%" align="center" />
                     </imageobject>
                 </mediaobject>

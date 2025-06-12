@@ -5,7 +5,7 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <info>
         <title>Integrated Knowledge Management (IKM) Book</title>
-        <subtitle>Version 4 - Last Updated 03/19/2025</subtitle>
+        <subtitle>Version 4 - Last Updated 06/2/2025</subtitle>
     </info>
     <part>
         <title>Introduction</title>
@@ -24,18 +24,8 @@
     </part>
     <part>
         <title>Foundational Architecture</title>
-        <xi:include
-            href="../../../volume4-Tinkar-Ballot/chapter1-introduction-tinkar/src/docbkx/Introduction.xml"/>
-        <xi:include
-            href="../../../volume4-Tinkar-Ballot/chapter2-business-requirements/src/docbkx/business-requirements.xml"/>
-        <xi:include
-            href="../../../volume4-Tinkar-Ballot/chapter3-tinkar-reference-model/src/docbkx/tinkar-reference-model.xml"/>
-        <xi:include
-            href="../../../volume4-Tinkar-Ballot/chapter4-implications/src/docbkx/implications.xml"/>
-        <xi:include
-            href="../../../volume4-Tinkar-Ballot/chapter5-conclusion/src/docbkx/conclusion.xml"/>
-        <xi:include href="../../../volume4-Tinkar-Ballot/chapter6-foundational-architecture/src/docbkx/Foundational-Architecture.xml"/>
-        <xi:include href="../../../volume4-Tinkar-Ballot/chapter7-references/src/docbkx/Volume%204%20-%20References.xml"/>
+        <xi:include href="Book%20Content/Tinkar%20Modeling%20Guide.xml"
+            xmlns:xi="http://www.w3.org/2001/XInclude"/>
     </part>
     <part>
         <title>Terminology Knowledge</title>
@@ -131,5 +121,18 @@
     <part>
         <title>Appendix</title>
         <xi:include href="../../../volume-appendix/quick-reference-guide/src/docbkx/Quick%20Reference%20Guide.xml"/>
+        <xi:include
+            href="../../../volume4-Tinkar-Ballot/chapter1-introduction-tinkar/src/docbkx/Introduction.xml"/>
+        <xi:include
+            href="../../../volume4-Tinkar-Ballot/chapter2-business-requirements/src/docbkx/business-requirements.xml"/>
+        <xi:include
+            href="../../../volume4-Tinkar-Ballot/chapter3-tinkar-reference-model/src/docbkx/tinkar-reference-model.xml"/>
+        <xi:include
+            href="../../../volume4-Tinkar-Ballot/chapter4-implications/src/docbkx/implications.xml"/>
+        <xi:include
+            href="../../../volume4-Tinkar-Ballot/chapter5-conclusion/src/docbkx/conclusion.xml"/>
+        <xi:include href="../../../volume4-Tinkar-Ballot/chapter6-foundational-architecture/src/docbkx/Foundational-Architecture.xml"/>
+        <xi:include href="../../../volume4-Tinkar-Ballot/chapter7-references/src/docbkx/Volume%204%20-%20References.xml"/>
+        
     </part>
 </book>

@@ -210,7 +210,7 @@
                 
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../images/New%20PASTF.svg" scale="10" align="center"/>
+                            <imagedata fileref="../images/PASTF%20Updated.svg" scale="12" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -421,12 +421,22 @@
             <title>The Inability to Share Between Systems</title>
             <para>Numerous distinct systems and organizations across the healthcare ecosystem lead
                 to a large variation in how data are handled, e.g., data collection, data
-                manipulation, data transmission, data storage, and real-world application. Each
-                system has a proprietary, standard, or ad-hoc information model and is typically
-                configured to satisfy organization-specific needs, resulting in differences in data
-                handling within systems. While this variation is not an innate issue, the difficulty
+                manipulation, data transmission, data storage, and real-world application. An
+                example data exchange path is depeicted in the figure below. Each system has a
+                proprietary, standard, or ad-hoc information model and is typically configured to
+                satisfy organization-specific needs, resulting in differences in data handling
+                within systems. While this variation is not an innate issue, the difficulty
                 exchanging data between systems and the lack of interoperability compromises data
-                quality and ultimately patient safety. </para>
+                quality and ultimately patient safety. </para><figure xml:id="ExampleDataExchangePath">
+                    <title>Example Data Exchange Path</title>
+                    
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/Example%20Data%20Exchange%20Path.svg" scale="12" align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure> 
+            
         </section>
     </section>
     

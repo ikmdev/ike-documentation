@@ -121,14 +121,14 @@
             </section>
             <section>
                 <title>Development and Operations (DevOps) Processes</title>
-                <para>In the current state of Health IT, healthcare data standard organizations have
-                    implemented restrictive licensing around their proprietary data and technology
-                    which creates silos and the inability to collaborate across standards. IKM
-                    provides an open-source solution that could be used across the community to
-                    collaborate and further reduce these data silos. Komet is an open-source
-                    solution in the form of an installed Java application that provides users the
-                    ability to visualize, manage and extend disparate medical terminologies.
-                    [4]</para>
+                <para>In the current state of Health IT, healthcare standards development
+                    organizations have implemented restrictive licensing around their proprietary
+                    data and technology which creates silos and the inability to collaborate across
+                    standards. IKM provides an open-source solution that could be used across the
+                    community to collaborate and further reduce these data silos. Komet is an
+                    open-source solution in the form of an installed Java application that provides
+                    users the ability to visualize, manage and extend disparate medical
+                    terminologies. [4]</para>
                 <para>Early in the development phase, we identified that we would need to make an
                     investment in Development and Operations (DevOps) technologies and tooling to
                     allow our open-source solutions to be rapidly developed and released to reach

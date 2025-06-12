@@ -1229,7 +1229,7 @@
         <title>Privacy Needs</title>
         <para>As we further develop this reference implementation that may contain sensitive
             information, with things like Health Insurance Portability and Accountability Act
-            (HIPPA) protected information and Personally Identifiable Information (PII), it becomes
+            (HIPAA) protected information and Personally Identifiable Information (PII), it becomes
             very important that this data protected. Communications will need to be designed to
             require encryption in transit. Services will need to be designed to require encryption
             at rest. To share any data, there will need to be designed sharing patterns that either

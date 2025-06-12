@@ -1198,7 +1198,7 @@
             <title>Scenario 1</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Scenario1Codesniop_GSG%20.svg" scale="55"
+                    <imagedata fileref="images/Scenario1Codesniop_GSG%20.svg" scale="65"
                         align="center"/>
                 </imageobject>
             </mediaobject>
@@ -1212,7 +1212,7 @@
             <title>Scenario 2</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Scenario2Codesnip_GSG%20.svg" scale="60"
+                    <imagedata fileref="images/Scenario2Codesnip_GSG%20.svg" scale="65"
                         align="center"/>
                 </imageobject>
             </mediaobject>
@@ -1232,7 +1232,7 @@
             <title>Scenario 1</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Generics%20Scen1%20Codesnip_GSG%20.svg" scale="35"
+                    <imagedata fileref="images/Generics%20Scen1%20Codesnip_GSG%20.svg" scale="65"
                         align="center"/>
                 </imageobject>
             </mediaobject>
@@ -1244,7 +1244,7 @@
             <title>Scenario 2</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Generics%20Scen2%20Codesnip_GSG%20.svg" scale="35"
+                    <imagedata fileref="images/Generics%20Scen2%20Codesnip_GSG%20.svg" scale="65"
                         align="center"/>
                 </imageobject>
             </mediaobject>
@@ -1277,7 +1277,7 @@
             <title>Caching</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Caching%20Codesnip_GSG%20.svg" scale="35"
+                    <imagedata fileref="images/Caching%20Codesnip_GSG%20.svg" scale="65"
                         align="center"/>
                 </imageobject>
             </mediaobject>
@@ -1292,7 +1292,7 @@
             <title>Primitive</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Primitive%20Codesnip_GSG%20.svg" scale="35"
+                    <imagedata fileref="images/Primitive%20Codesnip_GSG%20.svg" scale="65"
                         align="center"/>
                 </imageobject>
             </mediaobject>
@@ -1312,7 +1312,7 @@
             <title>Atomic</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Atomic%20Codesnip_GSG%20.svg" scale="35"
+                    <imagedata fileref="images/Atomic%20Codesnip_GSG%20.svg" scale="65"
                         align="center"/>
                 </imageobject>
             </mediaobject>
@@ -1323,7 +1323,7 @@
             <title>Atomic Output</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Atomic%20Output%20Count%20Codesnip_GSG%20.svg" scale="35"
+                    <imagedata fileref="images/Atomic%20Output%20Count%20Codesnip_GSG%20.svg" scale="65"
                         align="center"/>
                 </imageobject>
             </mediaobject>
@@ -1342,7 +1342,7 @@
             <title>Atomic Concepts</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Active%20Concepts%20Atomic%20Codesnip_GSG%20.svg" scale="35"
+                    <imagedata fileref="images/Active%20Concepts%20Atomic%20Codesnip_GSG%20.svg" scale="65"
                         align="center"/>
                 </imageobject>
             </mediaobject>
@@ -1352,7 +1352,7 @@
             <title>Active Concepts Count</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Active%20Concepts%20Atomic%20Count%20Codesnip_GSG%20.svg" scale="35"
+                    <imagedata fileref="images/Active%20Concepts%20Atomic%20Count%20Codesnip_GSG%20.svg" scale="65"
                         align="center"/>
                 </imageobject>
             </mediaobject>
@@ -1373,7 +1373,7 @@
             <title>Inactive Concepts</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Inactive%20Concepts%20Atomic%20Codesnip_GSG%20.svg" scale="35"
+                    <imagedata fileref="images/Inactive%20Concepts%20Atomic%20Codesnip_GSG%20.svg" scale="65"
                         align="center"/>
                 </imageobject>
             </mediaobject>
@@ -1384,7 +1384,7 @@
             <title>Inactive Concepts Count</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Inactive%20Concepts%20Atomic%20Count%20Codesnip_GSG%20.svg" scale="35"
+                    <imagedata fileref="images/Inactive%20Concepts%20Atomic%20Count%20Codesnip_GSG%20.svg" scale="65"
                         align="center"/>
                 </imageobject>
             </mediaobject>
@@ -1406,7 +1406,7 @@
             <title>Active Concepts 10</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Active%20Concepts%2010%20Atomic%20Codesnip_GSG%20.svg" scale="35"
+                    <imagedata fileref="images/Active%20Concepts%2010%20Atomic%20Codesnip_GSG%20.svg" scale="65"
                         align="center"/>
                 </imageobject>
             </mediaobject>
@@ -1417,7 +1417,7 @@
             <title>Active Concepts 10 Count</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Active%20Concepts%2010%20Atomic%20Count%20Codesnip_GSG%20.svg" scale="35"
+                    <imagedata fileref="images/Active%20Concepts%2010%20Atomic%20Count%20Codesnip_GSG%20.svg" scale="65"
                         align="center"/>
                 </imageobject>
             </mediaobject>
@@ -1439,7 +1439,7 @@
             <title>Language</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Language%20Codesnip_GSG%20.svg" scale="35"
+                    <imagedata fileref="images/Language%20Codesnip_GSG%20.svg" scale="65"
                         align="center"/>
                 </imageobject>
             </mediaobject>
@@ -1450,7 +1450,7 @@
             <title>Language</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Language%20Output%20Codesnip_GSG%20.svg" scale="35"
+                    <imagedata fileref="images/Language%20Output%20Codesnip_GSG%20.svg" scale="65"
                         align="center"/>
                 </imageobject>
             </mediaobject>
@@ -1472,7 +1472,7 @@
             <title>Definition</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Definition%20Codesnip_GSG%20.svg" scale="35"
+                    <imagedata fileref="images/Definition%20Codesnip_GSG%20.svg" scale="65"
                         align="center"/>
                 </imageobject>
             </mediaobject>
@@ -1483,7 +1483,7 @@
             <title>Definition Output</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Definition%20Output%20Codesnip_GSG%20.svg" scale="35"
+                    <imagedata fileref="images/Definition%20Output%20Codesnip_GSG%20.svg" scale="65"
                         align="center"/>
                 </imageobject>
             </mediaobject>
@@ -1554,7 +1554,7 @@
             <title>API</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/API%20Codesnip_GSG%20.svg" scale="35"
+                    <imagedata fileref="images/API%20Codesnip_GSG%20.svg" scale="65"
                         align="center"/>
                 </imageobject>
             </mediaobject>
