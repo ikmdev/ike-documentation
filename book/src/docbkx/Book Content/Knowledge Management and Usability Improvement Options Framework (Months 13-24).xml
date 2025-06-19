@@ -1,0 +1,2313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Knowledge Management and Usability Improvement Options Framework (Months 13-24)</title>
+    <section>
+        <title>Disclaimers and notes</title>
+        <para>This document reflects the views of the authors and should not be construed to
+            represent the Food and Drug Administration’s (FDA’s) views or policies.</para>
+    </section>
+    <section>
+        <title>Purpose</title>
+        <para>This document will serve as a summary of findings of the most efficient and effective
+            environmental configuration methods and deployment architectures of the Systemic
+            Harmonization and Interoperability Enhancement for Laboratory Data (SHIELD) Integrated
+            Knowledge Management (IKM) open-source reference implementation, Komet. This analysis
+            will enable the Food and Drug Administration (FDA) SHIELD team to make informed
+            decisions about how to 1) optimally configure and build Komet locally and 2) expand
+            Komet capabilities from a standalone desktop application to the web. An optimized
+            configuration will allow for development and deployments to be more efficient, reducing
+            wait time. Expansion into a web-based architecture will open the door for additional use
+            cases and cloud-enabled integration and data exchange. Choosing the right architecture
+            design for the environment configuration and deployment of the Knowledge Management
+            Environment (Komet) depends on various factors, including the platform’s size,
+            complexity, scalability requirements, and team expertise. </para>
+        <para>This work serves as an initial framework that will evolve as we continue to understand
+            the requirements, priorities, and needs of IKM and its users.</para>
+    </section>
+    <section>
+        <title><anchor xml:id="Toc195708516"/>Methodology </title>
+        <para>In this section, we discuss the comprehensive methodology used for evaluating
+            different architectural designs with their own configuration and deployment
+            requirements. This methodology is designed to evaluate key criteria, such as technical,
+            financial, and operational considerations. Additionally, we conducted an in-depth
+            analysis of our Maven build processes to optimize our build configurations, focusing on
+            improving the efficiency, performance, and reliability of builds. This analysis is
+            crucial as it directly impacts our development cycle times, resource utilization, and
+            overall productivity. By identifying the most effective tools and configurations, we aim
+            to streamline our build processes, reduce overhead, and ensure more reliable and faster
+            deployments.</para>
+        <section>
+            <title><anchor xml:id="Toc195708517"/>Architecture Design and Deployment Analysis
+                Methodology</title>
+            <para>The following methodology was used to conduct analysis and collect findings on the
+                optimal architecture designs and deployment models:</para>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc177484268"/>Requirement Analysis</title>
+            <para>The objective of the Requirement Analysis is to identify and document the
+                architectural requirements for the system. This process involves conducting
+                interviews with key stakeholders to gather requirements and understand their needs
+                and expectations. Additionally, existing documentation, such as the application
+                README and other relevant materials, is analyzed to extract requirements.
+                Requirement workshops are facilitated to collaboratively define and prioritize
+                requirements with stakeholders. The outcome is a detailed list of architectural
+                requirements that serve as the foundation for further analysis.</para>
+            <section>
+                <title><anchor xml:id="Toc177484269"/>Feasibility Study</title>
+                <para>The Feasibility Study aims to assess the technical and operational feasibility
+                    of running JPro applications on Elastic Compute Cloud (EC2) instances. This
+                    involves a technical evaluation to examine the aspects of deploying JPro
+                    applications on EC2, including compatibility, performance, and scalability. An
+                    operational assessment evaluates the implications such as ease of deployment,
+                    maintenance, and support. A risk analysis is conducted to identify potential
+                    risks and mitigation strategies. The outcome is a feasibility report that
+                    provides insights into the practicality of the proposed architecture.</para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484270"/>Cost-Benefit Analysis</title>
+                <para>The objective of the Cost-Benefit Analysis is to estimate the costs and
+                    benefits associated with different architectural configurations. This process
+                    includes calculating the costs for various configurations, such as single user
+                    versus multi-tenant designs, including hardware, software, and operational
+                    expenses. The benefits, such as improved performance, scalability, and user
+                    experience, are assessed. A comparison is made to determine the most
+                    cost-effective option. The outcome is a cost-benefit analysis report that helps
+                    in making informed financial decisions.</para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484271"/>Scalability and Performance Testing</title>
+                <para>Scalability and Performance Testing aims to evaluate the scalability and
+                    performance limits of the system. This involves developing a test plan that
+                    outlines the scenarios, metrics, and tools for scalability and performance
+                    testing. Tests are conducted to measure performance under different loads and
+                    configurations, such as one concurrent user per JPro server. The test results
+                    are analyzed to identify bottlenecks and areas for improvement. The outcome is a
+                    performance report that provides empirical data on the system's scalability and
+                    performance. </para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484272"/>Security and Compliance Review</title>
+                <para>The objective of the Security and Compliance Review is to ensure compliance
+                    with contractual policies and industry standards. This process includes
+                    reviewing contractual security policies and industry standards to identify
+                    relevant requirements. A security assessment is conducted to evaluate the
+                    system's compliance with these requirements, focusing on areas such as password
+                    management and data protection. A compliance audit ensures that all necessary
+                    controls are in place and functioning as intended. The outcome is a security and
+                    compliance report that ensures the system meets all relevant security and
+                    compliance requirements.</para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484273"/>User Experience (UX) Evaluation</title>
+                <para>The UX Evaluation aims to review and propose User Interface (UI) adjustments
+                    for the web application. This involves conducting user research to understand
+                    the needs and preferences of the target users. The current UI design is reviewed
+                    to identify areas for improvement. Prototypes of the proposed UI adjustments are
+                    developed, and feedback is gathered from users. Usability testing is conducted
+                    to validate the effectiveness of the proposed changes. The outcome is a UX
+                    evaluation report that provides recommendations for improving the user interface
+                    and experience<emphasis role="bold">.</emphasis></para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484274"/>Resource Allocation Planning</title>
+                <para>The objective of Resource Allocation Planning is to determine the number and
+                    specifications of instances needed for the conference. This involves estimating
+                    the required capacity based on the expected number of users and workload. The
+                    specifications for the instances, including Central Processing Unit (CPU),
+                    Random Access Memory (RAM), and storage requirements, are defined. A strategy
+                    for allocating and managing resources, including pre-allocation of instances
+                    before the conference, is developed. The outcome is a resource allocation plan
+                    that ensures adequate resources are available to meet the system's needs during
+                    the conference.</para>
+                <para>Additionally, the following assumptions were made as part of this
+                    analysis:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>JavaFX [1] is the technology used by Komet.</para>
+                    </listitem>
+                    <listitem>
+                        <para>JPro Software [2] is used to provide JavaFX technology (ex: Komet) in
+                            a web browser.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Amazon Web Services (AWS) [3] is the preferred Cloud Service
+                            Provider.</para>
+                    </listitem>
+                </itemizedlist>
+                <para>This methodology collectively ensures a thorough and balanced evaluation of
+                    architectural options, addressing all critical aspects of the system's
+                    implementation and operation.</para>
+            </section>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc195708518"/>Environment Configuration Analysis
+                Methodology</title>
+            <para>To optimize our build configurations, we followed a structured methodology
+                comprising the following steps:</para>
+            <section>
+                <title>Assessing the Current State and Identifying Improvement Opportunities</title>
+                <para>We initiated the process by conducting an in-depth assessment of the existing
+                    Maven build configurations. This involved scrutinizing the current build
+                    process, building cache extension, identifying performance bottlenecks, and
+                    pinpointing areas where enhancements could be made. We gathered comprehensive
+                    data on build times, analyzed the frequency of build failures, and evaluated the
+                    consistency of build outputs to gain a clear understanding of the current
+                    state.</para>
+            </section>
+            <section>
+                <title>Exploring and Evaluating Potential Solutions</title>
+                <para>With the improvement opportunities identified, we embarked on an exploration
+                    of potential solutions. This phase included researching best practices in build
+                    optimization, evaluating various build tools and plugins, and consulting
+                    relevant documentation and expert forums. Our objective was to identify
+                    solutions that could effectively address the specific issues we had uncovered,
+                    such as reducing build times, enhancing cache management, and improving overall
+                    build reliability.</para>
+            </section>
+            <section>
+                <title>Implementing Proof of Concept (PoC) Initiatives</title>
+                <para>To validate the potential solutions, we developed initial Proof of Concepts
+                    (PoCs) for each identified improvement. This involved setting up a controlled
+                    environment where we could test the proposed changes without disrupting the main
+                    development workflow. We applied the optimizations to a subset of projects and
+                    closely monitored their impact on build performance and reliability.</para>
+            </section>
+            <section>
+                <title>Gathering and Analyzing Data</title>
+                <para>During the PoC phase, we meticulously gathered data on the performance and
+                    reliability of the builds. This included metrics such as build times, success
+                    rates, and the frequency of manual interventions required. We conducted a
+                    thorough analysis of this data to determine the effectiveness of each solution,
+                    comparing it against the baseline established during the initial
+                    assessment.</para>
+            </section>
+            <section>
+                <title>Formulating and Prioritizing Recommendations</title>
+                <para>Based on the insights gained from the PoC initiatives, we formulated a set of
+                    recommendations for optimizing the Maven build configurations and caching
+                    solutions. These recommendations were designed to address the specific issues
+                    identified and were supported by the data collected during the PoC phase. We
+                    prioritized the recommendations based on their potential impact on performance
+                    and reliability, as well as the effort required for implementation.</para>
+                <para>By following this refined methodology, we ensured a thorough and data-driven
+                    approach to optimizing our Maven build configurations, ultimately leading to a
+                    more efficient and reliable build process.</para>
+            </section>
+        </section>
+    </section>
+    <section>
+        <title><anchor xml:id="Toc195708519"/>Findings</title>
+        <para>Following a comprehensive evaluation of various architectural options for integrating
+            Komet into the web, our methodology has yielded insightful findings that highlight the
+            most effective and scalable solutions described below.</para>
+        <section>
+            <title><anchor xml:id="Toc195708520"/>Current State Architecture</title>
+            <para>The current state architecture (Figure 1) of the application is designed to run on
+                a local machine. This setup involves executing the application with specific flags
+                that are defined in the application's README file. These flags configure the
+                application to operate correctly in the local environment, ensuring that all
+                necessary components and dependencies are properly initialized and managed.</para><figure xml:id="CurrentArchitecture">
+                    <title>Current Architecture</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="../images/Current%20Architecture.svg"
+                                        scale="50" align="center"/> 
+                                </imageobject>
+                            </mediaobject>
+                        </figure>
+            <section>
+                <title><anchor xml:id="Toc177484277"/>Process Flow Description</title>
+                <para>In scenarios where you would like the application to run in web mode,
+                    additional configurations are required. Specifically, the application needs to
+                    be equipped with the JPro UI translation layer. JPro is a framework that allows
+                    JavaFX applications to run in a web browser without requiring any changes to the
+                    application's codebase. It translates the JavaFX UI components into
+                    web-compatible elements, enabling the application to be accessed and interacted
+                    with through a web browser.</para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484278"/>Required Actions</title>
+                <para>The following actions must be completed to support the above architectural
+                    design (Figure 1: Current Architecture):</para>
+                <orderedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Local Machine Setup</emphasis> – Ensure that the
+                            application is running on a local machine with the appropriate flags as
+                            specified in the README file. These flags typically include
+                            configurations for local dependencies, environment variables, and other
+                            settings necessary for local execution.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">JPro Integration</emphasis> – Integrate the JPro
+                            UI translation layer into the application. This involves adding the JPro
+                            library to the application's dependencies and configuring the
+                            application to use JPro for rendering the UI. Modify the application's
+                            startup configuration to detect when it should run in web mode. This can
+                            be achieved by checking for specific environment variables or
+                            command-line arguments that indicate the desired mode of
+                            operation.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Running in Web Mode</emphasis> – When running in
+                            web mode, the application will use JPro to translate its JavaFX UI
+                            components into web-compatible elements. This allows users to access the
+                            application through a web browser, providing a seamless user experience
+                            similar to that of a native desktop application. Ensure that the server
+                            hosting the application is properly configured to handle web requests
+                            and serve the translated UI components to the client's browser.</para>
+                    </listitem>
+                </orderedlist>
+            </section>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc195708521"/>Scaled Web Application</title>
+            <para>The architectural diagram (Figure 2) below describes a web application deployment
+                architecture using multiple Java Virtual Machines (JVMs) involving Amazon EC2
+                instances. The below architecture would have a scalable web application setup where
+                multiple clients can interact with a web application hosted on Amazon EC2 instances,
+                with considerations for traffic routing and instance isolation. Each application
+                instance has its own JVM and its own database, which could be for load balancing or
+                fault tolerance purposes.</para><figure xml:id="ScaledWebApplication">
+                    <title>Scaled Web Application</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="../images/Scaled%20Web%20Application.svg"
+                                        scale="80" align="center"/> 
+                                </imageobject>
+                            </mediaobject>
+                        </figure>
+            
+            <para>In the current setup, there can be one or more JVMs per machine. For simplicity,
+                we will assume a single JVM per machine when determining the best way to route
+                traffic. Each user operates within a dedicated JVM, ensuring that there is a single
+                user per instance of the Komet Web Application. This configuration allows multiple
+                JVMs to run on a single machine, enabling one or more instances of the Komet Web
+                Application to be active simultaneously.</para>
+            <section>
+                <title><anchor xml:id="Toc177484280"/>Required Actions</title>
+                <para>The following actions must be completed to support the above architectural
+                    design (Figure 2: Scaled Web Application):</para>
+                <orderedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Redirection to Individual Komet Web Applications
+                            </emphasis>– Currently, there is no mechanism in place to direct users
+                            to individual Komet Web Applications. To address this limitation, we
+                            propose implementing a simple redirection page at the initial access
+                            point. This page should display the number of available servers and
+                            dynamically populate a dropdown menu with server options. It is crucial
+                            to clearly state that each server maintains a distinct state, and user
+                            data will reside on a specific instance, ensuring transparency to the
+                            user. Additionally, to comply with contractual security policies, at the
+                            minimum, a simple password protection mechanism should be
+                            implemented.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Amazon Machine Image (AMI) Creation
+                            </emphasis>–The task involves creating an AMI in the target region with
+                            the latest code installed. This will ensure that the environment is
+                            up-to-date and ready for deployment.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Instance Allocation for Demo </emphasis>– For
+                            the upcoming demonstration, it is necessary to determine the number of
+                            instances required. Once the number is established, these instances
+                            should be pre-allocated prior to the conference to ensure smooth
+                            operation and demonstration.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">User Interface (UI) Review and Adjustments
+                            </emphasis>– The objective here is to review and adjust current UI
+                            decisions to better accommodate a web application format. UI Designers
+                            will collaborate with Keith to present potential changes. The areas of
+                            focus for these adjustments include menu design, file loading screen,
+                            landing page, import/export dialogue, error popups, and error log
+                            access. This collaborative effort aims to enhance the user experience
+                            and streamline the interface for better usability.</para>
+                    </listitem>
+                </orderedlist>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484281"/>Benefits and Drawbacks</title>
+                <section>
+                    <title>Benefits</title>
+                    <para>Ease of Implementation: Given that this aligns with the current
+                        architecture, implementing these changes should be straightforward.</para>
+                </section>
+                <section>
+                    <title>Drawbacks</title>
+                    <para>There are several notable drawbacks associated with the current
+                        system:</para>
+                    <orderedlist>
+                        <listitem>
+                            <para>There is a concurrency limitation as each JPro server can support
+                                only one concurrent user. This significantly restricts the system's
+                                ability to handle multiple users simultaneously, which can be a
+                                major bottleneck in high-demand scenarios.</para>
+                        </listitem>
+                        <listitem>
+                            <para>There is a memory constraint since each JPro server is limited to
+                                10GB of Random Access Memory (RAM). This limitation can affect the
+                                performance and efficiency of the system, especially when dealing
+                                with memory-intensive applications or large datasets.</para>
+                        </listitem>
+                        <listitem>
+                            <para>There are scalability challenges. The system is less automated
+                                when it comes to scaling, requiring users to have knowledge of
+                                server locations. This manual intervention can hinder the system's
+                                ability to scale efficiently and meet the demands of a growing user
+                                base.</para>
+                        </listitem>
+                    </orderedlist>
+                </section>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484282"/>Costs Considerations</title>
+                <para>The allocation of the number and size of instances can vary based on specific
+                    requirements. However, for the purpose of this estimate, we will assume one JVM
+                    per instance. Each instance will have the following specifications: 16 virtual
+                    Central Processing Units (vCPUs), 16 gigabytes (GB) of RAM, and 10 Terabyte (TB)
+                    of Solid-State Drive (SSD) storage.</para>
+                <para>For estimation purposes, we assume that 30 instances will be required over a
+                    48-hour period. Based on these assumptions, the total estimated cost amounts to
+                    $511.42.</para>
+            </section>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc195708522"/>Multi-Tenant Design</title>
+            <para>The design (Figure 3) of the Komet application can be adjusted to support multiple
+                users per JVM/JPro instance. This approach offers several advantages including
+                reduced system overhead and enhanced manageability. Each JVM has its own memory
+                stack, metrics, and analytics, which can be optimized by supporting multiple users
+                per instance. This design simplifies the management of web applications from an
+                administrative perspective.</para><figure xml:id="Multi-TenantDesign">
+                    <title>Multi-Tenant Design</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/Multi-Tenant%20Design.svg"
+                                scale="80" align="center"/> 
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            <section>
+                <title><anchor xml:id="Toc177484284"/>Process Flow Description</title>
+                <para>The Komet Web application operates in a manner similar to its current
+                    deployment, with each server running a JVM instance. Key operational details
+                    include the following:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Each machine will host a single JVM/JPro instance (refer Figure 3:
+                            Multi-Tenant Design), optimized to fully utilize the machine's
+                            resources. This setup ensures efficient resource allocation and
+                            performance. Each instance will be configured to support a specific
+                            number of concurrent users, denoted as 'n,' based on the instance's
+                            size. This configuration allows for precise capacity management and
+                            scalability.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Furthermore, each instance will manage multiple databases, user
+                            preferences, and other user-specific data, enabling a multi-tenant
+                            hosting environment. This approach ensures that user data is isolated
+                            and managed effectively within each instance.</para>
+                    </listitem>
+                    <listitem>
+                        <para>For capacity planning, the total number of machines required will be
+                            estimated based on the capacity needs. This calculation is performed by
+                            determining the number of users each machine can support (x users per
+                            machine) and multiplying it by the number of machines (y machines) to
+                            achieve the total capacity required.</para>
+                    </listitem>
+                </itemizedlist>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484285"/>Required Actions</title>
+                <para>To make the Komet Web application user aware, several key actions are
+                    required.</para>
+                <orderedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Authentication Integration</emphasis> – This
+                            involves developing an authentication plugin Application Programming
+                            Interface (API) and implementing at least a basic version of the
+                            authentication mechanism. This will ensure that users are properly
+                            authenticated before accessing the application.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Data API Adjustments</emphasis> – The data APIs
+                            must be modified to ensure that user information is passed along with
+                            each request. This will enable the application to handle user-specific
+                            data effectively.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Database Management</emphasis> – It is crucial
+                            to determine the method for storing databases per user and implement the
+                            necessary mechanisms to manage user-specific databases. This will ensure
+                            that each user's data is isolated and managed appropriately.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">The Memory Model Determination</emphasis> – The
+                            appropriate memory model must be decided upon, leveraging the benefits
+                            of a shared JVM. This shared memory usage can be advantageous if most
+                            users do not utilize their full memory allocation, allowing for more
+                            efficient resource management.</para>
+                    </listitem>
+                </orderedlist>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484286"/>Benefits and Drawbacks</title>
+                <section>
+                    <title>Benefits</title>
+                    <para>This improvement allows for the reduction of JVM/JPro Overhead, including
+                        RAM reductions, reducing the number of deployments for new users, etc. also
+                        this allows for the use of larger machines, which can save cost.</para>
+                </section>
+                <section>
+                    <title>Drawbacks</title>
+                    <para> A JVM Crash or machine outage affects multiple users.</para>
+                </section>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484287"/>Cost Considerations</title>
+                <para>The allocation of the number and size of instances can vary based on specific
+                    requirements. For the purpose of this estimate, we will assume one JVM per
+                    instance with the following specifications: 32 vCPUs, 96GB of RAM, and 40TB of
+                    SSD storage.</para>
+                <para>For a rough estimate, we assume the need for 5 instances over a 48-hour
+                    period. Based on these assumptions, the total estimated cost amounts to
+                    $409.34.</para>
+            </section>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc195708523"/>Centralized Drive</title>
+            <para>It is entirely feasible for multiple versions of the Komet Web application to
+                access a shared hard drive (Figure 4). This shared storage enables features such as
+                exporting data to other users or accessing common files.</para>
+            <para>To achieve this, various technologies can be utilized. However, for simplicity of
+                deployment in an AWS environment, Amazon Elastic File System (EFS) is
+                recommended.</para><figure xml:id="CentralizedDrive">
+                    <title>Centralized Drive</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/Centralized%20Drive.svg"
+                                scale="80" align="center"/> 
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            <section>
+                <title><anchor xml:id="Toc177484289"/>Process Flow Description</title>
+                <para>The system is designed to attach a drive from a networked drive solution. This
+                    integration allows the system to access and utilize storage resources that are
+                    part of a networked infrastructure, enhancing storage flexibility and
+                    scalability.</para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484290"/>Required Actions</title>
+                <para>To enable this functionality, minimal modifications are required for Komet
+                    Web. Key considerations include the following:</para>
+                <orderedlist>
+                    <listitem>
+                        <para><emphasis role="bold">The Data Access Model</emphasis> – This needs to
+                            be determined in a horizontally scalable environment. It is essential to
+                            decide whether users will have access to all databases or only their
+                            own. Based on the chosen model, the necessary changes should be
+                            implemented to ensure proper data access and security.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Integration with Shared Storage</emphasis> – The
+                            implementation should be paired with the Shared Drive or Shared Data
+                            Service designs to facilitate seamless data access and sharing. This
+                            will allow for efficient and effective use of shared storage resources,
+                            enhancing the overall functionality of the system.</para>
+                    </listitem>
+                </orderedlist>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484291"/>Benefits and Drawbacks</title>
+                <section>
+                    <title>Benefits</title>
+                <para> User can access data from any instance.</para></section>
+                    <section>
+                        <title>Drawbacks</title>
+                <para> Network File System (NFS) and similar technologies can be slower for some
+                    applications.</para></section>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484292"/>Cost Considerations</title>
+                <para>Implementing the shared storage solution adds an additional cost of $5 per
+                    month to any architecture.</para>
+            </section>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc195708524"/>Centralized Data Service</title>
+            <para>Enhancing the design of centralized data, a Centralized Data Service enables users
+                of both the web and Komet applications to access and store data, even when they are
+                outside of the private network (Figure 5).</para><figure xml:id="CentralizedDataService">
+                    <title>Centralized Data Service</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/Centralized%20Data%20Service.svg"
+                                scale="80" align="center"/> 
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            <section>
+                <title><anchor xml:id="Toc177484294"/>Process Flow Description</title>
+                <para>The Komet applications will be designed with the capability to add an external
+                    data source. This feature will enable users to integrate additional data sources
+                    seamlessly into the application, enhancing its functionality and data
+                    comprehensiveness (refer Figure 5: Centralized Data Service).</para>
+                <para>The web version of the application will be bootstrapped with the external data
+                    source as the primary or sole data source. This ensures that the web version is
+                    fully equipped to utilize the integrated data, providing a consistent and robust
+                    user experience.</para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484295"/>Required Actions</title>
+                <para>To enable the proposed functionality for Komet (Figure 5), several key actions
+                    need to be undertaken:</para>
+                <orderedlist>
+                    <listitem>
+                        <para><emphasis role="bold">User Awareness</emphasis> – Firstly, it is
+                            essential to develop an authentication plugin API and provide at least a
+                            basic implementation. This will ensure secure user authentication.
+                            Additionally, the data APIs must be modified to ensure that user
+                            information is passed along with requests, maintaining data integrity
+                            and security.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Database Management</emphasis> – The next step
+                            involves determining the appropriate storage mechanism for databases on
+                            a per-user basis and implementing the necessary mechanisms. This will
+                            facilitate efficient and secure management of user-specific data.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">User Preferences</emphasis> – To enhance user
+                            experience, dialogues and preferences need to be created that allow
+                            users to add external databases. This feature will enable users to
+                            customize their data sources according to their specific needs.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Wrapper Service</emphasis> – A wrapper service
+                            around Terminology Knowledge Architecture (Tinkar) Core must be
+                            developed to facilitate the saving of data. This service will act as an
+                            intermediary, ensuring smooth data transactions between the core system
+                            and external databases.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Communication Services</emphasis> – Finally, it
+                            is crucial to determine the best method to package WebSockets or Google
+                            Remote Procedure Call (gRPC) Komet data services to communicate with the
+                            external service. This will ensure efficient and reliable data
+                            communication between the Komet application and external data
+                            sources.</para>
+                    </listitem>
+                </orderedlist>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484296"/>Benefits and Drawbacks</title>
+                <section>
+                    <title>Benefits</title>
+                    <para>Users can access data from any instance and can access external data from
+                        their laptops, enhancing flexibility and mobility.</para></section>
+                <section><title>Drawbacks</title>
+                    <para> Externalizing data may result in slower performance for some
+                        applications.</para></section>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484297"/>Cost Considerations</title>
+                <para>Implementing the Centralized Data Service is expected to significantly
+                    increase the cost of any architecture deployment due to the substantial power
+                    required for data storage and Komet applications, potentially doubling the
+                    overall deployment cost. Data storage and Komet applications will be scaled
+                    independently, allowing for more precise resource allocation based on specific
+                    needs. Although initial costs may be high, there is potential for cost
+                    optimization at a later stage, as adjustments can be made to optimize and reduce
+                    costs effectively once sufficient metrics have been gathered.</para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc195708525"/>Data Synchronization</title>
+                <para>To improve local performance by having the application work on the local
+                    database and file system while synchronizing results with the server data
+                    service (Figure 6).</para><figure xml:id="DataSynchronization">
+                        <title>Data Synchronization</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/Data%20Synchronization.svg"
+                                    scale="90" align="center"/> 
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484299"/>Process Flow Description</title>
+                <para>The application utilizes a local in-memory database for data management,
+                    periodically synchronizing changes (delta components) with an external data
+                    source (refer Figure 6: Data Synchronization).</para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484300"/>Required Actions</title>
+                <para>To enable the proposed functionality for Komet (Figure 6: Data
+                    Synchronization), several key actions need to be undertaken:</para>
+                <orderedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Establish Dependency on Centralized Data Service
+                            </emphasis>– The first step involves identifying and integrating with a
+                            centralized data service. This integration is crucial to ensure data
+                            consistency and reliability across the system.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Define API for Delta Synchronization</emphasis>
+                            – Next, it is essential to determine the API specifications for
+                            communicating delta changes with the external system. This will
+                            facilitate efficient data synchronization, ensuring that only the
+                            changes are transmitted, thus optimizing performance.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Implement UI Changes for Conflict
+                                Resolution</emphasis> – The user interface must be modified to
+                            handle conflicts and duplicates effectively. These changes will ensure a
+                            seamless user experience by providing clear and intuitive mechanisms for
+                            resolving any data discrepancies.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Determine and Implement Synchronization
+                                Timing</emphasis> – Finally, a synchronization strategy must be
+                            decided upon. This could involve continuous synchronization or an
+                            on-demand approach via a button. Once the strategy is chosen, it needs
+                            to be implemented to maintain data consistency across the system.</para>
+                    </listitem>
+                </orderedlist>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484301"/>Benefits and Drawbacks</title>
+                <section>
+                    <title>Benefits</title>
+                    <para>Enhanced Processing Speed: Utilizing a local in-memory database
+                        significantly accelerates data processing, particularly in a local
+                        development environment. This ensures that developers can work more
+                        efficiently and experience reduced latency during testing and development
+                        activities.</para>
+                </section>
+                <section>
+                    <title>Drawbacks</title>
+                    <para>Increased Data Access Complexity: Implementing a local in-memory database
+                        introduces additional complexity in accessing data. Developers must manage
+                        synchronization processes, handle potential conflicts, and ensure data
+                        consistency between the in-memory database and the external data source,
+                        which can complicate the overall system architecture.</para>
+                </section>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484302"/>Cost Considerations</title>
+                <para>Implementing this service does not incur any additional costs, making it a
+                    cost-effective solution for enhancing data processing and synchronization
+                    capabilities.</para>
+            </section>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc195708526"/>Load Balanced with Dynamic Allocation</title>
+            <para>One recommended approach (Figure 7) for web deployment is to include a layer of
+                abstraction between the user and the physical machine. This abstraction layer,
+                combined with load balancing and dynamic allocation, allows for seamless
+                scalability. Users can access the system without needing to understand the
+                underlying physical infrastructure. As user demand increases, new machines can be
+                dynamically allocated and spun up to handle the load, ensuring optimal performance
+                and resource utilization. This approach enhances the flexibility, efficiency, and
+                reliability of the deployment process.</para><figure xml:id="LoadBalancedwithDynamicAll">
+                    <title>Load Balanced with Dynamic All</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/Load%20Balanced%20with%20Dynamic%20All.svg"
+                                scale="80" align="center"/> 
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            <section>
+                <title><anchor xml:id="Toc177484304"/>Process Flow Description</title>
+                <para>The system dynamically spins up new instances based on usage, ensuring optimal
+                    performance and resource allocation (refer Figure 7).</para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484305"/>Required Actions</title>
+                <para>To ensure Komet is user-aware and functions efficiently, the following actions
+                    need to be undertaken:</para>
+                <orderedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Authentication Plugin API</emphasis> – Firstly,
+                            it is essential to develop and provide an authentication plugin API. At
+                            a minimum, a basic version of this API should be implemented to
+                            facilitate user authentication, ensuring that users are securely
+                            identified and authenticated within the system.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Data API Adjustment</emphasis> – Next, the
+                            existing data APIs must be modified to ensure that user information is
+                            passed along with each request. This adjustment is crucial for
+                            maintaining user-specific data integrity and security.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">User-Specific Database Storage</emphasis> – To
+                            manage user-specific data effectively, the method for storing databases
+                            per user must be determined. Once the appropriate method is identified,
+                            the necessary mechanisms should be applied to implement user-specific
+                            database storage, ensuring that each user's data is stored and managed
+                            independently.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Data Access in a Horizontally Scalable
+                                Model</emphasis> – It is important to evaluate how data access will
+                            function within a horizontally scalable model. A decision must be made
+                            on whether users will have access to all databases or only their own.
+                            Based on this decision, the necessary changes should be implemented to
+                            support the chosen data access model, ensuring scalability and
+                            efficiency.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Integration with Shared Drive or Shared Data
+                                Service Designs</emphasis> – Finally, it is crucial to ensure that
+                            the above changes are integrated with the designs for the Shared Drive
+                            or Shared Data Service. This integration will ensure that the system
+                            operates cohesively, and that data consistency and reliability are
+                            maintained across all components.</para>
+                    </listitem>
+                </orderedlist>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484306"/>Benefits and Drawbacks</title>
+                <section>
+                    <title>Benefits</title>
+                    <para>Users become unaware of the underlying physical architecture, allowing
+                        them to focus on their tasks without needing to understand the complexities
+                        of the system infrastructure.</para>
+                </section>
+                <section>
+                    <title>Drawbacks</title>
+                    <para>The need for multiple new features makes the implementation more costly,
+                        both in terms of time and resources.</para>
+                </section>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484307"/>Cost Considerations</title>
+                <para>Introducing a load balancer adds approximately $58 per month to any existing
+                    networking architecture.</para>
+            </section>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc195708527"/>Containerization</title>
+            <para>Containerization (Figure 8) allows you to bundle your application with the
+                operating system (OS), ensuring that it will run consistently across different
+                target environments. However, while containerization aims to be a "write-once,
+                run-anywhere" solution, it often requires modifications for use in Fed Ramp
+                environments. This is primarily due to:</para>
+            <orderedlist>
+                <listitem>
+                    <para><emphasis role="bold">Custom Certificate Authorities (CA) and Interim
+                            Certificates </emphasis>– Many organizations prepackage custom CA and
+                        interim certificates, which may not be compatible with Federal Risk and
+                        Authorization Management Program (FedRAMP) requirements.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Base Image Requirements</emphasis> – Differences in
+                        base image requirements between standard and FedRAMP environments
+                        necessitate rewriting or adjusting the container configurations.</para>
+                </listitem>
+            </orderedlist><figure xml:id="Containerization">
+                <title>Containerization</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="../images/Containerization.svg"
+                            scale="80" align="center"/> 
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            <section>
+                <title><anchor xml:id="Toc177484309"/>Process Flow Description</title>
+                <para>Instead of physically installing the JVM and Komet components directly onto a
+                    server, they can be deployed within a container (Figure 8: Containerization).
+                    This approach offers significantly easier and faster deployment.</para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484310"/>Required Actions</title>
+                <para>To enhance the deployment and functionality of Komet, the following actions
+                    need to be undertaken:</para>
+                <orderedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Containerization of Komet</emphasis> – Firstly,
+                            Komet needs to be installed within a container. Containerization will
+                            streamline the deployment process and ensure consistency across
+                            different environments, making it easier to manage and scale the
+                            application.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Load Balancing</emphasis> – A load balancing
+                            solution must be implemented to distribute traffic efficiently across
+                            multiple instances of Komet. This will enhance the system's performance
+                            and reliability by preventing any single instance from becoming a
+                            bottleneck.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Shared Data Model</emphasis> – Additionally, a
+                            shared data model needs to be developed and integrated. This model will
+                            ensure seamless data access and consistency across the system, enabling
+                            different instances of Komet to operate cohesively and share data
+                            effectively.</para>
+                    </listitem>
+                </orderedlist>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484311"/>Benefits and Drawbacks</title>
+                <section>
+                    <title>Benefits</title>
+                    <para>Containerizing the web application simplifies the process of distributing
+                        it for testing purposes. This allows testers to quickly deploy and evaluate
+                        the application in various environments without the need for complex setup
+                        procedures. The architecture becomes more portable, making it easier to
+                        deliver the application to customers. Containers encapsulate all necessary
+                        components and dependencies, ensuring that the application runs consistently
+                        across different customer environments. These benefits highlight how
+                        containerization enhances both the testing process and the overall
+                        portability of the web application.</para>
+                </section>
+                <section>
+                    <title>Drawbacks</title>
+                    <para>Containerizing applications introduces additional layers of complexity in
+                        the build and deployment processes. Managing container images, orchestrating
+                        deployments, and ensuring compatibility across different environments can
+                        require more sophisticated tooling and expertise.</para>
+                    <para>Many government organizations may face challenges in adopting
+                        containerized solutions due to stringent regulatory requirements, such as
+                        FedRAMP. These organizations often have specific security and compliance
+                        standards that may not align with the default configurations of
+                        containerized environments, necessitating significant modifications or even
+                        preventing use altogether.</para>
+                </section>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484312"/>Cost Considerations: </title>
+                <para>From a financial perspective, there are no additional costs directly
+                    associated with containerization.</para>
+            </section>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc195708528"/>Deployment on Kubernetes</title>
+            <para>Most organizations that utilize containerization leverage Kubernetes (Figure 9),
+                an open-source platform originally developed by Google. Kubernetes facilitates the
+                scaling of physical architecture without the need to manage individual Virtual
+                Machines (VMs).</para><figure xml:id="DeploymentonKubernetes">
+                    <title>Deployment on Kubernetes</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/Deployment%20on%20Kubernetes.svg"
+                                scale="80" align="center"/> 
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            <section>
+                <title><anchor xml:id="Toc177484314"/>Process Flow Description</title>
+                <para>The following steps outline the process flow (Figure 9) for deploying and
+                    managing Komet within a Kubernetes environment:</para>
+                <para><emphasis role="bold">Container Deployment</emphasis>: The first step involves
+                    deploying containers into a Kubernetes cluster. This approach leverages
+                    Kubernetes' orchestration capabilities to manage containerized applications
+                    efficiently.</para>
+                <para><emphasis role="bold">Deployment Scripts:</emphasis> To facilitate the
+                    deployment process, Kubernetes deployment scripts are utilized. Helm [4], a
+                    powerful package manager for Kubernetes, is the recommended tool for managing
+                    these applications. Helm simplifies the deployment, upgrade, and management of
+                    Kubernetes applications by using charts, which are pre-configured packages of
+                    Kubernetes resources.</para>
+                <para><emphasis role="bold">Load Balancing:</emphasis> Kubernetes Load Balancers are
+                    employed to distribute network traffic across the containers. This ensures that
+                    the traffic is evenly distributed, preventing any single container from becoming
+                    overloaded and enhancing the overall performance and reliability of the
+                    application.</para>
+                <para><emphasis role="bold">Disk Allocation</emphasis>: Disk allocation is managed
+                    using Kubernetes persistent volumes. This mechanism ensures that data storage is
+                    handled efficiently, providing a reliable and consistent storage solution for
+                    the application. Persistent volumes allow data to persist beyond the lifecycle
+                    of individual containers, ensuring data durability and availability.</para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484315"/>Required Actions</title>
+                <para>To achieve a fully containerized and efficiently deployable environment, the
+                    following actions need to be undertaken:</para>
+                <orderedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Complete Containerization</emphasis> – Firstly,
+                            it is essential to ensure that all applications and services are
+                            containerized. This step is a prerequisite for leveraging container
+                            orchestration and deployment tools effectively. Containerization will
+                            standardize the deployment process and enhance the scalability and
+                            manageability of the applications.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Develop and Distribute Deployment
+                                Scripts</emphasis> – Next, the necessary deployment scripts must be
+                            created. These scripts will automate the deployment process, ensuring
+                            consistency and reducing the potential for human error. Once developed,
+                            these scripts should be distributed to the relevant teams or systems for
+                            execution. This distribution will enable the teams to deploy the
+                            containerized applications efficiently and consistently across different
+                            environments.</para>
+                    </listitem>
+                </orderedlist>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484316"/>Benefits and Drawbacks</title>
+                <section>
+                    <title>Benefits</title>
+                    <para>The architecture becomes more portable, making it easier to deploy and run
+                        applications across different customer environments. Each pod/container can
+                        be scaled quickly and independently, allowing for efficient resource
+                        management and responsiveness to varying workloads.</para>
+                </section>
+                <section>
+                    <title>Drawbacks</title>
+                    <para>This architecture adds significant complexity to the build and deployment
+                        processes, requiring more sophisticated tools and expertise. It also
+                        requires an extremely high effort to implement, involving substantial time,
+                        resources, and coordination among teams.</para>
+                </section>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc177484317"/>Cost Considerations</title>
+                <para>When considering the costs associated with container orchestration and
+                    deployment, the following key points need to be addressed:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Control Plane Costs </emphasis>– The control
+                            plane, which is responsible for orchestrating containers, incurs a cost
+                            of approximately $73 per month. This fee covers the management and
+                            coordination of containerized applications. Notably, there are no
+                            additional costs specifically associated with the containerization
+                            process itself.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Worker Nodes </emphasis>
+                        – The cost of worker nodes for Amazon EKS (Elastic Kubernetes Service)
+                            is comparable to that of EC2 instances [5,6]. This means that the
+                            expenses for running worker nodes in an EKS cluster are similar to those
+                            incurred for running standard EC2 instances, providing a predictable
+                            cost structure.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Maintenance and Operational Support </emphasis>
+                        – There are ongoing maintenance and operational support costs required
+                            to keep an EKS cluster running smoothly. However, since our current
+                            tools, such as Nexus and SonarQube, are already operating on Kubernetes,
+                            this does not represent a significant cost increase. The existing
+                            infrastructure and expertise in managing Kubernetes environments help
+                            mitigate additional expenses related to maintenance and support.</para>
+                    </listitem>
+                </itemizedlist>
+            </section>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc195708529"/>Environment Configuration Optimization</title>
+            <para xml:id="dfrt6wuzh65n">In our pursuit of enhancing the development process, we
+                conducted extensive research into optimizing our environment configuration and build
+                process, with a particular focus on performance and reliability. Efficient and
+                reliable builds are crucial in software development as they directly impact
+                productivity, code quality, and the ability to deliver features and fixes promptly. </para>
+            <para>Our research began with a thorough analysis of our build times, meticulously
+                examining each step to identify bottlenecks and inefficiencies. This allowed us to
+                reconfigure our build profiles, deferring non-essential steps to on-demand profiles
+                and significantly improving performance during iterative development. By
+                streamlining these profiles, we reduced redundancy and made the build process more
+                efficient, enabling faster turnaround times for development tasks.</para>
+            <para>In addition to optimizing build profiles, we investigated various build caching
+                tools to enhance the reliability of our builds. Build caching is essential for
+                reducing build times by reusing previously built outputs, but it must be managed
+                correctly to avoid inconsistencies. We evaluated different caching solutions to find
+                the most reliable and effective options for our projects, testing them in our local
+                environment to ensure they met our performance and reliability criteria. These
+                efforts aimed to create a robust build environment that supports the dynamic needs
+                of our development projects, ultimately leading to higher productivity, better code
+                quality, and faster time-to-market for our software solutions.</para>
+            <section>
+                <title>A Comprehensive Study of Profile Configurations</title>
+                <para xml:id="m58j1znsn2tj">Every time a developer runs a full rebuild (e.g.,
+                    executing “mvn install”), non-critical steps—such as generating JavaFX runtime
+                    images, Javadoc, and executing tests—are performed. While these steps are
+                    essential for final releases, they can slow down iterative development. The
+                    overall approach should be to utilize Maven profiles to conditionally run these
+                    non-essential steps. This approach keeps the default development build fast
+                    while allowing you to perform a full build (including runtime image generation,
+                    Javadoc, and tests) when necessary.</para>
+                <para>Based on our analysis, the following findings and recommendations were
+                    captured:</para>
+                <section>
+                    <title>JavaFX Maven Plugin (JLink Goal)</title>
+                    <para><emphasis role="bold">Executions:</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>default-cli: Builds a runtime image with launcher “launchKomet”,
+                                using options like “-Xmx8g” and module adjustments.</para>
+                        </listitem>
+                        <listitem>
+                            <para>debug: Similar to default but uses launcher “debugKomet” with
+                                added Java Debug Wire Protocol (JDWP) debug options for remote
+                                debugging.</para>
+                        </listitem>
+                        <listitem>
+                            <para>profile: Uses launcher “profileKomet” with profiling options,
+                                including JProfiler integration.</para>
+                        </listitem>
+                    </itemizedlist>
+                    <para>The following overlapping “jlink” profiles were identified:</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>jlink-profile: Intended for profiling. Configures the JavaFX Maven
+                                Plugin with a “profile” execution (launcher, image name, and
+                                JProfiler options).</para>
+                        </listitem>
+                        <listitem>
+                            <para>jlink-standard: The default running configuration. Sets up a
+                                “default-cli” execution (launcher and image name), similar to the
+                                “jlink” default but without the -Xmx8g option.</para>
+                        </listitem>
+                        <listitem>
+                            <para>jlink: Activated via the jlink property. Contains three
+                                executions:</para>
+                        </listitem>
+                    </itemizedlist>
+                    <itemizedlist>
+                        <listitem>
+                            <para>default-cli: Like “jlink-standard” with an extra -Xmx8g
+                                option.</para>
+                        </listitem>
+                        <listitem>
+                            <para>debug: Configures a debug launcher with JDWP options.</para>
+                        </listitem>
+                        <listitem>
+                            <para>profile: Similar to the “jlink-profile” execution.</para>
+                        </listitem>
+                    </itemizedlist>
+                    <para><emphasis role="bold">Recommendation:</emphasis> Trigger these heavy
+                        operations only when needed (e.g., via a Maven profile) instead of on every
+                        build. Additionally, to organize the pom.xml and reduce duplication,
+                        consolidate overlapping “jlink” profiles into one. Use properties to
+                        parameterize differences, reducing redundancy and easing maintenance. If
+                        separate profiles are necessary, rename them (e.g., jlink-debug, jlink-run,
+                        jlink-profile) to clearly reflect their distinct purposes.</para>
+                </section>
+                <section>
+                    <title>Maven Javadoc Plugin</title>
+                    <para><emphasis role="bold">Function:</emphasis> Automatically generates Javadoc
+                        and packages it into Java Archives (JARs) for each module.</para>
+                    <para><emphasis role="bold">Recommendation:</emphasis> Exclude Javadoc
+                        generation from the default build and run it only on demand to save time
+                        during development.</para>
+                    <para>The profile could be activated using a negated property expression
+                        (!createJavadoc), meaning it is always active when the property
+                        “createJavadoc” is not defined. In this active state, the profile would set
+                        “&lt;maven.javadoc.skip>true&lt;/maven.javadoc.skip>”, so Javadoc generation
+                        is skipped. When you run Maven with “-DcreateJavadoc”, the property would be
+                        defined, the negated condition fails, and the profile is
+                        deactivated—allowing Javadoc to be generated.</para>
+                </section>
+                <section>
+                    <title>Maven Surefire Plugin</title>
+                    <para><emphasis role="bold">Function:</emphasis> Executes unit tests during the
+                        test phase automatically. Note that while test execution may be skipped,
+                        test compilation still occurs.</para>
+                    <para><emphasis role="bold">Recommendation:</emphasis> Consider skipping test
+                        execution during development to speed up builds, ensuring that tests run in
+                        your continuous integration (CI) or release process.</para>
+                    <para>To skip test execution without affecting the build, use “-DskipTests”.
+                        This differs from “-Dmaven.test.skip=true”, which prevents both compilation
+                        and execution of tests. A more controlled solution can be disabling
+                        permanently the automatic running of the tests configuring the Maven
+                        Surefire Plugin and activating them on demand through a Maven
+                        profile.</para>
+                </section>
+            </section>
+            <section>
+                <title>Enhancing Build Efficiency and Consistency Through Advanced Caching
+                    Techniques</title>
+                <para>Maven build caching is crucial for optimizing build processes and enhancing
+                    overall efficiency. By reusing previously built artifacts, build caching
+                    significantly reduces the time required to compile and build projects, which is
+                    especially beneficial for large projects with multiple modules and dependencies.
+                    This leads to faster incremental builds and a more efficient development cycle.
+                    The reduced build times provide developers with a quicker feedback loop,
+                    allowing them to iterate and debug more efficiently, thus improving
+                    productivity. Additionally, build caching optimizes resource consumption by
+                    reducing the computational resources required for building projects, such as CPU
+                    and memory usage.</para>
+                <para>Moreover, build caching ensures consistent and reliable builds across
+                    different environments and machines by reusing the same cached artifacts,
+                    reducing the likelihood of discrepancies and build failures due to environmental
+                    differences. This consistency is particularly valuable in continuous integration
+                    and continuous deployment (CI/CD) pipelines, where frequent builds and
+                    deployments are required. For large-scale projects, build caching helps manage
+                    the complexity and scale of the build process, ensuring that builds remain
+                    manageable and efficient as the project grows. It also enhances the developer
+                    experience by reducing the frustration associated with long build times,
+                    allowing developers to focus more on writing and improving code rather than
+                    waiting for builds to complete.</para>
+            </section>
+            <section>
+                <title>Identification of Critical Build Cache Issues</title>
+                <para>Based on these benefits, we were leveraging the Apache Maven Build Cache
+                    Extension as our build cache solution. However, over time, the development team
+                    identified several critical issues were identified that significantly hindered
+                    the development process. One major problem was unreliable cache management. The
+                    existing Apache Maven Cache extension frequently failed to update the cache
+                    consistently during development activities, necessitating manual cache clearing
+                    by developers to ensure new changes were recognized [6,10,11]. This
+                    inconsistency made debugging particularly challenging, as engineers struggled to
+                    determine whether the output reflected actual code changes or cache
+                    inconsistencies. The need for complete rebuilds, which took between 3 to 10
+                    minutes per instance, severely impacted development velocity when required
+                    multiple times daily.</para>
+                <para>Another significant issue was the incomplete restoration of the project state.
+                    According to the official documentation, the Apache Build Cache extension does
+                    not restore the entire project state to the target directory on cache hits [10].
+                    This limitation resulted in missing generated assets, such as generated sources
+                    and compiled classes, including annotation outputs. Additionally, issues with
+                    annotation processors were observed, particularly within the IntelliJ Integrated
+                    Development Environment (IDE), where Annotation Processors Profiles became
+                    corrupted. This corruption affected core functionality in both the Komet and
+                    Tinkar Core projects, further complicating the development process.</para>
+                <para>These critical issues necessitated a thorough review and optimization of the
+                    environment configuration to enhance reliability, efficiency, and overall
+                    productivity.</para>
+                <section>
+                    <title>Build Caching Tool Comparison</title>
+                    <para>To identify the most effective solution for optimizing our build
+                        processes, we conducted a comprehensive comparison of these two tools with a
+                        primary focus on evaluating the performance and reliability. </para>
+                    <para>Apache Maven has long been the go-to build tool for Java projects, but
+                        historically it lacked an out‑of‑the‑box build caching mechanism to speed up
+                        repeated builds. We researched and identified an alternative solution and
+                        compared it against our existing solution:</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para><emphasis role="bold">Apache Maven Build Cache Extension</emphasis></para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Initial Release: February 10, 2023</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Current Version: 1.2.0 (Released May 12, 2024)</para>
+                                </listitem></itemizedlist></listitem>
+                            
+                        <listitem><para>
+                            <emphasis role="bold">Develocity Maven Extension</emphasis></para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Initial Release: February 28, 2019</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Current Version: 1.23.2 (Released February 24,
+                                        2025)</para>
+                                </listitem>
+                            </itemizedlist>
+                        </listitem>
+                    </itemizedlist>
+                    <para>The high-level results of this feature comparison are captured in Table 1
+                        below.</para>
+                    <table><title>Comparing Build Cache Extension Feature Support</title>
+                        <tgroup cols="3">
+                            <colspec colnum="1" colname="col1"/>
+                            <colspec colnum="2" colname="col2"/>
+                            <colspec colnum="3" colname="col3"/>
+                            <tbody>
+                                <row>
+                                    <entry><emphasis role="bold">Aspect</emphasis></entry>
+                                    <entry>
+                                        <para><emphasis role="bold">Apache Maven </emphasis></para>
+                                        <para><emphasis role="bold">Build Cache
+                                            Extension</emphasis></para>
+                                    </entry>
+                                    <entry><emphasis role="bold">Develocity Maven
+                                            Extension</emphasis></entry>
+                                </row>
+                                <row>
+                                    <entry>Hashing</entry>
+                                    <entry>Uses fast xxHash (non-cryptographic) by default
+                                        (configurable to Secure Hash Algorithm (SHA)‑256 for
+                                        stronger security).</entry>
+                                    <entry>Uses built‑in cryptographic‑strength hashes ensuring
+                                        virtually zero collisions and higher data integrity.</entry>
+                                </row>
+                                <row>
+                                    <entry>Build Caching</entry>
+                                    <entry>Operates at the module level. Caching is coarse-grained
+                                        and may cause falsepositive cache hits, skipping rebuilds
+                                        even when nonABI and Application Binary Interface (ABI) [10]
+                                        changes occur.</entry>
+                                    <entry>Implements fine‑grained, per‑goal caching with compile
+                                        avoidance. Only affected goals are rebuilt, with a full
+                                        recompile triggered when public API changes occur.</entry>
+                                </row>
+                                <row>
+                                    <entry>Cache Key Generation</entry>
+                                    <entry>Generates a single cache key per module; any change in
+                                        the module forces a complete rebuild.</entry>
+                                    <entry>Computes cache keys for individual goals, allowing
+                                        targeted rebuilds that save time by recompiling only what’s
+                                        affected.</entry>
+                                </row>
+                                <row>
+                                    <entry>Annotation Processing</entry>
+                                    <entry>Treats annotation processing outputs as cacheable.
+                                        However, it doesn’t specially detect annotation processors,
+                                        so on a cache hit, it may skip running them, risking missing
+                                        generated sources.</entry>
+                                    <entry>Actively detects annotation processors and disables
+                                        compile avoidance when necessary. This ensures that
+                                        generated sources are correctly restored and that annotation
+                                        processing always runs when required.</entry>
+                                </row>
+                                <row>
+                                    <entry>IntelliJ Integration</entry>
+                                    <entry>Offers limited integration. In delegated Maven builds, it
+                                        speeds up the run but may not update IntelliJ’s output
+                                        directories (e.g., target/classes), potentially causing
+                                        discrepancies.</entry>
+                                    <entry>Provides transparent integration with delegated Maven
+                                        builds by copying all necessary outputs (compiled classes
+                                        and generated sources) to expected directories ensuring
+                                        consistency in IntelliJ.</entry>
+                                </row>
+                                <row>
+                                    <entry>Integrity &amp; Reliability</entry>
+                                    <entry>Requires meticulous manual configuration to avoid false
+                                        cache hits/misses. Misconfigurations can lead to unreliable
+                                        builds and force manual cache purges.</entry>
+                                    <entry>Uses conservative, out‑of‑the‑box defaults to
+                                        automatically avoid unsafe caching, resulting in reliable
+                                        builds that closely mirror a fresh build state.</entry>
+                                </row>
+                                <row>
+                                    <entry>Performance </entry>
+                                    <entry>Minimal CPU overhead under typical conditions but may
+                                        slow down with very large files. May require manual fixes to
+                                        handle edge cases.</entry>
+                                    <entry>Incurs a slightly higher CPU cost due to stronger hashing
+                                        and advanced caching logic, but its input normalization
+                                        yields higher cache hit rates overall.</entry>
+                                </row>
+                                <row>
+                                    <entry>Ease of Use &amp; Support</entry>
+                                    <entry>Open source with community‑based support. Setup and
+                                        tuning can be complex, requiring significant manual
+                                        configuration.</entry>
+                                    <entry>Plug‑and‑play with minimal configuration. Offers
+                                        professional support along with integrated build scans for
+                                        enhanced diagnostics and performance insights.</entry>
+                                </row>
+                            </tbody>
+                        </tgroup>
+                    </table>
+                    <section>
+                        <title>Build Caching Mechanisms in Maven</title>
+                        <para>Apache Maven Build Cache Extension and Develocity Maven Extension both
+                            introduce build caching to Maven, but they implement it differently.
+                            Apache Maven Build Cache integrates with Maven 3.9+/4.0 to hash a
+                            project’s inputs (source files, plugins, config) and cache outputs. On a
+                            repeat build, if the computed key is unchanged, it skips executing goals
+                            and may restore artifacts from the cache​. However, it does not fully
+                            restore intermediate build directories. For example, it might skip
+                            running the Maven Compiler Plugin if nothing changed and not repopulate
+                            “target/classes” or other outputs during a cache hit​. The extension
+                            focuses on correctness at the artifact level (ensuring final build
+                            results match a normal build) but doesn’t recreate every file in the
+                            “target” folder during restore.</para>
+                        <para>Develocity Maven Extension also computes cache keys per goal and
+                            reuses outputs to avoid rerunning tasks​. Develocity’s caching is
+                            refined by Gradle’s build caching experience. It intercepts specific
+                            plugins (like Maven Compiler Plugin, Surefire, etc.) and knows their
+                            inputs/outputs. On a cache hit, Develocity will copy the previously
+                            cached outputs into the project’s workspace (e.g. class files, generated
+                            sources) so it’s as if the goal ran normally​. It even implements
+                            “compile avoidance”: if only method bodies change (no public API
+                            change), it can skip recompiling classes altogether​. This is more
+                            fine-grained than Maven’s default (which typically recompiles the whole
+                            module on any change). Develocity tracks more inputs/outputs by default
+                            and allows configuration via develocity.xml for additional ones.</para>
+                        <para>Both extensions treat the compile goal as cacheable, but Develocity’s
+                            extension has a deep integration. Apache’s cache extension caches the
+                            entire compile goal output (class files, and potentially annotation
+                            processor output) as a blob keyed on source hash, compiler config, etc.
+                            If unchanged, it will skip “maven-compiler-plugin:compile” entirely and
+                            assume the previously built classes are up-to-date​. It does create
+                            cache entries for the compile goal, but on restore it often does not
+                            place the compiled classes or generated sources back into “target” (the
+                            goal is marked up-to-date and skipped)​. This speeds up the build but
+                            leaves “target” empty or partial in the Integrated Development
+                            Environment (IDE). Develocity’s extension also caches the compile goal,
+                            but when a cache hit occurs it restores the compile outputs into
+                            “target”. This means the “target/classes” and “target/generated-sources”
+                            directories reflect the cached results, maintaining the expected project
+                            state.</para>
+                        <para>Overall, Apache’s extension operates at a coarse level (skip/restore
+                            whole goal) and prioritizes final artifact caching, whereas Develocity
+                            aims for transparent caching and even partial compiles. These design
+                            differences set the stage for their behavior with annotation
+                            processing.</para>
+                    </section>
+                    <section>
+                        <title>Impact on Annotation Processing</title>
+                        <para>Annotation Processors (APs) like Record Builder run during Java
+                            compilation. If a build cache decides to skip the compile goal, then no
+                            annotation processing occurs in that build. This can lead to missing
+                            generated code. For example, Apache Build Cache Extension may consider a
+                            module up-to-date and skip “javac” [10]. If that module uses an
+                            annotation processor, skipping “javac” means those tools don’t run.
+                            Normally, the generated sources or bytecode from Annotation Processors
+                            (Aps) would be produced during compile. If the extension doesn’t restore
+                            them, the project might end up with no generated files after a “cached”
+                            compile. This manifests as compilation errors or runtime problems.
+                            Indeed, the Apache Build Cache extension documentation notes that it
+                            does not restore the entire project state to the “target” directory on
+                            cache hits​ – generated sources and compiled classes are among those not
+                            restored, which effectively means annotation outputs can be absent. The
+                            result is that a cached build can silently skip annotation processing,
+                            leaving IntelliJ (or any subsequent compile) unaware of the generated
+                            code.</para>
+                        <para>Develocity Maven Extension was designed to handle annotation
+                            processors more gracefully. It explicitly detects annotation processors
+                            on the classpath during compilation and disables certain optimizations
+                            to ensure correctness. For instance, Develocity’s “compile avoidance”
+                            (which normally only recompiles when APIs change) is turned off if any
+                            annotation processors are present, because APs can be sensitive to any
+                            code change​. The extension will log a warning listing the detected
+                            processors and inform you that compile avoidance is deactivated in that
+                            case​. In practice, this means if you’re using annotation processors,
+                            Develocity will always run the compile goal (or at least treat more
+                            changes as significant) to make sure the processors execute. As a
+                            result, it doesn’t erroneously skip AP execution. Moreover, if the
+                            compile goal is truly up-to-date (no changes at all), Develocity will
+                            restore both class files and any generated source files from cache to
+                            the proper directories, so the outputs of the previous annotation
+                            processing are present in “target”. This prevents the “missing generated
+                            sources” problem [9, 11].</para>
+                    </section>
+                    <section>
+                        <title>Integration with IntelliJ IDE’s Build System</title>
+                        <para>IntelliJ IDE can compile Maven projects in two ways: via its own
+                            internal build process (Java Virtual Machine Process Status (JPS)) or by
+                            delegating to Maven. The two cache extensions interact with these modes
+                            differently.</para>
+                        <para>When using IntelliJ’s native compiler, the IDE ignores Maven’s build
+                            cache entirely. IntelliJ will compile source files on its own (with
+                            incremental compilation and its own annotation processing, if enabled).
+                            In this mode, any caching by Maven (Apache or Develocity) only effects
+                            command-line Maven runs, not the IDE’s compilation. In fact, the Apache
+                            team recommends using the IDE’s own build outputs when working in the
+                            IDE. They explicitly say to configure IntelliJ to not use Maven’s target
+                            output for running or compiling. Instead, let IntelliJ manage
+                            compilation in-memory or in its separate output folder. This way,
+                            IntelliJ’s make/rebuild is fast and uses its own incremental mechanisms,
+                            and the Maven cache is only used when you run Maven goals (e.g., a Maven
+                            install or package outside the IDE build). Develocity’s documentation
+                            doesn’t require special IDE configuration because it tries to be
+                            transparent – if you delegate to Maven inside IntelliJ, it wants to
+                            behave correctly – but if you use JPS, Develocity simply won’t be
+                            invoked at all.</para>
+                        <para>Many developers enable “Delegate IDE build/run actions to Maven” in
+                            IntelliJ for consistency. In this scenario, each build or run in
+                            IntelliJ actually triggers a Maven build (which in turn uses the
+                            extension). Differences become apparent.</para>
+                        <para>With the Apache Build Cache extension, a delegated build will often
+                            conclude extremely quickly on cache hits but leave IntelliJ without
+                            compiled classes or generated sources in the expected directories. For
+                            example, if you hit “Build Project” and Maven says, “nothing to compile
+                            – up to date (from cache)”, IntelliJ might still be pointing to
+                            target/classes (or mark it as the output folder). Since the extension
+                            did not populate target/classes (because it skipped compilation), the
+                            IDE’s project output directory has stale or no class files. This can
+                            confuse IntelliJ’s code editor and run/debug. You might see red code in
+                            the editor for generated types, or ClassNotFound exceptions if you try
+                            to run an application in the IDE after a cached build. Essentially, the
+                            Apache extension’s integration with IntelliJ is limited – it treats the
+                            build as headless, and IntelliJ isn’t notified of generated sources. The
+                            official note is that this is a known limitation and the “project state”
+                            (i.e., built classes) won’t be restored in the IDE’s build directories.
+                            The workaround is to rely on IntelliJ’s own build outputs instead (or,
+                            perform a manual Maven compile to refresh target when needed).</para>
+                        <para>With the Develocity extension, delegated builds behave more like a
+                            normal Maven run from the command line, but with caching. Since
+                            Develocity copies cached outputs to the workspace, IntelliJ will find
+                            the classes and generated sources in target as usual. This means after a
+                            cached Maven build, the target folder still contains compiled classes,
+                            and IntelliJ can continue to use those for code insight or launching
+                            applications. Additionally, Develocity is aware of IntelliJ version
+                            compatibility – it disables its build cache features automatically for
+                            older IDE versions that had issues (IDE before 2019.3). With modern
+                            IntelliJ, Develocity’s extension works seamlessly; you likely won’t
+                            notice it aside from faster build times. Incremental compilation
+                            differences still exist: Maven (even with caching) works at the
+                            module/goal level, whereas IntelliJ’s JPS can compile just one changed
+                            file. This means if you delegate builds to Maven, a small code change
+                            might trigger a full module compile, if not cached, rather than just one
+                            class. Develocity attempts to mitigate this with compile avoidance (only
+                            recompiling on ABI changes), but if annotation processors are in play,
+                            that feature is turned off. In contrast, IntelliJ’s internal build will
+                            re-run annotation processing only for affected files if possible.</para>
+                        <para>In summary, in IntelliJ, Develocity’s extension integrates more
+                            cleanly when using Maven-based builds; it maintains the expected flow of
+                            compiled classes and generated source visibility. Apache’s extension
+                            currently requires special handling: JetBrains recommends not to rely on
+                            the target output in the IDE when using it, essentially suggesting
+                            keeping using JPS for development. This difference is a key reason why
+                            annotation processing issues (missing sources/classes) appear with
+                            Apache’s extension but not with Develocity’s.</para>
+                    </section>
+                    <section>
+                        <title>Performance and Reliability Comparison</title>
+                        <para>Both extensions significantly reduce build times by avoiding
+                            unnecessary work. With the Apache extension, entire module builds can be
+                            skipped when no changes are detected, delivering near‑instant build
+                            results for unchanged modules. However, its coarse-grained caching
+                            approach means that even minor changes, such as non‑API updates, force a
+                            full rebuild of the module. In contrast, the Develocity extension
+                            implements fine‑grained, per‑goal caching and can avoid recompiling
+                            individual classes when only method bodies change (compile avoidance).
+                            This allows both extensions to bypass recompiling or retesting
+                            unaffected modules in a large multi‑module project.</para>
+                        <para>When annotation processors are involved, performance dynamics shift.
+                            Develocity disables compile avoidance for safety, so any change in a
+                            class might trigger a full recompile, trading off speed for correctness.
+                            Meanwhile, Apache’s extension, lacking per‑class compile avoidance, will
+                            always rebuild the whole module if any input changes. In practice,
+                            reliability becomes a crucial factor—if Apache’s cache mistakenly skips
+                            a necessary rebuild, a full clean build may be required to resolve
+                            issues, negating its speed advantage. Develocity’s more conservative
+                            strategy yields fewer cache hits under these conditions but avoids
+                            costly clean/rebuild cycles. Overall, while both extensions dramatically
+                            cut build times, Develocity tends to favor consistent, reliable builds
+                            at the expense of slightly more compilation work, whereas Apache’s
+                            aggressive caching offers speed benefits that can be undermined by
+                            reliability challenges.</para>
+                    </section>
+                </section>
+                <section>
+                    <title>Build Cache Performance Findings</title>
+                    <para>In this section, we present the results of our performance testing for the
+                        Apache and Develocity build cache tools, highlighting their impact on build
+                        times and overall efficiency. The tests were conducted on two platforms: a
+                        Windows 11 machine with an Intel(R) Core (TM) i7-8700K @ 4.70GHz, 32GB DDR4
+                        RAM, and a Samsung SSD 990 Pro NVMe, and a MacBook Pro with an Apple M2 Max
+                        chip and 96GB of memory. Please note that all dependencies were
+                        pre-downloaded to ensure consistent execution times, and the Develocity
+                        Build Scan was disabled. Each command produced a runnable build of the Komet
+                        application. </para>
+                </section>
+            </section>
+            <section>
+                <title>Performance Results for Komet Build - Current Maven Configuration</title>
+                <para>The following performance results were captured in Table 2 and Table 3 below
+                    based building the Komet project on both Windows and Mac with the current Maven
+                    configuration:</para>
+                <table><title>Build Cache Performance on Windows – Current Maven Configuration</title>
+                    <tgroup cols="3">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <colspec colnum="3" colname="col3"/>
+                        <tbody>
+                            <row>
+                                <entry namest="col1" nameend="col3"><emphasis role="bold">Build
+                                        Cache Performance on Windows - Komet</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Terminal Command</emphasis></entry>
+                                <entry><emphasis role="bold">Apache Maven Build Cache
+                                        Extension</emphasis></entry>
+                                <entry><emphasis role="bold">Develocity Maven
+                                    Extension</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry>mvn clean install (first build)</entry>
+                                <entry>3:43 min</entry>
+                                <entry>3:43 min</entry>
+                            </row>
+                            <row>
+                                <entry>mvn clean install (existing cache and no changes in the
+                                    codebase)</entry>
+                                <entry>6.671 s</entry>
+                                <entry>
+                                    <para>1:18 min</para>
+                                    <para>(** jlink execution correctly triggered)</para>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>mvn clean install (existing cache with updates in the
+                                    codebase)</entry>
+                                <entry>2:33 min</entry>
+                                <entry>1:46 min</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <table><title>Build Cache Performance on Mac – Current Maven Configuration</title>
+                    <tgroup cols="3">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <colspec colnum="3" colname="col3"/>
+                        <tbody>
+                            <row>
+                                <entry namest="col1" nameend="col3"><emphasis role="bold">Build
+                                        Cache Performance on Mac - Komet</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Terminal Command</emphasis></entry>
+                                <entry><emphasis role="bold">Apache Maven Build Cache
+                                        Extension</emphasis></entry>
+                                <entry><emphasis role="bold">Develocity Maven
+                                    Extension</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry>mvn clean install (first build)</entry>
+                                <entry>1:28 min</entry>
+                                <entry>1:32 min</entry>
+                            </row>
+                            <row>
+                                <entry>mvn clean install (existing cache and no changes in the
+                                    codebase)</entry>
+                                <entry>1.328 s</entry>
+                                <entry>
+                                    <para>45:440 s</para>
+                                    <para>(** jlink execution correctly triggered)</para>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>mvn clean install (existing cache with updates in the
+                                    codebase)</entry>
+                                <entry>1:08 min</entry>
+                                <entry>53:189 s</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </section>
+            <section>
+                <title>Performance Results for Komet Build - Disable Jlink</title>
+                <para>The following performance results were captured in Table 4 and Table 5 based
+                    on building the Komet project on both Windows and Mac with JLink
+                    disabled:</para>
+                <table><title>Build Cache Performance on Windows – Disable Jlink</title>
+                    <tgroup cols="3">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <colspec colnum="3" colname="col3"/>
+                        <tbody>
+                            <row>
+                                <entry namest="col1" nameend="col3"><emphasis role="bold">Build
+                                        Cache Performance on Windows - Komet</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Terminal Command</emphasis></entry>
+                                <entry><emphasis role="bold">Apache Maven Build Cache
+                                        Extension</emphasis></entry>
+                                <entry><emphasis role="bold">Develocity Maven
+                                    Extension</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <para>mvn clean install</para>
+                                    <para>(first build, jlink disabled)</para>
+                                </entry>
+                                <entry>2:29 min</entry>
+                                <entry>2:39 min</entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <para>mvn clean install</para>
+                                    <para>(existing cache and no changes in the codebase, jlink
+                                        disabled)</para>
+                                </entry>
+                                <entry>5.713 s</entry>
+                                <entry>19.484 s</entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <para>mvn clean install</para>
+                                    <para>(existing cache with changes in the codebase, jlink
+                                        disabled)</para>
+                                </entry>
+                                <entry>1:27min</entry>
+                                <entry>41.103 s</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <table><title>Build Cache Performance on Mac – Disable Jlink</title>
+                    <tgroup cols="3">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <colspec colnum="3" colname="col3"/>
+                        <tbody>
+                            <row>
+                                <entry namest="col1" nameend="col3"><emphasis role="bold">Build
+                                        Cache Performance on Mac - Komet</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Terminal Command</emphasis></entry>
+                                <entry><emphasis role="bold">Apache Maven Build Cache
+                                        Extension</emphasis></entry>
+                                <entry><emphasis role="bold">Develocity Maven
+                                    Extension</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <para>mvn clean install</para>
+                                    <para>(first build, jlink disabled)</para>
+                                </entry>
+                                <entry>46.292 s</entry>
+                                <entry>51.470 s</entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <para>mvn clean install</para>
+                                    <para>(existing cache and no changes in the codebase, jlink
+                                        disabled)</para>
+                                </entry>
+                                <entry>1.149 s</entry>
+                                <entry>5.390 s</entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <para>mvn clean install</para>
+                                    <para>(existing cache with changes in the codebase, jlink
+                                        disabled)</para>
+                                </entry>
+                                <entry>26.177 s</entry>
+                                <entry>12.405 s</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </section>
+            <section>
+                <title>Performance Results for Komet Build - Disable Jlink, Tests and
+                    Javadoc</title>
+                <para>The following performance results were captured in Table 6 and Table 7 based
+                    on building the Komet project on both Windows and Mac with JLink, automated
+                    tests and Javadoc generation disabled:</para>
+                <table><title>Build Cache Performance on Windows – Disable Jlink, Tests and Javadoc</title>
+                    <tgroup cols="3">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <colspec colnum="3" colname="col3"/>
+                        <tbody>
+                            <row>
+                                <entry namest="col1" nameend="col3"><emphasis role="bold">Build
+                                        Cache Performance on Windows - Komet</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Terminal Command</emphasis></entry>
+                                <entry><emphasis role="bold">Apache Maven Build Cache
+                                        Extension</emphasis></entry>
+                                <entry><emphasis role="bold">Develocity Maven
+                                    Extension</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <para>mvn clean install </para>
+                                    <para>-Dmaven.test.skip=true</para>
+                                    <para>-Dmaven.javadoc.skip=true</para>
+                                    <para>(first build, jlink, tests, javadoc disabled)</para>
+                                </entry>
+                                <entry>55.412 s</entry>
+                                <entry>58.439</entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <para>mvn clean install </para>
+                                    <para>-Dmaven.test.skip=true</para>
+                                    <para>-Dmaven.javadoc.skip=true (existing cache and no changes
+                                        in the codebase, jlink, tests, javadoc disabled)</para>
+                                </entry>
+                                <entry>5.598 s</entry>
+                                <entry>12.832 s</entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <para>mvn clean install </para>
+                                    <para>-Dmaven.test.skip=true</para>
+                                    <para>-Dmaven.javadoc.skip=true (existing cache with changes in
+                                        the codebase, jlink, tests, javadoc disabled)</para>
+                                </entry>
+                                <entry>18.368 s</entry>
+                                <entry>23.082 s</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <table><title>Build Cache Performance on Mac – Disable Jlink, Tests and Javadoc</title>
+                    <tgroup cols="3">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <colspec colnum="3" colname="col3"/>
+                        <tbody>
+                            <row>
+                                <entry namest="col1" nameend="col3"><emphasis role="bold">Build
+                                        Cache Performance on Mac - Komet</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Terminal Command</emphasis></entry>
+                                <entry><emphasis role="bold">Apache Maven Build Cache
+                                        Extension</emphasis></entry>
+                                <entry><emphasis role="bold">Develocity Maven
+                                    Extension</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <para>mvn clean install </para>
+                                    <para>-Dmaven.test.skip=true</para>
+                                    <para>-Dmaven.javadoc.skip=true</para>
+                                    <para>(first build, jlink, tests, javadoc disabled)</para>
+                                </entry>
+                                <entry>16.888 s</entry>
+                                <entry>18.764 s</entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <para>mvn clean install</para>
+                                    <para>-Dmaven.test.skip=true</para>
+                                    <para>-Dmaven.javadoc.skip=true (existing cache and no changes
+                                        in the codebase, jlink, tests, javadoc disabled)</para>
+                                </entry>
+                                <entry>1.193 s</entry>
+                                <entry>3.269 s</entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <para>mvn clean install</para>
+                                    <para>-Dmaven.test.skip=true</para>
+                                    <para>-Dmaven.javadoc.skip=true (existing cache with changes in
+                                        the codebase, jlink, tests, javadoc disabled)</para>
+                                </entry>
+                                <entry>4.958 s</entry>
+                                <entry> 6.644 s</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </section>
+            <section>
+                <title>Performance Results - Use Mvn Verify</title>
+                <para>The following performance results were captured in Table 8 and Table 9 based
+                    on building the Komet project on both Windows and Mac with using “mvn
+                    verify”:</para>
+                <table><title>Build Cache Performance on Windows – Use Mvn Verify</title>
+                    <tgroup cols="3">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <colspec colnum="3" colname="col3"/>
+                        <tbody>
+                            <row>
+                                <entry namest="col1" nameend="col3"><emphasis role="bold">Build
+                                        Cache Performance on Windows - Komet</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Terminal Command</emphasis></entry>
+                                <entry><emphasis role="bold">Apache Maven Build Cache
+                                        Extension</emphasis></entry>
+                                <entry><emphasis role="bold">Develocity Maven
+                                    Extension</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <para>mvn clean verify -T1C</para>
+                                    <para>-Dmaven.test.skip=true</para>
+                                    <para>-Dmaven.javadoc.skip=true</para>
+                                    <para>(first build, jlink, tests, javadoc disabled)</para>
+                                </entry>
+                                <entry>37.924 s</entry>
+                                <entry>41.287 s</entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <para>mvn clean verify -T1C</para>
+                                    <para>-Dmaven.test.skip=true</para>
+                                    <para>-Dmaven.javadoc.skip=true (existing cache and no changes
+                                        in the codebase, jlink, tests, javadoc disabled)</para>
+                                </entry>
+                                <entry>4.626 s</entry>
+                                <entry>9.758 s</entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <para>mvn clean verify -T1C</para>
+                                    <para>-Dmaven.test.skip=true</para>
+                                    <para>-Dmaven.javadoc.skip=true (existing cache with changes in
+                                        the codebase, jlink, tests, javadoc disabled)</para>
+                                </entry>
+                                <entry>16.098 s</entry>
+                                <entry>20.221 s</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <table><title>Build Cache Performance on Mac – Use Mvn Verify</title>
+                    <tgroup cols="3">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <colspec colnum="3" colname="col3"/>
+                        <tbody>
+                            <row>
+                                <entry namest="col1" nameend="col3"><emphasis role="bold">Build
+                                        Cache Performance on Mac - Komet</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Terminal Command</emphasis></entry>
+                                <entry><emphasis role="bold">Apache Maven Build Cache
+                                        Extension</emphasis></entry>
+                                <entry><emphasis role="bold">Develocity Maven
+                                    Extension</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <para>mvn clean verify -T1C</para>
+                                    <para>-Dmaven.test.skip=true</para>
+                                    <para>-Dmaven.javadoc.skip=true </para>
+                                    <para>(first build, jlink, tests, javadoc disabled)</para>
+                                </entry>
+                                <entry> 11.247 s</entry>
+                                <entry>12.875 s</entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <para>mvn clean verify -T1C</para>
+                                    <para>-Dmaven.test.skip=true</para>
+                                    <para>-Dmaven.javadoc.skip=true</para>
+                                    <para>(existing cache and no changes in the codebase, jlink,
+                                        tests, javadoc disabled)</para>
+                                </entry>
+                                <entry>0.981 s</entry>
+                                <entry>2.872 s</entry>
+                            </row>
+                            <row>
+                                <entry>
+                                    <para>mvn clean verify -T1C</para>
+                                    <para>-Dmaven.test.skip=true</para>
+                                    <para>-Dmaven.javadoc.skip=true</para>
+                                    <para>(existing cache with changes in the codebase, jlink,
+                                        tests, javadoc disabled)</para>
+                                </entry>
+                                <entry>4.795 s</entry>
+                                <entry>5.175 s</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </section>
+            <section>
+                <title>Performance Results for Tinkar Core Build - Current Maven
+                    Configuration</title>
+                <para>The following performance results were captured in Table 10: Build Cache
+                    Performance on Windows – Current Maven Configuration and Table 11: Build Cache
+                    Performance on Mac – Current Maven Configuration based on building the Tinkar
+                    Core project on both Windows and Mac with the current Maven
+                    configuration:</para>
+                <table><title>Build Cache Performance on Windows – Current Maven Configuration</title>
+                    <tgroup cols="3">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <colspec colnum="3" colname="col3"/>
+                        <tbody>
+                            <row>
+                                <entry namest="col1" nameend="col3"><emphasis role="bold">Build
+                                        Cache Performance on Windows - Tinkar
+                                    Core</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Terminal Command</emphasis></entry>
+                                <entry><emphasis role="bold">Apache Maven Build Cache
+                                        Extension</emphasis></entry>
+                                <entry><emphasis role="bold">Develocity Maven
+                                    Extension</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry>mvn clean install (first build)</entry>
+                                <entry>2:53 min</entry>
+                                <entry>3:09 min</entry>
+                            </row>
+                            <row>
+                                <entry>mvn clean install (existing cache and no changes in the
+                                    codebase)</entry>
+                                <entry>3.924 s</entry>
+                                <entry>27:442 s</entry>
+                            </row>
+                            <row>
+                                <entry>mvn clean install (existing cache with updates in the
+                                    codebase)</entry>
+                                <entry>2:35 min</entry>
+                                <entry>1:38 min</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <table><title>Build Cache Performance on Mac – Current Maven Configuration</title>
+                    <tgroup cols="3">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <colspec colnum="3" colname="col3"/>
+                        <tbody>
+                            <row>
+                                <entry namest="col1" nameend="col3"><emphasis role="bold">Build
+                                        Cache Performance on Mac - Tinkar Core</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Terminal Command</emphasis></entry>
+                                <entry><emphasis role="bold">Apache Maven Build Cache
+                                        Extension</emphasis></entry>
+                                <entry><emphasis role="bold">Develocity Maven
+                                    Extension</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry>mvn clean install (first build)</entry>
+                                <entry>59.375 s</entry>
+                                <entry>1:03 min</entry>
+                            </row>
+                            <row>
+                                <entry>mvn clean install (existing cache and no changes in the
+                                    codebase)</entry>
+                                <entry>1.459 s</entry>
+                                <entry> 6.395 s</entry>
+                            </row>
+                            <row>
+                                <entry>mvn clean install (existing cache with updates in the
+                                    codebase)</entry>
+                                <entry>51.937 s</entry>
+                                <entry> 30.913 s</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </section>
+            <section>
+                <title>Performance Results for Tinkar Core Build – Disable Javadoc</title>
+                <para>The following performance results were captured in Table 12 and Table 13 based
+                    on building the Tinkar Core project on both Windows and Mac with Javadoc
+                    generation disabled:</para>
+                <table><title>Build Cache Performance on Windows – Disable Javadoc</title>
+                    <tgroup cols="3">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <colspec colnum="3" colname="col3"/>
+                        <tbody>
+                            <row>
+                                <entry namest="col1" nameend="col3"><emphasis role="bold">Build
+                                        Cache Performance on Windows - Tinkar
+                                    Core</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Terminal Command</emphasis></entry>
+                                <entry><emphasis role="bold">Apache Maven Build Cache
+                                        Extension</emphasis></entry>
+                                <entry><emphasis role="bold">Develocity Maven
+                                    Extension</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry>mvn clean install -Dmaven.javadoc.skip=true (first build,
+                                    javadoc disabled)</entry>
+                                <entry>1:57 min</entry>
+                                <entry>2:04 s</entry>
+                            </row>
+                            <row>
+                                <entry>mvn clean install -Dmaven.javadoc.skip=true (existing cache
+                                    and no changes in the codebase, javadoc disabled)</entry>
+                                <entry>7.370 s</entry>
+                                <entry> 17.463 s</entry>
+                            </row>
+                            <row>
+                                <entry>mvn clean install -Dmaven.javadoc.skip=true (existing cache
+                                    with changes in the codebase, javadoc disabled)</entry>
+                                <entry>1:34 min</entry>
+                                <entry> 43.217 s</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <table><title>Build Cache Performance on Mac – Disable Javadoc</title>
+                    <tgroup cols="3">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <colspec colnum="3" colname="col3"/>
+                        <tbody>
+                            <row>
+                                <entry namest="col1" nameend="col3"><emphasis role="bold">Build
+                                        Cache Performance on Mac - Tinkar Core</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry><emphasis role="bold">Terminal Command</emphasis></entry>
+                                <entry><emphasis role="bold">Apache Maven Build Cache
+                                        Extension</emphasis></entry>
+                                <entry><emphasis role="bold">Develocity Maven
+                                    Extension</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry>mvn clean install -Dmaven.javadoc.skip=true (first build,
+                                    javadoc disabled)</entry>
+                                <entry>39.644 s</entry>
+                                <entry>42.888 s</entry>
+                            </row>
+                            <row>
+                                <entry>mvn clean install -Dmaven.javadoc.skip=true (existing cache
+                                    and no changes in the codebase, javadoc disabled)</entry>
+                                <entry>1.351 s</entry>
+                                <entry> 4.343 s</entry>
+                            </row>
+                            <row>
+                                <entry>mvn clean install -Dmaven.javadoc.skip=true (existing cache
+                                    with changes in the codebase, javadoc disabled)</entry>
+                                <entry>32.136 s</entry>
+                                <entry> 14.325 s</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <para>In summary, as part of this research, numerous configurations for both
+                    extensions were thoroughly evaluated. Although the Apache Maven Build Cache
+                    extension may provide modest improvements in build times, its performance gains
+                    are primarily achieved by bypassing certain build steps—thereby compromising
+                    cache reliability. In contrast, Develocity executes all critical phases,
+                    ensuring a consistently robust build process.</para>
+                <para>Furthermore, the Apache Maven Build Cache extension often struggles to
+                    correctly create or update the cache, making it unreliable for daily
+                    development. Consequently, developers frequently need to delete the cache from
+                    the “&lt;user-home>/.m2/build-cache” directory to ensure new changes are
+                    properly recognized in subsequent runs. This recurring manual intervention
+                    ultimately undermines the benefits that the extension is meant to
+                    provide.</para>
+                <section>
+                    <title>Develocity Build Scan Investigation and Findings</title>
+                    <para>During research on the build cache and the Develocity Maven extension, the
+                        Develocity Build Scan, depicted in Figure 10<emphasis role="italic">:
+                            Screenshot of the Develocity Build Scan Tool User Interface</emphasis>
+                        emerged as a powerful tool that provides comprehensive reports, statistics,
+                        and detailed insights crucial for debugging and troubleshooting.</para><figure xml:id="ScreenshotoftheDevelocityBuildScanToolUserInterface">
+                            <title>Screenshot of the Develocity Build Scan Tool User
+                            Interface</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="../images/Screenshot%20of%20the%20Develocity%20Build%20Scan%20Tool%20User%20Interface.svg"
+                                        scale="30" align="center"/> 
+                                </imageobject>
+                            </mediaobject>
+                        </figure>
+                    <para>It provides the following benefits:</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para><emphasis role="bold">Build Observability</emphasis>
+                             – Develocity Build Scans deliver deep build observability by
+                                capturing comprehensive data from every build execution. Each scan
+                                records a complete build timeline, detailed test results (including
+                                both passed and failed tests), dependency information, and a
+                                breakdown of performance metrics. This rich dataset exposes build
+                                failures, dependency resolutions, and resource usage, providing
+                                developers with full insight into build behavior for thorough
+                                analysis and debugging [7,8].</para>
+                        </listitem>
+                        <listitem>
+                            <para><emphasis role="bold">Faster Troubleshooting</emphasis>
+                             – Access to granular build data enables faster troubleshooting of
+                                build and test failures. Develocity Build Scans quickly pinpoint
+                                root causes by surfacing essential details such as error logs, stack
+                                traces, and environment information for each failure. Acting as a
+                                shareable, permanent record of each build, Build Scans simplify the
+                                reproduction of issues, dramatically reducing the time spent
+                                diagnosing and resolving problems [7].</para>
+                        </listitem>
+                        <listitem>
+                            <para><emphasis role="bold">Performance Optimization</emphasis>
+                             – Develocity Build Scans offer valuable insights for optimizing
+                                build performance. They identify slow tasks and inefficient
+                                processes by tracking execution times and resource usage, and they
+                                highlight areas like configuration overhead or costly dependency
+                                resolutions. Developers can leverage these insights to pinpoint
+                                bottlenecks—such as long-running tasks or uncached steps—and
+                                implement targeted improvements. Additionally, the collected data
+                                feeds into performance dashboards, enabling teams to monitor and
+                                address performance regressions over time [7,8].</para>
+                        </listitem>
+                        <listitem>
+                            <para><emphasis role="bold">Build Comparison</emphasis>
+                             – The Build Scan comparison feature allows users to perform a
+                                diff between two builds to see exactly what changed, which is
+                                especially useful following a failure or performance regression.
+                                This comparison highlights differences in the build environment,
+                                dependency trees, inputs, and other metadata, helping to isolate the
+                                changes or parameters that introduced a problem. By directly
+                                comparing a failing build with a successful or optimized one,
+                                developers can more easily pinpoint the source of issues.</para>
+                        </listitem>
+                        <listitem>
+                            <para><emphasis role="bold">Collaboration</emphasis>
+                             – Develocity Build Scan is designed to foster seamless
+                                collaboration within development teams. Developers can generate deep
+                                links to precise build details, even down to individual lines of
+                                console output, and share them with team members. This capability
+                                allows colleagues to quickly access the relevant context when
+                                investigating issues, leading to faster problem resolution and
+                                continuous improvement of the build process.</para>
+                        </listitem>
+                    </itemizedlist>
+                </section>
+            </section>
+            <section>
+                <title>Build Cache Performance Observations and Conclusions</title>
+                <para>During a two-week evaluation period with the Komet and Tinkar Core projects,
+                    the following outcomes were observed:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Reduced Build Time:</emphasis> The build times
+                            were significantly reduced due to the effective reuse of previously
+                            computed outputs.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Increased Build Reliability:</emphasis> Build
+                            stability improved markedly. The need to manually delete the build-cache
+                            folder—a workaround previously required with Maven build cache
+                            extension—was eliminated.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Positive User Feedback: </emphasis>Developers
+                            experienced smoother build processes and faster feedback cycles,
+                            contributing to improved overall productivity.</para>
+                    </listitem>
+                </itemizedlist>
+                <para xml:id="_4tsbdacn8ip3">The integration of the Develocity Build Cache into the
+                    Komet and Tinkar Core projects has proven highly beneficial. The default
+                    configuration of the Develocity Maven Extension is based on a well-tested setup,
+                    ensuring optimal performance without extensive customization. Extensive
+                    documentation is available for further customization [9]. Teams can tailor the
+                    configuration to improve build performance even more should project needs
+                    evolve.</para>
+            </section>
+        </section>
+    </section>
+    <section>
+        <title><anchor xml:id="Toc195708530"/>Conclusion and Next Steps</title>
+        <para>After a comprehensive evaluation of various options for hosting and deploying Komet in
+            a web environment, the “Data Synchronization” approach emerges as the preferred
+            strategy. This method ensures data consistency and reliability across different
+            environments, effectively addressing potential challenges related to network latency and
+            server downtime. Users are able to work simply and efficiently from their local machine
+            and then synchronize with the “source of truth” repository and collaborate with other
+            authors. The next step involves conducting further research to evaluate the data
+            synchronization option in greater detail and identify next steps to make progress
+            towards this goal.</para>
+        <para>Additionally, the research and optimization efforts conducted will significantly
+            enhance our environment configuration and build processes. Key improvements include
+            streamlined build profiles, reliable build caching with the Develocity Maven Extension,
+            consolidation of overlapping profiles, selective execution of Javadoc and tests,
+            superior build cache performance, and enhanced build observability and troubleshooting
+            capabilities. These changes will result in faster, more reliable builds, improved
+            developer productivity, and a more efficient development cycle.</para>
+        <para>To build on the success of these research findings, the following next steps are
+            recommended:</para>
+        <itemizedlist>
+            <listitem>
+                <para><emphasis role="bold">Full Implementation of Develocity Maven Extension</emphasis>: Continue to integrate and fine-tune the Develocity Maven Extension across
+                    all projects. Ensure that all team members are familiar with its configuration
+                    and benefits.</para>
+            </listitem>
+        </itemizedlist>
+        <itemizedlist>
+            <listitem>
+                <para><emphasis role="bold">Training and Documentation</emphasis>: Develop comprehensive training materials and documentation to help
+                    developers understand and utilize the new build profiles, caching mechanisms,
+                    and troubleshooting tools effectively.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Continuous Monitoring and Feedback</emphasis>: Establish a process for continuous monitoring of build performance and
+                    reliability. Collect feedback from developers regularly to identify any issues
+                    or areas for further improvement.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Advanced Customization</emphasis>: Explore advanced customization options for the Develocity Maven Extension to
+                    further optimize build performance based on evolving project needs. This may
+                    include leveraging remote build caches and more granular configuration
+                    adjustments.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">CI/CD Pipeline Integration</emphasis>: Integrate the optimized build processes and caching mechanisms into the
+                    continuous integration and continuous deployment (CI/CD) pipelines to ensure
+                    consistent and efficient builds across all environments.</para>
+            </listitem>
+            <listitem>
+                <para><anchor xml:id="Toc177484319"/><emphasis role="bold">Periodic Review and
+                        Updates</emphasis>: Schedule periodic reviews of the build configuration and
+                    caching strategies to ensure they remain aligned with best practices and project
+                    requirements. Update configurations as necessary to incorporate new tools and
+                    techniques.</para>
+            </listitem>
+        </itemizedlist>
+    </section>
+    <section>
+        <title><anchor xml:id="Toc195708531"/>References</title>
+        <orderedlist>
+            <listitem>
+                <para>JavaFX | Documentation [Internet]. [cited 2024 Aug 10]. Available from: <link
+                        xlink:href="https://openjfx.io/">https://openjfx.io/</link></para>
+            </listitem>
+            <listitem>
+                <para>JPro Software (Version 2023.1) [Computer software]. Available from <link
+                        xlink:href="https://www.jpro.one/">https://www.jpro.one/</link></para>
+            </listitem>
+            <listitem>
+                <para>AWS: Amazon Web Services. (2023). Amazon AWS (Version 2023.1) [Cloud service].
+                    Available from <link xlink:href="https://aws.amazon.com/what-is-aws/"
+                        >https://aws.amazon.com/what-is-aws/</link></para>
+            </listitem>
+            <listitem>
+                <para>What is Helm. Available from <link
+                        xlink:href="https://helm.sh/docs/intro/using_helm/">Helm | Using
+                    Helm</link></para>
+            </listitem>
+            <listitem>
+                <para>"Amazon Elastic Kubernetes Service (EKS)." Amazon Web Services. Available from
+                        <link xlink:href="https://aws.amazon.com/eks/">Amazon EKS Customers |
+                        Managed Kubernetes Service | Amazon Web Services</link></para>
+            </listitem>
+            <listitem>
+                <para>“Amazon EC2." Amazon Web Services. Available from <link
+                        xlink:href="https://aws.amazon.com/ec2/">Amazon EC2 - Cloud Compute Capacity
+                        - AWS</link></para>
+            </listitem>
+            <listitem>
+                <para>Gradle Inc. <emphasis role="italic">Develocity Maven Extension User Manual
+                    </emphasis></para>
+                <para>[Internet]. [cited 2025 March 10]. Available from: <link
+                        xlink:href="https://docs.gradle.com/develocity/maven-extension/current/"
+                        >https://docs.gradle.com/develocity/maven-extension/current/</link></para>
+            </listitem>
+            <listitem>
+                <para>Gradle Inc. <emphasis role="italic">Develocity Maven Build Cache
+                    </emphasis></para>
+                <para>[Internet]. [cited 2025 March 10]. Available from: <link
+                        xlink:href="https://docs.gradle.com/develocity/maven-build-cache/"
+                        >https://docs.gradle.com/develocity/maven-build-cache/</link></para>
+            </listitem>
+            <listitem>
+                <para>Gradle Inc. <emphasis role="italic">Getting Started with Devlocity for Apache
+                        Maven users – Build Scan </emphasis></para>
+                <para>[Internet]. [cited 2025 March 10]. Available from: <link
+                        xlink:href="https://docs.gradle.com/develocity/maven-get-started/"
+                        >https://docs.gradle.com/develocity/maven-get-started/</link></para>
+            </listitem>
+            <listitem>
+                <para>Apache Maven. <emphasis role="italic">Maven Build Cache Extension
+                    </emphasis></para>
+                <para>[Internet]. [cited 2025 March 10]. Available from: <link
+                        xlink:href="https://maven.apache.org/extensions/maven-build-cache-extension/"
+                        >https://maven.apache.org/extensions/maven-build-cache-extension/</link></para>
+            </listitem>
+            <listitem>
+                <para>Apache Maven. <emphasis role="italic">Introduction to Build Profiles
+                    </emphasis></para>
+                <para>[Internet]. [cited 2025 March 10]. Available from: <link
+                        xlink:href="https://maven.apache.org/guides/introduction/introduction-to-profiles.html"
+                        >https://maven.apache.org/guides/introduction/introduction-to-profiles.html</link></para>
+            </listitem>
+        </orderedlist>
+    </section>
+</chapter>
