@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Summary of Findings – Data Collection and Transmission for FDA Medical Device Development
+        Tools</title>
+    <section>
+        <title>Purpose</title>
+        <para>Integrated Knowledge Management (IKM) is a multi-faceted approach to managing data and
+            industry-wide knowledge. The primary goal of IKM in the healthcare sector is to advance
+            patient health outcomes and organizational operations by improving the accuracy,
+            quality, and interoperability of healthcare data. While a well-structured and
+            comprehensive approach to IKM has the potential to positively impact the entire
+            healthcare field, this deliverable will more specifically explore how IKM, Terminology
+            Knowledge Architecture (Tinkar), and Komet can support the U.S. Food and Drug
+            Administration’s (FDA’s) Medical Device Development Tools (MDDT) program and future
+            submitters achieve their goals.</para>
+    </section>
+    <section>
+        <title>Background</title>
+        <para>Over the last two years, our team has been working to develop an IKM reference
+            implementation in the form of Komet. Komet is an application that supports comprehensive
+            IKM of various healthcare terminology standards, like Logical Observation Identifiers
+            Names and Codes (LOINC®), Systematized Nomenclature of Medicine Clinical Terms (SNOMED
+            CT®), and RxNorm. Komet employs Tinkar, a self-describing data structure and logical
+            model, to provide a standardized and repeatable way of representing these various
+            clinical terminology standards. Tinkar can transform data into both Protocol Buffers
+            (Protobuf) and the Fast Healthcare Interoperability Resources (FHIR) data exchange
+            standards to export and transmit data to other systems. To demonstrate the real-world
+            applicability of Komet and IKM, our team explored how it could contribute to FDA goals. </para>
+        <para>The MDDT program is an FDA initiative that aims to improve the process for device
+            development, evaluation, and innovation by providing a standardized way to qualify the
+            tools that medical devices use, including biomarker tests, various outcome measures,
+            sensors, and more. The FDA medical device review and approval process has a variety of
+            submission pathways, with a high-level overview of the overarching process outlined
+            below in Figure 1.</para>
+        <figure xml:id="Fig1.svg">
+            <title>FDA Device Submission Process</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/4.3.3Fig1.svg"
+                        scale="25" align="center"/> 
+                </imageobject>
+            </mediaobject>
+            <para>If a device uses a qualified MDDT tool, the device sponsor can ensure FDA approval
+                of that specific tool without needing to undergo additional, duplicative review [1].
+                IKM and Tinkar have the potential to support the MDDT program in two key
+                ways:</para>
+            <orderedlist>
+                <listitem>
+                    <para>Submitting Komet, Tinkar, and our overall IKM approach to the MDDT program
+                        as a tool for review and approval to help FDA improve the predictability and
+                        efficiency of medical device development and review.</para>
+                </listitem>
+                <listitem>
+                    <para>Using Komet, Tinkar, and our overall IKM approach as a standardized and
+                        repeatable way to represent the various qualified tools, devices, and tests
+                        approved through the initiative and map them to disparate terminology
+                        standards. </para>
+                </listitem>
+            </orderedlist>
+        </figure>
+        
+    </section>
+    <section>
+        <title>Komet as a Tool</title>
+        <para>The MDDT program identifies four categories for submitted tools, including an “Other”
+            category that assess (or supports assessment of) safety, effectiveness, or performance
+            for a medical device [2]. Komet and our work could fall within this category as an
+            open-source database and validation tool that ensures medical devices represent data,
+            results, analytes, codes, and other critical information associated with devices in a
+            standardized and accurate way. Komet could serve as a tool for a wide range of devices
+            submitted to FDA via established pathways that would facilitate their review and
+            approval:</para>
+        <itemizedlist>
+            <listitem>
+                <para><emphasis role="bold">501(K) submissions:</emphasis> Devices in the 510(K)
+                    premarket submission process argue that their device is as safe and effective as
+                    an existing and equivalent device that is already on the market. Using Komet and
+                    Tinkar as a database could be used to demonstrate how both devices use the same,
+                    or equivalent, codes to represent the various tests, analytes, results, and
+                    values being captured [3].</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">FDA Premarket Approval (PMA) Submissions:</emphasis>
+                    Devices in the PMA approval process possess substantial risks, support human
+                    life, and/or are significantly involved in the prevention of negative health
+                    outcomes in humans. Given this risk to human health and safety, Komet, Tinkar,
+                    and our standardized representation of data across terminology standards could
+                    validate that these devices can accurately transmit encoded information to a
+                    variety of health information systems – including Electronic Health Records
+                    (EHRs), Laboratory information Systems (LISs), and more – without the loss of
+                    structure, meaning, or critical associated concepts. Komet can be used to ensure
+                    these devices not only capture this information in their local systems but can
+                    also transmit the information to other systems involved in the delivery of
+                    patient care to demonstrate their ability to meet their intended purpose of
+                    protecting human life [4].</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">De Novo Submissions:</emphasis> Devices in the De Novo
+                    approval process represent novel medical devices that lack a comparable existing
+                    device to use as a point of comparison. These devices may not have existing ways
+                    to be represented using terminology standards. Komet can support the creation of
+                    a novel concept that can be used to reference the device submission while
+                    collecting data and performing tests. The versioning features within Komet can
+                    then be used to retire the temporary concept and update it to the official
+                    concepts once they have been created. Using our Status, Time, Author, Module,
+                    Path (STAMP) feature, the information associated with the temporary concept, the
+                    date the concept was updated, the specific information that was changed when it
+                    was updated to the official concept, and more would be stored and could be
+                    easily visualized in the timeline feature. As these concepts continue to evolve,
+                    Komet would continue to tie critical information to the most recent versions so
+                    that historical context and data is not lost [5].</para>
+            </listitem>
+        </itemizedlist>
+        <para>As an MDDT, Komet could streamline the device review and approval process, reducing
+            the time and resources needed to evaluate products accurately and efficiently. Komet
+            would support a consistent and reliable assessment of other devices that reduces the
+            time it takes to approve products. Once products have been approved, Komet could also
+            continue to support standardized assessments of their safety with high-quality data
+            collection and post-market surveillance that expedites 510(K) submissions, additional
+            continued evaluation of devices, and more.</para>
+    </section>
+    <section>
+        <title>Standardized Representation and Transmission of Device Data</title>
+        <section>
+            <title><anchor xml:id="Toc195710762"/>Discussion</title>
+            <para>Our team explored the possibility and accuracy of end-users using Komet to author
+                or edit an MDDT-related concept in Tinkar, transforming that representation into
+                FHIR, and then transmitting that data to the various terminology standards to
+                provide a way to represent these new tools when there is no formal or standardized
+                concept [6]. We used IKM and Komet to develop Tinkar Terminology Change Sets and
+                versioned knowledge graphs to provide Description Logic for terminology concept
+                definitions. Even when there isn’t an official term or concept code, our Tinkar
+                Change Sets provided an avenue to represent the MDDT tests, tools, and devices in a
+                standardized way. This could serve as both a temporary solution, that could then be
+                identified and mapped as an equivalent concept once Standards Developing
+                Organizations (SDOs) release a formal term, or a permanent solution that could be
+                submitted, validated, and released by SDOs. This document explores how IKM and
+                Tinkar could support the lossless transmission of MDDT data, as depicted in figure
+                2, between these devices and health systems, like EHRs and LISs, by normalizing the
+                representation of devices, results, properties, and other pertinent
+                information.</para>
+            <figure xml:id="Fig2">
+                <title>FHIR Transmission Pathway</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="../images/4.3.3Fig2.svg"
+                            scale="25" align="center"/> 
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            
+        </section>
+        <section>
+            <title>Results</title>
+            <section>
+                <title><anchor xml:id="Toc195702626"/>Performance &amp; Efficiency</title>
+                <para>An implementation of the Tinkar data model includes rich semantic details for
+                    representing knowledge sources including, but not limited to, individual
+                    concepts, synonyms and descriptions, relationships between terms, language and
+                    dialect information, description logic axioms, and robust version history. This
+                    rich, verbose data set contains complex and highly granular information.
+                    Converting this data into a structured format like JavaScript Object Notation
+                    (JSON) or Health Level Seven (HL7) FHIR can be challenging due to the intricacy
+                    and depth of the data. Finding equivalence between source data elements and
+                    Tinkar data elements correctly is crucial when converting Tinkar data into a
+                    structured format. However, this process can be difficult and time-consuming,
+                    particularly when dealing with complex data sets. Both JSON and HL7 FHIR have
+                    their own limitations. For instance, JSON itself isn’t as performant as
+                    alternative binary-JSON format representations and HL7 FHIR may not cover all
+                    possible healthcare data exchange use cases and scenarios. These limitations can
+                    pose challenges when trying to represent a rich, verbose data set like a Tinkar
+                    database. Our team also found variation between different operating systems when
+                    transforming Tinkar data to HL7 FHIR and JSON exports. </para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc195702627"/>Lossy Representation</title>
+                <para>Transforming Tinkar data into JSON or HL7 FHIR risks loss of information or
+                    distortion of original data. Thus, maintaining data integrity during this
+                    conversion process is a challenge. One significant challenge we faced in
+                    implementation of the transform to FHIR is JSON does not support all data types
+                    and structures that Tinkar and the source terminologies native formats
+                    represent. Therefore, when transforming data from a Tinkar data representation
+                    to JSON, there is a risk of losing information that does not fit into the JSON
+                    structure. While JSON can handle some complex data structures, it can struggle
+                    with deeply nested structures such as description logic axiom definitions for
+                    concepts. Furthermore, during the transformation process, valuable metadata
+                    (such as timestamps, authorship, or source information) may be lost. This can
+                    reduce the utility and context of the transformed data, especially in the
+                    context of the STAMP (status, time, author, module, and path) information in
+                    Tinkar at the concept-level rather than at the code system level. </para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc195702628"/>Version History Over Time</title>
+                <para>Data standards are constantly evolving. The Tinkar data representation is
+                    designed to retain each version of objects persisted as the object changes over
+                    time, along with metadata indicating its version identifier, time of creation,
+                    creating author, and branch of the version control system on which it was
+                    created. Every version of each object must remain available for retrieval and
+                    inspection. Keeping up with these changes and ensuring the converted data
+                    remains compliant with the updated standards can be challenging, especially with
+                    the lossy challenges as described above in the HL7 FHIR format. FHIR terminology
+                    resources do not have a clean way of representing rich version history and
+                    metadata; we are currently employing a strategy of combining a HL7 Code System
+                    FHIR Resource and HL7 Provenance FHIR Resource together but there are details
+                    lost such as the Module and Path and can only be exported at the Code System
+                    level and not at the individual concept-level. </para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc195702629"/>Reasoning</title>
+                <para>Lossy representation can lead to inefficient querying. If data is not
+                    accurately represented, it can be more challenging to perform queries and gain
+                    insights from the JSON data. If many concepts are updated in a Tinkar editing
+                    environment, then the description logic reasoning can take a long time to
+                    execute and have unintended consequences on the results. To mitigate these
+                    challenges, it's crucial to plan and execute the transformation process
+                    carefully, taking into consideration the data types, structures, and other
+                    specific characteristics of the Tinkar database.</para>
+            </section>
+        </section>
+    </section>
+    <section>
+        <title>Future Considerations</title>
+        <para>As FDA continues to mature the MDDT program, Komet and IKM could support integration
+            with the Laboratory Interoperability Device Reference (LIDR), a centralized repository
+            of standardized codes for laboratory tests, devices, and analyzers. Incorporating LIDR
+            into the MDDT process and requiring participants to transmit their LIDR record, using
+            Komet and IKM, as part of the evaluation process could support further standardization
+            of laboratory device representation [7]. </para>
+        <para>In the coming months, our team plans to unequivocally demonstrate that IKM, and more
+            specifically Komet, provides the general authoring capabilities and features necessary
+            to support LIDR and improve the quality of healthcare data. Komet will provide an
+            authoring environment that can represent a wide range of healthcare systems and
+            terminology standards that also supports exporting data in a FHIR format to map
+            laboratory devices, tools, and results to LOINC® and other standards that LISs can use
+            to represent new concepts. As part of this initiative, our team plans to perform
+            extensive validation exercises at all stages of the workflow to ensure key functionality
+            and data quality. This effort aligns with one of LIDR’s goals to reduce the variance in
+            device representation across laboratories by automating the mapping process or placing
+            the onus of device mapping on the In Vitro Diagnostic (IVD) manufacturer, including
+            reference and tooling. </para>
+    </section>
+    <section>
+        <title>References</title>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para>Medical Device Development Tools (MDDT) [Internet]. FDA; [cited 2024 May
+                        17]. Available from: <link
+                            xlink:href="https://www.fda.gov/medical-devices/medical-device-development-tools-mddt"
+                            >https://www.fda.gov/medical-devices/medical-device-development-tools-mddt</link></para>
+                </listitem>
+                <listitem>
+                    <para>Center for Devices and Radiological Health. Medical Device Development
+                        Tools (MDDT) [Internet]. FDA; [cited 2025 Apr 14]. Available from: <link
+                            xlink:href="https://www.fda.gov/medical-devices/medical-device-development-tools-mddt"
+                            >https://www.fda.gov/medical-devices/medical-device-development-tools-mddt</link></para>
+                </listitem>
+                <listitem>
+                    <para>Center for Devices and Radiological Health. Premarket notification 510(K)
+                        [Internet]. FDA; [cited 2025 Apr 14]. Available from: <link
+                            xlink:href="https://www.fda.gov/medical-devices/premarket-submissions-selecting-and-preparing-correct-submission/premarket-notification-510k"
+                            >https://www.fda.gov/medical-devices/premarket-submissions-selecting-and-preparing-correct-submission/premarket-notification-510k</link></para>
+                </listitem>
+                <listitem>
+                    <para>Center for Devices and Radiological Health. Premarket approval (PMA)
+                        [Internet]. FDA; [cited 2025 Apr 14]. Available from: <link
+                            xlink:href="https://www.fda.gov/medical-devices/premarket-submissions-selecting-and-preparing-correct-submission/premarket-approval-pma"
+                            >https://www.fda.gov/medical-devices/premarket-submissions-selecting-and-preparing-correct-submission/premarket-approval-pma</link></para>
+                </listitem>
+                <listitem>
+                    <para>Center for Devices and Radiological Health. De Novo Classification Request
+                        [Internet]. FDA; [cited 2025 Apr 14]. Available from: <link
+                            xlink:href="https://www.fda.gov/medical-devices/premarket-submissions-selecting-and-preparing-correct-submission/de-novo-classification-request"
+                            >https://www.fda.gov/medical-devices/premarket-submissions-selecting-and-preparing-correct-submission/de-novo-classification-request</link></para>
+                </listitem>
+                <listitem>
+                    <para>HL7 International - Terminology Infrastructure Work Group. HL7 Terminology
+                        Change Set Exchange [Internet]. HL7 International; [cited 2024 May 17].
+                        Available from: <link
+                            xlink:href="https://build.fhir.org/ig/HL7/tinkar-ig/index.html"
+                            >https://build.fhir.org/ig/HL7/tinkar-ig/index.html</link></para>
+                </listitem>
+                <listitem>
+                    <para>Merrick R. LIDR White Paper [Internet]. [cited 2024 May 17]. Available
+                        from: <link
+                            xlink:href="https://aphlinformatics.atlassian.net/wiki/spaces/SC/pages/2020966449/LIDR+White+Paper"
+                            >https://aphlinformatics.atlassian.net/wiki/spaces/SC/pages/2020966449/LIDR+White+Paper</link></para>
+                </listitem>
+            </orderedlist>
+        </para>
+    </section>
+</chapter>
