@@ -5,14 +5,24 @@
     <title>Tinkar Modeling Guide </title>
     <section>
         <title><anchor xml:id="Toc196843725"/>Introduction</title>
-        <para>This modeling guide establishes the processes and outputs for modeling domain Concepts
-            in the Terminology Knowledge Architecture (Tinkar) specification. This guide describes
-            the Tinkar Modeling Process and how the model can be applied to a unique data set. This
-            guide does not encompass all the information regarding the Tinkar Reference Model.
-            Therefore, it is encouraged to review the <link
+        <para>Biomedical terminologies are increasingly important resources for knowledge
+            management, data integration, and decision support across healthcare contexts. The
+            growing use of digital health data is accelerating the adoption of standard
+            terminologies such as SNOMED CT®, LOINC®, and RxNorm. The interoperability of digital
+            health data requires that healthcare organizations integrate subsets and modules of
+            various reference terminologies and manage dependencies, versions, and new releases. As
+            a result, there is a need for standardized representation of concepts that includes
+            change management capabilities.</para>
+        <para>This section focuses on how the Terminology Knowledge Architecture (Tinkar) addresses
+            the need for standardized semantics with versioning. The modeling guide establishes the
+            processes and outputs for modeling domain Concepts in the Tinkar specification. The
+            guide explains the data interoperability requirements Tinkar is intended to address,
+            provides an overview of the Tinkar Modeling Process, and describes how the model can be
+            applied to a unique data set. The Tinkar Modeling Guide does not encompass all the
+            information regarding the Tinkar Reference Model. Therefore, it is encouraged to review
+            the <link
                 xlink:href="https://www.hl7.org/documentcenter/private/standards/HL7_LM_TERM_KB_R1_INFORM_2021AUG_FINAL.pdf"
-                >HL7 informative ballot</link><anchor xml:id="Hlt197429540"/> before this
-            guide.</para>
+                xml:id="menurafr">HL7 informative ballot</link> to supplement this guide.</para>
         <section>
         <title><anchor xml:id="Toc196843726"/>What is Tinkar?</title>
         <para>Tinkar is a logical model designed to establish a robust knowledge architecture. Its
