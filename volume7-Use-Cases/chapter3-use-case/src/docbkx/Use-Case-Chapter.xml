@@ -193,7 +193,9 @@
                     <title>Generalized Current State Long COVID Workflow</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/long%20covid%20workflow.svg" align="center" scale="25"/>
+                            <imagedata
+                                fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Long%20Covid%20Workflow.svg"
+                                align="center" scale="25"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -229,7 +231,7 @@
                     <title>Current State Outpatient Long COVID Workflow</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Current%20State%20Long%20Covid%20Workflow.svg" align="center" scale="17"/>
+                            <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Current%20State%20Long%20Covid%20Workflow.svg" align="center" scale="17"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -246,7 +248,7 @@
                     <title>Future State Outpatient Long COVID Workflow</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Future%20State%20Long%20Covid%20Workflow.svg" align="center" scale="17"/>
+                            <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Future%20State%20Long%20Covid%20Workflow.svg" align="center" scale="17"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -267,7 +269,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata
-                                fileref="images/Future%20State%20Data%20Flows%20for%20Long%20Covid.svg" align="right" scale="13"/>
+                                fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Future%20State%20Data%20Flows%20for%20Long%20Covid.svg" align="right" scale="13"/>
                         </imageobject>
                     </mediaobject>
                 </figure>

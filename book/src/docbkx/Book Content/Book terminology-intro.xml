@@ -3,9 +3,18 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Terminology Introduction</title>
-    <para>The desiderata for the design of a controlled healthcare terminology was published in 1989
-        and expanded in 1998 to contain a list of twelve desiderata which are used to describe
-        desirable characteristics of controlled medical terminologies. They are: <orderedlist>
+    <para>The need for controlled terminologies was recognized at an early stage in the evolution of
+        medical computing systems. Although the fundamental objective of these terminologies
+        remained consistent—namely, to facilitate the accurate capture, storage, manipulation, and
+        retrieval of information while ensuring the preservation and communication of intended
+        meanings—consensus among developers regarding a single, universally applicable terminology
+        proved elusive. Through a comprehensive synthesis of medical informatics literature and
+        conversations with fellow researchers, Dr. James J. Cimino articulated the desiderata for
+        the design of controlled healthcare terminologies. The desiderata was first published in
+        1989 and subsequently expanded in 1998. The resulting framework comprises twelve desiderata,
+        which outline the essential characteristics that controlled medical terminologies should
+        possess to promote their interoperability, shareability, and reusability across diverse
+        healthcare contexts. They are: <orderedlist>
             <listitem>
                 <para><emphasis role="bold">Content</emphasis>: While missing content is expected,
                     formally stated processes for requesting and adding content is required. SNOMED
