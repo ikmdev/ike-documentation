@@ -165,11 +165,24 @@
             highly-reliable CDS: <emphasis><emphasis role="bold">how can we provide
                     <?oxy_comment_start author="steph" timestamp="20190717T105415-0600" comment="Should this be hyphenated?" flag="done"?>patient-<?oxy_comment_end?>centered
                     clinical decision support given the lack of standardization relating to how we
-                    encode data?</emphasis></emphasis> We will discuss the challenges faced by
-            authors, implementers and evaluators of CDS implementations by considering the following
-            example of a CDS intervention by Adam Wright et al in the National Institue of Health
-            (NID)-funded Improving Quality by Making an Accurate Problem List in the Electronic
-            Health Record (EHR)
+                    encode data?</emphasis></emphasis>
+        </para>
+        <para>The following figure depicts how the lack of standardization in data transfer can
+            impact decision support.
+            <figure xml:id="ShortcomingsDataTransfers">
+                <title>Shortcomings in Structured Data Transfers</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="../images/ShortcomingsDataTransfers.svg"
+                            scale="25" align="center"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+        </para>
+        <para>We will discuss the challenges faced by authors, implementers and evaluators of CDS
+            implementations by considering the following example of a CDS intervention by Adam
+            Wright et al in the National Institue of Health (NID)-funded Improving Quality by Making
+            an Accurate Problem List in the Electronic Health Record (EHR)
             (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20231212T100713-0500" comment="Improving Quality by Maintaining Accurate Problems in the EHR - Full Text View - ClinicalTrials.gov [Internet]. clinicaltrials.gov. [cited 2023 Dec 12]. Available from: https://classic.clinicaltrials.gov/ct2/show/NCT02596087
 
 this is the actual clinical trial that we are citing, not sure if any papers came out of it 
@@ -286,7 +299,17 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
             decision support systems malfunction and identified patterns of such malfunctions. [14]
             As a part of this study, a survey of 29 Chief Medical Information Officers (CMIOs)
             showed that 93% of CMIOs experience CDS system malfunctions, and two-thirds experienced
-            the malfunctions at least annually. <itemizedlist>
+            the malfunctions at least annually. 
+            <figure xml:id="RiskofPoorDataQuality">
+                <title>The Risk of Poor Data Quality</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="../images/RiskofPoorDataQuality.svg"
+                            scale="25" align="center"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            <itemizedlist>
                 <listitem>
                     <para>One such malfunction was described as involving <emphasis role="bold"
                                 ><emphasis role="underline"> inappropriate dependencies between and

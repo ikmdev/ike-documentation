@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.1">
+    <title>Tasks 1.4.4 &amp; 1.3.7 Framework for Continuous Integration and Continuous Deployment
+        &amp; Strategic Deployment Framework</title>
+    <section>
+        <title>Purpose</title>
+        <para>The purpose of this document is to describe the Strategic Deployment Framework, which
+            encompasses the Continuous Integration and Continuous Delivery (CI/CD) Framework, needed
+            to support the Systemic Harmonization and Interoperability Enhancement for Laboratory
+            Data (SHIELD) Integrated Knowledge Exchange (IKE) application, the Knowledge Management
+            Environment (Komet). These frameworks provide a structured CI/CD process and
+            architecture needed to deploy Komet and ensure that deployments are consistent,
+            reliable, and efficient. It outlines best practices, tools, and processes to effectively
+            manage the deployment lifecycle, thereby enhancing the harmonization and
+            interoperability of laboratory data across various systems. Additionally, this document
+            provides a roadmap of tasks and timelines that were implemented to complete the
+            migration to the target state. </para>
+        <para>This work serves as a follow-up to the initial frameworks defined in the first option
+            year of this contract and will continue to evolve as we further our understanding of the
+            requirements, priorities, and needs of IKE and its users.</para>
+    </section>
+    <section>
+        <title><anchor xml:id="Toc198809511"/>Aims</title>
+        <para>This document aims to identify and outline a framework that enables accurate and
+            consistent deployments across various environments to minimize downtime and mitigate
+            deployment-related issues. Additionally, the implementation of this framework will
+            enhance the scalability, security, and maintainability of systems to support long-term
+            growth and stability. By facilitating CI/CD processes, the framework streamlines
+            development and deployment workflows. </para>
+    </section>
+    <section>
+        <title><anchor xml:id="Toc198809512"/>Framework</title>
+        <para>This Strategic Deployment Framework for software applications is a comprehensive
+            approach designed to ensure seamless, efficient, and reliable deployment processes
+            across various environments and platforms that utilize CI/CD. Our project utilizes CI/CD
+            processes, which are a widespread practice and framework in software engineering, that
+            aim to incrementally test and validate code changes with automated services to drive the
+            continual release of high-quality updates. Continuous Integration focuses on frequent
+            code commits to integration branches and automated testing that supports the rapid
+            identification of issues and implementation of feedback. Continuous Development focuses
+            on the automated and frequent release of code to production environments that has been
+            reviewed and is ready for deployment. CI/CD principles improve the quality of code and
+            efficiency of production, enhance collaboration and peer review, reduce risk, and
+            expedite a team’s ability to deploy features. </para>
+        <para>The Strategic Deployment Framework outlined in this document encompasses several
+            critical components, each playing a pivotal role in the deployment lifecycle.</para>
+        <itemizedlist>
+            <listitem>
+                <para>The “People” section highlights the essential roles and responsibilities that
+                    drive successful deployments, emphasizing the importance of expertise,
+                    collaboration, and management skills. </para>
+            </listitem>
+            <listitem>
+                <para> The “Source Code Repository” and “Artifact Repository” sections detail the
+                    centralized locations for managing source code and build artifacts, ensuring
+                    version control and accessibility. </para>
+            </listitem>
+            <listitem>
+                <para>The “Build Automation” sections outlines the need for tools that automate key
+                    functions in the CI/CD process.</para>
+            </listitem>
+            <listitem>
+                <para>The “Infrastructure” section outlines the foundational hardware and software
+                    resources necessary to support application deployment and operation. </para>
+            </listitem>
+            <listitem>
+                <para>The “Monitoring” section focuses on the continuous observation and analysis of
+                    application and infrastructure performance, ensuring ongoing health and
+                    reliability.</para>
+            </listitem>
+            <listitem>
+                <para>The “Deployment Environments” section defines the various stages through which
+                    applications progress, from development to production, ensuring controlled and
+                    systematic deployment. </para>
+            </listitem>
+        </itemizedlist>
+        <para>Together, these sections form a robust framework that supports the strategic
+            deployment of software applications through CI/CD.</para>
+        <section>
+            <title><anchor xml:id="Toc198809513"/>People</title>
+            <para>People play a crucial role in the successful deployment of software applications.
+                Their expertise, collaboration, and management skills are essential at every stage
+                of the deployment process. In this section, we define the key roles and their
+                respective responsibilities and permissions that contribute to the success of
+                deployment processes.</para>
+            <itemizedlist>
+                <listitem>
+                    <para><emphasis role="bold">Developers</emphasis>- Developers are software
+                        engineer staff members responsible for software development. Their primary
+                        responsibilities include writing, testing, and maintaining application code.
+                        They review and approve pull requests and collaborate with other team
+                        members to ensure code quality and functionality. Additionally, developers
+                        trigger deployments to the integrated development environment (IDE). They
+                        have permission to approve pull requests that trigger deployment to the
+                        integrated development environment.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Tech Leads</emphasis> - Tech Leads are the
+                        senior-most software engineers responsible for code quality and delivery.
+                        They ensure code quality and adherence to best practices, oversee the
+                        integration and delivery of code to all non-production environments, and
+                        manage deployments to staging and hotfix environments. Tech Leads also
+                        provides technical guidance and mentorship to developers. They have
+                        permission to deploy to all non-production, staging, and hotfix
+                        environments.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Test Engineers</emphasis> - Test Engineers are staff
+                        responsible for testing and validating application deployments. They develop
+                        and execute automated test scripts, perform manual testing to validate
+                        application functionality, and identify and report defects. Test Engineers
+                        validate application deployments in test environments and collaborate with
+                        developers and tech leads to ensure issues are resolved. They have
+                        permission to deploy to all test environments.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Release Engineers</emphasis> - Release Engineers are
+                        staff responsible for confirming the release process is followed and
+                        managing final deployments. They ensure adherence to the release process and
+                        guidelines, coordinate with tech leads, developers, and test engineers to
+                        finalize releases, and manage and execute final deployments to production
+                        environments. Release Engineers monitor deployments to ensure successful
+                        releases and document release notes and deployment procedures. They have the
+                        permission to trigger and manage deployments to production
+                        environments.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Stakeholders</emphasis> - Stakeholders are people
+                        with significant interest in the product being developed. Internal
+                        stakeholders include Food and Drug Administration (FDA) SHIELD project
+                        leadership, while external stakeholders are clients. Stakeholders validate
+                        that developed features meet requirements and expectations, provide feedback
+                        and approval for new features and changes, and participate in user
+                        acceptance testing (UAT) and review sessions. They communicate requirements
+                        and expectations to the development team and have permission to provide
+                        validation and feedback on features developed.</para>
+                </listitem>
+            </itemizedlist>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc198809514"/>Source Code Repository</title>
+            <para>A source code repository is a centralized location where source code is stored,
+                managed, and versioned. It plays a crucial role in the software development
+                lifecycle by providing a structured and secure environment for code management. </para>
+            <para>The following list identifies the key aspects of a source code repository:</para>
+            <orderedlist>
+                <listitem>
+                    <para><emphasis role="bold">Application Source Code</emphasis> - The primary
+                        function of a source code repository is to host the application’s source
+                        code. This includes all the files and directories that make up the
+                        application, written in various programming languages.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Code for Libraries and Dependencies</emphasis> - In
+                        addition to the application’s source code, the repository also stores code
+                        for any external libraries or dependencies required by the application. This
+                        ensures that all necessary components are available in one place.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Infrastructure as Code (IaC)</emphasis> - Modern
+                        development practices often include infrastructure definitions within the
+                        source code repository. This is known as IaC, where infrastructure
+                        configurations are written in code and stored in the repository. Tools like
+                        Terraform and Ansible are commonly used for this purpose.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Secruity and Configuration Files</emphasis> - The
+                        repository also manages security-related code and configuration files. This
+                        includes environment variables, secrets, and other configuration settings
+                        that are essential for the application’s operation.</para>
+                </listitem>
+            </orderedlist>
+            <para>The source code repository offers several additional features, including detailed
+                tracking of changes, which records who made changes, what changes were made, and
+                when, ensuring auditing and accountability. It also provides versioning
+                capabilities, allowing developers to manage different code versions and roll back if
+                necessary, using branching strategies like feature and release branches.
+                Additionally, the repository aids in release management by tagging specific code
+                versions for release, documenting release notes, and managing the deployment
+                process.</para>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc198809515"/>Artifact Repository</title>
+            <para>An artifact repository is a specialized storage location designed to host build
+                artifacts and other binary assets related to a software project. These artifacts can
+                include compiled code, libraries, dependencies, and container images. The repository
+                ensures that these artifacts are securely stored, versioned, and easily accessible
+                for deployment and integration processes. Versioning is crucial for maintaining
+                consistency across different environments and for supporting rollback capabilities.
+                Additionally, artifact repositories are often integrated with CI/CD pipelines to
+                ensure that artifacts are automatically stored in the repository after the build
+                process and are readily available for deployment.</para>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc198809516"/>Build Automation</title>
+            <para>Build automation is the process of using automated tools to compile source code
+                into executable programs, package them, and prepare them for deployment. This plays
+                a critical role in any CI/CD process as it performs consistent and reliable builds
+                in a uniform manner, reducing human error, enabling repeatability, and expediting
+                the build process through parallel processing, allowing developers to focus on
+                coding and improving the overall efficiency of the team. This automated process also
+                facilitates frequent code integration, provides immediate feedback on build status,
+                and integrates with automated testing to maintain high code quality. Additionally,
+                build automation prepares builds for deployment, manages versioning, and handles
+                complex build processes, making it scalable and efficient in managing resources.
+                Overall, it is essential for delivering software quickly, reliably, and efficiently,
+                supporting rapid iteration and deployment in modern development environments.</para>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc198809517"/>Infrastructure</title>
+            <para>Infrastructure refers to the underlying physical and virtual resources that
+                support the deployment, operation, and management of software applications in a
+                cloud environment. Currently, the Komet application operates primarily as a desktop
+                application that leverages cloud-enabled services, such as GitHub. However, the
+                technical roadmap for IKM-powered tools and services includes web and mobile
+                applications, embedded devices, and a server-hosted data service. Recently, we were
+                able to bring Komet into a web browser using JPro technologies, which is leveraging
+                a container-based hosting solution.</para>
+            <para>Containerization is a lightweight form of virtualization that packages an
+                application and its dependencies into a single, isolated unit called a container.
+                This approach ensures that the application runs consistently across different
+                environments, from development to production. Containerization has revolutionized
+                software development by providing a consistent, portable, and efficient way to
+                package and deploy applications. It enhances development speed, collaboration,
+                flexibility, and resource optimization while simplifying deployment and management
+                processes. Ensuring a CI/CD project has the proper tools to support containerization
+                allows the team to be flexible so that we can deploy on any platform and continue to
+                develop and prototype at speed.</para>
+            <para>Kubernetes is the industry standard for container orchestration. It can be used
+                throughout the entire software delivery lifecycle, from development to production,
+                providing a consistent deployment target. To deploy Kubernetes, an IaC tool is used
+                to represent the Kubernetes cluster structure, networking, and all supporting
+                infrastructure assets.</para>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc198809518"/>Monitoring</title>
+            <para>Monitoring is the process of continuously observing and analyzing the performance
+                and health of applications and infrastructure. Monitoring is a critical aspect of
+                maintaining the health and performance of both infrastructure and applications.
+                There are two main levels of monitoring to consider: infrastructure monitoring and
+                application monitoring.</para>
+            <orderedlist>
+                <listitem>
+                    <para><emphasis role="bold">Infrastructure Monitoring</emphasis> -
+                        Infrastructure monitoring tracks the status and performance of the
+                        underlying infrastructure, including uptime and server status.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Application Monitoring</emphasis> - Application
+                        monitoring focuses on gathering logs, tracking exceptions, and monitoring
+                        stack traces to ensure the application is running smoothly. </para>
+                </listitem>
+            </orderedlist>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc198809519"/>Deployment Environments</title>
+            <para>Deployment environments are essential for ensuring that applications are
+                developed, tested, and deployed in a controlled and systematic manner. These
+                environments typically include development, testing, staging/hotfix, and production
+                environments.</para>
+            <para><emphasis role="bold">Local Development Environment</emphasis>
+                <emphasis role="bold">-</emphasis> This environment is set up on individual
+                developers' machines for initial development and testing. It allows developers to
+                work independently on their code before integrating it with the work of
+                others.</para>
+            <para><emphasis role="bold">Integration Development Environment</emphasis>
+                <emphasis role="bold">-</emphasis> This is a shared environment where code from
+                different developers is integrated and tested together. It helps identify
+                integration issues early in the development process.</para>
+            <para><emphasis role="bold">Testing Environments - </emphasis>Testing environments are
+                dedicated to various levels of testing, including unit testing, integration testing,
+                system testing, and user acceptance testing. These environments ensure that the
+                application functions correctly and meets the required quality standards before
+                moving to production.</para>
+            <para><emphasis role="bold">Staging/Hotfix Environment - </emphasis>The Staging
+                environment closely mirrors the production environment and is used for final testing
+                to ensure the application behaves as expected before deployment to production. The
+                Hotfix environment is dedicated to applying urgent fixes to the production
+                environment without disrupting ongoing development, enabling quick resolution of
+                critical issues in the live application.</para>
+            <para><emphasis role="bold">Production Environment - </emphasis>The Production
+                environment is the live environment where the application is available to end-users.
+                This environment often employs a blue/green deployment strategy to minimize downtime
+                and ensure a smooth release process.</para>
+            <para>In a Kubernetes environment, deployment targets are decoupled from source
+                repository branches for flexibility, with separate Kubernetes clusters for
+                production and non-production environments, each containing dedicated namespaces for
+                development, integration, testing, staging, hotfix, and blue/green production
+                deployments.</para>
+        </section>
+    </section>
+    <section>
+        <title><anchor xml:id="Toc198809520"/>Current State Implementation</title>
+        <para>In this section, we will describe our current state architecture and progress towards
+            the strategic deployment framework described above. We will detail how our team is
+            implementing the larger overarching strategic deployment framework, how it drives work
+            through CI/CD, and the various tools we employ to support a standardized and streamlined
+            process for releasing incremental updates to Komet.</para>
+        <section>
+            <title><anchor xml:id="Toc198809521"/>Current State Architecture</title>
+            <para>The architectural diagram in Figure 1 illustrates our current state process of
+                building, testing, and deploying software changes through a CI/CD pipeline, based on
+                our previously defined framework. The process is centered around GitHub as the
+                source of truth, which replaces Jenkins with GitHub Actions for builds, and replaces
+                SonarQube with SonarCloud.</para>
+            <para>Since Option Year 1, we’ve matured our processes around releasing both software
+                and data artifacts to Maven Central. Users can now access Tinkar starter data and
+                sample data artifacts from Maven Central required to successfully run Komet.
+                Additionally, we are currently developing the CI/CD pipeline components necessary to
+                build and release container images to Docker Hub for public use. <figure
+                    xml:id="CICDDiagram">
+                    <title>Current State Continuous Integration and Continuous Delivery (CI/CD)
+                        Architecture Diagram</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/CICDDiagram.svg" scale="25" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure></para>
+            <section>
+                <title>Process Flow Description</title>
+                <para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>In GitHub, the developer forks the repository owned by ikmdev
+                                organization to their personal account for development purposes.
+                                This will be known as the "forked repository" the repository from
+                                which the repository was forked is the "parent" or "team"
+                                repository.</para>
+                        </listitem>
+                        <listitem>
+                            <para>While on the forked repository in their personal account, they
+                                will create a new feature branch off the main branch - which they
+                                can work on with a local copy of their repository.</para>
+                        </listitem>
+                        <listitem>
+                            <para>The developer will continue to work on their feature branch until
+                                they are ready for their contributions to be reviewed and merged
+                                into the team repository.</para>
+                        </listitem>
+                        <listitem>
+                            <para>At that point, the Developer/Contributor will make a Pull Request
+                                (PR) from the feature branch on their forked repository targeting
+                                the main branch on the team/parent repository in the ikmdev GitHub
+                                organization.</para>
+                        </listitem>
+                        <listitem>
+                            <para>The Pull Request will trigger GitHub actions, which may include
+                                running on self-hosted infrastructure in Amazon Web Services (AWS).
+                                Eventually, cloud-based code quality analysis will be added and used
+                                as a quality gate for builds, providing feedback before a manual
+                                review is done.</para>
+                        </listitem>
+                        <listitem>
+                            <para>If everything builds successfully and passes any defined quality
+                                gates, a manual code review is performed to ensure any code
+                                contributed meets quality standards and is understood by the
+                                team.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Upon approval from the code review, the PR is merged into the main
+                                branch of the team/parent repository. GitHub actions will perform a
+                                build process that will trigger a couple events resulting in a push
+                                of the Maven SNAPSHOT artifact to Nexus.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Once the engineers determine the code is ready for release, they
+                                will trigger a release build. This will build both a Java Archive
+                                (JAR) executable file and a Docker image and release them to Maven
+                                Central and Docker Hub, respectively. </para>
+                        </listitem>
+                    </itemizedlist>
+                </para>
+            </section>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc198809522"/>Timeline</title>
+            <para>The following roadmap (Figure 2) depicts the phases and timelines the team
+                followed to migrate to the target architecture. <figure xml:id="SaaSRoadMap">
+                    <title>Software as a Service (SaaS) Migration RoadMap</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/SaaSRoadMap.svg" scale="25" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure></para>
+            <section>
+                <title>Phases and Tasks</title>
+                <para>Below are the tasks that were completed for each phase shown in the
+                    roadmap:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Plan</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Architecture diagram</para>
+                            </listitem>
+                            <listitem>
+                                <para>Timeline Chart, Sprint level mapping</para>
+                            </listitem>
+                            <listitem>
+                                <para>High level Requirements</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para>Research</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Research and Groundwork to evaluate GitHub and GitHub
+                                    Actions</para>
+                            </listitem>
+                            <listitem>
+                                <para>GitHub account setup</para>
+                            </listitem>
+                            <listitem>
+                                <para>Workflow pipeline changes</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para>Implementation</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>GitHub and GitHub action implementation for each Repo</para>
+                            </listitem>
+                            <listitem>
+                                <para>Training and documentation</para>
+                            </listitem>
+                            <listitem>
+                                <para>Archive GitLab and Jenkins</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para>Research</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Research GitHub Packages as Nexus replacement for Artifactory
+                                    tool migration.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Research JFrog as Artifact repository replacement</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para>Implementations</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Implementation/Integration with CICD/Training</para>
+                            </listitem>
+                            <listitem>
+                                <para>Undeploy from Kubernetes</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para>Research</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Research Capabilities - Sonar Cloud, JetBrains, GitHub</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para>Proof of Concept (POC)</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>POC of Chosen Tool</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para>Implementation</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Implementation/Documentation/Training</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para>Decommission (DECOM)</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Decommissioning of Kubernetes</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                </itemizedlist>
+            </section>
+            <section>
+                <title>Assumptions</title>
+                <table>
+                    <title>SaaS Roadmap Migration Assumptions</title>
+                    <tgroup cols="2">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">#</emphasis></entry>
+                                <entry><emphasis role="bold">Assumptions</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry>1</entry>
+                                <entry>This timeline was based on the current tool selections and
+                                    considering 4 full time developers.</entry>
+                            </row>
+                            <row>
+                                <entry>2</entry>
+                                <entry>SaaS Tool migration would be the priority of each sprint and
+                                    70% of capacity would be consumed on tasks/stories related to
+                                    SaaS migration. Additional tasks/story/epic would be
+                                    added/removed based on the Analysis/progress every
+                                    sprint.</entry>
+                            </row>
+                            <row>
+                                <entry>3</entry>
+                                <entry>We are staying with Nexus as the artifact repository but
+                                    moving it out of Kubernetes (not considered moving Nexus outside
+                                    the Virtual Private Network (VPN) as it is a security
+                                    requirement).</entry>
+                            </row>
+                            <row>
+                                <entry>4</entry>
+                                <entry>Implementation of source code repository and CI/CD would be
+                                    combined effort using GitHub and GitHub actions.</entry>
+                            </row>
+                            <row>
+                                <entry>5</entry>
+                                <entry>Upskilling would not be a story but a subtask on each story
+                                    to track the progress so sprint would be planned considering the
+                                    time spent on upskilling.</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <section>
+                    <title><anchor xml:id="Toc198809526"/>Source Code Repository</title>
+                    <para>The FDA SHIELD project uses GitHub as its source code repository. GitHub
+                        is a hosted Git repository service provided by Microsoft that is cloud
+                        enabled. GitHub clearly outlines the various libraries and dependencies in a
+                        project, allows users to configure their project infrastructure with code,
+                        and includes functionality to support issue tracking, developer
+                        collaboration tools, and security scanning and alerts.</para>
+                </section>
+                <section>
+                    <title><anchor xml:id="Toc198809527"/>Artifact Repository</title>
+                    <para>The FDA SHIELD project utilizes the following artifact
+                        repositories:</para>
+                    <orderedlist>
+                        <listitem>
+                            <para>Maven Central Artifact Repository -  Maven Central is a widely
+                                used public repository for hosting and distributing Java libraries
+                                and components, primarily used for releasing Maven artifacts. On FDA
+                                SHIELD, it is primarily used for hosting publicly available Java
+                                libraries and dependencies, specifically JAR files and starter data
+                                artifacts. </para>
+                        </listitem>
+                        <listitem>
+                            <para>Nexus Artifact Repository - Sonatype Nexus is a repository manager
+                                that provides robust support for hosting and managing Maven
+                                artifacts, including both snapshots and releases. Nexus allows for
+                                greater control and security over the artifacts, ensuring they are
+                                securely stored and easily accessible. On FDA SHIELD, it is
+                                primarily used for hosting development-in-progress JAR files (also
+                                known as SNAPSHOT artifacts) and private data artifacts.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Docker Registry - Docker Registry is used for hosting Docker
+                                container images, which are essential for containerized applications
+                                and microservices. For public Docker container images, FDA SHIELD
+                                utilizes Docker Hub (hub.docker.com). For private container images,
+                                Sonatype Nexus can be configured to securely host Docker images.
+                                Alternatively, AWS Elastic Container Registry (ECR) is available for
+                                seamless integration with AWS services like Elastic Container
+                                Service (ECS) and Elastic Kubernetes Service (EKS), providing a
+                                robust and scalable solution for managing private container
+                                images.</para>
+                        </listitem>
+                    </orderedlist>
+                </section>
+                <section>
+                    <title><anchor xml:id="Toc198809528"/>Build Automation</title>
+                    <para>The FDA SHIELD project uses GitHub Actions for its Build Automation
+                        functionality. GitHub Actions provides continuous feedback on code quality
+                        and build status, automates the deployment process to development and test
+                        environments, and has the potential to extend staging and production
+                        environments. Given its native integration with GitHub, GitHub Actions
+                        supports seamless integration and management of project workflows and is
+                        scalable using GitHub infrastructure.</para>
+                </section>
+            </section>
+            <section>
+                <title>Code Quality</title>
+                <para>Continually evaluating and ensuring the quality, accuracy, and functionality
+                    of our Komet code is of the utmost importance. Our project relies on SonarCloud,
+                    a cloud-based service that integrates with CI/CD pipelines, to ensure that code
+                    quality is maintained throughout the development lifecycle by analyzing code for
+                    bugs, vulnerabilities, and code smells. SonarCloud can perform static code
+                    analysis on multiple programming languages, including Java, JavaScript, Python,
+                    and more. It integrates with popular CI/CD tools like Jenkins, GitHub Actions,
+                    and Azure DevOps, to provide immediate feedback on code quality directly in pull
+                    requests. This direct integration also supports scalability as codebases
+                    grow.</para>
+                <para>SonarCloud allows our teams to define a set of conditions that all code must
+                    meet before it is deemed acceptable, allowing our team to define and enforce
+                    coding standards and quality metrics. With visual dashboards and detailed
+                    reports, we can also explore insights into code quality and security,
+                    facilitating collaboration among developers and maintaining a high quality of
+                    code.</para>
+            </section>
+        </section>
+    </section>
+    <section>
+        <title>Future Implications</title>
+        <para>In this section, we will explore the components of the Strategic Deployment framework
+            that remain unimplemented in the current phase of the project. This section will
+            particularly focus on the Infrastructure and Monitoring aspects, which will be crucial
+            for the scalability of IKE services in the future.</para>
+        <section>
+            <title><anchor xml:id="Toc198809531"/>Infrastructure</title>
+            <para>As previously discussed, Kubernetes is the industry standard for containerization
+                of code and will likely be the focus for any next steps related to our code
+                infrastructure.</para>
+            <section>
+                <title><anchor xml:id="Toc198809532"/>Local Development</title>
+                <para>Minikube is a single-node Kubernetes cluster that runs on a software
+                    engineer’s computer system, providing a local development environment. It mimics
+                    the production environment closely, facilitating consistent development and
+                    testing [1].</para>
+                <para>An alternative approach to running Docker containers directly is using Compose
+                    [2]. It is lightweight and easy to set up, but it may lead to inconsistencies
+                    due to the different deployment environment compared to Kubernetes.</para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198809533"/>Deployment Approaches</title>
+                <para>There are two approaches to the deployment of Kubernetes:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Cluster-per-Environment - This approach involves deploying a separate
+                            Kubernetes cluster for each environment (development, test, production)
+                            to ensure maximum separation and security. The benefits include enhanced
+                            security and isolation between environments, though it comes with higher
+                            resource usage and management overhead.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Namespace-per-Environment - This approach uses a single Kubernetes
+                            cluster for all deployment environments, with each environment separated
+                            by namespace for efficient resource utilization. The benefits include
+                            efficient use of resources and simplified management, but it requires
+                            careful namespace management to avoid conflicts.</para>
+                    </listitem>
+                </itemizedlist>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198809534"/>Configuration Management</title>
+                <para>Configuration managementrefers to the practices and tools used to manage and
+                    maintain the configuration of Kubernetes clusters and the applications running
+                    on them. There are two main tools used in industry to manage Kubernetes
+                    configurations: Argo CD and Helm [3, 4]. A third optional tool, Kustomize, can
+                    also be used [5]. </para>
+                <para>The tools are further described as follows:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Argo CD</emphasis> - Argo CD is used to manage
+                            the deployment of Kubernetes resources, providing continuous delivery
+                            capabilities. It employs a declarative GitOps approach to managing
+                            Kubernetes configurations, ensuring consistency and reliability
+                            [6].</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Helm Charts</emphasis> - Helm charts are used
+                            for packaging and deploying Kubernetes applications. They simplify the
+                            deployment and management of Kubernetes applications by providing
+                            reusable and customizable templates [7].</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Kustomize (Optional)</emphasis> - Kustomize is a
+                            tool for customizing Kubernetes configurations without templates. It
+                            allows for declarative management of Kubernetes objects, enabling
+                            environment-specific customizations. Depending on the team's specific
+                            needs and preferences, Kustomize may be used with or as an alternative
+                            to Helm.</para>
+                    </listitem>
+                </itemizedlist>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198809535"/>Build Automation Improvements</title>
+                <para>In the future, if Komet and other IKM capabilities are used at-scale in a
+                    production environment, the adoption of a dedicated CD tool like Spinnaker could
+                    enhance the robustness and reliability of production deployments.Spinnaker is a
+                    Kubernetes-native CD platform that can be integrated with any CI/CD system. It
+                    offers automated deployments that can be triggered by other CI/CD systems and
+                    supports manually triggered, scripted deployments on demand. Spinnaker provides
+                    capabilities for zero-downtime deployments, ensuring high availability and
+                    minimal disruption.</para>
+            </section>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc198809536"/>Monitoring</title>
+            <para>As we continually monitor the performance and health of Komet, we will explore
+                opportunities for both infrastructure and application monitoring.</para>
+            <orderedlist>
+                <listitem>
+                    <para><emphasis role="bold">Cloud Infrastructure Monitoring</emphasis> - In AWS,
+                        tools like CloudWatch and CloudTrail are used to monitor cloud
+                        infrastructure. AWS CloudWatch monitors AWS resources and applications,
+                        providing data and actionable insights. It tracks metrics, collects, and
+                        monitors log files, and sets alarms. AWS CloudTrail provides governance,
+                        compliance, and operational and risk auditing of AWS accounts. It logs,
+                        continuously monitors, and retains account activity related to actions
+                        across the AWS infrastructure.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Kubernetes Cluster Monitoring</emphasis> - Within a
+                        Kubernetes cluster, Prometheus can be used for gathering metrics, and
+                        Grafana can be used for visualizing these metrics [8, 9]. Prometheus is an
+                        open-source systems monitoring and alerting toolkit that collects metrics
+                        from configured targets at given intervals, evaluates rule expressions, and
+                        displays the results. Grafana is an open-source platform for monitoring and
+                        observability that provides tools to turn time-series database (TSDB) data
+                        into insightful graphs and visualizations.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Application-Level Monitoring - </emphasis>Often
+                        times, application-level monitoring is done using Elasticsearch, Logstash,
+                        and Kibana (known as the “ELK stack”) [10]. Elasticsearch is a search and
+                        analytics engine that stores, searches, and analyzes big volumes of data
+                        quickly and in near real-time. Logstash is a server-side data processing
+                        pipeline that ingests data from multiple sources, transforms it, and sends
+                        it to a “stash” like Elasticsearch. Kibana is a data visualization and
+                        exploration tool that provides visualization capabilities on top of the
+                        content indexed on an Elasticsearch cluster. This stack can be customized or
+                        swapped out as needed.</para>
+                </listitem>
+            </orderedlist>
+            <para>The FDA SHIELD project will look to employ a robust CI/CD monitoring framework for
+                both infrastructure and applications. For infrastructure monitoring, AWS CloudWatch
+                and CloudTrail could be used to oversee cloud resources, while Prometheus and
+                Grafana can be used for gathering and visualizing metrics within Kubernetes
+                clusters. On the application level, the ELK stack is an option to provide
+                comprehensive monitoring capabilities. These tools offer flexibility, allowing for
+                customization or substitution based on specific needs, which must be explored as we
+                refine the needs of the project.</para>
+        </section>
+    </section>
+    <section>
+        <title>Conclusion and Next Steps</title>
+        <para>The Strategic Deployment and CI/CD framework in this document outlines the key tools,
+            processes, and areas supporting the iterative development of Komet. As we continue to
+            develop, test, and deploy Komet, our team will update and improve upon this process to
+            meet the evolving needs and requirements of a maturing solution. As this process
+            evolves, we will work to train the team to ensure they are proficient with the tools and
+            resources that support the efficient development and deployment of our work.</para>
+    </section>
+    <section>
+        <title>References</title>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para>Welcome! (n.d.). Minikube. Retrieved May 27, 2025, from <link
+                            xlink:href="https://minikube.sigs.k8s.io/docs/"
+                            >https://minikube.sigs.k8s.io/docs/</link></para>
+                </listitem>
+                <listitem>
+                    <para>Docker Compose. (2025, April 28). Docker Documentation. <link
+                            xlink:href="https://docs.docker.com/compose/"
+                            >https://docs.docker.com/compose/</link></para>
+                </listitem>
+                <listitem>
+                    <para>Argo CD - Declarative GitOps CD for Kubernetes. (n.d.). Retrieved May 27,
+                        2025, from <link xlink:href="https://argo-cd.readthedocs.io/en/stable/"
+                            >https://argo-cd.readthedocs.io/en/stable/</link></para>
+                </listitem>
+                <listitem>
+                    <para>Helm. (n.d.). Retrieved May 27, 2025, from <link
+                            xlink:href="https://helm.sh/">https://helm.sh/</link></para>
+                </listitem>
+                <listitem>
+                    <para>Kustomize - Kubernetes native configuration management. (n.d.). Retrieved
+                        May 27, 2025, from <link xlink:href="https://kustomize.io/"
+                            >https://kustomize.io/</link></para>
+                </listitem>
+                <listitem>
+                    <para>GitOps. (n.d.). GitOps. Retrieved May 27, 2025, from <link
+                            xlink:href="https://www.gitops.tech/"
+                        >https://www.gitops.tech/</link></para>
+                </listitem>
+                <listitem>
+                    <para>Documentation | Artifact Hub documentation. (n.d.). Retrieved May 27,
+                        2025, from <link xlink:href="https://artifacthub.io/docs/"
+                            >https://artifacthub.io/docs/</link></para>
+                </listitem>
+                <listitem>
+                    <para>Prometheus. (n.d.). Prometheus - Monitoring system &amp; time series
+                        database. Retrieved May 27, 2025, from <link
+                            xlink:href="https://prometheus.io/">https://prometheus.io/</link></para>
+                </listitem>
+                <listitem>
+                    <para>Grafana: The open and composable observability platform. (n.d.). Grafana
+                        Labs. Retrieved May 27, 2025, from <link xlink:href="https://grafana.com/"
+                            >https://grafana.com/</link></para>
+                </listitem>
+                <listitem>
+                    <para>Elastic Stack: (ELK) Elasticsearch, Kibana &amp; Logstash. (n.d.).
+                        Elastic. Retrieved May 27, 2025, from <link
+                            xlink:href="https://www.elastic.co/elastic-stack"
+                            >https://www.elastic.co/elastic-stack</link></para>
+                </listitem>
+            </orderedlist>
+        </para>
+    </section>
+</chapter>
