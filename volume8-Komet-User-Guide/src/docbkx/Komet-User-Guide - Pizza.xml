@@ -10,29 +10,29 @@
             <orderedlist>
                 <listitem>
                     <para>Use the following link to <link
-                        xlink:href="https://github.com/ikmdev/komet/releases">access and view
-                        the latest Komet release builds.</link> Each release will include
-                        release notes that detail what updates were made.</para>
+                            xlink:href="https://github.com/ikmdev/komet/releases">access and view
+                            the latest Komet release builds.</link> Each release will include
+                        release notes that detail what updates were made</para>
                     <figure xml:id="KometReleaseVersion">
                         <title>Komet Release Version</title>
                         <mediaobject>
                             <imageobject>
                                 <imagedata
-                                    fileref="../../../../book/src/docbkx/images/Komet%20Release%20Version.svg"
+                                    fileref="../../../book/src/docbkx/images/Komet%20Release%20Version.svg"
                                     scale="30" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
                 </listitem>
                 <listitem>
-                    <para>Scroll down on this webpage to the latest release's "Assests" and select
+                    <para>Scroll down on this webpage to the latest release's "Assets" and select
                         the installer based on your operating system and central processing unit
                         chip, when appropriate (Mac M1 versus Mac Intel chip).</para>
                     <figure xml:id="KometDownload">
                         <title>Komet Download</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/Komet%20Download.svg" scale="30"
+                                <imagedata fileref="../../../book/src/docbkx/images/Komet%20Download.svg" scale="30"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -44,6 +44,9 @@
                 <listitem>
                     <para>The Komet installer will automatically create a "Solor" folder in your
                         OSDisk (C:) -> Users -> [your personal user name] folder</para>
+                    <para>If the Solor folder is not automatically added, you will need to create
+                        one titled "Solor". For both Mac and PC users, create the folder within your
+                        Users -> [your personal user name] folder</para>
                 </listitem>
             </orderedlist>
         </para>
@@ -58,7 +61,7 @@
                         <title>Komet Windows Installer File</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/Komet%20Installer%20File.svg" scale="60"
+                                <imagedata fileref="../../../book/src/docbkx/images/Komet%20Installer%20File.svg" scale="60"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -75,7 +78,7 @@
                         <title>Run Komet</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/Run%20Komet.svg" scale="60"
+                                <imagedata fileref="../../../book/src/docbkx/images/Run%20Komet.svg" scale="60"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -88,7 +91,7 @@
                         <title>Komet Mac Installer File</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/Komet%20Mac%20Installer%20File.svg"
+                                <imagedata fileref="../../../book/src/docbkx/images/Komet%20Mac%20Installer%20File.svg"
                                     scale="10" align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -101,18 +104,23 @@
                         app</para>
                 </listitem>
                 <listitem>
-                    <para>Note: Users may receive a security prompt when trying to download Komet,
-                        ensure you trust the source before proceeding.</para>
+                    <para><emphasis role="bold">Note</emphasis>: Users may receive a security prompt
+                        when trying to download Komet, ensure you trust the source before
+                        proceeding</para>
                     <para>For MAC users, you may receive an alert that Apple cannot check for
-                        malicious software and Apple will prompt you to delete it. Do not delete it.
-                        Instead, override the settings by opening your System Settings, then
-                        selecting "Privacy &amp; Security". Scroll down to "Security" and select
-                        “Open Anyway”. Then the warning prompt will reappear. Click “Open”</para>
+                        malicious software and Apple will prompt you to delete it. <emphasis
+                            role="bold">Do not delete it</emphasis>
+                    </para>
+                    <para>Instead, override the settings by opening your System Settings, then
+                        selecting "Privacy &amp; Security"</para>
+                    <para>Scroll down to "Security" and select “Open Anyway”</para>
+                    <para>Then the warning prompt will reappear</para>
+                    <para>Click “Open Anyway”</para>
                     <figure xml:id="MacSecurity">
-                        <title>Komet Mac Installer File</title>
+                        <title>Komet Mac Installer Security</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/Mac%20System%20Safety%20Check.svg"
+                                <imagedata fileref="../../../book/src/docbkx/images/Mac%20System%20Safety%20Check.svg"
                                     scale="20" align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -129,7 +137,7 @@
                     <para>For Windows, go to your search bar or apps folder and search for “Komet”.
                         For Mac, go to your applications folder or press Command+space, search for
                         Komet, and run the latest desktop version of Komet. The application will be
-                        named Komet [version number], so for example "Komet 1.48.0"</para>
+                        named Komet [version number], so for example "Komet 1.52.0"</para>
                 </listitem>
                 
                 <listitem>
@@ -139,31 +147,34 @@
                         <title>Open SpinedArrayStore</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/Open%20SpinedArrayStore.svg" scale="10"
+                                <imagedata fileref="../../../book/src/docbkx/images/Open%20SpinedArrayStore.svg" scale="10"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
                 </listitem>
                 <listitem>
-                    <para>Select the data source you would like to use and click “Ok” in the bottom
+                    <para>Select the dataset you would like to use and click “Ok” in the bottom
                         right and proceed to Step 8</para>
                 </listitem>
                 <listitem>
-                    <para>If you do not see a data source, copy and paste the zip file containing
-                        the desired data to the OSDisk (C:) -> Users -> [your personal user name] ->
+                    <para>If you do not see a dataset, copy and paste the zip file containing the
+                        desired data to the OSDisk (C:) -> Users -> [your personal user name] ->
                         Solor folder</para>
                 </listitem>
                 <listitem>
-                    <para>Right click the desired data zip file and select "Unzip Here" so the data
-                        is stored in the Solor folder. Ensure the unzipped data files are placed
-                        directly in the unzipped data folder, not inside any subfolders within the
-                        unzipped data folder</para>
+                    <para>If the data zip file does not automatically unzip, right click the desired
+                        data zip file and select "Unzip Here" so the data is stored in the Solor
+                        folder</para>
+                    <para>Ensure the unzipped data files are placed directly in the unzipped data
+                        folder, not inside any subfolders within the unzipped data folder</para>
+                    <para><emphasis role="bold">Note</emphasis>: If you are using a Mac, right click
+                        is a two-fingered click</para>
                     <figure xml:id="UnzippedDataFolder">
                         <title>Unzipped Data Folder</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Unzipped%20Data%20Folder.svg" scale="30"
+                                <imagedata fileref="../../../volume4-Tinkar-Ballot/src/docbkx/images/Unzipped%20Data%20Folder.svg" scale="30"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -171,19 +182,19 @@
                 </listitem>
                 <listitem>
                     <para>Exit and re-open Komet. Change the data source to “Open SpinedArrayStore”;
-                        your data source should now appear</para>
-                    <figure xml:id="NewData">
+                        your dataset should now appear</para>
+                    <figure xml:id="PizzaNewData">
                         <title>New Data</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/New%20Data.svg" scale="30"
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza%20New%20Data.svg" scale="10"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
                 </listitem>
                 <listitem>
-                    <para>Select the data source you would like to use and click “Ok” in the bottom
+                    <para>Select the dataset you would like to use and click “Ok” in the bottom
                         right</para>
                 </listitem>
                 <listitem>
@@ -192,7 +203,7 @@
                         <title>Komet Interface</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/Landing%20Page.svg" scale="30"
+                                <imagedata fileref="../../../book/src/docbkx/images/Landing%20Page.svg" scale="30"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -210,21 +221,21 @@
                         <title>New Journal</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/New%20Journal%20Panel.svg" scale="20"
+                                <imagedata fileref="../../../book/src/docbkx/images/New%20Journal%20Panel.svg" scale="20"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
                 </listitem>
                 <listitem>
-                    <para>Note: Upon first time start up, it is advised to run the reasoner. Please
-                        see the  <xref linkend="RunningTheReasoner"/>section</para>
+                    <para><emphasis role="bold">Note</emphasis>: Upon first time start up, it is
+                        advised to run the reasoner. Please see <xref linkend="RunningTheReasoner"/></para>
                 </listitem>
             </orderedlist>
         </para>
     </section>
     
-    <section>
+    <section xml:id="HowToFindAConceptSection">
         <title>How To Find A Concept</title>
         <para>Users may want to search for concepts to see concept details, pertinent relationships,
             and associated authoring information.</para>
@@ -237,11 +248,11 @@
                 <listitem>
                     <para>Type the keyword or concept name into the search bar at the top of the
                         left-hand panel to find a concept</para>
-                    <figure xml:id="ConceptSearch">
+                    <figure xml:id="PizzaSearch">
                         <title>Komet Concept Search</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/Concept%20Search.svg" scale="30"
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Search.svg" scale="30"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -249,9 +260,9 @@
                 </listitem>
                 <listitem>
                     <para>Results containing the keyword will populate in the field below the search
-                        bar. You can also use a "+" symbol in front of each word when you know
-                        exactly what concept you are searching for to return only exact matches
-                        (e.g., +chronic +lung +disease)</para>
+                        bar. You can also use a "+" symbol in front of each word and a space to
+                        separate each "+[word]" when you know exactly what concept you are searching
+                        for to return only exact matches (e.g., +meaty +pizza)</para>
                 </listitem>
             </orderedlist>
         </para>
@@ -260,23 +271,23 @@
             <orderedlist>
                 <listitem>
                     <para>To view a concept, double click on a search result, drag the concept to
-                        the center panel, or right click a concept and select "Populate Concept
-                        Option"</para>
+                        the center panel, or right click a concept and select "Populate
+                        Concept"</para>
                 </listitem>
                 <listitem>
-                    <para>You can click the comment icon at the top of the left-hand bar again to
-                        minimize the search panel for more space (this can be done for any icon in
-                        the left-hand bar)</para>
+                    <para>You can click the comment icon in the left-hand bar again to minimize the
+                        search panel for more space (this can be done for any icon in the left-hand
+                        bar)</para>
                 </listitem>
                 <listitem>
                     <para>Toggle the "Properties" button on and use the icons at the top right-had
                         side of the concept window to view various details and information about the
                         selected concept</para>
-                    <figure xml:id="ViewConceptDetails">
+                    <figure xml:id="PConceptDetails">
                         <title>View Concept Details</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/Concept%20Details.svg" scale="45"
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Concept%20Details.svg" scale="25"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -289,11 +300,19 @@
                             <para>Description Semantic with language and dialect</para>
                         </listitem>
                         <listitem>
-                            <para>Relationship destination and relationship origin</para>
+                            <para>STAMP information</para>
+                        </listitem>
+                        <listitem>
+                            <para>Identifiers</para>
                         </listitem>
                         <listitem>
                             <para>EL++ Stated terminological axioms showing hierarchical
                                 relationships</para>
+                            <para><emphasis role="bold">Note</emphasis>: The bottom half of the
+                                axiom section are the concept's defining characteristics that the
+                                concept's author or editor defined. The top half of the axiom
+                                section are the concept's defining characteristics that the reasoner
+                                defined, this may include additional concepts</para>
                         </listitem>
                     </orderedlist>
                 </listitem>
@@ -305,28 +324,36 @@
                 <orderedlist>
                     <listitem>
                         <para>To view hierarchical relationships, select the Navigator icon in the
-                            left-hand bar</para>
-                        <figure xml:id="HierarchicalRelationshipsIcon">
+                            left-hand bar and expand the desired concepts by selecting the arrow
+                            next to each one</para>
+                        <para>In this example, we will find various pizzas by expanding Model
+                            Concept, Pizza Builder Knowledge Base Concept, Food, and then
+                            Pizza</para>
+                        <figure xml:id="PizzaHierarchicalRelationshipsIcon">
                             <title>Hierarchical Relationships Icon</title>
                             <mediaobject>
                                 <imageobject>
                                     <imagedata
-                                        fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Hierarchical%20Relationships%20Icon.svg"
+                                        fileref="../../../book/src/docbkx/images/Pizza%20Hierarchy.svg"
                                         scale="15" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
                     </listitem>
                     <listitem>
-                        <para>Drag the desired concept from the Axioms section into the Hierarchical
-                            Relationships panel. Inferred navigation pattern information will appear
-                            on the left-hand side. </para>
-                        <figure xml:id="HierarchicalNavigation">
+                        <para>Alternatively, if you have a concept already open and would like to
+                            see where that concept lies in the hierarchy, you can go to the desired
+                            concept window, go to the Axioms section and drag the desired concept
+                            into the Navigator panel</para>
+                        <para>Inferred navigation pattern information will appear on the left-hand
+                            side, as seen in <xref linkend="PizzaHierarchicalNavigation"/>
+                            below</para>
+                        <figure xml:id="PizzaHierarchicalNavigation">
                             <title>Hierarchical Navigation</title>
                             <mediaobject>
                                 <imageobject>
                                     <imagedata
-                                        fileref="../../../../book/src/docbkx/images/Visualize%20Hierarchical%20Relationships.svg" scale="15" align="center"/>
+                                        fileref="../../../book/src/docbkx/images/Pizza Hierarchical Navigation.svg" scale="25" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -335,13 +362,13 @@
                         <para>Hierarchical Relationships can also be viewed in the center panel by
                             toggling the "Properties" button on and selecting the "Hierarchy" icon
                             at the top of the concept window </para>
-                        <figure xml:id="AlternativeHierarchicalNavigation">
+                        <figure xml:id="PizzaAlternativeHierarchicalNavigation">
                             <title>Alternative Hierarchical Navigation</title>
                             <mediaobject>
                                 <imageobject>
                                     <imagedata
-                                        fileref="../../../../book/src/docbkx/images/Other%20Hierarchical%20Relationship%20View.svg"
-                                        scale="35" align="center"/>
+                                        fileref="../../../book/src/docbkx/images/Pizza%20Alternative%20Hierarchical%20Navigation.svg"
+                                        scale="25" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -352,13 +379,14 @@
                     </listitem>
                     <listitem>
                         <para>Finally, you can view Hierarchical Relationships by clicking the
-                            pop-out icon in the Axiom section of the concept window</para>
-                        <figure xml:id="AxiomHierarchicalRelationshipView">
+                            pop-out icon in the Axiom section of the concept window as seen in <xref
+                                linkend="PizzaAxiomHierarchicalRelationshipView"/> below</para>
+                        <figure xml:id="PizzaAxiomHierarchicalRelationshipView">
                             <title>Axiom Hierarchical Relationship View</title>
                             <mediaobject>
                                 <imageobject>
                                     <imagedata
-                                        fileref="../../../../book/src/docbkx/images/Axiom%20Hierarchical%20Relationship%20View.svg"
+                                        fileref="../../../book/src/docbkx/images/Pizza%20Axiom%20Hierarchical%20Relationship%20View.svg"
                                         scale="35" align="center"/>
                                 </imageobject>
                             </mediaobject>
@@ -376,31 +404,33 @@
         <orderedlist>
             <listitem>
                 <para>To view versioning, first open a new journal, or in an existing and open
-                    journal, and follow the steps to view a concept in Section 1.4</para>
+                    journal, and follow the steps to view a concept in <xref
+                        linkend="HowToFindAConceptSection"/></para>
             </listitem>
             <listitem>
                 <para>In the tool ribbon at the top left of the concept window, click the Time
-                    Travel button</para>
-                <figure xml:id="GettoVersioning">
+                    Travel button, which is highlighted in green in <xref
+                        linkend="PizzaGettoVersioning"/> below</para>
+                <figure xml:id="PizzaGettoVersioning">
                     <title>Versioning Panel</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/Get%20to%20Versioning.svg" scale="35"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Get%20to%20Versioning.svg" scale="25"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
-                <para>The Timeline panel opens to the right. The blue lines in the Timeline panel
-                    represent different data extensions.</para>
+                <para>The Timeline panel opens to the right. The blue and purple lines in the
+                    Timeline panel represent different data extensions.</para>
             </listitem>
             <listitem>
                 <para>Click the ellipsis in the top right of the Timeline panel to see additional
                     information on the Path and Extensions that the timelines represent</para>
-                <figure xml:id="TimelineInformation">
+                <figure xml:id="PizzaTimelineInformation">
                     <title>Timeline Information</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Timeline%20Information.svg" scale="25"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Timeline%20Information.svg" scale="25"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -412,11 +442,11 @@
             </listitem>
             <listitem>
                 <para>Then toggle the "Range" button on</para>
-                <figure xml:id="ViewingVersioning">
+                <figure xml:id="PizzaViewingVersioning">
                     <title>Viewing Versioning</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/Viewing%20Versioning.svg" scale="20"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Viewing%20Versioning.svg" scale="25"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -425,17 +455,17 @@
             <listitem>
                 <para>Drag the top or bottom horizontal blue bars to view concept version
                     information over a specified date range. When you define a specific time range,
-                    the History view only shows event details for event nodes within that time range
-                </para>
+                    the History view will only show event details for event nodes within that time
+                    range (our pizza example was modeled in a day, so events are limited)</para>
             </listitem>
             <listitem>
                 <para>Selecting a specific node on the timeline will turn the node green and
                     highlight information pertaining to that change or concept version</para>
-                <figure xml:id="ViewingVersioning2">
+                <figure xml:id="PizzaViewingVersioning2">
                     <title>Version Nodes</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/Viewing%20Versioning2.svg" scale="20"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Viewing%20Versioning2.svg" scale="25"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -444,11 +474,11 @@
             <listitem>
                 <para>You can further narrow the versioning by selecting the "All" drop down arrow
                     to filter historical events by Concept, Description, and Axiom changes.</para>
-                <figure xml:id="ConceptHistoryOptions">
+                <figure xml:id="PizzaHistoryOptions">
                     <title>Concept History Options</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/Concept%20History%20Options.svg" scale="35"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20History%20Options.svg" scale="25"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -458,22 +488,35 @@
     </section>
     <section>
         <title>Creating a Concept</title>
-        <para>Users may want to create a concept to represent new or emerging clinical conditions or
-            create temporary concepts while Standards Developing Organizations create official
+        <para>Users may want to create a concept to represent new or emerging information or create
+            temporary concepts while Standards Developing Organizations create official
             representations. Creating a concept allows users to enter associated information like
-            Status, Time, Author, Module, and Path (STAMP), stated relationships, and more.</para>
+            Status, Time, Author, Module, and Path (STAMP), stated relationships, and more</para>
+        <para>A major component of each concept is their respective axioms. Axioms are accurate and
+            truthful statements that help define a concept</para>
+        <para>For example, to help define a pepperoni pizza the pepperoni pizza concept may have,
+            but is not limited to, the following axioms;<itemizedlist>
+                <listitem>
+                    <para>Is a pizza</para>
+                </listitem>
+                <listitem>
+                    <para>Has a topping of pepperoni</para>
+                </listitem>
+                <listitem>
+                    <para>Has a topping of cheese</para>
+                </listitem>
+            </itemizedlist></para>
         <orderedlist>
             <listitem>
                 <para>To create a concept, first open a new journal, in an existing and open
                     journal, and click the "+" icon at the top of the Komet window and select "New
                     Concept"</para>
-            </listitem>
-            <listitem>
+            
                 <figure xml:id="CreateNewConcept">
                     <title>Creating a Concept</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/Create%20New%20Concept.svg" scale="35" align="center"
+                            <imagedata fileref="../../../book/src/docbkx/images/Create%20New%20Concept.svg" scale="35" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -485,7 +528,7 @@
                     <title>New Concept</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/New%20Concept.svg" scale="35" align="center"
+                            <imagedata fileref="../../../book/src/docbkx/images/New%20Concept.svg" scale="35" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -493,13 +536,30 @@
             </listitem>
             <listitem>
                 <para>To add STAMP properties of the new concept, select the ellipsis in the top
-                    right of the concept window and select the appropriate options within each drop
-                    down menu to edit the appropriate information for STAMP</para>
-                <figure xml:id="EditSTAMP">
+                    right of the concept window and select the options within each drop down menu to
+                    add the appropriate information for STAMP</para>
+                <para>In general:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Primordial Modules and Paths should be used for starter
+                            datasets</para>
+                    </listitem>
+                    <listitem>
+                        <para>Development or Sandbox Modules and Paths should be used for unvetted
+                            data changes</para>
+                    </listitem>
+                    <listitem>
+                        <para>Master Paths should be used for data changes that have been vetted by
+                            organizations as complete and tested</para>
+                    </listitem>
+                </itemizedlist>
+                <para>For this example, we use the Development module and Development path, but the
+                    Pizza Knowledge Base Module is also appropriate</para>
+                <figure xml:id="PizzaEditSTAMP">
                     <title>Creating STAMP Properties</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/Edit%20STAMP.svg" scale="35" align="center"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Edit%20STAMP.svg" scale="25" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -508,25 +568,25 @@
             <listitem>
                 <para>Select the pencil icon on the right-hand side of the description section of
                     the concept window to add a description</para>
-                <figure xml:id="NewDescription">
+                <figure xml:id="PizzaNewDescription">
                     <title>Adding a Description</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/New%20Description.svg" scale="35" align="center"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20New%20Description.svg" scale="25" align="center"
                             />
                         </imageobject>
                     </mediaobject>
                 </figure>
             </listitem>
             <listitem>
-                <para>Select "Add Fully Qualified Name" and fill out the necessary
-                    information</para>
-                <figure xml:id="NewFullyQualifiedName">
+                <para>Select "Add Fully Qualified Name" and fill out the requested information seen
+                    in <xref linkend="PizzaNewFullyQualifiedName"/> below</para>
+                <figure xml:id="PizzaNewFullyQualifiedName">
                     <title>New Fully Qualified Name
                     </title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/New%20Fully%20Qualified%20Name.svg" scale="25" align="center"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20New%20Fully%20Qualified%20Name.svg" scale="25" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -534,25 +594,16 @@
             </listitem>
             <listitem>
                 <para>When complete, scroll to the bottom of the panel and select "Submit"</para>
-                <figure xml:id="SubmitFullyQualifiedName">
-                    <title>Submit Fully Qualified Name
-                    </title>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Submit%20Fully%20Qualified%20Name.svg" scale="25" align="center"
-                            />
-                        </imageobject>
-                    </mediaobject>
-                </figure>
+                
             </listitem>
             <listitem>
                 <para>Select the pencil icon again on the right-hand side of the description section
                     to add an Other Name, as needed</para>
-                <figure xml:id="NewOtherName">
+                <figure xml:id="PizzaNewOtherName">
                     <title>New Other Name</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/New%20Other%20Name.svg" scale="25" align="center"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20New%20Other%20Name.svg" scale="25" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -562,38 +613,52 @@
                 <para>Finally, select the pencil icon on the right-hand side of the axiom section of
                     the concept window to add axiom information, including sufficient and necessary
                     sets</para>
+                <para>For this example, select "Add Sufficient Set"</para>
+                <para><emphasis role="bold">Note</emphasis>:<itemizedlist>
+                        <listitem>
+                            <para>A <emphasis>necessary set</emphasis> is a set of relationships
+                                that is always true of a concept</para>
+                            <para>For example, a Pepperoni Pizza is a Food</para>
+                        </listitem>
+                        <listitem>
+                            <para>A <emphasis>sufficient set</emphasis> is a set of relationships
+                                that differentiate a concept and its subtypes from all other
+                                concepts</para>
+                            <para>For example, a Pepperoni Pizza is a pizza with only pepperoni and
+                                cheese toppings</para>
+                        </listitem>
+                    </itemizedlist></para>
                 <figure xml:id="NewAxiom">
                     <title>Adding an Axiom</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/New%20Axiom.svg" scale="35" align="center"
+                            <imagedata fileref="../../../book/src/docbkx/images/New%20Axiom.svg" scale="35" align="center"
                             />
                         </imageobject>
                     </mediaobject>
                 </figure>
             </listitem>
             <listitem>
-                <para>Once you add a Sufficient of Necessary Set, it will appear in the Axioms
-                    section, where you can then select the pencil icon to add another Sufficient or
-                    Necessary set</para>
-                <figure xml:id="AdditionalSets">
+                <para>Once you add a Sufficient or Necessary Set, it will appear in the Axioms
+                    section</para>
+                <figure xml:id="PizzaAdditionalSets">
                     <title>Additional Sets</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/Additional%20Sets.svg" scale="35" align="center"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Additional%20Sets.svg" scale="35" align="center"
                             />
                         </imageobject>
                     </mediaobject>
                 </figure>
             </listitem>
             <listitem>
-                <para>After a Sufficient or Necessary set is added, a unique identifier will
+                <para>After a Sufficient or Necessary set is added, a unique identifier will also
                     automatically be generated for your concept</para>
-                <figure xml:id="UniqueIdentifier">
+                <figure xml:id="PizzaUniqueIdentifier">
                     <title>Unique Identifier</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/Unique%20Identifier.svg" scale="35" align="center"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Unique%20Identifier.svg" scale="35" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -602,11 +667,188 @@
             <listitem>
                 <para>Your concept will then appear in the concept search bar on the left hand
                     side</para>
-                <figure xml:id="CreatedConcept">
+                <figure xml:id="PizzaCreatedConcept">
                     <title>Created Concept</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/Created%20Concept.svg" scale="35" align="center"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Created%20Concept.svg" scale="35" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>To further define your concept, you will need to add information about your
+                    concept in the axiom section</para>
+                <para>To begin, we will remove an automatically populated role group by selecting
+                    the pencil icon next to the blue anonymous concept role group and select "Remove
+                    Axiom". We will discuss role groups later</para>
+                <figure xml:id="PizzaConceptInfoAxiom">
+                    <title>Concept Axiom Removal</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                fileref="../../../book/src/docbkx/images/Pizza%20Concept%20Info%20Axiom.svg"
+                                scale="25" align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>Next you select the pencil icon next to your orange Sufficient Set in the
+                    axiom panel and select "Add is-a"</para>
+                <figure xml:id="PizzaConceptInfo">
+                    <title>Add an Is-A</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                fileref="../../../book/src/docbkx/images/Pizza%20Concept%20Info.svg"
+                                scale="25" align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>An anonymous concept will appear in the axiom. Select the pencil icon next to
+                    the anonymous concept and select "Choose replacement is-a" and then "Search for
+                    concept"</para>
+                <figure xml:id="PizzaConceptInfo2">
+                    <title>Choose an Is-A</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Concept%20Info2.svg" scale="35" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>Find a concept to provide additional information about your concept</para>
+                <para>In this example, we want to say the T.O.M pizza is a named pizza, so search
+                    for "Named Pizza", press enter, and then double click the desired concept</para>
+                <figure xml:id="PizzaConceptInfo2-1">
+                    <title>Named Pizza Is-A</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Concept%20Info2-1.svg" scale="35" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem xml:id="AddARoleGroupStep">
+                <para>Next, select the pencil icon next to the sufficient set and select "Add Role
+                    Group"</para>
+                <figure xml:id="PizzaConceptInfo3">
+                    <title>Add a Role Group</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Concept%20Info3.svg" scale="35" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>In the role group, within the Orange section, select the pencil icon, "Choose
+                    role type", and then "Search for concept" to add additional information about
+                    your concept</para>
+                <figure xml:id="PizzaConceptInfo4">
+                    <title>Choose a Role Type</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Concept%20Info4.svg" scale="35" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>Here, we are saying that the T.O.M pizza will be defined, in part, by its
+                    toppings, so we will search for and add a "Has Topping" concept</para>
+                <figure xml:id="PizzaConceptInfo4-1">
+                    <title>Has Topping Role Type</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Concept%20Info4-1.svg" scale="35" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>Next, we will clarify what topping helps to define the T.O.M pizza</para>
+                <para>In the role group, within the Orange section, select the pencil icon, "Choose
+                    role restriction", and then "Search for concept" </para>
+                <figure xml:id="PizzaConceptInfo5">
+                    <title>Choose a Role Restriction</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Concept%20Info5.svg" scale="35" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>For this example, we will add the "Tomato Topping" to the T.O.M Pizza by
+                    searching for Tomato Topping, pressing enter, and double clicking the desired
+                    concept</para>
+                <figure xml:id="PizzaConceptInfo5-1">
+                    <title>Tomato Topping Role Restriction</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Concept%20Info5-1.svg" scale="35" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>The role group will automatically update to reflect the information you have
+                    populated</para>
+                <figure xml:id="PizzaConceptInfo6">
+                    <title>Update Concept Axiom</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Concept%20Info6.svg" scale="35" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>We will repeat these steps to add "Has Topping" role groups for onions and
+                    mozzarella. Please see <xref linkend="AddARoleGroupStep"/> above to repeat these
+                    steps</para>
+                <figure xml:id="PizzaConceptInfo7">
+                    <title>T.O.M Axiom</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Concept%20Info7.svg" scale="35" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>At this point, it is advised to run the reasoner. Please see <xref
+                        linkend="RunningTheReasoner"/></para>
+                <para>Once the reasoner has run, you will need to exit out of the concept you just
+                    created and search for it using the next-gen search feature</para>
+                <para>Once you re-open your concept, the top portion of your concept's Axioms
+                    section will be automatically populated. It may contain concepts that you did
+                    not define in the bottom axiom section, as the reasoner logically organizes the
+                    concept (This may include classifying your pizza as other larger pizza
+                    categories, like margherita as seen in <xref linkend="PizzaConceptInfo8"/>
+                    below)</para>
+                <para>You can then drag your new concept from the top Axioms section into the
+                    Concept Navigator to view the hierarchical organization</para>
+                <figure xml:id="PizzaConceptInfo8">
+                    <title>Axiom Hierarchy Viewing</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Concept%20Info8.svg" scale="25" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -624,29 +866,30 @@
                     journal, and find the concept you want to edit, double-click or drag the concept
                     into the main viewing window, and turn the "Properties" button is toggled
                     on.</para>
-                <para>Of note, if you are editing a concept you just created, you must first exit
-                    out of the concept window, find the new concept with the search feature, and
-                    then double click or drag the new concept back into the viewing window</para>
+                <para><emphasis role="bold">Note</emphasis>, if you are editing a concept you just
+                    created, you must first exit out of the concept window, find the new concept
+                    with the search feature, and then double click or drag the new concept back into
+                    the viewing window</para>
             </listitem>
             <listitem>
                 <para>You can directly edit a Fully Qualified Name or Other Name by clicking
                     the respective name in the concept window</para>
-                <figure xml:id="EditaConcept2">
+                <figure xml:id="PizzaEditaConcept2">
                     <title>Editing a Concept</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Edit%20Concept2.svg" scale="35" align="center"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Edit%20a%20Concept2.svg" scale="35" align="center"
                             />
                         </imageobject>
                     </mediaobject>
                 </figure>
                 <para>You can also select the "Add/Edit" pencil icon at the top right of the concept viewing
                     window</para>
-                <figure xml:id="EditingaConcept">
+                <figure xml:id="PizzaEditingaConcept">
                     <title>Alternate Editing a Concept</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/Edit%20Concept.svg" scale="35" align="center"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Edit%20Concept.svg" scale="25" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -663,18 +906,18 @@
                         <title>Editing a Description</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/Editing%20a%20Description.svg" scale="35"
+                                <imagedata fileref="../../../book/src/docbkx/images/Editing%20a%20Description.svg" scale="25"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
                     <para>Selecting "Edit Fully Qualified" allows you to edit the selected concept's
                         Fully Qualified Name and associated information</para>
-                    <figure xml:id="EditingaFullyQualifiedName">
+                    <figure xml:id="PizzaEditingaFullyQualifiedName">
                         <title>Editing a Fully Qualified Name</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/Editing%20a%20Fully%20Qualified%20Name.svg" scale="35"
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Editing%20a%20Fully%20Qualified%20Name.svg" scale="25"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -685,7 +928,7 @@
                         <title>Adding Other Name</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/Adding%20Other%20Name.svg" scale="35"
+                                <imagedata fileref="../../../book/src/docbkx/images/Adding%20Other%20Name.svg" scale="25"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -695,15 +938,7 @@
                     <para>Once you have changed the Fully Qualified Name or added an Other Name,
                         scroll to the bottom of the edit panel and select submit. You can also write
                         a comment to provide additional information on the changes. </para>
-                    <figure xml:id="SubmitanEdit">
-                        <title>Submit and Edit</title>
-                        <mediaobject>
-                            <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/Editing%20a%20Concept3.svg" scale="35"
-                                    align="center"/>
-                            </imageobject>
-                        </mediaobject>
-                    </figure>
+                    
                 </listitem>
             </orderedlist>
         </section>
@@ -714,32 +949,94 @@
                     <para>Axioms can also be edited at various hierarchical levels by selecting the
                         Pencil Icon next to the Axiom's concept and selecting the appropriate action
                         from the drop down menu</para>
-                    <figure xml:id="AxiomEditing">
+                    <para>We can edit the T.O.M Pizza concept by following the steps outlined in the
+                        Create a Concept section to add an additional role group, with a Role Type
+                        for "Has Base", and Role Restriction of "Pizza Base" to our pizza concept </para>
+                    <figure xml:id="PizzaAxiomEditing">
                         <title>Editing an Axiom</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/Axiom%20Editing.svg" scale="15"
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Axiom%20Editing.svg" scale="25"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
-                    <figure xml:id="AxiomEditing2">
-                        <title>Further Editing an Axiom</title>
+                    <figure xml:id="PizzaAxiomEditing2">
+                        <title>Adding Information to an Axiom</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/Axiom%20Editing2.svg" scale="15"
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Axiom%20Editing2.svg" scale="25"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
+                </listitem>
+                <listitem>
+                    <para>We can also edit existing role groups, such as changing the Tomato Topping
+                        to a more specific Sun Dried Tomato Topping</para>
+                    <figure xml:id="PizzaAxiomEditing3">
+                        <title>Changing a Concept in the Axiom</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Axiom%20Editing3.svg" scale="25"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                    <figure xml:id="PizzaAxiomEditing4">
+                        <title>Updated Concept in the Axiom</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Axiom%20Editing4.svg" scale="25"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>After making any edits, it is advised to run the reasoner. Please see
+                            <xref linkend="RunningTheReasoner"/></para>
                 </listitem>
             </orderedlist>
         </section>
     </section>
     <section>
         <title>Creating and Editing a Pattern</title>
-        <para>Users may want to create or edit a pattern to provide additional, important, context
-            to a concept.</para>
+        <para>Users may want to create or edit a Pattern to provide additional, important
+            information to a concept. Depending on the data set and existing concepts, users may
+            need to create additional concepts that help define parts of the pattern or to actually
+            create the pattern itself</para>
+        <para>In this example, we will need to create the following concepts to help define a
+            Cooking Instruction pattern</para>
+        <table>
+            <title>Concepts to Create for Pattern Creation and Editing</title>
+            <tgroup cols="2">
+                <colspec colnum="1" colname="col1" align="center"/>
+                <colspec colnum="2" colname="col2" align="center"/>
+                <tbody>
+                    <row>
+                        <entry><emphasis role="bold">Concept</emphasis></entry>
+                        <entry><emphasis role="bold">Is-A</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry>Cooking Instruction</entry>
+                        <entry>Pizza Builder Knowledge Base Concept</entry>
+                    </row>
+                    <row>
+                        <entry>Oven Type</entry>
+                        <entry>Cooking Instruction</entry>
+                    </row>
+                    <row>
+                        <entry>Temperature</entry>
+                        <entry>Cooking Instruction</entry>
+                    </row>
+                    <row>
+                        <entry>Cooking Equipment</entry>
+                        <entry>Cooking Instruction</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
         <para>
             <orderedlist>
                 <listitem>
@@ -750,7 +1047,7 @@
                         <title>New Pattern</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/New%20Pattern.svg" scale="35" align="center"
+                                <imagedata fileref="../../../volume4-Tinkar-Ballot/src/docbkx/images/New%20Pattern.svg" scale="35" align="center"
                                 />
                             </imageobject>
                         </mediaobject>
@@ -763,7 +1060,7 @@
                         <title>Add Pattern STAMP</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Add%20Pattern%20STAMP.svg" scale="25" align="center"
+                                <imagedata fileref="../../../volume4-Tinkar-Ballot/src/docbkx/images/Add%20Pattern%20STAMP.svg" scale="25" align="center"
                                 />
                             </imageobject>
                         </mediaobject>
@@ -776,7 +1073,7 @@
                         <title>Add Pattern Definition</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Add%20Pattern%20Definition.svg" scale="25" align="center"
+                                <imagedata fileref="../../../volume4-Tinkar-Ballot/src/docbkx/images/Add%20Pattern%20Definition.svg" scale="25" align="center"
                                 />
                             </imageobject>
                         </mediaobject>
@@ -784,13 +1081,31 @@
                 </listitem>
                 <listitem>
                     <para>Concepts for both Semantic Purpose and Semantic Meaning can be found by
-                        selecting the Comment Icon on the left-hand bar and searching for desired
-                        Concepts. These can then be drag-and-dropped into Purpose or Meaning.</para>
-                    <figure xml:id="PatternDefinitionOptions">
-                        <title>Pattern Definition Options</title>
+                        using the search bar within the Pattern window or by selecting the Comment
+                        Icon on the left-hand bar and searching for desired Concepts to define what
+                        our Pattern will do</para>
+                    <para>For this example, we want to create a pattern the provides cooking
+                        instruction information so that we know how to cook our pizza</para>
+                    <para>To do so, we will need to create the below concept for "Cooking
+                        Instructions" to add to the Purpose and Meaning sections</para>
+                    <figure xml:id="PizzaCookingInstructions">
+                        <title>Cooking Instructions Concept</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Pattern%20Definition%20Options.svg" scale="35" align="center"
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza Cooking Instructions.svg" scale="15" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                    <para>Users can then search for the Cooking Instructions concept in the Purpose
+                        and Meaning search bar or drag-and-drop the concept into the Pizza Cooking
+                        Instructions Pattern Purpose and/or Meaning from the next-gen search, as
+                        seen in <xref linkend="PizzaCookingInstructions2"/> below</para>
+                    <figure xml:id="PizzaCookingInstructions2">
+                        <title>Cooking Instructions Pattern Purpose and Meaning</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza Cooking Instructions2.svg" scale="15" align="center"
                                 />
                             </imageobject>
                         </mediaobject>
@@ -803,11 +1118,11 @@
                 <listitem>
                     <para>Next, select the Pencil Icon in the Description section to add a Fully
                         Qualified Name and/or Other Name</para>
-                    <figure xml:id="EditDescriptions">
-                        <title>Edit Descriptions</title>
+                    <figure xml:id="PizzaCookingInstructions3">
+                        <title>Cooking Instructions Pattern Description</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Edit%20Descriptions.svg" scale="35" align="center"
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza Cooking Instructions3.svg" scale="35" align="center"
                                 />
                             </imageobject>
                         </mediaobject>
@@ -816,12 +1131,13 @@
                 <listitem>
                     <para>Selecting "Add Fully Qualified Name" or "Add Other Name" opens the
                         Properties panel for users to fill out various components of a Pattern's
-                        description</para>
-                    <figure xml:id="EditFullyQualifiedName">
-                        <title>Edit Fully Qualified Name</title>
+                        description. For this example, we will name the pattern the "Cooking
+                        Instructions Pattern"</para>
+                    <figure xml:id="PizzaCookingInstructions4">
+                        <title>Cooking Instructions Pattern Fully Qualified Name</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Edit%20Fully%20Qualified%20Name.svg" scale="25" align="center"
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza Cooking Instructions4.svg" scale="35" align="center"
                                 />
                             </imageobject>
                         </mediaobject>
@@ -831,178 +1147,102 @@
                     <para>Once all necessary components are complete, select "Done"</para>
                 </listitem>
                 <listitem>
-                    <para>If needed, select the Pencil Icon in the Fields section to associate
-                        additional information with the pattern. Note: Display Name will
-                        auto-populate once the meaning field has been defined</para>
+                    <para>Before you add Fields to a pattern, you may need to create concepts to
+                        represent the Field's Purpose and Meaning. For this example, you will need
+                        to create the following three concepts for "Oven Type", "Temperature", and
+                        "Cooking Equipment" </para>
+                    <figure xml:id="PizzaOvenType">
+                        <title>Oven Type</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza Oven Type.svg" scale="25" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                    <figure xml:id="PizzaTemperature">
+                        <title>Temperature</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza Temperature.svg" scale="25" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                    <figure xml:id="PizzaCookingEquipment">
+                        <title>Cooking Equipment</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza Cooking Equipment.svg" scale="25" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Once you have created these concepts, you will use them to add three
+                        Fields to the Cooking Instructions Pattern</para>
+                    <para>Select the Pencil Icon in the Fields section of the Cooking Instructions
+                        Pattern to associate additional information with the pattern and select
+                        "Done" when all information is added for the Field</para>
                     <figure xml:id="EditFields">
-                        <title>Edit Fields</title>
+                        <title>Add Fields</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Edit%20Fields.svg" scale="35" align="center"
+                                <imagedata fileref="../../../book/src/docbkx/images/Edit%20Fields.svg" scale="35" align="center"
                                 />
                             </imageobject>
                         </mediaobject>
                     </figure>
                 </listitem>
                 <listitem>
-                    <para>Once you have entered all the necessary details, click "Done". You can add
-                        additional Fields by clicking the Pencil icon again. These additional fields
-                        will be labeled with increasing Field Order numbers</para>
-                    <figure xml:id="AddMultipleFields">
-                        <title>Add Multiple Fields</title>
+                    <para>Create the following three fields using the "Component Field" data
+                        type</para>
+                    <para>Once you have added the requested information for a Field, click "Done".
+                        You may then select "Add another field" or "Close panel", as needed</para>
+                    <para><emphasis role="bold">Note</emphasis>: The Display Name for each Field
+                        will automatically populate once the meaning field has been defined</para>
+                    <figure xml:id="PizzaOvenTypeField">
+                    <title>Oven Type Field</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza Oven Type Field.svg" scale="35" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                    </figure>
+                    <figure xml:id="PizzaTemperatureField">
+                        <title>Temperature Field</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Add%20Multiple%20Fields.svg" scale="35" align="center"
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza Temperature Field.svg" scale="35" align="center"
                                 />
                             </imageobject>
                         </mediaobject>
                     </figure>
-                </listitem>
-                <listitem>
-                    <para>You can edit Fields by right clicking the desired Field Number in the
-                        Fields Section and selecting "Edit"</para>
-                    <figure xml:id="ReviseFields">
-                        <title>Revise Fields</title>
+                    <figure xml:id="PizzaCookingEquipmentField">
+                        <title>Cooking Equipment Field</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Revise%20Fields.svg" scale="35" align="center"
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza Cooking Equipment Field.svg" scale="35" align="center"
                                 />
                             </imageobject>
                         </mediaobject>
                     </figure>
-                </listitem>
-                <listitem>
-                    <para>Once all sections have been completed for the Pattern, select the Globe
-                        icon to save the pattern</para>
-                    <figure xml:id="AddIdentifier">
-                        <title>Add Identifier</title>
-                        <mediaobject>
-                            <imageobject>
-                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Add%20Identifier.svg" scale="15" align="center"
-                                />
-                            </imageobject>
-                        </mediaobject>
-                    </figure>
-                    <para>If completed properly, an identifier will be generated underneath the
-                        Pattern name in the concept window and the Pattern will appear within the
-                        list of Patterns that can be accessed by selecting the Concept Navigator
-                        icon on the left-hand bar and then Patterns.</para>
-                    <figure xml:id="ViewPatternNavigator">
-                        <title>View Pattern Navigator</title>
-                        <mediaobject>
-                            <imageobject>
-                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/View%20Pattern%20Navigator.svg" scale="15" align="center"
-                                />
-                            </imageobject>
-                        </mediaobject>
-                    </figure>
-                </listitem>
-            </orderedlist>
-        </para>
-    </section>
-    <section>
-        <title>Creating and Editing a Semantic</title>
-        <para>Users may want to create or edit a semantic to represent specific information about a
-            concept, like a description, a dialect, an In-Vitro Diagnostic Test mapping, and more.<orderedlist>
-                <listitem>
-                    <para>To create a semantic element, open the concept navigator panel on the
-                        left-hand side and select "Patterns"</para>
-                    <figure xml:id="ViewPatterns">
-                        <title>Locate Patterns</title>
-                        <mediaobject>
-                            <imageobject>
-                                <imagedata fileref="../../../../Book/src/docbkx/images/View%20Patterns.svg" scale="35" align="center"
-                                />
-                            </imageobject>
-                        </mediaobject>
-                    </figure>
-                </listitem>
-                <listitem>
-                    <para>Locate the pattern you would like to create a semantic element for, right
-                        click, and select "Add New Semantic Element". In this example, we will use
-                        the Description Pattern</para>
-                    <figure xml:id="AddNewSemanticElement">
-                        <title>Add New Semantic Element</title>
-                        <mediaobject>
-                            <imageobject>
-                                <imagedata fileref="../../../../Book/src/docbkx/images/Add New Semantic Element.svg" scale="35" align="center"
-                                />
-                            </imageobject>
-                        </mediaobject>
-                    </figure>
-                </listitem>
-                <listitem>
-                    <para>A New Semantic window will appear for the specific pattern you
-                        choose</para>
-                    <figure xml:id="NewDescriptionSemantic">
-                        <title>New Description Semantic</title>
-                        <mediaobject>
-                            <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/New Description Semantic.svg" scale="15"
-                                    align="center"/>
-                            </imageobject>
-                        </mediaobject>
-                    </figure>
-                </listitem>
-                <listitem>
-                    <para>Select the ellipsis in the top right-hand side to enter STAMP information
-                        for this semantic</para>
-                    <figure xml:id="NewDescriptionSemanticSTAMP">
-                        <title>New Description Semantic STAMP</title>
-                        <mediaobject>
-                            <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/New Description Semantic STAMP.svg" scale="15"
-                                    align="center"/>
-                            </imageobject>
-                        </mediaobject>
-                    </figure>
-                </listitem>
-                <listitem>
-                    <para>Next, select the pencil icon on the right-hand side of the Reference
-                        Component section to associate this semantic with a specific concept.</para>
-                    <figure xml:id="NewReferenceComponent">
-                        <title>New Reference Component</title>
-                        <mediaobject>
-                            <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/New Reference Component.svg" scale="15"
-                                    align="center"/>
-                            </imageobject>
-                        </mediaobject>
-                    </figure>
-                    <para>You can use the Next Gen-Search on the left-hand tool bar or you can type
-                        free text into the search field to find the concept of interest. Once you
-                        have added the Reference Component, select "Confirm"</para>
-                </listitem>
-                <listitem>
-                    <para>Once the Reference Component is added, the pencil icon in Semantic Details
-                        will become available, which you should select to add the necessary Pattern
-                        Fields</para>
-                    <figure xml:id="NewSemanticDetail">
-                        <title>New Semantic Details</title>
-                        <mediaobject>
-                            <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/New Semantic Detail.svg" scale="15"
-                                    align="center"/>
-                            </imageobject>
-                        </mediaobject>
-                    </figure>
-                    <para>Concepts for the "Language for Description", "Description case
-                        significance" and "Description type" can all be found in the next gen-search
-                        and drag and dropped into the respective field or they can be searched in
-                        the semantic window. Some fields, such as "Text" may be free text for you to
-                        create your own entry</para>
-                    <para>Please note, the Pattern Fields may differ depending on which pattern you
-                        are using to create semantic elements</para>
-                </listitem>
-                <listitem>
-                    <para>When adding semantic elements to a pattern, you may need to add a data
+                
+                
+                    <para>When adding Fields to a pattern, you may need to add a data
                         type depending on the pattern. The following list highlights some potential options:
                         <table>
-                            <title>Data Types for General Semantic Authoring</title>
+                            <title>Data Types for Patterns and General Semantic Authoring</title>
                             <tgroup cols="2">
-                                <colspec colnum="1" colname="col1"/>
-                                <colspec colnum="2" colname="col2"/>
+                                <colspec colnum="1" colname="col1" align="center"/>
+                                <colspec colnum="2" colname="col2" align="center"/>
                                 <tbody>
+                                    <row>
+                                        <entry><emphasis role="bold">Data Type</emphasis></entry>
+                                        <entry><emphasis role="bold">Description</emphasis></entry>
+                                    </row>
                                     <row>
                                         <entry>String</entry>
                                         <entry>Any alphanumeric text</entry>
@@ -1048,163 +1288,242 @@
                         </table></para>
                 </listitem>
                 <listitem>
-                    <para>Once you have added concepts to each Pattern Field, select "Submit" and
-                        your semantic element will have been added </para>
+                    <para>If needed, you can edit Fields by right clicking the desired Field Number
+                        in the Fields Section and selecting "Edit"</para>
+                    <figure xml:id="PizzaEditField">
+                        <title>Edit Field</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza Edit Field.svg" scale="25" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Once all sections have been completed for the Pattern, select the Globe
+                        icon to save the pattern</para>
+                    <figure xml:id="AddIdentifier">
+                        <title>Add Identifier</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../volume4-Tinkar-Ballot/src/docbkx/images/Add%20Identifier.svg" scale="15" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                    <para>If completed properly, an identifier will be generated underneath the
+                        Pattern name in the concept window and the Pattern will appear within the
+                        list of Patterns that can be accessed by selecting the Concept Navigator
+                        icon on the left-hand bar and then Patterns</para>
+                    <figure xml:id="PizzaPatternNavigator">
+                        <title>View Pattern Navigator</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Pattern%20Navigator.svg" scale="25" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+            </orderedlist>
+        </para>
+    </section>
+    <section>
+        <title>Creating and Editing a Semantic</title>
+        <para>Users may want to create or edit a semantic to associate important information with a
+            specified concept. Semantics can only add information that is outlined by a specific
+            pattern, for instance the oven type, cooking equipment, and temperature needed to cook a
+            specific pizza.</para>
+        <para>Depending on the data set and existing concepts, users may need to create additional
+            concepts to create a semantic</para>
+        <para>For this example, users will need to create concepts for Pizza Oven, Pizza Stone, and
+            420 Fahrenheit to fill out the information needed to complete the Cooking Instruction Pattern<table>
+                <title>Concepts to Create for Creation and Editing a Semantic</title>
+                <tgroup cols="2">
+                    <colspec colnum="1" colname="col1" align="center"/>
+                    <colspec colnum="2" colname="col2" align="center"/>
+                    <tbody>
+                        <row>
+                            <entry><emphasis role="bold">Concept</emphasis></entry>
+                            <entry><emphasis role="bold">Is-A</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry>Pizza Oven</entry>
+                            <entry>Oven Type</entry>
+                        </row>
+                        <row>
+                            <entry>Pizza Stone</entry>
+                            <entry>Cooking Equipment</entry>
+                        </row>
+                        <row>
+                            <entry>420 Fahrenheit</entry>
+                            <entry>Temperature</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+            <orderedlist>
+                <listitem>
+                    <para>To create a semantic element, open the concept navigator panel on the
+                        left-hand side and select "Patterns". Locate the pattern you would like to
+                        create a semantic element for, right click, and select "Add New Semantic
+                        Element". In this example, we will use the Cooking Instructions
+                        Pattern</para>
+                    <figure xml:id="PizzaNewSemanticElement">
+                        <title>New Semantic Element</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata
+                                    fileref="../../../Book/src/docbkx/images/Pizza Semantic Element.svg"
+                                    scale="25" align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>A New Semantic window will appear for the specific pattern you
+                        choose</para>
+                    <figure xml:id="PizzaSemantic1">
+                        <title>New Cooking Instructions Semantic</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata
+                                    fileref="../../../book/src/docbkx/images/Pizza Semantic1.svg"
+                                    scale="35" align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Select the ellipsis in the top right-hand side to enter STAMP information
+                        for this semantic</para>
+                    <figure xml:id="PizzaSemantic2">
+                        <title>Cooking Instructions Semantic STAMP</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata
+                                    fileref="../../../book/src/docbkx/images/Pizza Semantic2.svg"
+                                    scale="35" align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Next, select the pencil icon on the right-hand side of the Reference
+                        Component section to associate this semantic with a specific concept</para>
+                    <figure xml:id="PizzaSemantic3">
+                        <title>New Reference Component</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata
+                                    fileref="../../../book/src/docbkx/images/Pizza Semantic3.svg"
+                                    scale="15" align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                    <para>You can use the Next Gen-Search on the left-hand tool bar or you can type
+                        free text into the search field to find the concept of interest. For this
+                        example, we will drag-and-drop the T.O.M Pizza concept into the Reference
+                        Component. Once you have added the Reference Component, select
+                        "Confirm"</para>
+                </listitem>
+                <listitem>
+                    <para>Once the Reference Component is added, the pencil icon in Semantic Details
+                        will become available, which you should select to add the necessary Pattern
+                        Fields</para>
+                    <figure xml:id="PizzaSemantic4">
+                        <title>New Semantic Details</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata
+                                    fileref="../../../book/src/docbkx/images/Pizza Semantic4.svg"
+                                    scale="35" align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>For this example, we will need to create the following three concepts to
+                        add to the "Oven Type", "Cooking Equipment", and "Temperature" Fields,
+                        respectively</para>
+                    <figure xml:id="PizzaSemantic5">
+                        <title>Pizza Oven Concept</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata
+                                    fileref="../../../book/src/docbkx/images/Pizza Semantic5.svg"
+                                    scale="25" align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                    <figure xml:id="PizzaSemantic6">
+                        <title>Pizza Stone Concept</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata
+                                    fileref="../../../book/src/docbkx/images/Pizza Semantic6.svg"
+                                    scale="25" align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                    <figure xml:id="PizzaSemantic7">
+                        <title>Temperature Concept</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata
+                                    fileref="../../../book/src/docbkx/images/Pizza Semantic7.svg"
+                                    scale="25" align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Once all three concepts have been created, use the Next Gen-Search on the
+                        left-hand tool bar, search for each concept, and drag-and-drop that concept
+                        into the appropriate Field in the Cooking Instructions Pattern</para>
+                    <figure xml:id="PizzaSemantic8">
+                        <title>Semantic Fields</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata
+                                    fileref="../../../book/src/docbkx/images/Pizza Semantic8.svg"
+                                    scale="25" align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Click "Submit" and the semantic will be complete</para>
+                    <figure xml:id="PizzaSemantic9">
+                        <title>T.O.M Pizza Cooking Instructions Semantic</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata
+                                    fileref="../../../book/src/docbkx/images/Pizza Semantic9.svg"
+                                    scale="35" align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>You can also view the semantic by going to the concept navigator panel on
+                        the left-hand side, selecting "Patterns", locating the pattern of choice,
+                        and expanding the "Semantic Elements" tab</para>
+                    <figure xml:id="PizzaSemantic10">
+                        <title>Semantic Viewing</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata
+                                    fileref="../../../book/src/docbkx/images/Pizza Semantic10.svg"
+                                    scale="35" align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
                 </listitem>
             </orderedlist></para>
     </section>
-    <section>
-        <title>Creating LIDR Data</title>
-        <para>Users may want to create a device extension, which can help tie additional information
-            related to devices to the concept that extend beyond the original terminology standard
-            requirements. In this case, we are authoring a LIDR record</para>
-        <orderedlist>
-            <listitem>
-                <para>To create LIDR data, first open a new journal, or in an existing and open
-                    journal and select the "+" at the top of the project journal</para>
-                <figure xml:id="NewLIDRRecord">
-                    <title>New LIDR Record</title>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/NewLIDRRecord.svg" scale="45"
-                                align="center"/>
-                        </imageobject>
-                    </mediaobject>
-                </figure>
-            </listitem>
-            <listitem>
-                <para>This will open a blank LIDR template to fill out</para>
-                <figure xml:id="LIDRViewer">
-                    <title>LIDR Viewer</title>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/LIDR%20Viewer.svg" scale="45"
-                                align="center"/>
-                        </imageobject>
-                    </mediaobject>
-                </figure>
-            </listitem>
-            <listitem>
-                <para>First, start by selecting the ellipsis on the right had side to create a STAMP
-                    for the LIDR concept</para>
-                <figure xml:id="AuthorLIDRStamp">
-                    <title>Author LIDR STAMP</title>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/Author%20LIDR%20STAMP.svg" scale="45"
-                                align="center"/>
-                        </imageobject>
-                    </mediaobject>
-                </figure>
-                <para>Selecting Status, Module, and Path will open a drop down menu of possible
-                    choices for users to select from when authoring STAMP</para>
-            </listitem>
-            <listitem>
-                <para>Once you have selected the Status, Module, and Path, click the LIDR Viewer
-                    window and the properties will populate</para>
-                <figure xml:id="LIDRStamp">
-                    <title>LIDR STAMP</title>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/LIDR%20STAMP.svg" scale="45"
-                                align="center"/>
-                        </imageobject>
-                    </mediaobject>
-                </figure>
-            </listitem>
-            <listitem>
-                <para>Next, select the pencil icon in the Device(s) Summary section to open the
-                    Properties section and add a device</para>
-                <figure xml:id="EditDeviceSummary">
-                    <title>Edit Device Summary</title>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/Edit%20Device%20Summary.svg" scale="45"
-                                align="center"/>
-                        </imageobject>
-                    </mediaobject>
-                </figure>
-            </listitem>
-            <listitem>
-                <para>Users can search for a device, manually enter a device, or drag and drop a
-                    device from the Hierarchical Relationship tab in the left-hand bar. Users can
-                    navigate to the "Tinkar root concept" → "Model concept" → "Device" section to
-                    click and drag a device to the LIDR Viewer Properties panel</para>
-                <figure xml:id="AddDevice">
-                    <title>Add Device by Dragging</title>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/Add%20Device.svg" scale="45"
-                                align="center"/>
-                        </imageobject>
-                    </mediaobject>
-                </figure>
-                <para>The device will appear in the Device Summary Properties panel</para>
-                <figure xml:id="ConfirmDevice">
-                    <title>Confirm Device</title>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/Confirm%20Device.svg" scale="45"
-                                align="center"/>
-                        </imageobject>
-                    </mediaobject>
-                </figure>
-            </listitem>
-            <listitem>
-                <para>Once you click "Done" in the bottom right of the Device Summary Properties
-                    panel, it will appear in the LIDR Viewer window</para>
-                <figure xml:id="DeviceSummary">
-                    <title>Device Summary</title>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/Device%20Summary.svg" scale="45"
-                                align="center"/>
-                        </imageobject>
-                    </mediaobject>
-                </figure>
-            </listitem>
-            <listitem>
-                <para>Finally, select the pencil icon in the LIDR Record Details section to open the
-                    Properties section and add Analytes, Targets, Results, and Specimens. Similar to
-                    the Device Summary, Analytes, Targets, Results, and Specimens can be searched
-                    for, manually added, or dragged from the Hierarchical Relationship tab in the
-                    left-hand bar. These can be found in "Tinkar root concept" → "Model concept" →
-                    "Analyte", "Targets", "Result Constraints", and "Specimens" respectively</para>
-                <figure xml:id="AddLIDRRecordDetails">
-                    <title>Add LIDR Record Details</title>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/Add%20LIDR%20Record%20Details.svg" scale="45"
-                                align="center"/>
-                        </imageobject>
-                    </mediaobject>
-                </figure>
-                <para>Users can add multiple Targets, Result Constraints, and Specimen but are
-                    limited to a single Analyte.</para>
-            </listitem>
-            <listitem>
-                <para>Once you click "Done" in the bottom right of the LIDR Record Details panel, it
-                    will appear in the LIDR Viewer window</para>
-                <figure xml:id="ViewLIDRRecordDetails">
-                    <title>View LIDR Record Details</title>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/View%20LIDR%20Record%20Details.svg" scale="45"
-                                align="center"/>
-                        </imageobject>
-                    </mediaobject>
-                </figure>
-                <para>The Analyte, Results, and Specimens within the LIDR Record Details section can
-                    be expanded for more information</para>
-            </listitem>
-            <listitem>
-                <para>You can then go to the Hierarchical Relationship tab in the left-hand bar,
-                    locate the device you created, right click, and select "LIDR Viewer" to view the
-                    concept in the LIDR Viewer window without having to re-enter all of the
-                    data</para>
-            </listitem>
-        </orderedlist>
-    </section>
+    
     <section>
         <title>Exporting Datasets</title>
         <para>Users may want to export a dataset to share some of their authoring work with other
@@ -1220,7 +1539,7 @@
                             <title>Export Dataset</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata fileref="../../../../book/src/docbkx/images/Export%20Data%20Set.svg" scale="30"
+                                    <imagedata fileref="../../../book/src/docbkx/images/Export%20Data%20Set.svg" scale="30"
                                         align="center"/>
                                 </imageobject>
                             </mediaobject>
@@ -1234,7 +1553,7 @@
                         <title>Export Custom Range</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/Export%20Time%20Period.svg" scale="30"
+                                <imagedata fileref="../../../book/src/docbkx/images/Export%20Time%20Period.svg" scale="30"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -1247,7 +1566,7 @@
                         <title>Exporting</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/Exporting.svg" scale="30"
+                                <imagedata fileref="../../../book/src/docbkx/images/Exporting.svg" scale="30"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -1273,7 +1592,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata
-                                    fileref="../../../../book/src/docbkx/images/Import%20Data%20Set.svg"
+                                    fileref="../../../book/src/docbkx/images/Import%20Data%20Set.svg"
                                     scale="30" align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -1287,7 +1606,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata
-                                    fileref="../../../../book/src/docbkx/images/Importing.svg"
+                                    fileref="../../../book/src/docbkx/images/Importing.svg"
                                     scale="40" align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -1321,7 +1640,7 @@
                     <title>Account Settings</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/PAT%20Settings_TestingScript.svg" scale="45" align="center"/>
+                            <imagedata fileref="../../../book/src/docbkx/images/PAT%20Settings_TestingScript.svg" scale="45" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -1332,7 +1651,7 @@
                     <title>Developer Settings</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/PAT%20Developer%20Settings_TestingScript.svg" scale="45" align="center"/>
+                            <imagedata fileref="../../../book/src/docbkx/images/PAT%20Developer%20Settings_TestingScript.svg" scale="45" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -1343,7 +1662,7 @@
                     <title>Personal Access Tokens</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/PAT%20Step 4_TestingScript.svg" scale="45" align="center"/>
+                            <imagedata fileref="../../../book/src/docbkx/images/PAT%20Step 4_TestingScript.svg" scale="45" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -1354,7 +1673,7 @@
                     <title>Classic Tokens</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/PAT Step 5_TestingScript.svg" scale="45" align="center"/>
+                            <imagedata fileref="../../../book/src/docbkx/images/PAT Step 5_TestingScript.svg" scale="45" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -1366,7 +1685,7 @@
                     <title>Generate New Token</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/PAT Step 6_TestingScript.svg" scale="45" align="center"/>
+                            <imagedata fileref="../../../book/src/docbkx/images/PAT Step 6_TestingScript.svg" scale="45" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -1380,7 +1699,7 @@
                     <title>Note and Repo</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/PAT Step 7B_TestingScript.svg" scale="45" align="center"/>
+                            <imagedata fileref="../../../book/src/docbkx/images/PAT Step 7B_TestingScript.svg" scale="45" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -1388,7 +1707,7 @@
                     <title>Generate Token</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/PAT Step 7C_TestingScript.svg" scale="45" align="center"/>
+                            <imagedata fileref="../../../book/src/docbkx/images/PAT Step 7C_TestingScript.svg" scale="45" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -1401,7 +1720,7 @@
                     <title>Copy Token</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/PAT Step 8_TestingScript.svg" scale="45" align="center"/>
+                            <imagedata fileref="../../../book/src/docbkx/images/PAT Step 8_TestingScript.svg" scale="45" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -1414,13 +1733,13 @@
                 pull or sync change sets from Komet to GitHub</para>
             <orderedlist>
                 <listitem>
-                    <para>Select the your user icon in the top left corner and navigate to "Your
+                    <para>Select your user icon in the top left corner and navigate to "Your
                         repositories"</para>
                     <figure xml:id="YourRepositories">
                         <title>Your Repositories</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/Repo Step1_TestingScript.svg" scale="45" align="center"/>
+                                <imagedata fileref="../../../book/src/docbkx/images/Repo Step1_TestingScript.svg" scale="45" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -1431,13 +1750,13 @@
                         <title>New Repository</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/Repo Step2_TestingScript.svg" scale="45" align="center"/>
+                                <imagedata fileref="../../../book/src/docbkx/images/Repo Step2_TestingScript.svg" scale="45" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
                 </listitem>
                 <listitem>
-                    <para>You will then need to name the repo (it is suggested to chose a name that
+                    <para>You will then need to name the repo (it is suggested to choose a name that
                         will help identify the work you are doing), choose if you would like it to
                         be a "Public or "Private" repo, and select "Add a README file" before
                         selecting "Create Repository"</para>
@@ -1445,7 +1764,7 @@
                         <title>Create a Repository</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/Repo Step3_TestingScript.svg" scale="45" align="center"/>
+                                <imagedata fileref="../../../book/src/docbkx/images/Repo Step3_TestingScript.svg" scale="45" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -1458,7 +1777,7 @@
                         <title>Repository Web Address</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/Repo Step4_TestingScript.svg" scale="45" align="center"/>
+                                <imagedata fileref="../../../book/src/docbkx/images/Repo Step4_TestingScript.svg" scale="45" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -1499,7 +1818,7 @@
                             <title>Git Sync Status</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata fileref="../../../../book/src/docbkx/images/Sync Step1_TestingScript.svg" scale="45" align="center"/>
+                                    <imagedata fileref="../../../book/src/docbkx/images/Sync Step1_TestingScript.svg" scale="45" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -1511,7 +1830,7 @@
                             <title>Git Sync Info</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata fileref="../../../../book/src/docbkx/images/GitSync Step2_TestingScript.svg" scale="45" align="center"/>
+                                    <imagedata fileref="../../../book/src/docbkx/images/GitSync Step2_TestingScript.svg" scale="45" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -1522,12 +1841,12 @@
                             Email is the personal email you used to create your GitHub account, Git
                             User Name is your personal GitHub username that you created, and Git
                             Password is the repository passkey that we saved in an earlier
-                            step.</para>
+                            step</para>
                         <figure xml:id="GitSyncInfoPreferences">
                             <title>Git Sync Info Preferences</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata fileref="../../../../book/src/docbkx/images/GitSync Step3A_TestingScript.svg" scale="45" align="center"/>
+                                    <imagedata fileref="../../../book/src/docbkx/images/GitSync Step3A_TestingScript.svg" scale="45" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -1539,7 +1858,7 @@
                             <title>Git Sync Info Connected</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata fileref="../../../../book/src/docbkx/images/GitSync Step3B_TestingScript.svg" scale="45" align="center"/>
+                                    <imagedata fileref="../../../book/src/docbkx/images/GitSync Step3B_TestingScript.svg" scale="45" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -1559,7 +1878,7 @@
                             <title>Git Sync Pull</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata fileref="../../../../book/src/docbkx/images/Pull Step2_TestingScript.svg" scale="45" align="center"/>
+                                    <imagedata fileref="../../../book/src/docbkx/images/Pull Step2_TestingScript.svg" scale="45" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -1571,7 +1890,7 @@
                             <title>Git Sync Pull Progress</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata fileref="../../../../book/src/docbkx/images/Pull Step2B_TestingScript.svg" scale="45" align="center"/>
+                                    <imagedata fileref="../../../book/src/docbkx/images/Pull Step2B_TestingScript.svg" scale="45" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -1585,14 +1904,14 @@
                         <para>To use Git Sync Sync, first open a new journal with the desired
                             database you would like to use to generate a change set. From the
                             landing page, select "Exchange" in the top left-hand side of the
-                            application window and select "Sync".</para>
-                        <para>Of note, you will need to complete the steps outlined in Git Sync Info
-                            first.</para>
+                            application window and select "Sync"</para>
+                        <para><emphasis role="bold">Note</emphasis>, you will need to complete the
+                            steps outlined in Gfit Sync Info first</para>
                         <figure xml:id="GitSyncSync">
                             <title>Git Sync Sync</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata fileref="../../../../book/src/docbkx/images/Sync Step2A_TestingScript.svg" scale="45" align="center"/>
+                                    <imagedata fileref="../../../book/src/docbkx/images/Sync Step2A_TestingScript.svg" scale="45" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -1603,7 +1922,7 @@
                             <title>Git Sync Progress</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata fileref="../../../../book/src/docbkx/images/Sync Step2B_TestingScript.svg" scale="45" align="center"/>
+                                    <imagedata fileref="../../../book/src/docbkx/images/Sync Step2B_TestingScript.svg" scale="45" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -1618,12 +1937,15 @@
             </section>
         </section>
     </section>
-    <section>
-        <title xml:id="RunningTheReasoner">Running the Reasoner</title>
+    <section xml:id="RunningTheReasoner">
+        <title>Running the Reasoner</title>
         <para>Users may want to run the pertinent reasoner to update the inferred relationships,
             based on the stated relationships, that the author enters for a concept, to update the
-            Hierarchical Relationship tab in the left-hand bar with manually entered LIDR result
-            names, to detect equivalences, and more.</para>
+            Hierarchical Relationship tab in the left-hand bar, to detect equivalences, and
+            more.</para>
+        <para><emphasis role="bold">Note</emphasis>: If you run into issues running the reasoner,
+            fully close out of Komet and re-open the application. This may include opening your task
+            manager and ending the application process</para>
         <orderedlist>
             <listitem>
                 <para>To run the reasoner, first open a new journal, or in an existing and open the Reasoner panel by selecting the Reasoner icon in the
@@ -1632,7 +1954,7 @@
                     <title>Reasoner</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/Reasoner.svg" scale="45" align="center"/>
+                            <imagedata fileref="../../../book/src/docbkx/images/Reasoner.svg" scale="25" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -1644,7 +1966,7 @@
                     <title>Run the Reasoner</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/Run%20Reasoner.svg" scale="45"
+                            <imagedata fileref="../../../book/src/docbkx/images/Run%20Reasoner.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -1659,7 +1981,7 @@
                     <title>Reasoner In Action</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/Reasoner%20In%20Action.svg" scale="45"
+                            <imagedata fileref="../../../book/src/docbkx/images/Reasoner%20In%20Action.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -1670,35 +1992,35 @@
                     Results include concept size, cycles, orphans, and equivalences. These
                     equivalences can then be expanded to see the specific equivalent
                     concepts.</para>
-                <figure xml:id="ReasonerResults">
+                <figure xml:id="PizzaReasonerResults">
                     <title>Reasoner Results</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/Reasoner%20Results.svg" scale="45"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Reasoner%20Results.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
             </listitem>
             <listitem>
-                <para>You can then compare the equivalent concepts by clicking on each concept,
-                    right clicking, and choosing "Compare Concepts"</para>
-                <figure xml:id="CompareResults">
+                <para>You can then compare the equivalent concepts by control+clicking on each
+                    concept, right clicking, and choosing "Compare Concepts"</para>
+                <figure xml:id="PizzaCompareResults">
                     <title>Compare Results</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/Compare%20Results.svg" scale="45"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Compare%20Results.svg" scale="45"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
                 <para>This will then open all of the concept windows to allow users to understand
-                    the similarities and differences of each concept</para>
-                <figure xml:id="UnderstandEquivalents">
+                    the similarities and differences of each concept and action, as needed</para>
+                <figure xml:id="PizzaUnderstandEquivalents">
                     <title>Understand Equivalents</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/Understand%20Equivalents.svg" scale="45"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Understand%20Equivalents.svg" scale="25"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
