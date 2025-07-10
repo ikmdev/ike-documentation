@@ -6,11 +6,11 @@
      <title>Framework Considerations for Knowledge Management (KM)</title>
     <sect1>
         <title>Framework Considerations Purpose</title>
-        <para>This document will serve to identify a framework of considerations for comparing KM
-            technologies. Incorporated within is analysis of the architecture and codebase for any
-            known scalability, licensing, and privacy needs, as well as how to manage these
-            non-functional requirements continuously as the product develops. In doing this, we will
-            make suggestions for software solutions to cover code maturity, automation, and
+        <para>This document will serve to identify a framework for comparing KM technologies.
+            Incorporated within is analysis of the architecture and codebase for any known
+            scalability, licensing, and privacy needs, as well as how to manage these non-functional
+            requirements continuously as the product develops. In doing this, we will make
+            suggestions for software solutions to cover code maturity, automation, and
             security.</para>
     </sect1>
     <sect1>
@@ -35,18 +35,18 @@
             relates to development of the Knowledge Management suite of tooling.</para>
         <sect2>
             <title>Stakeholder Interviews</title>
-            <para>Stakeholder interviewers were conducted on identified individuals that had either
-                prior experience with the existing KM code base (e.g., Komet, ISAAC, Tinkar-core) or
-                the Informatics Knowledge Architecture (e.g., a description-logic based integration
-                of <emphasis role="bold">S</emphasis>N<emphasis role="bold">O</emphasis>MED CT®,
-                    <emphasis role="bold">LO</emphasis>INC®, and <emphasis role="bold"
-                >R</emphasis>xNorm [Solor]). A basic semi-structured thematic analysis was performed
-                to identify qualitative themes from the interview.</para>
+            <para>Stakeholder interviewers were conducted with identified individuals that had
+                either prior experience with the existing KM code base (e.g., Komet, ISAAC,
+                Tinkar-core) or the Informatics Knowledge Architecture (e.g., a description-logic
+                based integration of <emphasis role="bold">S</emphasis>N<emphasis role="bold"
+                    >O</emphasis>MED CT®, <emphasis role="bold">LO</emphasis>INC®, and <emphasis
+                    role="bold">R</emphasis>xNorm [Solor]). A basic semi-structured thematic
+                analysis was performed to identify qualitative themes from the interview.</para>
         </sect2>
         <sect2>
             <title>Requirements, Architecture, and Documentation Review</title>
             <para>Analysis included reviewing the website documentation, READMEs, any ancillary
-                postscript/PowerPoint/etc. documentation that is available to determine how a
+                postscript/PowerPoint/etc. documentation that was available to determine how a
                 customer would approach using the software and how an open-sourced developer would
                 approach to contributing to the codebase.</para>
             <para>Analysis included reviewing any documentation that discussed what the project must
@@ -409,10 +409,10 @@
             <para><emphasis role="bold">Drawbacks of Immutability</emphasis></para>
             <itemizedlist>
                 <listitem>
-                    <para>Due to creating more objects, there was a copy cost and often a cleanup
-                        cost via garbage collection, which could impact the performance of a single
-                        Java virtual machine. It is generally suggested that the benefits provided
-                        by additional multithreading often outweigh the performance costs.</para>
+                    <para>Due to the creation of more objects, a copy and cleanup cost is generated
+                        via garbage collection, which could impact the performance of a single Java
+                        virtual machine. It is generally suggested that the benefits provided by
+                        additional multithreading often outweigh the performance costs.</para>
                 </listitem>
             </itemizedlist>
             <para><emphasis role="bold">Items that should be immutable: </emphasis></para>

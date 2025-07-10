@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Advanced Analytics Performance Monitoring Framework (Months 13-24)</title>
+    <section>
+        <title>Pupose</title>
+        <para>In an environment like the Systemic Harmonization and Interoperability Enhancement for
+            Laboratory Data (SHIELD) Integrated Knowledge Management (IKM), assuring the optimal
+            performance of the application and its code is paramount. The purpose of this paper is
+            to propose a framework for how to implement performance monitoring, drawing upon
+            insights from extensive research. Additionally, the paper will review the current state
+            implementation of performance monitoring and provide testing analyses for each component
+            tested. </para>
+    </section>
+    <section>
+        <title><anchor xml:id="Toc198826556"/>Introduction</title>
+        <para>Performance testing of the Knowledge Management Environment (Komet) application is
+            essential for ensuring the application meets user expectations and operates efficiently.
+            The primary goal is to assess responsiveness, ensuring the application responds quickly
+            to user inputs, which is crucial for maintaining user satisfaction. Additionally,
+            performance testing evaluates how well the application handles various load conditions,
+            identifying the maximum number of data operations it can manage without degradation.
+            This process helps pinpoint bottlenecks in areas such as data processing, User Interface
+            (UI) rendering, and network communications, allowing developers to optimize these
+            aspects for better performance. It also verifies the application's scalability, ensuring
+            it can efficiently handle increased data volume or user count over time. Monitoring
+            resource utilization, such as Central Processing Unit (CPU), memory, and network usage,
+            is another critical aspect, as efficient resource management ensures smooth operation
+            without exhausting system resources. Ultimately, performance testing aims to improve
+            user experience by providing a stable, reliable, and efficient application, which is
+            vital for maintaining trust and productivity among users managing data. This ensures
+            that the goals of the IKM project are being met and promotes a standard for the code.
+        </para>
+    </section>
+    <section>
+        <title><anchor xml:id="Toc198826557"/>Performance Monitoring Framework</title>
+        <para>In this section, we have defined a framework for performance monitoring based on
+            industry leading practices. We have defined this through a phased approach as
+            illustrated in Figure 1below, starting with assessment and planning, leading to
+            performance testing and data collection, analyzing the results for performance
+            improvement and then implementing continuous monitoring to identify and resolve
+            performance changes in the future.</para>
+        <figure xml:id="PerformanceMonitoringFrameworkDiagram">
+            <title>Performance Monitoring Framework Diagram</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/Performance%20Monitoring%20Framework%20Diagram.svg"
+                        scale="100" align="center"/> 
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <section>
+            <title><anchor xml:id="Toc198826558"/>Assessment and Planning</title>
+            <para>The Assessment and Planning phase is the initial stage in the performance
+                monitoring process. It sets the foundation for the entire performance optimization
+                effort for IKM.</para>
+            <section>
+                <title><anchor xml:id="Toc198826559"/>Define Key Performance Indicators</title>
+                <para>During this phase the goal is to define what "good performance" means for IKM.
+                    This could be based on user expectations, functional needs, or technical
+                    requirements. Key performance indicators (KPIs) such as response time and
+                    throughput are typically defined at this stage. For specific component of the
+                    application and code, different types of KPIs will be required to impactfully
+                    track for performance. </para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198826560"/>Identify Functional Test Cases</title>
+                <para>The next step as part of this phase is to identify the functional test cases
+                    that will be targeted in the performance testing. These could be the most
+                    frequently used features, the most resource-intensive operations, or areas where
+                    performance problems have been reported. By understanding the structure of the
+                    code, its dependencies, data flow, and how different components interact with
+                    each other, will help determine which tools should be used to for specific
+                    components or features.</para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198826561"/>Develop Performance Plan</title>
+                <para>Formalizing the performance monitoring framework requires developing a plan
+                    for how the tests of performance will be completed and when. This includes
+                    deciding what tools to use, what parts of the application to test, how to
+                    simulate different levels of load, and how to measure and record the results.
+                    Defining the test environment or scenarios in the test plan will ensure it
+                    closely mirrors the production scenario. This includes the hardware, software,
+                    network configuration, and data volume for example [1].</para>
+            </section>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc198826562"/>Data Collection and Testing</title>
+            <para>Once the assessment and planning phase is complete, the next phase in the
+                performance monitoring framework is Data Collection and Testing of the IKM
+                environment. This is a critical phase that ensures the efficiency, reliability, and
+                scalability of the project.</para>
+            <section>
+                <title><anchor xml:id="Toc198826563"/>Define Components for Testing</title>
+                <para>Defining the Application Programming Interfaces (APIs) and components or
+                    classes that need to be tested will allow the correct selection of testing
+                    tools. First, looking at overall performance and documenting the dependencies
+                    across modules, will help determine the testing tool. When implementing new
+                    functionality, specific test cases should be documented and defined to identify
+                    the correct testing tool and benchmarks to gather performance metrics
+                    [1].</para>
+                <para>Based on our research findings so far, in Table 1 we have identified the
+                    following critical components of the IKM environment to be evaluated and
+                    monitored for performance:</para>
+                <table>
+                    <title>Components for Performance Monitoring</title>
+                    <tgroup cols="2">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <tbody>
+                            <row>
+                                <entry><anchor xml:id="Toc167278119"/><emphasis role="bold"
+                                        >Component</emphasis></entry>
+                                <entry><emphasis role="bold">Description</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry>Komet UI</entry>
+                                <entry>User interface where datastores are imported and users can
+                                    run reasoner, view concepts and patterns, and make edits to
+                                    data.</entry>
+                            </row>
+                            <row>
+                                <entry>Evrete Rules Engine</entry>
+                                <entry>Evrete uses a rules-based system approaches to interrogate
+                                    the complex state of a concepts, patterns, or semantic values
+                                    based on user preferences and Komet application state to provide
+                                    a mechanism to render appropriate UI controls to the
+                                    user.</entry>
+                            </row>
+                            <row>
+                                <entry>Lucene Search Engine</entry>
+                                <entry>Search engine accessible in Komet UI built of an opensource
+                                    Java library, which has features like scoring.</entry>
+                            </row>
+                            <row>
+                                <entry>Tinkarizer Libraries</entry>
+                                <entry>Java libraries that store the classes and modules for
+                                    completing the data transformations and support the Terminology
+                                    Knowledge Architecture (Tinkar) Core functionality.</entry>
+                            </row>
+                            <row>
+                                <entry>Description Logic Reasoner</entry>
+                                <entry>Determines the equivalence or uniqueness of concepts by
+                                    making inferences from description logic.</entry>
+                            </row>
+                            <row>
+                                <entry>Data Store Query Mechanism</entry>
+                                <entry>Includes the View, Status, Time, Author, Module, Path (STAMP)
+                                    and Language calculators which allow querying of an imported
+                                    datastore into the application</entry>
+                            </row>
+                            <row>
+                                <entry>Export Capabilities</entry>
+                                <entry>Komet supports several export capabilities including to
+                                    Protobuf and the Fast Healthcare Interoperability Resources
+                                        (FHIR<superscript>®</superscript>) format.</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198826564"/>Determine Appropriate Testing Tools</title>
+                <para>Once the functionality or component to be tested has been determined, there
+                    are tools that can be leveraged to complete the testing. Tools such as Java
+                    Microbenchmark Harness (JMH) can be implemented to benchmark on Java projects or
+                    code and helps developers write, run, and analyze performance tests in Java and
+                    other Java Virtual Machine (JVM) languages. It can handle the complexities of
+                    the java code and in small snippets support performance monitoring like
+                    measuring average time, throughput, and sample time [2]. </para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198826565"/>Establish Performance Baselines</title>
+                <para>Once the performance objectives are defined, baselines should be established.
+                    This involves measuring the current performance of the application under various
+                    conditions to provide a point of comparison for future tests. This is where the
+                    technology or code implemented to determine performance is key to accurately
+                    capture initial or expected performance and then feed into the architecture of
+                    the performance monitoring framework [1]. </para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198826566"/>IKM Sample Testing Scenarios</title>
+                <para>Due to the nuances of the technology in the IKM application, there are testing
+                    scenarios that can be explored in order capture performance metrics. JMH for
+                    example could be used to test many of the features of the IKM project code. For
+                    instance, search performance could be tested by identifying the search APIs and
+                    creating test cases that run them and create benchmarks to inform performance.
+                    For the query or datastore, test cases can be written on specific queries and
+                    determine their performance, which if integrated into another external
+                    framework, can produce the benchmarks and performance in a log at testing.
+                </para>
+            </section>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc198826567"/>Performance Improvement Analysis</title>
+            <para>The Performance Improvement Analysis phase in the performance monitoring framework
+                involves a process that involves the systematic examination of performance data to
+                identify inefficiencies and areas for optimization. The analysis is key in
+                documenting the discrepancies, creating a plan of action for resolution, and
+                implementing solutions that improve the performance of the application.</para>
+            <section>
+                <title><anchor xml:id="Toc198826568"/>Conducting Analysis</title>
+                <para>When new code is being tested or overall performance testing is conducted, the
+                    data is collected from the implemented testing tools for each testing scenario.
+                    If the goal is to improve performance, testing should be compared against KPIs,
+                    which align to the project performance goals. Comparison can also be done on the
+                    baselines to determine if the component is working as expected. From there, an
+                    analysis should be conducted to determine any performance bottlenecks or areas
+                    for improvement. A bottleneck could be method that is taking too long to
+                    complete based on the expected baseline. Then as part of the analysis,
+                    remediation steps will be determined and implemented [1]. </para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198826569"/>Address Performance Issues</title>
+                <para>Once the analysis is complete, the proposed changes for performance
+                    improvement should be implemented. By defining the clear benchmarks and test
+                    cases, developers can target the changes to improve performance. Actively
+                    improving the performance gives developers the insight for future releases on
+                    what types of improvements can be made when coding to optimize functionality.
+                </para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198826570"/>Testing and Validation</title>
+                <para>After the performance improvements have been implemented, the final step is to
+                    test and validate these improvements. This involves running the performance
+                    tests again and comparing the results with KPIs and baselines depending on the
+                    goals of the code being implemented. If the performance has improved, then the
+                    improvements can be rolled out. If not, then the process repeats.</para>
+            </section>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc198826571"/>Continuous Monitoring</title>
+            <para>By creating a schedule and committing to regular monitoring, potential issues that
+                can impact users will be detected early. </para>
+            <section>
+                <title><anchor xml:id="Toc198826572"/>Early Issue Detection</title>
+                <para>Having a proactive performance testing process, allows developers to detect
+                    anomalies early. By addressing them early, users are given a better experience
+                    with the application and developers can mitigate potential disruptions to
+                    ongoing development or access to the application. </para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198826573"/>DevOps Best Practices</title>
+                <para>DevOps best practices includes monitoring of applications and components of
+                    code. Adding performance monitoring into the Continuous Integration/Continuous
+                    Deployment (CI/CD) process is a crucial aspect of modern DevOps practices. This
+                    integration allows for the early detection of performance issues, ensuring that
+                    the deployed software meets the desired performance criteria. Performance tests
+                    should be included as part of the automated testing suite that is run when
+                    changes are integrated. These tests can be designed to measure various
+                    performance metrics, such as response times, load handling capabilities, and
+                    resource usage. In the deployment phase, performance metrics should be
+                    continuously monitored to ensure the system is functioning as expected. This
+                    includes monitoring the deployment process itself, as well as the performance of
+                    the application once it is deployed. Part of integrating performance monitoring
+                    into CI/CD involves setting up automated alerts for when performance metrics
+                    cross certain thresholds. These alerts can help teams quickly identify and
+                    respond to performance issues. In some cases, it may be appropriate to automate
+                    rollbacks to a previous version of the software if a serious performance
+                    regression is detected. Like monitoring code performance, it is important to
+                    regularly audit performance as part of the CI/CD process. As future development
+                    is designed, the data gathered during the monitoring can influence the decisions
+                    made, for example how code is structured or how resources are allocated.</para>
+            </section>
+        </section>
+    </section>
+    <section>
+        <title><anchor xml:id="Toc198826574"/>Current State Implementation</title>
+        <para>The following section will cover the approach of the current performance monitoring
+            using the defined framework and include the testing results and analysis across key
+            components such as application startup, database load, concept navigation, and search
+            functionalities.</para>
+        <para>To demonstrate how performance monitoring can be run on the Komet application, a
+            selection of impactful user-driven components of the system were selected to test. These
+            include the following:</para>
+        <itemizedlist>
+            <listitem>
+                <para>Application start-up</para>
+            </listitem>
+            <listitem>
+                <para>Application Database load</para>
+            </listitem>
+            <listitem>
+                <para>Using the Concept Navigator to view Concepts and Patterns</para>
+            </listitem>
+            <listitem>
+                <para>Creating new Concepts and Patterns</para>
+            </listitem>
+            <listitem>
+                <para>Using Search features</para>
+            </listitem>
+            <listitem>
+                <para>Executing the Reasoner</para>
+            </listitem>
+            <listitem>
+                <para>Import and Export of protobuf files</para>
+            </listitem>
+        </itemizedlist>
+        <para>As we evaluate each of these components, we will provide the results of the tests,
+            potential causes of discrepancies and an analysis based on the scale of entities. The
+            expectation is that, at this point, the user will be able to execute performance tests
+            on high-performant personal machines that can dedicate significant resources towards
+            processing, so this will only be analyzed if we see geometric growth in areas that were
+            not previously expected. Once a set of tests is created, a test will be designed and run
+            to gather metrics on scalability and impact to performance. Lastly, if there are any
+            additional notes or optimizations that can be made in the future, this paper will
+            address those in the testing results analysis.</para>
+        <section>
+            <title><anchor xml:id="Toc198826575"/>Komet Configuration</title>
+            <para>All testing of performance has been executed against the 1.50.0 version of Komet.
+                Komet will use the default data Entity Service configuration which leverages the
+                SpinedArray data provider only. Similarly, we will use the default configuration of
+                the Search Service, using Lucene as the search provider.</para>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc198826576"/>Performance Monitoring Tools</title>
+            <para>The analysis of CPU, memory impact, and overall Input/Output (I/O) performance
+                required a limited set of tools. Some of these tools are integrated within the
+                system, while others are accessible externally. This section will detail all the
+                tools utilized for executing performance assessments and collecting relevant
+                metrics.</para>
+            <section>
+                <title><anchor xml:id="Toc198826577"/>Logging</title>
+                <para>The system logs metrics to determine how long specific tasks can take. This
+                    can be used as a good starting point to determine how much time elapses before
+                    completing an action. For instance, metrics recorded on the Search Service
+                    initiate the Indexer through the following code:</para>
+                <para><code>Stopwatch stopwatch = new Stopwatch();</code></para>
+                <para>Then captures completion of opening in the following command.</para>
+                <para><code>LOG.info("Opened lucene index in: " +
+                        stopwatch.durationString());</code></para>
+                <para>These timings will be used throughout when beneficial to overarching time
+                    estimates.</para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198826578"/>Applied Layer</title>
+                <para>To help users determine the limitations of their current system, a simple test
+                    was developed as part of the application that can be applied that shows the
+                    current JVM performance. This does not work on all operating systems, but it
+                    works on the popular ones, including Windows 10/11, Mac Operating System Ten
+                    (OSX), and Ubuntu Linux. This can be done via the “View” drop-down menu or by
+                    pressing <emphasis role="bold">CTRL-R, </emphasis>as you can see below in Figure
+                    2.</para><figure xml:id="Drop-downMenutoaccessResourceUsage">
+                        <title>Drop-down Menu to access Resource Usage</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/Drop-down%20Menu%20to%20access%20Resource%20Usage.svg"
+                                    scale="100" align="center"/> 
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                <para>As shown in Figure 3, this will apply the overlay to display CPU and memory
+                    usage at any point while using Komet.</para><figure xml:id="AppliedLayoverinAction">
+                        <title>Applied Layover in Action</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/Applied%20Layover%20in%20Action.svg"
+                                    scale="50" align="center"/> 
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198826579"/>Java VisualVM</title>
+                <para>Java VisualVM is a simplified, yet robust profiling tool for Java
+                    applications. This is a free, open-source profiler. One interesting advantage of
+                    Java VisualVM is that we can extend it to develop new functionalities as
+                    plugins. We can then add these plugins to Java VisualVM’s built-in update
+                    center. This tool was bundled with the Java Development Kit (JDK) in previous
+                    releases but is now distributed as a standalone tool hosted on GitHub [3]. </para>
+                <para>Java VisualVM supports local and remote profiling, as well as thread, memory,
+                    and CPU profiling as seen in Figure 4. </para><figure xml:id="AnexampleofJavaVisualVMRunning">
+                        <title>An example of Java VisualVM Running</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/An%20example%20of%20Java%20VisualVM%20Running.svg"
+                                    scale="50" align="center"/> 
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198826580"/>IntelliJ Java Profiler</title>
+                <para>When looking at very specific functions in the application code, we use the
+                    Method sampler in the IntelliJ profiler, as shown in Figure 5. This allows us to
+                    determine how much time is spent on each method call in Java, giving us specific
+                    metrics regarding the amount of time it takes to execute a specific task
+                    [4].</para><figure xml:id="ExampleofRunningIntelliJProfiler">
+                        <title>Example of Running IntelliJ Profiler</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/Example%20of%20Running%20IntelliJ%20Profiler.svg"
+                                    scale="50" align="center"/> 
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+            </section>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc198826581"/>Methodology</title>
+            <para>Testing will be done on a 2019 Apple MacBook Pro with a M1-processor. Execution
+                parameters will match the JVM Maximum Heap Size (Xmx) parameter of 10 Gigabyte (GB),
+                as is suggested in the README. Based on previous integration testing, this will
+                suffice showcasing JVM performance but will likely be faster than corresponding
+                tests on Windows deployments, due to differences in I/O supported by MacOS (Apple
+                Unified File System (AUFS)) and Windows (New Technology File System (NTFS)) as well
+                as faster Random Access Memory (RAM) speeds in preconfigured computers. These
+                differences should not change the overarching results but will showcase that there
+                will be magnified differences in time measurements when run on less capable
+                machines.</para>
+            <para>We will primarily use VisualVM for resource statistics, leveraging the Resource
+                overlay only when necessary. We will choose to enable real-time profiling with
+                instant updates (typically every 2 seconds). If there are specific method
+                invocations that need to be observed, we will utilize the IntelliJ Java Profiler.
+                Running of the application will be done via the README instructions using the
+                current release using the <code>./mvnw -f application javafx:run
+                    -Pjlink-profile</code> command, which allows for ease of attaching profiling
+                connections.</para>
+            <para>As we know that data size often is one of the primary impacts to performance, we
+                will use the analysis to determine which data might impact the specific user
+                experience and try with different data sizes to determine what impact to performance
+                as the data sets scale. Both the cardinality of the data set and the overarching
+                performance measured will help us to create a performance model which will help to
+                forecast performance at larger dataset sizes.</para>
+            <para>Lastly, we will test overarching time, which can help to be a measure of
+                algorithmic complexity and disk I/O. This will not be conclusive but help to
+                identify parts of the application that impact user experience. If the user
+                experience needs to be improved, this will allow the product owners to prioritize
+                the optimizations.</para>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc198826582"/>Test Results</title>
+            <section>
+                <title><anchor xml:id="Toc198826583"/>Application start-up</title>
+                <para><emphasis role="bold">Description: </emphasis>The first thing we will be
+                    testing is that start-up of the Komet application and how resource intensive it
+                    is within the JVM and if there are any factors that could impact the application
+                    start-up.</para>
+                <para><emphasis role="bold">Analysis: </emphasis>The KometApplication Startup is
+                    generally fixed and is not data dependent. Based on the analysis you can see in
+                    Table 2, the only difference to startup on two different computers would be
+                    reading the number of files and names of the Solor data directories. Based on
+                    this, we tested with a variety of possible files ready to load. These files are
+                    generally copies of several existing database exports, so the assumption is that
+                    the content in each one will not impact the overarching performance.</para>
+                <table>
+                    <title>Test Results of Solor Directory Loading</title>
+                    <tgroup cols="3">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <colspec colnum="3" colname="col3"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Description</emphasis></entry>
+                                <entry><emphasis role="bold">Time to Startup</emphasis></entry>
+                                <entry><emphasis role="bold">Amount of Used Initial Heap Memory
+                                        Used</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry>No known databases</entry>
+                                <entry>Immediate</entry>
+                                <entry>37 MB</entry>
+                            </row>
+                            <row>
+                                <entry>1 database file</entry>
+                                <entry>Immediate</entry>
+                                <entry>37 MB</entry>
+                            </row>
+                            <row>
+                                <entry>60 database files</entry>
+                                <entry>Extremely quickly</entry>
+                                <entry>40 MB</entry>
+                            </row>
+                            <row>
+                                <entry>100 database files</entry>
+                                <entry>Extremely quickly</entry>
+                                <entry>41 MB</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <para><emphasis role="bold">Results:</emphasis> Based on the performance testing,
+                    this indicates that there is no significant performance difference when more
+                    database files are available for loading into Komet. The hard drive is likely to
+                    be depleted well before there is any impact to the memory when loading in
+                    prospective databases.</para>
+                <para><emphasis role="bold">Additional Notes: </emphasis>Based on simple running
+                    with no interactions, the Komet application seems to be leaking memory in some
+                    way, at least in the early startup phases. Since this did not directly impact
+                    the user experience, this was not investigated further. It seems to be very
+                    minor and will likely not affect users if enough initial memory is allocated,
+                    but it should be something that they keep an eye on to find and fix or determine
+                    that it is expected based on startup processes.</para>
+                <para>As you can see in Figure 6, following the jigsaw pattern, it looks like the
+                    heap memory footprint used continues to increase after each garbage collection
+                    call. As each garbage collection call only happens every few minutes, it would
+                    not likely become noticeable for 48 hours of continuous running or when combined
+                    with loading larger datasets. As mentioned, this may be nothing, but it may be a
+                    good idea to investigate the growth if it is not already understood.</para>
+                <figure xml:id="MemoryAnalysisatApplicationRest">
+                    <title>Memory Analysis at Application Rest</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/Memory%20Analysis%20at%20Application%20Rest.svg"
+                                scale="80" align="center"/> 
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </section>
+            <section>
+                <title>Application Database Load</title>
+                <para><emphasis role="bold">Description:</emphasis> One of the first things a user
+                    does in the application, and one that takes a bit of time, is the data load.
+                    This pulls all data out of an exported Tinkar protobuf file and makes it
+                    available for the application to use in-memory in the Entity Service, which
+                    drives the UI interactions with the data model. The goal of analyzing the
+                    database loading process is to determine what the cost is to load a database and
+                    what the expected resource impact would be at different sizes.</para>
+                <para><emphasis role="bold">Analysis: </emphasis>Loading of a new Database file is
+                    entirely dependent on the size of the database, as each Concept, Semantic,
+                    Pattern, and STAMP - as well as associated fields, axioms, and chronologies.
+                    Analysis of the code which you can see in Table 3, details that this must be
+                    done via a full loop over the data, which has an operational complexity matching
+                    the size of the data. For example, if export file A has 100 records, and export
+                    file B has 1000 records, it will take approximately 10x longer to load export
+                    file B. This is not uncommon in database loading, as other NoSQL stores such as
+                    PostgreSQL or MongoDB will also have a similar complexity to loading data. To
+                    validate the expected complexity, we will test a database load with multiple
+                    database sizes (entities and kilobytes).</para>
+                <para><emphasis role="bold">Results:</emphasis> To test this out, we created a
+                    loader that would import multiple copies of the Systematized Nomenclature of
+                    Medicine Clinical Terminology (SNOMED<superscript>®</superscript> CT) import
+                    file entities, adjusting the names and unique identifiers as it imported them.
+                    Then we will test the exports with the new entities.</para>
+                <table>
+                    <title>Time to process different sized protobuf files</title>
+                    <tgroup cols="4">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <colspec colnum="3" colname="col3"/>
+                        <colspec colnum="4" colname="col4"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Description</emphasis></entry>
+                                <entry><emphasis role="bold">File Size</emphasis></entry>
+                                <entry><emphasis role="bold">Number of Entities</emphasis></entry>
+                                <entry><emphasis role="bold">Time to Process </emphasis><emphasis
+                                        role="bold"><emphasis role="bold">(in
+                                        seconds)</emphasis></emphasis></entry>
+                            </row>
+                            <row>
+                                <entry>Small Database (DB) from File</entry>
+                                <entry>205 KB</entry>
+                                <entry>10</entry>
+                                <entry>3</entry>
+                            </row>
+                            <row>
+                                <entry>Medium DB from File</entry>
+                                <entry>102.5MB</entry>
+                                <entry>3377</entry>
+                                <entry>3</entry>
+                            </row>
+                            <row>
+                                <entry>Large DB from File</entry>
+                                <entry>402.6 MB</entry>
+                                <entry>5,796,300</entry>
+                                <entry>3</entry>
+                            </row>
+                            <row>
+                                <entry>XL DB from File</entry>
+                                <entry>1.6 GB</entry>
+                                <entry>12,200,000</entry>
+                                <entry>3</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <para>This was tested with several different data files with mixed content. Testing
+                    shows that results seem to remain consistent with the O(n) complexity, so long
+                    as there are no impacting resource constraints on the JVM. The lazy loading of
+                    components also seems to mean that this remains as O(1) time, instead of the
+                    expected O(n) complexity, so in general, this is very quick and should not
+                    impact user experience.</para>
+                <para><emphasis role="bold">Additional Notes:</emphasis> There are minor
+                    optimizations that can happen in future iterations when doing bulk loading that
+                    are not currently optimized. For example, there are notifications that are sent
+                    out for every entity that is loaded, but the system should really wait for the
+                    loading to complete to execute all notifications at once. This is an
+                    optimization, and not required for Minimum Viable Product (MVP), however. This
+                    is something that can be prioritized as necessary for functionality or to reduce
+                    impact to users.</para>
+                <para>Similarly, depending on query patterns, it is entirely possible that
+                    additional indexing may be necessary to improve query performance in future
+                    models and data stores, which will add time to loading procedures, as additional
+                    data needs to be recorded whenever ingesting new data entities.</para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198826585"/>Import/Export of Protobuf Files</title>
+                <para><emphasis role="bold">Description: </emphasis>Correlating to the import/export
+                    of a protobuf file, we need to understand if there is a different cost to
+                    marshaling and serializing the data back to the disk.</para>
+                <para><emphasis role="bold">Analysis:</emphasis> The code in
+                        <code>ExportEntitiesToProtobufFile</code>, which calls the
+                        <code>TemporalEntityAggregator</code>, will loop through all Native
+                    Identifiers (NIDs) found in the Entity Service which are in the following entity
+                    types - STAMPS, Concepts, Semantics, and Patterns. Using these NIDs, it will
+                    export the data in that section in order that NIDs are retrieved. From an
+                    algorithmic complexity, this is O(n), like that of the data load. By testing
+                    with different sized entity exports, we will verify that scalability
+                    factor.</para>
+                <para><emphasis role="bold">Results:</emphasis> To test this out, we created a
+                    loader that would import multiple copies of the
+                        SNOMED<superscript>®</superscript> CT import file entities, adjusting the
+                    names and unique identifiers as it imported them. Then we will test the exports
+                    with the new entities. As you can see in Table 4 and Figure 7, results were
+                    consistent with relatively linear growth, so long as resources were available.
+                    In general, exports were able to be one quickly.</para>
+                <table>
+                    <title>Test Results of Time of Importing Protobuf Files</title>
+                    <tgroup cols="4">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <colspec colnum="3" colname="col3"/>
+                        <colspec colnum="4" colname="col4"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Description</emphasis></entry>
+                                <entry><emphasis role="bold">Number of Entities</emphasis></entry>
+                                <entry><emphasis role="bold">Time to Import </emphasis><emphasis
+                                        role="bold"><emphasis role="bold">(in
+                                        seconds)</emphasis></emphasis></entry>
+                                <entry><emphasis role="bold">Time to Export </emphasis><emphasis
+                                        role="bold"><emphasis role="bold">(in
+                                        seconds)</emphasis></emphasis></entry>
+                            </row>
+                            <row>
+                                <entry>Small File</entry>
+                                <entry>1,180</entry>
+                                <entry>0.335</entry>
+                                <entry>0.335</entry>
+                            </row>
+                            <row>
+                                <entry>Medium File</entry>
+                                <entry>1,215,822</entry>
+                                <entry>135</entry>
+                                <entry>75</entry>
+                            </row>
+                            <row>
+                                <entry>Large File</entry>
+                                <entry>5,796,300</entry>
+                                <entry>196</entry>
+                                <entry>352</entry>
+                            </row>
+                            <row>
+                                <entry>XL File</entry>
+                                <entry>12,200,000</entry>
+                                <entry>290</entry>
+                                <entry>1828</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <figure xml:id="TimetoExportDifferentProtobuffiles">
+                    <title>Time to Export Different Protobuf files</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/Time%20to%20Export%20Different%20Protobuf%20files.svg"
+                                scale="80" align="center"/> 
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <para><emphasis role="bold">Additional Notes:</emphasis> Though the team wanted to
+                    test larger values, it quickly became time-consuming to do larger entity
+                    exports, with large databases (> 10GB) taking many hours. Improvements may need
+                    to be made to imports if databases of that size are expected.</para>
+                <para>Also, the performance of exports was not always consistent - there seemed to
+                    occasionally be race conditions and exports would fail. It was unclear as to
+                    what caused this condition, but it would also occasionally cause issues shutting
+                    down the threads managing the <code>ChangeSetWriterProvider</code> and the
+                        <code>SpinedArrayProvider</code>. This result may be due to specific data
+                    generated in the databases. This may impact the overall measurements of this
+                    testing slightly. It is assumed that, for these testing scenarios - if no error
+                    was encountered, that the time to export was working efficiently.</para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198826586"/>Using the Concept Navigator to View Concepts
+                    and Patterns</title>
+                <para><emphasis role="bold">Description: </emphasis>One of the most common
+                    activities that a user will perform is viewing Concepts and Patterns. We want to
+                    determine exactly how this might perform and if anything might impact the users’
+                    experience as we scale the system.</para>
+                <para><emphasis role="bold">Analysis: </emphasis>Based on the code in
+                        <code>KLConceptNavigatorControl,</code> loading the concept navigator will
+                    loop through all top-level entities in the database into memory. It will then
+                    lazily load additional child concepts into memory as the user navigates to lower
+                    concepts. This will likely be very performant until all memory is consumed. The
+                    best way to test the impact of data is to determine the amount of memory that
+                    will be used by expanding large amounts of Concepts and loading them into
+                    memory.</para>
+                <para><emphasis role="bold">Results: </emphasis>To test the analysis, we created two
+                    databases, one small and one large, and tested expansions and how it impacted
+                    the lazy loading and resources. In the table below, “few expansions” refers to
+                    analyzing &lt; 10 expansions, and “large expansions” refers to 100 expansions of
+                    concepts.</para>
+                <para>Results of the expansions showed minimal increment of memory and minimal
+                    impact to CPU. Based on Java object expansion, the concepts and patterns pulled
+                    into memory for the navigator would require an extremely large database (>
+                    50GB). We did notice that objects were kept in memory once loaded, however. A
+                    suggested improvement may be to unload/destroy entities in memory once they are
+                    no longer applicable.</para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198826587"/>Creating new Concepts and Patterns</title>
+                <para><emphasis role="bold">Description: </emphasis>Like viewing via the Concept
+                    navigator, creating and editing the Concepts and Patterns is a very common
+                    activity that a user will perform in Komet. We want to determine exactly how
+                    this might perform and if anything might impact the user’s experience as we
+                    scale the system.</para>
+                <para><emphasis role="bold">Analysis: </emphasis>As entities are indexed primarily
+                    by Universally Unique Identifier (UUID), this allows for O(1) insertion time.
+                    The expectation is that this will be a minimal load on the system at any time.
+                    To test this, we will test multiple creations and determine what the impact on
+                    the resources are.</para>
+                <para><emphasis role="bold">Results: </emphasis>To validate the analysis and test
+                    the assumptions, we have created simple performance tests to create concepts and
+                    patterns with datasets of different cardinalities, as shown in Table 5. We used
+                    profiling on the specific functions that did inserts into the Entity Service to
+                    determine if there were any issues with the time to execute.</para>
+                <table>
+                    <title>Time to Insert Concepts</title>
+                    <tgroup cols="2">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Description</emphasis></entry>
+                                <entry><emphasis role="bold">Time to Execute</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry>Insert single Concept with small data set</entry>
+                                <entry>Instantly</entry>
+                            </row>
+                            <row>
+                                <entry>Insert additional Concept with small data set</entry>
+                                <entry>Instantly</entry>
+                            </row>
+                            <row>
+                                <entry>Insert single Concept with large data set</entry>
+                                <entry>Instantly</entry>
+                            </row>
+                            <row>
+                                <entry>Insert additional Concept with large data set</entry>
+                                <entry>Instantly</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <para>Creating new Concepts and Patterns is a minimal impact to the system,
+                    regardless of data size. Testing with different data sizes showed no difference
+                    in insert times.</para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198826588"/>Using Search to Find Concepts</title>
+                <para><emphasis role="bold">Description: </emphasis>Searching to find concepts is a
+                    feature that helps to navigate the system faster than the Navigator pane. The
+                    goal of this is to allow faster lookup and search, as well as type-ahead
+                    completion. As this is important for speeding up the user’s ability to find and
+                    change entities in the system, it is important that this remains faster than the
+                    more manual Navigator exploring.</para>
+                <para><emphasis role="bold">Analysis:</emphasis> The search technology is based on
+                    Lucene indexing, which is a tokenization that takes language and stores the
+                    tokens in a separate in-memory indexing database. As this data is stored and
+                    queried in a very different way than the Entity Service, it comes with different
+                    limitations. To test the loading of this, we will ingest different data sizes
+                    and inspect the resource usage of the Search Service as well as the timings of
+                    queries at different cardinalities of data sets.</para>
+                <para><emphasis role="bold">Results:</emphasis></para>
+                <para>As you can see in Figure 8 and Table 6, as the number of
+                        entities in the database is increased, the longer the time to search and
+                        larger amount of memory is used respectively. </para><figure xml:id="TestResultsofTimetoSearch">
+                            <title>Test Results of Time to Search</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="../images/Test%20Results%20of%20Time%20to%20Search.svg"
+                                        scale="50" align="center"/> 
+                                </imageobject>
+                            </mediaobject>
+                        </figure>
+                <table>
+                    <title>Results of Time to Search</title>
+                    <tgroup cols="3">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <colspec colnum="3" colname="col3"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Number of Entities</emphasis></entry>
+                                <entry><emphasis role="bold">Time to Search</emphasis><emphasis
+                                        role="bold"><emphasis role="bold">(in
+                                            milliseconds)</emphasis></emphasis></entry>
+                                <entry><emphasis role="bold">Memory Usage</emphasis><emphasis
+                                        role="bold"><emphasis role="bold">(in
+                                        GB)</emphasis></emphasis></entry>
+                            </row>
+                            <row>
+                                <entry>1180</entry>
+                                <entry>1</entry>
+                                <entry>1.4</entry>
+                            </row>
+                            <row>
+                                <entry>1,215,822</entry>
+                                <entry>61</entry>
+                                <entry>1.96</entry>
+                            </row>
+                            <row>
+                                <entry>5,796,300</entry>
+                                <entry>121</entry>
+                                <entry>2.15</entry>
+                            </row>
+                            <row>
+                                <entry>12,200,000</entry>
+                                <entry>312</entry>
+                                <entry>7</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198826589"/>Executing the Reasoner</title>
+                <para><emphasis role="bold">Description: </emphasis>The reasoner is one of the most
+                    powerful things in Komet, finding patterns and axioms against define entities
+                    that would help to better use them with other, previously defined Concepts and
+                    Patterns. The Reasoner needs to examine a large amount of data to determine if
+                    it matches expected relationships and so is very computationally intensive. This
+                    process currently runs in the background and should not impact user experience;
+                    however, it is still a good idea to keep tabs on how long some of these reasoner
+                    executions take to run to determine the scalability factor of the system.</para>
+                <para><emphasis role="bold">Analysis:</emphasis> The reasoner is complex on how it
+                    does pattern matching against the queries that it will run. It is foreseen that
+                    this could cause a delay in the amount of time it takes the Reasoner to
+                    complete. </para>
+                <para><emphasis role="bold">Results:</emphasis></para>
+                <para>As shown in Table 7 and Figure 9, when the number of
+                        entities in a database increases, the longer the Full Reasoner takes to
+                        complete. </para>
+                <table>
+                    <title>Number of Entities and Time to Run Reasoner</title>
+                    <tgroup cols="2">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Number of Entities</emphasis></entry>
+                                <entry><emphasis role="bold">Time to Run Full
+                                        Reasoner</emphasis><emphasis role="bold"><emphasis
+                                            role="bold">(in seconds)</emphasis></emphasis></entry>
+                            </row>
+                            <row>
+                                <entry>1,180</entry>
+                                <entry>4</entry>
+                            </row>
+                            <row>
+                                <entry>1,215,822</entry>
+                                <entry>52</entry>
+                            </row>
+                            <row>
+                                <entry>5,796,300</entry>
+                                <entry>212</entry>
+                            </row>
+                            <row>
+                                <entry>12,200,000</entry>
+                                <entry>489</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table><figure xml:id="TestResultsofTimetoRunFullReasoner">
+                    <title>Test Results of Time to Run Full Reasoner</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/Test%20Results%20of%20Time%20to%20Run%20Full%20Reasoner.svg"
+                                scale="50" align="center"/> 
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <para>In general, the reasoner is taking more time as entities increase, which is as
+                    expected. As we see this scaling, the time and memory was increasing more than
+                    expected though, so it’s very likely that the reasoner is going to be the most
+                    performance impacting performance as we attempt to scale the data.</para>
+            </section>
+        </section>
+    </section>
+    <section>
+        <title>Conclusions and Next Steps</title>
+        <para>The performance monitoring framework is a comprehensive approach designed to ensure
+            the Komet application meets its performance objectives efficiently and reliably. By
+            implementing a phased approach to performance monitoring, the framework effectively
+            identifies and addresses potential bottlenecks, ensuring the application remains
+            responsive and scalable. </para>
+        <para>Overall, the Komet application, through this performance monitoring framework, is
+            well-positioned to deliver a stable, reliable, and efficient user experience. By
+            continuously refining and optimizing the performance monitoring processes, the IKM
+            project can maintain its commitment to high standards of code quality and user
+            satisfaction, ultimately ensuring the successful adoption and utilization of the
+            application.</para>
+        <para>As next steps, we plan to continue to make improvements in the following areas:</para>
+        <orderedlist>
+            <listitem><para><emphasis role="bold">Test on Larger Datasets:</emphasis> The current tests were completed on
+                    smaller databases and with few edits. Using larger databases and editing and
+                    creating many changes will help stress test and gauge performance with different
+                    usage. </para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Next Gen Komet Features: </emphasis>
+                As new features, such as Lucene searching, are implemented into the Next Gen
+                    Komet application, performance testing on the initial implementation in Classic
+                    Komet should be completed to establish baseline performance metrics and inform
+                    potential code optimization in NextGen. </para></listitem>
+            <listitem>
+                <para><emphasis role="bold">Incremental and Hybrid Reasoner: </emphasis>
+                The current release of Komet does not include these features and should be
+                    included in future testing, while additionally increasing size of the databases
+                    used. </para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Git Sync: </emphasis>
+                The new sync, pull, and push features to GitHub should be tested with various
+                    sizes of changesets and with multiple users to identify any performance issues.
+                </para>
+            </listitem>
+        </orderedlist>
+    </section>
+    <section>
+        <title><anchor xml:id="Toc198826591"/>References</title>
+        <orderedlist>
+            <listitem>
+                <para>va performance monitoring [Internet]. [cited 2024 May 22]. Available from:
+                        <link
+                        xlink:href="https://www.ibm.com/docs/en/aix/7.1?topic=management-java-performance-monitoring"
+                        >https://www.ibm.com/docs/en/aix/7.1?topic=management-java-performance-monitoring</link></para>
+            </listitem>
+            <listitem>
+                <para>Introduction to Java Microbenchmarking with JMH (Java Microbenchmark Harness)
+                    [Internet]. [cited 2024 May 22]. Available from: <link
+                        xlink:href="https://medium.com/@AlexanderObregon/introduction-to-java-microbenchmarking-with-jmh-java-microbenchmark-harness-55af74b2fd38#:~:text=Java%20Microbenchmark%20Harness%20(JMH)%2C,accurate%20and%20reliable%20benchmarking%20results"
+                        >https://medium.com/@AlexanderObregon/introduction-to-java-microbenchmarking-with-jmh-java-microbenchmark-harness-55af74b2fd38#:~:text=Java%20Microbenchmark%20Harness%20(JMH)%2C,accurate%20and%20reliable%20benchmarking%20results</link></para>
+            </listitem>
+            <listitem>
+                <para>VisualVA Download [Internet]. [cited 2025 May 02]. Available from: <link
+                        xlink:href="https://visualvm.github.io/download.html"
+                        >https://visualvm.github.io/download.html</link></para>
+            </listitem>
+            <listitem>
+                <para>Profile Java applications with ease [Internet]. [cited 2024 May 02]. Available
+                    from: <link xlink:href="https://www.jetbrains.com/pages/intellij-idea-profiler/"
+                        >https://www.jetbrains.com/pages/intellij-idea-profiler/#</link></para>
+            </listitem>
+        </orderedlist>
+    </section>
+</chapter>
