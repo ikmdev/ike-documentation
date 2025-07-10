@@ -4,9 +4,13 @@
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <info>
-        <title>Integrated Knowledge Management (IKM) Volume 8</title>
-        <subtitle>Version 4 - Last Updated 06/16/2025</subtitle>
+        <title>Komet Authoring Information</title>
+        <subtitle>Last Updated 06/12/2025</subtitle>
     </info>
+    <part>
+        <title>Getting Started Guide</title>
+        <xi:include href="Getting%20Started%20Guide%20Test.xml"/>
+    </part>
     <part>
         <title>Komet User Guide</title>
         <xi:include href="../../../volume8-Komet-User-Guide/chapter1-komet-user-guides/src/docbkx/Komet-User-Guide.xml"/>
