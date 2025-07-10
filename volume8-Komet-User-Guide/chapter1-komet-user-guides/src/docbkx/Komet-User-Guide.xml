@@ -89,7 +89,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata fileref="../../../../book/src/docbkx/images/Komet%20Mac%20Installer%20File.svg"
-                                    scale="10" align="center"/>
+                                    scale="20" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -139,7 +139,7 @@
                         <title>Open SpinedArrayStore</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/Open%20SpinedArrayStore.svg" scale="10"
+                                <imagedata fileref="../../../../book/src/docbkx/images/Open%20SpinedArrayStore.svg" scale="60"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
