@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>LOINC® and SNOMED CT® Licensing Information</title>
+    <section>
+        <title>LOINC® License</title>
+        <para>The LOINC® database can be obtained from the Regenstrief LOINC®
+            website (<link xlink:href="http://www.regenstrief.org/loinc/"
+                >http://www.regenstrief.org/LOINC®/</link>), as a PDF report
+            sorted alphabetically by class, as a tab-delimited ASCII text file,
+            and/or as an Access database. The LOINC® database and associated
+            documents and programs are copyrighted, but the copyright permits
+            all commercial and noncommercial uses in perpetuity at no cost. If
+            the LOINC® database or its contents are distributed as a database,
+            such distributions must include all parts of the formal LOINC® term,
+            the LOINC® short name, the LOINC® code, the deprecated flag, and the
+            copyright. The copyright notice is needed to prevent variants, which
+            would defeat the purpose of this standard. No such notice is
+            required when LOINC® codes are used in messages to report test
+            results.</para>
+    </section>
+    <section>
+        <title>SNOMED CT® License</title>
+        <para>Use of SNOMED CT® is subject to the SNOMED International Affiliate
+            license provisions and is free in Member territories including the
+            United States, in low income countries, and for Qualifying Research
+            Projects in any country. To learn more, please see the SNOMED CT®
+            and Licensing page. Users should carefully read the license
+            agreement before re-distributing any content in any type of
+            application as there may be additional restrictions, permissions or
+            copyright considerations imposed by the content providers. Users
+            must contact the vocabulary content providers regarding any use that
+            is not covered by the license. The content providers may charge fees
+            for these additional uses of their content. Appendix 1 of the
+            license agreement lists contact information for each content
+            provider. The SNOMED CT® Affiliate License Agreement is included as
+            Appendix 2 of the UMLS Metathesaurus License and outlines possible
+            costs. NLM is a member of SNOMED International and there is no
+            charge for SNOMED CT® use in the United States and other Member
+            territories. For information about fees in non-member countries, see
+            the SNOMED International website.</para>
+    </section>
+</chapter>
+
