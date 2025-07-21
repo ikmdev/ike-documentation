@@ -1,0 +1,1287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Summary of Findings – Testing and Validation Automation (Months 13-24)</title>
+    <section>
+        <title>Purpose</title>
+        <para>The purpose of this document is to provide a comprehensive summary of findings related
+            to the testing and validation automation within the Systemic Harmonization and
+            Interoperability Enhancement for Laboratory Data (SHIELD) Integrated Knowledge
+            Management (IKM) environment. This document outlines the benefits of test automation,
+            the types and components that are subject to test automation, a review of the preferred
+            test automation tools, and the overall test automation architecture. Test automation
+            plays a pivotal role in IKM, bolstering the precision, efficacy, and expedience of the
+            testing process. This, in turn, significantly elevates the quality of real-world health
+            data, making it a more reliable and valuable asset.</para>
+    </section>
+    <section>
+        <title><anchor xml:id="Toc198802947"/>Methodology</title>
+        <para>The SHIELD program aims to facilitate the exchange and management of high-quality
+            data. Test automation can greatly enhance the quality of data by providing extensive
+            coverage, early error detection, efficient regression testing, and systematic
+            validation, while reducing manual errors and saving time. IKM is a complex system with
+            many components and data sources which manual testing cannot evaluate comprehensively.
+            The following methodology describes our approach to evaluating different types of
+            testing, software components to be tested and how we will evaluate how well test
+            automation was implemented within IKM.</para>
+        <section>
+            <title><anchor xml:id="Toc198802948"/>Evaluate Types of Testing</title>
+            <para>As a first step in researching test automation, it was essential to understand the
+                types of testing methodologies that are required to evaluate the different aspects
+                of IKM.</para>
+            <para>Below we discuss the characteristics of each type of testing:</para>
+            <itemizedlist>
+                <listitem>
+                    <para><emphasis role="bold">Integration</emphasis>: Testing that focuses on the
+                        interactions between different modules or services in a system. Automated
+                        integration tests verify that when these components are combined and work as
+                        expected. </para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Regression</emphasis>: Testing designed to ensure
+                        that new changes have not adversely affected existing functionality. Tests
+                        can be run after any change to quickly identify any unintended side
+                        effects.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Unit</emphasis>: Automated tests written to check
+                        the accuracy of a small piece of code, typically a function or method. They
+                        are the first line of defense in detecting bugs and ensuring that individual
+                        components work correctly. </para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Security</emphasis>: Testing that involves checking
+                        a system for vulnerabilities, such as susceptibility to attacks, by
+                        simulating various attack scenarios. It’s an essential part of a robust
+                        security strategy. </para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Performance</emphasis>: Testing used to determine
+                        how a system performs in terms of responsiveness and stability under a
+                        particular workload. Automated performance tests can simulate multiple users
+                        or high-traffic scenarios to test the system’s limits.</para>
+                </listitem>
+            </itemizedlist>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc198802949"/>Evaluate Testing Frameworks and Tools</title>
+            <para>After we understand what types of testing we would like to incorporate into our
+                processes, we must research and identify what types of testing frameworks and tools
+                we would need to successfully implement test automation.</para>
+            <para>We evaluated these tools based on a few primary requirements:</para>
+            <itemizedlist>
+                <listitem>
+                    <para><emphasis role="bold">Support for Java 23</emphasis>: The testing tool
+                        must be fully compatible with Java 23. This includes ensuring that the tool
+                        can run tests and integrate seamlessly with applications developed using
+                        Java 23. Compatibility with the latest Java features and Application
+                        Programming Interfaces (APIs) is essential for leveraging the full
+                        capabilities of the language.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Java Platform Module System (JPMS)
+                            Compatibility</emphasis>: The tool should support JPMS, which is crucial
+                        for modularizing Java applications. This includes the ability to handle
+                        module paths and dependencies correctly, ensuring that tests can be executed
+                        within a modularized environment.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Maven-Based</emphasis>: The testing tool should be
+                        based on Maven, a widely used build automation tool in Java projects. This
+                        ensures that the tool can be easily integrated into existing Maven projects,
+                        utilizing Maven’s dependency management and build lifecycle features to
+                        streamline the testing process.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Support for Both Unit and Integration
+                            Tests</emphasis>: The tool must support both unit and integration
+                        testing. Unit tests focus on individual components or functions, while
+                        integration tests evaluate the interactions between different components or
+                        systems. Having a tool that supports both types of testing is crucial for
+                        comprehensive test coverage and ensuring the reliability of the
+                        software.</para>
+                </listitem>
+            </itemizedlist>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc198802950"/>Evaluate Components for Test Automation</title>
+            <para>Next, we must identify the key components of IKM to evaluate the different
+                approaches for test automation and appropriate tooling. Ensuring the accuracy of
+                these key components is critical for customer satisfaction and the overall adoption
+                of the technology.</para>
+            <para>Our team identified the following key components that should be considered in the
+                test automation approach:</para>
+            <itemizedlist>
+                <listitem>
+                    <para>Knowledge Management Environment (Komet) User Interface (UI)</para>
+                </listitem>
+                <listitem>
+                    <para>Evrete Rules Engine</para>
+                </listitem>
+                <listitem>
+                    <para>Lucene Search Engine</para>
+                </listitem>
+                <listitem>
+                    <para>Tinkarizer libraries</para>
+                </listitem>
+                <listitem>
+                    <para>Description logic reasoner</para>
+                </listitem>
+                <listitem>
+                    <para>Data store query mechanisms (such as View, Status, Time, Author, Module,
+                        Path (STAMP) and Language Calculators)</para>
+                </listitem>
+                <listitem>
+                    <para>Export capabilities (such as Protobuf and Fast Healthcare Interoperability
+                        Resources (FHIR<superscript>®</superscript>))</para>
+                </listitem>
+            </itemizedlist>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc198802951"/>Evaluate Code Coverage</title>
+            <para>Finally, we must measure the comprehensiveness of our test automation solutions
+                and the degree to which our codebase is tested. Code coverage uses an assortment of
+                coverage criteria to measure the percentage of a project’s source code that is
+                executed during a given test. Coverage criteria examines various areas or metrics of
+                code execution, including functions, statements, lines of source code, branches,
+                sub-expressions, and more. While a high percentage of executed code is an important
+                aspect of code coverage, it is critical to evaluate what code is actually being
+                executed. If ninety percent of a project’s source code is executed during a test,
+                but the ten percent that does not run or is not used by the test contains critical
+                functionality, that could pose a challenge that needs to be addressed [1].</para>
+            <para>Due to the inherent complexity and iterative nature of IKM, code coverage will
+                require an automated code analysis tool that can provide comprehensive evaluation
+                through the development lifecycle. SonarCloud, a cloud-based service that provides
+                automated static code analysis, is a code review tool that our team will leverage
+                within Komet and IKM to provide insight into metrics like bugs, vulnerabilities, and
+                code coverage. An example of a SonarCloud summary is shown in Figure 1 below
+                [2].</para><figure xml:id="SonarCloudCodeCoverageSummary">
+                        <title>SonarCloud Code Coverage Summary</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/SonarCloud%20Code%20Coverage%20Summary.svg"
+                                    scale="70" align="center"/> 
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+            <para>SonarCloud uses language-specific analyzers and extensive rule sets to help
+                developers identify and address issues pertaining to maintainability, reliability,
+                and security. Beyond identifying coding errors and bugs, SonarCloud can concisely
+                convey, track, and resolve security issues or seamlessly integrate security features
+                with GitHub, as shown in Figure 2 and Figure 3. </para><figure xml:id="SonarCloudSecurityAlerts">
+                        <title>SonarCloud Security Alerts</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/SonarCloud%20Security%20Alerts.svg"
+                                    scale="30" align="center"/> 
+                            </imageobject>
+                        </mediaobject>
+                    </figure><figure xml:id="SonarCloudSecurityIntegrationwithGithub">
+                    <title>SonarCloud Security Integration with Github</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/SonarCloud%20Security%20Integration%20with%20Github.svg"
+                                scale="60" align="center"/> 
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            <para>Using static analysis of source code and security hotspots, portions of code that
+                are highlighted for developer review, security and code issues like code injections
+                are identified early in the development lifecycle and addressed before later stages
+                [3].</para>
+        </section>
+    </section>
+    <section>
+        <title>Findings</title>
+        <section>
+            <title><anchor xml:id="Toc198802953"/>Test Automation Approach</title>
+            <para>Based on the types of test automation researched and evaluated, it was determined
+                that a phased test automation approach would benefit IKM. This will allow us to
+                focus on the highest risk and most important components of IKM first and then later
+                revisit other components with the goal of complete code coverage. </para>
+            <section>
+                <title><anchor xml:id="Toc198802954"/>Integration Testing</title>
+                <para>As IKM allows users to author knowledge that medical systems and devices may
+                    rely on, it is critical that the transformation, storage, retrieval, and
+                    management of knowledge within the IKM system is accurate. Therefore, our test
+                    automation approach will focus on integration tests first to test these critical
+                    components of the environment against source data. We’ve identified the need for
+                    the following integration tests to cover the critical aspects of our
+                    system:</para>
+                <section>
+                    <title>Ingest and Transformation</title>
+                    <para>As a first step toward integrated knowledge, knowledge must first be
+                        transformed (or Tinkarized) into the Terminology Knowledge Architecture
+                        (Tinkar) model to be stored and viewed within the Komet interface. We will
+                        automate the testing of this for each knowledge representation through the
+                        following steps:</para>
+                    <orderedlist>
+                        <listitem>
+                            <para>Store a hardcopy of the data source files.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Run the source data through the transformation code.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Compare the resulting Tinkarized data against the source
+                                data.</para>
+                        </listitem>
+                    </orderedlist>
+                </section>
+                <section>
+                    <title>Storage and Retrieval</title>
+                    <para>After the data has been transformed, it will be saved to the datastore.
+                        Different calculator services have been developed to query and return the
+                        data from the datastore due to the graph data format. It is crucial to test
+                        that the data is being returned correctly. We will automate the testing of
+                        this for each knowledge representation through the following
+                        scenarios:</para>
+                    <section>
+                        <title>STAMP Calculator Test</title>
+                        <orderedlist>
+                            <listitem>
+                                <para>Identify scenarios where a concept or its relationships have
+                                    changed between two released versions.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Use the calculator to return and return the version of the
+                                    concept <emphasis role="italic">before</emphasis> the
+                                    change.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Compare the returned data to the expected result.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Use the calculator to return the version of the concept
+                                        <emphasis role="italic">after</emphasis> the change.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Compare the returned data to the expected result.</para>
+                            </listitem>
+                        </orderedlist>
+                    </section>
+                    <section>
+                        <title>Language Calculator Test</title>
+                        <orderedlist>
+                            <listitem>
+                                <para>Identify a concept that is represented in multiple
+                                    languages.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Use the calculator to retrieve a concept based on the English
+                                    language representation.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Compare the returned data to the expected result.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Use the calculator to retrieve a concept based on the Spanish
+                                    language representation.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Compare the returned data to the expected result.</para>
+                            </listitem>
+                        </orderedlist>
+                    </section>
+                    <section>
+                        <title>Concept Status Test</title>
+                        <orderedlist>
+                            <listitem>
+                                <para>Identify a concept that has changed status (ex: changed from
+                                    active to inactive).</para>
+                            </listitem>
+                            <listitem>
+                                <para>Use the calculator to retrieve the version of the concept
+                                        <emphasis role="italic">before</emphasis> the status
+                                    change.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Compare the concept status to the expected result.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Use the calculator to retrieve the version of the concept
+                                        <emphasis role="italic">after</emphasis> the status
+                                    change.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Compare the concept status to the expected result.</para>
+                            </listitem>
+                        </orderedlist>
+                    </section>
+                </section>
+                <section>
+                    <title>Search</title>
+                    <para>One of the foundational components of IKM is a robust search engine,
+                        Apache Lucene, which allows users to quickly and efficiently find what they
+                        are looking for within hundreds of thousands of records. We will automate
+                        the testing of this for each knowledge representation through the following
+                        steps:</para>
+                    <orderedlist>
+                        <listitem>
+                            <para>Initiate a search with a particular string value.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Compare the returned results to the expected results.</para>
+                        </listitem>
+                    </orderedlist>
+                </section>
+                <section>
+                    <title>Authoring</title>
+                    <para>The next step in the knowledge management process is to validate that
+                        knowledge is being created and modified correctly. We will automate the
+                        testing of this for each knowledge representation through the following
+                        scenarios:</para>
+                    <section>
+                        <title>Create Concept Test</title>
+                        <orderedlist>
+                            <listitem>
+                                <para>Create a new concept and save it to the datastore.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Use the calculator to return the newly created concept.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Compare the returned data to the expected result.</para>
+                            </listitem>
+                        </orderedlist>
+                    </section>
+                    <section>
+                        <title>Edit Concept Test</title>
+                        <orderedlist>
+                            <listitem>
+                                <para>Use the calculator to return a particular concept.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Edit the concept and save it to the datastore.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Use the calculator to return the newly modified
+                                    concept.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Compare the returned data to the expected result.</para>
+                            </listitem>
+                        </orderedlist>
+                    </section>
+                    <section>
+                        <title>Concurrent Editing Test</title>
+                        <orderedlist>
+                            <listitem>
+                                <para>Complete the above “Edit Concept” steps in two parallel
+                                    threads on the same concept.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Ensure both edits were successfully completed and
+                                    returned.</para>
+                            </listitem>
+                        </orderedlist>
+                    </section>
+                </section>
+                <section>
+                    <title>Reasoner</title>
+                    <para>Another critical component to the IKM environment is the use of a
+                        description logic reasoner (or classifier) tool which allows us to determine
+                        equivalence or uniqueness of a concept or terminology and helps to mitigate
+                        medical accidents caused by human error. Therefore, additional test
+                        automation and scrutiny is needed to ensure that the reasoner is working as
+                        intended. We will automate the testing of this for each knowledge
+                        representation through the following steps:</para>
+                    <orderedlist>
+                        <listitem>
+                            <para>Identify a scenario for a particular concept where the reasoner
+                                will change the associated child concept relationships.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Use the calculator to return the selected concept.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Compare the returned number of children concepts to the expected
+                                result.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Make appropriate adjustments to the concept as needed.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Run the reasoner.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Compare the returned number of children concepts to the expected
+                                result.</para>
+                        </listitem>
+                    </orderedlist>
+                </section>
+                <section>
+                    <title>Export</title>
+                    <para>To distribute the knowledge maintained within IKM to the community, a
+                        number of exports have been developed and require integration tests. We will
+                        automate the testing of this for each knowledge representation through the
+                        following scenarios:</para>
+                    <section>
+                        <title>Full Protobuf Export:</title>
+                        <orderedlist>
+                            <listitem>
+                                <para>Create a new or change an existing concept.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Use the export feature to export knowledge in protobuf
+                                    format.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Load a fresh datastore.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Import the protobuf export.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Validate that the expected change is present in the new
+                                    datastore.</para>
+                            </listitem>
+                        </orderedlist>
+                    </section>
+                    <section>
+                        <title>FHIR<superscript>®</superscript> Export*:</title>
+                        <orderedlist>
+                            <listitem>
+                                <para>Create a new or change an existing concept.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Use the export feature to export knowledge in
+                                        FHIR<superscript>®</superscript>format.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Validate that the expected change is present in the JavaScript
+                                    Object Notation (JSON) file.</para>
+                            </listitem>
+                        </orderedlist>
+                        <para><emphasis role="italic">*Note: IKM no longer supports a
+                                FHIR</emphasis><superscript>®</superscript><emphasis role="italic">
+                                export, however, this may be reincorporated in the
+                                future.</emphasis></para>
+                    </section>
+                </section>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198802955"/>User Interface Testing</title>
+                <para>After comprehensive integration tests have been implemented, we will next
+                    focus on test automation within the Komet application. Based on our research,
+                    the best test automation framework for JavaFX is TestFX which provides the
+                    ability to simulate the experience of a user through interacting with the user
+                    interface, such as entering a text field or clicking a button. Through TestFX we
+                    will create automated test to validate the most common user interactions within
+                    Komet to reduce the amount of regression testing that needs to be completed
+                    manually by test engineers.</para>
+                <para>TestFX is also able to execute in a headless mode, meaning the test is run
+                    without displaying the visual elements. This will allow us to integrate
+                    automated UI testing into the Continuous Integration/Continuous Development
+                    (CI/CD) pipeline. However, issues have been reported with this mode and may
+                    require additional support by Subject Matters Experts (SMEs) to resolve [4]. </para>
+                <para>See <emphasis role="underline">Software Test Execution</emphasis> for a list
+                    of test scripts that are currently executed manually but will be prioritized for
+                    test automation in the future.</para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198802956"/>Unit Testing</title>
+                <para>Once the foundational integration tests are implemented, we will assess our
+                    code coverage metrics to determine which components have not yet been well
+                    tested. Once those are identified, we will leverage additional unit tests to
+                    validate the functionality works as expected. </para>
+                <para>Additionally, as new development is completed, unit tests shall be added to
+                    continue to improve code coverage until new integration tests can be implemented
+                    to test that feature. A future goal is to have complete unit test code
+                    coverage.</para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198802957"/>Performance Testing</title>
+                <para>In addition to a focus on feature testing and code coverage, it is critical
+                    that the performance of the Komet application and all related components be
+                    evaluated and improved.</para>
+                <para>Please reference <emphasis role="bold"><emphasis role="italic">Task 3.4.3
+                            Advanced Analytics Performance Monitoring
+                        Framework</emphasis></emphasis> for more details on how performance
+                    evaluation and monitoring will be approached within IKM.</para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198802958"/>Security Testing</title>
+                <para>As a final phase within the test automation approach, we will need to further
+                    research and understand the security requirements of IKM. Depending on the
+                    environment in which Komet and IKM components will be used, additional security
+                    requirements may be needed. For example, if Komet needs to be installed and used
+                    on a Government-issued laptop, additional security testing may need to be
+                    conducted.</para>
+                <para>As a first step in security test automation, we will leverage SonarCloud as
+                    part of our CI/CD pipeline to identify security vulnerabilities, as previously
+                    described in the Methodology section.</para>
+            </section>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc198802959"/>Robust Test Automation Architecture</title>
+            <para>Through our research, we have identified the following key frameworks and tools to
+                support test automation within IKM. The following test automation architecture has
+                been implemented and we are continuing to implement more test automation into our
+                solutions.</para>
+            <section>
+                <title><anchor xml:id="Toc198802960"/>Data Artifact Repository</title>
+                <para>A data artifact repository allows us to centrally store and manage all
+                    resulting Tinkarized data artifacts in a way that lets us easily identify and
+                    retrieve the right one to utilize in our test automation processes. We have
+                    designed a methodology for versioning and storing each knowledge artifact
+                    according to the versioning strategy of each standard. Upon Tinkarization, the
+                    resulting artifact will be automatically published to the artifact repository
+                    for use.</para>
+                <para>We are currently leveraging Sonatype Nexus<superscript>®</superscript>, which
+                    is compatible with our current CI/CD pipeline tooling, GitHub Actions. It is
+                    also compatible with Maven, which is an integral tool in how data artifacts will
+                    be built and released [5].</para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198802961"/>Maven Failsafe Plugin</title>
+                <para>The Maven build automation tool is a significant component of the IKM
+                    environment. Therefore, it is critical that all test automation tools and
+                    processes are compatible with Maven.</para>
+                <para>The Maven Failsafe plugin provides the ability to run integration tests as
+                    part of the Maven build process. It provides a few phases of the Maven build
+                    lifecycle:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Pre-integration-test</emphasis>: Phase that runs
+                            before the integration tests are executed. This is used to set up the
+                            integration test environment, such as standing up services or loading
+                            databases.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Integration-test</emphasis>: Phase when
+                            integration tests are executed.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Post-integration-test</emphasis>: Phase that
+                            runs after the integration tests are executed. This is used to tear down
+                            the integration test environment, such as stopping any services and
+                            cleaning up test data.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Verify</emphasis>: Phase that checks the results
+                            of the integration tests.</para>
+                    </listitem>
+                </itemizedlist>
+                <para>We will set up appropriate build profiles so that integration tests are only
+                    executed at the appropriate points in time to prevent slowing down local build
+                    processes and development time [6].</para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198802962"/>Maven Surefire</title>
+                <para>The Maven Surefire plugin provides the ability to run unit tests as part of
+                    the Maven build process. Unit tests are run during the “test” build lifecycle
+                    phase.</para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198802963"/>JUnit 5</title>
+                <para>JUnit 5 is a popular unit-testing framework within the Java ecosystem. It
+                    includes the JUnit Platform which is responsible for launching testing
+                    frameworks on the Java Virtual Machine (JVM) and provides the ability to run
+                    custom test suites using one or more test engines on the platform. It is
+                    supported by both common Integrated Development Environments (IDEs) as well as
+                    build tools, such as Maven. Additionally, it provides a programming model for
+                    writing tests and includes simple annotations to make test writing easy
+                    [7].</para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198802964"/>CI/CD Pipeline</title>
+                <para>Configuring test automation within a CI/CD pipeline is crucial to modern
+                    software development processes for several reasons. First, it enables rapid
+                    identification and resolution of bugs or issues, thus improving the quality of
+                    the software. As each code change is automatically tested, developers are
+                    immediately notified of any problem, allowing them to fix it before it
+                    propagates into the system. Second, it expedites the delivery process by
+                    reducing the time spent on manual testing. This leads to increased efficiency,
+                    allowing for more frequent releases and faster time-to-market. Lastly, automated
+                    testing within a CI/CD pipeline enhances collaboration amongst team members by
+                    providing a shared responsibility for code quality, fostering a more cohesive,
+                    productive team environment. Therefore, integrating test automation within a
+                    CI/CD pipeline is a critical aspect of agile, efficient, and high-quality
+                    software development.</para>
+            </section>
+        </section>
+        <section>
+            <title><anchor xml:id="Toc198802965"/>Software Test Execution</title>
+            <para>While we are continuing to build out our suite of automated integration tests, we
+                are still conducting a significant amount of testing manually through test scripts
+                and SME analysis for both software and data. These manual tests are described in
+                more detail below and will eventually be turned into automated tests. In this
+                section, we describe how testing is being executed for newly developed software
+                features.</para>
+            <section>
+                <title><anchor xml:id="Toc198802966"/>In Development Testing</title>
+                <para>Testing early in the Software Development Life Cycle (SDLC) is crucial for
+                    identifying and resolving defects before they escalate into more complex issues,
+                    ultimately saving time and resources. Early testing enhances the quality and
+                    reliability of the software by ensuring that each component functions correctly
+                    from the outset. This proactive approach is achieved through a combination of
+                    automated integration testing and manual testing on SHIELD.</para>
+                <section>
+                    <title>Integration Testing</title>
+                    <para><emphasis role="bold">Purpose:</emphasis> As previously described in
+                        greater detail in the <emphasis role="underline">Methodology</emphasis>
+                        section, automated integration testing facilitates continuous validation of
+                        code changes, allowing for immediate feedback and quick iterations. </para>
+                    <para><emphasis role="bold">Execution frequency:</emphasis> Integration tests
+                        are executed early and often – every time a user builds their local code
+                        base, when they commit code to feature branch and when their feature branch
+                        is merged into the “main” branch. This ensures that the newly introduced
+                        code does not break existing functionality.</para>
+                    <para>However, it’s worth noting that within the <emphasis role="bold"><emphasis
+                                role="italic">Task 1.3.4 Summary of Findings Environment
+                                Configuration &amp; Deployment </emphasis></emphasis>deliverable, we
+                        did identify that to speed up our build process, we should make Maven
+                        profile configuration changes to allow developers to selectively run
+                        integration tests to improve the speed of the build process. Due to this,
+                        the process of how often integration tests are run may evolve in the
+                        future.</para>
+                </section>
+                <section>
+                    <title>User Interface Testing</title>
+                    <para><emphasis role="bold">Purpose:</emphasis> User interface testing focuses
+                        on verifying the functionality of a specific feature within an application.
+                        On SHIELD, we are currently conducting this type of testing manually but
+                        will plan to progress to leveraging test automation using some of the JavaFX
+                        test frameworks mentioned above in the near future. </para>
+                    <para>The process begins with developing user stories, which capture the user’s
+                        needs and defines acceptance criteria based on the wireframe designs and
+                        captured requirements. Detailed test scripts are written to systematically
+                        verify each aspect of the feature based on the defined acceptance criteria.
+                        At the end of the sprint, these test scripts are executed to confirm that
+                        the developed functionality behaves as expected and meets all specified
+                        requirements.</para>
+                    <para><emphasis role="bold">Execution frequency:</emphasis> Every sprint</para>
+                    <para><emphasis role="bold">Execution owner:</emphasis> Quality assurance
+                        team</para>
+                    <para><emphasis role="bold">Data set used:</emphasis> Latest version of Tinkar
+                        starter data</para>
+                    <para><emphasis role="bold">Environment used:</emphasis> Windows and Mac
+                        (desktop)</para>
+                </section>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198802967"/>Minor Release Testing</title>
+                <para><emphasis role="bold">Purpose: </emphasis>Minor release testing is the process
+                    of validating updates and changes introduced in a minor software version. Unlike
+                    major releases, which often include significant new features or architectural
+                    changes, minor release typically involve smaller enhancements, bug fixes and
+                    performance improvements. The focus of minor release testing is to ensure that
+                    these updates integrate smoothly with the existing system without introducing
+                    new issues. This type of testing includes testing of any new features or bug
+                    fixes and regression testing of existing functionalities to confirm that recent
+                    changes haven’t adversely affected them.</para>
+                <para><emphasis role="bold">Execution frequency:</emphasis> Every minor release
+                    (target is every 3-week sprint)</para>
+                <para><emphasis role="bold">Execution owner:</emphasis> Quality assurance
+                    team</para>
+                <para><emphasis role="bold">Execution time:</emphasis> Approximately 1 day</para>
+                <para><emphasis role="bold">Data set used:</emphasis> Latest version of Tinkar
+                    starter data </para>
+                <para><emphasis role="bold">Environment used:</emphasis> Windows and Mac
+                    (desktop)</para>
+                <para><emphasis role="bold">Regression Test Scripts:</emphasis> The following test
+                    scripts shown in Table 1 are executed as part of the “Sprint Regression Suite”
+                    which are housed in Jira as displayed in Figure 4: Screenshot of Sprint
+                    Regression Suite in Jira:</para>
+                <table>
+                    <title>Minor Release Regression Test Scripts</title><tgroup cols="2">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Feature</emphasis></entry>
+                                <entry><emphasis role="bold">Test Script</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry>Landing page</entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Verify that user should be able to see the landing
+                                                page after selecting the dataset</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>NextGen Search </entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Verify that in the search result set, user can
+                                                right click to Populate concept, Drag-and-Drop
+                                                Concept, Open in concept navigator and double click
+                                                on the concept to display</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>Create and Edit Concepts</entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Create a new concept with Fully Qualified Name
+                                                (FQN), other name and axioms</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Search for the concept with the concept name and
+                                                Identifier </para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>Create and Edit Patterns</entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Create a New Pattern and save it to the pattern
+                                                navigator</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Edit and Remove fields while creating the new
+                                                pattern.</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Create a new Pattern and export dataset -Current
+                                                date</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Edit Newly created Pattern and save it to the
+                                                pattern navigator</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Create a new Membership pattern and associate it
+                                                to a concept</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>Semantic Editing</entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Edit data in the String, Integer and Float data
+                                                type field of Pattern Semantic window all at
+                                                once</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Edit data in the Component, Component set and
+                                                Component list data type field of Pattern Semantic
+                                                window all at once</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Edit data in Image data type of Pattern Semantic
+                                                window</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Verify the validations messages for Integer fields
+                                                validation</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Verify the validations messages for Component set
+                                                Duplicates</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>Reasoner</entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Create a new concept and Run the reasoner ->
+                                                Necessary set </para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Create a new concept and Run the reasoner ->
+                                                Sufficient set</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>Export Dataset</entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Exchange New Concept Change Set via Protobuf
+                                                Custom Range</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Exchange edited data for Concept - FQN and other
+                                                names via Protobuf format Current Date</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>Import Dataset</entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Import the dataset with the export (custom range)
+                                                file to view all the changes.</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>Export/Import </entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Verify that data exported after editing concept
+                                                and pattern, is displayed accurately if user shares
+                                                the data and they import data.</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table><figure xml:id="ScreenshotofSprintRegressionSuiteinJira">
+                    <title>Screenshot of Sprint Regression Suite in Jira</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/Screenshot of Sprint Regression Suite in Jira.svg"
+                                scale="30" align="center"/> 
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198802968"/>Major Release Testing</title>
+                <para><emphasis role="bold">Purpose:</emphasis> Major release testing typically
+                    occurs when significant new features or architectural changes occur. This
+                    requires extensive regression testing on existing functionalities to confirm
+                    they continue to work after the major change, in addition to new feature
+                    functional testing. On SHIELD, we may also conduct this type of testing before
+                    major milestone events such as HL7<superscript>®</superscript> Connectathons or
+                    demonstrations to ensure that all functionality is working as expected for these
+                    events.</para>
+                <para><emphasis role="bold">Execution frequency:</emphasis> As needed for major
+                    changes or events (target is twice per year)</para>
+                <para><emphasis role="bold">Execution owner:</emphasis> Quality assurance
+                    team</para>
+                <para><emphasis role="bold">Execution time:</emphasis> Approximately 2 days</para>
+                <para><emphasis role="bold">Data set used:</emphasis> Latest version of Systematized
+                    Nomenclature of Medicine Clinical Terms (SNOMED<superscript>®</superscript> CT)
+                    or specific dataset needed for event</para>
+                <para><emphasis role="bold">Environment used:</emphasis> Windows and Mac (desktop)
+                    and JPro (web application)</para>
+                <para><emphasis role="bold">Regression Test Scripts:</emphasis> The following test
+                    scripts shown in <link linkend="Ref199232626">Table </link>2 are executed as
+                    part of the “Sprint Regression Suite”:</para>
+                <para xml:id="Toc198803171"><anchor xml:id="Ref199232626"/></para>
+                <table>
+                    <title>Major Release Regression Test Scrips</title><tgroup cols="2">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <tbody>
+                            <row>
+                                <entry><emphasis role="bold">Feature</emphasis></entry>
+                                <entry><emphasis role="bold">Test Script</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry>Landing page</entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Create a new journal By selecting the "New Project
+                                                Journal" Button</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Create a new journal By selecting the "Create
+                                                Project Journal" Button</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Verify that the landing page options are available
+                                                as expected.</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>Journal View</entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Verify that new journal cards follow the sequence
+                                                for naming conventions and delete the journal
+                                                successfully. </para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Verify that the journal cards shows the number of
+                                                concepts that are opened in the journal view</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Verify that user should see the properties
+                                                functionalities</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Verify the timeline functionality for the
+                                                concept</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Verify that user can create multiple project
+                                                journals and verify user can create more than 15
+                                                journals</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>Create and Edit Concepts</entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Create a new concept with FQN, Multiple other
+                                                names and Axioms</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>Reasoner</entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Update the Axiom for Chronic Lund Disease (CLD)
+                                                concept from necessary set to Sufficient set and run
+                                                incremental Reasoner</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Update the Axiom for CLD concept from Sufficient
+                                                set to Necessary set and run incremental
+                                                Reasoner</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Verify that user should not be able to access
+                                                incremental reasoner before running the Full
+                                                Reasoner. </para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>LIDR Record </entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Verify that user should be able to create a
+                                                Laboratory Interoperability Data Repository (LIDR)
+                                                record by Drag and drop Device, Analyte, Results and
+                                                Specimen concepts </para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Verify that user should be able to create a LIDR
+                                                record by Drag and drop Device, Analyte, Specimen
+                                                concepts and Qualitative Manual entry for
+                                                Results.</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Verify that user should be able to see the the
+                                                analyte, device, target, results and Specimen
+                                                details is displayed on the LIDR viewer.</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>Export Dataset</entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Exchange Edited Concept (Description) Change Set
+                                                via Portobuf format Custom range</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Exchange New Concept Change Set via Portobuf
+                                                Current date</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>Import dataset</entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Import the dataset with the export (Current date)
+                                                file to view all the changes.</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>Pattern - Create and Edit</entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Create a New Pattern without adding Fields and
+                                                save it to pattern navigator</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Create a new Pattern and export dataset -Custom
+                                                Range</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>Semantic Editing</entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Verify that user should be able to access and edit
+                                                each data type at once and update it - String,
+                                                Integer, Float, Boolean</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Verify that user should be able to access and edit
+                                                each data type at once and update it-Component,
+                                                Component Set, Component List Data type.</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Verify that user should be able to access and edit
+                                                each data type at once and update it. - Image Data
+                                                type.</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>NextGen Search </entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Verify that all the 4 search features are working
+                                                as expected for NextGen search</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>Classic Komet </entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Verify user can access Classic Komet from Landing
+                                                page.</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>Menu Items</entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Verify all the menus are working as expected in
+                                                next gen Komet</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>Infinite desktop </entry>
+                                <entry>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Verify that user can open multiple concept,
+                                                patterns and semantics widows on the infinite
+                                                desktop</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </section></section>
+            <section>
+                <title><anchor xml:id="Toc198802969"/>Data Artifact Test Execution</title>
+                <para>To ensure transformed data is complete and accurate, the SHIELD team executes
+                    a series of automated and manual tests after every terminology transformation.
+                    In this section, we describe how testing is being executed for newly developed
+                    data artifacts.</para>
+                <section>
+                    <title><anchor xml:id="Toc198802970"/>Data Pipeline Integration Testing</title>
+                    <para>With each run of the data transformation process, Maven-executed
+                        integration tests are automatically executed to verify that the generated
+                        data integrates correctly with other systems and contains the expected
+                        terminology from the origin. These tests ensure that the data is accurately
+                        prepared, transformed, and validated for use in Komet. The current set of
+                        integration tests evaluates Axioms, Concepts, Definitions, Descriptions, and
+                        Identifiers.</para>
+                    <para>Once the integration tests are completed successfully, a SNAPSHOT artifact
+                        is created and uploaded to Nexus. The location is shared internally with the
+                        development team. As a final test, a member of the development team will
+                        download the zip file with the data and import it into Komet. If the data is
+                        successfully imported and passes initial integrity checks, the dataset is
+                        made available to the rest of the team for further evaluation and
+                        use.</para>
+                </section>
+                <section>
+                    <title><anchor xml:id="Toc198802971"/>Release Testing</title>
+                    <para>After the overall integrity of the transformed data is confirmed, the
+                        development team notifies the SHIELD terminology SMEs that the data is
+                        available for the manual Quality Assurance (QA) process, which harnesses
+                        their deep knowledge and understanding of medical terminologies to evaluate
+                        and improve the transformed data. </para>
+                    <para>The SMEs review existing terms and expected changes with each release and
+                        utilize their industry experience to determine sample concepts that
+                        represent critical archetypes for real-world use cases. Referring to the
+                        source terminology browser, the SMEs work through the sample to manually
+                        review and validate the data in Komet.</para>
+                    <para>In the QA Checklist, shown in Figure 5: An example of a SME QA Checklist
+                    for a LOINC release, a result of “Match” indicates that the data in Komet
+                    exactly matches the terminology browser. Fields with findings are flagged by
+                    highlighting the cell and a short summary of the finding is included.
+                    Discrepancies and opportunities to improve the data are reviewed, prioritized,
+                    and relayed back to the development team to improve future datasets.</para><figure xml:id="AnexampleofaMEQAChecklistforaLOINCrelease">
+                            <title>An example of a SME QA Checklist for a LOINC release</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="../images/An%20example%20of%20a%20SME%20QA%20Checklist%20for%20a%20LOINC%20release.svg"
+                                        scale="80" align="center"/> 
+                                </imageobject>
+                            </mediaobject>
+                        </figure>
+                    <para>Once SMEs are confident the data for a given pipeline no longer requires
+                        manual review, this work could be automated and consolidated into the
+                        existing integration test suite.</para>
+                </section>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198802972"/>Test Automation Results</title>
+                <para>Based on the current phase of the project, we haven’t yet conducted a full
+                    analysis of the test automation results. We have implemented the tools necessary
+                    to implement test automation and evaluate the findings through SonarCloud. Once
+                    an initial set of integration tests are implemented, we will configure
+                    SonarCloud to conduct the code quality analysis and document the findings in
+                    this section.</para>
+            </section>
+            <section>
+                <title><anchor xml:id="Toc198802973"/>Challenges and Limitations</title>
+                <para>Based on our initial findings, we’ve identified the following challenges and
+                    limitations with test automation:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Upfront Investment Costs</emphasis>
+                        : Test automation requires dedicated time investment by software
+                            engineers, which requires product owners to prioritize test automation
+                            over new feature development. At this phase in the development of IKM,
+                            we don’t have the resources available to invest in user interface
+                            testing and closing all code coverage gaps.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Maintenance Overhead</emphasis>
+                        : Automated tests require regular updates to stay accurate with
+                            software changes. This slows down the iterative and rapid prototyping
+                            process that we are trying to emulate.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Tool Limitations</emphasis>
+                        : We have identified testing tool limitations, especially when it
+                            comes to integration with the Java Platform Module System (JPMS), which
+                            is a foundational architecture element of IKM.</para>
+                    </listitem>
+                    <listitem>
+                    <para><emphasis role="bold">Performance for Large Data Volumes</emphasis> : Some
+                        of the future integration tests that we have identified require tests to be
+                        executed against large volumes of data. For example, if we want to validate
+                        the name of every concept in SNOMED<superscript>®</superscript> CT, that
+                        requires us to evaluate over 350K concepts one-by-one. This could cause
+                        performance issues on either the developer’s local machine or within the
+                        CI/CD tooling, depending on where that test is executed and how
+                        often.</para>
+                </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Necessary Manual QA</emphasis>
+                        : While many aspects of our current testing process can be automated,
+                            we cannot fully replace the manual testing executed by our SMEs. Their
+                            input is also vital for generating the integration tests that need to be
+                            coded.</para>
+                    </listitem>
+                </itemizedlist>
+                <para><anchor xml:id="Toc198802974"/></para>
+            </section>
+        </section>
+    <section>
+        <title>Conclusions and Next Steps</title>
+        <para>Test automation is a powerful way to ensure the functionality and efficiency of IKM,
+            leading to high quality and usable real-world data. Our team explored the
+            characteristics of each type of testing including integration, regression, unit,
+            security, and performance testing to see which would best fit the need for evaluating
+            components such as UI and backend. Based on the requirements of the IKM environment,
+            SonarCloud was chosen as the automated code analysis tool and a phased test automation
+            approach employed to ensure the highest risk code is addressed quickly. A robust
+            architecture is required to support the phased test automation approach including a data
+            artifact repository, Maven Failsafe Plugin, Maven Surefire, Junit 5, and a CI/CD
+            pipeline. SMEs will oversee the test automation process to guide decisions relevant to
+            their domain and industry. The test automation approach and architecture described here
+            will validate the functionality of IKM’s system components and ultimately lead to better
+            user experience and uptake of IKM.</para>
+        <para>As next steps, we will continue to implement the integration tests that we described
+            above, which will lessen the manual testing that will need to occur and improve the
+            overall quality of our software and data artifacts. Once we have a full set of
+            integration tests for a targeted area of the application, we will re-evaluate the code
+            coverage metrics through SonarCloud and identify additional improvement areas.</para>
+    </section>
+    <section>
+        <title><anchor xml:id="Toc198802975"/>References</title>
+        <orderedlist>
+            <listitem>
+                <para>Pittet S. What is code coverage? [Internet]. [cited 2024 May 22]. Available
+                    from: <link
+                        xlink:href="https://www.atlassian.com/continuous-delivery/software-testing/code-coverage"
+                        >https://www.atlassian.com/continuous-delivery/software-testing/code-coverage</link></para>
+            </listitem>
+            <listitem>
+                <para>Dadak J. Getting Code Coverage Showing in SonarCloud [Internet]. Purplebricks
+                    Digital; 2020 [cited 2024 May 23]. Available from: <link
+                        xlink:href="https://medium.com/purplebricks-digital/getting-code-coverage-showing-in-sonar-cloud-99a2295407b3"
+                        >https://medium.com/purplebricks-digital/getting-code-coverage-showing-in-sonar-cloud-99a2295407b3</link></para>
+            </listitem>
+            <listitem>
+                <para>SonarCloud Documentation [Internet]. SonarCloud; [cited 2024 May 22].
+                    Available from: <link xlink:href="https://docs.sonarsource.com/sonarcloud/"
+                        >https://docs.sonarsource.com/sonarcloud/</link></para>
+            </listitem>
+            <listitem>
+                <para>TestFX Contribtuor Group. TestFX/testfx: Simple and Clean Testing for JavaFX.
+                    [Internet]. [cited 2024 May 23]. Available from: <link
+                        xlink:href="https://github.com/TestFX/TestFX"
+                        >https://github.com/TestFX/TestFX</link></para>
+            </listitem>
+            <listitem>
+                <para>Sonatype Product Integrations [Internet]. [cited 2024 May 23]. Available from:
+                        <link xlink:href="https://www.sonatype.com/products/integrations"
+                        >https://www.sonatype.com/products/integrations</link></para>
+            </listitem>
+            <listitem>
+                <para>Nguyen NT. Integration Testing with Maven [Internet]. 2024 [cited 2024 May
+                    23]. Available from: <link
+                        xlink:href="https://www.baeldung.com/maven-integration-test"
+                        >https://www.baeldung.com/maven-integration-test</link></para>
+            </listitem>
+            <listitem>
+                <para>The 5th Major Version of the Programmer-Friendly Testing Framework for Java
+                    and the JVM [Internet]. [cited 2024 May 23]. Available from: <link
+                        xlink:href="https://junit.org/junit5/"
+                    >https://junit.org/junit5/</link></para>
+            </listitem>
+        </orderedlist>
+    </section>
+</chapter>

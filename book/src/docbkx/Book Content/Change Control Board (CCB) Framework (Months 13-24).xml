@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Change Control Board (CCB) Framework (Months 13-24)</title>
+    <section>
+        <title>Purpose</title>
+        <para>The purpose of this document is to define the Change Control Board (CCB) Framework as
+            needed to govern the Systemic Harmonization and Interoperability Enhancement for
+            Laboratory Data (SHIELD) Integrated Knowledge Management (IKM) environment within the
+            open-source community. This document builds upon the Bugs and Issue Reporting Process
+            Framework (Task 2.3.4) delivered in December 2023 which covered methodologies for
+            reporting, managing, and implementing changes for technical and non-technical issue
+            requests. As a next step, we will propose the below CCB Framework intended to streamline
+            change processes, specifically feedback and changes for data modeling changes, use case
+            changes, and development changes. Additionally, we will explore change control processes
+            of Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT) International and
+            Logical Observation Identifiers, Names, and Codes (LOINC) to better understand how
+            existing clinical terminologies implement a change control system and how that would
+            impact IKM’s change control board process.</para>
+    </section>
+    <section>
+        <title>Aims</title>
+        <para>For any software development project, having an efficient system for managing change
+            and feedback is important for the scalability of the product. A change control system
+            that is unclear with poorly defined processes and roles could inhibit timely
+            decision-making, hold back planning, cause confusion across the team, and negatively
+            impact development. Establishing a well-defined system for change control is especially
+            important for projects like IKM where stakeholders and consumers span across not only
+            open-source community developers but also members from all areas of the healthcare
+            industry. IKM is unique in that development is open to contributions from the public,
+            but project decisions will oftentimes involve government stakeholders and healthcare
+            knowledge experts. Thus, this document aims to propose a few governance models that are
+            commonly used in open-source projects to provide an organized system that clarifies how
+            decisions should be made for making changes (both software and non-software), which
+            parties should be involved in the decision-making process, and which parties should
+            provide feedback for different types of changes. The types of changes are defined
+            below:</para>
+        <orderedlist>
+            <listitem>
+                <para><emphasis role="bold">Non-software changes</emphasis>: This refers to
+                    changes/feedback for data modeling and use case development. Data modeling
+                    refers to the modeling of knowledge standard records, such as Terminology
+                    Knowledge Architecture (Tinkar) data, Laboratory Interoperability Device
+                    Reference (LIDR), and starter data, using Tinkar concepts, patterns, and
+                    semantics. Use case development refers to the creation of visual diagrams
+                    depicting journeys of different perspectives in the healthcare ecosystem and
+                    system interactions.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Software changes</emphasis>: This refers to changes in
+                    the IKM reference architecture source code</para>
+            </listitem>
+        </orderedlist>
+    </section>
+    <section>
+        <title>Backgound</title>
+        <para>Understanding the data release processes and change control mechanisms of existing
+            clinical terminology standards, such as SNOMED CT International and LOINC, is crucial
+            for the IKM project and its own change control process. These standardized terminologies
+            play a pivotal role in ensuring interoperability, accuracy, and consistency in
+            healthcare data exchange and clinical documentation. By understanding how existing
+            clinical terminologies manage updates and modifications, the IKM project can define its
+            change control strategies accordingly, whether that be implementing similar strategies
+            or improvements, to maintain data integrity, support seamless integration, and enhance
+            the overall quality of healthcare information management. This is essential for
+            mitigating risks associated with data discrepancies and ensuring that the IKM project
+            adheres to the highest standards of clinical data governance. The following sections
+            will provide brief descriptions of the data release processes and change control systems
+            of SNOMED CT and LOINC.</para>
+        <section>
+            <title>SNOMED CT International's CCB Process</title>
+            <para>SNOMED International plays a pivotal role in maintaining and updating SNOMED CT, a
+                comprehensive clinical terminology system used globally to support healthcare
+                practices. The organization releases two types of data: the SNOMED CT International
+                Edition and various national extensions, such as the United States (US) Edition. The
+                International Edition is updated monthly, on the last day of each month, reflecting
+                a shift from the previous biannual release schedule. This frequent update cycle
+                ensures that the terminology remains current and responsive to advancements in
+                medical knowledge and practices. On the other hand, the US Edition, which includes
+                the US Extension, is released biannually in March and September. These updates
+                incorporate content from the International Edition while adding concepts specific to
+                the US healthcare system.</para>
+            <para>The updates to SNOMED CT typically involve the addition of new concepts,
+                descriptions, and relationships to capture emerging medical knowledge and practices.
+                Refinements to existing content, corrections, and improvements to mappings with
+                other standards like International Classification of Diseases
+                    10<superscript>th</superscript> Revision (ICD-10) are also common. These changes
+                ensure that SNOMED CT remains a robust and accurate resource for clinical data
+                representation. By providing a standardized and up-to-date terminology, SNOMED CT
+                facilitates interoperability among healthcare systems, enhances the accuracy of
+                clinical documentation, and supports data analytics for research and
+                decision-making. This, in turn, leads to improved patient care and outcomes.</para>
+            <para>The process of managing updates to SNOMED CT is closely tied to a change control
+                mechanism. SNOMED International employs a structured approach to handle requests for
+                additions or changes to the terminology. This process involves the SNOMED CT Content
+                Request Service (CRS), an online system through which National Release Centers
+                (NRCs) and other authorized users submit requests. These requests are reviewed by
+                SNOMED International staff to ensure they meet inclusion criteria for the
+                International Edition. If a request is declined, the requester is provided with a
+                reason and may appeal the decision to the Head of Terminology [3, 4].</para>
+            <para>The change control process is important for maintaining the integrity and quality
+                of SNOMED CT. It ensures that updates are carefully evaluated and aligned with
+                editorial principles. This structured approach allows SNOMED International to
+                balance the need for innovation with the necessity of maintaining a stable and
+                reliable terminology system. By involving NRCs and other stakeholders, the process
+                also ensures that the terminology evolves in response to the needs of its global
+                user base.</para>
+        </section>
+        <section>
+            <title>LOINC's CCB Process</title>
+            <para>LOINC is a standardized terminology system developed by the Regenstrief Institute
+                to facilitate the exchange and aggregation of clinical data. The organization
+                releases updates to LOINC twice a year, typically in June and December [5]. These
+                updates include new terms, modifications to existing terms, and corrections to
+                ensure the terminology remains comprehensive and accurate. Occasionally, LOINC may
+                issue a "hotfix" outside of the regular release cycle to address urgent corrections
+                or omissions [6, 7]. Each release is accompanied by detailed documentation,
+                including release notes and a core table that outlines the changes made [7].</para>
+            <para>The updates to LOINC often involve the addition of new codes to represent emerging
+                laboratory tests, clinical observations, and survey instruments. Changes may also
+                include refinements to existing codes, updates to answer lists, and improvements to
+                mappings with other standards. These updates are crucial for maintaining
+                interoperability among healthcare systems and ensuring that LOINC remains a reliable
+                resource for clinical data representation [7]. By providing a standardized
+                terminology, LOINC supports accurate data exchange, enhances clinical documentation,
+                and enables data analytics for research and decision-making.</para>
+            <para>LOINC employs a structured change control process to manage updates and ensure the
+                integrity of its terminology. This process involves collaboration with stakeholders,
+                including healthcare providers, researchers, and industry experts. Requests for new
+                terms or changes to existing terms are reviewed by the Regenstrief Institute's team
+                to ensure they align with editorial principles and meet the needs of the user
+                community [6]. The change control process is essential for balancing innovation with
+                stability, allowing LOINC to evolve while maintaining its reliability.</para>
+            <para>In summary, SNOMED International and LOINC's data release cycles and update
+                processes are designed to keep the terminology relevant and effective in supporting
+                healthcare practices. The integration of a change control mechanism further enhances
+                the quality and reliability of these knowledge standards, ensuring that it continues
+                to meet the needs of its global user base. This collaborative and structured
+                approach underscores the organization's commitment to advancing healthcare through
+                standardized clinical terminology.</para>
+        </section>
+    </section>
+    <section>
+        <title>Framework for IKM</title>
+        <section>
+            <title>Governance Models</title>
+            <para>In open-source projects, governance models refer to a system of customs and rules
+                a project follows so that roles and responsibilities are clear when managing project
+                contributions and changes. Below in <emphasis role="italic">Table 1</emphasis> are
+                five commonly known governance models used in the open-source community and their
+                brief descriptions [1]:</para>
+            <para><anchor xml:id="Toc195792734"/><emphasis>Table 1: Common Governance
+                    Models</emphasis></para>
+            <informaltable>
+                <tgroup cols="2">
+                    <colspec colnum="1" colname="col1"/>
+                    <colspec colnum="2" colname="col2"/>
+                    <tbody>
+                        <row>
+                            <entry><emphasis role="bold">Governance Model</emphasis></entry>
+                            <entry><emphasis role="bold">Description</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">“Do-ocracy”</emphasis></entry>
+                            <entry>A self-governing model where contributors govern themselves and
+                                do not follow a formal hierarchical system for decision making.
+                                Decisions are often made as peers or based on contributor
+                                familiarity with certain components. Many open-source projects,
+                                especially large-scale projects, follow this model.</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Founder-leader</emphasis></entry>
+                            <entry>The founding individual or group of the project holds
+                                decision-making powers. This is often used for new projects that
+                                have yet to gather many contributors.</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Self-appointing council or
+                                board</emphasis></entry>
+                            <entry>Decisions are made by an appointed group of leadership members
+                                called things like “steering committee”. A steering committee can
+                                consist of a cross-functional team of leaders in different areas of
+                                the project.</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Electoral</emphasis></entry>
+                            <entry>Contributors and other members of the project elect people to
+                                fill project roles. Decisions are then made by the elected
+                                leadership members.</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Corporate-backed</emphasis></entry>
+                            <entry>The project is owned by a company and distributed as open source
+                                to garner attention and promote the product rather than for actual
+                                contributions from the community. Decision-making processes are
+                                governed by company rules and policies.</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </informaltable>
+            <para>The current contract structure of the IKM project may seem to follow the
+                corporate-backed model; however, as the project evolves into becoming a true
+                open-source project that aims to rely on community and healthcare industry member
+                participation, the corporate aspect of the project becomes less relevant, especially
+                when it comes to decision-making for project changes. Additionally, IKM goes beyond
+                just software development. It involves architecting different knowledge standard
+                data models and data transformations that rely heavily on healthcare knowledge
+                expertise and designing use cases depicting the user journey and the impact the
+                platform will have in the health Information Technology (IT) industry. These works
+                will require input not from developers but from Subject Matter Experts (SMEs) in the
+                healthcare knowledge space. Thus, a combination of the self-appointing council model
+                and founder-leader model is recommended to ensure separation of concerns and to
+                address concerns by the appropriate expertise and trade.</para>
+            <para>A steering committee of healthcare practitioners and health knowledge
+                specialists—established in the self-appointing council model—will steer project
+                decisions when it comes to non-software changes, such as for data modeling and use
+                case development, that require industry knowledge. The founder-leader model will be
+                used for software changes recommended and ranked by the community as the current
+                project state is too early for the “do-ocracy” model and still needs direction from
+                the founding product owner. The CCB for software changes will include the product
+                owner and other selected lead members.</para>
+        </section>
+        <section>
+            <title>Change Control Board Framework</title>
+            <para>A CCB is a committee that makes decisions about whether proposed changes to a
+                project should be implemented. These proposed changes, or change requests, are a
+                request for an alteration or addition to a product. Types of proposed changes
+                include new features, changes to existing requirements, functionalities, or system
+                architecture. The CCB is composed of key stakeholders, which may include project
+                managers, lead developers, product owners, and subject matter experts, and is
+                responsible for reviewing the details of the proposed change, including the
+                potential benefits, impacts, costs, and risks. This structured approach to managing
+                changes helps ensure purposeful changes, maintains consistency, ensures consistent
+                communication among stakeholders, and contributes to the overall success and quality
+                of the software development project.</para>
+            <para>The Change Control Board Framework will leverage the following definitions found
+                in <emphasis role="italic">Table 2</emphasis>:</para>
+            <para><anchor xml:id="Toc195792735"/><emphasis>Table 2: CCB Term Definitions for
+                    IKM</emphasis></para>
+            <informaltable>
+                <tgroup cols="2">
+                    <colspec colnum="1" colname="col1"/>
+                    <colspec colnum="2" colname="col2"/>
+                    <tbody>
+                        <row>
+                            <entry><emphasis role="bold">Component</emphasis></entry>
+                            <entry><emphasis role="bold">Description</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">CCB Membership</emphasis></entry>
+                            <entry>Members of the CCB will vary depending on the change being
+                                requested.</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Scope of Authority</emphasis></entry>
+                            <entry>The scope of authority of the CCB should be well-defined so that
+                                responsibilities are clearly delineated between different types of
+                                change requests. Different CCBs will have authority over different
+                                change requests depending on their area of expertise.</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Scope of Change</emphasis></entry>
+                            <entry>The CCB reviews change requests that fall within the scope of a
+                                forecasted breach of the approved project schedule tolerances,
+                                approved project cost tolerances, or approved project scope.</entry>
+                        </row>
+                        <row>
+                            <entry><emphasis role="bold">Operating Procedure</emphasis></entry>
+                            <entry>Operational workflow, meeting frequency, logistics, and expected
+                                participation should be defined.</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </informaltable>
+        </section>
+        <section>
+            <title>Non-software Change Control Framework</title>
+            <section>
+                <title>CCB Membership</title>
+                <para>The CCB for non-software changes will be in the form of a steering committee
+                    of select members from the collective SHIELD Community from different domains of
+                    healthcare. Members should have a background in healthcare such as physicians,
+                    knowledge specialists, and lab technicians. Multiple CCBs may need to be
+                    established to govern the various components of IKM. </para>
+                <para>For example, there may need to be a specific CCB that is focused on furthering
+                    the design of a particular knowledge standard, such as the Laboratory
+                    Interoperability Device Reference (LIDR), that is made up of appropriate SMEs
+                    from the laboratory domain. For more insight into the individual roles and
+                    members of the LIDR Steering Committee, please reference <emphasis role="bold"
+                            ><emphasis role="italic">Task 2.3.2 Drafted List of CCB
+                            Stakeholders</emphasis></emphasis>.</para>
+            </section>
+            <section>
+                <title>Scope of Authority</title>
+                <para>Non-software changes that pertain to knowledge standard data modeling and use
+                    case development.</para>
+            </section>
+            <section>
+                <title>Scope of Change</title>
+                <para>Any feedback to ongoing development of data modeling and use cases.</para>
+            </section>
+            <section>
+                <title>Operating Procedure</title>
+                <para>The below diagram describes the operating procedure for the change control
+                    process for the non-software components of IKM: </para>
+                    <figure xml:id="Non-softwareChangeControlWorkflow"> 
+                        <title>Figure 1: Non-software Change Control Workflow</title> 
+                        <mediaobject> 
+                            <imageobject> 
+                                <imagedata fileref="../images/Non-software%20Change%20Control%20Workflow.svg" 
+                                    scale="50" align="center"/> 
+                            </imageobject> 
+                        </mediaobject> 
+                    </figure>
+            </section>
+            <section>
+                <title>Feedback (Change) Request Initiation</title>
+                <para>The first step in the Feedback (Change) Request process is to initiate a
+                    formal feedback request from the CCB. To maintain up-to-date with ever-evolving
+                    clinical terminologies, proactive engagement from members of the clinical
+                    terminology industry is usually required. Input from terminology SMEs is
+                    invaluable in identifying any aspects that need updating within the IKM project
+                    and business logic. Active participation from these SMEs is key to ensuring that
+                    the IKM project continues to reflect the latest developments and standards of
+                    the healthcare industry.</para>
+                <para>There are two ways industry members can communicate changes needed to the IKM
+                    project:</para>
+                <orderedlist>
+                    <listitem>
+                        <para>By submitting a non-technical issue to the project’s repository on
+                            GitHub, or</para>
+                    </listitem>
+                    <listitem>
+                        <para>By reaching out to the IKM team via the Contact Us page on the team’s
+                            website [8, 9].</para>
+                    </listitem>
+                </orderedlist>
+                <para>When submitting a non-technical issue via GitHub as shown in Figure 4, the
+                    following information is required:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Title for the issue</emphasis>: This can be a
+                            brief title that summarizes the issue description.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Issue Location</emphasis>: If the issue is
+                            relevant to a specific place in the project codebase, the location can
+                            be specified here. If it is not relevant to the codebase and is more
+                            related to content, “Other” can be used.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Issue Type</emphasis>: This specifies the
+                            whether the issue or request is a content addition, content correction,
+                            a question, or other type of issue.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Issue Description</emphasis>: A detailed
+                            description of the issue request is required to ensure the IKM team
+                            understands the desired outcome of the issue submitter.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Self-Service</emphasis>: For clinical
+                            terminologists or industry SMEs who are also developers, they can mark
+                            this checkbox if they wish to contribute to the project to resolve the
+                            issue themselves.</para>
+                    </listitem>
+                </itemizedlist>
+                <figure xml:id="Non-TechnicalIssueFormonIKMsGitHubRepository"> 
+                    <title>Figure 2: A Non-Technical Issue Form on IKM's GitHub Repository</title> 
+                    <mediaobject> 
+                        <imageobject> 
+                            <imagedata fileref="../images/Non-Technical%20Issue%20Form%20on%20IKMs%20GitHub%20Repository.svg" 
+                                scale="50" align="center"/> 
+                        </imageobject> 
+                    </mediaobject> 
+                </figure>
+                <para>An alternative but not preferred way to submit an inquiry or change request
+                    can be to reach out to the IKM Team via the Contact Us page on the IKM.dev
+                    website. The “Get in Touch” form (Figure 5) on the Contact Us page requires the
+                    following information:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>First Name: First name of the submitter</para>
+                    </listitem>
+                    <listitem>
+                        <para>Last Name: Last name of the submitter</para>
+                    </listitem>
+                    <listitem>
+                        <para>Email: The email address of the submitter so that the team knows who
+                            to reach out to</para>
+                    </listitem>
+                    <listitem>
+                        <para>"What's on your mind:" A detailed description of the issue request is
+                            required to ensure the IKM team understands the desired outcome of the
+                            issue submitter</para>
+                    </listitem>
+                </itemizedlist>
+                <figure xml:id="ContactUsPageonIKMWebsite"> 
+                    <title>Figure 3: Contact Us Page on IKM Website</title> 
+                    <mediaobject> 
+                        <imageobject> 
+                            <imagedata fileref="../images/Contact%20Us%20Page%20on%20IKM%20Website.svg" 
+                                scale="50" align="center"/> 
+                        </imageobject> 
+                    </mediaobject> 
+                </figure>
+                <para>This feedback will be used to modify latest data model versions and/or use
+                    cases to meet business requirements and user needs, and the CCB will be the
+                    steering committee providing these requirements since they are the SMEs. Latest
+                    artifacts of knowledge standard data models (e.g., LIDR data models) and/or use
+                    case diagrams (e.g., Super Use Case Diagrams) will be uploaded to Confluence. A
+                    Confluence page will be dedicated to each artifact, and the page will include
+                    details of the artifact, an issue tracker document that includes exported Jira
+                    ticket details, and release notes. When the Confluence page is ready to be
+                    reviewed by the CCB, a formal request for feedback will be sent to a CCB
+                    point-of-contact to start the feedback process.</para>
+            </section>
+            <section>
+                <title>Feedback Provision</title>
+                <para>Once feedback is requested, the CCB reviews the submitted artifacts for any
+                    modifications needed to be made. The CCB should evaluate the artifacts against
+                    transforming business criteria in the healthcare industry. Data models should be
+                    evaluated by members that are well-versed in medical knowledge standards, such
+                    as SNOMED authors, and use case diagrams should be evaluated holistically by
+                    health and IT practitioners across the SHIELD community. Feedback should be as
+                    detailed as possible with requirements clearly defined. Feedback can be provided
+                    in the comments of the issue tracker document attached to the provided artifact
+                    Confluence page, which the team would later transfer to the corresponding Jira
+                    tickets for analysis. The team will make all edits and reupload a new version
+                    after the review cycle.</para>
+            </section>
+            <section>
+                <title>Feedback (Change) Analysis</title>
+                <para>Once feedback has been provided, any existing Jira ticket related to the
+                    artifact under review should be updated with the provided feedback. The team
+                    convenes to assess feedback requirements, level of effort, and any trickledown
+                    impact to other workstreams. A Kanban type Jira board will be created where Jira
+                    tickets associated with the artifact are created and updated.</para>
+            </section>
+            <section>
+                <title>Feedback (Change) Implementation</title>
+                <para>Once Jira tickets are updated and meet the Definition of Ready, the team
+                    implements changes to data model artifacts and use case diagrams based on the
+                    provided feedback from the CCB. A ticket can be closed once it meets the
+                    Definition of Done.</para>
+                <itemizedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Definition of Ready</emphasis></para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Reviewed by the CCB</para>
+                            </listitem>
+                            <listitem>
+                                <para>Clearly defined acceptance criteria based on CCB
+                                    feedback</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Definition of Done</emphasis></para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Fulfill acceptance criteria</para>
+                            </listitem>
+                            <listitem>
+                                <para>Signed off by CCB</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                </itemizedlist>
+            </section>
+            <section>
+                <title>Change Communication</title>
+                <para>Finally, once feedback is completely implemented, all changes made to an
+                    artifact will be documented in release notes that will be disseminated to the
+                    rest of the team. Release notes are the detailed list of all the changes that
+                    were made in the new version. Release notes are captured on confluence and
+                    contain a list of Jira tickets and descriptions for each change made. The
+                    artifacts are then ready for the next iteration of feedback. </para>
+                <para>Non-software changes that result from this change control framework will often
+                    lead to software changes, which the next section describes in more
+                    detail.</para>
+            </section>
+        </section>
+        <section>
+            <title>Software Change Control Framework</title>
+            <section>
+                <title>CCB Membership</title>
+                <para>In addition to select members from the collective SHIELD Community from
+                    different domains of healthcare and technology, the CCB for software changes
+                    will include the product owner (founder) and other select lead members on the
+                    project. There should be representation of members with a background in
+                    healthcare such as physicians, knowledge specialists, and lab technicians to
+                    help assess change requests based on the functional use case. Additionally,
+                    there should be representation from technologists and system architects to
+                    determine the technical implications and level of effort to complete the
+                    change.</para>
+            </section>
+            <section>
+                <title>Scope of Authority</title>
+                <para>Change requests that pertain to the IKM reference architecture and supporting
+                    open-source technology.</para>
+            </section>
+            <section>
+                <title>Scope of Change</title>
+                <para>Any feedback to ongoing development of IKM reference architecture and
+                    supporting open-source technology.</para>
+            </section>
+            <section>
+                <title>Operating Procedure</title>
+                <para>The following section describes the process in which issues or change requests
+                    are raised from the open-source community pertaining to the reference
+                    implementation available on GitHub, analyzed, documented, and resolved.</para>
+                <figure xml:id="SoftwareChangeControlWorkflow"> 
+                    <title>Figure 4: Software Change Control Workflow</title> 
+                    <mediaobject> 
+                        <imageobject> 
+                            <imagedata fileref="../images/Software%20Change%20Control%20Workflow.svg" 
+                                scale="50" align="center"/> 
+                        </imageobject> 
+                    </mediaobject> 
+                </figure>
+            </section>
+            <section>
+                <title>Change Request Initiation</title>
+                <para>The first step in the Change Request process is an issue being identified by
+                    someone in the open-source community. For IKM, we will leverage the GitHub
+                    Issues configuration to allow external contributors to report issues and comment
+                    and vote on other reported issues. The method in which an issue can be reported
+                    is more fully described in <emphasis role="bold"><emphasis role="italic">Task
+                            2.3.4 Bugs and Issue Reporting Process
+                    Framework.</emphasis></emphasis></para>
+            </section>
+            <section>
+                <title>Change Identification</title>
+                <para>Prior to the regularly scheduled CCB meeting, an individual (sometimes
+                    referred to as the Change Manager) will review the identified change requests.
+                    In the process of change management within a digital environment like GitHub,
+                    the Change Manager can utilize a prioritization system based on user feedback to
+                    review and address submitted issues. Users can indicate the importance of an
+                    issue by selecting the "thumbs up" emoticon or by commenting on the issue. These
+                    interactions serve as indicators of the issue's urgency or relevance to the user
+                    base. The Change Manager will regularly review the GitHub Issues, paying close
+                    attention to those with a high number of "thumbs up" reactions or substantial
+                    comment activity. The highest priority issues will then be discussed at the next
+                    CCB meeting. This user-driven prioritization allows the CCB to focus on
+                    resolving the most pressing or impactful issues first, thereby enhancing the
+                    efficiency of the change management process and improving overall user
+                    satisfaction.</para>
+                <para>Once a change is prioritized, the Change Manager will meticulously review it
+                    to ensure its completeness and clarity. The first step involves checking if all
+                    necessary sections of the request form are properly filled out, including the
+                    description of the proposed change, justification, expected impact, and
+                    resources required. The manager will then assess the clarity of the request,
+                    ensuring that the proposed change is articulated in a concise and understandable
+                    manner. They will also verify that the rationale behind the change is compelling
+                    and well-supported by data or business insights. If there are any ambiguities or
+                    missing information, the Change Manager will communicate with the requester for
+                    clarification or additional details. This rigorous review process ensures that
+                    every change request is comprehensive and clear, setting the stage for a smooth
+                    evaluation and implementation process.</para>
+            </section>
+            <section>
+                <title>Change Analysis</title>
+                <para>At the CCB, the prioritized requests are carefully evaluated by the board.
+                    This comprehensive review allows the CCB to make an informed decision on whether
+                    the change should be implemented or not. The board may approve, deny, or request
+                    further information about the change request based on their assessment. The
+                    objective is to ensure that any approved change aligns with the organization's
+                    strategic goals, is feasible within the project constraints, and delivers value
+                    without disrupting existing operations or schedules.</para>
+            </section>
+            <section>
+                <title>Change Documentation</title>
+                <para>Once the change has been discussed, the analysis, outcome, and next steps
+                    should be documented. The CCB can utilize GitHub Projects or other issue
+                    tracking tools, such as Atlassian Jira or Confluence, to capture these details.
+                    If a change request is prioritized for development, it will be assigned to the
+                    appropriate team or developer and slated for a particular release or milestone.
+                    Additionally, the CCB may decide to defer a decision until a later date. In that
+                    instance, the issue will remain open and reviewed again in a subsequent CCB
+                    meeting.</para>
+            </section>
+            <section>
+                <title>Change Implementation</title>
+                <para>If the CCB determines that a change request should be accepted, the
+                    development team will prioritize the change accordingly in the backlog and
+                    implement the change. The scrum master should ensure tickets meet the Definition
+                    of Ready for implementation and Definition of Done upon completion.</para>
+                <itemizedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Definition of Ready</emphasis></para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Reviewed by the CCB</para>
+                            </listitem>
+                            <listitem>
+                                <para>Clearly defined acceptance criteria based on change
+                                    identification and analysis</para>
+                            </listitem>
+                            <listitem>
+                                <para>The team has enough information to start working on the
+                                    ticket</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Definition of Done</emphasis></para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Ticket has been fully reviewed by another team member</para>
+                            </listitem>
+                            <listitem>
+                                <para>Ticket passes testing</para>
+                            </listitem>
+                            <listitem>
+                                <para>Documentation has been updated</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                </itemizedlist>
+            </section>
+            <section>
+                <title>Change Communication</title>
+                <para>Once a change request has been completed, it will be communicated to the
+                    community through the GitHub issue comment feature and then the issue can be
+                    marked as “Close as completed.” If the change is rejected, a comment can be left
+                    on the GitHub issue and the issue can be marked as “Close as not planned” [2]. </para>
+                <figure xml:id="GitHubIssueClosureOptions"> 
+                    <title>Figure 5: GitHub Issue Closure Options</title> 
+                    <mediaobject> 
+                        <imageobject> 
+                            <imagedata fileref="../images/GitHub%20Issue%20Closure%20Options.svg" 
+                                scale="50" align="center"/> 
+                        </imageobject> 
+                    </mediaobject> 
+                </figure>
+            </section>
+        </section>
+    </section>
+    <section>
+        <title>Conclusions and Next Steps</title>
+        <para>In conclusion, the CCB framework serves as a critical tool for effectively managing
+            and implementing changes within an organization. Its structured approach ensures that
+            all proposed changes are thoroughly reviewed and assessed for their potential impacts,
+            benefits, costs, and risks. By involving key stakeholders in the decision-making
+            process, it facilitates informed, consensus-based decisions that align with the
+            organization's strategic goals. Moreover, the use of user feedback mechanisms, such as
+            the "thumbs up" emoticon or comment activity in digital environments like GitHub, allows
+            the CCB to prioritize and address issues based on their urgency or relevance to the user
+            base. This not only enhances the efficiency of the change management process but also
+            improves overall user satisfaction. The successful implementation of a CCB framework
+            ultimately contributes to the organization's agility, resilience, and capacity for
+            continuous improvement.</para>
+        <para>However, as we move towards a more mature methodology for authoring, and distributing
+            integrated knowledge, such as LIDR, we will need to investigate how to process change
+            requests than require changes to the underlying knowledge standards, such as SNOMED CT
+            or LOINC. For example, if a new LIDR record is needed but it requires a new SNOMED CT or
+            LOINC concept to be created, what happens if those change requests are not approved? We
+            will strive to identify ways to implement a process that can account for these scenarios
+            but it will continue to be a problem until medical terminology standards are centralized
+            and integrated.</para>
+        <para>For next steps, we will continue to implement the processes described above for both
+            types of change control frameworks and refine our processes over time to ensure that IKM
+            considers the needs of the community and evolves in a controlled and coordinated
+            manner.</para>
+    </section>
+    <section>
+        <title>References</title>
+        <orderedlist>
+            <listitem>
+                <para>Understanding open source governance models [Internet]. RedHat; 2020 [cited
+                    2024 May 23]. Available from: <link
+                        xlink:href="https://www.redhat.com/en/blog/understanding-open-source-governance-models"
+                        >https://www.redhat.com/en/blog/understanding-open-source-governance-models</link></para>
+            </listitem>
+            <listitem>
+                <para>GitHub. GitHub: Where the world builds software [Internet]. San Francisco:
+                    GitHub Inc.; c2008-2024 [cited 2024 May 22]. Available from: <link
+                        xlink:href="https://github.com">https://github.com</link></para>
+            </listitem>
+            <listitem>
+                <para>Change or add to SNOMED CT [Internet]. SNOMED International; 2025 [cited 2025
+                    April 15]. Available from: <link
+                        xlink:href="https://www.snomed.org/change-or-add"
+                        >https://www.snomed.org/change-or-add</link></para>
+            </listitem>
+            <listitem>
+                <para>Change requests [Internet]. SNOMED International; 2025 [cited 2025 April 15].
+                    Available from: <link
+                        xlink:href="https://confluence.ihtsdotools.org/display/DOCNRCG/Change+requests"
+                        >https://confluence.ihtsdotools.org/display/DOCNRCG/Change+requests</link></para>
+            </listitem>
+            <listitem>
+                <para>Three Easy Steps to Perform a LOINC Update [Internet]. Healthcare Data
+                    Dictionary; 2021 [cited 2025 April 15]. Available from: <link
+                        xlink:href="https://www.hddaccess.com/tips/three-easy-steps-to-perform-a-loinc-update"
+                        >https://www.hddaccess.com/tips/three-easy-steps-to-perform-a-loinc-update</link></para>
+            </listitem>
+            <listitem>
+                <para>Versioning [Internet]. LOINC from Regenstrief; 2025 [cited 2025 April 15].
+                    Available from: <link xlink:href="https://loinc.org/kb/versioning/"
+                        >https://loinc.org/kb/versioning/</link></para>
+            </listitem>
+            <listitem>
+                <para>LOINC Release Notes [Internet]. LOINC from Regenstrief; 2025 [cited 2025 April
+                    15]. Available from: <link
+                        xlink:href="https://loinc.org/kb/loinc-release-notes/"
+                        >https://loinc.org/kb/loinc-release-notes/</link></para>
+            </listitem>
+            <listitem>
+                <para>Komet > Issues [Internet]. GitHub; 2025 [cited 2025 April 16]. Available from:
+                        <link xlink:href="https://github.com/ikmdev/komet/issues"
+                        >https://github.com/ikmdev/komet/issues</link></para>
+            </listitem>
+            <listitem>
+                <para>Get In Touch [Internet]. IKM; 2025 [cited 2025 April 16]. Available from:
+                        <link xlink:href="https://www.ikm.dev/contact"
+                        >https://www.ikm.dev/contact</link></para>
+            </listitem>
+        </orderedlist>
+    </section>
+</chapter>

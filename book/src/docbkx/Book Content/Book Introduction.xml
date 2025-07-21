@@ -210,7 +210,7 @@
                 
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../images/PASTF%20Updated.svg" scale="12" align="center"/>
+                            <imagedata fileref="../images/PASTF%20Updated.svg" scale="20" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -432,7 +432,7 @@
                     
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../images/Example%20Data%20Exchange%20Path.svg" scale="12" align="center"/>
+                            <imagedata fileref="../images/Example%20Data%20Exchange%20Path.svg" scale="20" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure> 
