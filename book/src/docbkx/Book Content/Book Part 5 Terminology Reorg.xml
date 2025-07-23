@@ -1207,76 +1207,74 @@ why-what-how-termlex/?trk=pulse-article"?>[]<?oxy_comment_end?></para>
         </section>
     </section>
     <section>
-        <title>Terminology Principles and Best Practices</title>
-        <?oxy_comment_start author="tocrow" timestamp="20250717T020323-0400" comment="1.8 is oddly very short. I think we can probably combine this all into a single section rather than having 1.8, 1.8.1 and 1.8.2"?>
+        <title><?oxy_comment_start author="rgeorgacopoulos" timestamp="20250719T174635-0500" comment="Change title to something that reflects we are discussing best practices and our solution"?>Terminology
+            Principles and Best Practices<?oxy_comment_end?></title>
+        <?oxy_comment_start author="tocrow" timestamp="20250717T020323-0400" comment="1.8 is oddly very short. I think we can probably combine this all into a single section rather than having 1.8, 1.8.1 and 1.8.2" flag="done"?>
         <para>Now that we have discussed some existing terminology standards and their comparison to
             Cimino's desiderata, we will review principles and best practices for terminology design
-            and representation. </para><?oxy_comment_end?>
-        <section>
-            <title>Understandable, Reproducible, Useful (URU)</title>
-            <para>There are core evolutionary design principles called “Understandable,
-                Reproducible, and Useful,” (URU) upon which SNOMED CT® development is still based.
-                [8-9] These criteria describe an approach for improving data quality and increasing
-                data integrity and agility: </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para><emphasis role="bold">Understandable</emphasis>: the content can be
-                            processed by health IT systems and understood by most healthcare
-                            providers without reference to private or inaccessible information;
-                        </para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <itemizedlist>
-                <listitem>
-                    <para><emphasis role="bold">Reproducible</emphasis>: multiple users or systems
-                        apply the data to the same situations and source data with an equivalent
-                        result; and</para>
-                </listitem>
-            </itemizedlist>
-            <itemizedlist>
-                <listitem>
-                    <para><emphasis role="bold">Useful</emphasis>: data is fit-for-purpose – it has
-                        practical value for data analysis in support of health information exchange,
-                        research, and public health that requires information aggregated across
-                        health IT systems. </para>
-                </listitem>
-            </itemizedlist>
-        </section>
-        <section>
-            <title>Knowledge Representation and Description Logic</title>
-            <para>A report in the 2016 Yearbook of Medical Informatics defines terminology as “a
-                system of concepts with assigned identifiers and human language terms, typically
-                involving some kind of semantic hierarchy. Some systems may support the assignment
-                of multiple terms, or synonyms, to a given concept; these may include terms in
-                multiple natural languages, such as English or Dutch.” [10] This definition implies
-                that knowledge representation for a terminology system may not always be based on a
-                strict defining hierarchy. The advantage, or disadvantage, of such an approach is
-                that the terminology, such as LOINC® for instance, might appear to be rather
-                intuitive and human-readable and comprehensible. However, when delving into complex
-                use cases, a lack of formal defining structure may reveal that it is difficult to
-                understand the precise meaning of the terminological representations and that use of
-                a system such as LOINC® may differ widely amongst humans. Further exacerbating
-                potential variability is the heterogeneous behavior of tools implemented to reason
-                with terminological structures. [11] </para>
-            <para>The field of Knowledge Representation and “Description Logics” was developed out
-                of the attempt to formally define “intuitive representations” with a formal
-                semantics to establish a common ground for human and tool interoperability.
-                Knowledge representation involves the design of formalisms for expressing knowledge
-                about a particular domain and focuses on representing and characterizing classes of
-                objects and relationships between them. </para>
-            <para>An ideal state terminology that relies on description logics may invoke more
-                formal semantic relationships between and among concepts. Use of a Description
-                Logics reasoner can help in overcoming important drawbacks of multi-axial systems
-                and other non-standard, distinct formalisms: (1) the capability of detecting
-                semantic equivalence of syntactically different expressions, and (2) the automated
-                classification of concepts in a hierarchy.
-                <?oxy_comment_start author="ecundiff" timestamp="20250711T065713-0400" comment="Removed section &quot;SNOMED CT Design Criteria&quot; as it is a direct quotation from Bodenreider, some of the same information is included in SNOMED Current State section, and it&apos;s placement in this portion of the book doesn&apos;t make sense."?></para><?oxy_comment_end?>
-        </section>
+            and representation ahead of presenting our IKM solution. </para>
+        <para>As we discussed previously, our solution is based on core evolutionary design
+            principles called “Understandable, Reproducible, and Useful,” (URU) upon which SNOMED
+            CT® development is still based. [8-9] These criteria describe an approach for improving
+            data quality and increasing data integrity and agility: </para><?oxy_comment_end?>
+        <itemizedlist>
+            <listitem>
+                <para><emphasis role="bold">Understandable</emphasis>: the content can be processed
+                    by health IT systems and understood by most healthcare providers without
+                    reference to private or inaccessible information; </para>
+            </listitem>
+        </itemizedlist>
+        <itemizedlist>
+            <listitem>
+                <para><emphasis role="bold">Reproducible</emphasis>: multiple users or systems apply
+                    the data to the same situations and source data with an equivalent result;
+                    and</para>
+            </listitem>
+        </itemizedlist>
+        <itemizedlist>
+            <listitem>
+                <para><emphasis role="bold">Useful</emphasis>: data is fit-for-purpose – it has
+                    practical value for data analysis in support of health information exchange,
+                    research, and public health that requires information aggregated across health
+                    IT systems. </para>
+            </listitem>
+        </itemizedlist>
+        <para>A report in the 2016 Yearbook of Medical Informatics defines terminology as “a system
+            of concepts with assigned identifiers and human language terms, typically involving some
+            kind of semantic hierarchy. Some systems may support the assignment of multiple terms,
+            or synonyms, to a given concept; these may include terms in multiple natural languages,
+            such as English or Dutch.” [10] This definition implies that knowledge representation
+            for a terminology system may not always be based on a strict defining hierarchy. The
+            advantage, or disadvantage, of such an approach is that the terminology, such as LOINC®
+            for instance, might appear to be rather intuitive and human-readable and comprehensible.
+            However, when delving into complex use cases, a lack of formal defining structure may
+            reveal that it is difficult to understand the precise meaning of the terminological
+            representations and that use of a system such as LOINC® may differ widely amongst
+            humans. Further exacerbating potential variability is the heterogeneous behavior of
+            tools implemented to reason with terminological structures. [11] </para>
+        <para>The field of Knowledge Representation and “Description Logics” was developed out of
+            the attempt to formally define “intuitive representations” with a formal semantics to
+            establish a common ground for human and tool interoperability. Knowledge representation
+            involves the design of formalisms for expressing knowledge about a particular domain and
+            focuses on representing and characterizing classes of objects and relationships between
+            them. An ideal state terminology that relies on description logics may invoke more
+            formal semantic relationships between and among concepts. Use of a Description Logics
+            reasoner can help in overcoming important drawbacks of multi-axial systems and other
+            non-standard, distinct formalisms: (1) the capability of detecting semantic equivalence
+            of syntactically different expressions, and (2) the automated classification of concepts
+            in a hierarchy.
+            <?oxy_comment_start author="ecundiff" timestamp="20250711T065713-0400" comment="Removed section &quot;SNOMED CT Design Criteria&quot; as it is a direct quotation from Bodenreider, some of the same information is included in SNOMED Current State section, and it&apos;s placement in this portion of the book doesn&apos;t make sense."?></para><?oxy_comment_end?>
+        <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250720T220749-0500" comment="I think we can build out how this terminology section builds up to our solution. Our solution builds on the work of existing terminologies including snomed and loinc, by taking into account the following:
+
+1. we follow URU and description logic reasoners to reach &quot;ideal state terminology&quot;
+2. we explain our approach to Langugage, Definitional knowledge, and then list out other special considerations
+3. wrap up section with solor but change solor to Komet and talk about it more like our solution and then add sentence about how our IKM terminology solution will feed into our tool, komet"?>
+        <para>In the upcoming sections we describe important considerations for the design of our
+            knowledge management tool, including Language, Definition, and Description Logic Primer,
+            in order to achieve this ideal state tool. </para><?oxy_comment_end?>
     </section>
     <section>
-        <title>Language</title>
+        <title><?oxy_comment_start author="rgeorgacopoulos" timestamp="20250721T142003-0500" comment="Add new section header that is &quot;Foundational Components of Terminology&quot; and then flow into language, definitional. "?>Language<?oxy_comment_end?></title>
         <para>Language is used to describe identified components. While the initial focus of
             Integrated Knowledge Management (IKM) will be to use the English language versions from
             the foundational coding systems, support for other languages will be included as a part
@@ -1624,8 +1622,8 @@ why-what-how-termlex/?trk=pulse-article"?>[]<?oxy_comment_end?></para>
                 that implements mathematical logic to support formal expressions, reasoning, and
                 formal proof. It is typically more expressive than propositional logic, which only
                 deals with fixed truth values, which may or may not be true
-                (<?oxy_comment_start author="steph" timestamp="20190305T155849-0700" comment="Should be &quot;e.g.&quot; instead of &quot;i.e.&quot;  Same for example below for books or temperature." id="cpw_mqc_1hb" flag="done"?><?oxy_comment_start author="erhwang" timestamp="20190307T083716-0700" comment="fixed" parentID="cpw_mqc_1hb" flag="done" mid="52"?>e.g.
-                <?oxy_comment_end mid="52"?><?oxy_comment_end?>"it is raining"), and cannot have
+                (<?oxy_comment_start author="steph" timestamp="20190305T155849-0700" comment="Should be &quot;e.g.&quot; instead of &quot;i.e.&quot;  Same for example below for books or temperature." id="cpw_mqc_1hb" flag="done"?><?oxy_comment_start author="erhwang" timestamp="20190307T083716-0700" comment="fixed" parentID="cpw_mqc_1hb" flag="done" mid="55"?>e.g.
+                <?oxy_comment_end mid="55"?><?oxy_comment_end?>"it is raining"), and cannot have
                 variables to represent 'things' (e.g. books or temperature). However, it is less
                 expressive than first-order logic, which assumes the world contains Objects,
                 Relations and Functions, allows variables and can quantify over non-logical objects.
@@ -1675,22 +1673,22 @@ why-what-how-termlex/?trk=pulse-article"?>[]<?oxy_comment_end?></para>
                 effects, or will be handled separately from normal description logic
                 operations.</para>
             <section>
-                <title><?oxy_comment_start author="steph" timestamp="20190306T102924-0700" comment="Should this be change to representation of absence?" id="drx_vrc_1hb" flag="done"?><?oxy_comment_start author="erhwang" timestamp="20190307T084732-0700" comment="Represetation of absence is kind of Logical Negation. Logical Negation is a known &apos;phrase&apos; in Description Logic. Since this section is addressing what Solor WON&apos;T be addressing, I think it is best to leave it as Logical negation &amp; write a bit on it when this section is expanded with verbiage." parentID="drx_vrc_1hb" flag="done" mid="56"?><?oxy_comment_start author="steph" timestamp="20190402T154919-0600" comment="Okay" flag="done" mid="57"?>Logical<?oxy_comment_end mid="57"?><?oxy_comment_end mid="56"?><?oxy_comment_end?>
+                <title><?oxy_comment_start author="steph" timestamp="20190306T102924-0700" comment="Should this be change to representation of absence?" id="drx_vrc_1hb" flag="done"?><?oxy_comment_start author="erhwang" timestamp="20190307T084732-0700" comment="Represetation of absence is kind of Logical Negation. Logical Negation is a known &apos;phrase&apos; in Description Logic. Since this section is addressing what Solor WON&apos;T be addressing, I think it is best to leave it as Logical negation &amp; write a bit on it when this section is expanded with verbiage." parentID="drx_vrc_1hb" flag="done" mid="59"?><?oxy_comment_start author="steph" timestamp="20190402T154919-0600" comment="Okay" flag="done" mid="60"?>Logical<?oxy_comment_end mid="60"?><?oxy_comment_end mid="59"?><?oxy_comment_end?>
                     negation</title>
                 <para>Logical Negation, or "Representation of absence" as it is described throughout
                     this document, is the notion of how to describe something that is not present.
                     The complexity of this topic is described
-                    <?oxy_comment_start author="ecundiff" timestamp="20250714T101122-0400" comment="This was previously a reference to &quot;[reference definitional_conceptAnalysis.xml, section 1.2.1]&quot;" id="st3_1rz_zfc"?><?oxy_comment_start author="tocrow" timestamp="20250717T021443-0400" parentID="st3_1rz_zfc" comment="do we have that content still? Do we need to pull any of that in?" mid="59"?>further
+                    <?oxy_comment_start author="ecundiff" timestamp="20250714T101122-0400" comment="This was previously a reference to &quot;[reference definitional_conceptAnalysis.xml, section 1.2.1]&quot;" id="st3_1rz_zfc"?><?oxy_comment_start author="tocrow" timestamp="20250717T021443-0400" parentID="st3_1rz_zfc" comment="do we have that content still? Do we need to pull any of that in?" mid="62"?>further
                     in the Topics of Concerns section
-                    below<?oxy_comment_end mid="59"?><?oxy_comment_end?> and illustrates why it is
+                    below<?oxy_comment_end mid="62"?><?oxy_comment_end?> and illustrates why it is
                     difficult to represent this notion of something that is not present.
                     Furthermore, it describes how current content in terminologies is inconsistently
                     represented. </para>
                 <para>The identification of content deemed as "absence" content is described in
                     greater
-                    <?oxy_comment_start author="ecundiff" timestamp="20250714T111446-0400" comment="This was previously a reference to &quot;[reference definitional_conceptAnalysis.xml, section 1.2]&quot;" id="u4q_1rz_zfc"?><?oxy_comment_start author="tocrow" timestamp="20250717T021448-0400" parentID="u4q_1rz_zfc" comment="same as above" mid="61"?>detail
+                    <?oxy_comment_start author="ecundiff" timestamp="20250714T111446-0400" comment="This was previously a reference to &quot;[reference definitional_conceptAnalysis.xml, section 1.2]&quot;" id="u4q_1rz_zfc"?><?oxy_comment_start author="tocrow" timestamp="20250717T021448-0400" parentID="u4q_1rz_zfc" comment="same as above" mid="64"?>detail
                     in the Absence Representation
-                    section<?oxy_comment_end mid="61"?><?oxy_comment_end?>. Recognizing these
+                    section<?oxy_comment_end mid="64"?><?oxy_comment_end?>. Recognizing these
                     concepts allows a system to handle the "absence" computation when they are
                     available. This approach allows for handling absence in a way that is separate
                     and more specialized than typical description logic operations.</para>
@@ -1715,7 +1713,7 @@ Title = Terminology in Action &gt; Section = Interoperability deep dive (this wa
         <section>
             <title>Inte<?oxy_comment_start author="tocrow" timestamp="20240624T173028-0400" comment="I think this is covered in other sections"?>roperability
                 by
-                <?oxy_comment_start author="ecundiff" timestamp="20250713T093821-0400" comment="Agree this is touched on elsewhere, but this is a more comprehensive overview than is found in other sections. Content is similar, but not truly duplkicative IMO." mid="103"?>Mappi<?oxy_comment_end?>ng<?oxy_comment_end mid="103"?></title>
+                <?oxy_comment_start author="ecundiff" timestamp="20250713T093821-0400" comment="Agree this is touched on elsewhere, but this is a more comprehensive overview than is found in other sections. Content is similar, but not truly duplkicative IMO." mid="107"?>Mappi<?oxy_comment_end?>ng<?oxy_comment_end mid="107"?></title>
             <para>Today's health care terminology standards encompass methods, terminologies, and
                 specifications for the exchange, storage, and retrieval of information associated
                 with health care systems. These standards contain terminologies and concepts that
@@ -1963,8 +1961,8 @@ OHDSI&apos;s Standard Vocabulary relies heavily on mapping non-standard concepts
                     extraneous and missing ingredients within value sets and drug classes.</para>
             </section>
             <section>
-                <title>SOLOR</title>
-                <para>What’s needed is a semantically normalized information model (i.e., Solor)
+                <title>Komet</title>
+                <para>What’s needed is a semantically normalized information model (i.e., Komet)
                     with an appropriate separation of concerns in regard to the informatics
                     architectural layers. Such a model is critical for the success of a number of
                     forward-thinking healthcare initiatives. Solor does not map one terminology
@@ -1981,7 +1979,7 @@ OHDSI&apos;s Standard Vocabulary relies heavily on mapping non-standard concepts
                     selected. Solor concepts are identified using a Universally Unique Identifier
                     (UUID).</para>
                 <section>
-                    <title> The Solor Solution</title>
+                    <title> The Komet Solution</title>
                     <para>The new approach to data integration involves the use of description logic
                         to model and manage concepts from standard terminologies to support clinical
                         care. Instead of mapping an existing local code or term to a standard code
@@ -1998,22 +1996,25 @@ OHDSI&apos;s Standard Vocabulary relies heavily on mapping non-standard concepts
                         for integrating historical data so source terms (linked to alternative
                         identifiers) are accurately represented using standard concepts defined
                         using description logic. LOINC®, SNOMED CT®, and RxNorm form the foundation
-                        of Solor given that they are meaningful use standards, where when integrated
+                        of Komet given that they are meaningful use standards, where when integrated
                         together, represent the breadth of information necessary for clinical data
                         representation.
                         <?oxy_comment_start author="ecundiff" timestamp="20250713T224705-0400" comment="Moved section &quot;Solor Defintional Knowledge&quot; to appendix"?>See
-                        the appendix for additional discussion of the categories within Solor where
+                        the appendix for additional discussion of the categories within Komet where
                         concept reside, as well as the relationships used to define the
                         concepts.<?oxy_comment_end?></para>
                     <section>
+                        <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250720T221352-0500" comment="we can delete this now"?>
                         <title>Design Features - Understandable, Reproducible and Useful</title>
-                        <para>Content in Solor aims to adhere to design features for concept
+                        <para>Content in Komet aims to adhere to design features for concept
                             validity, Understandarble, Reproducible, and Useful (URU), described in
-                            previous portions of this text.</para>
+                            previous portions of this text.<?oxy_comment_end?></para>
                     </section>
                     <section>
-                        <title>Licensing and Solor</title>
-                        <para>Solor is not intended to compete with existing standards and
+                        <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250722T114211-0500" comment="Pull out first sentence and add it to solor intro above. The remaining content has been pulled over to komet guide intro; delete this solor licensing section "?>
+                        <title><?oxy_comment_start author="rgeorgacopoulos" timestamp="20250720T222122-0500" comment="I will move this section to the komet user guide intro" mid="120"?>Licensing
+                            and Solor</title><?oxy_comment_end?>
+                        <para>Komet is not intended to compete with existing standards and
                             processes, and does not redistribute content. It enables the community
                             of Solor to integrate terminologies – their own terminology and others’
                             terminology. Those who are distributing terminology must have a license
@@ -2028,7 +2029,8 @@ OHDSI&apos;s Standard Vocabulary relies heavily on mapping non-standard concepts
                             to integrate Solor content into their standards.
                             <?oxy_comment_start author="ecundiff" timestamp="20250713T130747-0400" comment="LOINC and SNOMED each had subsections for licensing. This can now be found in the appendix"?>Additional
                             information for obtaining and using the LOINC® and SNOMED CT®
-                            terminologies can be found in the appendix<?oxy_comment_end?>.</para>
+                            terminologies can be found in the
+                            appendix<?oxy_comment_end?>.<?oxy_comment_end mid="120"?></para>
                     </section>
                 </section>
                 <section>

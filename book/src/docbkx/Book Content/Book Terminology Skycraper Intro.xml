@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.1">
+    <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250718T211611-0500" comment="Add to beginning of Book Part 5 Terminology Reorg.xml. The opening paragraph of cimino&apos;s desiderata will serve as the connecting paragraph between the 2 xmls"?>
+    <title>Terminology Layer</title><?oxy_comment_end?>
+    <para>In the following sections we will discuss the Terminology Knowledge Layer of the Knowledge
+        Architecture. </para>
+    <para>Terminology Knowledge builds on the foundational architecture by creating structured
+        collections of medical terms and codes—such as SNOMED CT, LOINC®, and RxNorm—that define
+        important clinical concepts, including their descriptions, languages, and hierarchical
+        relationships. This layer establishes which valid codes or expressions can be used by
+        higher-level systems.</para>
+    <para> </para>
+    <figure xml:id="KnowledgeArchitectureTerminology">
+        <title>Terminology Knowledge Layer</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata fileref="../images/KnowledgeArchitectureTerminology.svg" scale="25"
+                    align="center"/>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</chapter>
