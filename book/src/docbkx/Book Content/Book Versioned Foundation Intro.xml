@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.1">
+    <title>Versioned Foundation</title>
+    <para>In the following sections we will discuss the Versioned Foundation Layer of the Knowledge
+        Architecture. </para>
+    <para>The Versioned Foundation provides the essential building blocks for a common model,
+        enabling the consistent transformation of diverse standards into this model to support
+        interoperability across different systems. It ensures that all architectural modules are
+        strictly version controlled over time. This layer incorporates key interoperability elements
+        such as object identity, versioning, modularity, data exchange methods, and knowledge
+        representation.</para>
+    <para> </para>
+    <figure xml:id="KnowledgeArchitectureVersionedFoundation">
+        <title>Versioned Foundation Layer</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata fileref="../images/KnowledgeArchitectureVersionedFoundation.svg"
+                    scale="25" align="center"/>
+            </imageobject>
+        </mediaobject>
+    </figure>
+    <para>As reviewed in the TermINology Knowledge Architecture (Tinkar)
+        <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250718T205956-0500" comment="taken from &quot;TermINology Knowledge Architecture (Tinkar)&quot; section of the IKM Background Part. need to pull in reference
+
+HL7 Logical Model: Standardized Terminology Knowledgebase, Release 1. Terminology Knowledge Architecture Informative Ballot. HL7 Vocabulary Work Group. August 2021. "?>
+        we are aiming to improve IKM capabilities and advancing an existing Health Level Seven
+        International (HL7) project within the Vocabulary Working Group known as the ‘Guidelines for
+        a Standardized Terminology Knowledge base”, also known as TermINology Knowledge Architecture
+        (Tinkar). Tinkar is intended to provide an architecture that delivers integrated terminology
+        to the healthcare enterprise and its information systems. Tinkar addresses the differences
+        in management and structure across reference terminology, and with local concepts and code
+        lists/value sets.</para><?oxy_comment_end?>
+</chapter>
