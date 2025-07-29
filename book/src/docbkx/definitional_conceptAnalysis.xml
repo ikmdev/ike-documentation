@@ -24,7 +24,8 @@
             </itemizedlist></para>
         <para>This section outlines the agreed upon rules, the reasoning for applying those rules
             and provides practical examples of how they are applied. </para>
-        <para>The concepts identified in this task as either meeting inclusion or exclusion criteria
+        <para>T<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250720T214744-0500" comment="If we really want to keep this section short; we can cut it here and drop everything below special handling categories in the appendix. "?>he
+            concepts identified in this task as either meeting inclusion or exclusion criteria
             belong to the following categories: <itemizedlist>
                 <listitem>
                     <para>Concept includes absence</para>
@@ -45,7 +46,7 @@
                     <para>Concept is a primitive concept that should be fully defined</para>
                 </listitem>
                 <listitem>
-                    <para>Concept is symmetrically modeled</para>
+                    <para>Concept is symmetrically modeled</para><?oxy_comment_end?>
                 </listitem>
             </itemizedlist>
         </para>
