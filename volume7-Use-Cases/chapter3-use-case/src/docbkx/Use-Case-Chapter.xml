@@ -629,11 +629,10 @@
                 data could flow in an idealized state. Remaining data will be incorporated in
                 collection steps and data groupings from the patient workflow to elucidate how
                 various data storage systems house, transform, and transmit data as well as the
-                enablers needed to improve and standardize the associated data collection. This
-                continued work will be included in a future iteration of this work. While this work
-                currently centers around a Long COVID diagnosis, the themes and insights will be
-                used to inform data aggregation and secondary use for other emerging acute and
-                chronic infectious diseases that will ultimately provide their own feedback and
+                enablers needed to improve and standardize the associated data collection. While
+                this work currently centers around a Long COVID diagnosis, the themes and insights
+                will be used to inform data aggregation and secondary use for other emerging acute
+                and chronic infectious diseases that will ultimately provide their own feedback and
                 insights to further improve data collection.</para>
             <para>Advanced analytical capability of monitoring and responding to data trends in real
                 time goes beyond detecting emerging diseases and can extend to fast tracking device
