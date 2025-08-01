@@ -655,104 +655,103 @@
         <para>
             <orderedlist>
                 <listitem>
-                    <para>FDA. Real World Evidence [Internet]. U.S. Food and Drug Administration.
-                        2022. Available from: <link
-                            xlink:href="https://www.fda.gov/science-research/science-and-research-special-topics/real-world-evidence"
-                            >https://www.fda.gov/science-research/science-and-research-special-topics/real-world-evidence</link></para>
+                    <para>Commissioner O of the. FDA. 2025 [cited 2025 Jul 31]. Real-World Evidence.
+                        Available from:
+                        https://www.fda.gov/science-research/science-and-research-special-topics/real-world-evidence</para>
                 </listitem>
                 <listitem>
-                    <para>Cook RJ, Durning SJ. Clinical Process Modeling. Academic Medicine. 2019
-                        Apr;1.</para>
+                    <para>Cook RJ, Durning SJ. Clinical Process Modeling: An Approach for Enhancing
+                        the Assessment of Physicians’ Clinical Reasoning. Acad Med. 2019
+                        Sep;94(9):1317–22.</para>
                 </listitem>
                 <listitem>
                     <para>Vankipuram A, Traub S, Patel VL. A method for the analysis and
-                        visualization of clinical workflow in dynamic environments. Journal of
-                        Biomedical Informatics. 2018 Mar;79:20–31.</para>
+                        visualization of clinical workflow in dynamic environments. J Biomed Inform.
+                        2018 Mar;79:20–31.</para>
                 </listitem>
                 <listitem>
                     <para>Crowley C, Guitron S, Son J, Pianykh OS. Modeling workflows: Identifying
-                        the most predictive features in healthcare operational processes. Vellido A,
-                        editor. PLOS ONE. 2020 Jun 11;15(6):e0233810.</para>
+                        the most predictive features in healthcare operational processes. PLoS One.
+                        2020;15(6):e0233810.</para>
                 </listitem>
                 <listitem>
                     <para>Griewing S, Lingenfelder M, Wagner U, Gremke N. Use Case Evaluation and
                         Digital Workflow of Breast Cancer Care by Artificial Intelligence and
-                        Blockchain Technology Application. Healthcare. 2022 Oct
-                        20;10(10):2100.</para>
+                        Blockchain Technology Application. Healthcare (Basel) [Internet]. 2022 Oct
+                        20 [cited 2025 Jul 31];10(10):2100. Available from:
+                        https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9602799/</para>
                 </listitem>
                 <listitem>
-                    <para>de Bruin JS, Adlassnig K-P, Leitich H, Rappelsberger A. Separating
-                        Business Logic from Medical Knowledge in Digital Clinical Workflows Using
-                        Business Process Model and Notation and Arden Syntax. Studies in Health
-                        Technology and Informatics [Internet]. 2018 [cited 2023 Mar 15];248:17–24.
-                        Available from: <link xlink:href="https://pubmed.ncbi.nlm.nih.gov/29726414/"
+                    <para>de Bruin JS, Adlassnig KP, Leitich H, Rappelsberger A. Separating Business
+                        Logic from Medical Knowledge in Digital Clinical Workflows Using Business
+                        Process Model and Notation and Arden Syntax. Stud Health Technol Inform.
+                        2018 cited 2023 Mar 15;248:17–24. Available from: <link
+                            xlink:href="https://pubmed.ncbi.nlm.nih.gov/29726414/"
                             >https://pubmed.ncbi.nlm.nih.gov/29726414/</link></para>
                 </listitem>
                 <listitem>
                     <para>Natsiavas P, Stavropoulos TG, Pliatsios A, Karanikas H, Gavriilidis GI,
                         Dimitriadis VK, et al. Using Business Process Management Notation to Model
-                        Therapeutic Prescription Protocols: The PrescIT Approach. Studies in Health
-                        Technology and Informatics. 2021 May 27;</para>
+                        Therapeutic Prescription Protocols: The PrescIT Approach. Stud Health
+                        Technol Inform. 2021 May 27;281:1089–90.</para>
                 </listitem>
                 <listitem>
                     <para>Ruiz F, Garcia F, Calahorra L, Llorente C, Gonçalves L, Daniel C, et al.
-                        Business process modeling in healthcare. Studies in Health Technology and
-                        Informatics [Internet]. 2012 [cited 2023 Mar 15];179:75–87. Available from:
-                            <link xlink:href="https://pubmed.ncbi.nlm.nih.gov/22925789/"
-                            >https://pubmed.ncbi.nlm.nih.gov/22925789/</link></para>
+                        Business process modeling in healthcare. Stud Health Technol Inform. 2012
+                        cited 2023 Mar 15;179:75–87.</para>
                 </listitem>
                 <listitem>
-                    <para>Kassim SA, Gartner J-B, Labbé L, Landa P, Paquet C, Bergeron F, et al.
+                    <para>Kassim SA, Gartner JB, Labbé L, Landa P, Paquet C, Bergeron F, et al.
                         Benefits and limitations of business process model notation in modelling
-                        patient healthcare trajectory: a scoping review protocol. BMJ Open. 2022
-                        May;12(5):e060357.</para>
+                        patient healthcare trajectory: a scoping review protocol. BMJ Open. 2022 May
+                        30;12(5):e060357.</para>
                 </listitem>
                 <listitem>
                     <para>Hedin K, van der Velden AW, Hansen MP, Moberg AB, Balan A, Bruno P, et al.
                         Initial symptoms and three months follow-up after acute COVID-19 in
-                        outpatients: An international prospective cohort study. The European Journal
-                        of General Practice [Internet]. 2023 Jan 19 [cited 2023 Mar 9];2154074.
-                        Available from: <link xlink:href="https://pubmed.ncbi.nlm.nih.gov/36655704/"
+                        outpatients: An international prospective cohort study. Eur J Gen Pract.
+                        2023 Dec cited 2023 Mar 9;29(2):2154074. Available from: <link
+                            xlink:href="https://pubmed.ncbi.nlm.nih.gov/36655704/"
                             >https://pubmed.ncbi.nlm.nih.gov/36655704/</link></para>
                 </listitem>
                 <listitem>
-                    <para>Tran V-T, Porcher R, Pane I, Ravaud P. Course of post COVID-19 disease
-                        symptoms over time in the ComPaRe long COVID prospective e-cohort. Nature
-                        Communications. 2022 Apr 5;13(1).</para>
+                    <para>Tran VT, Porcher R, Pane I, Ravaud P. Course of post COVID-19 disease
+                        symptoms over time in the ComPaRe long COVID prospective e-cohort. Nat
+                        Commun. 2022 Apr 5;13(1):1812.</para>
                 </listitem>
                 <listitem>
                     <para>Davis HE, McCorkell L, Vogel JM, Topol EJ. Long COVID: major findings,
-                        mechanisms and recommendations. Nature Reviews Microbiology [Internet]. 2023
-                        Jan 13;1–14. Available from: <link
-                            xlink:href="https://www.nature.com/articles/s41579-022-00846-2"
-                            >https://www.nature.com/articles/s41579-022-00846-2</link></para>
+                        mechanisms and recommendations. Nat Rev Microbiol [Internet]. 2023 Mar
+                        [cited 2025 Jul 31];21(3):133–46. Available from:
+                        https://www.nature.com/articles/s41579-022-00846-2</para>
                 </listitem>
                 <listitem>
                     <para>Malden DE, Tartof SY, Ackerson BK, Hong V, Skarbinski J, Yau V, et al.
                         Natural Language Processing for Improved Characterization of COVID-19
                         Symptoms: Observational Study of 350,000 Patients in a Large Integrated
                         Health Care System. JMIR Public Health and Surveillance [Internet]. 2022 Dec
-                        30 [cited 2023 Mar 9];8(12):e41529. Available from:<link
-                            xlink:href="https://publichealth.jmir.org/2022/12/e41529"
-                            >https://publichealth.jmir.org/2022/12/e41529</link></para>
+                        30 [cited 2023 Mar 9];8(12):e41529. Available from:
+                        https://publichealth.jmir.org/2022/12/e41529</para>
                 </listitem>
                 <listitem>
-                    <para>CDC. Long COVID or Post-COVID Conditions [Internet]. Centers for Disease
-                        Control and Prevention. 2021. Available from: <link
-                            xlink:href="https://www.cdc.gov/coronavirus/2019-ncov/long-term-effects/index.html"
-                            >https://www.cdc.gov/coronavirus/2019-ncov/long-term-effects/index.html</link></para>
+                    <para>CDC [Internet]. 2021. Long COVID or Post-COVID Conditions. Available from:
+                        https://www.cdc.gov/coronavirus/2019-ncov/long-term-effects/index.html</para>
                 </listitem>
                 <listitem>
                     <para>Cholan RA, Pappas G, Rehwoldt G, Sills AK, Korte ED, Appleton IK, et al.
                         Encoding laboratory testing data: case studies of the national
                         implementation of HHS requirements and related standards in five
                         laboratories. Journal of the American Medical Informatics Association
-                        [Internet]. 2022 May 25 [cited 2023 Mar 16];29(8):1372–80. Available from:
-                        https://academic.oup.com/jamia/article/29/8/1372/6592172#365931904</para>
+                        [Internet]. 2022 Jul 12 [cited 2023 Mar 16];29(8):1372–80. Available from:
+                        https://academic.oup.com/jamia/article/29/8/1372/6592172</para>
                 </listitem>
                 <listitem>
-                    <para>PPRL | N3C [Internet]. covid.cd2h.org. [cited 2023 Mar 9]. Available from:
-                        https://covid.cd2h.org/PPRL</para>
+                    <para>PPRL | N3C [Internet]. N3C Privacy-Preserving Record Linkage. [cited 2023
+                        Mar 9]. </para>
+                </listitem>
+                <listitem>
+                    <para> Available from: <link xlink:href="https://covid.cd2h.org/PPRL/"
+                            >https://covid.cd2h.org/PPRL/</link></para>
                 </listitem>
             </orderedlist>
         </para>
