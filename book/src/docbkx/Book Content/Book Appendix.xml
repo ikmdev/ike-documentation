@@ -15,10 +15,29 @@
         <title><?oxy_comment_start author="ecundiff" timestamp="20250714T114101-0400" comment="Will pull in references from each xml as a final step since the ordering will be dependent upon more than just Part 5 content"?>References<?oxy_comment_end?></title>
         <orderedlist>
             <listitem>
-                <para/>
+                <para>Covid-19 value sets in VSAC [Internet]. U.S. National Library of Medicine.
+                    National Institutes of Health; [cited 2023 Mar 10]. Available from: <link
+                        xlink:href="https://www.nlm.nih.gov/vsac/support/usingvsac/covid19valuesets.html"
+                        >https://www.nlm.nih.gov/vsac/support/usingvsac/covid19valuesets.html</link></para>
             </listitem>
             <listitem>
-                <para/>
+                <para>McDonald C, Huff SM, Suico J, Mercer K. Logical Observation Identifiers Names
+                    and Codes (LOINC) users’ guide. Indianapolis: Regenstrief Institute.<emphasis
+                        role="italic"> </emphasis>2004</para>
+            </listitem>
+            <listitem>
+                <para>Cholan RA, Weiskopf NG, Rhoton DL, Colin NV, Ross RL, Marzullo MN, et al.
+                    Specifications of Clinical Quality Measures and Value Set Vocabularies Shift
+                    Over Time: A Study of Change through Implementation Differences. AMIA Annu Symp
+                    Proc. 2017;2017:575–84. </para>
+            </listitem>
+            <listitem>
+                <para> Hansen ML, Sørensen R, Clausen MT, Fog-Petersen ML, Raunsø J, Gadsbøll N, et
+                    al. Risk of Bleeding With Single, Dual, or Triple Therapy With Warfarin,
+                    Aspirin, and Clopidogrel in Patients With Atrial Fibrillation. Arch Intern Med
+                    [Internet]. 2010 Sep 13;170(16). Available from:
+                    http://archinte.jamanetwork.com/article.aspx?doi=10.1001/archinternmed.2010.271
+                </para>
             </listitem>
         </orderedlist>
     </section>

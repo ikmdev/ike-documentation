@@ -18,7 +18,7 @@
             first published in 1989 and subsequently expanded in 1998. The resulting framework
             comprises twelve desiderata, which outline the essential characteristics that controlled
             medical terminologies should possess to promote interoperability, shareability, and
-            reusability across diverse healthcare contexts. They are: <?oxy_comment_end?><orderedlist>
+            reusability across diverse healthcare contexts. They are [1] <?oxy_comment_end?><orderedlist>
                 <listitem>
                     <para><emphasis role="bold">Content</emphasis>: While missing content is
                         expected, formally stated processes for requesting and adding content is
@@ -39,8 +39,9 @@
                         <?oxy_comment_start author="tocrow" timestamp="20240624T131234-0400" comment="cite" flag="done"?>1998
                         paper
                             <?oxy_comment_start author="tocrow" timestamp="20250716T005710-0400" comment="i think this should still be cited
-" mid="2"?><citation>Representing Thoughts, Words, and Things in the
-                            UMLS<?oxy_comment_end?></citation><?oxy_comment_end mid="2"?> the
+" flag="done" mid="2"?><citation>Representing Thoughts, Words, and
+                            Things in the
+                        UMLS<?oxy_comment_end?></citation><?oxy_comment_end mid="2"?> [2] the
                         authors describe that the Ogden Richards' semiotic triangle "shows that,
                         although written or spoken symbols (words) cannot completely capture the
                         essence of a reference (thought) or of a referent (thing), there is a
@@ -50,11 +51,8 @@
                         thing is indirect, however. The link can be completed only when an
                         interpreter (usually a person) processes the word, which invokes a
                         corresponding thought, and then links that thought to a thing in the world
-                        (the “referent”). This diagram is seductive in its simplicity."
-                        [<?oxy_comment_start author="tocrow" timestamp="20250716T005926-0400" comment="should this start at 1?
-
-"?>29<?oxy_comment_end?>]</para>
-                    <para><?oxy_comment_start author="tocrow" timestamp="20250716T010143-0400" comment="no citation despite a quote"?><quote>By
+                        (the “referent”). This diagram is seductive in its simplicity." </para>
+                    <para><?oxy_comment_start author="tocrow" timestamp="20250716T010143-0400" comment="no citation despite a quote" flag="done"?><quote>By
                             implying a one-to-one relationship between each pair of members in the
                             triangle, this simple diagram masks hidden complexity. Ogden and
                             Richards alluded to this complexity by the dotted line between a symbol
@@ -66,7 +64,8 @@
                             or idea, a single term may refer ambiguously to more than one object or
                             idea, and terms may be confusing because they are out of date. It is
                             within this context that we seek solutions to improve our ability to
-                            communicate about biomedical concepts.</quote><?oxy_comment_end?></para>
+                            communicate about biomedical
+                        concepts.</quote><?oxy_comment_end?>[2]</para>
                     <para>
                         <figure>
                             <title>Ogden and Richards semiotic triangle</title>
@@ -105,8 +104,8 @@
                         representation you can easily find all meningococcal infections, but if you
                         need to find all types of meningitis you are required to know all the
                         various codes that represent the different classifications of meningitis.<figure>
-                            <title><?oxy_comment_start author="steph" timestamp="20190903T155353-0600" comment="Can you center the text in the boxes below and fix the first box where the text is cutoff?" flag="done"?><?oxy_comment_start author="steph" timestamp="20191016T113247-0600" comment="This is still a problem - the text is cutoff." mid="7"?>Monohierarchy
-                                Example<?oxy_comment_end?><?oxy_comment_end mid="7"?></title>
+                            <title><?oxy_comment_start author="steph" timestamp="20190903T155353-0600" comment="Can you center the text in the boxes below and fix the first box where the text is cutoff?" flag="done"?><?oxy_comment_start author="steph" timestamp="20191016T113247-0600" comment="This is still a problem - the text is cutoff." mid="6"?>Monohierarchy
+                                Example<?oxy_comment_end?><?oxy_comment_end mid="6"?></title>
                             <mediaobject>
                                 <imageobject>
                                     <imagedata fileref="../images/meningitis_monohierarchy.svg"
@@ -117,9 +116,9 @@
                     <para>In a well designed terminology, concepts should be allowed to exist in
                         multiple hierarchies if multiple parent concepts are appropriate. For
                         example,
-                        <?oxy_comment_start author="tocrow" timestamp="20250716T010344-0400" comment="bacterial meningitis is a subtype of bacterial meingitis?"?>B<?oxy_comment_start author="timowilliams" timestamp="20190430T201423-0500" comment="Add image representing the polyhierarchy" id="m3l_gb2_xhb" flag="done" mid="9"?><?oxy_comment_start author="rcholan" timestamp="20190528T215454-0400" comment="Adding initial image. Will re-create." parentID="m3l_gb2_xhb" flag="done" mid="10"?><?oxy_comment_start author="steph" timestamp="20190806T085004-0600" comment="Recommend removing most of the white space around the image that isn&apos;t needed and is forcing &quot;hierarchies&quot; to be hyphenated and shown before and after the image." flag="done" mid="11"?>acterial
-                        Meningitis is both a subtype of Bacterial Meningitis<?oxy_comment_end?> and
-                        Meningococcal infectious disease and should exist in both hierarchies.<?oxy_comment_end mid="11"?><?oxy_comment_end mid="10"?><?oxy_comment_end mid="9"?>
+                        <?oxy_comment_start author="tocrow" timestamp="20250716T010344-0400" comment="bacterial meningitis is a subtype of bacterial meingitis?" flag="done"?>B<?oxy_comment_start author="timowilliams" timestamp="20190430T201423-0500" comment="Add image representing the polyhierarchy" id="m3l_gb2_xhb" flag="done" mid="8"?><?oxy_comment_start author="rcholan" timestamp="20190528T215454-0400" comment="Adding initial image. Will re-create." parentID="m3l_gb2_xhb" flag="done" mid="9"?><?oxy_comment_start author="steph" timestamp="20190806T085004-0600" comment="Recommend removing most of the white space around the image that isn&apos;t needed and is forcing &quot;hierarchies&quot; to be hyphenated and shown before and after the image." flag="done" mid="10"?>acterial
+                        Meningitis is both a subtype of <?oxy_comment_end?>Bacterial Infection of
+                        Central Nervous System and Infective Meningitis and should exist in both hierarchies.<?oxy_comment_end mid="10"?><?oxy_comment_end mid="9"?><?oxy_comment_end mid="8"?>
                         <figure>
                             <title>Polyhierarchy Example</title>
                             <mediaobject>
@@ -133,8 +132,8 @@
                 <listitem>
                     <para><emphasis role="bold"
                             ><?oxy_comment_start author="timowilliams" timestamp="20190430T201919-0500" comment="Should we add a comparison of stated vs inferred definitions here?
-" flag="done"?><?oxy_comment_start author="steph" timestamp="20190507T163331-0600" comment="I think that would be helpful." id="p3x_b22_xhb" flag="done" mid="13"?><?oxy_comment_start author="rcholan" timestamp="20190528T221625-0400" comment="Added some draft explanation. Need example to help." parentID="p3x_b22_xhb" flag="done" mid="14"?><?oxy_comment_start author="steph" timestamp="20190812T161629-0600" comment="I think it needs to be more &quot;in your face,&quot; where you have the each term of stated and inferred, followed by their own definitions." flag="done" mid="15"?>Formal
-                            Definitions<?oxy_comment_end mid="15"?><?oxy_comment_end mid="14"?><?oxy_comment_end mid="13"?><?oxy_comment_end?></emphasis>:
+" flag="done"?><?oxy_comment_start author="steph" timestamp="20190507T163331-0600" comment="I think that would be helpful." id="p3x_b22_xhb" flag="done" mid="12"?><?oxy_comment_start author="rcholan" timestamp="20190528T221625-0400" comment="Added some draft explanation. Need example to help." parentID="p3x_b22_xhb" flag="done" mid="13"?><?oxy_comment_start author="steph" timestamp="20190812T161629-0600" comment="I think it needs to be more &quot;in your face,&quot; where you have the each term of stated and inferred, followed by their own definitions." flag="done" mid="14"?>Formal
+                            Definitions<?oxy_comment_end mid="14"?><?oxy_comment_end mid="13"?><?oxy_comment_end mid="12"?><?oxy_comment_end?></emphasis>:
                         While hierarchical information is paramount, the inclusion of additional
                         definitional knowledge can help maintain and correctly place concepts within
                         the appropriate hierarchy. Allowing computers to use this additional
@@ -150,9 +149,9 @@
                         information, like Finding Site in the example below, additional hierarchical
                         relationships can be inferred.<figure>
                             <?oxy_comment_start author="steph" timestamp="20190903T164307-0600" comment="Need to fix the text in circles to make it fit fully and not be cutoff, as it currently is.  With the text being white on a white background, the cutoff text cannot be read outside of the circles.  Same for the second diagram for inferred below." flag="done"?>
-                            <?oxy_comment_start author="steph" timestamp="20191016T113507-0600" comment="Still not fixed.  I think it needs to be fixed; otherwise, it appears as sloppy work." mid="17"?>
+                            <?oxy_comment_start author="steph" timestamp="20191016T113507-0600" comment="Still not fixed.  I think it needs to be fixed; otherwise, it appears as sloppy work." mid="16"?>
                             <title>Relationships Stated by a Content
-                                Modeler<?oxy_comment_end?><?oxy_comment_end mid="17"?></title>
+                                Modeler<?oxy_comment_end?><?oxy_comment_end mid="16"?></title>
                             <mediaobject>
                                 <imageobject>
                                     <imagedata fileref="../images/stated_relationships.svg"
@@ -205,10 +204,10 @@ this sentence was originally at the end of this paragraph " flag="done"?>concept
                             <mediaobject>
                                 <imageobject>
                                     <?oxy_comment_start author="steph" timestamp="20190610T132412-0600" comment="In the PDF, the &quot;After&quot; image is not shown, only the before image.  Either need to resize or move the &quot;After&quot; image below the &quot;Before&quot; image." flag="done"?>
-                                    <?oxy_comment_start author="timowilliams" timestamp="20190814T134943-0500" comment="convert to SVG" mid="20"?>
+                                    <?oxy_comment_start author="timowilliams" timestamp="20190814T134943-0500" comment="convert to SVG" mid="19"?>
                                     <imagedata fileref="../images/CranialNerves.svg" scalefit="1"
                                         width="100%" contentdepth="100%"
-                                        ><?oxy_comment_end?></imagedata><?oxy_comment_end mid="20"?>
+                                        ><?oxy_comment_end?></imagedata><?oxy_comment_end mid="19"?>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -263,7 +262,7 @@ this sentence was originally at the end of this paragraph " flag="done"?>concept
                 role="italic">Federal Health IT Strategic Plan
             2015-2020</emphasis><?oxy_comment_end?> set a strategy to encourage consistent
             terminology standards implementation in Electronic Health Records (EHRs) and encourage
-            their use through federal payment policies. [30]</para>
+            their use through federal payment policies. [3]</para>
         <para>Terminology standards cover different domains of clinical and nonclinical content
             relevant to the EHR, and serve various purposes. Currently, no single terminology or
             classification system contains everything that is needed for the medical record.
@@ -302,14 +301,15 @@ this sentence was originally at the end of this paragraph " flag="done"?>concept
     <section>
         <title>LOINC® Current State</title>
         <?oxy_comment_start author="ecundiff" timestamp="20250710T134152-0400" comment="Removed LOINC overview section which was pulled directly from Bodenreider article and added callback to overview of terminologies in Part II: Background"?>
-        <para><?oxy_comment_start author="tocrow" timestamp="20250716T092503-0400" comment="If we don&apos;t have a link or something to the article, I would suggest removing this para. I think citing it throughout is enough" mid="24"?><emphasis>
-                “The Adoption of Three Key Terminology Standards: Systematized Nomenclature of
-                Medicine Clinical Terms (SNOMED CT ®), Logical Observation Identifiers Names and
-                Codes ® (LOINC ®) and RxNorm" for an overview of these terminologies. The content
-                below further explores the current state of each of these terminologies.
-            </emphasis><?oxy_comment_end?><?oxy_comment_end mid="24"?></para>
+        <para><?oxy_comment_start author="tocrow" timestamp="20250716T092503-0400" comment="If we don&apos;t have a link or something to the article, I would suggest removing this para. I think citing it throughout is enough" flag="done" mid="23"?><emphasis>
+                Please refer to“The Adoption of Three Key Terminology Standards: Systematized
+                Nomenclature of Medicine Clinical Terms (SNOMED CT ®), Logical Observation
+                Identifiers Names and Codes ® (LOINC ®) and RxNorm" found in Part II: Background for
+                a comprehensive overview of these terminologies. The subsequent content provides a
+                detailed examination of the current state and ongoing developments related to these
+                standards. </emphasis><?oxy_comment_end?><?oxy_comment_end mid="23"?></para>
         <?oxy_comment_start author="ecundiff" timestamp="20250710T134045-0400" comment="Added high-level summary of LOINC, removed direct quote from Bodenreider and instead provided summary with citation" id="hmw_n45_zfc"?>
-        <?oxy_comment_start author="tocrow" timestamp="20250716T092543-0400" parentID="hmw_n45_zfc" comment="I like this!" mid="26"?>
+        <?oxy_comment_start author="tocrow" timestamp="20250716T092543-0400" parentID="hmw_n45_zfc" comment="I like this!" mid="25"?>
         <para>LOINC® is a global clinical terminology developed by the Regenstrief Institute to
             standardize the identification of health measurements, observations, and documents,
             addressing the challenge of inconsistent local codes in electronic health data exchange.
@@ -318,7 +318,7 @@ this sentence was originally at the end of this paragraph " flag="done"?>concept
             LOINC® codes for observations with result values, often using SNOMED CT® for the latter.
             Over the years, LOINC® has expanded beyond laboratory data and is maintained by
             committees focused on Laboratory, Clinical, and Radiology areas.
-            [1]<?oxy_comment_end mid="26"?><?oxy_comment_end?></para>
+            [4]<?oxy_comment_end mid="25"?><?oxy_comment_end?></para>
         <para>Regenstrief continues to update LOINC® and publish twice-yearly releases. New concepts
             are added to LOINC® based on submissions from end users. The current version contains
             more than 99,000 terms covering the full scope of laboratory testing (chemistry,
@@ -359,7 +359,7 @@ this sentence was originally at the end of this paragraph " flag="done"?>concept
             among clinical important differences. </para>
         <para>“A fully specified test result or clinical observation can be described formally with
             the following syntax: &lt;Analyte/component>:&lt;kind of property of observation or
-            measurement>:&lt;time aspect>:&lt;system (sample)>:&lt;scale>:-&lt;method>.” [2]</para>
+            measurement>:&lt;time aspect>:&lt;system (sample)>:&lt;scale>:-&lt;method>.” [5]</para>
         <para>Over time, LOINC® has not only grown in size, but also developed additional data
             structures and content around its main codes for individual observations. The LOINC®
             release contains a basic hierarchy that organizes LOINC® codes into a set of is-a
@@ -379,15 +379,16 @@ this sentence was originally at the end of this paragraph " flag="done"?>concept
             terminologies such as SNOMED CT® and RxNorm where they exist.</para>
         <section>
             <title>LOINC® Collaboration</title>
-            <?oxy_comment_start author="tocrow" timestamp="20250716T093658-0400" comment="I think we need to cite this"?>
-            <para>The following bullet points provide an overview of Regenstrief’s relationship with
-                the health community in the development of
+            <?oxy_comment_start author="tocrow" timestamp="20250716T093658-0400" comment="I think we need to cite this" flag="done"?>
+            <para>The following bullet points gleaned from Bodenreider et al. [4] provide an
+                overview of Regenstrief’s relationship with the health community in the development
+                of
                 LOINC®:<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250311T144529-0500" comment="Deleted a paragraph that followed this intro: &quot;Regenstrief is committed to working with developers of health data standards that are complementary to
 LOINC®, including syntax standards for data exchange and other terminology standards. Regenstrief and
 HL7 have a long-standing collaboration; a few joint work highlights include clinical genomics guides,
 claims attachments specifications, and approaches for representing vocabulary standards in Fast Healthcare
 Interoperability Resources (FHIR) terminology services. Regenstrief Institute made core LOINC®
-content available via a FHIR API as part of its normal release process beginning Summer 2018.&quot;" mid="28"?></para><?oxy_comment_end?><?oxy_comment_end mid="28"?>
+content available via a FHIR API as part of its normal release process beginning Summer 2018.&quot;" mid="27"?></para><?oxy_comment_end?><?oxy_comment_end mid="27"?>
             <itemizedlist>
                 <listitem>
                     <para>Beginning in April 2022, a FHIR-based API was launched that allows for
@@ -416,212 +417,66 @@ content available via a FHIR API as part of its normal release process beginning
             </itemizedlist>
         </section>
         <section>
-            <?oxy_comment_start author="tocrow" timestamp="20250716T094418-0400" comment="I think we can summarive 1.3.2.1-1.3.2.5, remove the section dividers to further reduce the amount of space it takes up in the pdf, and just cite. Some of Vicky&apos;s feedback was the book is  a bit critical of other institutions and she didnt want to keep reading case studies. I think by keeping this high level and summarizing, it will address both points of feedback. I think the case study findings are interesting and important, so keeping some of them will be good, but having &quot;case study 1 [name]...&quot; is a bit much IMO"?>
+            <?oxy_comment_start author="tocrow" timestamp="20250716T094418-0400" comment="I think we can summarive 1.3.2.1-1.3.2.5, remove the section dividers to further reduce the amount of space it takes up in the pdf, and just cite. Some of Vicky&apos;s feedback was the book is  a bit critical of other institutions and she didnt want to keep reading case studies. I think by keeping this high level and summarizing, it will address both points of feedback. I think the case study findings are interesting and important, so keeping some of them will be good, but having &quot;case study 1 [name]...&quot; is a bit much IMO" flag="done"?>
             <title>LOINC® Existing Limitations</title><?oxy_comment_end?>
-            <section>
-                <title>Inconsistent Selection of Codes for the Same Test</title>
-                <para>Without concepts of polyhierarchy, concept orientation, and concept
-                    definition, there is additional pressure on technicians and other stakeholders
-                    to specify the correct LOINC® code: “When the terminology model is ultimately
-                    weak, it forces more onto the [statement] model”. [15] “A challenge that remains
-                    to be solved is the binding of statement model and terminology. There is often
-                    no clear demarcation between what is represented in the statement model and what
-                    is represented in the terminology.” [9] </para>
-                <para>Consequently, laboratory technicians may select a LOINC® code with an
-                    incorrect part (i.e., the incorrect specimen or analyte) due to LOINC®’s
-                    multiaxial hierarchy, resulting in difficulties for data aggregation and
-                    understanding across both different technicians and institution. [12] It has
-                    been reported that choosing different ‘properties’ (i.e., parts) was the most
-                    frequent reason that different coding choices were made. [16] In a “study about
-                    correctness of LOINC® mapping, choosing different ‘Method’, ‘Scale’ and
-                    ‘Property’ attributes was the most common reason for different coding choices
-                    among three large institutions. For example, in the ‘Method’ axis, some
-                    institutions usually use a code that specifies the method (when available),
-                    whereas other institutions always choose terms that are “methodless”. Another
-                    example, is that in the ‘Scale/Property’ axes, LOINC® uses two distinct styles
-                    (Prid:Nar VS. Prid:Nom) for reporting the interpretation of laboratory tests
-                    (e.g. CFTR gene mutation analysis). The Narrative (Nar) scale is for free text
-                    results (sentences, paragraphs, sections), whereas the Nominal (Nom) scale is
-                    used for representing coded values, as when selecting an organism found on
-                    culture from a coded list of bacteria. The differences between these types are
-                    often subtle and require understanding the reporting system. Steindel et al.
-                    also concluded that for some purposes, such as finding any code that could be
-                    used to indicate the presence of a particular disease, rolling up LOINC® codes
-                    and ignoring some LOINC® axes (e.g. method, scale, or property) can be
-                    beneficial.” [16]</para>
-                <para>There is not much management in terms of education in what codes are used for,
-                    and medical technicians often do not have the LOINC® level of knowledge for
-                    encoding that is necessarily expected. [17] The results in the following example
-                    offer insight into how different codes may be selected for the same test from
-                    different laboratories. </para>
-                <para><emphasis role="bold">Case Study 1: Cardiac Marker and Coagulation Laboratory
-                        Proficiency Tests [12]</emphasis></para>
-                <?oxy_comment_start author="tocrow" timestamp="20250716T094526-0400" comment="i think this is the important content"?>
-                <para>Depending on the lab, technicians may choose different LOINC® codes for the
-                    same test. The College of American Pathologists (CAP) surveyed 90 lab
-                    participants on “practice setting, instrument(s) and test method(s), and LOINC®
-                    code selection and usage in the laboratory and electronic health records” for 10
-                    commonly ordered tests. 19.6% of codes reported were incorrect, with the highest
-                    error rates “observed in the property (27 of 275, 9.8%), system (27 of 275,
-                    9.8%), and component (22 of 275, 8.0%) LOINC® axes. Errors in LOINC® code
-                    selection included selection of the incorrect component (e.g., activated
-                    clotting time instead of activated partial thromboplastin time); selection of
-                    panels that can never be used to obtain an individual analyte (e.g., prothrombin
-                    time panel instead of international normalized ratio); and selection of an
-                    incorrect specimen type.” </para><?oxy_comment_end?>
-                <figure xml:id="BreakdownofLOINCCodesProvidedbyEachLaboratory">
-                    <title>Breakdown of LOINC® Codes Provided by Each Laboratory</title>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata
-                                fileref="../images/Breakdown%20of%20LOINC%C2%AE%20Codes%20Provided%20by%20Each%20Laboratory%20.svg"
-                                align="center" scale="30"/>
-                        </imageobject>
-                    </mediaobject>
-                </figure>
-                <para>For an Activated Partial Thromboplastin Time (aPTT) test, labs reported five
-                    different LOINC® codes that could be selected. Results differed due to different
-                    selections for the following axes:<itemizedlist>
-                        <listitem>
-                            <para>Component – One lab reported using the code 3184-9 for an aPTT
-                                test, which used a component “activated clotting time” instead of
-                                “coagulation surface induced”</para>
-                        </listitem>
-                        <listitem>
-                            <para>System – Between the different labs, some codes selected had the
-                                system as control blood (Bld^Control), platelet-poor plasma (PPP),
-                                or whole blood (Bld).</para>
-                        </listitem>
-                    </itemizedlist></para>
-                <para>For a Prothrombin Time (PT) test, labs reported three different LOINC® codes
-                    that could be selected. Results differed due to some labs incorrectly selecting
-                    panels or the wrong system. For a D-Dimer test, results differed to differences
-                    in component, property, system, and method.</para>
-                <para>As referenced in the table "Correspondence of SNOMED CT® to Ciminos
-                    Desiderata", many of the errors occurred from different selections in system,
-                    where the system could be whole blood or platelet form plasma. “For the
-                    analyzers used by the laboratories in this survey, coagulation tests such as
-                    APTT and International Normalized Ratio (INR) are performed on PPP and are never
-                    performed on whole blood, so the selection of a code that indicates the system
-                    as PPP would more accurately represent the test performed as opposed to a code
-                    that lists the system as blood (Bld). Superficially, an end-user may think that
-                    “Bld” is a nonspecific answer for a collected blood specimen. However, LOINC®
-                    has defined the system part term Bld as whole blood as indicated in section 2.5
-                    of the LOINC® User's Guide V2.65.”</para>
-                <para>LOINC® is an international standard which means that there are terms that only
-                    apply to foreign assays but are still available for use by laboratories in the
-                    U.S. This results in concepts such as “Whole Blood” that mean something
-                    different than intended. End-users commonly use this concept when they intend to
-                    represent “platelet form plasma”; this results in highly prevalent errors in
-                    CoAg testing because the LOINC® concept for “Whole Blood” is perceived to be a
-                    general term when it is not. [15]</para>
-            </section>
-            <section>
-                <title>Issues with Granularity and Specificity</title>
-                <para>A study assessing LOINC® consistency at three different institutions found
-                    “inconsistency across institutions regarding specificity of mappings as they
-                    relate to methods. It appears that sometimes mappers link the method specific
-                    codes to a more general LOINC® code, and at other times they link to a method
-                    specific LOINC® code. This causes inconsistency in mappings across
-                    institutions.” [17]</para>
-                <para><emphasis role="bold">Case Study 2: Comparison of LOINC® Codes between IVD
-                        Manufacturers and Medical Center Laboratories [20]</emphasis></para>
-                <para>In an assessment of LOINC® interoperability between diagnostic test
-                    manufacturers and five medical center laboratories, there were mismatches
-                    related to granularity identified such as discrepancies between choosing:</para>
-                <itemizedlist>
-                    <listitem>
-                        <para>A methodless LOINC® code (e.g., 1920-8, Aspartate
-                            aminotransferase(AST),) instead of specific code including the method
-                            (e.g., 30239-8, Aspartate aminotransferase [Enzymatic activity/volume]
-                            in Serum or Plasma by With P-5’-P)</para>
-                    </listitem>
-                    <listitem>
-                        <para>A Quantitative LOINC® code (e.g., 70143-4, Cannobinoid screen) versus
-                            qualitative LOINC® code (e.g., 8172-9, Cannabinoids) by the manufacturer
-                        </para>
-                    </listitem>
-                </itemizedlist>
-                <itemizedlist>
-                    <listitem>
-                        <para>Different units of measure: mass/volume (e.g., 3094-0, Urea nitrogen
-                            [Mass/volume] in Serum or Plasma) versus moles/volume (e.g., 1493-7,
-                            Urea nitrogen [Moles/volume] in Serum or Plasma) [18]</para>
-                    </listitem>
-                </itemizedlist>
-            </section>
-            <section>
-                <title>Variation in Results for Different Devices</title>
-                <para>In addition to variation between how labs classify certain tests, there can
-                    also be variation in test results from manufacturers. </para>
-                <para><emphasis role="bold">Case Study 3: D-Dimer Test Results from Different
-                        In-Vitro Diagnostic (IVD) Devices [15]</emphasis></para>
-                <para><xref linkend="DDimerTestResultsfromDifferentDevices"/> represents data
-                    results for D-Dimer tests that are all represented by the same LOINC® code.
-                    However, upon closer notice, the means between the different devices are
-                    significantly different. This raises concern amongst comparing data across
-                    institutions that use different devices. </para>
-                <figure xml:id="DDimerTestResultsfromDifferentDevices">
-                    <title>D-Dimer Test Results from Different Devices</title>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata
-                                fileref="../images/D-Dimer%20Test%20Results%20from%20Different%20Devices.svg"
-                                align="center" scale="50"/>
-                        </imageobject>
-                    </mediaobject>
-                </figure>
-                <para>The aforementioned CAP study surveying laboratories found that for a D-Dimer
-                    test, results differed to differences in component, property, system, and
-                    method. [12] Therefore, there is not only variation in test results from
-                    different devices and D-Dimer results, but there is also additional variation in
-                    the ability to encode the same test from a single device. </para>
-            </section>
-            <section>
-                <title>Manual Mapping Between Institutions</title>
-                <para>Due to the described inconsistencies between institutions, there is additional
-                    manpower required to determine comparable LOINC® codes. At many institutions,
-                    there are designated teams of doctors who must manually review submitted data to
-                    their institution to ensure that codes can accurately be compared between
-                    existing data in their system. [15] This process results in a cumbersome
-                    workflow process that involves personnel who must compare LOINC® codes, assess
-                    the validity of codes, and submit reviewal processes for codes that must be
-                    corrected.</para>
-                <para><emphasis role="bold">Case Study 4: Bone-Marrow Transplant Research Study
-                        [15]</emphasis></para>
-                <para>An academic medical center in Texas is conducting a bone-marrow transplant
-                    research center study, in order to build an interface that will allow users to
-                    automatically submit data to the hospital. However, upon review, there are
-                    issues where the LOINC® codes do not match correctly.</para>
-                <figure xml:id="LOINCCodesUsedatTwoDifferentInstitutionsfortheSameTests">
-                    <title>LOINC® Codes Used at Two Different Institutions for the Same
-                        Tests</title>
-                    <mediaobject>
-                        <imageobject>
-                            <?oxy_comment_start author="naylee" timestamp="20231129T174431-0600" comment="(R) is missing in the LOINC in the table (two places in the top heading row) "?>
-                            <imagedata
-                                fileref="../images/LOINC%20Codes%20Used%20at%20Two%20Different%20Institutions%20for%20the%20Same%20Tests.svg"
-                                scale="40"/><?oxy_comment_end?>
-                        </imageobject>
-                    </mediaobject>
-                </figure>
-                <para><xref linkend="LOINCCodesUsedatTwoDifferentInstitutionsfortheSameTests"/>
-                    provides insight into the difficulties doctors and technicians face in ensuring
-                    data mapped between systems are the same. Without high confidence in data, these
-                    issues can lead to impacts on real-world evidence capabilities.</para>
-            </section>
-            <section>
-                <title>LOINC® Should Define Relations (Using Description Logic)</title>
-                <para>LOINC® should define the relations between codes and combinations of codes
-                    that allow users to infer equivalence if their meanings in data instance
-                    representation are interoperable. That is, if the combination of two codes has
-                    the same meaning as a single code (a difference in the use of pre- or
-                    post-coordination), relationships should exist between the codes that support
-                    the assertion of equivalence. Use of a Description Logics reasoner can help in
-                    overcoming important drawbacks of multi-axial systems: (1) the capability of
-                    detecting semantic equivalence of syntactically different expressions, and (2)
-                    the automated classification of concepts in a hierarchy. </para>
-            </section>
+            <itemizedlist>
+                <listitem>
+                    <para><emphasis role="bold">Inconsistent Selection of Codes for the Same
+                            Test:</emphasis> The lack of polyhierarchy, concept orientation, and
+                        clear concept definitions place burden on technicians to select the correct
+                        code, often leading to inconsistent code selection. [6,7] These
+                        inconsistencies frequently arise from differences in choosing attributes
+                        like method, scale, or property, and are compounded by limited education and
+                        training on LOINC® coding. [8-10] A College of American Pathologists (CAP)
+                        survey of 90 laboratories found that nearly 20% of LOINC® codes selected for
+                        common coagulation tests were incorrect, with the most frequent errors
+                        involving the property, system, and component axes. These mistakes included
+                        choosing the wrong test component, using inappropriate panels, and selecting
+                        incorrect specimen types, highlighting significant variability in coding
+                        practices across labs. [8] Additionally, as an international standard,
+                        LOINC® includes terms for foreign assays that are still available to U.S.
+                        laboratories. This can lead to confusion and misapplication of concepts,
+                        resulting in prevalent coding errors. [6]</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Issues with Granularity and Specificity</emphasis>:
+                        A study assessing LOINC® consistency at three institutions found
+                        inconsistencies in how test methods were mapped: sometimes method-specific
+                        codes were linked to general LOINC® codes, while other times they were
+                        linked to method-specific LOINC® codes, resulting in inconsistent mappings
+                        across institutions. [10] Additionally, an assessment of LOINC®
+                        interoperability between diagnostic test manufacturers and five medical
+                        center laboratories revealed mismatches in granularity, such as differences
+                        in selecting methodless versus method-specific codes, quantitative versus
+                        qualitative codes, and varying units of measure. [11,12]</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Variation in Results for Different
+                            Devices</emphasis>: In addition to variation between how labs classify
+                        certain tests, there can also be variation in test results from
+                        manufacturers. [6] This is supported by a CAP study which found that D-Dimer
+                        test results, and even their encoding, can vary significantly across devices
+                        and laboratories due to differences in component, property, system, and
+                        method. [8]</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Manual Mapping Between Institutions</emphasis>:
+                        Inconsistencies between institutions require additional resources, as often
+                        designated teams of doctors must manually review and compare submitted
+                        LOINC® codes to existing data, assess code validity, and manage correction
+                        processes, resulting in a cumbersome workflow. [6]</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">LOINC® Should Define Relations (Using Description
+                            Logic)</emphasis>: LOINC® should establish relationships between codes
+                        and code combinations to enable users to infer equivalence when their
+                        meanings are interoperable, such as when two combined codes are semantically
+                        identical to a single code (reflecting pre- or post-coordination). Employing
+                        a Description Logics reasoner can address key challenges of multi-axial
+                        systems by detecting semantic equivalence in syntactically different
+                        expressions and automating concept classification within a hierarchy.</para>
+                </listitem>
+            </itemizedlist>
         </section>
         <section>
             <title>Current LOINC® Efforts to Improve Interoperability</title>
@@ -633,7 +488,7 @@ content available via a FHIR API as part of its normal release process beginning
             <para>To quantify the magnitude of problems that the lab data ecosystem faces, Cholan et
                 al. describes a pilot evaluation with five healthcare systems that found LOINC® data
                 maintained only 59% integrity as it moved from laboratory analyzer to laboratory
-                information system. [20] Efforts to promote interoperability using LOINC® and
+                information system. [11] Efforts to promote interoperability using LOINC® and
                 related standards will require a more comprehensive effort and continuing evaluation
                 and quality control.</para>
         </section>
@@ -644,7 +499,7 @@ content available via a FHIR API as part of its normal release process beginning
                 <para>Although LOINC® has not officially adopted Description Logic and formal
                     knowledge representation languages, the U.S. National Library of Medicine
                     applied Description Logic to the quality assurance of LOINC® (based on the 2013
-                    collaborative agreement) and used it as a basis for auditing LOINC®. [19] This
+                    collaborative agreement) and used it as a basis for auditing LOINC®. [13] This
                     study helps demonstrate the usefulness of Description Logic for terminologies by
                     producing the following findings: </para>
                 <itemizedlist>
@@ -666,7 +521,7 @@ content available via a FHIR API as part of its normal release process beginning
                     counts are relatively small considering the 450k+ concepts in LOINC® as part of
                     this study. However, the key takeaway from this body of work is that LOINC®
                     could benefit from the application of Description Logic by allowing for
-                    automated classification and equivalence detection. [19]</para>
+                    automated classification and equivalence detection. [13]</para>
             </section>
             <section>
                 <title>LOINC® Document Ontology</title>
@@ -704,17 +559,17 @@ content available via a FHIR API as part of its normal release process beginning
                     and pathology experts produced a finding that the “LOINC® document ontology
                     appears to be irrelevant to move things – not many people use it. It was a first
                     attempt to apply some relationships between LOINC® concepts that formally don’t
-                    exist now, but it’s in a domain with low impact." [20]</para>
+                    exist now, but it’s in a domain with low impact." [11]</para>
             </section>
             <section>
                 <title>LOINC® Hierarchy Browser</title>
                 <para>LOINC®'s website currently hosts ‘The Hierarchy Browser’ tool which allows
                     users to view various hierarchies located in LOINC®. Much of this functionality
-                    was previously only available in the RELMA® application. [22] While a good
+                    was previously only available in the RELMA® application. [14] While a good
                     starting point towards formal knowledge representation, the current hierarchies
                     are limited, and still do not provide full definitions for LOINC® parts.
                     Furthermore, the use of the hierarchies and LOINC® parts are very restricted
-                    under the LOINC® Copyright Notice and License. [22]</para>
+                    under the LOINC® Copyright Notice and License. [14]</para>
                 <figure xml:id="RepresentationofASTinTheLOINCHierarchyBrowserTool">
                     <title>Representation of AST in The LOINC® Hierarchy Browser Tool</title>
                     <mediaobject>
@@ -728,51 +583,28 @@ content available via a FHIR API as part of its normal release process beginning
             </section>
             <section>
                 <title>Nebraska Lexicon</title>
-                <para><?oxy_comment_start author="tocrow" timestamp="20250716T101049-0400" comment="i think we can summarize this"?>The
-                    following excerpt provides background on the Nebraska Lexicon, a project focused
-                    on the harmonization between LOINC® and SNOMED CT®:</para>
-                <para><emphasis role="italic">Since February 2004, University of Nebraska Medical
-                        Center (Nebraska Medicine) has maintained an extension namespace (extension
-                        identifier 1000004 registered with International Health Terminology
-                        Standards Development Organization (IHTSDO)) to support clinical terminology
-                        development required for electronic health record (EHR) deployment at its
-                        hospital and clinics. Content developed for this namespace has been driven
-                        pragmatically by recording requirements reported by Nebraska clinicians in
-                        the course of their daily work. This content has been deployed in records
-                        over three generations of EHRs including the Public Health Automated Medical
-                        Information System (PHAMIS), IDX-GE and now is in use in
-                    Epic®…</emphasis></para>
-                <para><emphasis role="italic">…</emphasis><emphasis role="italic">In 2014, the
-                        Observables project of the IHTSDO and Regenstrief Institute published a
-                        draft convergent concept model for harmonization of content between LOINC®
-                        and SNOMED CT®. In January 2017, the project published a set of SNOMED CT®
-                        formatted expressions that define the meaning of ~13000 laboratory LOINC®
-                        observables employing the harmonized concept model. An expanded technology
-                        preview of ~20,000 concepts has been released by the IHTSDO but is not
-                        included in this publication. UNMC has converted the earlier expression set
-                        into SNOMED CT® formatted extension concepts employing LOINC® long names as
-                        the SNOMED CT® fully specified name and assigning class supertypes within
-                        the Observable entity hierarchy in SNOMED CT®. ‘Grouper’ concepts have been
-                        modeled and deployed within the Observable entity hierarchy in order to
-                        enhance clinical navigation and to support common query use cases in
-                        laboratory medicine and pathology. Anatomic and molecular pathology
-                        observables defined by semantic analysis of the CAP Annotated Cancer
-                        Protocols explained in 3.3 are included. Some pre-existing SNOMED CT®
-                        Observable entity content has been fully defined using the harmonized
-                        concept model with permission of the IHTSDO. Grouper concepts have been
-                        included to organize the ontology and support common query use cases
-                        proposed by CAP. All content was run through the description logic
-                        classifier and both ‘stated’ and ‘inferred’ relationships are included in
-                        this release. This “Observables ontology” for laboratory medicine and
-                        pathology is being published for evaluation and comment by the informatics
-                        community.</emphasis> [23]</para>
-                <para>The Nebraska Lexicon is a pragmatic example of harmonizing terminologies into
-                    a single concept model and melding LOINC® and SNOMED CT® together. The content
-                    is published with permission of the CAP. A common terminology data model that
-                    expands beyond just LOINC® and SNOMED®, but that could also represent additional
-                    terminologies such as RxNorm, CVX, etc. (i.e., HL7’s Terminology Knowledge
-                    Architecture) would allow users to integrate content and changes more seamlessly
-                    and reduce duplicative work</para>
+                <para>Since 2004, the University of Nebraska Medical Center (UNMC) has maintained a
+                    specialized extension namespace, registered with the International Health
+                    Terminology Standards Development Organization (IHTSDO), to develop clinical
+                    terminology that supports electronic health record (EHR) deployment at its
+                    hospitals and clinics. This terminology work, driven by the practical
+                    documentation needs of Nebraska clinicians, has been integrated into multiple
+                    EHR systems, including PHAMIS, IDX-GE, and Epic. In 2014, a collaborative
+                    project between IHTSDO and the Regenstrief Institute began harmonizing
+                    laboratory data standards between LOINC® and SNOMED CT®, resulting in the
+                    publication of SNOMED CT® expressions for about 13,000 laboratory LOINC®
+                    observables by 2017. UNMC incorporated these into its SNOMED CT® extension,
+                    using LOINC® names and organizing them within the SNOMED CT® Observable
+                    hierarchy, while also creating “grouper” concepts to enhance clinical navigation
+                    and support common laboratory and pathology queries. The resulting ontology,
+                    which includes both stated and inferred relationships, is now available for
+                    review and feedback from the informatics community.
+                    [15]<?oxy_comment_start author="tocrow" timestamp="20250716T101049-0400" comment="i think we can summarize this" flag="done"?></para>
+                <para>The Nebraska Lexicon demonstrates how LOINC® and SNOMED CT® can be harmonized
+                    within a unified concept model, with content published under CAP’s permission.
+                    Expanding this approach to include other terminologies like RxNorm and CVX,
+                    following models such as HL7’s Terminology Knowledge Architecture, would
+                    streamline integration and reduce duplication of effort.</para>
             </section><?oxy_comment_end?>
             <section>
                 <title>Quality Control</title>
@@ -782,7 +614,7 @@ content available via a FHIR API as part of its normal release process beginning
                     quality assurance methods are not widely used. </para>
                 <para>The only published quality metrics from Regenstrief about LOINC® include
                     published stats about their submission queue describing how long it takes to
-                    create a LOINC® term (e.g., 182 days to turn around a revision). [24]</para>
+                    create a LOINC® term (e.g., 182 days to turn around a revision). [16]</para>
                 <para>Regenstrief relies on an occasional survey (either once per year or once every
                     few years) from ONC to the laboratory community to assess how labs are using
                     LOINC®, what are the barriers, etc.; however, the survey is very LOINC®-centric
@@ -813,19 +645,19 @@ content available via a FHIR API as part of its normal release process beginning
             description logic approach, which continues in SNOMED CT®. This evolution reflects
             increasing rigor and complexity in representing clinical knowledge, as seen in the
             changing ways concepts like “arthritis” are defined and structured across SNOMED®'s
-            history.<?oxy_comment_end?> [1] </para>
+            history.<?oxy_comment_end?> [4] </para>
         <?oxy_comment_start author="ecundiff" timestamp="20250710T222848-0400" comment="Summary of, rather than direct quote from, Bodenreider"?>
         <para>Since SNOMED CT® was first release in January 2003, it has been updated twice twice a
             year with new versions. These updates expand its coverage across clinical areas, such as
             diseases, findings, procedures, body strcutures, and substances. Recent enhancements
             include additional content related to genomics and rare diseases, as well as better
-            tooling for users. [1]
+            tooling for users. [4]
             <?oxy_comment_end?><?oxy_comment_start author="ecundiff" timestamp="20250710T223126-0400" comment="Removed susequent paragrpah beginning with &quot;The July 2022 release contains 356, 817 active concepts...&quot; given that this information would now be outdated."?></para><?oxy_comment_end?>
         <para>While SNOMED CT® has made much progress in their use of description logics, and have
             also provided a tool on github, snomed-owl-toolkit, to facilitate the conversion and
             classification process, the official distribution of OWL refsets has yet to be seen. It
             seems one reason is the lack of current clinical systems to utilize them at this time.
-            [3-4]</para>
+            [17-18]</para>
         <section>
             <title>SNOMED CT® Collaboration</title>
             <para>The following bullet points provide an overview of SNOMED International's
@@ -841,7 +673,7 @@ content available via a FHIR API as part of its normal release process beginning
                         organizations like Kaiser Permanente. Additionally, SNOMED CT® supports
                         national and community-specific extensions, allowing member countries and
                         specialized fields to include concepts relevant to their unique needs.
-                        [1]</para>
+                        [4]</para>
                 </listitem>
                 <listitem>
                     <para>In October 2022, the Regenstrief Institute (RII) and SNOMED International,
@@ -854,60 +686,47 @@ content available via a FHIR API as part of its normal release process beginning
                         <?oxy_comment_start author="ecundiff" timestamp="20250710T225429-0400" comment="Add citation here and in References:
 LOINC and SNOMED CT: LOINC SNOMED CT Extension - Why, What and How | LinkedIn [Internet].
 [cited 2023 Jan 8]. Available from: https://www.linkedin.com/pulse/loinc-snomed-ct-extension-
-why-what-how-termlex/?trk=pulse-article"?>[]<?oxy_comment_end?></para>
+why-what-how-termlex/?trk=pulse-article"?>[19]<?oxy_comment_end?></para>
                 </listitem>
             </itemizedlist>
         </section>
         <section>
             <title>SNOMED CT® Existing Limitations</title>
-            <section>
-                <title><?oxy_comment_start author="tocrow" timestamp="20250716T101400-0400" comment="to minimize the actual space taken in the pdf build, what do we think about turning this into a list? We would need to copy this formatting in the LOINC and RxNorm sections as well"?>Licensing
-                    Conditions</title>
-                <para>There are also licensing conditions to SNOMED CT® that historically prevented
-                    its use as a common format for LOINC®. [14] This issue needs to be addressed for
-                    building on SNOMED CT®'s foundation. Nonetheless, SNOMED CT®'s commitment to
-                    develop and expand their use of description logics formalism as called out by
-                    Tinkar efforts as well as their alignment with the Desiderata as described by
-                    Cimino, et at, is a step in the right direction.</para>
-            </section>
-            <section>
-                <title>Submission Process Time</title>
-                <para>While SNOMED CT® has a process for handling new concept requests and
-                    submissions, it is lengthy and not amenable to rapidly changing conditions as
-                    seen with COVID-19. While workarounds can be done, what is needed is a formal,
-                    standardized, and agile process to accommodate quickly changing
-                    conditions/situations. The ability to share and aggregate data nationally, if
-                    not internationally, is paramount.</para>
-            </section>
-            <section>
-                <title>Compositional Complexity </title>
-                <para>While SNOMED CT® uses explicit, elaborate axioms to clarify meaning, its
-                    complex representation (compositional grammar) limits its broad adoption. [15]
-                    The learning curve to appropriately learn, author, and represent concepts using
-                    SNOMED CT®'s compositional grammar (for post-coordinated expressions) and
-                    constraint language is steep, resulting in few who want to spend the resources
-                    to learn. In addition, even for those who learn it, it takes substantial
-                    experience to develop the expertise to understand and demonstrate concept
-                    redundancy in a consistent and correct manner.</para>
-            </section>
-            <section>
-                <title>Inconsistent Representation</title>
-                <para>There are multiple ways to represent SNOMED CT® concepts, leading to
-                    inconsistent representation (i.e., lack of equivalence), ambiguity, and patient
-                    harm from low data quality. SNOMED CT® is still up for constant refinement
-                    especially for improving and standardizing concept representation, which makes
-                    it difficult for the user to determine equivalence, both within and across
-                    terminologies.</para>
-            </section>
-            <section>
-                <title>Interpretive Comments</title>
-                <para>Interpretive comments are meant to enrich measurement results. One specific
-                    example is a statement of measurement uncertainty, which is required by some
-                    metrological guidelines. Measurement uncertainty is invaluable in the correct
-                    interpretation of measurement results. [15] Because interpretive comments can be
-                    of crucial importance in patient care, it is critical to expand SNOMED CT® to
-                    thoroughly capture these concepts.</para><?oxy_comment_end?>
-            </section>
+            <itemizedlist>
+                <listitem>
+                    <para><emphasis role="bold">Licensing Conditions</emphasis>: Licensing
+                        restrictions have historically limited SNOMED CT®'s use as a common format
+                        for LOINC®, but recent efforts to expand description logics and align with
+                        established standards represent positive progress. [20]</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Submission Process Time</emphasis>: SNOMED CT®'s
+                        current process for new concept requests is too slow for rapidly evolving
+                        situations like COVID-19, highlighting the need for a formal, standardized,
+                        and agile approach to support timely data sharing and aggregation at
+                        national and international levels.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Compositional Complexity</emphasis>: SNOMED CT®'s
+                        complex compositional grammar and steep learning curve for authoring and
+                        interpreting concepts limit its widespread adoption, as few are willing to
+                        invest the significant time and resources needed to gain the necessary
+                        expertise and consistently address concept redundancy. [6]</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Inconsistent Representation</emphasis>: Multiple
+                        ways to represent SNOMED CT® concepts cause inconsistent and ambiguous data,
+                        risking patient harm from poor data quality and making it difficult to
+                        determine equivalence, highlighting the ongoing need for refinement and
+                        standardization of concept representation.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Interpretive Comments</emphasis>: Interpretive
+                        comments, such as statements of measurement uncertainty, are crucial for
+                        accurate result interpretation and patient care, making it critical to
+                        expand SNOMED CT® to comprehensively capture these concepts. [6]</para>
+                </listitem>
+            </itemizedlist>
         </section>
     </section>
     <section>
@@ -943,40 +762,39 @@ why-what-how-termlex/?trk=pulse-article"?>[]<?oxy_comment_end?></para>
                         representatives, and incorporates user feedback via community engagement and
                         annual stakeholder workshops. To enhance RxNorm’s utility, NLM has created
                         companion APIs and applications like RxClass, enabling links to drug
-                        classification systems and drug interaction information. [1]</para>
+                        classification systems and drug interaction information. [4]</para>
                 </listitem>
                 <listitem>
                     <para>RxNorm is used in HL7 (FHIR) messaging standards for medication data
-                        exchange. [1] </para>
+                        exchange. [4] </para>
                 </listitem>
             </itemizedlist>
         </section>
         <section>
-            <?oxy_comment_start author="tocrow" timestamp="20250716T114540-0400" comment="again could this just be a list to keep it short?"?>
+            <?oxy_comment_start author="tocrow" timestamp="20250716T114540-0400" comment="again could this just be a list to keep it short?" flag="done"?>
             <title>RxNorm Existing Limitations</title><?oxy_comment_end?>
-            <section>
-                <title>Lack of Description Logics</title>
-                <para><?oxy_comment_start author="ecundiff" timestamp="20250710T232234-0400" comment="Removed SOLOR reference since not yet covered. Sentence previously read: RxNorm lack of Description Logics formalism use, as proposed by SOLOR, limits its ability to use logic reasoners for inferencing."?>RxNorm's
-                    lack of Description Logics formalism use limits its ability to use logic
-                    reasoners for inferencing.<?oxy_comment_end?> This limits RxNorms ability to
-                    find new patterns, relationships and identification of equivalence. [1]</para>
-            </section>
-            <section>
-                <title>Concerns Over Concept Permanence</title>
-                <para>While RxNorm CUIs are never reused as per best practice, the possibility
-                    exists that RxNorm atoms can change with the potential to change the definition.
-                    Furthermore, RxNorm CUIs that are no longer in
-                    <?oxy_comment_start author="naylee" timestamp="20231130T093437-0600" comment="A name of archive, not an abbreviation. Leave as it is. "?>RXNCONSO<?oxy_comment_end?>
-                    are moved to a cumulative archive called RXNATOMARCHIVE.</para>
-            </section>
-            <section>
-                <title>Formal Concept Definition</title>
-                <para>While RxNorm has ‘defined ingredients’, historically it has lacked the
-                    computational ability to define concepts by relationships, thereby allowing
-                    inferencing. [26] However, recent efforts by Bona et al. have successfully
-                    created an OWL file to implement and define the classes necessary to model
-                    RxNorm and NDC concepts. [13]</para>
-            </section>
+            <itemizedlist>
+                <listitem>
+                    <para><emphasis role="bold">Lack of Description Logics</emphasis>: RxNorm's lack
+                        of Description Logics formalism restricts its use of logic reasoners for
+                        interfacing, thereby limiting its ability to discover new patterns,
+                        relationships, and equivalence among concepts. [4]</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Concerns Over Concept Permanence</emphasis>:
+                        Although RxNorm CUIs are never reused, RxNorm atoms can change, potentially
+                        altering definitions, and CUIs no longer in RXNCONSO are archived in
+                        RXNATOMARCHIVE.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Formal Concept Definition</emphasis>: Although
+                        RxNorm has ‘defined ingredients’, it has historically lacked the
+                        computational ability to define concepts by relationships to enable
+                        inferencing. [19] However, recent work by Bona et al. [21] has addressed
+                        this by creating an OWL file to implement and define the necessary classes
+                        for modeling RxNorm and NDC cocepts.</para>
+                </listitem>
+            </itemizedlist>
         </section>
     </section>
     <section>
@@ -991,7 +809,7 @@ why-what-how-termlex/?trk=pulse-article"?>[]<?oxy_comment_end?></para>
             has been particularly attractive for the SNOMED CT®'s polyhierarchal structure and
             inferencing capabilities and would support a greater compatibility and interoperability
             between SNOMED CT®, LOINC®, and RxNorm, despite different formalisms and tools for their
-            representation in these technologies. [26]</para>
+            representation in these technologies. [19]</para>
     </section>
     <section>
         <title><emphasis role="bold">Comparing LOINC®, SNOMED CT® and RxNorm to Cimino’s
@@ -1002,7 +820,7 @@ why-what-how-termlex/?trk=pulse-article"?>[]<?oxy_comment_end?></para>
                 summarized above, “LOINC® does not fulfill the definition of a computable medical
                 terminology as articulated by Cimino et al., that being one based in concept
                 orientation, concept definition, and polyhierarchy. These characteristics enable the
-                logical inference between concepts, parts, and part elements.” [12] LOINC® is a
+                logical inference between concepts, parts, and part elements.” [8] LOINC® is a
                 well-maintained terminology with a deprecation process and has concept permanence
                 where codes aren’t reused, but they do not establish the basic parameters of
                 hierarchy and polyhierarchy.</para>
@@ -1148,7 +966,7 @@ why-what-how-termlex/?trk=pulse-article"?>[]<?oxy_comment_end?></para>
                     individual NDCs, both active and inactive, and the RxCUIs to which they are
                     connected. We also demonstrate how historic information about these identifiers
                     in DrOn can be easily retrieved using a simple SPARQL Protocol and RDF Query
-                    Language (SPARQL).</emphasis>[13]</para>
+                    Language (SPARQL).</emphasis>[21]</para>
             <para>This development may have a significant impact on improving knowledge management
                 as well as the ability to utilize Description Logics reasoners with its attendant
                 benefits.</para>
@@ -1207,15 +1025,15 @@ why-what-how-termlex/?trk=pulse-article"?>[]<?oxy_comment_end?></para>
         </section>
     </section>
     <section>
-        <title><?oxy_comment_start author="rgeorgacopoulos" timestamp="20250719T174635-0500" comment="Change title to something that reflects we are discussing best practices and our solution"?>Terminology
+        <title><?oxy_comment_start author="rgeorgacopoulos" timestamp="20250719T174635-0500" comment="Change title to something that reflects we are discussing best practices and our solution" flag="done"?>Terminology
             Principles and Best Practices<?oxy_comment_end?></title>
-        <?oxy_comment_start author="tocrow" timestamp="20250717T020323-0400" comment="1.8 is oddly very short. I think we can probably combine this all into a single section rather than having 1.8, 1.8.1 and 1.8.2" flag="done"?>
-        <para>Now that we have discussed some existing terminology standards and their comparison to
-            Cimino's desiderata, we will review principles and best practices for terminology design
-            and representation ahead of presenting our IKM solution. </para>
-        <para>As we discussed previously, our solution is based on core evolutionary design
-            principles called “Understandable, Reproducible, and Useful,” (URU) upon which SNOMED
-            CT® development is still based. [8-9] These criteria describe an approach for improving
+        <para>Having<?oxy_comment_start author="tocrow" timestamp="20250717T020323-0400" comment="1.8 is oddly very short. I think we can probably combine this all into a single section rather than having 1.8, 1.8.1 and 1.8.2" flag="done"?>
+            discussed some existing terminology standards and their comparison to Cimino's
+            desiderata, this section will review principles and best practices for terminology
+            design and representation ahead of presenting our IKM solution. </para>
+        <para>As discussed previously, our solution is based on core evolutionary design principles
+            called “Understandable, Reproducible, and Useful,” (URU) upon which SNOMED CT®
+            development is still based. [22,7] These criteria describe an approach for improving
             data quality and increasing data integrity and agility: </para><?oxy_comment_end?>
         <itemizedlist>
             <listitem>
@@ -1243,7 +1061,7 @@ why-what-how-termlex/?trk=pulse-article"?>[]<?oxy_comment_end?></para>
             of concepts with assigned identifiers and human language terms, typically involving some
             kind of semantic hierarchy. Some systems may support the assignment of multiple terms,
             or synonyms, to a given concept; these may include terms in multiple natural languages,
-            such as English or Dutch.” [10] This definition implies that knowledge representation
+            such as English or Dutch.” [23] This definition implies that knowledge representation
             for a terminology system may not always be based on a strict defining hierarchy. The
             advantage, or disadvantage, of such an approach is that the terminology, such as LOINC®
             for instance, might appear to be rather intuitive and human-readable and comprehensible.
@@ -1251,7 +1069,7 @@ why-what-how-termlex/?trk=pulse-article"?>[]<?oxy_comment_end?></para>
             reveal that it is difficult to understand the precise meaning of the terminological
             representations and that use of a system such as LOINC® may differ widely amongst
             humans. Further exacerbating potential variability is the heterogeneous behavior of
-            tools implemented to reason with terminological structures. [11] </para>
+            tools implemented to reason with terminological structures. [24] </para>
         <para>The field of Knowledge Representation and “Description Logics” was developed out of
             the attempt to formally define “intuitive representations” with a formal semantics to
             establish a common ground for human and tool interoperability. Knowledge representation
@@ -1512,10 +1330,10 @@ why-what-how-termlex/?trk=pulse-article"?>[]<?oxy_comment_end?></para>
             <title>Cross Cutting Concerns</title>
             <para>The language used to describe a component must be concordant with the underlying
                 semantics of the object being identified. Therefore, there needs to be guidelines in
-                place to ensure only correct terms are associated with an object in Solor.</para>
+                place to ensure only correct terms are associated with an object in an IKM solution. </para>
             <para>Having a consistent naming convention defined will assist with textual queries to
                 identify duplicates when concepts are primitive and not able to be fully defined
-                using relationships within Solor. Having a consistent way of representing Fully
+                using relationships within the IKM. Having a consistent way of representing Fully
                 Specified Names will alleviate the issue of users creating duplicate concepts like
                 &quot;Disorder of immune function&quot; and &quot;Immune function
                 disorder&quot;.</para>
@@ -1608,9 +1426,9 @@ why-what-how-termlex/?trk=pulse-article"?>[]<?oxy_comment_end?></para>
             objects and individuals occuring in the domain. Additionally, another feature of
             Description Logic is the capability to conduct reasoning on represented knowledge. The
             goal of this section is to first provide a primer to those who may not be fully immersed
-            in the study of description logic, then an introduction to Solor designs to allow for a
+            in the study of description logic, then an introduction to IKM designs to allow for a
             robust representation and relationships of concepts, followed by topics or concerns from
-            Solor developers and contributors that necessitate a discussion on why these concerns
+            our IKM developers and contributors that necessitate a discussion on why these concerns
             could affect a system to conduct reasoning properly or successfully. </para>
     </section>
     <section>
@@ -1645,15 +1463,10 @@ why-what-how-termlex/?trk=pulse-article"?>[]<?oxy_comment_end?></para>
             <para>Instead of fully describing the state of a domain, as one would with a database,
                 DLs contain axioms, or statements. These axioms capture partial knowledge about the
                 situation that the ontology is describing, and there may be many different states of
-                the world that are consistent with the ontology<footnote>
-                    <?oxy_comment_start author="ecundiff" timestamp="20250711T075010-0400" comment="Footnotes should be removed and sources should be added to appendix; will address in final stages of part 5 rework"?>
-                    <para>Krötzsch, M., Simančík, F., Horrocks, I. (2013). A Description Logic
-                        Primer. Retrieved from
-                        https://arxiv.org/pdf/1201.4089.pdf<?oxy_comment_end?></para>
-                </footnote>. With a proper modeling of formal semantics, DLs allows humans and
-                computer systems to unambiguously exchange ontologies without losing their meaning,
-                and also provides the capability to infer (reason) additional information from given
-                facts in order compute a conclusion. </para>
+                the world that are consistent with the ontology. [25] With a proper modeling of
+                formal semantics, DLs allows humans and computer systems to unambiguously exchange
+                ontologies without losing their meaning, and also provides the capability to infer
+                (reason) additional information from given facts in order compute a conclusion. </para>
             <section>
                 <title>Definitional Operators</title>
                 <para>Once statements or axioms are established, a set of syntax and properties are
@@ -1678,17 +1491,17 @@ why-what-how-termlex/?trk=pulse-article"?>[]<?oxy_comment_end?></para>
                 <para>Logical Negation, or "Representation of absence" as it is described throughout
                     this document, is the notion of how to describe something that is not present.
                     The complexity of this topic is described
-                    <?oxy_comment_start author="ecundiff" timestamp="20250714T101122-0400" comment="This was previously a reference to &quot;[reference definitional_conceptAnalysis.xml, section 1.2.1]&quot;" id="st3_1rz_zfc"?><?oxy_comment_start author="tocrow" timestamp="20250717T021443-0400" parentID="st3_1rz_zfc" comment="do we have that content still? Do we need to pull any of that in?" mid="62"?>further
+                    <?oxy_comment_start author="ecundiff" timestamp="20250714T101122-0400" comment="This was previously a reference to &quot;[reference definitional_conceptAnalysis.xml, section 1.2.1]&quot;" id="st3_1rz_zfc"?><?oxy_comment_start author="tocrow" timestamp="20250717T021443-0400" parentID="st3_1rz_zfc" comment="do we have that content still? Do we need to pull any of that in?" flag="done" mid="55"?>further
                     in the Topics of Concerns section
-                    below<?oxy_comment_end mid="62"?><?oxy_comment_end?> and illustrates why it is
+                    below<?oxy_comment_end mid="55"?><?oxy_comment_end?> and illustrates why it is
                     difficult to represent this notion of something that is not present.
                     Furthermore, it describes how current content in terminologies is inconsistently
                     represented. </para>
                 <para>The identification of content deemed as "absence" content is described in
                     greater
-                    <?oxy_comment_start author="ecundiff" timestamp="20250714T111446-0400" comment="This was previously a reference to &quot;[reference definitional_conceptAnalysis.xml, section 1.2]&quot;" id="u4q_1rz_zfc"?><?oxy_comment_start author="tocrow" timestamp="20250717T021448-0400" parentID="u4q_1rz_zfc" comment="same as above" mid="64"?>detail
+                    <?oxy_comment_start author="ecundiff" timestamp="20250714T111446-0400" comment="This was previously a reference to &quot;[reference definitional_conceptAnalysis.xml, section 1.2]&quot;" id="u4q_1rz_zfc" flag="done"?><?oxy_comment_start author="tocrow" timestamp="20250717T021448-0400" parentID="u4q_1rz_zfc" comment="same as above" flag="done" mid="57"?>detail
                     in the Absence Representation
-                    section<?oxy_comment_end mid="64"?><?oxy_comment_end?>. Recognizing these
+                    section<?oxy_comment_end mid="57"?><?oxy_comment_end?>. Recognizing these
                     concepts allows a system to handle the "absence" computation when they are
                     available. This approach allows for handling absence in a way that is separate
                     and more specialized than typical description logic operations.</para>
@@ -1710,10 +1523,19 @@ why-what-how-termlex/?trk=pulse-article"?>[]<?oxy_comment_end?></para>
         <title><?oxy_comment_start author="ecundiff" timestamp="20250713T094802-0400" comment="New section title and overall flow: 
 Title = Terminology in Action &gt; Section = Interoperability deep dive (this was previously nested in the Solor section) &gt; Section =Tools for Interoperability&gt; UMLS , VSAC , Solor"?>Terminology
             Knowledge in Action<?oxy_comment_end?></title>
+        <para>Effective healthcare is dependent upon precise and interoperable medical data,
+            particularly since electronic health records and disparate health information data
+            systems have become standard practice. Current approaches, such as terminology mapping,
+            enable partial interoperability but often result in information loss and inconsistencies
+            that can impact patient safety.</para>
+        <para>This section reviews the challenges of existing mapping strategies, introduces key
+            interoperability tools, and presents Komet—an integrated knowledge management system
+            designed to overcome these limitations by providing unified and semantically precise
+            clinical data representation.</para>
         <section>
-            <title>Inte<?oxy_comment_start author="tocrow" timestamp="20240624T173028-0400" comment="I think this is covered in other sections"?>roperability
+            <title>Inte<?oxy_comment_start author="tocrow" timestamp="20240624T173028-0400" comment="I think this is covered in other sections" flag="done"?>roperability
                 by
-                <?oxy_comment_start author="ecundiff" timestamp="20250713T093821-0400" comment="Agree this is touched on elsewhere, but this is a more comprehensive overview than is found in other sections. Content is similar, but not truly duplkicative IMO." mid="107"?>Mappi<?oxy_comment_end?>ng<?oxy_comment_end mid="107"?></title>
+                <?oxy_comment_start author="ecundiff" timestamp="20250713T093821-0400" comment="Agree this is touched on elsewhere, but this is a more comprehensive overview than is found in other sections. Content is similar, but not truly duplkicative IMO." flag="done" mid="100"?>Mappi<?oxy_comment_end?>ng<?oxy_comment_end mid="100"?></title>
             <para>Today's health care terminology standards encompass methods, terminologies, and
                 specifications for the exchange, storage, and retrieval of information associated
                 with health care systems. These standards contain terminologies and concepts that
@@ -1753,9 +1575,7 @@ Title = Terminology in Action &gt; Section = Interoperability deep dive (this wa
                     with mapping. These challenges may ultimately compromise patient safety and
                     clinical decisions. </para>
                 <para>Here’s how terminology mapping accomplishes partial interoperability at the
-                    semantic level
-                        <citation><?oxy_comment_start author="tocrow" timestamp="20250717T022454-0400" comment="what is this?
-"?>HL<?oxy_comment_end?></citation>:<orderedlist>
+                    semantic level [26]<orderedlist>
                         <listitem>
                             <para><emphasis role="bold">Makes Data Exchange Possible</emphasis>:
                                 Terminology mapping enables semantic interoperability, helping the
@@ -1814,7 +1634,7 @@ Title = Terminology in Action &gt; Section = Interoperability deep dive (this wa
                     one standardized terminology element. Incomplete and inconsistent mapping rules
                     across organizations further reduce mapping accuracy. Continuous resources are
                     needed to evaluate and sustain mapping quality over time.
-                    <?oxy_comment_end?>[28]</para>
+                    <?oxy_comment_end?>[27]</para>
                 <section>
                     <title>Example of Challenges due to Mapping</title>
                     <para>Mapping is an approach to share data; unfortunately, mapping at each step
@@ -1825,7 +1645,7 @@ Title = Terminology in Action &gt; Section = Interoperability deep dive (this wa
                         regulations. Tables 1 and 2 below show how equivalent concepts in two
                         different care settings leads to information loss when they are mapped to
                         SNOMED CT® because SNOMED CT® does not represent the equivalent meaning.
-                        <?oxy_comment_start author="tocrow" timestamp="20250717T022551-0400" comment="we say table 1 and 2 but i dont see tables?"?>In
+                        <?oxy_comment_start author="tocrow" timestamp="20250717T022551-0400" comment="we say table 1 and 2 but i dont see tables?" flag="done"?>In
                         Tables 1 and 2, the Local Concept column represents the concept created by
                         Hospital A during the care of a patient, the Map Type column specifies
                         broader than or narrower than or equivalent, and the SNOMED CT® Concept
@@ -1901,7 +1721,7 @@ Title = Terminology in Action &gt; Section = Interoperability deep dive (this wa
                     </listitem>
                 </itemizedlist>
                 <para>These tools, though valuable, have noatable gaps. Raje et al.
-                    <?oxy_comment_start author="ecundiff" timestamp="20250714T081627-0400" comment="Citation added"?>[31]<?oxy_comment_end?>
+                    <?oxy_comment_start author="ecundiff" timestamp="20250714T081627-0400" comment="Citation added"?>[28]<?oxy_comment_end?>
                     highlighted issues with completeness, correctness, and redundancy in the UMLS
                     Metathesaurus, particularly in its coverage of disease concepts. The UMLS does
                     not necessarily look at semantic equivalence of concepts across or within
@@ -1951,12 +1771,12 @@ OHDSI&apos;s Standard Vocabulary relies heavily on mapping non-standard concepts
                     standardizing value sets, VSAC facilitates the exchange and interpretation of
                     clinical information across different healthcare systems.</para>
                 <para>However, Winnenburg et al.
-                    <?oxy_comment_start author="ecundiff" timestamp="20250714T075807-0400" comment="Added citation"?>[35]<?oxy_comment_end?>
+                    <?oxy_comment_start author="ecundiff" timestamp="20250714T075807-0400" comment="Added citation"?>[29]<?oxy_comment_end?>
                     identified issues within VSAC, including duplicate value sets and the presence
                     of invalid codes in 19% of value sets in 2011. Further research revealed
                     significant variation in value set granularity, with some sets containing only a
                     single code and others over 20,000. Similarly, Bahr et al.
-                    <?oxy_comment_start author="ecundiff" timestamp="20250714T075453-0400" comment="Added citation"?>[36]<?oxy_comment_end?>
+                    <?oxy_comment_start author="ecundiff" timestamp="20250714T075453-0400" comment="Added citation"?>[30]<?oxy_comment_end?>
                     found problems with concept orientation in medication value sets, noting both
                     extraneous and missing ingredients within value sets and drug classes.</para>
             </section>
@@ -1965,18 +1785,18 @@ OHDSI&apos;s Standard Vocabulary relies heavily on mapping non-standard concepts
                 <para>What’s needed is a semantically normalized information model (i.e., Komet)
                     with an appropriate separation of concerns in regard to the informatics
                     architectural layers. Such a model is critical for the success of a number of
-                    forward-thinking healthcare initiatives. Solor does not map one terminology
+                    forward-thinking healthcare initiatives. Komet does not map one terminology
                     system to another and instead integrates terminology content (LOINC®, SNOMED
-                    CT®, RxNorm, etc.) from its native format into a common Solor format. Once the
-                    content is in Solor, where equivalency is determined through various methods,
+                    CT®, RxNorm, etc.) from its native format into a common Komet format. Once the
+                    content is in Komet, where equivalency is determined through various methods,
                     concepts of the same idea are aggregated. For example, Gentamycin from SNOMED
                     CT® is the same as Gentamycin from LOINC®, and is also the same Gentamycin from
-                    RxNorm. The end result from this process is the creation of a Solor concept that
+                    RxNorm. The end result from this process is the creation of a Komet concept that
                     is devoid of any source information (but will have traceability), and is exposed
                     to the user to view, use, and extend. In the Gentamycin example, a user will
                     find a concept that is devoid of any source information and will not need to
                     know if this is the SNOMED CT®/LOINC®/RxNorm Gentamycin that needs to be
-                    selected. Solor concepts are identified using a Universally Unique Identifier
+                    selected. Komet concepts are identified using a Universally Unique Identifier
                     (UUID).</para>
                 <section>
                     <title> The Komet Solution</title>
@@ -1998,53 +1818,25 @@ OHDSI&apos;s Standard Vocabulary relies heavily on mapping non-standard concepts
                         using description logic. LOINC®, SNOMED CT®, and RxNorm form the foundation
                         of Komet given that they are meaningful use standards, where when integrated
                         together, represent the breadth of information necessary for clinical data
-                        representation.
+                        representation. Komet is not intended to compete with existing standards and
+                        processes, and does not redistribute content.
                         <?oxy_comment_start author="ecundiff" timestamp="20250713T224705-0400" comment="Moved section &quot;Solor Defintional Knowledge&quot; to appendix"?>See
                         the appendix for additional discussion of the categories within Komet where
                         concept reside, as well as the relationships used to define the
                         concepts.<?oxy_comment_end?></para>
-                    <section>
-                        <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250720T221352-0500" comment="we can delete this now"?>
-                        <title>Design Features - Understandable, Reproducible and Useful</title>
-                        <para>Content in Komet aims to adhere to design features for concept
-                            validity, Understandarble, Reproducible, and Useful (URU), described in
-                            previous portions of this text.<?oxy_comment_end?></para>
-                    </section>
-                    <section>
-                        <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250722T114211-0500" comment="Pull out first sentence and add it to solor intro above. The remaining content has been pulled over to komet guide intro; delete this solor licensing section "?>
-                        <title><?oxy_comment_start author="rgeorgacopoulos" timestamp="20250720T222122-0500" comment="I will move this section to the komet user guide intro" mid="120"?>Licensing
-                            and Solor</title><?oxy_comment_end?>
-                        <para>Komet is not intended to compete with existing standards and
-                            processes, and does not redistribute content. It enables the community
-                            of Solor to integrate terminologies – their own terminology and others’
-                            terminology. Those who are distributing terminology must have a license
-                            to distribute these terminologies. For example: If organization A is
-                            distributing LOINC®, SNOMED CT®, and its curated terminology, then
-                            organization A needs to ensure it has a license to redistribute LOINC®
-                            and SNOMED CT®. Solor’s transformation processes and architectural
-                            foundation are available under the Apache 2 Open Source License. LOINC®,
-                            SNOMED CT®, and RxNorm are foundational terminologies in Solor. Solor
-                            fully supports and relies on these standards and their organizations.
-                            Solor’s intent is to complement these standards. Organizations are free
-                            to integrate Solor content into their standards.
-                            <?oxy_comment_start author="ecundiff" timestamp="20250713T130747-0400" comment="LOINC and SNOMED each had subsections for licensing. This can now be found in the appendix"?>Additional
-                            information for obtaining and using the LOINC® and SNOMED CT®
-                            terminologies can be found in the
-                            appendix<?oxy_comment_end?>.<?oxy_comment_end mid="120"?></para>
-                    </section>
                 </section>
                 <section>
-                    <title>Benefits of Solor</title>
+                    <title>Benefits of Komet</title>
                     <section>
                         <title><?oxy_comment_start author="ecundiff" timestamp="20250714T144824-0400" comment="Slight rework to title, significantly trimmed content in this section, removing the deliverable that had been included."?>Integrating
                             LOINC® Method Attributes and SNOMED CT® Concepts with
-                            Solor<?oxy_comment_end?></title>
+                            <?oxy_comment_end?>Komet</title>
                         <para>The collaborative agreement between LOINC® and SNOMED CT® enables more
                             consistent and comprehensive representation of LOINC® building blocks
                             (e.g., method) and a more reliable representation of clinical and
                             laboratory observations in SNOMED CT®. Still, few LOINC® method
                             attributes can be directly matched to SNOMED CT® concepts, highlighting
-                            limited interoperability and signficant gaps. Solor can simplify
+                            limited interoperability and signficant gaps. Komet can simplify
                             integration and management of LOINC® and SNOMED CT® by providing a
                             unified ecosystem for local extensions, reducing complexity for
                             implementers, and improving detail and usability in representing method
@@ -2053,7 +1845,7 @@ OHDSI&apos;s Standard Vocabulary relies heavily on mapping non-standard concepts
                 </section>
                 <section>
                     <title><?oxy_comment_start author="ecundiff" timestamp="20250714T144719-0400" comment="Section previously titled: Evaluating the impact of implementing Solor"?>Enhancing
-                        eCQM Value Set Accuracy and Adoption with Solor<?oxy_comment_end?></title>
+                        eCQM Value Set Accuracy and Adoption with <?oxy_comment_end?>Komet</title>
                     <para>The Value Set Authority Center (VASC) is the source of truth for value
                         sets for CMS's
                         <?oxy_comment_start author="ecundiff" timestamp="20250713T214908-0400" comment="Significantly reduced explanation of eCQMs and Quality Improvement measures in healthcare settings"?>electronic
@@ -2063,11 +1855,11 @@ OHDSI&apos;s Standard Vocabulary relies heavily on mapping non-standard concepts
                         organizations can compromise care quality and patient safety. Regular
                         updates to eCQMs and value sets are essential, yet clinics often lag in
                         adopting them. </para>
-                    <para>Solor provides an easier way to verify that value sets are up to date and
-                        covered. Solor can also suggest and add additional codes based on Solor
+                    <para>Komet provides an easier way to verify that value sets are up to date and
+                        covered. Komet can also suggest and add additional codes based on Komet
                         concepts to value set specifications.
                         <?oxy_comment_start author="ecundiff" timestamp="20250713T214642-0400" comment="Moved proposed study and Aspirin eCQM example to appendix"?>See
-                        appendix for a proposed study to evaluate the impact of Solor and an
+                        appendix for a proposed study to evaluate the impact of Komet and an
                         accompanying example.<?oxy_comment_end?>
                     </para>
                 </section>
@@ -2079,160 +1871,8 @@ OHDSI&apos;s Standard Vocabulary relies heavily on mapping non-standard concepts
         <para>
             <orderedlist>
                 <listitem>
-                    <para>Bodenreider O, Cornet R, Vreeman DJ. Recent Developments in Clinical
-                        Terminologies - SNOMED CT, LOINC, and RxNorm. Yearb Med Inform. 2018
-                        Aug;27(1):129-139. doi: 10.1055/s-0038-1667077. Epub 2018 Aug 29. PMID:
-                        30157516; PMCID: PMC6115234.</para>
-                </listitem>
-                <listitem>
-                    <para>McDonald C, Huff SM, Suico J, Mercer K. Logical Observation Identifiers
-                        Names and Codes (LOINC) users’ guide. <emphasis role="italic">Indianapolis:
-                            Regenstrief Institute. </emphasis>2004</para>
-                </listitem>
-                <listitem>
-                    <para>SNOMED Owl Toolkit [Internet]. IHTSDO. June 3 2022. Available from: <link
-                            xlink:href="https://github.com/IHTSDO/snomed-owl-toolkit"
-                            >IHTSDO/snomed-owl-toolkit: The official SNOMED CT OWL Toolkit. OWL
-                            conversion, classification and authoring support.
-                        (github.com)</link></para>
-                </listitem>
-                <listitem>
-                    <para>OWL refsets preview [Internet]. IHTSDO. Sept 28 2022. Available from:
-                            <link
-                            xlink:href="https://confluence.ihtsdotools.org/mag/owl-refsets-preview"
-                            >https://confluence.ihtsdotools.org/mag/owl-refsets-preview</link></para>
-                </listitem>
-                <listitem>
-                    <para>MED-RT Documentation [Internet]. NIH., May 2021 Version. Available from:
-                            <link
-                            xlink:href="https://evs.nci.nih.gov/ftp1/MED-RT/MED-RT%20Documentation.pdf#:%7E:text=RxNorm,%20a%20formal%20standardized%20medication%20terminology%20published%20by,structural%20classification%20and%20therapeutics%20indexing;%20and%20the%20Systematized"
-                            >MED-RT Documentation (nih.gov)</link></para>
-                </listitem>
-                <listitem>
-                    <para>HL7 Balloting [Internet]. HL7. March 3 2021. Available from: <link
-                            xlink:href="https://confluence.hl7.org/pages/viewpage.action?pageId=19136726"
-                            >https://confluence.hl7.org/pages/viewpage.action?pageId=19136726</link></para>
-                </listitem>
-                <listitem>
-                    <para>Cimino, J J. Desiderata for controlled medical vocabularies in the
-                        twenty-first century. Methods of information in medicine vol. 37,4-5 (1998):
-                        394-403.</para>
-                </listitem>
-                <listitem>
-                    <para>Spackman K, Guillermo R. Examining SNOMED from the perspective of formal
-                        ontological principles: Some preliminary analysis and observations. KR-MED
-                        2004 Proceedings 2004; 72-80. </para>
-                </listitem>
-                <listitem>
-                    <para>Campbell KE. Distributed development of a logic based controlled medical
-                        Terminology. PhD Dissertation, Stanford University, June 1997. </para>
-                </listitem>
-                <listitem>
-                    <para>Cornet R, Chute CG. Health Concept and Knowledge Management: Twenty-five
-                        Years of Evolution. Yearb Med Inform. 2016 Aug 2;Suppl 1(Suppl 1):S32-41.
-                        doi: 10.15265/IYS-2016-s037. PMID: 27488404; PMCID: PMC5171511.</para>
-                </listitem>
-                <listitem>
-                    <para>Rudolph S. Foundations of Description Logics. Krlsruhe Institute of
-                        Technology [Internet]. 2011 May [cited 2022 Jul 7]. Available from:
-                        https://www.aifb.kit.edu/images/1/19/DL-Intro.pdf </para>
-                </listitem>
-                <listitem>
-                    <para>Stram M, Seheult J, Sinard J, et al. ; Members of the Informatics
-                        Committee, College of American Pathologists. A survey of LOINC code
-                        selection practices among participants of the College of American
-                        Pathologists Coagulation (CGL) and Cardiac Markers (CRT) proficiency testing
-                        programs. Arch Pathol Lab Med 2020; 144 (5): 586–96.</para>
-                </listitem>
-                <listitem>
-                    <para>Enhancing the drug ontology with semantically-rich representation of
-                        National Drug codes and RxNorm unique concept identifiers [Internet]. BMC
-                        Bioinformatics. Available from: <link
-                            xlink:href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-3192-8"
-                            >https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-3192-8</link></para>
-                </listitem>
-                <listitem>
-                    <para>Bietenbeck A, Boeker M, Schulz S. NPU, loinc, and SNOMED CT: A comparison
-                        of terminologies for laboratory results reveals individual advantages and a
-                        lack of possibilities to encode interpretive comments [Internet]. De
-                        Gruyter. De Gruyter; 2018 [cited 2022Oct19]. Available from: <link
-                            xlink:href="https://www.degruyter.com/document/doi/10.1515/labmed-2018-0103/html?lang=en"
-                        />
-                    </para>
-                </listitem>
-                <listitem>
-                    <para>SHIELD Participants. Discussion on LOINC Challenges. [Personal interview,
-                        6 May] Zoom; 2022 (unpublished).</para>
-                </listitem>
-                <listitem>
-                    <para>Lin M, Vreeman D, McDonald C, et al. Auditing consistency and usefulness
-                        of LOINC use among three large institutions—using version spaces for
-                        grouping LOINC codes. J Biomed Inform 2012; 45 (4): 658–66.</para>
-                </listitem>
-                <listitem>
-                    <para>Lin M, Vreeman D, McDonald C, et al. A characterization of local LOINC
-                        mapping for laboratory tests in three large institutions. Methods Inf Med
-                        2011; 50 (2): 105–14.</para>
-                </listitem>
-                <listitem>
-                    <para>Cholan RA, Pappas G, Rehwoldt G, Sills AK, Korte ED, Appleton IK, Scott
-                        NM, Rubinstein WS, Brenner SA, Merrick R, Hadden WC, Campbell KE, Waters MS.
-                        Encoding laboratory testing data: case studies of the national
-                        implementation of HHS requirements and related standards in five
-                        laboratories. J Am Med Inform Assoc. 2022 May 25:ocac072. doi:
-                        10.1093/jamia/ocac072. Epub ahead of print. PMID: 35639494.</para>
-                </listitem>
-                <listitem>
-                    <para>Adamusiak T, Bodenreider O. Quality assurance in LOINC using Description
-                        Logic. AMIA Annu Symp Proc. 2012;2012:1099-108. Epub 2012 Nov 3. PMID:
-                        23304386; PMCID: PMC3540427.</para>
-                </listitem>
-                <listitem>
-                    <para>LOINC Document Ontology. Regenstrief [Internet]. 2022 [cited 2022 Jul 7].
-                        Available from: https://loinc.org/document-ontology/ </para>
-                </listitem>
-                <listitem>
-                    <para>LOINC Hierarchy Browser [Internet]. Regenstrief. Available from:
-                        https://loinc.org/tree/?about </para>
-                </listitem>
-                <listitem>
-                    <para>LOINC License [Internet]. Copyright Notice and License. Regenstrief. 2020.
-                        Available from: https://loinc.org/kb/license/ </para>
-                </listitem>
-                <listitem>
-                    <para>Campbell J, Campbell WS. Nebraska Lexicon Release Notes: Cancer Protocols
-                        and Observables Ontology [Internet]. 2017 Mar [cited 2022 Jul 7]. Available
-                        from:
-                        https://app1.unmc.edu/pathmicro/umls/docs/Nebraska_Lexicon_Release_Notes_20170331.pd</para>
-                </listitem>
-                <listitem>
-                    <para>LOINC Submission Queue Stats [Internet]. Regenstreif. July 6 2022.
-                        Available from: <link xlink:href="https://loinc.org/submissions/stats/"
-                            >https://loinc.org/submissions/stats/</link></para>
-                </listitem>
-                <listitem>
-                    <para>Nelson SJ, Zeng K, Kilbourne J, Powell T, Moore R. Normalized names for
-                        clinical drugs: RxNorm at 6 years. J Am Med Inform Assoc. 2011
-                        Jul-Aug;18(4):441-8. doi: 10.1136/amiajnl-2011-000116. Epub 2011 Apr 21.
-                        PMID: 21515544; PMCID: PMC3128404.</para>
-                </listitem>
-                <listitem>
-                    <para>Termlex. LOINC and SNOMED CT: LOINC SNOMED CT Extension - why, what and
-                        how [Internet]. LinkedIn. 2022 [cited 2022Oct19]. Available from:
-                        https://www.linkedin.com/pulse/loinc-snomed-ct-extension-why-what-how-termlex/?trackingId=XkAk09Q2Xn3Y0kj2HUSnXg%3D%3D
-                    </para>
-                </listitem>
-                <listitem>
-                    <para>Covid-19 value sets in VSAC [Internet]. U.S. National Library of Medicine.
-                        National Institutes of Health; [cited 2023Mar10]. Available from: <link
-                            xlink:href="https://www.nlm.nih.gov/vsac/support/usingvsac/covid19valuesets.html"
-                            >https://www.nlm.nih.gov/vsac/support/usingvsac/covid19valuesets.html</link></para>
-                </listitem>
-                <listitem>
-                    <para>Staes A, Campbell K. From retrospective mapping to prospective
-                        standardization: A comparison of integration strategies to schieve semantic
-                        data interoperability [Internet]. 2017 Nov 12. Available from:
-                        https://www.academia.edu</para>
+                    <para>Cimino, JJ. Desiderata for controlled medical vocabularies in the
+                        twenty-first century. Methods Inf Med. 1998 Nov;37(4-5):394-403.</para>
                 </listitem>
                 <listitem>
                     <para>Campbell KE, Oliver DE, Spackman KA, Shortliffe EH. Representing thoughts,
@@ -2246,29 +1886,145 @@ OHDSI&apos;s Standard Vocabulary relies heavily on mapping non-standard concepts
                         https://www.healthit.gov/sites/default/files/federal-healthIT-strategic-plan-2014.pdf</para>
                 </listitem>
                 <listitem>
+                    <para>Bodenreider O, Cornet R, Vreeman D. Recent Developments in Clinical
+                        Terminologies — SNOMED CT, LOINC, and RxNorm. Yearb Med Inform [Internet].
+                        2018;27(01):129–39. Available from:
+                        http://www.thieme-connect.de/DOI/DOI?10.1055/s-0038-1667077 </para>
+                </listitem>
+                <listitem>
+                    <para>McDonald C, Huff SM, Suico J, Mercer K. Logical Observation Identifiers
+                        Names and Codes (LOINC) users’ guide. Indianapolis: Regenstrief
+                            Institute.<emphasis role="italic"> </emphasis>2004</para>
+                </listitem>
+                <listitem>
+                    <para>SHIELD Participants. Discussion on LOINC Challenges. [Personal interview,
+                        6 May] Zoom; 2022 (unpublished).</para>
+                </listitem>
+                <listitem>
+                    <para>Campbell KE. Distributed development of a logic-based controlled medical
+                        Terminology. PhD Dissertation, Stanford University. 1997 Jun. Available
+                        from: https://api.semanticscholar.org/CorpusID:59707037 </para>
+                </listitem>
+                <listitem>
+                    <para>Stram M, Seheult J, Sinard J, et al. A survey of LOINC code selection
+                        practices among participants of the College of American Pathologists
+                        Coagulation (CGL) and Cardiac Markers (CRT) proficiency testing programs.
+                        Arch Pathol Lab Med 2020 May;144(5):586–96.</para>
+                </listitem>
+                <listitem>
+                    <para>Lin MC, Vreeman DJ, McDonald CJ, Huff SM. Auditing consistency and
+                        usefulness of LOINC use among three large institutions—using version spaces
+                        for grouping LOINC codes. J Biomed Inform [Internet]. 2012 [cited 2023 Dec
+                        4];45(4): 658–66. Available from:
+                        https://linkinghub.elsevier.com/retrieve/pii/S1532046412000093 </para>
+                </listitem>
+                <listitem>
+                    <para>Lin MC, Vreeman DJ, McDonald CJ, Huff SM. A characterization of local
+                        LOINC mapping for laboratory tests in three large institutions. Methods Inf
+                        Med [Internet]. 2011;50(02):105–14. Available from:
+                        http://www.thieme-connect.de/DOI/DOI?10.3414/ME09-01-0072 </para>
+                </listitem>
+                <listitem>
+                    <para>LOINC [Internet]. [cited 2023 Dec 4]. LOINC Document Ontology. Available
+                        from: https://loinc.org/document-ontology/ </para>
+                </listitem>
+                <listitem>
+                    <para>Cholan RA, Pappas G, Rehwoldt G, Sills AK, Korte ED, Appleton IK, et al.
+                        Encoding laboratory testing data: case studies of the national
+                        implementation of HHS requirements and related standards in five
+                        laboratories. J Am Med Inform Assoc [Internet]. 2022 Jul 12;29(8):1372-80.
+                        Available from: https://academic.oup.com/jamia/article/29/8/1372/6592172
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Adamusiak T, Bodenreider O. Quality assurance in LOINC using Description
+                        Logic. AMIA Annu Symp Proc. 2012;2012:1099-108. </para>
+                </listitem>
+                <listitem>
+                    <para>LOINC [Internet]. [cited 2023 Dec 4]. License. Available from:
+                        https://loinc.org/kb/license/ </para>
+                </listitem>
+                <listitem>
+                    <para> Nebraska_Lexicon_Release_Notes_20170331.pdf [Internet]. [cited 2023 Dec
+                        4]. Available from:
+                        https://app1.unmc.edu/pathmicro/umls/docs/Nebraska_Lexicon_Release_Notes_20170331.pdf
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>LOINC [Internet]. [cited 2022 Jul 6]. Submission Queue Stats. Available
+                        from: <link xlink:href="https://loinc.org/submissions/stats/"
+                            >https://loinc.org/submissions/stats/</link></para>
+                </listitem>
+                <listitem>
+                    <para>IHTSDO/snomed-owl-toolkit [Internet]. SNOMED International; 2025 [cited
+                        2022 Jun 3]. Available from: https://github.com/IHTSDO/snomed-owl-toolkit </para>
+                </listitem>
+                <listitem>
+                    <para>IHTSDO. OWL refsets preview [Internet]. [cited 2022 Sep 28]. Available
+                        from: https://confluence.ihtsdotools.org/mag/owl-refsets-preview </para>
+                </listitem>
+                <listitem>
+                    <para>Termlex. LOINC and SNOMED CT: LOINC SNOMED CT Extension - why, what and
+                        how [Internet]. LinkedIn. 2022 [cited 2022 Oct 19]. Available from:
+                        https://www.linkedin.com/pulse/loinc-snomed-ct-extension-why-what-how-termlex/
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Bietenbeck A, Boeker M, Schulz S. NPU, LOINC, and SNOMED CT: a comparison
+                        of terminologies for laboratory results reveals individual advantages and a
+                        lack of possibilities to encode interpretive comments. LaboratoriumsMedizin
+                        [Internet]. 2018 Dec 19 [cited 2023 Dec 4];42(6):267–75. Available from:
+                        http://www.degruyter.com/view/j/labm.2018.42.issue-6/labmed-2018-0103/labmed-2018-0103.xml
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Bona JP, Brochhausen M, Hogan WR. Enhancing the drug ontology with
+                        semantically-rich representations of National Drug Codes and RxNorm unique
+                        concept identifiers. BMC Bioinformatics [Internet]. 2019;20(S21):708.
+                        Available from:
+                        https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-3192-8
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Spackman KA, Reynoso G. Examining SNOMED from the perspective of formal
+                        ontological principles: Some preliminary analysis and observations. In:
+                        KR-MED. 2004. p. 72–80. </para>
+                </listitem>
+                <listitem>
+                    <para>Cornet R, Chute CG. Health Concept and Knowledge Management: Twenty-five
+                        Years of Evolution. Yearb Med Inform [Internet]. 2016;25(S 01):S32–41.
+                        Available from: http://www.thieme-connect.de/DOI/DOI?10.15265/IYS-2016-s037
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Rudolph S. Foundations of Description Logics. In: Polleres A, d’Amato C,
+                        Arenas M, Handschuh S, Kroner P, Ossowski S, et al., editors. Reasoning Web
+                        Semantic Technologies for the Web of Data [Internet]. Berlin, Heidelberg:
+                        Springer Berlin Heidelberg; 2011 [cited 2022 Jul 7]. p. 76–136. Available
+                        from: http://link.springer.com/10.1007/978-3-642-23032-5_2 </para>
+                </listitem>
+                <listitem>
+                    <?oxy_custom_start type="oxy_content_highlight" color="255,64,0"?>
+                    <para><?oxy_custom_end?>Krötzsch M, Simancik F, Horrocks I. A Description Logic
+                        Primer [Internet]. arXiv; 2012. Available from:
+                        https://arxiv.org/abs/1201.4089 </para>
+                </listitem>
+                <listitem>
+                    <para>HL7 Logical Model: Standardized Terminology Knowledgebase, Release 1
+                        [Internet]. HL7 International; 2021 Aug. Available from:
+                        https://www.hl7.org/documentcenter/private/standards/HL7_LM_TERM_KB_R1_INFORM_2021AUG_FINAL.pd</para>
+                </listitem>
+                <listitem>
+                    <para>Staes A, Campbell K. From retrospective mapping to prospective
+                        standardization: A comparison of integration strategies to schieve semantic
+                        data interoperability [Internet]. 2017 Jan 1. Available from:
+                        https://www.academia.edu/71651790/From_retrospective_mapping_to_prospective_standardization_A_comparison_of_integration_strategies_to_achieve_semantic_data_interoperability
+                    </para>
+                </listitem>
+                <listitem>
                     <para>Raje S, Bodenreider O. Interoperability of Disease Concepts in Clinical
                         and Research Ontologies: Contrasting Coverage and Structure in the Disease
-                        Ontology and SNOMED CT. Stud Health Technol Inform. 2017;245:925-929</para>
-                </listitem>
-                <listitem>
-                    <para>Jean-Jacques M, Persell SD, Thompson JA, Hasnain-Wynia R, Baker DW.
-                        Changes in disparities following the implementation of a health information
-                        technology-supported quality improvement initiative. Journal of General
-                        Internal Medicine. 2012;27(1):71-7.</para>
-                </listitem>
-                <listitem>
-                    <para>Cholan RA, Weiskopf NG, Rhoton DL, Colin NV, Ross RL, Marzullo MN, et al.
-                        Specifications of Clinical Quality Measures and Value Set Vocabularies Shift
-                        Over Time: A Study of Change through Implementation Differences. AMIA Annual
-                        Symposium proceedings AMIA Symposium. 2018;2017:575-84.</para>
-                </listitem>
-                <listitem>
-                    <para>Hansen ML, Sørensen R, Clausen MT, Fog-Petersen ML, Raunsø J, Gadsbøll N,
-                        Gislason GH, Folke F, Andersen SS, Schramm TK, Abildstrøm SZ, Poulsen HE,
-                        Køber L, Torp-Pedersen. Risk of bleeding with single, dual, or triple
-                        therapy with warfarin, aspirin, and clopidogrel in patients with atrial
-                        fibrillation. Arch Intern Med. 2010 Sep 13;170(16):1433-41.
-                        doi:10.1001/archinternmed.2010.271</para>
+                        Ontology and SNOMED CT. Stud Health Technol Inform. 2017;245:925-9</para>
                 </listitem>
                 <listitem>
                     <para>Winnenburg R, Bodenreider, O. Issues in Creating and Maintaining Value
@@ -2278,7 +2034,7 @@ OHDSI&apos;s Standard Vocabulary relies heavily on mapping non-standard concepts
                 <listitem>
                     <para>Bahr NJ, Nelson SD, Winnenburg R, Bodenreider, O. Eliciting the Intension
                         of Drug Value Sets - Principles and Quality Assurance Applications. Stud
-                        Health Technol Inform. 2017;245:843-47</para>
+                        Health Technol Inform. 2017;245:843-7</para>
                 </listitem>
             </orderedlist>
         </para>
