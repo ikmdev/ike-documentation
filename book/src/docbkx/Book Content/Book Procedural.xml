@@ -13,55 +13,37 @@
         situations.</para>
     <section>
         <title>Introduction to Clinical Decision Support (CDS)</title>
-        <para>As defined by Osheroff et al. CDS “provides clinicians, staff, patients, or other
+        <para>As defined by Osheroff et al. [1] CDS “provides clinicians, staff, patients, or other
             individuals with knowledge and person-specific information, intelligently filtered or
-            presented at appropriate times, to enhance health and health care.” [1] CDS encompasses
-            a variety of tools to enhance decision-making in the clinical workflow. Examples of CDS
+            presented at appropriate times, to enhance health and health care.” CDS encompasses a
+            variety of tools to enhance decision-making in the clinical workflow. Examples of CDS
             tools include but are not limited to: </para>
         <itemizedlist>
             <listitem>
-                <para>order sets created for particular conditions or types of patients.</para>
+                <para>Order sets created for certain conditions or types of patients that assist in
+                    the adherence to evidence-based guidelines</para>
             </listitem>
             <listitem>
-                <para>recommendations/databases that can provide information relevant to particular
-                    patients.</para>
+                <para>Recommendations/databases that can provide information relevant to particular
+                    groups of patients, such as those with multiple sclerosis</para>
             </listitem>
             <listitem>
-                <para>reminders for preventive care.</para>
+                <para>Reminders for preventive care</para>
             </listitem>
             <listitem>
-                <para>documentation templates.</para>
+                <para>Documentation templates that ensure necessary information is captured and
+                    available to assist in decision-making </para>
             </listitem>
             <listitem>
-                <para>diagnostic support.</para>
+                <para>Diagnostic support, such as implementing established protocols when certain
+                    conditions are met </para>
             </listitem>
             <listitem>
-                <para>alerts about potentially dangerous situations.</para>
+                <para>Alerts about potentially dangerous situations, as in the case of detecting a
+                    combination of abnormal vital signs and lab results, or warning of dangerous
+                    drug interactions </para>
             </listitem>
         </itemizedlist>
-        <para>Osheroff also published “The CDS 5 Rights framework” (5Rights) which asserts that, to
-            improve targeted healthcare decisions/outcomes with well developed and deployed CDS
-            interventions, the interventions must provide: </para>
-        <itemizedlist>
-            <listitem>
-                <para>the <emphasis role="bold">right</emphasis>  information,</para>
-            </listitem>
-            <listitem>
-                <para>to the <emphasis role="bold">right</emphasis> people,</para>
-            </listitem>
-            <listitem>
-                <para>in the <emphasis role="bold">right</emphasis> intervention formats,</para>
-            </listitem>
-            <listitem>
-                <para>through the <emphasis role="bold">right</emphasis> channels,</para>
-            </listitem>
-            <listitem>
-                <para>at the <emphasis role="bold">right</emphasis> points in workflow. [1]</para>
-            </listitem>
-        </itemizedlist>
-        <para>Understanding and leveraging effectively the 'what, who, how, where, when' information
-            process/workflow dimensions is central to configuring useful CDS and Quality Improvement
-            approaches.</para>
         <para>A 2012 Literature Review commissioned by the Agency for Healthcare Research and
             Quality (AHRQ) found evidence showing that CDS had positive impact on process measures
             and increasing user knowledge relevant to a medical condition. [2] </para>
@@ -123,6 +105,28 @@
                 </listitem>
             </orderedlist>
         </para>
+        <para>To capitalize on the benefits that CDS provides, it is essential to understand and
+            address the foundational elements that enable the proper implementation within
+            healthcare systems. Osheroff et al. [1] have also published “The CDS 5 Rights framework”
+            (5Rights), which asserts that, to improve targeted healthcare decisions and outcomes
+            through well developed and deployed CDS interventions, the interventions must provide: </para>
+        <itemizedlist>
+            <listitem>
+                <para>the <emphasis role="bold">right</emphasis> information,</para>
+            </listitem>
+            <listitem>
+                <para>to the <emphasis role="bold">right</emphasis> people,</para>
+            </listitem>
+            <listitem>
+                <para>in the <emphasis role="bold">right</emphasis> intervention formats,</para>
+            </listitem>
+            <listitem>
+                <para>through the <emphasis role="bold">right</emphasis> channels,</para>
+            </listitem>
+            <listitem>
+                <para>at the <emphasis role="bold">right</emphasis> points in the workflow.</para>
+            </listitem>
+        </itemizedlist>
         <para>In order for the vision of the American Medical Informatics Association (AMIA) CDS
             Roadmap Steering Committee to be achieved, the science of CDS needs to support
             implementers, clinicians, and technology vendors in developing CDS tools that are
@@ -161,12 +165,8 @@
     </section>
     <section>
         <title>Lack of Standardized Encoded Clinical Data - Impact on CDS</title>
-        <para>In this section, we will explore an important question regarding appropriate and
-            highly-reliable CDS: <emphasis><emphasis role="bold">how can we provide
-                    <?oxy_comment_start author="steph" timestamp="20190717T105415-0600" comment="Should this be hyphenated?" flag="done"?>patient-<?oxy_comment_end?>centered
-                    clinical decision support given the lack of standardization relating to how we
-                    encode data?</emphasis></emphasis>
-        </para>
+        <para>In this section, we will explore the challenges of delivering patient-centered
+            clinical decision support in the context of inconsistent data encoding standards.</para>
         <para>The following figure depicts how the lack of standardization in data transfer can
             impact decision support.
             <figure xml:id="ShortcomingsDataTransfers">
@@ -388,8 +388,12 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
                 accepted by the clinical care team and patients and changing care for the better.
                 This capability will be important at both the local and national scale if the goal
                 is to reduce the burden on providers and health systems to each identify important
-                lessons on their own." The following table shows examples of measures to determine
-                the impact of CDS interventions. [14] <table frame="all">
+                lessons on their own." [14]</para>
+            <para>To address this need, a range of quality metrics can be used to assess the
+                effectiveness and impact of CDS interventions. The following table provides examples
+                of commonly captured measures. [14]</para>
+            <para>
+                <table frame="all">
                     <title>Examples of Measures Commonly Captured to Measure the Effects of CDS
                         Interventions </title>
                     <tgroup cols="2">
@@ -504,7 +508,7 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
                                             <para>Disease management related to adoption of
                                                 guidelines (e.g., blood pressure control, lipid
                                                 levels,
-                                                <?oxy_comment_start author="steph" timestamp="20190717T114254-0600" comment="Should this be A1c or HgbA1c instead?" id="ydk_3lr_q3b" flag="done"?><?oxy_comment_start author="timowilliams" timestamp="20190806T152916-0500" comment="Changed to HBA1c" parentID="ydk_3lr_q3b" flag="done" mid="5"?>HBA1c<?oxy_comment_end mid="5"?><?oxy_comment_end?>
+                                                <?oxy_comment_start author="steph" timestamp="20190717T114254-0600" comment="Should this be A1c or HgbA1c instead?" id="ydk_3lr_q3b" flag="done"?><?oxy_comment_start author="timowilliams" timestamp="20190806T152916-0500" comment="Changed to HBA1c" parentID="ydk_3lr_q3b" flag="done" mid="4"?>HBA1c<?oxy_comment_end mid="4"?><?oxy_comment_end?>
                                                 levels), hospital lengths of stay,
                                                 rehospitalizations </para>
                                         </listitem>
@@ -513,64 +517,84 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
                             </row>
                         </tbody>
                     </tgroup>
-                </table></para>
-            <section>
-                <title>Signs of an Effective CDS Roll-Out </title>
-                <para>Health IT.gov published a how-to manual for healthcare organizations to
-                    monitor CDS rollout plans and included the following criteria: [15] </para>
-                <para>
-                    <itemizedlist>
-                        <listitem>
-                            <para>All end-users were adequately trained to use the intervention </para>
-                        </listitem>
-                        <listitem>
-                            <para>End-users felt the trainings were well-timed in relation to the
-                                roll-out </para>
-                        </listitem>
-                        <listitem>
-                            <para>End-users did not feel overwhelmed by the introduction of
-                                CDS</para>
-                        </listitem>
-                        <listitem>
-                            <para>End-users knew how to provide feedback and get support if
-                                needed</para>
-                        </listitem>
-                        <listitem>
-                            <para>Changes in workflow were smooth and improved care processes</para>
-                        </listitem>
-                    </itemizedlist>
-                </para>
-            </section>
+                </table>
+            </para>
+            <para>In addition to these measures, signs of an effective CDS roll-out have been
+                outlined by Health IT.gov, which published a how-to manual for healthcare
+                organizations to monitor CDS rollout plans. Key criteria include: [15]</para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>All end-users were adequately trained to use the intervention </para>
+                    </listitem>
+                    <listitem>
+                        <para>End-users felt the trainings were well-timed in relation to the
+                            roll-out </para>
+                    </listitem>
+                    <listitem>
+                        <para>End-users did not feel overwhelmed by the introduction of CDS</para>
+                    </listitem>
+                    <listitem>
+                        <para>End-users knew how to provide feedback and get support if
+                            needed</para>
+                    </listitem>
+                    <listitem>
+                        <para>Changes in workflow were smooth and improved care processes</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
             <section>
                 <title>Statistical Process Control Methods for CDS Anomaly Detection</title>
                 <para>A CDS malfunction (aka true positive anomaly) occurs when the CDS rule does
                     not function as it was designed or expected to. The question that an evaluator
-                    of CDS interventions may ask is: <emphasis><emphasis role="bold">Predict, given
-                            an expected number of events will happen, how many events will happen
-                            over time?</emphasis></emphasis>? When monitoring CDS count data over
-                    time, the underlying denominator likely will vary insignificantly. Therefore,
-                    statistical process control (SPC) charts can be created and the following tests
-                    can be performed: [16]  </para>
-                <itemizedlist>
+                    of CDS interventions may ask is: <emphasis><emphasis role="bold">Given what we
+                            expect to happen (the expected number of alert events), how many events
+                            actually happen over time?</emphasis></emphasis> When monitoring CDS
+                    count data over time, the underlying denominator likely will vary
+                    insignificantly. Therefore, statistical process control (SPC) charts can be
+                    created and the following tests can be performed: [16] </para>
+                <orderedlist>
                     <listitem>
-                        <para>Test #1 - The presence of a single point outside the control limits
-                            using the threshold
-                            3<?oxy_comment_start author="steph" timestamp="20190717T120833-0600" comment="Is this symbol correct?" id="iln_ksd_r3b"?><?oxy_comment_start author="rcholan" timestamp="20190808T085928-0400" comment="* denotes multiplication" parentID="iln_ksd_r3b" mid="9"?>*<?oxy_comment_end mid="9"?><?oxy_comment_end?>standard
-                            deviation.</para>
+                        <para>Test #1 - Single point outside control limits</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>If one data point (e.g., one day’s alert count) is more than 3
+                                    standard deviations from the average, it’s flagged as an
+                                    anomaly</para>
+                            </listitem>
+                        </itemizedlist>
                     </listitem>
                     <listitem>
                         <para>Test #2 - Two of three consecutive points are more than 2 standard
-                            deviations from the average line and both on the same side of the
-                            average line.</para>
+                            deviations from the average (same side)</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>If two out of three points in a row are more than 2 standard
+                                    deviations from the mean, and both are above or below the mean,
+                                    it’s suspicious</para>
+                            </listitem>
+                        </itemizedlist>
                     </listitem>
                     <listitem>
                         <para>Test #3 - Eight or more consecutive points on the same side of the
-                            average line.</para>
+                            mean</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>If eight or more points in a row are all above or all below
+                                    the mean, it suggests a shift in the process</para>
+                            </listitem>
+                        </itemizedlist>
                     </listitem>
                     <listitem>
-                        <para>Test #4 - Six or more values steadily increasing or decreasing.</para>
+                        <para>Test #4 - Six or more values steadily increasing or decreasing</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>If six or more points in a row are trending up or down, it may
+                                    indicate a process change or drift</para>
+                            </listitem>
+                        </itemizedlist>
                     </listitem>
-                </itemizedlist>
+                </orderedlist>
                 <para>SPC anomaly detection can be attempted on time points for various time scales
                     (e.g., weekly and monthly scale). To determine the characteristics and
                     performance of SPC detection methods sensitivity, specificity, precision and the
@@ -580,12 +604,9 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
     </section>
     <section>
         <title>Best Practices for CDS Knowledge Management and Deployment</title>
-        <para>As aforementioned in the section “Introduction to Clinical Decision Support”, the AMIA
-            CDS Roadmap Development Steering Committee describes three pillars for realizing the
-            promise of CDS: (1) Best Knowledge Available When Needed, (2) High Adoption and
-            Effective Use, and (3) Continuous Improvement of Knowledge and CDS Methods. [1]</para>
-        <para>Given our discussion of challenges that plague CDS implementations, we propose a
-            fourth pillar to be explicitly added to this framework: </para>
+        <para>While the AMIA CDS Roadmap Development Steering Committee outlines three pillars for
+            effective CDS, we propose adding a fourth given our discussion of the challenges that
+            plahue CDS implementations:</para>
         <itemizedlist>
             <listitem>
                 <para><emphasis role="bold">Standardization Related to how we Encode and Represent
@@ -939,25 +960,23 @@ I don&apos;t see this cited but adding it here"?>GAM<?oxy_comment_end?>)
                 by all disciplines involved. This should result in greater quality of care and
                 decreased costs. </para>
             <section>
-                <title>Pathways vs SOPs vs Guidelines</title>
-                <para>Rao et al. provide definitions to help compare/contrast SOPs, guidelines, and
-                    <?oxy_comment_start author="steph" timestamp="20190717T154404-0600" comment="I didn&apos;t see clinical pathways discussed in the two paragraphs below." id="sms_5sd_r3b"?><?oxy_comment_start author="rcholan" timestamp="20190808T090227-0400" comment="It is mentioned in the first sentence and last sentence. Perhaps we need a new quote" parentID="sms_5sd_r3b" mid="16"?>clinical
-                    pathways: </para><?oxy_comment_end?><?oxy_comment_end mid="16"?>
-                <para xml:id="__p7">"The terms SOPs, guidelines and [clinical] pathways are defined
-                    by different medical bodies. Furthermore, whereas clinical practice guidelines
-                    are systematically developed statements that assist decisions about appropriate
-                    health care for specific circumstances, SOPs are more specific than guidelines
-                    and are defined in greater detail. They provide a comprehensive set of rigid
-                    criteria outlining the management steps for a single clinical condition or
-                    aspects of organization.</para>
-                <para xml:id="__p8">Guidelines are rigorously developed using evidence-based
-                    medicine criteria and consist of two distinct components: the evidence summary
-                    and the detailed instructions for the application of that evidence to patient
-                    care. For the common health care provider, guidelines require local adaptation
-                    to suit local circumstances and to achieve a feeling of ownership, both of which
-                    are important factors in guideline uptake and use. SOPs, therefore, help bridge
-                    the gap between evidence-based medicine, clinical practice guidelines, and the
-                    local realities at the point-of-care." [25] </para>
+                <title>Guidelines vs SOPs vs Pathways</title>
+                <para>Clinical practice guidelines are systematically developed, evidence-based
+                    recommendations designed to assist healthcare decisions in specific clinical
+                    situations. They typically consist of an evidence summary and detailed
+                    instructions for applying that evidence to patient care. However, guidelines
+                    often require adaptation to local contexts to ensure relevance and encourage
+                    adoption by providers.</para>
+                <para>SOPs are more specific and detailed than guidelines. They provide
+                    comprehensive, rigid criteria and step-by-step instructions for managing a
+                    single clinical condition or organizational process. SOPs help bridge the gap
+                    between broad, evidence-based guidelines and the realities of clinical practice
+                    at the point of care.</para>
+                <para>Clinical pathways, meanwhile, translate clinical guidelines into practical,
+                    time-sequenced steps for managing defined patient groups or conditions. By
+                    operationalizing guidelines into structured workflows, clinical pathways help
+                    standardize care delivery and ensure that patients receive consistent,
+                    evidence-based management throughout their healthcare journey. [25]</para>
             </section>
         </section>
         <section>
@@ -980,18 +999,16 @@ I don&apos;t see this cited but adding it here"?>GAM<?oxy_comment_end?>)
         </section>
         <section>
             <title>Knowledge Artifacts (KNARTs)</title>
-            <?oxy_comment_start author="timowilliams" timestamp="20190513T164136-0500" comment="Should this be it&apos;s own section?" flag="done"?>
-            <?oxy_comment_start author="steph" timestamp="20190610T094315-0600" comment="I think it should." flag="done" mid="61"?>
-            <para><?oxy_comment_end?><?oxy_comment_end mid="61"?>KNART is a Clinical Decision
-                Support Knowledge Artifact and is a structured way of documenting the
-                content/knowledge for three different types of CDS interventions: 1) event condition
-                action (ECA) rule (e.g., clinical reminder), 2) order sets, and 3) documentation
-                templates (VA has called them SMARTForms or PNCS forms in the past). </para>
+            <para>A Clinical Decision Support Knowledge Artifact (KNART) is a structured way of
+                documenting the knowledge and content used for three different types of CDS
+                interventions: 1) event condition action (ECA) rule (e.g., clinical reminder), 2)
+                order sets, and 3) documentation templates (VA has called them SMARTForms or PNCS
+                forms in the past). </para>
             <para>KNARTs are a standard HL7 format. While they are not the actual executable CDS
                 interventions, they provide the information that a developer can take and then
-                implement within an EHR. The main benefit to KNARTs is that you can share them with
-                other healthcare organizations in a standardized manner that they can take and
-                implement within their own EHR, if they choose.</para>
+                implement within an EHR. The key advantage of KNARTs lies in their standardization,
+                which allows healthcare organizations to share and adopt CDS content efficiently,
+                enabling the implementation of best practices across different EHR platforms.</para>
         </section>
     </section>
     <section>
