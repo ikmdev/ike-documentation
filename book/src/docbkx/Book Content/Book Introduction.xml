@@ -199,26 +199,25 @@
                 <listitem>
                     <para>Create an analysis normal form for clinical statements</para>
                 </listitem>
-            </itemizedlist>The proposed architecture, shown below in the Procedural, Assertional,
-            Statement, Terminology, Foundational (PASTF) Model, serves as an implementation of SoC,
-            and helps to break out and organize inter-dependent types of knowledge in a way that
-            allows for reuse, ongoing development, and independent updates. If employed, this model
-            can help the healthcare ecosystem to individually resolve issues in their data within
-            their layers, rather than the entire system, leading to much more agile
-            improvement.</para><figure xml:id="PASTFModel">
-                <title>PASTF Model</title>
+            </itemizedlist>The proposed architecture, shown below in the Knowledge Architecture
+            Model, serves as an implementation of SoC, and helps to break out and organize
+            inter-dependent types of knowledge in a way that allows for reuse, ongoing development,
+            and independent updates. If employed, this model can help the healthcare ecosystem to
+            individually resolve issues in their data within their layers, rather than the entire
+            system, leading to much more agile improvement.</para><figure xml:id="PASTFModel">
+                <title>Knowledge Architecture </title>
                 
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../images/PASTF%20Updated.svg" scale="20" align="center"/>
+                            <imagedata fileref="../images/KnowledgeArchitectureFullSkyscraper.svg" scale="20" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
             
         <para>Detailed descriptions of each layer will be spelled out in the chapters that follow,
             but brief descriptions of each can be found below:</para>
-        <para><emphasis role="bold">Foundational Architecture</emphasis> – The foundational layer of
-            the Knowledge Architecture provides the common elements of interoperability, such as:
+        <para><emphasis role="bold">Versioned Foundation</emphasis> – The versioned foundation layer
+            of the Knowledge Architecture provides the common elements of interoperability, such as:
             object identity, versioning, modularity, and knowledge representation. It includes (a)
             the foundation and building blocks of the common model; (b) how the repeatable
             transformation process of disparate standards into the common model promotes
@@ -229,27 +228,26 @@
             of interest, including descriptions, dialects, language, and semantic hierarchy. SNOMED
             CT®, LOINC®, and RxNorm are part of this layer. It defines what valid codes or
             expressions may be used by higher level layers.</para>
-        <para><emphasis role="bold">Statement Model</emphasis> – The statement model layer is
-            responsible for defining how data elements are combined to create a statement. This
-            layer reuses the artifacts defined in the terminology knowledge layer.</para>
         <para><emphasis role="bold">Assertional Knowledge</emphasis> – The assertional knowledge
             layer makes use of the Terminology Knowledge layer concepts to specify non-defining
             facts that may be used by procedural knowledge algorithms. An example fact might be that
             “thiazide diuretics treat hypertension.” Assertional knowledge may also indicate what
             symptoms may be associated with a disorder.</para>
-        <para><emphasis role="bold">Procedural Knowledge</emphasis> – The procedural knowledge
-            layer, also known as imperative knowledge, is the knowledge exercised in the performance
-            of some task. An example would be determining a hypertension treatment plan by analyzing
-            a combination of a patient’s clinical statements and the available assertional
-            knowledge. The procedural knowledge is responsible for information about standard ways
-            to carry out specific procedures, as well as other procedural guidelines, (e.g.,
-            treatment protocols for diseases and order sets focused on certain patient situations).
-            Procedural knowledge, together with assertional knowledge, enables clinical decision
-            support, quality measurement, and patient safety. This layer relies on the architectural
-            foundation and terminology layers, incorporates the statement model for information
-            retrieval, and uses assertional knowledge. Procedural knowledge artifacts may include
-            clinical alert rules, reminders, etc., that trigger actions or recommend
-            interventions.</para>
+        <para><emphasis role="bold">Statement Model Knowledge</emphasis> – The statement model layer
+            is responsible for defining how data elements are combined to create a statement. This
+            layer reuses the artifacts defined in the terminology knowledge layer.</para>
+        <para><emphasis role="bold">Imperative Knowledge</emphasis> – The imperative knowledge layer
+            is the knowledge exercised in the performance of some task. An example would be
+            determining a hypertension treatment plan by analyzing a combination of a patient’s
+            clinical statements and the available assertional knowledge. The procedural knowledge is
+            responsible for information about standard ways to carry out specific procedures, as
+            well as other procedural guidelines, (e.g., treatment protocols for diseases and order
+            sets focused on certain patient situations). Procedural knowledge, together with
+            assertional knowledge, enables clinical decision support, quality measurement, and
+            patient safety. This layer relies on the architectural foundation and terminology
+            layers, incorporates the statement model for information retrieval, and uses assertional
+            knowledge. Procedural knowledge artifacts may include clinical alert rules, reminders,
+            etc., that trigger actions or recommend interventions.</para>
         <para>Examining a clinical procedure for controlling hypertension illustrates each of the
             layers of the informatics architectural separation of concerns.</para>
         <para>In the <emphasis role="bold">Terminology Knowledge </emphasis>layer, there may be
@@ -257,18 +255,18 @@
             hypertension). Ideally, these overlapping codes and terms would be oriented to the same
             parent concept during the transformation and integration process at the foundational
             architecture layer.</para>
-        <para>The <emphasis role="bold">Statement Model</emphasis> layer enables representation of
-            blood pressure measurement values (e.g., systolic blood pressure = 140 mmHg), or the
-            categorical data (e.g., pregnancy induced hypertension vs. renal hypertension) within a
-            standard data structure to facilitate information exchange or retrieval, such as within
-            a standards-based clinical statement (i.e., Fast Healthcare Interoperability Resources,
-            or FHIR).</para>
+        <para>The <emphasis role="bold">Statement Model Knowledge</emphasis> layer enables
+            representation of blood pressure measurement values (e.g., systolic blood pressure = 140
+            mmHg), or the categorical data (e.g., pregnancy induced hypertension vs. renal
+            hypertension) within a standard data structure to facilitate information exchange or
+            retrieval, such as within a standards-based clinical statement (i.e., Fast Healthcare
+            Interoperability Resources, or FHIR).</para>
         <para>The <emphasis role="bold">Assertional Knowledge </emphasis>layer represents
             non-procedural statements, or facts, such as “Stage 2 high blood pressure is over 140
             systolic or 90 diastolic,” or “beta-blockers and Angiotensin converting enzyme (ACE)
             inhibitors may be used to treat hypertension”, or “beta-blockers are contraindicated in
             patients with a diagnosis of reactive airway disease.”</para>
-        <para>Finally, the <emphasis role="bold">Procedural Knowledge </emphasis>layer<emphasis
+        <para>Finally, the <emphasis role="bold">Imperative Knowledge </emphasis>layer<emphasis
                 role="bold"> </emphasis>provides algorithms to analyze clinical statements about a
             patient, in combination with the assertional knowledge, to recommend a treatment
             protocol for different kinds of hypertension, including the considerations of, (e.g.,
@@ -447,149 +445,155 @@
             <orderedlist>
                 <listitem>
                     <para>Spackman K, Reynoso G. Examining SNOMED from the perspective of formal
-                        ontological principles: Some preliminary analysis and observations. KR-MED
-                        2004 Proceedings 2004; 72-80. </para>
+                        ontological principles: Some preliminary analysis and observations. KR-MED.
+                        2004;72–80.</para>
                 </listitem>
                 <listitem>
-                    <para>Campbell KE. Distributed development of a logic based controlled medical
-                        Terminology. PhD Dissertation, Stanford University, June 1997. </para>
+                    <para>Campbell K. Distributed development of a logic based controlled medical
+                        Terminology. Stanford University [Internet]. 1997; Available from:
+                        https://i.stanford.edu/pub/cstr/reports/cs/tr/97/1596/CS-TR-97-1596.pdf</para>
                 </listitem>
                 <listitem>
-                    <para>Analysis Normal Form Informative Ballot. HL7 CIMI Work Group. Sept 2019.
-                        http://www.hl7.org/documentcenter/public/ballots/2019SEP/downloads/HL7_CIMI_LM_ANF_R1_I1_2019SEP.pdf.</para>
+                    <para>HL7 CIMI Logical Model: Analysis Normal Form (ANF). HL7 International
+                        [Internet]. 2019;(1). Available from:
+                        http://www.hl7.org/documentcenter/public/ballots/2019SEP/downloads/HL7_CIMI_LM_ANF_R1_I1_2019SEP.pdf</para>
                 </listitem>
                 <listitem>
-                    <para>What is Health IT? [Internet]. HealthIT.gov. [cited 2023Jan13]. Available
-                        from: <link xlink:href="https://www.healthit.gov/faq/what-health-it"
-                            >https://www.healthit.gov/faq/what-health-it. </link></para>
+                    <para>What is Health IT? | HealthIT.gov [Internet]. [cited 2025 Jul 29].
+                        Available from: https://www.healthit.gov/faq/what-health-it</para>
                 </listitem>
                 <listitem>
-                    <para>Net Health. The History of Electronic Health Records (ehrs) - updated
-                        [Internet]. Net Health. 2022 [cited 2023Jan13]. Available from: <link
-                            xlink:href="https://www.nethealth.com/the-history%20of-electronic-health-records-ehrs/"
-                            >https://www.nethealth.com/the-history
-                            of-electronic-health-records-ehrs/.</link></para>
+                    <para>Health N. Net Health. 2025 [cited 2025 Jul 29]. A History of Electronic
+                        Health Records. Available from:
+                        https://www.nethealth.com/blog/history-of-electronic-health-records-ehrs/</para>
                 </listitem>
                 <listitem>
-                    <para>McMains V. Johns Hopkins study suggests medical errors are third-leading
-                        cause of death in U.S. [Internet]. The Hub. 2016 [cited 2023Jan13].
-                        Available from: <link
-                            xlink:href="https://hub.jhu.edu/2016/05/03/medical-errors-third-leading-cause-of-death"
-                            >https://hub.jhu.edu/2016/05/03/medical-errors-third-leading-cause-of-death/.
-                        </link></para>
+                    <para>May 3 VM/ P, 2016. The Hub. 2016 [cited 2025 Jul 29]. Johns Hopkins study
+                        suggests medical errors are third-leading cause of death in U.S. Available
+                        from:
+                        https://hub.jhu.edu/2016/05/03/medical-errors-third-leading-cause-of-death/</para>
                 </listitem>
                 <listitem>
-                    <para>McGinley P. Malpractice claims analysis confirms risks in ehrs [Internet].
-                        Patient Safety &amp; Quality Healthcare. 2014 [cited 2023Jan13]. Available
-                        from: <link
-                            xlink:href="https://www.psqh.com/analysis/malpractice-claims-analysis-confirms-risks-in-ehrs/"
-                            >https://www.psqh.com/analysis/malpractice-claims-analysis-confirms-risks-in-ehrs/.</link></para>
+                    <para>Patient Safety &amp; Quality Healthcare [Internet]. 2014 [cited 2025 Jul
+                        29]. Malpractice Claims Analysis Confirms Risks in EHRs. Available from:
+                        https://www.psqh.com/analysis/malpractice-claims-analysis-confirms-risks-in-ehrs/</para>
                 </listitem>
                 <listitem>
                     <para>Shortliffe EH, Cimino JJ, editors. Biomedical Informatics: Computer
-                        Applications in Health Care and Biomedicine. 5th ed. Cham, Switzerland:
-                        Springer Nature; 2021.</para>
+                        Applications in Health Care and Biomedicine [Internet]. Cham: Springer
+                        International Publishing; 2021 [cited 2025 Jul 29]. Available from:
+                        https://link.springer.com/10.1007/978-3-030-58721-5</para>
                 </listitem>
                 <listitem>
-                    <para>How Doctors Feel about Electronic Health Records [presentation]. Stanford
-                        Medicine. National Physician Poll by The Harris Poll. [cited
-                        2023Jan13].</para>
+                    <para>How Doctors Feel About Electronic Health Records - National Physician Poll
+                        by the Harris Poll. Stanford Medicine [Internet]. [cited 2023 Jan 13];
+                        Available from:
+                        https://med.stanford.edu/content/dam/sm/ehr/documents/EHR-Poll-Presentation.pdf?hss_channel=lcp-81957851</para>
                 </listitem>
                 <listitem>
                     <para>Kahn MG, Brown JS, Chun AT, Davidson BN, Meeker D, Ryan PB, et al.
-                        Transparent reporting of data quality in Distributed Data Networks. eGEMs
-                        (Generating Evidence &amp; Methods to improve patient outcomes) [Internet].
-                        2015;3(1):7. Available from: <link
-                            xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4434997/"
-                            >https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4434997/</link></para>
+                        Transparent Reporting of Data Quality in Distributed Data Networks. EGEMS
+                        (Wash DC) [Internet]. 2015 Mar 23 [cited 2025 Jul 29];3(1):1052. Available
+                        from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4434997/</para>
                 </listitem>
                 <listitem>
-                    <para>Kahn MG, Callahan TJ, Barnard J, Bauck AE, Brown J, Davidson BN, Estiri H,
-                        Goerg C, Holve E, Johnson SG, Liaw ST, Hamilton-Lopez M, Meeker D, Ong TC,
-                        Ryan P, Shang N, Weiskopf NG, Weng C, Zozus MN, Schilling L. A Harmonized
-                        Data Quality Assessment Terminology and Framework for the Secondary Use of
-                        Electronic Health Record Data. EGEMS (Wash DC). 2016 Sep 11;4(1):1244. doi:
-                        10.13063/2327-9214.1244. PMID: 27713905; PMCID: PMC5051581.</para>
+                    <para>Kahn MG, Callahan TJ, Barnard J, Bauck AE, Brown J, Davidson BN, et al. A
+                        Harmonized Data Quality Assessment Terminology and Framework for the
+                        Secondary Use of Electronic Health Record Data. EGEMS (Wash DC) [Internet].
+                        2016 Sep 11 [cited 2025 Jul 29];4(1):1244. Available from:
+                        https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5051581/</para>
                 </listitem>
                 <listitem>
-                    <para>Cholan RA, Weiskopf NG, Rhoton DL, Colin NV, Ross RL, Marzullo MN,
-                        Sachdeva B, Dorr DA. Specifications of Clinical Quality Measures and Value
-                        Set Vocabularies Shift Over Time: A Study of Change through Implementation
-                        Differences. <emphasis role="italic">AMIA Annu Symp Proc. 2018 Apr
-                            16;2017:575-584. PMID: 29854122; PMCID: PMC5977609. </emphasis></para>
+                    <para>Cholan RA, Weiskopf NG, Rhoton DL, Colin NV, Ross RL, Marzullo MN, et al.
+                        Specifications of Clinical Quality Measures and Value Set Vocabularies Shift
+                        Over Time: A Study of Change through Implementation Differences. AMIA Annu
+                        Symp Proc [Internet]. 2018 Apr 16 [cited 2025 Jul 29];2017:575–84. Available
+                        from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5977609/</para>
                 </listitem>
                 <listitem>
-                    <para>Cholan RA, Weiskopf NG, Rhoton D, Sachdeva B, Colin NV, Martin SJ, Dorr
-                        DA. From Concepts and Codes to Healthcare Quality Measurement: Understanding
+                    <para>Cholan RA, Weiskopf NG, Rhoton D, Sachdeva B, Colin NV, Martin SJ, et al.
+                        From Concepts and Codes to Healthcare Quality Measurement: Understanding
                         Variations in Value Set Vocabularies for a Statin Therapy Clinical Quality
-                        Measure. <emphasis role="italic">EGEMS (Wash DC). 2017 Sep 4;5(1):19. doi:
-                            10.5334/egems.212. PMID: 29881739; PMCID: PMC5983064. </emphasis></para>
+                        Measure. EGEMS (Wash DC) [Internet]. [cited 2025 Jul 29];5(1):19. Available
+                        from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5983064/</para>
                 </listitem>
                 <listitem>
-                    <para>Hemler JR, Hall JD, Cholan RA, Crabtree BF, Damschroder LJ, Solberg LI,
-                        Ono SS, Cohen DJ. Practice Facilitator Strategies for Addressing Electronic
-                        Health Record Data Challenges for Quality Improvement: EvidenceNOW.
-                            <emphasis role="italic">J Am Board Fam Med. 2018 May-Jun;31(3):398-409.
-                            doi: 10.3122/jabfm.2018.03.170274. PMID: 29743223; PMCID: PMC5972525.
-                        </emphasis></para>
+                    <para>Hemler JR, Hall JD, Cholan RA, Crabtree BF, Damschroder LJ, Solberg LI, et
+                        al. Practice Facilitator Strategies for Addressing Electronic Health Record
+                        Data Challenges for Quality Improvement: EvidenceNOW. J Am Board Fam Med
+                        [Internet]. 2018 [cited 2025 Jul 29];31(3):398–409. Available from:
+                        https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5972525/</para>
                 </listitem>
                 <listitem>
                     <para>Colin NV, Cholan RA, Sachdeva B, Nealy BE, Parchman ML, Dorr DA.
                         Understanding the Impact of Variations in Measurement Period Reporting for
-                        Electronic Clinical Quality Measures. EGEMS (Wash DC). 2018 Jul 19;6(1):17.
-                        doi: 10.5334/egems.235. PMID: 30094289; PMCID: PMC6078150. </para>
+                        Electronic Clinical Quality Measures. EGEMS (Wash DC) [Internet]. [cited
+                        2025 Jul 29];6(1):17. Available from:
+                        https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6078150/</para>
                 </listitem>
                 <listitem>
-                    <para>Hogan WR, Wagner MM. Accuracy of data in computer-based patient records.
-                            <emphasis role="italic">J Am Med Inform Assoc. 1997 Oct;4(5):342–55.
-                        </emphasis></para>
+                    <para>Hogan WR, Wagner MM. Accuracy of Data in Computer-based Patient Records. J
+                        Am Med Inform Assoc [Internet]. 1997 [cited 2025 Jul 29];4(5):342–55.
+                        Available from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC61252/</para>
                 </listitem>
                 <listitem>
-                    <para>Aronsky D, Haug PJ. Assessing the quality of clinical data in a
-                        computer-based record for calculating the pneumonia severity index. J Am Med
-                        Inform Assoc. 2000 Feb;7(1):55–65.</para>
+                    <para>Aronsky D, Haug PJ. Assessing the Quality of Clinical Data in a
+                        Computer-based Record for Calculating the Pneumonia Severity Index. J Am Med
+                        Inform Assoc [Internet]. 2000 [cited 2025 Jul 29];7(1):55–65. Available
+                        from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC61455/</para>
                 </listitem>
                 <listitem>
-                    <para>Arts D, de Keizer N, Scheffer G-J, de Jonge E. Quality of data collected
+                    <para>Arts D, de Keizer N, Scheffer GJ, de Jonge E. Quality of data collected
                         for severity of illness scores in the Dutch National Intensive Care
-                        Evaluation (NICE) registry. Intensive Care Med. 2002 May;28(5):656–9.</para>
+                        Evaluation (NICE) registry. Intensive Care Med [Internet]. 2002 May 1 [cited
+                        2025 Jul 29];28(5):656–9. Available from:
+                        https://doi.org/10.1007/s00134-002-1272-z</para>
                 </listitem>
                 <listitem>
-                    <para>Thiru K, Hassey A, Sullivan F. Systematic review of scope and quality of
-                        electronic patient record data in primary care. BMJ. 2003 May
-                        15;326(7398):1070. </para>
+                    <para>Thiru K. Systematic review of scope and quality of electronic patient
+                        record data in primary care. BMJ [Internet]. 2003 May 15 [cited 2025 Jul
+                        29];326(7398):1070–0. Available from:
+                        https://www.bmj.com/lookup/doi/10.1136/bmj.326.7398.1070</para>
                 </listitem>
                 <listitem>
-                    <para>Hasan S, Padman R. Analyzing the effect of data quality on the accuracy of
-                        clinical decision support systems: a computer simulation approach. AMIA Annu
-                        Symp Proc. 2006:324–8. </para>
+                    <para>Hasan S, Padman R. Analyzing the Effect of Data Quality on the Accuracy of
+                        Clinical Decision Support Systems: A Computer Simulation Approach. AMIA Annu
+                        Symp Proc [Internet]. 2006 [cited 2025 Jul 29];2006:324–8. Available from:
+                        https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1839724/</para>
                 </listitem>
                 <listitem>
-                    <para>Cruz-Correia RJ, Rodrigues P, Freitas A, Almeida FC, Chen R, Costa-Pereira
-                        A. Data quality and integration issues in electronic health records. In:
-                        Hristidis V, editor. Information discovery on electronic health records.
-                        Chapman and Hall/CRC; 2009:55–95. </para>
+                    <para>Cruz-Correia R, Rodrigues P, Freitas A, Almeida F, Chen R, Costa-Pereira
+                        A. Data Quality and Integration Issues in Electronic Health Records. In:
+                        Hristidis V, editor. Information Discovery on Electronic Health Records
+                        [Internet]. Chapman and Hall/CRC; 2009 [cited 2025 Jul 29]. Available from:
+                        http://www.crcnetbase.com/doi/abs/10.1201/9781420090413-c4</para>
                 </listitem>
                 <listitem>
-                    <para>Botsis T, Hartvigsen G, Chen F, Weng C. Secondary use of EHR: Data quality
-                        issues and informatics opportunities. AMIA Summits on Translational Science
-                        proceedings AMIA Summit on Translational Science. 2010;2010:1–5. </para>
+                    <para>Huang W, Kutner N, Bliwise DL. Autonomic Activation in Insomnia: The Case
+                        for Acupuncture. J Clin Sleep Med [Internet]. 2011 Feb 15 [cited 2025 Jul
+                        29];7(1):95–102. Available from:
+                        https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3041619/</para>
                 </listitem>
                 <listitem>
-                    <para>Hripcsak G, Knirsch C, Zhou L, Wilcox A, Melton G. Bias associated with
-                        mining electronic health records. J Biomed Discov Collab. 2011;6:48–52.
-                    </para>
+                    <para>Hripcsak G, Knirsch C, Zhou L, Wilcox A, Melton GB. Bias Associated with
+                        Mining Electronic Health Records. J Biomed Discov Collab [Internet]. 2011
+                        Jun 6 [cited 2025 Jul 29];6:48–52. Available from:
+                        https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3149555/</para>
                 </listitem>
                 <listitem>
-                    <para>Brown JS, Kahn M, Toh S. Data quality assessment for comparative
-                        effectiveness research in distributed data networks. Medical care.
-                        2013;51:S22–S29. </para>
+                    <para>Brown JS, Kahn M, Toh S. Data Quality Assessment for Comparative
+                        Effectiveness Research in Distributed Data Networks. Medical Care
+                        [Internet]. 2013 [cited 2025 Jul 29];51(Supplement 8Suppl 3):S22–9.
+                        Available from: <link
+                            xlink:href="https://journals.lww.com/00005650-201308001-00006"
+                            >https://journals.lww.com/00005650-201308001-00006</link></para>
                 </listitem>
                 <listitem>
                     <para>Rusanov A, Weiskopf NG, Wang S, Weng C. Hidden in plain sight: bias
                         towards sick patients when sampling patients with sufficient electronic
-                        health record data for research. BMC Med Inform Decis Mak. 2014;14:51.
-                    </para>
+                        health record data for research. BMC Med Inform Decis Mak [Internet]. 2014
+                        Jun 11 [cited 2025 Jul 29];14:51. Available from:
+                        https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4062889/</para>
                 </listitem>
             </orderedlist>
         </para>
