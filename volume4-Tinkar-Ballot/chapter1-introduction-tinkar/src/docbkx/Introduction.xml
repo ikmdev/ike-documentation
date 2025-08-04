@@ -265,11 +265,11 @@
             If employed, this model can help the healthcare ecosystem to individually resolve issues
             in their data within their layers, rather than the entire system, leading to much more
             agile improvement</para><figure xml:id="PASTFModel">
-                <title>PASTF Model</title>
+                <title>Knowledge Architecture</title>
                 
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../src/docbkx/images/New%20PASTF.svg"
+                            <imagedata fileref="../../../src/docbkx/images/KnowledgeArchitectureFullSkyscraper.svg"
                         scale="10" align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -277,8 +277,10 @@
                   
         <para>Detailed descriptions of each layer will be spelled out in the chapters that follow,
             but brief descriptions of each can be found below:</para>
-        <para><emphasis role="bold">Foundational Architecture</emphasis> – The foundational layer of
-            the Knowledge Architecture provides the common elements of interoperability, such as:
+        <para>Detailed descriptions of each layer will be spelled out in the chapters that follow,
+            but brief descriptions of each can be found below:</para>
+        <para><emphasis role="bold">Versioned Foundation</emphasis> – The versioned foundation layer
+            of the Knowledge Architecture provides the common elements of interoperability, such as:
             object identity, versioning, modularity, and knowledge representation. It includes (a)
             the foundation and building blocks of the common model; (b) how the repeatable
             transformation process of disparate standards into the common model promotes
@@ -289,27 +291,26 @@
             of interest, including descriptions, dialects, language, and semantic hierarchy. SNOMED
             CT®, LOINC®, and RxNorm are part of this layer. It defines what valid codes or
             expressions may be used by higher level layers.</para>
-        <para><emphasis role="bold">Statement Model</emphasis> – The statement model layer is
-            responsible for defining how data elements are combined to create a statement. This
-            layer reuses the artifacts defined in the terminology knowledge layer.</para>
         <para><emphasis role="bold">Assertional Knowledge</emphasis> – The assertional knowledge
             layer makes use of the Terminology Knowledge layer concepts to specify non-defining
             facts that may be used by procedural knowledge algorithms. An example fact might be that
             “thiazide diuretics treat hypertension.” Assertional knowledge may also indicate what
             symptoms may be associated with a disorder.</para>
-        <para><emphasis role="bold">Procedural Knowledge</emphasis> – The procedural knowledge
-            layer, also known as imperative knowledge, is the knowledge exercised in the performance
-            of some task. An example would be determining a hypertension treatment plan by analyzing
-            a combination of a patient’s clinical statements and the available assertional
-            knowledge. The procedural knowledge is responsible for information about standard ways
-            to carry out specific procedures, as well as other procedural guidelines, (e.g.,
-            treatment protocols for diseases and order sets focused on certain patient situations).
-            Procedural knowledge, together with assertional knowledge, enables clinical decision
-            support, quality measurement, and patient safety. This layer relies on the architectural
-            foundation and terminology layers, incorporates the statement model for information
-            retrieval, and uses assertional knowledge. Procedural knowledge artifacts may include
-            clinical alert rules, reminders, etc., that trigger actions or recommend
-            interventions.</para>
+        <para><emphasis role="bold">Statement Model Knowledge</emphasis> – The statement model layer
+            is responsible for defining how data elements are combined to create a statement. This
+            layer reuses the artifacts defined in the terminology knowledge layer.</para>
+        <para><emphasis role="bold">Imperative Knowledge</emphasis> – The imperative knowledge layer
+            is the knowledge exercised in the performance of some task. An example would be
+            determining a hypertension treatment plan by analyzing a combination of a patient’s
+            clinical statements and the available assertional knowledge. The procedural knowledge is
+            responsible for information about standard ways to carry out specific procedures, as
+            well as other procedural guidelines, (e.g., treatment protocols for diseases and order
+            sets focused on certain patient situations). Procedural knowledge, together with
+            assertional knowledge, enables clinical decision support, quality measurement, and
+            patient safety. This layer relies on the architectural foundation and terminology
+            layers, incorporates the statement model for information retrieval, and uses assertional
+            knowledge. Procedural knowledge artifacts may include clinical alert rules, reminders,
+            etc., that trigger actions or recommend interventions.</para>
         <para>Examining a clinical procedure for controlling hypertension illustrates each of the
             layers of the informatics architectural separation of concerns.<itemizedlist>
                 <listitem>
@@ -320,12 +321,12 @@
                         at the foundational architecture layer.</para>
                 </listitem>
                 <listitem>
-                    <para>The statement model layer enables representation of blood pressure
-                        measurement values (e.g., systolic BP = 140 mmHg), or the categorical data
-                        (e.g., pregnancy induced hypertension vs. renal hypertension) within a
-                        standard data structure to facilitate information exchange or retrieval,
-                        such as within a standards-based clinical statement (i.e., Fast Healthcare
-                        Interoperability Resources, or FHIR).</para>
+                    <para>The statement model knowledge layer enables representation of blood
+                        pressure measurement values (e.g., systolic BP = 140 mmHg), or the
+                        categorical data (e.g., pregnancy induced hypertension vs. renal
+                        hypertension) within a standard data structure to facilitate information
+                        exchange or retrieval, such as within a standards-based clinical statement
+                        (i.e., Fast Healthcare Interoperability Resources, or FHIR).</para>
                 </listitem>
                 <listitem>
                     <para>The assertional knowledge layer represents non-procedural statements, or
@@ -335,7 +336,7 @@
                         diagnosis of reactive airway disease.”</para>
                 </listitem>
                 <listitem>
-                    <para>Finally, the procedural knowledge layer provides algorithms to analyze
+                    <para>Finally, the imperative knowledge layer provides algorithms to analyze
                         clinical statements about a patient, in combination with the assertional
                         knowledge, to recommend a treatment protocol for different kinds of
                         hypertension, including the considerations of, (e.g., patient age,
