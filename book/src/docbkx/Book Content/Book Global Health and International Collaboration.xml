@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.1">
     <title>Global Health and International Collaboration</title>
     <section>
         <title>IKM Relevance to Global Health and International Collaboration</title>
@@ -457,241 +458,179 @@
     </section>
     <section>
         <title>References</title>
-        <para>
-            <orderedlist>
-                <listitem>
-                    <para>Cholan RA, Pappas G, Rehwoldt G, Sills AK, Korte ED, Appleton K, Scott NM,
-                        Rubinstein WS, Brenner SA, Merrick R, Hadden WC, Campbell KE, Waters MS.
-                        Encoding laboratory testing data: case studies of the national
-                        implementation of HHS requirements and related standards in five
-                        laboratories. [internet]. USA; 2022 [cited 2024 March 20]. Available from:
-                            <link
-                            xlink:href="https://academic.oup.com/jamia/article/29/8/1372/6592172"
-                            >https://academic.oup.com/jamia/article/29/8/1372/6592172</link></para>
-                </listitem>
-                <listitem>
-                    <para>Bernstam EV, Warner JI, Krauss JC, Ambinder E, Rubinstein WS, Komatsoulis
-                        G, Miller RS, Chen JL. Quantitating and assessing interoperability between
-                        electronic health records. [internet]. USA; 2022 [cited 2024 March 19].
-                        Available from: <link xlink:href="https://pubmed.ncbi.nlm.nih.gov/35015861/"
-                            >https://pubmed.ncbi.nlm.nih.gov/35015861/</link></para>
-                </listitem>
-                <listitem>
-                    <para>Greene DN, McClintock, Durant TJS. Interoperability: COVID-19 as an
-                        Impetus for Change. [internet]. Clinical Chemistry. United States; 2021
-                        [cited 2024 March 22]. Available from: <link
-                            xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7929044/"
-                            >https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7929044/</link></para>
-                </listitem>
-                <listitem>
-                    <para>Hoist J. Global Health – emergence, hegemonic trends and biomedical
-                        reductionism. [internet]. Global Health. United States; 2020 [cited 2024
-                        March 25]. Available from: <link
-                            xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7201392/"
-                            >https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7201392/</link></para>
-                </listitem>
-                <listitem>
-                    <para>Palilonis MA. An Introduction to Global Health and Global Health Ethics: A
-                        Brief History of Global Health. [internet] Wake Forest University; 2020
-                        [cited 2024 March 21]. Available from: <link
-                            xlink:href="https://cbhs.wfu.edu/wp-content/uploads/2020/03/Topic-3-A-Brief-History-of-Global-Health.pdf"
-                            >https://cbhs.wfu.edu/wp-content/uploads/2020/03/Topic-3-A-Brief-History-of-Global-Health.pdf</link></para>
-                </listitem>
-                <listitem>
-                    <para>Farmer P, Kleinman A, Kim J, Balisico M. Reimagining Global Health – An
-                        Introduction. United States (US): California Series in Public Anthropology;
-                        2013. </para>
-                </listitem>
-                <listitem>
-                    <para>Boudreau FG. Health Committee of the League of Nations. United States
-                        (US): The Milbank Memorial Fund Quarterly, 1933. Available from: <link
-                            xlink:href="https://www.milbank.org/wp-content/uploads/mq/volume-13/issue-01/13-1-Health-Work-of-the-League-of-Nations.pdf"
-                            >https://www.milbank.org/wp-content/uploads/mq/volume-13/issue-01/13-1-Health-Work-of-the-League-of-Nations.pdf</link></para>
-                </listitem>
-                <listitem>
-                    <para>Pan American Health Organization. History of PAHO. [internet]. WHO; 2024
-                        [cited 2024 March 26] Available from: <link
-                            xlink:href="https://www.paho.org/en/who-we-are/history-paho"
-                            >https://www.paho.org/en/who-we-are/history-paho</link></para>
-                </listitem>
-                <listitem>
-                    <para>Institution: International Health Board. [internet]. Rockefeller Archive
-                        Center: 2024 [cited 2024 March 26]. Available from: <link
-                            xlink:href="https://resource.rockarch.org/institutions/international-health-board/"
-                            >https://resource.rockarch.org/institutions/international-health-board/</link></para>
-                </listitem>
-                <listitem>
-                    <para>International Monetary Fund. What is the IMF? [internet]. 2024 [cited 2024
-                        March 26]. Available from:
-                        https://www.imf.org/en/About/Factsheets/IMF-at-a-Glance</para>
-                </listitem>
-                <listitem>
-                    <para>World Bank Group. Explore History. The World Bank; 2024 [cited 2024 March
-                        26]. Available from: <link
-                            xlink:href="https://www.worldbank.org/en/archive/history"
-                            >https://www.worldbank.org/en/archive/history</link></para>
-                </listitem>
-                <listitem>
-                    <para>Nungarai N. The Changing Face of Healthcare Missions: Opportunities and
-                        Challenges in the 21<superscript>st</superscript></para>
-                    <para> Century. [internet] Lausanne Global Analysis; 2024 January [cited 2024
-                        March 26]. Available from: <link
-                            xlink:href="https://lausanne.org/content/lga/2024-01/the-changing-face-of-healthcare-missions-opportunities-and-challenges-in-the-21st-century"
-                            >https://lausanne.org/content/lga/2024-01/the-changing-face-of-healthcare-missions-opportunities-and-challenges-in-the-21st-century</link></para>
-                </listitem>
-                <listitem>
-                    <para>World Health Organization. Global strategy on digital health 2020-2025.
-                        [internet]. WHO; 2021 [cited 2024 March 27]. Available from: <link
-                            xlink:href="https://www.who.int/docs/default-source/documents/gs4dhdaa2a9f352b0445bafbc79ca799dce4d.pdf"
-                            >https://www.who.int/docs/default-source/documents/gs4dhdaa2a9f352b0445bafbc79ca799dce4d.pdf</link></para>
-                </listitem>
-                <listitem>
-                    <para>The Commonwealth Fund. The Federal Government Has Put Billions into
-                        Promoting electronic Health Record Use: How is it Going? [internet].
-                        Improving Health Care Quality; 2021 [cited 2024 March 27]. Available from:
-                            <link
-                            xlink:href="https://www.commonwealthfund.org/improving-health-care-quality"
-                            >https://www.commonwealthfund.org/improving-health-care-quality</link></para>
-                </listitem>
-                <listitem>
-                    <para>SNOMED International: Leading healthcare terminology, worldwide. Our
-                        Partners. [internet]. Our partners. [cited 2024 March 27]. Available from:
-                            <link xlink:href="https://www.snomed.org/our-partnerships"
-                            >https://www.snomed.org/our-partnerships</link></para>
-                </listitem>
-                <listitem>
-                    <para>World Health Organization. World Health Assembly. [internet]. WHO; 2024
-                        [cited 2024 March 27]. Available from: <link
-                            xlink:href="https://www.who.int/about/accountability/governance/world-health-assembly"
-                            >https://www.who.int/about/accountability/governance/world-health-assembly</link></para>
-                </listitem>
-                <listitem>
-                    <para>DICOM. About Digital Imaging and Communication in Medicine (DICOM):
-                        Overview. [internet]. 2021. [cited 2024 March 23]. Available from: <link
-                            xlink:href="https://www.dicomstandard.org/about-home"
-                            >https://www.dicomstandard.org/about-home</link></para>
-                </listitem>
-                <listitem>
-                    <para>IMDRF. About International Medical Device Regulator Forum. [internet] 2021
-                        [cited 2024 March 21]. Available from: <link
-                            xlink:href="https://www.imdrf.org/about"
-                            >https://www.imdrf.org/about</link></para>
-                </listitem>
-                <listitem>
-                    <para>Global Medical Device Nomenclature (GMDN). What is GMDN? [internet] 2024
-                        [cited 2024 March 25]. Available from: <link
-                            xlink:href="https://www.gmdnagency.org/what-we-do/"
-                            >https://www.gmdnagency.org/what-we-do/</link></para>
-                </listitem>
-                <listitem>
-                    <para>HL7 International. About HL7. [internet] 2024 [cited 2024 March 24].
-                        Available from: <link
-                            xlink:href="https://www.hl7.org/about/index.cfm?ref=nav"
-                            >https://www.hl7.org/about/index.cfm?ref=nav</link></para>
-                </listitem>
-                <listitem>
-                    <para>Integrating the Healthcare Enterprise (IHE) International. Frequently
-                        Asked Questions. [internet] 2024 [cited 2024 March 25]. Available from:
-                            <link xlink:href="https://www.ihe.net/about_ihe/faq/"
-                            >https://www.ihe.net/about_ihe/faq/</link></para>
-                </listitem>
-                <listitem>
-                    <para>Medical Dictionary for Regulatory Activities (MedDRA). Welcome to MedDRA.
-                        [internet] 2024 [cited 2024 March 25]. Available from: <link
-                            xlink:href="https://www.meddra.org/"
-                        >https://www.meddra.org/</link></para>
-                </listitem>
-                <listitem>
-                    <para>SNOMED International. SNOMED International determines global standards for
-                        health terms, an essential part of improving the health of humankind.
-                        [internet] Regenstrief Institute Inc. and SNOMED International; 2024 [cited
-                        2024 March 25]. Available from: <link xlink:href="https://www.snomed.org/"
-                            >https://www.snomed.org/</link></para>
-                </listitem>
-                <listitem>
-                    <para>Cornet R, Keizer N. Forty years of SNOMED: a literature review. [internet]
-                        BMC Medical Informatics and Decision Making. 2008 Oct [cited 2024 March 25].
-                        Available from: <link
-                            xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2582789/"
-                            >https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2582789/</link></para>
-                </listitem>
-                <listitem>
-                    <para>SNOMED International. Frequently Asked Questions. [internet] Regenstrief
-                        Institute Inc. and SNOMED International; 2024 [cited 2024 March 25].
-                        Available from: <link xlink:href="https://www.snomed.org/"
-                            >https://www.snomed.org/</link></para>
-                </listitem>
-                <listitem>
-                    <para>SNOMED International. International Health Terminology Standards
-                        Development Organization. [internet] Regenstrief Institute Inc. and SNOMED
-                        International; 2024 [cited 2024 March 25]. Available from: <link
-                            xlink:href="https://confluence.ihtsdotools.org/display/DOCGLOSS/International+Health+Terminology+Standards+Development+Organisation"
-                            >https://confluence.ihtsdotools.org/display/DOCGLOSS/International+Health+Terminology+Standards+Development+Organisation</link></para>
-                </listitem>
-                <listitem>
-                    <para>American Medical Association (AMA). CPT®. [internet] 2024 [cited 2024
-                        March 27]. Available from: <link
-                            xlink:href="https://www.ama-assn.org/practice-management/cpt"
-                            >https://www.ama-assn.org/practice-management/cpt</link></para>
-                </listitem>
-                <listitem>
-                    <para>UMLS Vocabularies. HCPCS (HCPCS- Healthcare Common Procedure Coding
-                        System) – Synopsis. [internet] 2024 [cited 2024 March 27]. Available from:
-                            <link
-                            xlink:href="https://www.nlm.nih.gov/research/umls/sourcereleasedocs/current/HCPCS/index.html#:~:text=The%20Healthcare%20Common%20Procedure%20Coding,%2C%20supplies%2C%20products%20and%20services"
-                            >https://www.nlm.nih.gov/research/umls/sourcereleasedocs/current/HCPCS/index.html#:~:text=The%20Healthcare%20Common%20Procedure%20Coding,%2C%20supplies%2C%20products%20and%20services</link></para>
-                </listitem>
-                <listitem>
-                    <para>Centers for Disease Control and Prevention. International Classification
-                        of Disease, Tenth Revision (ICD-10). [internet] USA; 2021 [cited 2024 March
-                        26]. Available from: <link
-                            xlink:href="https://www.cdc.gov/nchs/icd/icd10.htm"
-                            >https://www.cdc.gov/nchs/icd/icd10.htm</link></para>
-                </listitem>
-                <listitem>
-                    <para>LOINC – The freely available standard for identifying health measurements,
-                        observations, and documents [internet]. Loinc.org 2019. Available from:
-                            <link xlink:href="https://loinc.org/">https://loinc.org/</link></para>
-                </listitem>
-                <listitem>
-                    <para>Medicomp Systems. Medicomp Systems: A History of Innovation. [internet].
-                        2024 [cited 2024 March 26]. Available from: <link
-                            xlink:href="https://medicomp.com/history/"
-                            >https://medicomp.com/history/</link></para>
-                </listitem>
-                <listitem>
-                    <para>HIMSS. Terminology Standards. [internet] 2024 [cited 2024 March 26].
-                        Available from: <link
-                            xlink:href="https://www.himss.org/terminology-standards"
-                            >https://www.himss.org/terminology-standards</link></para>
-                </listitem>
-                <listitem>
-                    <para>eHealth Exchange. Barriers to Health IT Interoperability Are Not Just
-                        Technical; They Also Include Legal and Policy Impediments. 2024 [cited 2024
-                        March 27]. Available from: <link
-                            xlink:href="https://ehealthexchange.org/what-we-do/governance/"
-                            >https://ehealthexchange.org/what-we-do/governance/</link></para>
-                </listitem>
-                <listitem>
-                    <para>FHIR Fact Sheets | HealthIT.gov [Internet]. www.healthit.gov. Available
-                        from: <link
-                            xlink:href="https://www.healthit.gov/topic/standards-technology/standards/fhir-fact-sheets"
-                            >https://www.healthit.gov/topic/standards-technology/standards/fhir-fact-sheets</link></para>
-                </listitem>
-                <listitem>
-                    <para>World Health Organization. The Epidemic Intelligence from Open Source
-                        Initiative. [internet] WHO; 2024 [cited 2024 March 26] Available from: <link xlink:href="https://www.who.int/initiatives/eios"
-                            >https://www.who.int/initiatives/eios</link></para>
-                    
-                </listitem>
-                <listitem>
-                    <para>Global Digital Health Partnership (GDNP). Advancing Interoperability
-                        Together Globally: GDHP White Paper on Interoperability. [internet] GDHP;
-                        July 2020 [cited 2024 March 26]. Available from:
-                        https://gdhp.health/wp-content/uploads/2022/03/GDHP-Interop-Final.pdf</para>
-                </listitem>
-            </orderedlist>
-        </para>
+        <orderedlist>
+            <listitem>
+                <para>Cholan RA, Pappas G, Rehwoldt G, Sills AK, Korte ED, Appleton IK, et al.
+                    Encoding laboratory testing data: case studies of the national implementation of
+                    HHS requirements and related standards in five laboratories. Journal of the
+                    American Medical Informatics Association [Internet]. 2022 July 12 [cited 2025
+                    Aug 5];29(8):1372–80. Available from:
+                    https://academic.oup.com/jamia/article/29/8/1372/6592172</para>
+            </listitem>
+            <listitem>
+                <para>Bernstam EV, Warner JL, Krauss JC, Ambinder E, Rubinstein WS, Komatsoulis G,
+                    et al. Quantitating and assessing interoperability between electronic health
+                    records. J Am Med Inform Assoc. 2022 Apr 13;29(5):753–60.</para>
+            </listitem>
+            <listitem>
+                <para>Greene DN, McClintock DS, Durant TJS. Interoperability: COVID-19 as an Impetus
+                    for Change. Clin Chem [Internet]. 2021 Feb 13 [cited 2025 Aug 5];hvab006.
+                    Available from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7929044/</para>
+            </listitem>
+            <listitem>
+                <para>Holst J. Global Health – emergence, hegemonic trends and biomedical
+                    reductionism. Global Health [Internet]. 2020 May 6 [cited 2025 Aug 5];16:42.
+                    Available from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7201392/</para>
+            </listitem>
+            <listitem>
+                <para>Palilonis M. Wake Forest University. 2020. An Introduction to Global Health
+                    and Global Health Ethics: A Brief History of Global Health. Available from:
+                    https://cbhs.wfu.edu/wp-content/uploads/2020/03/Topic-3-A-Brief-History-of-Global-Health.pdf</para>
+            </listitem>
+            <listitem>
+                <para>Farmer P, Kleinman A, Kim J, Balisico M. Reimagining Global Health: An
+                    Introduction. United States (US): California; 2013. (Series in Public
+                    Anthropology).</para>
+            </listitem>
+            <listitem>
+                <para>Boudreau F. United States (US): The Milbank Memorial Fund Quarterly. 1933.
+                    Health Committee of the League of Nations.</para>
+            </listitem>
+            <listitem>
+                <para>History of the Pan American Health Organization (PAHO) - PAHO/WHO | Pan
+                    American Health Organization [Internet]. [cited 2025 Aug 5]. Available from:
+                    https://www.paho.org/en/who-we-are/history-pan-american-health-organization-paho</para>
+            </listitem>
+            <listitem>
+                <para>International Health Board Archives [Internet]. REsource. [cited 2025 Aug 5].
+                    Available from:
+                    https://resource.rockarch.org/institutions/international-health-board/</para>
+            </listitem>
+            <listitem>
+                <para>International Monetary Fund. [Internet]. 2024. What is the IMF? Available
+                    from: https://www.imf.org/en/About/Factsheets/IMF-at-a-Glance</para>
+            </listitem>
+            <listitem>
+                <para>World Bank [Internet]. [cited 2025 Aug 5]. History. Available from:
+                    https://www.worldbank.org/en/archive/history</para>
+            </listitem>
+            <listitem>
+                <para>Nungarai N. Lausanne Movement. 2024 [cited 2025 Aug 5]. The 21st Century
+                    Healthcare Missionary. Available from:
+                    https://lausanne.org/global-analysis/the-changing-face-of-healthcare-missions-opportunities-and-challenges-in-the-21st-century</para>
+            </listitem>
+            <listitem>
+                <para>WHO [Internet]. 2021. World Health Organization. Global strategy on digital
+                    health 2020-2025. Available from:
+                    https://www.who.int/docs/default-source/documents/gs4dhdaa2a9f352b0445bafbc79ca799dce4d.pdf</para>
+            </listitem>
+            <listitem>
+                <para>The Commonwealth Fund [Internet]. 2021. The Federal Government Has Put
+                    Billions into Promoting electronic Health Record Use: How is it Going? Available
+                    from: https://www.commonwealthfund.org/improving-health-care-quality</para>
+            </listitem>
+            <listitem>
+                <para>SNOMED International [Internet]. [cited 2025 Aug 5]. Partnerships. Available
+                    from: https://www.snomed.org/our-partnerships</para>
+            </listitem>
+            <listitem>
+                <para>World Health Assembly [Internet]. [cited 2025 Aug 5]. Available from:
+                    https://www.who.int/about/governance/world-health-assembly</para>
+            </listitem>
+            <listitem>
+                <para>DICOM [Internet]. [cited 2025 Aug 5]. About DICOM- Overview. Available from:
+                    https://www.dicomstandard.org/about</para>
+            </listitem>
+            <listitem>
+                <para>About IMDRF | International Medical Device Regulators Forum [Internet]. [cited
+                    2025 Aug 5]. Available from: https://www.imdrf.org/about</para>
+            </listitem>
+            <listitem>
+                <para>What we do - GMDN [Internet]. 2024 [cited 2025 Aug 5]. Available from:
+                    https://www.gmdnagency.org/what-we-do/</para>
+            </listitem>
+            <listitem>
+                <para>About Health Level Seven International | HL7 International [Internet]. [cited
+                    2025 Aug 5]. Available from: https://www.hl7.org/about/index.cfm?ref=nav</para>
+            </listitem>
+            <listitem>
+                <para>IHE International [Internet]. [cited 2025 Aug 5]. FAQ. Available from:
+                    https://www.ihe.net/about_ihe/faq/</para>
+            </listitem>
+            <listitem>
+                <para>MedDRA [Internet]. [cited 2025 Aug 5]. Available from:
+                    https://www.meddra.org/</para>
+            </listitem>
+            <listitem>
+                <para>Regenstrief Institute Inc. and SNOMED International [Internet]. 2024 [cited
+                    2024 Mar 25]. International Health Terminology Standards Development
+                    Organization. Available from:
+                    https://confluence.ihtsdotools.org/display/DOCGLOSS/International+Health+Terminology+Standards+Development+Organisation</para>
+            </listitem>
+            <listitem>
+                <para>Regenstrief Institute Inc. and SNOMED International [Internet]. 2024. SNOMED
+                    International determines global standards for health terms, an essential part of
+                    improving the health of humankind. Available from:
+                    https://www.snomed.org/</para>
+            </listitem>
+            <listitem>
+                <para>Cornet R, de Keizer N. Forty years of SNOMED: a literature review. BMC Med
+                    Inform Decis Mak [Internet]. 2008 Oct 27 [cited 2025 Aug 5];8(Suppl 1):S2.
+                    Available from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2582789/</para>
+            </listitem>
+            <listitem>
+                <para>SNOMED International [Internet]. [cited 2025 Aug 5]. Frequently Asked
+                    Questions. Available from: https://www.snomed.org</para>
+            </listitem>
+            <listitem>
+                <para>American Medical Association [Internet]. 2025 [cited 2025 Aug 5]. CPT®.
+                    Available from: https://www.ama-assn.org/practice-management/cpt</para>
+            </listitem>
+            <listitem>
+                <para>VocabularyDocumentation [Internet]. [cited 2025 Aug 5]. Available from:
+                    https://www.nlm.nih.gov/research/umls/sourcereleasedocs/current/HCPCS/index.html</para>
+            </listitem>
+            <listitem>
+                <para>Centers for Disease Control and Prevention. [Internet]. 2021 [cited 2024 Mar
+                    7]. International Classification of Disease, Tenth Revision (ICD-10). Available
+                    from: https://www.cdc.gov/nchs/icd/icd10.htm</para>
+            </listitem>
+            <listitem>
+                <para>LOINC [Internet]. [cited 2025 Aug 5]. LOINC – The freely available standard
+                    for identifying health measurements, observations, and documents. Available
+                    from: https://loinc.org/</para>
+            </listitem>
+            <listitem>
+                <para>Medicomp Systems [Internet]. 2024 [cited 2025 Aug 5]. Medicomp Systems.
+                    Medicomp Systems: A History of Innovation. Available from:
+                    https://medicomp.com/history/</para>
+            </listitem>
+            <listitem>
+                <para>Terminology Standards | HIMSS [Internet]. 2017 [cited 2025 Aug 5]. Available
+                    from: https://legacy.himss.org/terminology-standards</para>
+            </listitem>
+            <listitem>
+                <para>Barriers to Health IT Interoperability Are Not Just Technical; They Also
+                    Include Legal and Policy Impediments [Internet]. eHealth Exchange. 2024 [cited
+                    2024 Mar 27]. Available from:
+                    https://ehealthexchange.org/what-we-do/governance/</para>
+            </listitem>
+            <listitem>
+                <para>Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR) |
+                    HealthIT.gov [Internet]. [cited 2025 Aug 5]. Available from:
+                    https://www.healthit.gov/topic/standards-technology/standards/fhir</para>
+            </listitem>
+            <listitem>
+                <para>The Epidemic Intelligence from Open Sources Initiative [Internet]. [cited 2025
+                    Aug 5]. Available from: https://www.who.int/initiatives/eios</para>
+            </listitem>
+            <listitem>
+                <para>Global Digital Health Partnership (GDNP). Advancing Interoperability Together
+                    Globally: GDHP White Paper on Interoperability [Internet]. 2020 [cited 2024 Mar
+                    26]. Available from: <link
+                        xlink:href="https://gdhp.health/wp-content/uploads/2022/03/GDHP-Interop-Final.pdf"
+                        >https://gdhp.health/wp-content/uploads/2022/03/GDHP-Interop-Final.pdf</link></para>
+            </listitem>
+        </orderedlist>
     </section>
-    
 </chapter>

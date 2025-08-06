@@ -156,17 +156,16 @@
         </section>
     </section>
     <section>
-        
         <title>The Current State of Healthcare Quality</title>
-        <section><title>Challenges in Healthcare Quality Management</title>
-        
-        <para>Despite the association between low-quality healthcare and significant mortality and
-                economic impacts, especially in low- and medium-income countries, healthcare systems
-                globally struggle to provide a consistent, standardized, and high-quality standard
-                of care. Issues surrounding clinical workflows, the workforce, and stagnant
+        <section>
+            <title>Challenges in Healthcare Quality Management</title>
+            <para>Despite the association between low-quality healthcare and significant mortality
+                and economic impacts, especially in low- and medium-income countries, healthcare
+                systems globally struggle to provide a consistent, standardized, and high-quality
+                standard of care. Issues surrounding clinical workflows, the workforce, and stagnant
                 healthcare systems all pose challenges that need to be addressed to improve the
                 quality of care provided.</para>
-        <para>Issues optimizing clinical workflows lead to inefficient practices, incomplete
+            <para>Issues optimizing clinical workflows lead to inefficient practices, incomplete
                 information, alert fatigue, and delays in care, which further compound and
                 contribute to clinician dissatisfaction and turnover. Beyond suboptimal workflows,
                 the healthcare workforce is an aging workforce that faces significant personnel
@@ -186,10 +185,9 @@
                 diagnostic inaccuracies, and hospital-acquired infections (HAIs) continuing to pose
                 significant challenges to healthcare quality. [10]</para>
         </section>
-        <section><title>The Role of Data and Information Management in Healthcare
-                Quality</title>
-        
-        <para>Data and information management play a vital role in improving the quality of
+        <section>
+            <title>The Role of Data and Information Management in Healthcare Quality</title>
+            <para>Data and information management play a vital role in improving the quality of
                 healthcare by ensuring the data used during decision making processes is of the
                 highest quality and accuracy. This provides a clear representation of the patient's
                 health and is critical for patient health management, research, and any other area
@@ -315,7 +313,7 @@
                 evidence based reporting is critical for policy making by highlights opportunities
                 for improving the standardization of data elements and healthcare quality. [20] </para>
             <para>While accurate and standardized health data is a key component of health policy,
-                it also heavily relies  on data and information from numerous other stakeholders and
+                it also heavily relies on data and information from numerous other stakeholders and
                 industries. The Secretary's Advisory Committee on National Health Promotion and
                 Disease Prevention Objectives is a Federal advisory committee that makes
                 recommendations to HHS to improve public health. One focus is Healthy People 2030, a
@@ -354,7 +352,6 @@
             information and comply with regulations.</para>
         <section>
             <title>Implementing IKM into Healthcare Education</title>
-        
             <para>As IKM efforts continue, its use and integration into education for providers,
                 other healthcare professionals, and patients is paramount. Using the following best
                 practices, IKM can enhance patient outcomes, professional knowledge, adoption of new
@@ -453,19 +450,28 @@
             impact of IKM and Tinkar, and healthcare training and education on healthcare
             quality:</para>
         <orderedlist>
-            <listitem><para><emphasis role="italic">Patient Outcomes: </emphasis>Metrics such as readmission rates,
-                    patient recovery times, adverse event rates, and complication rates.</para></listitem>
-            <listitem><para><emphasis role="italic">Operational Efficiency: </emphasis>Indicators like
-                average length of hospital stay, time to treatment, and resource utilization
-                rates.</para></listitem>
-            <listitem><para><emphasis role="italic">Data Accuracy and Consistency: </emphasis>Performance
-                measures like the reduction in data discrepancies and errors in patient
-                records.</para></listitem>
-            <listitem><para><emphasis role="italic">Staff</emphasis><emphasis role="italic"
+            <listitem>
+                <para><emphasis role="italic">Patient Outcomes: </emphasis>Metrics such as
+                    readmission rates, patient recovery times, adverse event rates, and complication
+                    rates.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="italic">Operational Efficiency: </emphasis>Indicators like
+                    average length of hospital stay, time to treatment, and resource utilization
+                    rates.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="italic">Data Accuracy and Consistency: </emphasis>Performance
+                    measures like the reduction in data discrepancies and errors in patient
+                    records.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="italic">Staff</emphasis><emphasis role="italic"
                         >Satisfaction</emphasis><emphasis role="italic">and</emphasis><emphasis
                         role="italic">Engagement: </emphasis>Surveys and feedback mechanisms to
                     gauge the impact on healthcare providers' workflow and job satisfaction.
-                    [25]</para></listitem>
+                    [25]</para>
+            </listitem>
         </orderedlist>
         <para>Evaluating the effectiveness of IKM and Tinkar requires a robust data analysis to
             assess the changes in healthcare delivery and outcomes before and after implementation.
@@ -556,168 +562,163 @@
     </section>
     <section>
         <title>References</title>
-        <orderedlist>
-            <listitem>
-                <para>John Hopkins Medicine. Quality Improvement [Internet]. <link
-                        xlink:href="http://www.hopkinsmedicine.org/"
-                    >www.hopkinsmedicine.org.</link>2022. Avail- able from;
-                    https://www.hopkinsmedicine.org/nursing/center-nursing-inquiry/nursing-inquiry/quality-improvement</para>
-            </listitem>
-            <listitem>
-                <para>Centers for Medicare &amp; Medicaid Services. Quality measure and quality
-                    improvement [Internet]. CMS.gov. 2023. Available from:
-                    https://www.cms.gov/Medicare/Quality-Initiatives-Patient-Assessment-Instruments/MMS/Quality-Measure-and-Quality-Improvement</para>
-            </listitem>
-            <listitem>
-                <para>Batalden PB, Davidoff F. What is “quality improvement” and how can it
-                    transform healthcare?. Quality and Safety in Health Care [Internet]. 2007 Feb
-                    1;16(1):2–3. Available from:
-                    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2464920/</para>
-            </listitem>
-            <listitem>
-                <para>Communications FIUD. Office of Institutional Knowledge Management [Internet].
-                    medicine.fiu.edu. [cited 2024 Feb 28]. Available from:
-                    https://medicine.fiu.edu/about/administrative-offices/office-of-
-                    institutional-knowledge-management/</para>
-            </listitem>
-            <listitem>
-                <para>Shahmoradi L, Safadari R, Jimma W. Knowledge Management Implementation and the
-                    Tools Uti- lizedin Healthcare for Evidence-Based Decision Making: A Systematic
-                    Review. Ethiopian journal of health sciences [Internet]. 2017;27(5):541–58.
-                    Available from:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5615016/</para>
-            </listitem>
-            <listitem>
-                <para>Benefits of knowledge management in healthcare | CKEditor [Internet].
-                    ckeditor.com. 2023. Available from:
-                    https://ckeditor.com/blog/benefits-of-knowledge-management-in-healthcare/</para>
-            </listitem>
-            <listitem>
-                <para>Why is Knowledge Management in Healthcare so Important? [Internet].
-                    KnowledgeBase Blog. Available
-                    from:https://www.knowledgebase.com/blog/knowledge-management-in-healthcare-so-important/</para>
-            </listitem>
-            <listitem>
-                <para>WHO guide for evidence-informed decision-making [Internet]. Available from:
-                    https://iris.who.int/bitstream/handle/10665/350994/9789240039872-eng.pdf?sequence=1</para>
-            </listitem>
-            <listitem>
-                <para>Carande-Kulis V, Elder RW, Koffman DM -. Standards Required for the
-                    Development of CDC Evidence-Based Guidelines. MMWR Supplements. 2022 Jan
-                    14;71(1):1–6.</para>
-            </listitem>
-            <listitem>
-                <para>Bilheimer LT, Klein RJ. Data and Measurement Issues in the Analysis of Health
-                    Disparities. Health Serv Res [Internet]. 2010 Oct [cited 2024 May 30];45(5 Pt
-                    2):1489–507. Available from:
-                    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2965888/ </para>
-            </listitem>
-            <listitem>
-                <para>Kluwer W. Six challenges to delivering quality healthcare [Internet].<link
-                        xlink:href="http://www.wolterskluwer.com/"
-                    >www.wolterskluwer.com.</link>2022. Available
-                    from:https://www.wolterskluwer.com/en/expert-insights/six-challenges-to-delivering-quality-healthcare</para>
-            </listitem>
-            <listitem>
-                <para>Adane K, Gizachew M, Kendie S. The role of medical data in efficient patient
-                    care delivery: A re- view. Risk Management and Healthcare Policy [Internet].
-                    2019;12(1):67–73. Available from:
-                    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6486797/</para>
-            </listitem>
-            <listitem>
-                <para>Brown J. Knowledge management in the healthcare industry [Internet]. 2023
-                    [cited 2024 Mar 25]. Available from:
-                    https://helpjuice.com/blog/healthcare-knowledge-management#:~:text=The%20Role%20of%20Knowledge%20Management%20in%20a%20Healthcare,Operations%20and%20Process%20Improvement%20...%207%20Compliance%20</para>
-            </listitem>
-            <listitem>
-                <para>Mujumdar V, Jeffcoat H. Leveraging Knowledge Management for Better Quality
-                    Surgical Care: An Introduction [Internet]. [cited 2024 Mar 26]. Available
-                        from:<link
-                        xlink:href="https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/bulletin/2021/03/leveraging-knowledge-management-for-better-quality-surgical-care-an-introduction/"
-                        >https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/bulletin/2021/03/leveraging-knowledge-management-for-better-quality-surgical-care-an-introduction/</link></para>
-            </listitem>
-            <listitem>
-                <para>Koo E, McNamara S, Lansing B, Olmsted RN, Rye RA, Fitzgerald T, et al. Making
-                    Infection Prevention Education Interactive can enhance knowledge and improve
-                    outcomes: Results from the targeted infection prevention (TIP) study. American
-                    Journal of Infection Control. 2016 Nov;44(11):1241–6.
-                    doi:10.1016/j.ajic.2016.03.016 </para>
-            </listitem>
-            <listitem>
-                <para>Wilson L-AM, Giles-Corti B, Burton NW, Giskes K, Haynes M, Turrell G. The
-                    association between objectively measured neighborhood features and walking in
-                    middle-aged adults. American Journal of Health Promotion [Internet]. 2011 Mar 1
-                    [cited 2024 Mar 26];25(4). Available from:
-                    https://journals.sagepub.com/doi/10.4278/ajhp.090421-QUAN-144
-                    doi:10.4278/ajhp.090421-quan-144 </para>
-            </listitem>
-            <listitem>
-                <para>Reducing Tobacco Use Initiation: Mass Media Campaigns When Combined with Other
-                    Interventions (1999 Archived Review) [Internet]. 2014 [cited 2024 Mar 28].
-                    Available from:
-                    https://www.thecommunityguide.org/sites/default/files/Tobacco-Mass-Media-Combined-Cessation-Archive.pdf
-                </para>
-            </listitem>
-            <listitem>
-                <para>Health education: Theoretical concepts, effective strategies, and core
-                    competencies: A foundation document to guide capacity development of Health
-                    Educators [Internet]. Cairo, Egypt: World Health Organization, Regional Office
-                    for the Eastern Mediterranean; 2012 [cited 2024 Mar 26]. Available from:
-                    https://iris.who.int/bitstream/handle/10665/119953/EMRPUB_2012_EN_1362.pdf?sequence=1
-                </para>
-            </listitem>
-            <listitem>
-                <para>Case Studies of Quality Improvement Initiatives | Agency for Healthcare
-                    Research &amp; Quality [Internet]. Ahrq.gov.2011. Available
-                    from:https://www.ahrq.gov/cahps/quality-improvement/reports-and-case-studies/Case-Study_QI-Initiatives.html</para>
-            </listitem>
-            <listitem>
-                <para>Upskilling in healthcare to retain talent and reduce burnout | Pathstream
-                    [Internet]. pathstream.com. [cited 2024 Mar 28]. Available from:
-                    https://pathstream.com/upskilling-in-healthcare/#:~:text=To%20realistically%20embed%20learning%20into%20healthcare%20contexts%2C%20organizations</para>
-            </listitem>
-            <listitem>
-                <para>Scoping Review Report Data Elements for Research on the Role of Social
-                    Determinants of Health in Coronavirus Disease 2019 Infection and Outcomes in the
-                    U.S. PROJECT REPORT [Internet]. 2022 [cited 2024 May 9]. Available from:
-                    https://aspe.hhs.gov/sites/default/files/documents/53fc356858b67f5e9810d107f09ce169/sdoh-covid-19-scoping-review-report.pdf</para>
-            </listitem>
-            <listitem>
-                <para>Secretary’s Advisory Committee Report #5: Stakeholder Engagement and
-                    Communication for Healthy People 2030 [Internet]. Available from:
-                    https://health.gov/sites/default/files/2021-09/Stakeholder%20Engagement_Communication%20Report_12-02-18_FINAL-WEB-Version_508c.pdf</para>
-            </listitem>
-            <listitem>
-                <para>Galgotia D, Lakshmi N. Implementation of Knowledge Management in higher
-                    education: A comparative study of private and Government Universities in India
-                    and abroad. Frontiers in Psychology [Internet]. 2022 Jun 16 [cited 2024 Mar
-                    27];13. Available from:
-                    https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2022.944153/full
-                    doi:10.3389/fpsyg.2022.944153 </para>
-            </listitem>
-            <listitem>
-                <para>Chen B, Shin S, Wu M, Liu Z. Visualizing the knowledge domain in health
-                    education: A Scientometric analysis based on CiteSpace. International Journal of
-                    Environmental Research and Public Health [Internet]. 2022 Jun 19 [cited 2024 Mar
-                    27];19(11):6440. Available from:
-                    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9180308/ doi:10.3390/ijerph19116440
-                </para>
-            </listitem>
-            <listitem>
-                <para>CDC. CDC Policy Process | Policy, Performance, and Evaluation | CDC
-                    [Internet]. www.cdc.gov. 2023. Available from:
-                    https://www.cdc.gov/policy/paeo/process/index.html</para>
-            </listitem>
-            <listitem>
-                <para>Orand J. Most important metrics for a healthcare quality management dashboard
-                    | symplr [Internet]. www.symplr.com. 2021. Available from:
-                    https://www.symplr.com/blog/most-important-metrics-healthcare-quality-dashboard</para>
-            </listitem>
-            <listitem>
-                <para>Harvard T.H. Chan School of Public Health. 8 Healthcare Quality Improvement
-                    Tips [Internet]. Executive and Continuing Professional Education. 2017.
-                    Available from:
-                    https://www.hsph.harvard.edu/ecpe/8-healthcare-quality-improvement-tips/</para>
-            </listitem>
-        </orderedlist>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para>Johns Hopkins Medicine [Internet]. 2022 [cited 2025 Aug 5]. Quality
+                        Improvement. Available from:
+                        https://www.hopkinsmedicine.org/nursing/center-nursing-inquiry/nursing-inquiry/quality-improvement</para>
+                </listitem>
+                <listitem>
+                    <para>Centers for Medicare &amp; Medicaid Services [Internet]. 2023. Quality
+                        measure and quality improvement. Available from:
+                        https://www.cms.gov/Medicare/Quality-Initiatives-Patient-Assessment-Instruments/MMS/Quality-Measure-and-Quality-Improvement</para>
+                </listitem>
+                <listitem>
+                    <para>Batalden PB, Davidoff F. What is “quality improvement” and how can it
+                        transform healthcare? Qual Saf Health Care [Internet]. 2007 Feb [cited 2025
+                        Aug 5];16(1):2–3. Available from:
+                        https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2464920/</para>
+                </listitem>
+                <listitem>
+                    <para>Office of Institutional Knowledge Management [Internet]. [cited 2024 Feb
+                        28]. Communications FIUD. Available from:
+                        https://medicine.fiu.edu/about/administrative-offices/office-of-
+                        institutional-knowledge-management/</para>
+                </listitem>
+                <listitem>
+                    <para>Shahmoradi L, Safadari R, Jimma W. Knowledge Management Implementation and
+                        the Tools Utilized in Healthcare for Evidence-Based Decision Making: A
+                        Systematic Review. Ethiop J Health Sci [Internet]. 2017 Sept [cited 2025 Aug
+                        5];27(5):541–58. Available from:
+                        https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5615016/</para>
+                </listitem>
+                <listitem>
+                    <para>Benefits of knowledge management in healthcare | CKEditor [Internet]. 2023
+                        [cited 2025 Aug 5]. Available from:
+                        https://ckeditor.com/blog/benefits-of-knowledge-management-in-healthcare/</para>
+                </listitem>
+                <listitem>
+                    <para>KnowledgeBase Blog [Internet]. [cited 2025 Aug 5]. Why is Knowledge
+                        Management in Healthcare so Important? Available from:
+                        https://www.knowledgebase.com/blog/knowledge-management-in-healthcare-so-important/</para>
+                </listitem>
+                <listitem>
+                    <para>Evidence, Policy, Impact. WHO Guide for Evidence-Informed Decision-making.
+                        1st ed. Geneva: World Health Organization; 2022. 1 p.</para>
+                </listitem>
+                <listitem>
+                    <para>Carande-Kulis V. Standards Required for the Development of CDC
+                        Evidence-Based Guidelines. MMWR Suppl [Internet]. 2022 [cited 2025 Aug
+                        5];71. Available from:
+                        https://www.cdc.gov/mmwr/volumes/71/su/su7101a1.htm</para>
+                </listitem>
+                <listitem>
+                    <para>Bilheimer LT, Klein RJ. Data and Measurement Issues in the Analysis of
+                        Health Disparities. Health Serv Res [Internet]. 2010 Oct [cited 2025 Aug
+                        5];45(5 Pt 2):1489–507. Available from:
+                        https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2965888/</para>
+                </listitem>
+                <listitem>
+                    <para>Kluwer W. Six challenges to delivering quality healthcare [Internet]. 2022
+                        [cited 2025 Aug 5]. Available from:
+                        https://www.wolterskluwer.com/en/expert-insights/six-challenges-to-delivering-quality-healthcare</para>
+                </listitem>
+                <listitem>
+                    <para>Adane K, Gizachew M, Kendie S. The role of medical data in efficient
+                        patient care delivery: a review. Risk Manag Healthc Policy [Internet]. 2019
+                        Apr 24 [cited 2025 Aug 5];12:67–73. Available from:
+                        https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6486797/</para>
+                </listitem>
+                <listitem>
+                    <para>Borwn J. Knowledge Management in the Healthcare Industry [Internet].
+                        [cited 2025 Aug 5]. Available from:
+                        https://helpjuice.com/blog/healthcare-knowledge-management</para>
+                </listitem>
+                <listitem>
+                    <para>Mujumdar J. ACS. [cited 2025 Aug 5]. Leveraging knowledge management for
+                        better quality surgical care: An introduction. Available from:
+                        https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/bulletin/2021/03/leveraging-knowledge-management-for-better-quality-surgical-care-an-introduction/</para>
+                </listitem>
+                <listitem>
+                    <para>Koo E, McNamara S, Lansing B, Olmsted RN, Rye RA, Fitzgerald T, et al.
+                        Making infection prevention education interactive can enhance knowledge and
+                        improve outcomes: Results from the Targeted Infection Prevention (TIP)
+                        Study. American Journal of Infection Control [Internet]. 2016 [cited 2025
+                        Aug 5];44(11):1241–6. Available from:
+                        https://linkinghub.elsevier.com/retrieve/pii/S0196655316002455</para>
+                </listitem>
+                <listitem>
+                    <para>Wilson LAM, Giles-Corti B, Burton NW, Giskes K, Haynes M, Turrell G. The
+                        Association between Objectively Measured Neighborhood Features and Walking
+                        in Middle-Aged Adults. Am J Health Promot [Internet]. 2011 [cited 2025 Aug
+                        5];25(4):e12–21. Available from:
+                        https://journals.sagepub.com/doi/10.4278/ajhp.090421-QUAN-144</para>
+                </listitem>
+                <listitem>
+                    <para>Reducing Tobacco Use Initiation: Mass Media Campaigns When Combined with
+                        Other Interventions [Internet]. 2024 [cited 2024 Mar 28]. Available from:
+                        https://www.thecommunityguide.org/sites/default/files/Tobacco-Mass-Media-Combined-Cessation-Archive.pdf</para>
+                </listitem>
+                <listitem>
+                    <para>World Health Organization, Regional Office for the Eastern Mediterranean
+                        [Internet]. 2012 [cited 2024 Mar 26]. Health education: Theoretical
+                        concepts, effective strategies, and core competencies: A foundation document
+                        to guide capacity development of Health Educators. Available from:
+                        https://iris.who.int/bitstream/handle/10665/119953/EMRPUB_2012_EN_1362.pdf?sequence=1</para>
+                </listitem>
+                <listitem>
+                    <para>Agency for Healthcare Research &amp; Quality [Internet]. [cited 2025 Aug
+                        5]. Case Studies of Quality Improvement Initiatives. Available from:
+                        https://www.ahrq.gov/cahps/quality-improvement/reports-and-case-studies/Case-Study_QI-Initiatives.html</para>
+                </listitem>
+                <listitem>
+                    <para>Pathstream [Internet]. [cited 2025 Aug 5]. Upskilling in healthcare to
+                        retain talent and reduce burnout. Available from:
+                        https://pathstream.com//</para>
+                </listitem>
+                <listitem>
+                    <para>Scoping Review Report Data Elements for Research on the Role of Social
+                        Determinants of Health in Coronavirus Disease 2019 Infection and Outcomes in
+                        the U.S. PROJECT REPORT [Internet]. 2022 [cited 2024 May 9]. Available from:
+                        https://aspe.hhs.gov/sites/default/files/documents/53fc356858b67f5e9810d107f09ce169/sdoh-covid-19-scoping-review-report.pdf</para>
+                </listitem>
+                <listitem>
+                    <para>Secretary’s Advisory Committee Report #5: Stakeholder Engagement and
+                        Communication for Healthy People 2030 [Internet]. Available from:
+                        https://health.gov/sites/default/files/2021-09/Stakeholder%20Engagement_Communication%20Report_12-02-18_FINAL-WEB-Version_508c.pdf</para>
+                </listitem>
+                <listitem>
+                    <para>Galgotia D, Lakshmi N. Implementation of Knowledge Management in Higher
+                        Education: A Comparative Study of Private and Government Universities in
+                        India and Abroad. Front Psychol [Internet]. 2022 June 16 [cited 2025 Aug
+                        5];13:944153. Available from:
+                        https://www.frontiersin.org/articles/10.3389/fpsyg.2022.944153/full</para>
+                </listitem>
+                <listitem>
+                    <para>Chen B, Shin S, Wu M, Liu Z. Visualizing the Knowledge Domain in Health
+                        Education: A Scientometric Analysis Based on CiteSpace. IJERPH [Internet].
+                        2022 May 25 [cited 2025 Aug 5];19(11):6440. Available from:
+                        https://www.mdpi.com/1660-4601/19/11/6440</para>
+                </listitem>
+                <listitem>
+                    <para>Centers for Disease Control and Prevention [Internet]. 2023. CDC Policy
+                        Process | Policy, Performance, and Evaluation. Available from: <link
+                            xlink:href="https://www.cdc.gov/policy/paeo/process/index.html"
+                            >https://www.cdc.gov/policy/paeo/process/index.html</link></para>
+                </listitem>
+                <listitem>
+                    <para>Most Important Metrics for a Healthcare Quality Management Dashboard
+                        [Internet]. 2024 [cited 2025 Aug 5]. Available from: <link
+                            xlink:href="https://www.symplr.com/blog/most-important-metrics-healthcare-quality-dashboard"
+                            >https://www.symplr.com/blog/most-important-metrics-healthcare-quality-dashboard</link></para>
+                </listitem>
+                <listitem>
+                    <para>8 Healthcare Quality Improvement Tips | Harvard T.H. Chan School of Public
+                        Health [Internet]. 2016 [cited 2025 Aug 5]. Available from:
+                        https://hsph.harvard.edu/exec-ed/news/8-healthcare-quality-improvement-tips/</para>
+                </listitem>
+            </orderedlist>
+        </para>
     </section>
 </chapter>
