@@ -4,48 +4,86 @@
 <chapter xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>References</title>
-    <para>1. Bodenreider O, Cornet R, Vreeman DJ. Recent Developments in Clinical Terminologies -
-        SNOMED CT, LOINC, and RxNorm. Yearbook Med Inform. 2018 Aug;27(1):129-139. doi:
-        10.1055/s-0038-1667077. Epub 2018 Aug 29. PMID: 30157516; PMCID: PMC6115234.Available from:
-        https://www.ncbi.nlm.nih.gov/pmc/articles/ PMC6115234/. </para>
-    <para>2. Capability Maturity Model Integration (CMMI) for Development, Version 1.3. Software
-        Engineering Institute; 2010. Available from:
-        https://resources.sei.cmu.edu/library/asset-view.cfm?assetID=9661. </para>
-    <para>3. Institute of Medicine (2012). Health IT and Patient Safety. Building Safer Systems for
-        Better Care. Washington, DC: National Academies Press. </para>
-    <para>4. Cimino JJ. Desiderata for controlled medical vocabularies in the twenty-first century.
-        Methods of information in medicine.
-        1998;37(4-5):394-403.https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3415631/. </para>
-    <para>5. NHS England. QRISK2 update (identified code mapping errors). SystmOne National User
-        Group; 2016. Available from: https://www.systmoneusergroup.co.uk/qrisk2-update/. </para>
-    <para>6. Iacobucci G. Computer error may have led to incorrect prescribing of statins to
-        thousands of patients. BMJ. 2016 May 13;353:i2742. doi: 10.1136/bmj.i2742. PMID: 27178396. </para>
-    <para>7. MHRA information on TPP and QRISK®2. GOV.UK. Medicines and Healthcare products
-        Regulatory Agency; 2016. Available from:
-        https://www.gov.uk/government/news/mhra-information-on-tpp-and-qrisk2. </para>
-    <para>8. Clinical decision support malfunctions are widespread and persistent, AMIA says.
-        Healthcare IT News. 2016. Available from:
-        https://www.healthcareitnews.com/news/clinical-decision-support-malfunctions-arewidespread-
-        and-persistent-amia-says. </para>
-    <para>9. Oaks, P. Towards Self Describing Web Services. Lecture Notes in Computer Science. 2003.
-        2722. 10.1007/3-540-45068-8_90. Available from: https://www.researchgate.net/
-        publication/27482447_Towards_Self_Describing_Web_Services. </para>
-    <para>10. Tharakan V. Metadata Driven Architecture For Application Development. ClaySys
-        Technologies; 2019. Available from:
-        https://www.claysys.com/blog/metadata-driven-application-development/. </para>
-    <para>11. Analysis Normal Form Informative Ballot. HL7 CIMI Work Group. Sept 2019.
-        http://www.hl7.org/
-        documentcenter/public/ballots/2019SEP/downloads/HL7_CIMI_LM_ANF_R1_I1_2019SEP.pdf. mirror
-        link: http:// solor.io/wp-content/uploads/2020/01/ANF-Ballot-Jan-2020.pdf. </para>
-    <para>12. Parnas, D. On the Criteria To Be Used in Decomposing Systems into Modules. Programming
-        Techniques. 1972. Available from:
-        https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf. </para>
-    <para>13.Kaszubowski, M. Modular software design - 10 common mistakes. AppUnite Blog. 2020, Sep.
-        Available from: https://appunite.com/blog/modular-software-design-mistakes. </para>
-    <para>14. Delamore, S. The 5 Essential Elements of Modular Software Design. 2020, Jan. Medium.
-        Available from: https://
-        shanebdavis.medium.com/the-5-essential-elements-of-modular-software-design-6b333918e543. </para>
-    <para>15. Abstract syntax tree. Wikipedia; 2020. Available from:
-        https://en.wikipedia.org/wiki/Abstract_syntax_tree. </para>
+    <orderedlist>
+        <listitem>
+            <para>Bodenreider O, Cornet R, Vreeman D. Recent Developments in Clinical Terminologies
+                — SNOMED CT, LOINC, and RxNorm. Yearb Med Inform [Internet]. 2018 [cited 2025 Aug
+                5];27(01):129–39. Available from:
+                http://www.thieme-connect.de/DOI/DOI?10.1055/s-0038-1667077</para>
+        </listitem>
+        <listitem>
+            <para>Software Engineering Institute [Internet]. 2010. Capability Maturity Model
+                Integration (CMMI) for Development, Version 1.3. Available from:
+                https://resources.sei.cmu.edu/library/asset-view.cfm?assetID=9661</para>
+        </listitem>
+        <listitem>
+            <para>Health IT and Patient Safety: Building Safer Systems for Better Care [Internet].
+                Washington, D.C.: National Academies Press; 2012 [cited 2025 Aug 5]. Available from:
+                http://www.nap.edu/catalog/13269</para>
+        </listitem>
+        <listitem>
+            <para>Cimino JamesJ. Desiderata for Controlled Medical Vocabularies in the Twenty-First
+                Century. Methods Inf Med [Internet]. 1998 Nov [cited 2025 Aug 5];37(4–5):394–403.
+                Available from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3415631/</para>
+        </listitem>
+        <listitem>
+            <para>SystmOne National User Group [Internet]. 2016. NHS England. QRISK2 update
+                (identified code mapping errors). Available from:
+                https://www.systmoneusergroup.co.uk/qrisk2-update/</para>
+        </listitem>
+        <listitem>
+            <para>Iacobucci G. Computer error may have led to incorrect prescribing of statins to
+                thousands of patients. BMJ [Internet]. 2016 May 13 [cited 2025 Aug 5];i2742.
+                Available from: https://www.bmj.com/lookup/doi/10.1136/bmj.i2742</para>
+        </listitem>
+        <listitem>
+            <para>GOV.UK [Internet]. 2016 [cited 2025 Aug 5]. MHRA information on TPP and QRISK®2.
+                Available from:
+                https://www.gov.uk/government/news/mhra-information-on-tpp-and-qrisk2</para>
+        </listitem>
+        <listitem>
+            <para>Healthcare IT News [Internet]. 2016. Clinical decision support malfunctions are
+                widespread and persistent, AMIA says. Available from:
+                https://www.healthcareitnews.com/news/clinical-decision-support-malfunctions-arewidespread-
+                and-persistent-amia-says</para>
+        </listitem>
+        <listitem>
+            <para>Oaks P. Towards Self-Describing Web Services. In: Lovelle JMC, Rodríguez BMG, Gayo
+                JEL, Del Puerto Paule Ruiz M, Aguilar LJ, editors. Web Engineering [Internet].
+                Berlin, Heidelberg: Springer Berlin Heidelberg; 2003 [cited 2025 Aug 5]. p. 476–85.
+                Available from: http://link.springer.com/10.1007/3-540-45068-8_90</para>
+        </listitem>
+        <listitem>
+            <para>Tharakan V. ClaySys Technologies. 2019. Metadata Driven Architecture For
+                Application Development. Available from:
+                https://www.claysys.com/blog/metadata-driven-application-development/</para>
+        </listitem>
+        <listitem>
+            <para>HL7 CIMI Work Group [Internet]. 2019. Analysis Normal Form Informative Ballot.
+                Available from: http://www.hl7.org/
+                documentcenter/public/ballots/2019SEP/downloads/HL7_CIMI_LM_ANF_R1_I1_2019SEP.pdf.
+                mirror link: http://
+                solor.io/wp-content/uploads/2020/01/ANF-Ballot-Jan-2020.pdf</para>
+        </listitem>
+        <listitem>
+            <para>Parnas D. Programming Techniques. 1972. On the Criteria To Be Used in Decomposing
+                Systems into Modules. Available from:
+                https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf</para>
+        </listitem>
+        <listitem>
+            <para>Kaszubowski M. AppUnite Blog. 2020. Modular software design - 10 common mistakes.
+                Available from: https://appunite.com/blog/modular-software-design-mistakes</para>
+        </listitem>
+        <listitem>
+            <para>Delamore SBD. The 5 Essential Elements of Modular Software Design [Internet].
+                Medium. 2024 [cited 2025 Aug 5]. Available from:
+                https://shanebdavis.medium.com/the-5-essential-elements-of-modular-software-design-6b333918e543</para>
+        </listitem>
+        <listitem>
+            <para>Abstract syntax tree. In: Wikipedia [Internet]. 2025 [cited 2025 Aug 5]. Available
+                from:
+                https://en.wikipedia.org/w/index.php?title=Abstract_syntax_tree&amp;oldid=1300329545</para>
+        </listitem>
+    </orderedlist>
 </chapter>
 
