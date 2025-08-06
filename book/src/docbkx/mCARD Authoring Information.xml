@@ -7,10 +7,7 @@
         <title>Komet Authoring Information</title>
         <subtitle>Last Updated 06/12/2025</subtitle>
     </info>
-    <part>
-        <title>Getting Started Guide</title>
-        <xi:include href="Getting%20Started%20Guide%20Test.xml"/>
-    </part>
+    
     <part>
         <title>Komet User Guide</title>
         <xi:include href="../../../volume8-Komet-User-Guide/chapter1-komet-user-guides/src/docbkx/Komet-User-Guide.xml"/>
