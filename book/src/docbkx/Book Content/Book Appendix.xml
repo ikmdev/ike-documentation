@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title><?oxy_comment_start author="ecundiff" timestamp="20250714T113855-0400" comment="Chapter element not allowed here. I tried adding the xi:includes within section brakets, but am still getting the chapter error. Any idea what xml structure would be allowed? Book?"?>Appendix<?oxy_comment_end?></title>
+    <xi:include href="Appendix-%20Description%20Logic%20Definitional%20Operators.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <!-- Do we want ANF included here? It is discussed in the Terminology Knowledge Example section which currently follows this one within the appendix, but I see there's a whole ANF section in Part VI of the book-->
+    <xi:include href="Book%20Terminology_Application.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="Appendix-%20Terminology%20Knowledge%20Example.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="Book%20Solor%20Design.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="Appendix-%20LOINC%20and%20SNOMED%20CT%20Licensing%20Information.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="Appendix-%20Proposed%20Study%20to%20Evaluate%20the%20Impact%20of%20Solor.xml " xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <section>
+        <title><?oxy_comment_start author="ecundiff" timestamp="20250714T114101-0400" comment="Will pull in references from each xml as a final step since the ordering will be dependent upon more than just Part 5 content"?>References<?oxy_comment_end?></title>
+        <orderedlist>
+            <listitem>
+                <para>Covid-19 value sets in VSAC [Internet]. U.S. National Library of Medicine.
+                    National Institutes of Health; [cited 2023 Mar 10]. Available from: <link
+                        xlink:href="https://www.nlm.nih.gov/vsac/support/usingvsac/covid19valuesets.html"
+                        >https://www.nlm.nih.gov/vsac/support/usingvsac/covid19valuesets.html</link></para>
+            </listitem>
+            <listitem>
+                <para>McDonald C, Huff SM, Suico J, Mercer K. Logical Observation Identifiers Names
+                    and Codes (LOINC) users’ guide. Indianapolis: Regenstrief Institute.<emphasis
+                        role="italic"> </emphasis>2004</para>
+            </listitem>
+            <listitem>
+                <para>Cholan RA, Weiskopf NG, Rhoton DL, Colin NV, Ross RL, Marzullo MN, et al.
+                    Specifications of Clinical Quality Measures and Value Set Vocabularies Shift
+                    Over Time: A Study of Change through Implementation Differences. AMIA Annu Symp
+                    Proc. 2017;2017:575–84. </para>
+            </listitem>
+            <listitem>
+                <para> Hansen ML, Sørensen R, Clausen MT, Fog-Petersen ML, Raunsø J, Gadsbøll N, et
+                    al. Risk of Bleeding With Single, Dual, or Triple Therapy With Warfarin,
+                    Aspirin, and Clopidogrel in Patients With Atrial Fibrillation. Arch Intern Med
+                    [Internet]. 2010 Sep 13;170(16). Available from:
+                    http://archinte.jamanetwork.com/article.aspx?doi=10.1001/archinternmed.2010.271
+                </para>
+            </listitem>
+        </orderedlist>
+    </section>
+</chapter>

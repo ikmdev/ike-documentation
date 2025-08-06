@@ -100,6 +100,24 @@
                         applications folder or your Operating System’s search feature for the Komet
                         app</para>
                 </listitem>
+                <listitem>
+                    <para>Note: Users may receive a security prompt when trying to download Komet,
+                        ensure you trust the source before proceeding.</para>
+                    <para>For MAC users, you may receive an alert that Apple cannot check for
+                        malicious software and Apple will prompt you to delete it. Do not delete it.
+                        Instead, override the settings by opening your System Settings, then
+                        selecting "Privacy &amp; Security". Scroll down to "Security" and select
+                        “Open Anyway”. Then the warning prompt will reappear. Click “Open”</para>
+                    <figure xml:id="MacSecurity">
+                        <title>Komet Mac Installer File</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../../book/src/docbkx/images/Mac%20System%20Safety%20Check.svg"
+                                    scale="20" align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
             </orderedlist>
         </para>
     </section>
@@ -192,11 +210,15 @@
                         <title>New Journal</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/New%20Journal%20Panel.svg" scale="45"
+                                <imagedata fileref="../../../../book/src/docbkx/images/New%20Journal%20Panel.svg" scale="20"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
+                </listitem>
+                <listitem>
+                    <para>Note: Upon first time start up, it is advised to run the reasoner. Please
+                        see the  <xref linkend="RunningTheReasoner"/>section</para>
                 </listitem>
             </orderedlist>
         </para>
@@ -372,7 +394,7 @@
                     represent different data extensions.</para>
             </listitem>
             <listitem>
-                <para>Click the elipsis in the top right of the Timeline panel to see additional
+                <para>Click the ellipsis in the top right of the Timeline panel to see additional
                     information on the Path and Extensions that the timelines represent</para>
                 <figure xml:id="TimelineInformation">
                     <title>Timeline Information</title>
@@ -394,7 +416,7 @@
                     <title>Viewing Versioning</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/Viewing%20Versioning.svg" scale="60"
+                            <imagedata fileref="../../../../book/src/docbkx/images/Viewing%20Versioning.svg" scale="20"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -413,7 +435,7 @@
                     <title>Version Nodes</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/Viewing%20Versioning2.svg" scale="60"
+                            <imagedata fileref="../../../../book/src/docbkx/images/Viewing%20Versioning2.svg" scale="20"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -552,7 +574,7 @@
             </listitem>
             <listitem>
                 <para>Once you add a Sufficient of Necessary Set, it will appear in the Axioms
-                    section, where you can thens elect the pencil icon to add another Sufficient or
+                    section, where you can then select the pencil icon to add another Sufficient or
                     Necessary set</para>
                 <figure xml:id="AdditionalSets">
                     <title>Additional Sets</title>
@@ -696,7 +718,7 @@
                         <title>Editing an Axiom</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/Axiom%20Editing.svg" scale="45"
+                                <imagedata fileref="../../../../book/src/docbkx/images/Axiom%20Editing.svg" scale="15"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -705,7 +727,7 @@
                         <title>Further Editing an Axiom</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../book/src/docbkx/images/Axiom%20Editing2.svg" scale="45"
+                                <imagedata fileref="../../../../book/src/docbkx/images/Axiom%20Editing2.svg" scale="15"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -809,8 +831,9 @@
                     <para>Once all necessary components are complete, select "Done"</para>
                 </listitem>
                 <listitem>
-                    <para>If needed, select the Pencil Icon in the Fields section to add additional
-                        information. This step is optional</para>
+                    <para>If needed, select the Pencil Icon in the Fields section to associate
+                        additional information with the pattern. Note: Display Name will
+                        auto-populate once the meaning field has been defined</para>
                     <figure xml:id="EditFields">
                         <title>Edit Fields</title>
                         <mediaobject>
@@ -824,7 +847,7 @@
                 <listitem>
                     <para>Once you have entered all the necessary details, click "Done". You can add
                         additional Fields by clicking the Pencil icon again. These additional fields
-                        will be labeled with increasing Field Order numbers.</para>
+                        will be labeled with increasing Field Order numbers</para>
                     <figure xml:id="AddMultipleFields">
                         <title>Add Multiple Fields</title>
                         <mediaobject>
@@ -855,7 +878,7 @@
                         <title>Add Identifier</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Add%20Identifier.svg" scale="35" align="center"
+                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/Add%20Identifier.svg" scale="15" align="center"
                                 />
                             </imageobject>
                         </mediaobject>
@@ -868,7 +891,7 @@
                         <title>View Pattern Navigator</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/View%20Pattern%20Navigator.svg" scale="35" align="center"
+                                <imagedata fileref="../../../../volume4-Tinkar-Ballot/src/docbkx/images/View%20Pattern%20Navigator.svg" scale="15" align="center"
                                 />
                             </imageobject>
                         </mediaobject>
@@ -876,6 +899,159 @@
                 </listitem>
             </orderedlist>
         </para>
+    </section>
+    <section>
+        <title>Creating and Editing a Semantic</title>
+        <para>Users may want to create or edit a semantic to represent specific information about a
+            concept, like a description, a dialect, an In-Vitro Diagnostic Test mapping, and more.<orderedlist>
+                <listitem>
+                    <para>To create a semantic element, open the concept navigator panel on the
+                        left-hand side and select "Patterns"</para>
+                    <figure xml:id="ViewPatterns">
+                        <title>Locate Patterns</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../../Book/src/docbkx/images/View%20Patterns.svg" scale="35" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Locate the pattern you would like to create a semantic element for, right
+                        click, and select "Add New Semantic Element". In this example, we will use
+                        the Description Pattern</para>
+                    <figure xml:id="AddNewSemanticElement">
+                        <title>Add New Semantic Element</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../../Book/src/docbkx/images/Add New Semantic Element.svg" scale="35" align="center"
+                                />
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>A New Semantic window will appear for the specific pattern you
+                        choose</para>
+                    <figure xml:id="NewDescriptionSemantic">
+                        <title>New Description Semantic</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../../book/src/docbkx/images/New Description Semantic.svg" scale="15"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Select the ellipsis in the top right-hand side to enter STAMP information
+                        for this semantic</para>
+                    <figure xml:id="NewDescriptionSemanticSTAMP">
+                        <title>New Description Semantic STAMP</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../../book/src/docbkx/images/New Description Semantic STAMP.svg" scale="15"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Next, select the pencil icon on the right-hand side of the Reference
+                        Component section to associate this semantic with a specific concept.</para>
+                    <figure xml:id="NewReferenceComponent">
+                        <title>New Reference Component</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../../book/src/docbkx/images/New Reference Component.svg" scale="15"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                    <para>You can use the Next Gen-Search on the left-hand tool bar or you can type
+                        free text into the search field to find the concept of interest. Once you
+                        have added the Reference Component, select "Confirm"</para>
+                </listitem>
+                <listitem>
+                    <para>Once the Reference Component is added, the pencil icon in Semantic Details
+                        will become available, which you should select to add the necessary Pattern
+                        Fields</para>
+                    <figure xml:id="NewSemanticDetail">
+                        <title>New Semantic Details</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../../book/src/docbkx/images/New Semantic Detail.svg" scale="15"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                    <para>Concepts for the "Language for Description", "Description case
+                        significance" and "Description type" can all be found in the next gen-search
+                        and drag and dropped into the respective field or they can be searched in
+                        the semantic window. Some fields, such as "Text" may be free text for you to
+                        create your own entry</para>
+                    <para>Please note, the Pattern Fields may differ depending on which pattern you
+                        are using to create semantic elements</para>
+                </listitem>
+                <listitem>
+                    <para>When adding semantic elements to a pattern, you may need to add a data
+                        type depending on the pattern. The following list highlights some potential options:
+                        <table>
+                            <title>Data Types for General Semantic Authoring</title>
+                            <tgroup cols="2">
+                                <colspec colnum="1" colname="col1"/>
+                                <colspec colnum="2" colname="col2"/>
+                                <tbody>
+                                    <row>
+                                        <entry>String</entry>
+                                        <entry>Any alphanumeric text</entry>
+                                    </row>
+                                    <row>
+                                        <entry>Integer</entry>
+                                        <entry>Any whole number</entry>
+                                    </row>
+                                    <row>
+                                        <entry>Float</entry>
+                                        <entry>Any decimal or whole number</entry>
+                                    </row>
+                                    <row>
+                                        <entry>Boolean</entry>
+                                        <entry>True/False</entry>
+                                    </row>
+                                    <row>
+                                        <entry>Component</entry>
+                                        <entry>Can be a concept/pattern/semantic/STAMP</entry>
+                                    </row>
+                                    <row>
+                                        <entry>Component Set</entry>
+                                        <entry>
+                                            <para>Can be a <emphasis role="bold">set</emphasis> of
+                                                concepts/patterns/semantics/STAMPs.</para>
+                                            <para>Does not allow duplicates.</para>
+                                        </entry>
+                                    </row>
+                                    <row>
+                                        <entry>Component List</entry>
+                                        <entry>
+                                            <para>Can be a <emphasis role="bold">list</emphasis> of
+                                                concepts/patterns/semantics/STAMPs.</para>
+                                            <para>Does allow duplicates.</para>
+                                        </entry>
+                                    </row>
+                                    <row>
+                                        <entry>Image</entry>
+                                        <entry>Currently supports JPG, PNG, BMP, GIF images</entry>
+                                    </row>
+                                </tbody>
+                            </tgroup>
+                        </table></para>
+                </listitem>
+                <listitem>
+                    <para>Once you have added concepts to each Pattern Field, select "Submit" and
+                        your semantic element will have been added </para>
+                </listitem>
+            </orderedlist></para>
     </section>
     <section>
         <title>Creating LIDR Data</title>
@@ -920,7 +1096,7 @@
                         </imageobject>
                     </mediaobject>
                 </figure>
-                <para>Selecting Status, Module, and Path will open a dropdown menu of possible
+                <para>Selecting Status, Module, and Path will open a drop down menu of possible
                     choices for users to select from when authoring STAMP</para>
             </listitem>
             <listitem>
@@ -1090,7 +1266,8 @@
                 </listitem>
                 <listitem>
                     <para>Once the following pop-up opens, drag your desired dataset into Komet or
-                        browse for the specific files and click "Import"</para>
+                        browse for the specific files and click "Import". The dataset must be a .zip
+                        file type</para>
                     <figure xml:id="ImportDataSet">
                         <title>Import Dataset</title>
                         <mediaobject>
@@ -1183,8 +1360,8 @@
                 </figure>
             </listitem>
             <listitem>
-                <para>From the Generate New Token dropdown, select "Generate new token
-                    (classic)"</para>
+                <para>From the Generate New Token drop down, select "Generate new token
+                        (classic)"</para>
                 <figure xml:id="GenerateNewToken">
                     <title>Generate New Token</title>
                     <mediaobject>
@@ -1274,9 +1451,9 @@
                     </figure>
                 </listitem>
                 <listitem>
-                    <para>Select the green "Code" button and, from the dropdown menu, ensure "HTTPS'
-                        is selected. Then copy the repository web address and save for a later
-                        step</para>
+                    <para>Select the green "Code" button and, from the drop down menu, ensure
+                        "HTTPS' is selected. Then copy the repository web address and save for a
+                        later step</para>
                     <figure xml:id="RepositoryAddress">
                         <title>Repository Web Address</title>
                         <mediaobject>
@@ -1296,17 +1473,17 @@
                 <itemizedlist>
                     <listitem>
                         <para><emphasis role="bold">Info</emphasis> - Connects Komet to GitHub
-                            without pulling or syncing any changesets</para>
+                            without pulling or syncing any change sets</para>
                     </listitem>
                     <listitem>
-                        <para><emphasis role="bold">Pull</emphasis> - Pulls the changesets from the
+                        <para><emphasis role="bold">Pull</emphasis> - Pulls the change sets from the
                             GitHub repo that the connection was made with, loads them into Komet and
                             then automatically runs the Reasoner.</para>
                     </listitem>
                     <listitem>
-                        <para><emphasis role="bold">Sync </emphasis>- Pulls the changesets from the
+                        <para><emphasis role="bold">Sync </emphasis>- Pulls the change sets from the
                             repository, loads them into Komet, runs the Reasoner, and then pushes
-                            the changesets to the repository. </para>
+                            the change sets to the repository. </para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -1434,7 +1611,7 @@
                     <listitem>
                         <para>To ensure the Sync completed successfully, go to the repository you
                             created earlier to validate that the change sets were successfully
-                            completed. This process can take a minute or so, as the changesets are
+                            completed. This process can take a minute or so, as the change sets are
                             pushed to GitHub</para>
                     </listitem>
                 </orderedlist>
@@ -1449,20 +1626,7 @@
             names, to detect equivalences, and more.</para>
         <orderedlist>
             <listitem>
-                <para>To run the reasoner, first open a new journal, or in an existing and open
-                    journal select a concept, and select the Reasoner icon at the top of the concept
-                    window</para>
-                <figure xml:id="OpenReasoner">
-                    <title>Open Reasoner</title>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata fileref="../../../../book/src/docbkx/images/Open%20Reasoner.svg" scale="45" align="center"/>
-                        </imageobject>
-                    </mediaobject>
-                </figure>
-            </listitem>
-            <listitem>
-                <para>You can also open the Reasoner panel by selecting the Reasoner icon in the
+                <para>To run the reasoner, first open a new journal, or in an existing and open the Reasoner panel by selecting the Reasoner icon in the
                     left-hand tool ribbon</para>
                 <figure xml:id="Reasoner">
                     <title>Reasoner</title>
@@ -1475,7 +1639,7 @@
             </listitem>
             <listitem>
                 <para>Select the drop down menu in the top left of the Reasoner panel and select
-                    "Run Full Reasoner"</para>
+                    "Run Reasoner"</para>
                 <figure xml:id="RuntheReasoner">
                     <title>Run the Reasoner</title>
                     <mediaobject>
@@ -1488,8 +1652,9 @@
             </listitem>
         
             <listitem>
-                <para>The reasoner may take up to a few minutes to successfully run, you should see
-                    the reasoner running in the activity tab</para>
+                <para>The reasoner may take up to a few minutes to successfully run, but you should
+                    see a reasoner progress bar appear in the bottom left-hand side of the Komet
+                    window</para>
                 <figure xml:id="ReasonerInAction">
                     <title>Reasoner In Action</title>
                     <mediaobject>

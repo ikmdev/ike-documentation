@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.1">
+    <title>Komet Introduction</title>
+    <para> In today’s healthcare landscape, the ability to coordinate and harmonize health
+        information across diverse systems is critical but fraught with challenges such as data
+        integrity loss, inconsistent concept representation, and limited agility. Variations in
+        terminologies and the proliferation of local codes make it difficult to determine
+        equivalence and correlate data between systems, often leading to errors and hindering
+        effective clinical decision support. As healthcare evolves, organizations struggle to keep
+        up, resulting in the creation of local concepts and further fragmentation. These issues can
+        ultimately impact patient outcomes and highlight the need for a unified, adaptable approach
+        to knowledge management. </para>
+    <para>To address these challenges, a layered knowledge architecture is essential. In previous
+        parts of this book we provided an overview of each layer of the knowledge architecture and
+        how those layers build off eachother. At the foundation of the knowledge architecture is the
+        versioned system that tracks and represents change over time, ensuring safe, reliable, and
+        coordinated evolution of terminology standards and solutions. One level above the versioned
+        foundation is the terminology knowledge layer, the focus of Komet, which serves as the
+        shared basis for integrating and harmonizing disparate data standards. Organizations can use
+        Komet to build on the terminology layer to develop assertional, statement, and imperative
+        knowledge, enabling more advanced and actionable insights. </para>
+    <para><emphasis role="bold">So what is Komet?</emphasis></para>
+    <para>Komet is an open-source environment designed to manage, harmonize, and extend disparate
+        knowledge standards, which enables users to import, transform, extend, and export content
+        into a common model. </para>
+    <para>Komet is an open-source tool purpose-built to meet these needs. Komet enhances clinical
+        decision-making and supports better patient care by harmonizing healthcare data standards.
+        Its unique approach centers on providing a uniform display of knowledge standards, offering
+        features such as consistent representation, improved code mappings, reconciliation at a
+        glance, and robust provenance tracking. These capabilities help ensure that health data
+        remains accurate, reliable, and actionable across systems. </para>
+    <para>Komet’s architectural foundation is designed for integration, not competition.
+        <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250721T125421-0500" comment="pulled from part 5 solor section. need to update with correct verbiage"?>Solor,
+        the underlying model, does not redistribute content or compete with existing standards and
+        processes. Instead, it enables users to integrate their own and others’ terminologies
+        provided they have the appropriate licenses for distribution (e.g., for LOINC®, SNOMED CT®,
+        and RxNorm). Komet’s transformation processes and architecture are available under the
+        Apache 2 Open Source License, and Solor fully supports and relies on foundational
+        terminologies and their organizations. Its intent is to complement, not replace, these
+        standards, allowing organizations to freely integrate Solor content into their standards. </para><?oxy_comment_end?>
+    <para>Komet’s open-source, modular design offers unmatched flexibility. It integrates seamlessly
+        with existing infrastructure, enabling organizations to enhance data interoperability and
+        harmonization without overhauling their current systems. Additionally, Komet connects users
+        to a broader consortium, fostering collective solution development and adaptability to a
+        variety of organizational needs. </para>
+    <para>To make these technical concepts approachable, this guide uses the process of building a
+        pizza as an illustrative example. Just as a pizza menu can be broken down into base, sauce,
+        and toppings, healthcare concepts can be decomposed into fundamental elements. By
+        integrating these components into a knowledge base, we can apply standards for representing
+        terms—whether in healthcare or pizza—alongside local data management. Each change, such as a
+        new menu item or a revised clinical concept, is versioned and tracked, ensuring
+        comprehensive provenance and consistency. </para>
+    <para>The core functions of Komet revolve around our logical model which contain three
+        foundational elements: concepts, patterns, and semantics. Our logical model aims to create
+        an interoperable healthcare language network that can communicate effectively across
+        multiple systems and integrate data standards such as SNOMED, LOINC, and RxNorm with local
+        data management systems. This integrated knowledge base is backed by HL7 ballot and built
+        upon the foundational pillars of STAMP, concepts/patterns/semantics, and versioned knowledge
+        graphs. </para>
+    <figure xml:id="TinkarLogicalModel">
+        <title>Tinkar Logical Model</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata fileref="../images/TinkarLogicalModel.svg" scale="25" align="center"/>
+            </imageobject>
+        </mediaobject>
+    </figure>
+    <para>STAMP (Status, Time, Author, Module, Path) is a common metadata set for each data model
+        component, enabling precise recording and tracking of all historical changes with context to
+        maintain semantic meaning. Each STAMP version represents a unique state of an object at a
+        particular coordinate, preserving every version for retrieval, inspection, and comparison. </para>
+    <para><emphasis role="bold">Status</emphasis>: Shows inactive or inactive activity </para>
+    <para><emphasis role="bold">Time</emphasis>: Shows the time in a common UTC timestamp
+        format</para>
+    <para><emphasis role="bold">Author</emphasis>: Indicates that source of a creation or change,
+        who authored the change</para>
+    <para><emphasis role="bold">Module</emphasis>: Assignment to the appropriate terminology, such
+        as LOINC ®, or terminology component, such as SNOMED CT® . This helps us encapsultate change
+        and manage over time. </para>
+    <para><emphasis role="bold">Path</emphasis>: Enables testing for provisional content without
+        constraints of incorporating an entire terminology library. Reflects local extension or a
+        new LOINC ® release</para>
+    <para>STAMP is applied to concepts, patterns, and semantics and the result is a versioned
+        knowledge graph that can represent the concepts of interest in the domain of interest. It
+        provides uniformatibilty to represent content and manage change, and provides all of the
+        cababilites of modern configuration management system.</para>
+    <para><emphasis role="bold">Concepts</emphasis> are specific, well-defined ideas or entities
+        representing distinct pieces of information, defined by patterns and their associated
+        semantics. </para>
+    <para><emphasis role="bold">Patterns</emphasis> provide the framework to define pertinent
+        information associated with a concept, and multiple patterns can define a single concept. </para>
+    <para><emphasis role="bold">Semantics</emphasis> add contextual meaning to the components they
+        extend. </para>
+    <para>The connection between concepts, patterns, semantics (along with the associated STAMPS)
+        can network together by their relationships to create a <emphasis role="bold">Versioned
+            Knowledge Graph, </emphasis>a foundational method to efficiently track and retrieve data
+        in a dynamic knowledge environment. These graph structures support rapid data querying, as
+        both the data and relationships are permanently stored and can be retrieved with a single
+        request. Versioned knowledge graphs ensure clinical concepts are represented in a
+        standardized and reproducible manner while maintaining data provenance for historical
+        versioning as concepts evolve. </para>
+    <figure xml:id="VersionedKnowledgeGraphs">
+        <title>Versioned Knowledge Graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata fileref="../images/VersionedKnowledgeGraph.svg" scale="25" align="center"
+                />
+            </imageobject>
+        </mediaobject>
+    </figure>
+    <para>Axioms in standard RDF/OWL graphs typically represent edges, but versioning requires
+        reification or the use of named graphs. Axioms are additional information that is true about
+        a concept (e.g., “pepperoni pizza is a pizza”). Komet’s use of versioned knowledge graphs
+        enables “time travel” tracking versions and concepts as they change, and seeing who made
+        what change and why. </para>
+    <para>In summary, Komet is an open-source environment designed to manage, harmonize, and extend
+        disparate knowledge standards, empowering users to import, transform, extend, and export
+        content into a common model. By leveraging foundational elements such as concepts, patterns,
+        and semantics along with robust versioning and provenance. Komet provides a reliable,
+        adaptable framework for achieving true interoperability across diverse healthcare systems
+        and data standards. As you walk through the upcoming pizza example, you’ll see firsthand how
+        Komet’s flexible and standardized approach makes it easy to represent, integrate, and share
+        even seemingly simple information demonstrating the platform’s power to unify complex data
+        in real-world scenarios. </para>
+</chapter>

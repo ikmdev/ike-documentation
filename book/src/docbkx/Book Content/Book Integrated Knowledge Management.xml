@@ -86,7 +86,7 @@
                     
                     <imagedata fileref="../images/IKMinPractice.svg" 
                         
-                        scale="35" align="center"/> 
+                        scale="25" align="center"/> 
                     
                 </imageobject> 
                 
@@ -112,7 +112,7 @@
                     
                     <imagedata fileref="../images/CreatingIKM.svg" 
                         
-                        scale="35" align="center"/> 
+                        scale="50" align="center"/> 
                     
                 </imageobject> 
                 
@@ -186,7 +186,7 @@
                     
                     <imagedata fileref="../images/SeparationofConcerns.svg" 
                         
-                        scale="35" align="center"/> 
+                        scale="40" align="center"/> 
                     
                 </imageobject> 
                 
@@ -231,7 +231,7 @@
                     
                     <imagedata fileref="../images/TinkarLogicalModel.svg" 
                         
-                        scale="19" align="center"/> 
+                        scale="25" align="center"/> 
                     
                 </imageobject> 
                 
@@ -397,42 +397,33 @@
         <para>
             <orderedlist>
                 <listitem>
-                    <para>National Library of Medicine. Overview of SNOMED CT [Internet]. Nih.gov.
-                        U.S. National Library of Medicine; 2016. Available from: <link
-                            xlink:href="https://www.nlm.nih.gov/healthit/snomedct/snomed_overview.html"
-                        /></para>
+                    <para>Overview of SNOMED CT [Internet]. [cited 2025 Jul 29]. Available from:
+                        https://www.nlm.nih.gov/healthit/snomedct/snomed_overview.html</para>
                 </listitem>
                 <listitem>
-                    <para>LOINC — The freely available standard for identifying health measurements,
-                        observations, and documents. [Internet]. Loinc.org. 2019. Available from:
-                            <link xlink:href="https://loinc.org/"/></para>
+                    <para>LOINC [Internet]. [cited 2025 Jul 29]. Home. Available from:
+                        https://loinc.org/</para>
                 </listitem>
                 <listitem>
-                    <para>National Library of Medicine. RxNorm [Internet]. www.nlm.nih.gov. 2020.
-                        Available from: <link
-                            xlink:href="https://www.nlm.nih.gov/research/umls/rxnorm/index.html"
-                        /></para>
+                    <para>RxNorm [Internet]. [cited 2025 Jul 29]. Available from:
+                        https://www.nlm.nih.gov/research/umls/rxnorm/index.html</para>
                 </listitem>
                 <listitem>
-                    <para>FHIR Fact Sheets | HealthIT.gov [Internet]. www.healthit.gov. Available
-                        from: <link
-                            xlink:href="https://www.healthit.gov/topic/standards-technology/standards/fhir-fact-sheets"
-                        />
-                    </para>
+                    <para>Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR) |
+                        HealthIT.gov [Internet]. [cited 2025 Jul 29]. Available from:
+                        https://www.healthit.gov/topic/standards-technology/standards/fhir</para>
                 </listitem>
                 <listitem>
-                    <para>HL7 Logical Model: Standardized Terminology Knowledgebase, Release 1.
-                        Terminology Knowledge Architecture Informative Ballot. HL7 Vocabulary Work
-                        Group. August 2021. <link
-                            xlink:href="https://www.hl7.org/documentcenter/private/standards/HL7_LM_TERM_KB_R1_INFORM_2021AUG_FINAL.pdf"
-                        /></para>
+                    <para>[cited 2025 Jul 29]. HL7 Logical Model: Standardized Terminology
+                        Knowledgebase, Release 1. Terminology Knowledge Architecture Informative
+                        Ballot. HL7 Vocabulary Work Group. August 2021. Available from:
+                        https://www.bing.com/search?pglt=41&amp;q=HL7+Logical+Model%3A+Standardized+Terminology+Knowledgebase%2C+Release+1.+Terminology+Knowledge+Architecture+Informative+Ballot.+HL7+Vocabulary+Work+Group.+August+2021.&amp;cvid=f3966bad2ec84696bab686f61664b088&amp;gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIICAEQ6QcY_FXSAQc4MTRqMGoxqAIAsAIA&amp;FORM=ANNAB1&amp;PC=U5</para>
                 </listitem>
                 <listitem>
                     <para>Health C for D and R. Systemic Harmonization and Interoperability
-                        Enhancement for Laboratory Data (SHIELD). FDA [Internet]. 2023 Mar 24 [cited
-                        2023 May 31]; Available from: <link
-                            xlink:href="https://www.fda.gov/medical-devices/diagnostic-data-program/systemic-harmonization-and-interoperability-enhancement-laboratory-data-shield"
-                        /></para>
+                        Enhancement for Laboratory Data (SHIELD). FDA [Internet]. 2024 Aug 9 [cited
+                        2025 Jul 29]; Available from:
+                        https://www.fda.gov/medical-devices/diagnostic-data-program/systemic-harmonization-and-interoperability-enhancement-laboratory-data-shield</para>
                 </listitem>
             </orderedlist>
         </para>

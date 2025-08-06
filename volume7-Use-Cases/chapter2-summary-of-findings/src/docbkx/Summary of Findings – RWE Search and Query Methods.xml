@@ -37,7 +37,7 @@
         <para>A specific, yet generalizable, use case demonstrates the need for RWE analytics,
             identify gaps, and form the basis of requirements necessary to establish a health data
             ecosystem capable for widespread collective efforts, public health surveillance,
-            research, and care delivery. The long COVID use case describes the need to broadly
+            research, and care delivery. The Long COVID use case describes the need to broadly
             survey and analyze large data sets. Doing so helps identify and define poorly understood
             health conditions for which new and/or existing regulated technologies or substances can
             be evaluated for safety and efficacy. RWD needs to be collected, queried, and evaluated
@@ -125,29 +125,28 @@
         <title>References</title>
         <orderedlist>
             <listitem>
-                <para>CDC. Post-COVID Conditions [Internet]. Centers for Disease Control and
-                    Prevention. 2022. Available from:
+                <para>Centers for Disease Control and Prevention [Internet]. 2022. Post-COVID
+                    Conditions. Available from:
                     https://www.cdc.gov/coronavirus/2019-ncov/long-term-effects/index.html#:~:text=People%20with%20post%2DCOVID%20conditions%20(or%20long%20COVID)%20may</para>
             </listitem>
             <listitem>
-                <para>NIH launches new initiative to study “Long COVID” [Internet]. National
-                    Institutes of Health (NIH). 2021. Available from:
+                <para>National Institutes of Health (NIH) [Internet]. 2021. NIH launches new
+                    initiative to study “Long COVID.” Available from:
                     https://www.nih.gov/about-nih/who-we-are/nih-director/statements/nih-launches-new-initiative-study-long
                     COVID</para>
             </listitem>
             <listitem>
-                <para>Researching long COVID | NIHR [Internet]. www.nihr.ac.uk. Available from:
-                    https://www.nihr.ac.uk/covid-19/researching-the-long-term-impact.htm</para>
+                <para>NIHR [Internet]. Researching long COVID. Available from:
+                    https://www.nihr.ac.uk/covid-19/researching-the-long-term-impact.html</para>
             </listitem>
             <listitem>
-                <para>Deeks SG, Overbaugh J, Phillips A, Buchbinder S. HIV infection. Nature Reviews
-                    Disease Primers. 2015 Oct 1;1(1).</para>
+                <para>Deeks SG, Overbaugh J, Phillips A, Buchbinder S. HIV infection. Nat Rev Dis
+                    Primers [Internet]. 2015 Oct 1 [cited 2025 Aug 5];1(1):1–22. Available from:
+                    https://www.nature.com/articles/nrdp201535</para>
             </listitem>
             <listitem>
                 <para>Karantzoulis S, Galvin JE. Distinguishing Alzheimer’s disease from other major
-                    forms of dementia. Expert review of neurotherapeutics [Internet].
-                    2011;11(11):1579–91. Available from:
-                    https://www.ncbi.nlm.nih.gov/pubmed/22014137</para>
+                    forms of dementia. Expert Rev Neurother. 2011 Nov;11(11):1579–91.</para>
             </listitem>
         </orderedlist>
     </sect1>

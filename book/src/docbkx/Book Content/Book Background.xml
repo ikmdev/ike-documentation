@@ -110,7 +110,7 @@
             
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="../images/Challenges%20of%20Structure%20and%20Meaning.svg" scale="10" align="center"/>
+                    <imagedata fileref="../images/Challenges%20of%20Structure%20and%20Meaning.svg" scale="15" align="center"/>
                 </imageobject>
             </mediaobject>
         </figure>
@@ -715,7 +715,7 @@
             <title>Modules and Extensions</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="../images/Modules%20and%20Extensions.svg" scale="12"
+                    <imagedata fileref="../images/Modules%20and%20Extensions.svg" scale="20"
                         align="center"/>
                 </imageobject>
             </mediaobject>
@@ -819,136 +819,144 @@
                             >https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-3192-8</link></para>
                 </listitem>
                 <listitem>
-                    <para><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>Department
-                        of Veteran Affairs, Office of Inspector General. The New Electronic Health
-                        Record’s Unknown Queue Caused Multiple Events of Patient Harm July 14, 2022,
-                        Report #22-01137-204</para>
-                </listitem><?oxy_custom_end?>
-                <listitem>
-                    <para><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>Mitchell
-                        PH. Defining Patient Safety and Quality Care. In: Hughes RG, editor. Patient
-                        Safety and Quality: An Evidence-Based Handbook for Nurses. Rockville (MD):
-                        Agency for Healthcare Research and Quality (US); 2008 Apr. Chapter 1.
-                        Available from: <link
-                            xlink:href="https://www.ncbi.nlm.nih.gov/books/NBK2681/"
-                            >https://www.ncbi.nlm.nih.gov/books/NBK2681/</link></para>
+                    <para>Department of Veterans Affairs [Internet]. 2022 [cited 2025 Jul 29]. The
+                        New Electronic Health Record’s Unknown Queue Caused Multiple Events of
+                        Patient Harm. Available from:
+                        https://www.vaoig.gov/reports/national-healthcare-review/new-electronic-health-records-unknown-queue-caused-multiple</para>
                 </listitem>
                 <listitem>
-                    <para>Plebani, M. (2015). Diagnostic errors and laboratory medicine–causes and
-                        strategies. JIFCCLM, 26(1), 7.</para>
+                    <para>Mitchell PH. Defining Patient Safety and Quality Care. In: Hughes RG,
+                        editor. Patient Safety and Quality: An Evidence-Based Handbook for Nurses
+                        [Internet]. Rockville (MD): Agency for Healthcare Research and Quality (US);
+                        2008 [cited 2025 Jul 29]. (Advances in Patient Safety). Available from:
+                        http://www.ncbi.nlm.nih.gov/books/NBK2681/</para>
                 </listitem>
                 <listitem>
-                    <para>Dekker, S. (2016). Just culture: Balancing safety and accountability. CRC
-                        Press.</para>
+                    <para>Plebani M. Diagnostic Errors and Laboratory Medicine - Causes and
+                        Strategies. EJIFCC. 2015 Jan;26(1):7–14.</para>
                 </listitem>
                 <listitem>
-                    <para>Donaldson, M. S., Corrigan, J. M., &amp; Kohn, L. T. (Eds.). (2000). To
-                        err is human: building a safer health system.</para>
-                </listitem>
-                <listitem>
-                    <para>Makary, M. A., &amp; Daniel, M. (2016). Medical error—the third leading
-                        cause of death in the US. BMJ, 353.</para>
+                    <para>Dekker S. Just Culture: Balancing Safety and Accountability. Farnham:
+                        Ashgate Publishing Ltd; 2012. 200 p.</para>
                 </listitem>
                 <listitem>
                     <para>Institute of Medicine (US) Committee on Quality of Health Care in America.
-                        Crossing the Quality Chasm: A New Health System for the 21st Century.
-                        Washington (DC): National Academies Press (US); 2001. Available from:
-                        https://www.ncbi.nlm.nih.gov/books/NBK222274/ doi: 10.17226/10027</para>
+                        To Err is Human: Building a Safer Health System [Internet]. Kohn LT,
+                        Corrigan JM, Donaldson MS, editors. Washington (DC): National Academies
+                        Press (US); 2000 [cited 2025 Jul 29]. Available from:
+                        http://www.ncbi.nlm.nih.gov/books/NBK225182/</para>
                 </listitem>
                 <listitem>
-                    <para>Committee on Patient Safety and Health Information Technology; Institute
+                    <para>Makary, M. A., &amp; Daniel, M. (2016). Medical error—the third leading
+                        cause of death in the US. BMJ, 353. Available from:
+                        https://www.bing.com/search?pglt=41&amp;q=Makary%2C+M.+A.%2C+%26+Daniel%2C+M.+(2016).+Medical+error—the+third+leading+cause+of+death+in+the+US.+BMJ%2C+353.&amp;cvid=333f9a74df404e9db7078a675306fd25&amp;gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIICAEQ6QcY_FXSAQc4NjNqMGoxqAIAsAIA&amp;FORM=ANNAB1&amp;</para>
+                </listitem>
+                <listitem>
+                    <para>Crossing the Quality Chasm: A New Health System for the 21st Century
+                        [Internet]. Washington, D.C.: National Academies Press; 2001 [cited 2025 Jul
+                        29]. Available from: http://www.nap.edu/catalog/10027</para>
+                </listitem>
+                <listitem>
+                    <para>Committee on Patient Safety and Health Information Technology, Institute
                         of Medicine. Health IT and Patient Safety: Building Safer Systems for Better
-                        Care. Washington (DC): National Academies Press (US); 2011 Nov 10. PMID:
-                        24600741.</para>
+                        Care [Internet]. Washington (DC): National Academies Press (US); 2011 [cited
+                        2025 Jul 29]. Available from:
+                        http://www.ncbi.nlm.nih.gov/books/NBK189661/</para>
                 </listitem>
                 <listitem>
-                    <para>Committee on Diagnostic Error in Health Care; Board on Health Care
-                        Services; Institute of Medicine; The National Academies of Sciences,
-                        Engineering, and Medicine; Balogh EP, Miller BT, Ball JR, editors. Improving
-                        Diagnosis in Health Care. Washington (DC): National Academies Press (US);
-                        2015 Dec 29. Preface. Available from:
-                        https://www.ncbi.nlm.nih.gov/books/NBK338585/</para>
+                    <para>Balogh EP, Miller BT, Ball JR, Care C on DE in H, Services B on HC,
+                        Medicine I of, et al. Preface. In: Improving Diagnosis in Health Care
+                        [Internet]. National Academies Press (US); 2015 [cited 2025 Jul 29].
+                        Available from: https://www.ncbi.nlm.nih.gov/books/NBK338585/</para>
                 </listitem>
                 <listitem>
-                    <para>Duclos, A., Frits, M. L., Iannaccone, C., Lipsitz, S. R., Cooper, Z.,
-                        Weissman, J. S., &amp; Bates, D. W. (2024). Safety of inpatient care in
-                        surgical settings: cohort study. BMJ, 387.</para>
+                    <para>Duclos A, Frits ML, Iannaccone C, Lipsitz SR, Cooper Z, Weissman JS, et
+                        al. Safety of inpatient care in surgical settings: cohort study. BMJ. 2024
+                        Nov 13;387:e080480.</para>
                 </listitem>
                 <listitem>
-                    <para>Chassin, M. R., &amp; Loeb, J. M. (2013). High‐Reliability health care:
-                        getting there from here. The Milbank Quarterly, 91(3), 459-490.</para>
+                    <para>Chassin MR, Loeb JM. High-reliability health care: getting there from
+                        here. Milbank Q. 2013 Sep;91(3):459–90.</para>
                 </listitem>
                 <listitem>
-                    <para>Weick, K. E., &amp; Sutcliffe, K. M. (2001). Managing the unexpected (Vol.
-                        9). San Francisco: Jossey-Bass.</para>
+                    <para>Weick KE, Sutcliffe KM. Managing the unexpected: Assuring high performance
+                        in an age of complexity. San Francisco, CA, US: Jossey-Bass; 2001. xvi, 200
+                        p. (Managing the unexpected: Assuring high performance in an age of
+                        complexity).</para>
                 </listitem>
                 <listitem>
-                    <para>Leveson, N., Dulac, N., Marais, K., &amp; Carroll, J. (2009). Moving
-                        beyond normal accidents and high reliability organizations: A systems
-                        approach to safety in complex systems. Organization studies, 30(2-3),
-                        227-249.</para>
+                    <para>Leveson N, Dulac N, Marais K, Carroll J. Moving Beyond Normal Accidents
+                        and High Reliability Organizations: A Systems Approach to Safety in Complex
+                        Systems. Organization Studies [Internet]. 2009 [cited 2025 Jul
+                        29];30(2–3):227–49. Available from:
+                        https://journals.sagepub.com/doi/10.1177/0170840608101478</para>
                 </listitem>
                 <listitem>
-                    <para>Leveson, N. G. (2016). <emphasis role="italic">Engineering a safer world:
-                            Systems thinking applied to safety</emphasis> (p. 560). The MIT
-                        Press.</para>
+                    <para>Leveson NG. Engineering a Safer World: Systems Thinking Applied to Safety
+                        [Internet]. The MIT Press; 2012 [cited 2025 Jul 29]. Available from:
+                        https://direct.mit.edu/books/book/2908/Engineering-a-Safer-WorldSystems-Thinking-Applied</para>
                 </listitem>
                 <listitem>
-                    <para>Leveson, N. G., &amp; Stephanopoulos, G. (2013). A system-theoretic,
-                        control-inspired view and approach to process safety. </para>
+                    <para>Leveson NG, Stephanopoulos G. A system-theoretic, control-inspired view
+                        and approach to process safety. Prof Stephanopoulos via Erja Kajosalo
+                        [Internet]. 2013 Nov [cited 2025 Jul 29]; Available from:
+                        https://dspace.mit.edu/handle/1721.1/92371</para>
                 </listitem>
                 <listitem>
-                    <para>Leveson, N. G. (2023). An Introduction to System Safety Engineering. The
-                        MIT Press.</para>
+                    <para>MIT Press [Internet]. [cited 2025 Jul 29]. An Introduction to System
+                        Safety Engineering. Available from:
+                        https://mitpress.mit.edu/9780262546881/an-introduction-to-system-safety-engineering/</para>
                 </listitem>
                 <listitem>
-                    <para>Li, Y., &amp; Guldenmund, F. W. (2018). Safety management systems: A broad
-                        overview of the literature. <emphasis role="italic">Safety
-                            science</emphasis>, <emphasis role="italic">103</emphasis>,
-                        94-123.</para>
+                    <para>Li Y, Guldenmund FW. Safety management systems: A broad overview of the
+                        literature. Safety Science [Internet]. 2018 [cited 2025 Jul 29];103:94–123.
+                        Available from:
+                        https://linkinghub.elsevier.com/retrieve/pii/S0925753517309463</para>
                 </listitem>
                 <listitem>
-                    <para>Kristiansen, T. B., Kristensen, K., Uffelmann, J., &amp; Brandslund, I.
-                        (2022). Erroneous data: The Achilles' heel of AI and personalized medicine.
-                        Frontiers in Digital Health, 4, 862095.</para>
+                    <para>Kristiansen TB, Kristensen K, Uffelmann J, Brandslund I. Erroneous data:
+                        The Achilles’ heel of AI and personalized medicine. Front Digit Health
+                        [Internet]. 2022 Jul 22 [cited 2025 Jul 29];4:862095. Available from:
+                        https://www.frontiersin.org/articles/10.3389/fdgth.2022.862095/full</para>
                 </listitem>
                 <listitem>
-                    <para>Office of the National Coordinator for Health Information Technology.
-                        ‘National Trends in Hospital and Physician Adoption of Electronic Health
-                        Records,’ Health IT Quick-Stat #61. </para>
+                    <para>National Trends in Hospital and Physician Adoption of Electronic Health
+                        Records | HealthIT.gov [Internet]. [cited 2025 Jul 29]. Available from:
+                        https://www.healthit.gov/data/quickstats/national-trends-hospital-and-physician-adoption-electronic-health-records</para>
                 </listitem>
                 <listitem>
-                    <para>Alotaibi, Y. K., &amp; Federico, F. (2017). The impact of health
-                        information technology on patient safety. Saudi medical journal, 38(12),
-                        1173. </para>
+                    <para>Alotaibi YK, Federico F. The impact of health information technology on
+                        patient safety. SMJ [Internet]. 2017 [cited 2025 Jul 29];38(12):1173–80.
+                        Available from:
+                        https://smj.org.sa/lookup/doi/10.15537/smj.2017.12.20631</para>
                 </listitem>
                 <listitem>
-                    <para>Singh, H., &amp; Sittig, D. F. (2016). Measuring and improving patient
-                        safety through health information technology: The Health IT Safety
-                        Framework. BMJ quality &amp; safety, 25(4), 226-232. </para>
+                    <para>Singh H, Sittig DF. Measuring and improving patient safety through health
+                        information technology: The Health IT Safety Framework. BMJ Qual Saf. 2016
+                        Apr;25(4):226–32.</para>
                 </listitem>
                 <listitem>
-                    <para>Alder, S. (July, 2024). July 26, 2024: CrowdStrike Issues Update on Outage
-                        Cause; Healthcare Hit Hardest with Estimated $1.94B in Losses. HIPAA
-                        Journal. Accessed at
-                        https://www.hipaajournal.com/crowdstrike-issues-update-on-outage-cause-healthcare-hit-hardest-with-estimated-1-94b-in-losses/
-                    </para>
+                    <para>Alder S. July 26, 2024: CrowdStrike issues update on outage cause;
+                        healthcare hit hardest with estimated $1.94B in losses [Internet]. HIPAA
+                        Journal. 2024 Jul [cited 2024 Jul 26]. Available from:
+                        https://www.hipaajournal.com/crowdstrike-issues-update-on-outage-cause-healthcare-hit-hardest-with-estimated-1-94b-in-losses/</para>
                 </listitem>
                 <listitem>
-                    <para>Mijic, M., &amp; Tripathi, M. (2024). Accelerating The Exchange Of Health
-                        And Human Services Data To Improve Outcomes And Disrupt Inequities. Health
-                        Affairs Forefront. </para>
+                    <para>Mijic, M., &amp; Tripathi, M. Accelerating the exchange of health and
+                        human services data to improve outcomes and disrupt inequities [Internet].
+                        Health Affairs Forefront. 2024 Jun 25 [cited 2024 Jul 26]. Available from:
+                        https://www.healthaffairs.org/content/forefront/accelerating-exchange-health-and-human-services-data-improve-outcomes-and-disrupt</para>
                 </listitem>
                 <listitem>
-                    <para>Lehne, M., Sass, J., Essenwanger, A., Schepers, J., &amp; Thun, S. (2019).
-                        Why digital medicine depends on interoperability. NPJ digital medicine,
-                        2(1), 79. </para>
+                    <para>Lehne M, Sass J, Essenwanger A, Schepers J, Thun S. Why digital medicine
+                        depends on interoperability. npj Digit Med [Internet]. 2019 Aug 20 [cited
+                        2025 Jul 29];2(1):1–5. Available from:
+                        https://www.nature.com/articles/s41746-019-0158-1</para>
                 </listitem>
                 <listitem>
-                    <para>Wilkinson, M. D., Dumontier, M., Aalbersberg, I. J., Appleton, G., Axton,
-                        M., Baak, A., ... &amp; Mons, B. (2016). The FAIR Guiding Principles for
-                        scientific data management and stewardship. Scientific data, 3(1), 1-9.
-                        <?oxy_custom_end?></para>
+                    <para>Wilkinson MD, Dumontier M, Aalbersberg IJJ, Appleton G, Axton M, Baak A,
+                        et al. The FAIR Guiding Principles for scientific data management and
+                        stewardship. Sci Data. 2016 Mar 15;3:160018.</para>
                 </listitem>
             </orderedlist>
         </para>

@@ -672,73 +672,73 @@
         <title>References</title>
         <orderedlist>
             <listitem>
-                <para>Apathy, N. C., Holmgren, A. J., and Adler-Milstein, J. (2021, September). A
-                    decade post-HITECH: Critical access hospitals have electronic health records but
-                    struggle to keep up with other advanced functions. Journal of the American
-                    Medical Informatics Association, 1947-19554. Retrieved from
-                    https://doi.org/10.1093/jamia/ocab102 </para>
+                <para>Apathy NC, Holmgren AJ, Adler-Milstein J. A decade post-HITECH: Critical
+                    access hospitals have electronic health records but struggle to keep up with
+                    other advanced functions. Journal of the American Medical Informatics
+                    Association [Internet]. 2021 Aug 13 [cited 2025 Aug 5];28(9):1947–54. Available
+                    from: https://academic.oup.com/jamia/article/28/9/1947/6312883</para>
             </listitem>
             <listitem>
-                <para>Bernstam, E. V., Warner, J. L., Krauss, J. C., Ambinder, E., Rubinstein, W.
-                    S., Komastsoulis, G., and Miller, R. S. (2022, May). Quantitating and assessing
-                    interoperability between electronic health records. Journal of the American
-                    Medical Informatics Association, 29(5), 753-760.
-                    doi:https://doi.org/10.1093/jamia/ocab289 </para>
+                <para>Bernstam EV, Warner JL, Krauss JC, Ambinder E, Rubinstein WS, Komatsoulis G,
+                    et al. Quantitating and assessing interoperability between electronic health
+                    records. Journal of the American Medical Informatics Association [Internet].
+                    2022 Apr 13 [cited 2025 Aug 5];29(5):753–60. Available from:
+                    https://academic.oup.com/jamia/article/29/5/753/6500181</para>
             </listitem>
             <listitem>
-                <para>Free Software Foundation. (n.d.). What is Free Software? Retrieved from GNU
-                    Operating System: https://www.gnu.org/philosophy/free-sw.en.html#copyleft
-                </para>
+                <para>What is Free Software? - GNU Project - Free Software Foundation [Internet].
+                    [cited 2025 Aug 5]. Available from:
+                    https://www.gnu.org/philosophy/free-sw.en.html#copyleft</para>
             </listitem>
             <listitem>
-                <para>Wilbanks, J. (2008). Public domain, copyright licenses and the freedom to
-                    integrate science. Journal of Science Communication, 7(2).
-                    doi:https://doi.org/10.22323/2.07020304 </para>
+                <para>Wilbanks J. Public domain, copyright licenses and the freedom to integrate
+                    science. JCOM [Internet]. 2008 June 20 [cited 2025 Aug 5];07(02):C04. Available
+                    from: https://jcom.sissa.it/article/pubid/Jcom0702(2008)C04/</para>
             </listitem>
             <listitem>
-                <para>Reynolds, C. J., and Wyatt, J. C. (2011, February). Open Source, Open
-                    Standards, and Health Care Information Systems. Journal of Medical Internet
-                    Research. doi:https://doi.org/10.2196/jmir.1521 </para>
+                <para>Reynolds CJ, Wyatt JC. Open Source, Open Standards, and Health Care
+                    Information Systems. J Med Internet Res [Internet]. 2011 Feb 17 [cited 2025 Aug
+                    5];13(1):e24. Available from: http://www.jmir.org/2011/1/e24/</para>
             </listitem>
             <listitem>
-                <para>Wolford B. What is GDPR, the EU’s new data protection law? [Internet].
-                    GDPR.eu. 2018. Available from:
-                    https://gdpr.eu/what-is-gdpr/#:~:text=The%20General%20Data%20Protection%20Regulation%20%28GDPR%29%20is%20the</para>
+                <para>GDPR.eu [Internet]. 2018 [cited 2025 Aug 5]. What is GDPR, the EU’s new data
+                    protection law? Available from: https://gdpr.eu/what-is-gdpr/</para>
             </listitem>
             <listitem>
-                <para>GDPR and healthcare: Understanding health data and consent [Internet].
-                    www.pega.com. 2018. Available from:
+                <para>GDPR and healthcare: Understanding health data and consent | Pega [Internet].
+                    2018 [cited 2025 Aug 5]. Available from:
                     https://www.pega.com/insights/articles/gdpr-and-healthcare-understanding-health-data-and-consent</para>
             </listitem>
             <listitem>
-                <para>Hosking, R., and Gahegan, M. (2013). The Effects of Licensing on Open Data:
-                    Computing a Measure of Health for Our Scholarly Record. International Semantic
-                    Web Conference, 432-439. doi:https://doi.org/10.1007/978-3-642-41338-4_28
-                </para>
+                <para>Hosking R, Gahegan M. The Effects of Licensing on Open Data: Computing a
+                    Measure of Health for Our Scholarly Record. In: Salinesi C, Norrie MC, Pastor Ó,
+                    editors. Advanced Information Systems Engineering [Internet]. Berlin,
+                    Heidelberg: Springer Berlin Heidelberg; 2013 [cited 2025 Aug 5]. p. 432–9.
+                    Available from: http://link.springer.com/10.1007/978-3-642-41338-4_28</para>
             </listitem>
             <listitem>
-                <para>Wikiwand - Android (operating system) [Internet]. Wikiwand. [cited 2024 Jan
-                    17]. Available from:
-                    https://www.wikiwand.com/en/Android_(operating_system)</para>
+                <para>Android (operating system) - Wikiwand [Internet]. [cited 2025 Aug 5].
+                    Available from:
+                    https://www.wikiwand.com/en/articles/Android%20(operating%20system)</para>
             </listitem>
             <listitem>
-                <para>Licenses [Internet]. Android Open Source Project. Available from:
-                    https://source.android.com/docs/setup/about/licenses</para>
+                <para>Android Open Source Project [Internet]. [cited 2025 Aug 5]. Contributor
+                    license agreements and headers. Available from:
+                    https://source.android.com/docs/setup/contribute/licenses</para>
             </listitem>
             <listitem>
-                <para>Mission, Vision, and Principles for Open Terminology Development. (n.d.).
-                    Retrieved from LOINC®: https://loinc.org/principles/ </para>
+                <para>LOINC [Internet]. [cited 2025 Aug 5]. Mission, Vision, and Principles for Open
+                    Terminology Development. Available from: https://loinc.org/principles/</para>
             </listitem>
             <listitem>
-                <para>SNOMED CT Affiliate License Agreement. (n.d.). Retrieved from SNOMED CT®:
+                <para>SNOMED CT® [Internet]. SNOMED CT Affiliate License Agreement. Available from:
                     https://www.snomed.org/_files/ugd/900274_689013e9e0c74d23892abe9caee02612.pdf</para>
             </listitem>
             <listitem>
-                <para>Scheibner, J. (2017). What price freedom (of software)? A guide for Australian
-                    legal practitioners on open source licensing. Retrieved from Australian Lawyers
-                    Alliance:
-                    http://classic.austlii.edu.au/au/journals/PrecedentAULA/2017/23.html#fnB3
-                </para>
+                <para>Scheibner J. What Price Freedom (of Software)? A Guide for Australian Legal
+                    Practitioners on Open Source Licensing. Precedent (Australian Lawyers Alliance)
+                    [Internet]. 2017 [cited 2025 Aug 5]; Available from:
+                    https://www.austlii.edu.au/au/journals/PrecedentAULA/2017/23.html#fnB3</para>
             </listitem>
         </orderedlist>
     </section>
