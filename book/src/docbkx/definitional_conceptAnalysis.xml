@@ -1501,13 +1501,14 @@
                                             modeling issues but can be an indicator of them.</para>
                                         <figure>
                                             <title>Example of Inverse Concepts modeled with radical differences</title>
-                                            <para>The Open subcapital facture of left femur concept is incorrectly modeled with multiple role groups while the Closed subcapital fracture of left femur is correctly modeled with a single role group</para>
                                             <mediaobject>
                                                 <imageobject>
                                                     <imagedata fileref="images/definitional_conceptAnalysis_symmetry_fig3.svg" scalefit="1" width="100%" contentdepth="100%"/>
                                                 </imageobject>
                                             </mediaobject>
                                         </figure>
+                                        <para>The Open subcapital facture of left femur concept is incorrectly modeled with multiple role groups while the Closed subcapital fracture of left femur is correctly modeled with a single role group</para>
+                                        
                                     <para><emphasis role="bold">Definition for radically different
                                             modeling:</emphasis>Inverse concept and its opposite
                                         where the modeling for each is not equivalent for data
