@@ -62,8 +62,8 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata
-                            fileref="../images/Tinkar%20Logical%20Model%20Example.svg"
-                            scale="25" align="center"/>
+                            fileref="../images/TinkarLogicalModel.svg"
+                            scale="20" align="center"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -319,7 +319,7 @@
                             <imageobject>
                                 <imagedata
                                     fileref="../images/Tinkar%20Architecture%20Model.svg"
-                                    scale="75" align="center"/>
+                                    scale="45" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -451,7 +451,7 @@
                         <imageobject>
                             <imagedata
                                 fileref="../images/Status%20Diagram.svg"
-                                scale="100" align="center"/>
+                                scale="55" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -626,7 +626,7 @@
                         <imageobject>
                             <imagedata
                                 fileref="../images/Path%20Diagram.svg"
-                                scale="100" align="center"/>
+                                scale="65" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -881,7 +881,7 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata fileref="../images/Urine%20Homocysteine%20Representation%20in%20Tinkar.svg"
-                                        scale="100" align="center"/> 
+                                        scale="60" align="center"/> 
                                 </imageobject>
                             </mediaobject>
                 </figure>
@@ -905,7 +905,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="../images/Substance%20Concentration%20of%20Glucose%20in%20Specimen%20in%20Tinkar.svg"
-                                scale="100" align="center"/> 
+                                scale="60" align="center"/> 
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -922,7 +922,7 @@
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="../images/Key%20Steps%20to%20Represent%20a%20Data%20Set%20in%20Tinkar.svg"
-                        scale="100" align="center"/> 
+                        scale="60" align="center"/> 
                 </imageobject>
             </mediaobject>
         </figure>
@@ -1005,7 +1005,7 @@
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="../images/Example%20of%20LOINC%20Data%20Elements.svg"
-                        scale="100" align="center"/> 
+                        scale="60" align="center"/> 
                 </imageobject>
             </mediaobject>
         </figure>
@@ -1035,7 +1035,7 @@
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="../images/SNOMED%20CT®%20Description%20Data%20Example.svg"
-                        scale="100" align="center"/> 
+                        scale="60" align="center"/> 
                 </imageobject>
             </mediaobject>
         </figure>
@@ -1049,7 +1049,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="../images/LOINC®%20Description%20Data%20Example.svg"
-                                scale="30" align="center"/> 
+                                scale="15" align="center"/> 
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -1065,7 +1065,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="../images/RxNorm%20OWL%20File%20Example.svg"
-                                scale="100" align="center"/> 
+                                scale="60" align="center"/> 
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -1559,7 +1559,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="../images/SNOMED%20CT®%20UUID%20Example.svg"
-                                scale="100" align="center"/> 
+                                scale="50" align="center"/> 
                         </imageobject>
                     </mediaobject>
         </figure>
@@ -1573,7 +1573,7 @@
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="../images/LOINC®%20UUID%20Example.svg"
-                        scale="70" align="center"/> 
+                        scale="30" align="center"/> 
                 </imageobject>
             </mediaobject>
         </figure>
@@ -1586,7 +1586,7 @@
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="../images/RxNorm%20OWL%20File%20Identifier.svg"
-                        scale="100" align="center"/> 
+                        scale="60" align="center"/> 
                 </imageobject>
             </mediaobject>
         </figure>
@@ -1813,7 +1813,7 @@
                 <title>Stated Definition Children Concepts</title>
                 <tgroup cols="2">
                     <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="2" colname="col2" colwidth="150px"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Children Concept </emphasis></entry>
@@ -1897,7 +1897,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="../images/SNOMED%20CT®%20Example%20OWL%20Expression.svg"
-                            scale="75" align="center"/> 
+                            scale="50" align="center"/> 
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -1906,7 +1906,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="../images/SNOMED%20CT®%20Example%20OWL%20Expression2.svg"
-                            scale="75" align="center"/> 
+                            scale="50" align="center"/> 
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -1922,7 +1922,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="../images/LOINC®%20Example%20OWL%20Expression.svg"
-                            scale="50" align="center"/> 
+                            scale="30" align="center"/> 
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -1957,7 +1957,7 @@
                 <title>Stated Definition Examples</title>
                 <tgroup cols="2">
                     <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="2" colname="col2" colwidth="150px"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Example</emphasis></entry>
@@ -2028,10 +2028,9 @@
                                     in the Stated Definitions Semantics.</para>
                                 <itemizedlist>
                                     <listitem>
-                                        <para>‘EquivalentClasses(:90708001
-                                            ObjectIntersectionOf(:64572001
-                                            ObjectSomeValuesFrom(:609096000
-                                            ObjectSomeValuesFrom(:363698007 :64033007))))’</para>
+                                        <para>‘EquivalentClasses (:90708001 ObjectIntersectionOf
+                                            (:64572001 ObjectSomeValuesFrom (:609096000
+                                            ObjectSomeValuesFrom (:363698007 :64033007))))’</para>
                                     </listitem>
                                 </itemizedlist>
                             </entry>
@@ -2354,7 +2353,7 @@
                 <imageobject>
                     <imagedata
                         fileref="../images/Build%20Data%20Model%20and%20Starter%20Data.svg"
-                        scale="100" align="center"/>
+                        scale="70" align="center"/>
                 </imageobject>
             </mediaobject>
         </figure>
@@ -2385,7 +2384,7 @@
                 <imageobject>
                     <imagedata
                         fileref="../images/Validating%20Models%20Process%20Flow%20Diagram.svg"
-                        scale="75" align="center"/>
+                        scale="45" align="center"/>
                 </imageobject>
             </mediaobject>
         </figure>
@@ -2551,11 +2550,11 @@
             <title>Tinkar Starter Data (Listed in alphabetical order)</title>
             <informaltable>
                 <tgroup cols="5">
-                    <colspec colnum="1" colname="col5" colwidth="222pt"/>
-                    <colspec colnum="2" colname="col1" colwidth="143.25pt"/>
-                    <colspec colnum="3" colname="col2" colwidth="117.75pt"/>
-                    <colspec colnum="4" colname="col3" colwidth="117.75pt"/>
-                    <colspec colnum="5" colname="col4" colwidth="204pt"/>
+                    <colspec colnum="1" colname="col5" colwidth="85px"/>
+                    <colspec colnum="2" colname="col1" colwidth="85px"/>
+                    <colspec colnum="3" colname="col2" colwidth="85px"/>
+                    <colspec colnum="4" colname="col3" colwidth="85px"/>
+                    <colspec colnum="5" colname="col4" colwidth="85px"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Destinations</emphasis></entry>
@@ -2571,7 +2570,7 @@
                             <entry>Acceptable</entry>
                             <entry>Specifies that a description is acceptable, but not preferred
                                 within a language or dialect.</entry>
-                            <entry>DESCRIPTION_ACCEPTABILITY</entry>
+                            <entry>DESCRIPTION_ ACCEPTABILITY</entry>
                         </row>
                         <row>
                             <entry/>
@@ -2579,14 +2578,14 @@
                             <entry>Active</entry>
                             <entry>Concept used to represent a status for Components that are
                                 active.</entry>
-                            <entry>STATUS_VALUE</entry>
+                            <entry>STATUS_ VALUE</entry>
                         </row>
                         <row>
                             <entry/>
                             <entry><emphasis role="bold">Author</emphasis></entry>
                             <entry>Author</entry>
                             <entry> </entry>
-                            <entry>ROOT_VERTEX</entry>
+                            <entry>ROOT_ VERTEX</entry>
                         </row>
                         <row>
                             <entry/>
@@ -2594,7 +2593,7 @@
                             <entry>Canceled </entry>
                             <entry>Concept used to represent a status for Components that are
                                 canceled</entry>
-                            <entry>STATUS_VALUE</entry>
+                            <entry>STATUS_ VALUE</entry>
                         </row>
                         <row>
                             <entry/>
@@ -2608,7 +2607,7 @@
                             <entry><emphasis role="bold">Component field</emphasis></entry>
                             <entry>Component field </entry>
                             <entry>A display field type that references a Concept ID.</entry>
-                            <entry>DISPLAY_FIELDS</entry>
+                            <entry>DISPLAY_ FIELDS</entry>
                         </row>
                         <row>
                             <entry/>
@@ -2616,7 +2615,7 @@
                             <entry>Component Id list </entry>
                             <entry>A display field that references an ordered list of Concept
                                 IDs.</entry>
-                            <entry>DISPLAY_FIELDS</entry>
+                            <entry>DISPLAY_ FIELDS</entry>
                         </row>
                         <row>
                             <entry/>
@@ -2624,7 +2623,7 @@
                             <entry>Component Id set </entry>
                             <entry>A display field that references an unordered list of Concept
                                 IDs.</entry>
-                            <entry>DISPLAY_FIELDS</entry>
+                            <entry>DISPLAY_ FIELDS</entry>
                         </row>
                         <row>
                             <entry/>
@@ -2647,7 +2646,7 @@
                             <entry>Case insensitive</entry>
                             <entry>Value which designates character as not sensitive for a given
                                 description </entry>
-                            <entry>DESCRIPTION_CASE_SIGNIFICANCE</entry>
+                            <entry>DESCRIPTION_ CASE_ SIGNIFICANCE</entry>
                         </row>
                         <row>
                             <entry/>
@@ -2656,14 +2655,14 @@
                             <entry>Definition</entry>
                             <entry>Semantic value describing the description type for the
                                 description Pattern is a definition</entry>
-                            <entry>DESCRIPTION_TYPE</entry>
+                            <entry>DESCRIPTION_ TYPE</entry>
                         </row>
                         <row>
                             <entry/>
                             <entry><emphasis role="bold">Description </emphasis></entry>
                             <entry>Description</entry>
                             <entry>Human readable text for a Concept</entry>
-                            <entry>MODEL_CONCEPT</entry>
+                            <entry>MODEL_ CONCEPT</entry>
                         </row>
                         <row>
                             <entry><emphasis role="bold">ACCEPTABLE; PREFERRED</emphasis></entry>
@@ -2671,7 +2670,7 @@
                                 </emphasis></entry>
                             <entry>Description acceptability </entry>
                             <entry> Whether a given human readable text for a Concept is permissible </entry>
-                            <entry>MODEL_CONCEPT</entry>
+                            <entry>MODEL_ CONCEPT</entry>
                         </row>
                         <row>
                             <entry/>
@@ -2679,17 +2678,17 @@
                                 </emphasis></entry>
                             <entry>Case sensitive </entry>
                             <entry>Assumes the description is dependent on capitalization </entry>
-                            <entry>DESCRIPTION_CASE_SIGNIFICANCE</entry>
+                            <entry>DESCRIPTION_ CASE_ SIGNIFICANCE</entry>
                         </row>
                         <row>
-                            <entry><emphasis role="bold">DESCRIPTION_CASE_SENSITIVE;
-                                    DESCRIPTION_NOT_CASE_SENSITIVE</emphasis></entry>
+                            <entry><emphasis role="bold">DESCRIPTION_ CASE_ SENSITIVE; DESCRIPTION_
+                                    NOT_CASE_ SENSITIVE</emphasis></entry>
                             <entry><emphasis role="bold">Description case significance
                                 </emphasis></entry>
                             <entry>Description case significance </entry>
                             <entry>Specifies how to handle the description text in terms of case
                                 sensitivity </entry>
-                            <entry>MODEL_CONCEPT</entry>
+                            <entry>MODEL_ CONCEPT</entry>
                         </row>
                         <row>
                             <entry/>
@@ -2705,24 +2704,24 @@
                             <entry>Description Semantic </entry>
                             <entry>Purpose and meaning for the description Pattern and dialect
                                 Patterns </entry>
-                            <entry>MODEL_CONCEPT</entry>
+                            <entry>MODEL_ CONCEPT</entry>
                         </row>
                         <row>
-                            <entry><emphasis role="bold">DEFINITION_DESCRIPTION_TYPE;
-                                    FULLY_QUALIFIED_NAME_DESCRIPTION_TYPE;
-                                    REGULAR_NAME_DESCRIPTION_TYPE</emphasis></entry>
+                            <entry><emphasis role="bold">DEFINITION_ DESCRIPTION_ TYPE; FULLY_
+                                    QUALIFIED_ NAME_ DESCRIPTION_ TYPE; REGULAR_ NAME_ DESCRIPTION_
+                                    TYPE</emphasis></entry>
                             <entry><emphasis role="bold">Description type </emphasis></entry>
                             <entry>Description type </entry>
                             <entry>Specifying what type of description, it is i.e., is it fully
                                 qualified or regular and etc. </entry>
-                            <entry>MODEL_CONCEPT</entry>
+                            <entry>MODEL_ CONCEPT</entry>
                         </row>
                         <row>
                             <entry/>
                             <entry><emphasis role="bold">Descriptum </emphasis></entry>
                             <entry>Descriptum</entry>
                             <entry>The Semantic meaning for the EL++ Patterns </entry>
-                            <entry>MODEL_CONCEPT</entry>
+                            <entry>MODEL_ CONCEPT</entry>
                         </row>
                         <row>
                             <entry/>
@@ -2733,13 +2732,13 @@
                             <entry>PATH</entry>
                         </row>
                         <row>
-                            <entry><emphasis role="bold">ENGLISH_DIALECT</emphasis></entry>
+                            <entry><emphasis role="bold">ENGLISH_ DIALECT</emphasis></entry>
                             <entry><emphasis role="bold">Dialect</emphasis></entry>
                             <entry>Dialect</entry>
                             <entry><link
                                     xlink:href="https://www.google.com/search?safe=active&amp;sca_esv=2802dad21c2aa82f&amp;rlz=1C1GCEA_enUS1093US1093&amp;q=peculiar&amp;si=AKbGX_qNq0Y8zql7SxzZAf2-HTTOVobuSeLnlL2tVO9M2fGNfebMB7TKBhol7Sqwuay6sY3kGrSwFLy9ZcG8n0EzEGwsbKROZpu_7GoFc3oiudVKoMYiSQE%3D&amp;expnd=1"
                                     >Specifies the dialect of the language.</link></entry>
-                            <entry>MODEL_CONCEPT</entry>
+                            <entry>MODEL_ CONCEPT</entry>
                         </row>
                         <row>
                             <entry/>
@@ -2748,16 +2747,16 @@
                             <entry>A display field that references a di-graph whose edges are
                                 ordered pairs of vertices. Each edge can be followed from one vertex
                                 to another vertex.</entry>
-                            <entry>DISPLAY_FIELDS</entry>
+                            <entry>DISPLAY_ FIELDS</entry>
                         </row>
                         <row>
-                            <entry><emphasis role="bold">COMPONENT_FIELD; COMPONENT_ID_LIST_FIELD;
-                                    COMPONENT_ID_SET_FIELD; DIGRAPH_FIELD; DITREE_FIELD;
-                                    FLOAT_FIELD; INTEGER_FIELD; STRING</emphasis></entry>
+                            <entry><emphasis role="bold">COMPONENT_ FIELD; COMPONENT_ ID_LIST_
+                                    FIELD; COMPONENT_ ID_SET_ FIELD; DIGRAPH_ FIELD; DITREE_ FIELD;
+                                    FLOAT_ FIELD; INTEGER_ FIELD; STRING</emphasis></entry>
                             <entry><emphasis role="bold">Display Fields </emphasis></entry>
                             <entry>Display fields </entry>
                             <entry>Captures the human readable terms</entry>
-                            <entry>MODEL_CONCEPT</entry>
+                            <entry>MODEL_ CONCEPT</entry>
                         </row>
                         <row>
                             <entry/>
@@ -2766,7 +2765,7 @@
                             <entry>A display field that references a graph obtained from an
                                 undirected tree by replacing each undirected edge by two directed
                                 edges with opposite directions.</entry>
-                            <entry>DISPLAY_FIELDS</entry>
+                            <entry>DISPLAY_ FIELDS</entry>
                         </row>
                         <row>
                             <entry/>
@@ -2784,13 +2783,13 @@
                             <entry>PATTERN</entry>
                         </row>
                         <row>
-                            <entry><emphasis role="bold">NECESSARY_SET; SUFFICIENT_SET;
-                                    IMPLICATION_SET; ROLE; ROLE_GROUP</emphasis></entry>
+                            <entry><emphasis role="bold">NECESSARY_ SET; SUFFICIENT_ SET;
+                                    IMPLICATION_ SET; ROLE; ROLE_ GROUP</emphasis></entry>
                             <entry><emphasis role="bold">EL++ Inferred terminological axioms
                                 </emphasis></entry>
                             <entry>EL++ Inferred terminological axioms</entry>
                             <entry> </entry>
-                            <entry>MODEL_CONCEPT</entry>
+                            <entry>MODEL_ CONCEPT</entry>
                         </row>
                         <row>
                             <entry/>
@@ -2801,17 +2800,17 @@
                             <entry>PATTERN</entry>
                         </row>
                         <row>
-                            <entry><emphasis role="bold">NECESSARY_SET; SUFFICIENT_SET;v
-                                    IMPLICATION_SET; ROLE; ROLE_GROUP</emphasis></entry>
+                            <entry><emphasis role="bold">NECESSARY_ SET; SUFFICIENT_ SET;v
+                                    IMPLICATION_ SET; ROLE; ROLE_ GROUP</emphasis></entry>
                             <entry><emphasis role="bold">EL++ Stated terminological axioms
                                 </emphasis></entry>
                             <entry>EL++ Stated terminological axioms </entry>
                             <entry> </entry>
-                            <entry>MODEL_CONCEPT</entry>
+                            <entry>MODEL_ CONCEPT</entry>
                         </row>
                         <row>
-                            <entry><emphasis role="bold">US_ENGLISH_DIALECT;
-                                    GB_ENGLISH_DIALECT</emphasis></entry>
+                            <entry><emphasis role="bold">US_ ENGLISH_ DIALECT; GB_ ENGLISH_
+                                    DIALECT</emphasis></entry>
                             <entry><emphasis role="bold">English Dialect </emphasis></entry>
                             <entry>English Dialect</entry>
                             <entry>Specifies the dialect of the English language</entry>
@@ -2831,14 +2830,14 @@
                             <entry> Existential restrictions describe objects that participate in at
                                 least one relationship along a specified property to objects of a
                                 specified class.</entry>
-                            <entry>ROLE_OPERATOR</entry>
+                            <entry>ROLE_ OPERATOR</entry>
                         </row>
                         <row>
                             <entry/>
                             <entry><emphasis role="bold">Float field </emphasis></entry>
                             <entry>Float field </entry>
                             <entry> Represents values as high-precision fractional values.</entry>
-                            <entry>DISPLAY_FIELDS</entry>
+                            <entry>DISPLAY_ FIELDS</entry>
                         </row>
                         <row>
                             <entry/>
@@ -2855,7 +2854,7 @@
                             <entry>Fully qualified name is a description that uniquely identifies
                                 and differentiates it from other Concepts with similar
                                 descriptions</entry>
-                            <entry>DESCRIPTION_TYPE</entry>
+                            <entry>DESCRIPTION_ TYPE</entry>
                         </row>
                         <row>
                             <entry/>
@@ -2878,7 +2877,7 @@
                                 </emphasis></entry>
                             <entry>GB English dialect / GB English</entry>
                             <entry>Great Britain: English Language reference set </entry>
-                            <entry>ENGLISH_DIALECT</entry>
+                            <entry>ENGLISH_ DIALECT</entry>
                         </row>
                         <row>
                             <entry/>
@@ -2889,13 +2888,13 @@
                             <entry>PATTERN</entry>
                         </row>
                         <row>
-                            <entry><emphasis role="bold"
-                                >UNIVERSALLY_UNIQUE_IDENTIFIER</emphasis></entry>
+                            <entry><emphasis role="bold">UNIVERSALLY_ UNIQUE_
+                                IDENTIFIER</emphasis></entry>
                             <entry><emphasis role="bold">Identifier Source </emphasis></entry>
                             <entry>Identifier source</entry>
                             <entry>An identifier used to label the identity of a unique
                                 Component.</entry>
-                            <entry>MODEL_CONCEPT</entry>
+                            <entry>MODEL_ CONCEPT</entry>
                         </row>
                         <row>
                             <entry/>
@@ -2903,8 +2902,8 @@
                             <entry>Implication set </entry>
                             <entry>A set of relationships that indicate something has an
                                 implication. Not necessarily or sufficient but implicated.</entry>
-                            <entry>EL_PLUS_PLUS_STATED_TERMINOLOGICAL_AXIOMS;
-                                EL_PLUS_PLUS_INFERRED_TERMINOLOGICAL_AXIOMS</entry>
+                            <entry>EL_ PLUS_ PLUS_ STATED_ TERMINO LOGICAL_ AXIOMS; EL_PLUS_PLUS_
+                                INFERRED_ TERMINO LOGICAL_ AXIOMS</entry>
                         </row>
                         <row>
                             <entry/>
@@ -2912,7 +2911,7 @@
                             <entry>Inactive</entry>
                             <entry>Concept used to represent a status for Components that are no
                                 longer active</entry>
-                            <entry>STATUS_VALUE</entry>
+                            <entry>STATUS_ VALUE</entry>
                         </row>
                         <row>
                             <entry/>
@@ -2920,7 +2919,7 @@
                             <entry>Inferred Navigation</entry>
                             <entry>The origins and destinations for Concepts based on the reasoner
                                 generated inferred terminological axioms </entry>
-                            <entry>MODEL_CONCEPT</entry>
+                            <entry>MODEL_ CONCEPT</entry>
                         </row>
                         <row>
                             <entry/>
@@ -2937,11 +2936,11 @@
                             <entry>Integer field</entry>
                             <entry>A data type that represents some range of mathematical
                                 integers</entry>
-                            <entry>DISPLAY_FIELDS</entry>
+                            <entry>DISPLAY_ FIELDS</entry>
                         </row>
                         <row>
-                            <entry><emphasis role="bold">MODEL_CONCEPT; PATTERN; STATUS_VALUE; USER;
-                                    MODULE; PATH</emphasis></entry>
+                            <entry><emphasis role="bold">MODEL_ CONCEPT; PATTERN; STATUS_ VALUE;
+                                    USER; MODULE; PATH</emphasis></entry>
                             <entry><emphasis role="bold">Integrated Knowledge
                                 Management</emphasis></entry>
                             <entry>Tinkar root Concept </entry>
@@ -2960,7 +2959,7 @@
                             <entry><emphasis role="bold">Is-a</emphasis></entry>
                             <entry>Is a</entry>
                             <entry>Designates the parent child relationship</entry>
-                            <entry>MODEL_CONCEPT</entry>
+                            <entry>MODEL_ CONCEPT</entry>
                         </row>
                         <row>
                             <entry/>
@@ -2977,12 +2976,12 @@
                             <entry>LANGUAGE</entry>
                         </row>
                         <row>
-                            <entry><emphasis role="bold">ENGLISH_LANGUAGE;
-                                    SPANISH_LANGUAGE</emphasis></entry>
+                            <entry><emphasis role="bold">ENGLISH_ LANGUAGE; SPANISH_
+                                    LANGUAGE</emphasis></entry>
                             <entry><emphasis role="bold">Language</emphasis></entry>
                             <entry>Language </entry>
                             <entry>Specifies the language of the description text.</entry>
-                            <entry>MODEL_CONCEPT</entry>
+                            <entry>MODEL_ CONCEPT</entry>
                         </row>
                         <row>
                             <entry/>
@@ -2990,7 +2989,7 @@
                             <entry>Language for Description</entry>
                             <entry>The Semantic value indicating which language is used in the
                                 description text</entry>
-                            <entry>MODEL_CONCEPT</entry>
+                            <entry>MODEL_ CONCEPT</entry>
                         </row>
                         <row>
                             <entry/>
@@ -3005,7 +3004,7 @@
                             <entry>Logical Definition</entry>
                             <entry>The Semantic value describing the purpose of the stated and
                                 inferred terminological axioms. </entry>
-                            <entry>MODEL_CONCEPT</entry>
+                            <entry>MODEL_ CONCEPT</entry>
                         </row>
                         <row>
                             <entry/>
@@ -3019,65 +3018,64 @@
                             <entry><emphasis role="bold">Meaning </emphasis></entry>
                             <entry>Meaning </entry>
                             <entry>The interpretation or explanation field for a Pattern/Semantics </entry>
-                            <entry>MODEL_CONCEPT</entry>
+                            <entry>MODEL_ CONCEPT</entry>
                         </row>
                         <row>
-                            <entry><emphasis role="bold">DESCRIPTION; DESCRIPTION_ACCEPTABILITY;
-                                    DESCRIPTION_CASE_SIGNIFICANCE; DESCRIPTION_SEMANTIC;
-                                    DESCRIPTION_TYPE; DESCRIPTUM; DIALECT; DISPLAY_FIELDS;
-                                    EL_PLUS_PLUS_INFERRED_TERMINOLOGICAL_AXIOMS;
-                                    EL_PLUS_PLUS_STATED_TERMINOLOGICAL_AXIOMS; IDENTIFIER_SOURCE;
-                                    INFERRED_NAVIGATION; IS_A; LANGUAGE; LANGUAGE_FOR_DESCRIPTION;
-                                    LOGICAL_DEFINITION; MEANING; PHENOMENON;
-                                    RELATIONSHIP_DESTINATION; RELATIONSHIP_ORIGIN;
-                                    STATED_NAVIGATION; TEXT_FOR_DESCRIPTION;
-                                PURPOSE</emphasis></entry>
+                            <entry><emphasis role="bold">DESCRIPTION; DESCRIPTION_ ACCEPTABILITY;
+                                    DESCRIPTION_ CASE_SIGNIFICANCE; DESCRIPTION_ SEMANTIC;
+                                    DESCRIPTION_ TYPE; DESCRIPTUM; DIALECT; DISPLAY_ FIELDS;
+                                    EL_PLUS_ PLUS_ INFERRED_ TERMINOLOGICAL_ AXIOMS; EL_PLUS_
+                                    PLUS_STATED_ TERMINOLOGICAL_ AXIOMS; IDENTIFIER_ SOURCE;
+                                    INFERRED_ NAVIGATION; IS_A; LANGUAGE; LANGUAGE_ FOR_
+                                    DESCRIPTION; LOGICAL_ DEFINITION; MEANING; PHENOMENON;
+                                    RELATIONSHIP_ DESTINATION; RELATIONSHIP_ ORIGIN; STATED_
+                                    NAVIGATION; TEXT_FOR_ DESCRIPTION; PURPOSE</emphasis></entry>
                             <entry><emphasis role="bold">Model Concept</emphasis></entry>
                             <entry>Model Concept</entry>
                             <entry> </entry>
-                            <entry>ROOT_VERTEX</entry>
+                            <entry>ROOT_ VERTEX</entry>
                         </row>
                         <row>
-                            <entry><emphasis role="bold">PRIMORDIAL_MODULE</emphasis></entry>
+                            <entry><emphasis role="bold">PRIMORDIAL_ MODULE</emphasis></entry>
                             <entry><emphasis role="bold">Module</emphasis></entry>
                             <entry>Module</entry>
                             <entry> </entry>
-                            <entry>ROOT_VERTEX</entry>
+                            <entry>ROOT_ VERTEX</entry>
                         </row>
                         <row>
                             <entry/>
                             <entry><emphasis role="bold">Necessary set</emphasis></entry>
                             <entry>Necessary set </entry>
                             <entry>A set of relationships that is always true of a Concept.</entry>
-                            <entry>EL_PLUS_PLUS_STATED_TERMINOLOGICAL_AXIOMS;
-                                EL_PLUS_PLUS_INFERRED_TERMINOLOGICAL_AXIOMS</entry>
+                            <entry>EL_ PLUS_ PLUS_ STATED_ TERMINO LOGICAL_ AXIOMS; EL_ PLUS_ PLUS_
+                                INFERRED_ TERMINO LOGICAL_ AXIOMS</entry>
                         </row>
                         <row>
-                            <entry><emphasis role="bold">DEVELOPMENT_PATH; MASTER_PATH;
-                                    PRIMORDIAL_PATH; SANDBOX_PATH</emphasis></entry>
+                            <entry><emphasis role="bold">DEVELOPMENT_ PATH; MASTER_ PATH;
+                                    PRIMORDIAL_ PATH; SANDBOX_ PATH</emphasis></entry>
                             <entry><emphasis role="bold">Path</emphasis></entry>
                             <entry>Path</entry>
                             <entry>A set of assets under version control that can be managed
                                 distinctly from other assets. Paths ‘branch’ from other paths when
                                 established and can be ‘merged’ with other paths as well.</entry>
-                            <entry>ROOT_VERTEX</entry>
+                            <entry>ROOT_ VERTEX</entry>
                         </row>
                         <row>
-                            <entry><emphasis role="bold">DESCRIPTION_PATTERN; GB_DIALECT_PATTERN;
-                                    IDENTIFIER_PATTERN; INFERRED_NAVIGATION_PATTERN;
-                                    STATED_NAVIGATION_PATTERN; US_DIALECT_PATTERN</emphasis></entry>
+                            <entry><emphasis role="bold">DESCRIPTION_ PATTERN; GB_DIALECT_ PATTERN;
+                                    IDENTIFIER_ PATTERN; INFERRED_ NAVIGATION_PATTERN; STATED_
+                                    NAVIGATION_ PATTERN; US_DIALECT_ PATTERN</emphasis></entry>
                             <entry><emphasis role="bold">Pattern</emphasis></entry>
                             <entry>Pattern</entry>
                             <entry>A Pattern is a set of display fields and values that can be
                                 asserted about a Concept</entry>
-                            <entry>ROOT_VERTEX</entry>
+                            <entry>ROOT_ VERTEX</entry>
                         </row>
                         <row>
                             <entry/>
                             <entry><emphasis role="bold">Phenomenon</emphasis></entry>
                             <entry>Phenomenon</entry>
                             <entry>A unique thought, fact, or circumstance</entry>
-                            <entry>MODEL_CONCEPT</entry>
+                            <entry>MODEL_ CONCEPT</entry>
                         </row>
                         <row>
                             <entry/>
@@ -3093,7 +3091,7 @@
                             <entry>Specifies that a description is preferred within a language or
                                 dialect. There will be one preferred description for each
                                 description type.</entry>
-                            <entry>DESCRIPTION_ACCEPTABILITY</entry>
+                            <entry>DESCRIPTION_ ACCEPTABILITY</entry>
                         </row>
                         <row>
                             <entry/>
@@ -3115,7 +3113,7 @@
                             <entry>Primordial </entry>
                             <entry>Concept used to represent a status for Components that have not
                                 yet been released and exist in their most basic form.</entry>
-                            <entry>STATUS_VALUE</entry>
+                            <entry>STATUS_ VALUE</entry>
                         </row>
                         <row>
                             <entry/>
@@ -3123,7 +3121,7 @@
                             <entry>Purpose</entry>
                             <entry>The reason for which a Tinkar value in a Pattern was created or
                                 for which it exists. </entry>
-                            <entry>MODEL_CONCEPT</entry>
+                            <entry>MODEL_ CONCEPT</entry>
                         </row>
                         <row>
                             <entry/>
@@ -3131,7 +3129,7 @@
                                 type</emphasis></entry>
                             <entry>Regular name description type </entry>
                             <entry>There may be descriptions/synonyms marked as ‘regular.’</entry>
-                            <entry>DESCRIPTION_TYPE</entry>
+                            <entry>DESCRIPTION_ TYPE</entry>
                         </row>
                         <row>
                             <entry/>
@@ -3139,7 +3137,7 @@
                             <entry>Relationship destination</entry>
                             <entry>Signifies path to child Concepts which are more specific than the
                                 Tinkar term</entry>
-                            <entry>MODEL_CONCEPT</entry>
+                            <entry>MODEL_ CONCEPT</entry>
                         </row>
                         <row>
                             <entry/>
@@ -3147,19 +3145,19 @@
                             <entry>Relationship origin</entry>
                             <entry>Signifies path to parent Concepts which are more general than the
                                 Tinkar term</entry>
-                            <entry>MODEL_CONCEPT</entry>
+                            <entry>MODEL_ CONCEPT</entry>
                         </row>
                         <row>
-                            <entry><emphasis role="bold">ROLE_TYPE; ROLE_OPERATOR;
-                                    ROLE_RESTRICTION</emphasis></entry>
+                            <entry><emphasis role="bold">ROLE_ TYPE; ROLE_ OPERATOR; ROLE_
+                                    RESTRICTION</emphasis></entry>
                             <entry><emphasis role="bold">Role</emphasis></entry>
                             <entry>Role</entry>
                             <entry>Is an abstract representation of a high-level role for a
                                 therapeutic medicinal product; the Concepts are not intended to
                                 describe a detailed indication for therapeutic use nor imply that
                                 therapeutic use is appropriate in all clinical situations.</entry>
-                            <entry>ROLE_GROUP; EL_PLUS_PLUS_STATED_TERMINOLOGICAL_AXIOMS;
-                                EL_PLUS_PLUS_INFERRED_TERMINOLOGICAL_AXIOMS</entry>
+                            <entry>ROLE_ GROUP; EL_ PLUS_ PLUS_ STATED_ TERMINO LOGICAL_ AXIOMS; EL_
+                                PLUS_ PLUS_ INFERRED_ TERMINO LOGICAL_ AXIOMS</entry>
                         </row>
                         <row>
                             <entry><emphasis role="bold">ROLE</emphasis></entry>
@@ -3168,12 +3166,12 @@
                             <entry>An association between a set of attribute or axiom value pairs
                                 that causes them to be considered together within a Concept
                                 definition or post coordinated expression.</entry>
-                            <entry>EL_PLUS_PLUS_STATED_TERMINOLOGICAL_AXIOMS;
-                                EL_PLUS_PLUS_INFERRED_TERMINOLOGICAL_AXIOMS</entry>
+                            <entry>EL_ PLUS_ PLUS_ STATED_ TERMINO LOGICAL_ AXIOMS; EL_ PLUS_ PLUS_
+                                INFERRED_ TERMINO LOGICAL_ AXIOMS</entry>
                         </row>
                         <row>
-                            <entry><emphasis role="bold">UNIVERSAL_RESTRICTION;
-                                    EXISTENTIAL_RESTRICTION</emphasis></entry>
+                            <entry><emphasis role="bold">UNIVERSAL_ RESTRICTION; EXISTENTIAL_
+                                    RESTRICTION</emphasis></entry>
                             <entry><emphasis role="bold">Role operator</emphasis></entry>
                             <entry>Role operator </entry>
                             <entry>Concept that is used to describe universal vs existential
@@ -3224,7 +3222,7 @@
                             <entry>Stated Navigation</entry>
                             <entry>The origins and destinations for Concepts based on the reasoner
                                 generated stated terminological axioms </entry>
-                            <entry>MODEL_CONCEPT</entry>
+                            <entry>MODEL_ CONCEPT</entry>
                         </row>
                         <row>
                             <entry/>
@@ -3236,14 +3234,13 @@
                             <entry>PATTERN</entry>
                         </row>
                         <row>
-                            <entry><emphasis role="bold">ACTIVE_STATE; CANCELED_STATE;
-                                    INACTIVE_STATE; PRIMORDIAL_STATE;
-                                WITHDRAWN_STATE</emphasis></entry>
+                            <entry><emphasis role="bold">ACTIVE_ STATE; CANCELED_ STATE; INACTIVE_
+                                    STATE; PRIMORDIAL_ STATE; WITHDRAWN_ STATE</emphasis></entry>
                             <entry><emphasis role="bold">Status value</emphasis></entry>
                             <entry>Status </entry>
                             <entry>The status of the STAMP Coordinate(Active, Cancelled, Inactive,
                                 Primordial)</entry>
-                            <entry>ROOT_VERTEX</entry>
+                            <entry>ROOT_ VERTEX</entry>
                         </row>
                         <row>
                             <entry/>
@@ -3252,7 +3249,7 @@
                             <entry>a sequence of characters, either as a literal constant or as a
                                 variable. Strings could be used to represent terms from code systems
                                 or URLs, textual definitions, etc.</entry>
-                            <entry>DISPLAY_FIELDS</entry>
+                            <entry>DISPLAY_ FIELDS</entry>
                         </row>
                         <row>
                             <entry/>
@@ -3262,8 +3259,8 @@
                                 subtypes from all other Concepts. A Concept that contains at least
                                 one set of necessary and sufficient conditions is considered
                                 defined.</entry>
-                            <entry>EL_PLUS_PLUS_STATED_TERMINOLOGICAL_AXIOMS;
-                                EL_PLUS_PLUS_INFERRED_TERMINOLOGICAL_AXIOMS</entry>
+                            <entry>EL_ PLUS_ PLUS_ STATED_ TERMINO LOGICAL_ AXIOMS; EL_ PLUS_ PLUS_
+                                INFERRED_ TERMINO LOGICAL_ AXIOMS</entry>
                         </row>
                         <row>
                             <entry/>
@@ -3278,7 +3275,7 @@
                             <entry>Text</entry>
                             <entry>Captures the human readable text for a description in
                                 Komet</entry>
-                            <entry>MODEL_CONCEPT</entry>
+                            <entry>MODEL_ CONCEPT</entry>
                         </row>
                         <row>
                             <entry/>
@@ -3287,7 +3284,7 @@
                             <entry>US English dialect </entry>
                             <entry>Particular form of language specific form of English language,
                                 particular to US</entry>
-                            <entry>ENGLISH_DIALECT</entry>
+                            <entry>ENGLISH_ DIALECT</entry>
                         </row>
                         <row>
                             <entry/>
@@ -3295,7 +3292,7 @@
                             <entry>Universal restriction</entry>
                             <entry> Universal restrictions constrain the relationships along a given
                                 property to Concepts that are members of a specific class.</entry>
-                            <entry>ROLE_OPERATOR</entry>
+                            <entry>ROLE_ OPERATOR</entry>
                         </row>
                         <row>
                             <entry/>
@@ -3304,7 +3301,7 @@
                             <entry>UUID</entry>
                             <entry>A universally unique identifier that uniquely represents a
                                 Concept in Tinkar </entry>
-                            <entry>IDENTIFIER_SOURCE</entry>
+                            <entry>IDENTIFIER_ SOURCE</entry>
                         </row>
                         <row>
                             <entry/>
@@ -3319,7 +3316,7 @@
                             <entry><emphasis role="bold">Withdrawn state</emphasis></entry>
                             <entry><emphasis role="bold">Concept used to represent a status for
                                     Components that are no longer active</emphasis></entry>
-                            <entry><emphasis role="bold">STATUS_VALUE</emphasis></entry>
+                            <entry><emphasis role="bold">STATUS_ VALUE</emphasis></entry>
                         </row>
                     </tbody>
                 </tgroup>

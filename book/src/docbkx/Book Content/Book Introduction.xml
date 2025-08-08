@@ -209,7 +209,7 @@
                 
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../images/KnowledgeArchitectureFullSkyscraper.svg" scale="20" align="center"/>
+                            <imagedata fileref="../images/KnowledgeArchitectureFullSkyscraper.svg" scale="30" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -430,7 +430,7 @@
                     
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../images/Example%20Data%20Exchange%20Path.svg" scale="20" align="center"/>
+                            <imagedata fileref="../images/Example%20Data%20Exchange%20Path.svg" scale="15" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure> 
