@@ -110,7 +110,7 @@
             
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="../images/Challenges%20of%20Structure%20and%20Meaning.svg" scale="15" align="center"/>
+                    <imagedata fileref="../images/Challenges%20of%20Structure%20and%20Meaning.svg" scale="10" align="center"/>
                 </imageobject>
             </mediaobject>
         </figure>
@@ -715,7 +715,7 @@
             <title>Modules and Extensions</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="../images/Modules%20and%20Extensions.svg" scale="20"
+                    <imagedata fileref="../images/Modulesandextensions.svg" scale="30"
                         align="center"/>
                 </imageobject>
             </mediaobject>
@@ -848,8 +848,8 @@
                 </listitem>
                 <listitem>
                     <para>Makary, M. A., &amp; Daniel, M. (2016). Medical error—the third leading
-                        cause of death in the US. BMJ, 353. Available from:
-                        https://www.bing.com/search?pglt=41&amp;q=Makary%2C+M.+A.%2C+%26+Daniel%2C+M.+(2016).+Medical+error—the+third+leading+cause+of+death+in+the+US.+BMJ%2C+353.&amp;cvid=333f9a74df404e9db7078a675306fd25&amp;gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIICAEQ6QcY_FXSAQc4NjNqMGoxqAIAsAIA&amp;FORM=ANNAB1&amp;</para>
+                        cause of death in the US. BMJ, 353. Available from: <link
+                            xlink:href="https://pubmed.ncbi.nlm.nih.gov/27143499/"/></para>
                 </listitem>
                 <listitem>
                     <para>Crossing the Quality Chasm: A New Health System for the 21st Century
