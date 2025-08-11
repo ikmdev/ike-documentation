@@ -109,7 +109,6 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="../images/Unit%20Test%20Code%20Coverage%20Report%20for%20Komet%20Using%20JaCoCo.svg" scale="80" align="center"/>
-                            <imagedata fileref="../images/Unit%20Test%20Code%20Coverage%20Report%20for%20Komet%20Using%20JaCoCo.svg" scale="80" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
