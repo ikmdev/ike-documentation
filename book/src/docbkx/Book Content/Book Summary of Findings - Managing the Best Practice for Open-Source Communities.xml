@@ -409,32 +409,30 @@
         </section>
         <section>
             <title>Where Licenses Break Interoperability: Redistribution and Modification</title>
-            <para>The Regenstrief institute highlights guiding principles such as openness and
+            <para>The Regenstrief Institute highlights guiding principles such as openness and
                 agility in improving and widening LOINC®’s implementation. Regenstrief does not
-                allow the distribution of modified codes under their license. Often, health systems
-                will adapt an existing code to better represent their localized environment where
-                there is no one-for-one match. Users must create their own solution limited to the
-                licensing agreement, engage in a feedback process with the Regenstrief Institute,
-                and wait until a new code is issued directly from Regenstrief to be able to share
-                between systems. </para>
-            <para>SNOMED International does not allow for derivative work or extensions to be
-                created if it has not already been issued a Namespace Identifier. Modifications are
-                disallowed under their SNOMED CT® Affiliate license and must go through a feedback
-                process where users can petition for added codes in a future release cycle. This is
-                to avoid confusion and ambiguity of SNOMED International codes and prevent against
-                inconsistencies between systems. [12] As a result, there will be many forms of
-                similarly derived codes in a localized format. </para>
-            <para>This waiting cycle creates gaps that directly impact the quality and
-                interoperability of data. While organizations petition to have new codes created,
-                they must continue to standardize their codes before their data is transferred to
-                another system. During this step, data can be lost during the transfer from a local
-                code to a standard LOINC® or SNOMED CT® code. Doctors may lose the much-needed
-                context surrounding patient care, leading to redundancy in additional ordered tests
-                and referrals. Moreover, the issuance of new codes does not circumvent the usage of
-                localized knowledge. New codes can be used in place of local knowledge, but it can
-                also be further adapted into knowledge for the specific needs of practitioners. This
-                does not solve the transfer errors that can occur when local codes are standardized.
-            </para>
+                allow the distribution of modified codes under their license. Health systems may
+                sometimes adapt an existing code to better represent their localized environment
+                when there is no one-for-one match. In such cases, users must create their own
+                solution within the licensing agreement, engage in a feedback process with the
+                Regenstrief Institute, and wait until a new code is issued directly from Regenstrief
+                before sharing between systems.</para>
+            <para>Similarly, SNOMED International does not allow for derivative work or extensions
+                to be created without a Namespace Identifier. Modifications are disallowed under
+                their SNOMED CT® Affiliate license, and users must go through a feedback process to
+                petition for added codes in future release cycles. This approach aims to avoid
+                confusion and ambiguity and to prevent inconsistencies between systems. [12] As a
+                result, there may be various forms of similarly derived codes in localized
+                formats.</para>
+            <para>The process of waiting for new codes may result in gaps that can affect data
+                quality and interoperability. While organizations petition for new codes, they
+                continue to standardize their codes before transferring data to another system.
+                During this step, there is a risk that some data may be lost when converting from a
+                local code to a standard LOINC® or SNOMED CT® code, which could affect the context
+                available to clinicians and potentially lead to additional tests or referrals.
+                Additionally, the issuance of new codes may not fully address the use of localized
+                knowledge, as new codes can be further adapted for specific practitioner needs.
+                Transfer errors may still occur when standardizing local codes.</para>
         </section>
     </section>
     <section>
@@ -614,18 +612,18 @@
                                 associated with implementing and supporting LOINC® external to the
                                 licensing. </entry>
                             <entry>
-                                <para>SNOMED International, which includes SNOMED CT®, has fees
-                                    associated with its licensee depending on the usage by the
-                                    holder. For non-commercial use, such as by academic bodies,
-                                    there is no fee for SNOMED International licensing, but are
-                                    limited on redistribution. </para>
+                                <para>SNOMED International, which includes SNOMED CT®,applies
+                                    licensing fees based on the type of usage. For non-commercial
+                                    use, such as by academic institutions, there is no fee for
+                                    SNOMED International licensing, although redistribution is
+                                    limited under these terms. </para>
                                 <para> </para>
-                                <para>For commercial use, however, like adding into existing
-                                    healthcare systems for usage, then a fee is incurred for the
-                                    license. There are multiple licenses to best support the varying
-                                    needs of users. There are also fees associated with non-IHTSDO
-                                    member countries.</para>
-                                <para> </para>
+                                <para>For commercial use, such as integration into healthcare
+                                    systems, a licensing fee is required. Multiple license types are
+                                    available to accommodate the varying needs of users.
+                                    Additionally, fees may apply to users in countries that are not
+                                    members of the International Health Terminology Standards
+                                    Development Organisation (IHTSDO).</para>
                             </entry>
                         </row>
                         <row>
