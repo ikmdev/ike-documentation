@@ -48,12 +48,12 @@
             terms, codes, synonyms, and definitions used in clinical documentation and reporting.
             Both SNOMED CT® and LOINC® can be used as a common terminology to represent clinical
             information consistently and comprehensively in the electronic exchange of health data.
-            However, two or more common terminologies which serve near identical purposes is
-            oxymoronic and leaves room for improvement, consolidation, and harmonization. For lab
-            data exchange, SNOMED CT® is typically used to encode test results and observations, and
-            LOINC® is often used to encode lab tests (however, LOINC® does also represent some test
-            results). These relationships, overlaps, and contradictions present implementers with
-            the need to use these terminologies in more integrated ways.</para>
+            However, the existence of multiple common terminologies serving similar purposes
+            highlights opportunities for improvement, consolidation, and harmonization. For lab data
+            exchange, SNOMED CT® is typically used to encode test results and observations, and
+            LOINC® is often used to encode lab tests (although LOINC® also represents some test
+            results). These relationships and overlaps require implementers to use these
+            terminologies in integrated ways.</para>
     </section>
     <section>
         <title>Objectives and Approach</title>

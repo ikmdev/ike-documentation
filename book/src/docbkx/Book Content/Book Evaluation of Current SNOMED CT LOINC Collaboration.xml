@@ -424,12 +424,12 @@
             <para>A goal is for the majority of the concepts created in the LOINC® Extension of
                 SNOMED CT® is to be designated as sufficiently defined. Where this is not possible,
                 the concept is designated as primitive. Primitive concepts within the SNOMED CT®
-                terminology and its extensions interfere with use of a classification process where
-                the formally stated definitions of each concept compute the subsumption hierarchies
-                and defining properties of each concept. Some of the concepts will remain as
-                primitive in future releases and some will change to fully defined as the work
-                progresses. Some concepts are currently designated as primitive as a map from the
-                needed LOINC® Part to SNOMED CT® concept does not yet exist. However, this is
+                terminology and its extensions may reduce the effectiveness of classification
+                processes that rely on formally stated definitions to compute subsumption
+                hierarchies and defining properties for each concept. Some of the concepts will
+                remain as primitive in future releases and some will change to fully defined as the
+                work progresses. Some concepts are currently designated as primitive as a map from
+                the needed LOINC® Part to SNOMED CT® concept does not yet exist. However, this is
                 expected to be resolved in future releases. [2]</para>
             <para>Across many domains, the meaning of a particular observation can be best
                 understood in the context of the set of possible answers (result values). For
