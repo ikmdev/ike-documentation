@@ -9,12 +9,12 @@
         <section>
             <title>Background</title>
             <para>In today’s current state, <emphasis role="bold">Laboratory Real-World Data (RWD)
-                    is of remarkably low-quality </emphasis>which affects quality of care.Currently,
-                standard test results and test information are encoded both inconsistently and
-                incompletely. The current laboratory data standards alone (e.g., Logical Observation
-                Identifiers, Names, and Codes (LOINC®)) do not provide the level of detail or
-                precision needed for the advanced analytics that power the clinical, regulatory,
-                public health, and coverage determination decisions. </para>
+                    is of remarkably low-quality </emphasis>which affects quality of care.
+                Currently, standard test results and test information are encoded both
+                inconsistently and incompletely. The current laboratory data standards alone (e.g.,
+                Logical Observation Identifiers, Names, and Codes (LOINC®)) do not provide the level
+                of detail or precision needed for the advanced analytics that power the clinical,
+                regulatory, public health, and coverage determination decisions. </para>
             <para>As a result of these low-quality data, patient safety is at risk, quality of care
                 diminishes, and accuracy of test results come into question. Simultaneously, this
                 low-quality data has negatively impacted operational efficiency within both federal

@@ -9,9 +9,9 @@
         <para>The healthcare system in America has undergone numerous changes throughout the past
             decades, most notably in the way it records, retains, and transfers medical records.
             Within these records, clinical laboratory data, including orders, results, and
-            interpretations are among the most important types of data. This information is used in
-            a variety of settings including clinical care, public health, and even the development
-            of drugs and medical devices. </para>
+            interpretations are important types of data. This information is used in a variety of
+            settings including clinical care, public health, and even the development of drugs and
+            medical devices. </para>
         <para>With the evolution of healthcare data has come the evolution of how it’s recorded.
             Today health care and laboratory systems use terminology standards such as LOINC® and
             SNOMED CT®. The long-term challenge to using these standards is that laboratory data is

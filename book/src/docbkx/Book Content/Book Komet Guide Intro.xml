@@ -33,12 +33,12 @@
         glance, and robust provenance tracking. These capabilities help ensure that health data
         remains accurate, reliable, and actionable across systems. </para>
     <para>Komet’s architectural foundation is designed for integration, not competition.
-        <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250721T125421-0500" comment="pulled from part 5 solor section. need to update with correct verbiage"?>Solor,
+        Tinkar<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250721T125421-0500" comment="pulled from part 5 solor section. need to update with correct verbiage"?>,
         the underlying model, does not redistribute content or compete with existing standards and
         processes. Instead, it enables users to integrate their own and others’ terminologies
         provided they have the appropriate licenses for distribution (e.g., for LOINC®, SNOMED CT®,
         and RxNorm). Komet’s transformation processes and architecture are available under the
-        Apache 2 Open Source License, and Solor fully supports and relies on foundational
+        Apache 2 Open Source License, and Tinkar fully supports and relies on foundational
         terminologies and their organizations. Its intent is to complement, not replace, these
         standards, allowing organizations to freely integrate Solor content into their standards. </para><?oxy_comment_end?>
     <para>Komet’s open-source, modular design offers unmatched flexibility. It integrates seamlessly
