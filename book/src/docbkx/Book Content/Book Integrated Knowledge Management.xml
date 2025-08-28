@@ -22,8 +22,7 @@
         <title>The Problem IKM Addresses</title>
         <para>In healthcare, standards development organizations (SDOs) develop, maintain, and
             distribute or publish healthcare standards. SDOs exist in every industry, but in health
-            Information Technology (IT) the following are key examples of healthcare standards
-            developed by the Regenstrief Institute: <informaltable>
+            Information Technology (IT) the following are key examples of healthcare standards: <informaltable>
                 <tgroup cols="2">
                     <colspec colnum="1" colname="col1"/>
                     <colspec colnum="2" colname="col2"/>
@@ -86,7 +85,7 @@
                     
                     <imagedata fileref="../images/IK%20Base.svg" 
                         
-                        scale="25" align="center"/> 
+                        scale="35" align="center"/> 
                     
                 </imageobject> 
                 
@@ -96,12 +95,13 @@
         <para>Our IKM approach employs a common model for data representation to support the
             integration of these disparate standards and improve the quality and interoperability of
             data. One of the goals of this body of work is to develop both a common model and the
-            necessary tooling to support the implementation of the common model and IKM
-            capabilities. Our aim is to improve patient care and safety through interoperable,
-            high-quality data, and accurate transmission within and between healthcare systems.
-            Improved data quality will cascade to other refinements within the healthcare ecosystem,
-            such as improved research capabilities, identification of real-world data trends, and
-            real-time public health information as outlined in the following figure.</para>
+            necessary tooling to support the implementation of the common model and IKM capabilities
+            as shown in the figure above. Our aim is to improve patient care and safety through
+            interoperable, high-quality data, and accurate transmission within and between
+            healthcare systems. Improved data quality will cascade to other refinements within the
+            healthcare ecosystem, such as improved research capabilities, identification of
+            real-world data trends, and real-time public health information as outlined in the
+            following figure.</para>
         <figure xml:id="CreatingIKM.svg"> 
             
             <title>Creating Integrated Knowledge Management</title> 
@@ -112,7 +112,7 @@
                     
                     <imagedata fileref="../images/CreatingIKM.svg" 
                         
-                        scale="50" align="center"/> 
+                        scale="35" align="center"/> 
                     
                 </imageobject> 
                 
@@ -133,9 +133,9 @@
                 <listitem>
                     <para><emphasis role="bold">Import</emphasis> – The model must be able to load
                         and represent disparate terminology sources such as LOINC® and SNOMED CT® in
-                        a common model without loss of fidelity Displaying the disparate terminology
-                        standards in a single place will allow users and authors to compare
-                        commonalities and differences between standards, identify equivalent
+                        a common model without loss of fidelity. Displaying the disparate
+                        terminology standards in a single place will allow users and authors to
+                        compare commonalities and differences between standards, identify equivalent
                         concepts, and understand how concepts relate to one another.</para>
                 </listitem>
                 <listitem>
@@ -152,8 +152,8 @@
                     <para><emphasis role="bold">Authoring</emphasis> – The model must support the
                         development of new concepts using a standardized and repeatable format to
                         maintain lossless capture and transmission of data (including identification
-                        and inclusion of related concepts), incorporate new concepts such as Long
-                        coronavirus disease 2019 (COVID-19), and meet standardized terminology
+                        and inclusion of related concepts), incorporate new concepts such as 'Long
+                        coronavirus disease 2019 (COVID-19)', and meet standardized terminology
                         formatting.</para>
                 </listitem>
                 <listitem>
@@ -173,9 +173,9 @@
             irrespective of other sections as shown in the figure below. In our apporach to IKM and
             our knowledge architecture, the foundational layer provides the common elements of
             interoperability including object identity, versioning, modularity, and knowledge
-            representation. In this foundational architecture layer, we find the shared module
-            system where version and configuration management provide the foundation for
-            interoperability and the common model. </para>
+            representation. In this Versioned Foundation Layer, we find the shared module system
+            where version and configuration management provide the foundation for interoperability
+            and the common model. </para>
         <figure xml:id="SeparationofConcerns"> 
             
             <title>Separation of Concerns</title> 
@@ -379,7 +379,7 @@
         <section>
             <title>Coordination Across Standards</title>
             <para>A defining feature of IKM is working to harmonize various terminology standards
-                using a common language to standardize data capture while maintain meaning and
+                using a common language to standardize data capture while maintaining meaning and
                 associated concepts throughout transmission and storage. This requires working with
                 a variety of terminology standards that asynchronously represent, update, manage,
                 and version concepts. The IKM architecture will require a robust and standardized
@@ -391,41 +391,5 @@
                 standards release updates and will need to be tested and validated using the Tinkar
                 authoring environment.</para>
         </section>
-    </section>
-    <section>
-        <title>References</title>
-        <para>
-            <orderedlist>
-                <listitem>
-                    <para>Overview of SNOMED CT [Internet]. [cited 2025 Jul 29]. Available from:
-                        https://www.nlm.nih.gov/healthit/snomedct/snomed_overview.html</para>
-                </listitem>
-                <listitem>
-                    <para>LOINC [Internet]. [cited 2025 Jul 29]. Home. Available from:
-                        https://loinc.org/</para>
-                </listitem>
-                <listitem>
-                    <para>RxNorm [Internet]. [cited 2025 Jul 29]. Available from:
-                        https://www.nlm.nih.gov/research/umls/rxnorm/index.html</para>
-                </listitem>
-                <listitem>
-                    <para>Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR) |
-                        HealthIT.gov [Internet]. [cited 2025 Jul 29]. Available from:
-                        https://www.healthit.gov/topic/standards-technology/standards/fhir</para>
-                </listitem>
-                <listitem>
-                    <para>[cited 2025 Jul 29]. HL7 Logical Model: Standardized Terminology
-                        Knowledgebase, Release 1. Terminology Knowledge Architecture Informative
-                        Ballot. HL7 Vocabulary Work Group. August 2021. Available from:
-                        https://www.hl7.org/documentcenter/private/standards/HL7_LM_TERM_KB_R1_INFORM_2021AUG_FINAL.pdf</para>
-                </listitem>
-                <listitem>
-                    <para>Health C for D and R. Systemic Harmonization and Interoperability
-                        Enhancement for Laboratory Data (SHIELD). FDA [Internet]. 2024 Aug 9 [cited
-                        2025 Jul 29]; Available from:
-                        https://www.fda.gov/medical-devices/diagnostic-data-program/systemic-harmonization-and-interoperability-enhancement-laboratory-data-shield</para>
-                </listitem>
-            </orderedlist>
-        </para>
     </section>
 </chapter>
