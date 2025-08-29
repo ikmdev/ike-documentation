@@ -98,6 +98,7 @@
             xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="Book%20Content/Book%20ROI.xml" xmlns:xi="http://www.w3.org/2001/XInclude"
         />
+        <xi:include href="Book%20Content/Part%2012%20References.xml"/>
     </part>
     <part>
         <title>Appendix</title>

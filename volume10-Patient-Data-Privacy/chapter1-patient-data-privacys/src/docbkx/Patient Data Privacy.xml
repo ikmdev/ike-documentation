@@ -7,23 +7,23 @@
     <section>
         <title>RWD Introduction</title>
         <para>The following chapters explore real world data (RWD) (data collected from patients)
-            and how it’s application in various fields of healthcare can affect patient care. This
-            book has presented thus far the current state of data interoperability and how and
+            and how its application in various fields of healthcare can affect patient care. This
+            book has presented thus far the current state of data interoperability and how an
             integrated knowledge management environment can enable seamless translation of data from
-            one system to the next. This collection of chapters includes aims to shed light on
-            topics across the healthcare spectrum from patient data privacy to emergency
-            preparedness and how the application of Integrated Knowledge Management (IKM) can
-            enhance the use of data in these fields. These topics revolve around the singular goal
-            of harnessing the power of real time data to inform decision making. The power of can
-            impact decision making, from medical ethics to policy formation, and can enhance patient
-            care and quality in the long run. </para>
+            one system to the next. This collection of chapters aims to shed light on topics across
+            the healthcare spectrum from patient data privacy to emergency preparedness and how the
+            application of Integrated Knowledge Management (IKM) can enhance the use of data in
+            these fields. These topics revolve around the singular goal of harnessing the power of
+            real-time data to inform decision making. Leveraging this information can have impacts
+            ranging from medical ethics to policy formation, and can enhance patient care and
+            quality over time.</para>
     </section>
     <section>
-        <title>Important of Patient Data Privacy</title>
+        <title>Importance of Patient Data Privacy</title>
         <para>Patient data privacy refers to patients’ legal protection of their personal health
             information by healthcare providers. All healthcare professionals must protect the
             confidentiality and integrity of patients’ health information, while simultaneously
-            providing patients access to their data, including medical histories, test results,
+            providing patients with access to their data, including medical histories, test results,
             treatments, and other personal information collected during patient interactions.
             Patient data privacy stems from the branch of medical ethics that focuses on
             doctor-patient confidentiality and is critical for building trust and ensuring patients
@@ -81,10 +81,10 @@
                     blocking by healthcare systems and other vendors. [3-4] </para>
             </listitem>
             <listitem>
-                <para>Coronavirus Aid, Relief, and Economic Security Act: Advanced data privacy for
-                    patients’ Substance Use Disorder (SUD) records and mandated that Health and
-                    Human Services (HHS) issue guidance during the COVID-19 Pandemic regarding
-                    sharing patients’ protected health information (PHI). [5] </para>
+                <para>Coronavirus Aid, Relief, and Economic Security Act: Established advanced data
+                    privacy for patients’ Substance Use Disorder (SUD) records and mandated that
+                    Health and Human Services (HHS) issue guidance during the COVID-19 Pandemic
+                    regarding sharing patients’ protected health information (PHI). [5] </para>
             </listitem>
             <listitem>
                 <para>General Data Protection Regulation (GDPR): An EU policy that safeguards all
@@ -118,16 +118,16 @@
     </section>
     <section>
         <title>Patient Data Privacy and IKM</title>
-        <para>Integrated Knowledge Management (IKM) does not handle or store individual patient records, and therefore does not
-            directly have authority over the security or dissemination of these records. IKM is a
-            contributed knowledge management application that will serve as a quality care driver to
-            improve healthcare data quality and support the downstream accuracy of patient
-            treatments and public health decisions. The contributed IKM application provides a space
-            for healthcare knowledge to be managed in a single centralized area and improves
-            clinical support systems to help healthcare providers. While IKM does not directly
-            handle or store individual patient records, it plays a vital role in preserving the
-            integrity and quality of healthcare data that are transferred within and between systems
-            in the healthcare labyrinth. </para>
+        <para>Integrated Knowledge Management (IKM) does not handle or store individual patient
+            records and therefore does not directly have authority over the security or
+            dissemination of these records. IKM is a contributed knowledge management application
+            that will serve as a quality care driver to improve healthcare data quality and support
+            the downstream accuracy of patient treatments and public health decisions. The
+            contributed IKM application provides a space for healthcare knowledge to be managed in a
+            single centralized area and improves clinical support systems to help healthcare
+            providers. While IKM does not directly handle or store individual patient records, it
+            plays a vital role in preserving the integrity and quality of healthcare data that are
+            transferred within and between systems in the healthcare labyrinth. </para>
         <section>
             <title>Health Insurance Portability and Accountability Act (HIPAA) v. GDPR and Patient
                 Data Privacy</title>
@@ -141,7 +141,7 @@
                 [8]:</para>
             <orderedlist>
                 <listitem>
-                    <para>Healthcare provider: doctors, clinics, chiropractors, nursing homes,
+                    <para>Healthcare providers: doctors, clinics, chiropractors, nursing homes,
                         pharmacies</para>
                 </listitem>
                 <listitem>
@@ -202,74 +202,10 @@
         <para>Patient data privacy is an important aspect of delivering safe and effective
             healthcare and is protected by HIPAA and other laws. The European Union’s General Data
             Privacy regulation ushered in an era of stringent and protective data privacy standards
-            and have even influenced new policies, such as the California Consumer Privacy Act
+            and have even influenced by new policies, such as the California Consumer Privacy Act
             (CCPA). [12] As we navigate the complexities of data privacy regulations, our team
-            remain committed to protecting patient data and patient privacy. Though not directly
+            remains committed to protecting patient data and patient privacy. Though not directly
             governed by HIPAA or GDPR, we believe patient data privacy should remain at the
             forefront of our operations, reinforcing our commitment to quality healthcare.</para>
-    </section>
-    <section>
-        <title>References</title>
-        <para>
-            <orderedlist>
-                <listitem>
-                    <para>HIPPA Guide [Internet]. HIPPA Updates. Available from:
-                        https://www.hipaaguide.net/hipaa-updates/</para>
-                </listitem>
-                <listitem>
-                    <para>U.S. Department of Health &amp; Human Services [Internet]. Privacy,
-                        Security, and Electronic Health Records. Available from: <link
-                            xlink:href="https://www.hhs.gov/hipaa/for-professionals/privacy/index.html"
-                            >https://www.hhs.gov/hipaa/for-professionals/privacy/index.html</link></para>
-                </listitem>
-                <listitem>
-                    <para>Office of Inspector General | Government Oversight | U.S. Department of
-                        Health and Human Services [Internet]. 2023 [cited 2025 Jul 31]. Information
-                        Blocking. Available from:
-                        https://oig.hhs.gov/reports/featured/information-blocking/</para>
-                </listitem>
-                <listitem>
-                    <para>Information Blocking | HealthIT.gov [Internet]. [cited 2025 Jul 31].
-                        Available from: https://www.healthit.gov/topic/information-blocking</para>
-                </listitem>
-                <listitem>
-                    <para>Congress [Internet]. 2020. Care Act. Available from:
-                        https://www.congress.gov/bill/116th-congress/house-bill/748</para>
-                </listitem>
-                <listitem>
-                    <para>GDPR.eu [Internet]. 2018 [cited 2025 Jul 31]. What is GDPR, the EU’s new
-                        data protection law? Available from: https://gdpr.eu/what-is-gdpr/</para>
-                </listitem>
-                <listitem>
-                    <para>info@gdpr-advisor.com. GDPR Compliance in the Healthcare Industry:
-                        Protecting Patient Data [Internet]. GDPR Advisor. 2023 [cited 2025 Jul 31].
-                        Available from:
-                        https://www.gdpr-advisor.com/gdpr-compliance-in-the-healthcare-industry-protecting-patient-data/</para>
-                </listitem>
-                <listitem>
-                    <para>U.S. Department of Health &amp; Human Services [Internet]. Covered
-                        Entities and Business Associates. Available from:
-                        https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html</para>
-                </listitem>
-                <listitem>
-                    <para>Does GDPR Impact US Healthcare Providers? [Internet]. [cited 2025 Jul 31].
-                        Available from:
-                        https://natlawreview.com/article/does-gdpr-regulate-clinical-care-delivery-us-health-care-providers</para>
-                </listitem>
-                <listitem>
-                    <para>Iubenda [Internet]. [cited 2025 Jul 31]. Privacy Policy of SNOMED
-                        International Services. Available from:
-                        https://www.iubenda.com/privacy-policy/46600952</para>
-                </listitem>
-                <listitem>
-                    <para>LOINC [Internet]. [cited 2025 Jul 31]. Home. Available from: <link
-                            xlink:href="https://loinc.org/">https://loinc.org/</link></para>
-                </listitem>
-                <listitem>
-                    <para>Deloitte. CCPA Compliance and Readiness [Internet]. Available from:
-                        https://www2.deloitte.com/us/en/pages/advisory/articles/ccpa-compliance-readiness.html</para>
-                </listitem>
-            </orderedlist>
-        </para>
     </section>
 </chapter>
