@@ -92,7 +92,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata fileref="../../../book/src/docbkx/images/Komet%20Mac%20Installer%20File.svg"
-                                    scale="10" align="center"/>
+                                    scale="15" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -147,7 +147,7 @@
                         <title>Open SpinedArrayStore</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../book/src/docbkx/images/Open%20SpinedArrayStore.svg" scale="10"
+                                <imagedata fileref="../../../book/src/docbkx/images/Open%20SpinedArrayStore.svg" scale="15"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -242,8 +242,8 @@
         <para>
             <orderedlist>
                 <listitem>
-                    <para>To find a concept, first open a new journal, or in an existing and open
-                        journal, and select the comment icon in the left-hand bar</para>
+                    <para>To find a concept, first, either open a new journal or utilize an open and
+                        existing journal, then, select the comment icon in the left-hand bar</para>
                 </listitem>
                 <listitem>
                     <para>Type the keyword or concept name into the search bar at the top of the
@@ -280,7 +280,7 @@
                         bar)</para>
                 </listitem>
                 <listitem>
-                    <para>Toggle the "Properties" button on and use the icons at the top right-had
+                    <para>Toggle the "Properties" button on and use the icons at the top right-hand
                         side of the concept window to view various details and information about the
                         selected concept</para>
                     <figure xml:id="PConceptDetails">
@@ -403,7 +403,7 @@
             axiom changes were made.</para>
         <orderedlist>
             <listitem>
-                <para>To view versioning, first open a new journal, or in an existing and open
+                <para>To view versioning, either open a new journal or utilize an existing and open
                     journal, and follow the steps to view a concept in <xref
                         linkend="HowToFindAConceptSection"/></para>
             </listitem>
@@ -508,7 +508,7 @@
             </itemizedlist></para>
         <orderedlist>
             <listitem>
-                <para>To create a concept, first open a new journal, in an existing and open
+                <para>To create a concept, first open a new journal or utilize an existing and open
                     journal, and click the "+" icon at the top of the Komet window and select "New
                     Concept"</para>
             
@@ -665,7 +665,7 @@
                 </figure>
             </listitem>
             <listitem>
-                <para>Your concept will then appear in the concept search bar on the left hand
+                <para>Your concept will then appear in the concept search bar on the left-hand
                     side</para>
                 <figure xml:id="PizzaCreatedConcept">
                     <title>Created Concept</title>
@@ -839,7 +839,7 @@
                 <para>Once you re-open your concept, the top portion of your concept's Axioms
                     section will be automatically populated. It may contain concepts that you did
                     not define in the bottom axiom section, as the reasoner logically organizes the
-                    concept (This may include classifying your pizza as other larger pizza
+                    concept (this may include classifying your pizza as other larger pizza
                     categories, like margherita as seen in <xref linkend="PizzaConceptInfo8"/>
                     below)</para>
                 <para>You can then drag your new concept from the top Axioms section into the
@@ -862,10 +862,9 @@
             or real-world evidence.</para>
         <orderedlist>
             <listitem>
-                <para>To edit a concept, first open a new journal, or in an existing and open
+                <para>To edit a concept, first open a new journal or utilize an existing and open
                     journal, and find the concept you want to edit, double-click or drag the concept
-                    into the main viewing window, and turn the "Properties" button is toggled
-                    on.</para>
+                    into the main viewing window, and toggle the "Properties" button on</para>
                 <para><emphasis role="bold">Note</emphasis>, if you are editing a concept you just
                     created, you must first exit out of the concept window, find the new concept
                     with the search feature, and then double click or drag the new concept back into
@@ -1040,8 +1039,8 @@
         <para>
             <orderedlist>
                 <listitem>
-                    <para>To create a new pattern, first open a new journal, or in an existing and
-                        open journal, and click the "+" icon at the top of the Komet window and
+                    <para>To create a new pattern, first open a new journal or utilize an existing
+                        and open journal, and click the "+" icon at the top of the Komet window and
                         select "New Pattern"</para>
                     <figure xml:id="NewPattern">
                         <title>New Pattern</title>
@@ -1084,8 +1083,8 @@
                         using the search bar within the Pattern window or by selecting the Comment
                         Icon on the left-hand bar and searching for desired Concepts to define what
                         our Pattern will do</para>
-                    <para>For this example, we want to create a pattern the provides cooking
-                        instruction information so that we know how to cook our pizza</para>
+                    <para>For this example, we want to create a pattern that provides the cooking
+                        instruction information so we know how to cook our pizza</para>
                     <para>To do so, we will need to create the below concept for "Cooking
                         Instructions" to add to the Purpose and Meaning sections</para>
                     <figure xml:id="PizzaCookingInstructions">
@@ -1632,7 +1631,7 @@
             <listitem>
                 <para>Next, create a Personal Access Token (PAT), which is a secure alternative to
                         your password when authenticating, by logging into your GitHub account,
-                        selecting your user icon in the top-right hand corner of the page and
+                        selecting your user icon in the top right-hand corner of the page and
                         selecting "Settings". Instead of entering your password in Komet, you will
                         use the PAT, which is a unique, long string of characters, to authorize your
                         actions</para>
@@ -1839,7 +1838,7 @@
                         <para>Fill in the various fields that appear in the Info window and then
                             press "Connect"; Git URL is the URL we saved in an earlier step, Git
                             Email is the personal email you used to create your GitHub account, Git
-                            User Name is your personal GitHub username that you created, and Git
+                            User Name is the personal GitHub username that you created, and Git
                             Password is the repository passkey that we saved in an earlier
                             step</para>
                         <figure xml:id="GitSyncInfoPreferences">
@@ -1906,7 +1905,7 @@
                             landing page, select "Exchange" in the top left-hand side of the
                             application window and select "Sync"</para>
                         <para><emphasis role="bold">Note</emphasis>, you will need to complete the
-                            steps outlined in Gfit Sync Info first</para>
+                            steps outlined in Git Sync Info first</para>
                         <figure xml:id="GitSyncSync">
                             <title>Git Sync Sync</title>
                             <mediaobject>
@@ -1939,8 +1938,8 @@
     </section>
     <section xml:id="RunningTheReasoner">
         <title>Running the Reasoner</title>
-        <para>Users may want to run the pertinent reasoner to update the inferred relationships,
-            based on the stated relationships, that the author enters for a concept, to update the
+        <para>Users may want to run the pertinent reasoner to update the inferred
+            relationships—based on the author's stated relationships for a concept—to update the
             Hierarchical Relationship tab in the left-hand bar, to detect equivalences, and
             more.</para>
         <para><emphasis role="bold">Note</emphasis>: If you run into issues running the reasoner,
@@ -1948,7 +1947,8 @@
             manager and ending the application process</para>
         <orderedlist>
             <listitem>
-                <para>To run the reasoner, first open a new journal, or in an existing and open the Reasoner panel by selecting the Reasoner icon in the
+                <para>To run the reasoner, first open a new journal or utilize an existing and open
+                    journal, then open the Reasoner panel by selecting the Reasoner icon in the
                     left-hand tool ribbon</para>
                 <figure xml:id="Reasoner">
                     <title>Reasoner</title>
