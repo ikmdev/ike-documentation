@@ -6,38 +6,39 @@
     <section>
         <title>Use Case: Komet Application</title>
         <para>This section outlines three key components of the Knowledge Management Environment
-            (Komet) application, Terminology Knowledge Architecture (Tinkar) knowledge architecture,
-            and open-source contributions.</para>
+            (Komet) application, Terminology Knowledge Architecture (Tinkar) architecture, and
+            open-source contributions.</para>
         <section>
             <title>Komet Use Case – Rapid Knowledge Management</title>
             <para>A primary benefit of Komet and the Tinkar architecture used to manage integrated
                 knowledge is the ability to rapidly update integrated knowledge in accordance with
                 emerging or needed concepts and to address irregularities or errors. </para>
             <para>Komet is capable of not only identifying errors but also resolving them. For
-                example, if you searched for “chronic lung disease” and opened the “Chronic lung
-                disease (disorder)” that takes an user to the concept navigator. The user may notice
-                that this concept only displays two children concepts, which seems incomplete as
-                there should be many more children concepts for such a broad disorder. To explore
-                and understand why this potential error is occurring, the user then could click on
-                both the ‘Properties’ and ‘Timeline’ buttons to open additional information about
-                the “Chronic lung disease (disorder)” concept. In the ‘Properties’ frame, the user
-                could select ‘Hierarchy’ and turn the ‘Range’ option on in the Timeline frame. Doing
-                so will display how the concept has changed over time, additions to concepts, and
-                allows users to compare select versions of a concept.</para>
+                instance, if a user searches for “chronic lung disease” and selects “Chronic lung
+                disease (disorder),” they are directed to the concept navigator. Upon review, the
+                user may observe that this concept displays only two child concepts, which appears
+                incomplete, as a broad disorder like this should have many more related child
+                concepts. To explore and understand why this potential error is occurring, the user
+                then could click on both the ‘Properties’ and ‘Timeline’ buttons to open additional
+                information about the “Chronic lung disease (disorder)” concept. In the ‘Properties’
+                frame, the user could select ‘Hierarchy’ and turn the ‘Range’ option on in the
+                Timeline frame. Doing so will display how the concept has changed over time,
+                additions to concepts, and allows users to compare select versions of a
+                concept.</para>
             <para>While a user may see version history, there is still no information on why there
-                are only two children concepts. The user can then go back to the concept navigator
-                and edit the EL++ Axiom from ‘Necessary Set’ to ‘Sufficient Set’, select reasoner,
-                and run the ‘ELK Reasoner’. This then shows the recent edit and update, which shows
-                the increased number of children concepts to over
+                are only two child concepts. The user can then go back to the concept navigator and
+                edit the EL++ Axiom from ‘Necessary Set’ to ‘Sufficient Set’, select reasoner, and
+                run the ‘ELK Reasoner’. This then shows the recent edit and update, with the number
+                of child concepts increasing to over
                 20.<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?></para><?oxy_custom_end?>
             <para>While Komet, Tinkar, and our open-source approach allow the user to identify an
                 error by navigating the site, understanding the concept versioning and history,
                 making edits to resolve the issue in real-time, and committing the changes to the
                 community at large, other Terminology Standards lack in coordinating this rapid
-                approach. if a user identified this error and submitted it to Systemized
-                Nomenclature of Medicine – Clinical Terms® (SNOMED CT®), they might have to wait a
-                full six months before SNOMED CT® pushes their bi-annual updates and might be forced
-                to employ sub-optimal work arounds to address the issue until then. This real-time
+                approach. If a user identified this error and submitted it to Systemized
+                Nomenclature of Medicine – Clinical Terms® (SNOMED CT®), they might have to wait six
+                months before SNOMED CT® pushes their bi-annual updates and could be forced to
+                employ sub-optimal workarounds to address the issue in the meantime. This real-time
                 approach of managing integrated knowledge management also allows the creation of
                 concepts, such as SARS-CoV-2 (COVID-19), to meet emerging conditions and clinical
                 needs.</para>
@@ -48,7 +49,7 @@
                 standards. When searching “urine homocysteine measurement”, a user can see the
                 SNOMED CT® concept ‘Urine Homocysteine Measurement (procedure)’ in the navigation
                 panel, while simultaneously viewing Logical Observation Identifiers Names and Code®
-                (LOINC®) children concepts. Komet can seamlessly integrate concepts from different
+                (LOINC®) child concepts. Komet can seamlessly integrate concepts from different
                 terminology standards and identify which concepts are associated by using a
                 localized common language in the form of Analysis Normal Form (ANF).</para>
         </section>
@@ -59,7 +60,7 @@
                 to describe ankylosis in the left and right knees, they would be presented with
                 ‘Observation of ankylosis of both knee joints (procedure)’ and ‘Ankylosis of
                 bilateral knee joints (disorder)’. By running the Komet reasoner, selecting detect
-                equivalencies, right clicking these two concepts, and selecting ‘Compare Concepts’,
+                equivalencies, right-clicking these two concepts, and selecting ‘Compare Concepts’,
                 a user could determine that these concepts are equivalent. A user could then do a
                 deep-dive into the concept axioms using a side-by-side comparison to understand if
                 there were any minute differences between the two.</para>
