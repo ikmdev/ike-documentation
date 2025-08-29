@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>References</title>
+    <orderedlist>
+        <listitem>
+            <para>IKM Epic Board - Agile board - Jira [Internet]. [cited 2024 Jan 8]. Available
+                from:
+                https://id.atlassian.com/login?continue=https%3A%2F%2Fid.atlassian.com%2Fjoin%2Fuser-access%3Fresource%3Dari%253Acloud%253Ajira%253A%253Asite%252F0ace1edd-c50a-4607-bb3f-3856a4809fba%26continue%3Dhttps%253A%252F%252Fikmdev.atlassian.net%252Fjira%252Fsoftware%252Fc%252Fprojects%252FIPB%252Fboards%252F40&amp;application</para>
+        </listitem>
+        <listitem>
+            <para>A library for manipulating with proofs that use inference rules. [Internet].
+                GitHub. [cited 2023 September 15]. Available from: <link
+                    xlink:href="https://github.com/liveontologies/puli"
+                    >https://github.com/liveontologies/puli</link></para>
+        </listitem>
+        <listitem>
+            <para>Bug and Issue Reporting Process Framework. [Deloitte Deliverable]. December 20,
+                2023 [Cited 2024 Jan 9] Available Internally at Deloitte Consulting LLP.
+                DeloitteBAA_Task_2.3.4_Bugs and Issue Reporting Process Framework.pdf</para>
+        </listitem>
+        <listitem>
+            <para>The Integrated Knowledge Management Application | Komet [Internet]. Available
+                from: https://www.ikm.dev/application</para>
+        </listitem>
+        <listitem>
+            <para>Reynolds CJ, Wyatt JC. Open source, open standards, and health care information
+                systems. J Med Internet Res. 2011 Feb 17;13(1):e24.</para>
+        </listitem>
+        <listitem>
+            <para>HL7 Logical Model: Standardized Terminology Knowledgebase, Release 1. HL7
+                International [Internet]. 2021; Available from:
+                https://www.hl7.org/documentcenter/private/standards/HL7_LM_TERM_KB_R1_INFORM_2021AUG_FINAL.pdf</para>
+        </listitem>
+        <listitem>
+            <para>Engineering LibreTexts [Internet]. 2018 [cited 2024 Jan 9]. 1.3: Characteristics
+                and Benefits of a Database. Available from:
+                https://eng.libretexts.org/Bookshelves/Computer_Science/Databases_and_Data_Structures/Database_Design_2e_(Watt)/01%3A_Chapters/1.03%3A_Characteristics_and_Benefits_of_a_Databas</para>
+        </listitem>
+        <listitem>
+            <para>Abad-Navarro F, Martínez-Costa C. A knowledge graph-based data harmonization
+                framework for secondary data reuse. Computer Methods and Programs in Biomedicine
+                [Internet]. 2024 Jan 1 [cited 2024 Jan 9];243:107918. Available from:
+                https://www.sciencedirect.com/science/article/pii/S0169260723005849</para>
+        </listitem>
+        <listitem>
+            <para>LOINC [Internet]. [cited 2025 Jul 31]. Home. Available from: <link
+                    xlink:href="https://loinc.org/">https://loinc.org/</link></para>
+        </listitem>
+        <listitem>
+            <para>Welcome! (n.d.). Minikube. Retrieved May 27, 2025, from <link
+                    xlink:href="https://minikube.sigs.k8s.io/docs/"
+                    >https://minikube.sigs.k8s.io/docs/</link></para>
+        </listitem>
+        <listitem>
+            <para>Docker Compose. (2025, April 28). Docker Documentation. <link
+                    xlink:href="https://docs.docker.com/compose/"
+                    >https://docs.docker.com/compose/</link></para>
+        </listitem>
+        <listitem>
+            <para>Argo CD - Declarative GitOps CD for Kubernetes. (n.d.). Retrieved May 27, 2025,
+                from <link xlink:href="https://argo-cd.readthedocs.io/en/stable/"
+                    >https://argo-cd.readthedocs.io/en/stable/</link></para>
+        </listitem>
+        <listitem>
+            <para>Helm. (n.d.). Retrieved May 27, 2025, from <link xlink:href="https://helm.sh/"
+                    >https://helm.sh/</link></para>
+        </listitem>
+        <listitem>
+            <para>Kustomize - Kubernetes native configuration management. (n.d.). Retrieved May 27,
+                2025, from <link xlink:href="https://kustomize.io/"
+                >https://kustomize.io/</link></para>
+        </listitem>
+        <listitem>
+            <para>GitOps. (n.d.). GitOps. Retrieved May 27, 2025, from <link
+                    xlink:href="https://www.gitops.tech/">https://www.gitops.tech/</link></para>
+        </listitem>
+        <listitem>
+            <para>Documentation | Artifact Hub documentation. (n.d.). Retrieved May 27, 2025, from
+                    <link xlink:href="https://artifacthub.io/docs/"
+                    >https://artifacthub.io/docs/</link></para>
+        </listitem>
+        <listitem>
+            <para>Prometheus. (n.d.). Prometheus - Monitoring system &amp; time series database.
+                Retrieved May 27, 2025, from <link xlink:href="https://prometheus.io/"
+                    >https://prometheus.io/</link></para>
+        </listitem>
+        <listitem>
+            <para>Grafana: The open and composable observability platform. (n.d.). Grafana Labs.
+                Retrieved May 27, 2025, from <link xlink:href="https://grafana.com/"
+                    >https://grafana.com/</link></para>
+        </listitem>
+        <listitem>
+            <para>Elastic Stack: (ELK) Elasticsearch, Kibana &amp; Logstash. (n.d.). Elastic.
+                Retrieved May 27, 2025, from <link xlink:href="https://www.elastic.co/elastic-stack"
+                    >https://www.elastic.co/elastic-stack</link></para>
+        </listitem>
+    </orderedlist>
+</chapter>
+

@@ -14,14 +14,14 @@
         ultimately impact patient outcomes and highlight the need for a unified, adaptable approach
         to knowledge management. </para>
     <para>To address these challenges, a layered knowledge architecture is essential. In previous
-        parts of this book we provided an overview of each layer of the knowledge architecture and
-        how those layers build off eachother. At the foundation of the knowledge architecture is the
-        versioned system that tracks and represents change over time, ensuring safe, reliable, and
-        coordinated evolution of terminology standards and solutions. One level above the versioned
-        foundation is the terminology knowledge layer, the focus of Komet, which serves as the
-        shared basis for integrating and harmonizing disparate data standards. Organizations can use
-        Komet to build on the terminology layer to develop assertional, statement, and imperative
-        knowledge, enabling more advanced and actionable insights. </para>
+        parts of this book, we provided an overview of each layer of the knowledge architecture and
+        how those layers build off each other. At the foundation of the knowledge architecture is
+        the versioned system that tracks and represents change over time, ensuring safe, reliable,
+        and coordinated evolution of terminology standards and solutions. One level above the
+        versioned foundation is the terminology knowledge layer, the focus of Komet, which serves as
+        the shared basis for integrating and harmonizing disparate data standards. Organizations can
+        use Komet to build on the terminology layer to develop assertional, statement, and
+        imperative knowledge, enabling more advanced and actionable insights. </para>
     <para><emphasis role="bold">So what is Komet?</emphasis></para>
     <para>Komet is an open-source environment designed to manage, harmonize, and extend disparate
         knowledge standards, which enables users to import, transform, extend, and export content
@@ -40,7 +40,7 @@
         and RxNorm). Komet’s transformation processes and architecture are available under the
         Apache 2 Open Source License, and Tinkar fully supports and relies on foundational
         terminologies and their organizations. Its intent is to complement, not replace, these
-        standards, allowing organizations to freely integrate Solor content into their standards. </para><?oxy_comment_end?>
+        standards, allowing organizations to freely integrate Komet content into their standards. </para><?oxy_comment_end?>
     <para>Komet’s open-source, modular design offers unmatched flexibility. It integrates seamlessly
         with existing infrastructure, enabling organizations to enhance data interoperability and
         harmonization without overhauling their current systems. Additionally, Komet connects users
@@ -56,7 +56,7 @@
     <para>The core functions of Komet revolve around our logical model which contain three
         foundational elements: concepts, patterns, and semantics. Our logical model aims to create
         an interoperable healthcare language network that can communicate effectively across
-        multiple systems and integrate data standards such as SNOMED, LOINC, and RxNorm with local
+        multiple systems and integrate data standards such as SNOMED®, LOINC®, and RxNorm with local
         data management systems. This integrated knowledge base is backed by HL7 ballot and built
         upon the foundational pillars of STAMP, concepts/patterns/semantics, and versioned knowledge
         graphs. </para>
@@ -72,21 +72,21 @@
         component, enabling precise recording and tracking of all historical changes with context to
         maintain semantic meaning. Each STAMP version represents a unique state of an object at a
         particular coordinate, preserving every version for retrieval, inspection, and comparison. </para>
-    <para><emphasis role="bold">Status</emphasis>: Shows inactive or inactive activity </para>
+    <para><emphasis role="bold">Status</emphasis>: Shows inactive or inactive activity. </para>
     <para><emphasis role="bold">Time</emphasis>: Shows the time in a common UTC timestamp
-        format</para>
-    <para><emphasis role="bold">Author</emphasis>: Indicates that source of a creation or change,
-        who authored the change</para>
+        format.</para>
+    <para><emphasis role="bold">Author</emphasis>: Indicates the source of a creation or change—who
+        authored the change.</para>
     <para><emphasis role="bold">Module</emphasis>: Assignment to the appropriate terminology, such
-        as LOINC ®, or terminology component, such as SNOMED CT® . This helps us encapsultate change
+        as LOINC®, or terminology component, such as SNOMED CT® . This helps us encapsultate change
         and manage over time. </para>
     <para><emphasis role="bold">Path</emphasis>: Enables testing for provisional content without
         constraints of incorporating an entire terminology library. Reflects local extension or a
-        new LOINC ® release</para>
+        new LOINC® release.</para>
     <para>STAMP is applied to concepts, patterns, and semantics and the result is a versioned
         knowledge graph that can represent the concepts of interest in the domain of interest. It
-        provides uniformatibilty to represent content and manage change, and provides all of the
-        cababilites of modern configuration management system.</para>
+        provides uniformity to represent content and manage change, and provides all of the
+        capabilites of modern configuration management system.</para>
     <para><emphasis role="bold">Concepts</emphasis> are specific, well-defined ideas or entities
         representing distinct pieces of information, defined by patterns and their associated
         semantics. </para>
