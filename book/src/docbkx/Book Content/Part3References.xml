@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.1">
+    <title>References</title>
+    <para>
+        <orderedlist>
+            <listitem>
+                <para>Overview of SNOMED CT [Internet]. [cited 2025 Jul 29]. Available from:
+                    https://www.nlm.nih.gov/healthit/snomedct/snomed_overview.html</para>
+            </listitem>
+            <listitem>
+                <para>LOINC [Internet]. [cited 2025 Jul 29]. Home. Available from:
+                    https://loinc.org/</para>
+            </listitem>
+            <listitem>
+                <para>RxNorm [Internet]. [cited 2025 Jul 29]. Available from:
+                    https://www.nlm.nih.gov/research/umls/rxnorm/index.html</para>
+            </listitem>
+            <listitem>
+                <para>Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR) |
+                    HealthIT.gov [Internet]. [cited 2025 Jul 29]. Available from:
+                    https://www.healthit.gov/topic/standards-technology/standards/fhir</para>
+            </listitem>
+            <listitem>
+                <para>[cited 2025 Jul 29]. HL7 Logical Model: Standardized Terminology
+                    Knowledgebase, Release 1. Terminology Knowledge Architecture Informative Ballot.
+                    HL7 Vocabulary Work Group. August 2021. Available from:
+                    https://www.hl7.org/documentcenter/private/standards/HL7_LM_TERM_KB_R1_INFORM_2021AUG_FINAL.pdf</para>
+            </listitem>
+            <listitem>
+                <para>Health C for D and R. Systemic Harmonization and Interoperability Enhancement
+                    for Laboratory Data (SHIELD). FDA [Internet]. 2024 Aug 9 [cited 2025 Jul 29];
+                    Available from:
+                    https://www.fda.gov/medical-devices/diagnostic-data-program/systemic-harmonization-and-interoperability-enhancement-laboratory-data-shield</para>
+            </listitem>
+            <listitem>
+                <para>What is Data Management? [Internet]. [cited 2025 Aug 5]. Available from:
+                    https://www.oracle.com/database/what-is-data-management/</para>
+            </listitem>
+            <listitem>
+                <para>HL7 Logical Model: Standardized Terminology Knowledgebase, Release 1.
+                    Terminology Knowledge Architecture Informative Ballot. HL7 Vocabulary Work
+                    Group. [Internet]. 2021. Available from:
+                    https://www.hl7.org/documentcenter/private/standards/HL7_LM_TERM_KB_R1_INFORM_2021AUG_FINAL.pdf</para>
+            </listitem>
+            <listitem>
+                <para>Overview [Internet]. [cited 2025 Aug 5]. Available from:
+                    https://protobuf.dev/overview/</para>
+            </listitem>
+            <listitem>
+                <para>Universally unique identifier. In: Wikipedia [Internet]. 2025 [cited 2025 Aug
+                    5]. Available from:
+                    https://en.wikipedia.org/w/index.php?title=Universally_unique_identifier&amp;oldid=1303693916</para>
+            </listitem>
+            <listitem>
+                <para>Changeset. In: Wikipedia [Internet]. 2024 [cited 2025 Aug 5]. Available from:
+                    https://en.wikipedia.org/w/index.php?title=Changeset&amp;oldid=1221829233</para>
+            </listitem>
+            <listitem>
+                <para>MongoDB [Internet]. [cited 2025 Aug 5]. What Is A Key-Value Database?
+                    Available from:
+                    https://www.mongodb.com/resources/basics/databases/key-value-database</para>
+            </listitem>
+            <listitem>
+                <para>Rogers P. Dependency Management Techniques [Internet]. A Path Less Taken. 2025
+                    [cited 2025 Aug 5]. Available from:
+                    https://medium.com/agile-outside-the-box/dependency-management-techniques-187f888a6aad</para>
+            </listitem>
+            <listitem>
+                <para>Introduction to the Dependency Mechanism – Maven [Internet]. [cited 2025 Aug
+                    5]. Available from:
+                    https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html</para>
+            </listitem>
+            <listitem>
+                <para>Sonatype Nexus Repository | Leading Binary Repository Manager [Internet].
+                    [cited 2025 Aug 5]. Available from:
+                    https://www.sonatype.com/products/sonatype-nexus-repository</para>
+            </listitem>
+            <listitem>
+                <para>Okeke F. TechRepublic. 2022. The 12 best IDEs for programming. Available from:
+                    https://www.techrepublic.com/article/best-ide-software/</para>
+            </listitem>
+            <listitem>
+                <para>What is open source? [Internet]. [cited 2025 Aug 5]. Available from:
+                    https://www.redhat.com/en/topics/open-source/what-is-open-source</para>
+            </listitem>
+            <listitem>
+                <para>What is an IDE? [Internet]. [cited 2025 Aug 5]. Available from:
+                    https://www.redhat.com/en/topics/platform-engineering/what-is-ide</para>
+            </listitem>
+            <listitem>
+                <para>GitHub [Internet]. [cited 2025 Aug 5]. OwlFeatures. Available from:
+                    https://github.com/liveontologies/elk-reasoner/wiki/OwlFeatures</para>
+            </listitem>
+        </orderedlist>
+    </para>
+</chapter>
