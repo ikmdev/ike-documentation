@@ -11,7 +11,7 @@
         interoperability across different systems. It ensures that all architectural modules are
         strictly version controlled over time. This layer incorporates key interoperability elements
         such as object identity, versioning, modularity, data exchange methods, and knowledge
-        representation.</para>
+        representation as outlined in the figure below.</para>
     <para> </para>
     <figure xml:id="KnowledgeArchitectureVersionedFoundation">
         <title>Versioned Foundation Layer</title>
