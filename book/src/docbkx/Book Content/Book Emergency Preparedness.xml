@@ -6,58 +6,59 @@
     <title>Emergency Preparedness</title>
     <section>
         <title>Introduction</title>
-        <para>For the purpose of this chapter, we define emergency disaster response in regards to
+        <para>For the purpose of this chapter, we define emergency disaster response in regard to
             four different categories of disaster: natural disasters, public health crises, acts of
-            terrorism and radiation and chemical emergencies. [1] Natural disasters include
+            terrorism and radiation and chemical emergencies. [109] Natural disasters include
             earthquakes, hurricanes, floods, tornadoes, tsunamis, wildfires, volcanic eruptions and
             extreme temperatures, and these events can cause great damage to the environment,
-            property, wildlife and human health. [2] Public health crises include epidemics,
+            property, wildlife and human health. [110] Public health crises include epidemics,
             pandemics, and other disease outbreaks ranging from new influenza strains to potentially
             deadly diseases, as seen during the recent COVID-19 pandemic. Acts of terrorism can
-            range from bomb threats to the threat or usage of biohazardous materials. [3] Lastly,
+            range from bomb threats to the threat or usage of biohazardous materials. [111] Lastly,
             radiation and chemical emergencies include the accidental or intentional release of
             radioactive materials or other toxic substances that can cause widespread damage in a
             specified area, as seen in the Chernobyl Accident in 1986 or the Tokyo subway nerve gas
-            attack in 1995. [4-5]</para>
+            attack in 1995. [112-113]</para>
         <para>The year 2024 marks 45 years of emergency management for the U.S. Federal Emergency
             Management Agency (FEMA) and celebrates the presence and dedication of public services
-            before, during and after an emergency disaster. [6] The rapid development of technology,
-            such as individuals’ access to smartphones during 9/11, has greatly motivated the need
-            for applying innovative technology solutions during emergency situations. Up to this
-            point we have understood the failures and successes of knowledge management in
-            healthcare settings, but it’s important to understand them as part of an emergency
-            response as well. For instance, communications and knowledge sharing was critically
-            lacking during the September 11<superscript>th</superscript> attacks, ultimately
-            hampering the emergency response. The 9/11 Commission Report describes the issues with
-            interoperability and included recommendations for better communication systems between
-            emergency authorities. [7]</para>
-        <para>As we have previously discussed, the primary challange with the adoption of new
+            before, during and after an emergency disaster. [114] The rapid development of
+            technology, such as individuals’ access to smartphones during 9/11, has greatly
+            motivated the need for applying innovative technology solutions during emergency
+            situations. Up to this point we have understood the failures and successes of knowledge
+            management in healthcare settings, but it is important to understand them as part of an
+            emergency response as well. For instance, communications and knowledge sharing was
+            critically lacking during the September 11<superscript>th</superscript> attacks,
+            ultimately hampering the emergency response. The 9/11 Commission Report describes the
+            issues with interoperability and included recommendations for better communication
+            systems between emergency authorities. [115]</para>
+        <para>As we have previously discussed, the primary challenge with the adoption of new
             technology and standards revolves around adapting technology to the local context and
             need. Addressing user understanding of technology, ensuring interoperability, and
             implementing data standardization - all while respecting current knowledge - are
-            critical aspects of this overarching challenge. Integrating communication systems in all
-            public and private spheres, and integrating social media and social services requires a
-            strong strategy for designing and testing interfaces and interactions for usability.
-            Promoting open data and using open-source technology to accommodate as many technical
-            solutions is part of emloying IKM. This chapter explores the level of current adoption
-            of IKM in the existing emergency natural response system and further discusses
-            challenges and recommendations for better practice in the near future. </para>
+            critical aspects of this overarching challenge. Integrating communication systems into
+            all public and private spheres and integrating social media and social services requires
+            a strong strategy for designing and testing interfaces and interactions for usability.
+            Promoting open data and using open-source technology to support a wide range of
+            technical solutions is part of implementing IKM. This chapter explores the level of
+            current adoption of IKM in the existing emergency natural response system and further
+            discusses challenges and recommendations for better practice in the near future. </para>
     </section>
     <section>
         <title>Landscape of Emergency Management in the United States</title>
-        <para>FEMA was founded in 1979 by President Jimmy Carter, however federal emergency
-            management reaches back as far as 1802 when the government needed to respond to the
-            natural destruction of a seaport in New Hampshire. Since then, FEMA has undergone
-            several organizational transformations and expansion of services to arrive where it is
-            today as an agency that helps people pre, during, and post emergency. [8]</para>
+        <para>FEMA was founded in 1979 by President Jimmy Carter. However, federal emergency
+            management in the United States dates back to 1802, when the government responded to the
+            destruction of a seaport in New Hampshire caused by a natural disaster. Since its
+            establishment, FEMA has undergone several organizational transformations and expanded
+            its services. Today, it serves as an agency that assists people before, during, and
+            after emergencies. [116]</para>
         <para>Emergency management and disaster response consists of five mission areas as defined
             by FEMA. These five areas include prevention, protection, mitigation, response, and
-            recovery. These areas are part of the National Preparedness Goal which is to “secure and
-            resilient nation with the capabilities required across the whole community to prevent,
-            protect against, mitigate, respond to, and recover from the threats and hazards that
-            pose the greatest risk” [9], and includes risks such as natural disasters, disease
-            pandemics, chemical spills, man-made disasters, and terrorist and cyber-attacks. The
-            five mission areas are defined as follows:</para>
+            recovery. These areas are part of the National Preparedness Goal which is to have a
+            “secure and resilient nation with the capabilities required across the whole community
+            to prevent, protect against, mitigate, respond to, and recover from the threats and
+            hazards that pose the greatest risk” [117], and includes risks such as natural
+            disasters, disease pandemics, chemical spills, man-made disasters, and terrorist and
+            cyber-attacks. The five mission areas are defined as follows:</para>
         <orderedlist>
             <listitem>
                 <para><emphasis role="bold">Prevention</emphasis>: Prevent, avoid or stop an
@@ -82,37 +83,35 @@
                     timely restoration, strengthening and revitalization of infrastructure, housing
                     and a sustainable economy, as well as the health, social, cultural, historic and
                     environmental fabric of communities affected by a catastrophic incident.
-                    [10]</para>
+                    [118]</para>
             </listitem>
         </orderedlist>
-        <para>A simple way to think about emergency management is by breaking down a response into
-            before, during, and after the response. In this paper we explore how IKM can play into
-            each of these response areas.</para>
+        <para>A straightforward approach to understanding emergency management is to consider its
+            activities in three phases: before, during, and after an emergency. In this paper we
+            explore how IKM can play into each of these response phases.</para>
         
     </section>
     <section>
         <title>Examples of Knowledge Management in Emergency Response</title>
         <para>Emergency preparedness can broadly be split in pre-emergency, emergency response, and
-            post emergency. Knowledge management and communications is critical during all stages of
-            preparedness. In the pre-emergency timeframe, during the mitigation and preparedness
+            post emergency. Knowledge management and communications are critical during all stages
+            of preparedness. In the pre-emergency timeframe, during the mitigation and preparedness
             stages of emergency management, knowledge management can be used to bolster training and
             education. For example, FEMA’s Emergency Management Institute (EMI) offers online
             training courses for emergency preparedness through its partnership with affiliated
-            centers. [11] Training and education of first responders can help orient and prepare
-            those involved once and emergency occurs, and is a core tenet of knowledge management
-            best practices. </para>
+            centers. [119] Training and education of first responders can help orient and prepare
+            those involved once an emergency occurs and is a core tenet of knowledge management best
+            practices. </para>
         <para>Another example of a national approach to emergency knowledge management is FEMA’s
             National Incident Management System (NIMS). NIMS is an example of a system that uses
             knowledge management to integrate resources across organizations by sharing and
-            communicating compiled information. NIMS provides standardized vocabulary, systems
-            and processes, and are large players when it comes to training and education.
-            [12]</para>
-        <para>The National Emergency Response Information System (NERIS) is another example of
-            system that employs interoperable data and information into an analytics platform
-            used by the U.S. Fire Administration to support decision making. [13] Information
-            and data from fire departments across the country in integrated into the system, and
-            these departments can then access timely and accurate data to provide actionable
-            intelligence. </para>
+            communicating compiled information. NIMS provides standardized vocabulary, systems and
+            processes, and are large players when it comes to training and education. [120]</para>
+        <para>The National Emergency Response Information System (NERIS) is another example of a
+            system that employs interoperable data and information into an analytics platform used
+            by the U.S. Fire Administration to support decision making. [121] Information and data
+            from fire departments across the country is integrated into the system, and these
+            departments can then access timely and accurate data to provide actionable intelligence. </para>
     </section>
     <section>
         <title>IKM In Emergency Response</title>
@@ -122,10 +121,10 @@
             Standardizing data can help improve emergency preparedness outcomes and enable the
             government to respond more efficiently, ultimately lessening the damage caused by an
             emergency. However, current standards organizations such as LOINC® and SNOMED CT® do not
-            mention emergency preparedness, suggesting the emergency response system as a potential
-            area for application of IKM. Furthermore, the lack of organizations that standardize
-            emergency response terminology generates an opportunity to build a knowledge management
-            and crowdsourcing framework for emergency preparedness. </para>
+            mention emergency preparedness, suggesting the emergency response system could be a
+            valuable area for the application of IKM. Furthermore, the lack of organizations that
+            standardize emergency response terminology generates an opportunity to build a knowledge
+            management and crowdsourcing framework for emergency preparedness. </para>
         <section>
             <title>The COVID-19 Pandemic and IKM</title>
             <para>During the COVID-19 pandemic the absence of interoperable laboratory data was a
@@ -134,7 +133,7 @@
                 other metrics, ultimately cascading into inadequate communications and erosion in
                 the public’s trust. The Coronavirus Aid, Relief, and Economic Security (CARES) Act
                 (P.L. 116-136) was established to require laboratories to report COVID-19 test
-                results to the United States Health and Human Services (HHS) Secretary. [14]
+                results to the United States Health and Human Services (HHS) Secretary. [122]
                 Systemic Harmonization and Interoperability Enhancement for Laboratory Data (SHIELD)
                 developed the LOINC® to In vitro Diagnostics (LIVD) mapping specifications for IVDs
                 for SARS-CoV-2 diagnostic use, and in 2020 HHS ordered the use of LIVD test results
@@ -142,48 +141,49 @@
                 is potential for LIVD to improve semantic interoperability and data quality of LIS
                 data. Although the benefit of LIVD is well documented, further efforts to promote
                 its widespread use to achieve true laboratory interoperability are desirable.
-                [15]</para>
+                [123]</para>
             <para>The pandemic also pushed forward other new technologies to help facilitate the
-                response through the introduction and expansion of Artificial intelligence (AI). One of
-                the main issues facing emergency responders and the public during the pandemic was the
-                inability of policy and communications to efficiently update when new data and
-                information was made available. Dealing with inaccurate, unreliable, and incomplete data
-                all contributed to a flat emergency response effort. [16,17] Interoperability challenges
-                were part of lessons learned from the COVID-19 pandemic, and fostered advacnements in AI
-                and advanced analytics.</para>
+                response through the introduction and expansion of Artificial intelligence (AI). One
+                of the main issues facing emergency responders and the public during the pandemic
+                was the inability of policy and communications to efficiently update when new data
+                and information was made available. Dealing with inaccurate, unreliable, and
+                incomplete data all contributed to a flat emergency response effort. [124-125]
+                Interoperability challenges were part of lessons learned from the COVID-19 pandemic,
+                and fostered advancements in AI and advanced analytics.</para>
             <para>AI trains machines to learn from experience, taking new inputs and performing
-                human-like tasks in logically programmed sequence with advanced analytics. As a result
-                of rapidly developing AI, generative AI, a category of AI system that is able to produce
-                meaningful content of its own, is known to be far superior to the traditional role of AI
-                that primarily deals with numeric data with a limited amount of text. This generative AI
-                has become a powerful tool to leverage existing data for enhancing data analysis and
-                decision-making steps. Generative AI can touch on many parts of emergency response and
-                preparedness, including optimizing resource allocation, creating alerts based on
-                environmental scans, enhancing trainings and educational initiatives. [18]</para>
-            <para>Although AI is a powerful tool in the field of Emergency Response &amp; Preparedness,
-                the output of AI is solely dependent on the quality of numerical data with limited
-                texts. Even with the existence of generative AI and its advanced outputs, public health
-                institutions in the U.S. must navigate through a complex web of data paths with limited
-                interoperability and data access. For example, more than a third of public health
-                agencies were unable to access surveillance data during the COVID-19 pandemic, hampering
-                their response. [19] </para>
+                human-like tasks in a logically programmed sequence with advanced analytics. As a
+                result of rapidly developing AI, generative AI, a category of AI system that is able
+                to produce meaningful content of its own, is known to be far superior to the
+                traditional role of AI that primarily deals with numeric data with a limited amount
+                of text. This generative AI has become a powerful tool to leverage existing data for
+                enhancing data analysis and decision-making steps. Generative AI can touch on many
+                parts of emergency response and preparedness, including optimizing resource
+                allocation, creating alerts based on environmental scans, enhancing trainings and
+                educational initiatives. [126]</para>
+            <para>Although AI is a powerful tool in the field of Emergency Response &amp;
+                Preparedness, the output of AI is solely dependent upon the quality of numerical
+                data with limited texts. Even with the existence of generative AI and its advanced
+                outputs, public health institutions in the U.S. must navigate through a complex web
+                of data paths with limited interoperability and data access. For example, more than
+                a third of public health agencies were unable to access surveillance data during the
+                COVID-19 pandemic, hampering their response. [127] </para>
             <para>IKM can help unlock the full power of AI by ensuring data is of high quality,
-                complete, reliable, and interoperable. [20] </para>
+                complete, reliable, and interoperable. [128] </para>
         </section>
     </section>
     <section>
         <title>Conclusion</title>
-        <para>Different institutions at the local, state, federal, national and international levels
-            navigate through the challenge of adopting the latest technology in all shapes and
-            forms. Simultaneously, they not only need to keep up with interoperability of their
-            legacy systems with new systems, but also need to maintain an interoperable system with
-            other institutions’ Incident Command System (ICS). </para>
+        <para>Organizations across local, state, federal, national, and international levels must
+            continually navigate the complexities of adopting and implementing emerging technologies
+            in diverse ways. Simultaneously, they not only need to keep up with the interoperability
+            of their legacy systems with new systems, but also need to maintain an interoperable
+            system with other institutions’ Incident Command System (ICS). </para>
         <para>Adopting IKM becomes an additional layer for response organizations to incorporate.
             Having experienced the global pandemic in recent years, the role of compliance is
             imperative for public safety. Enforcement in the areas of public safety and emergency
             planning remain crucial and requires government support to upgrade existing digital
-            technologies. Achieving this upgrade at the local and state levels will empower and
-            facilitate the federal level of maintaining interoperable ICS system with the latest
+            technologies. Achieving this upgrade at the state and local levels will empower and
+            facilitate the federal level in maintaining interoperable ICS systems with the latest
             available technology for many years to come. </para>
         <para>The field of emergency response and preparedness is well established with many
             agencies and organizations serving in this space. Emergency preparedness is an important
@@ -192,120 +192,6 @@
             spanning across every field. The use of IKM in emergency preparedness and response can
             sharpen these processes and facilitate timely decision making and a more successful
             response. </para>
-    </section>
-    <section>
-        <title>References</title>
-        <orderedlist>
-            <listitem>
-                <para>U.S. Department of Labor [Internet]. 2024 [cited 2024 Apr 9]. Occupational
-                    Safety and Health Administration. Emergency Preparedness and Response. Available
-                    from: https://www.osha.gov/emergency-preparedness</para>
-            </listitem>
-            <listitem>
-                <para>Centers for Disease Control and Prevention [Internet]. The National Institute
-                    for Occupational Safety and Health (NIOSH). Natural Disasters and Extreme
-                    Weather Topics. Available from:
-                    https://www.cdc.gov/niosh/topics/emres/natural.html#:~:text=Natural%20disasters%20can%20cause%20great,volcanic%20eruptions%2C%20and%20extreme%20temperatures</para>
-            </listitem>
-            <listitem>
-                <para>JCAT. [Internet]. [cited 2024 Apr 24]. Counter Terrorism Guide for Public
-                    Safety Personnel. Available from:
-                    https://www.dni.gov/nctc/jcat/index.html</para>
-            </listitem>
-            <listitem>
-                <para>Frequently Asked Chernobyl Questions [Internet]. 2016 [cited 2025 Aug 5].
-                    Available from: https://www.iaea.org/newscenter/focus/chernobyl/faqs</para>
-            </listitem>
-            <listitem>
-                <para>Okumura T, Takasu N, Ishimatsu S, Miyanoki S, Mitsuhashi A, Kumada K, et al.
-                    Report on 640 victims of the Tokyo subway sarin attack. Ann Emerg Med. 1996
-                    Aug;28(2):129–35.</para>
-            </listitem>
-            <listitem>
-                <para>FEMA Commemorates 45 Years of Emergency Management | FEMA.gov [Internet]. 2024
-                    [cited 2025 Aug 5]. Available from:
-                    https://www.fema.gov/press-release/20240401/fema-commemorates-45-years-emergency-management</para>
-            </listitem>
-            <listitem>
-                <para>The 9/11 Commission Report: Final Report of the National Commission on
-                    Terrorist Attacks upon the United States (Authorized Edition). 1st ed.
-                    Erscheinungsort nicht ermittelbar: W. W. Norton &amp; Company, Incorporated;
-                    2004. 1 p.</para>
-            </listitem>
-            <listitem>
-                <para>History of FEMA | FEMA.gov [Internet]. 2021 [cited 2025 Aug 5]. Available
-                    from: https://www.fema.gov/about/history</para>
-            </listitem>
-            <listitem>
-                <para>National Preparedness Goal | FEMA.gov [Internet]. 2025 [cited 2025 Aug 5].
-                    Available from:
-                    https://www.fema.gov/emergency-managers/national-preparedness/goal</para>
-            </listitem>
-            <listitem>
-                <para>Mission Areas and Core Capabilities | FEMA.gov [Internet]. 2020 [cited 2025
-                    Aug 5]. Available from:
-                    https://www.fema.gov/emergency-managers/national-preparedness/mission-core-capabilities</para>
-            </listitem>
-            <listitem>
-                <para>NDEMU | Emergency Management Institute [Internet]. [cited 2025 Aug 5].
-                    Available from:
-                    https://training.fema.gov/ndemu/schools/emergency-management-institute/</para>
-            </listitem>
-            <listitem>
-                <para>National Incident Management System | FEMA.gov [Internet]. 2025 [cited 2025
-                    Aug 5]. Available from: https://www.fema.gov/emergency-managers/nims</para>
-            </listitem>
-            <listitem>
-                <para>Federal Emergency Management Agency [Internet]. 2023. Six Fire Departments
-                    Onboarded onto the New National Emergency Response Information System. Available
-                    from:
-                    https://www.fema.gov/press-release/20240312/six-fire-departments-onboarded-new-national-emergency-response-information</para>
-            </listitem>
-            <listitem>
-                <para>Moss K, Wexler A, Dawson L, Long M, Kates J, Cubanski J, et al. The
-                    Coronavirus Aid, Relief, and Economic Security Act: Summary of Key Health
-                    Provisions [Internet]. KFF. 2020 [cited 2025 Aug 5]. Available from:
-                    https://www.kff.org/coronavirus-covid-19/issue-brief/the-coronavirus-aid-relief-and-economic-security-act-summary-of-key-health-provisions/</para>
-            </listitem>
-            <listitem>
-                <para>Cholan RA, Pappas G, Rehwoldt G, Sills AK, Korte ED, Appleton IK, et al.
-                    Encoding laboratory testing data: case studies of the national implementation of
-                    HHS requirements and related standards in five laboratories. Journal of the
-                    American Medical Informatics Association [Internet]. 2022 July 12 [cited 2025
-                    Aug 5];29(8):1372–80. Available from:
-                    https://academic.oup.com/jamia/article/29/8/1372/6592172</para>
-            </listitem>
-            <listitem>
-                <para>Wallace M, Sharfstein JM. The Patchwork U.S. Public Health System. N Engl J
-                    Med [Internet]. 2022 Jan 6 [cited 2025 Aug 5];386(1):1–4. Available from:
-                    http://www.nejm.org/doi/10.1056/NEJMp2104881</para>
-            </listitem>
-            <listitem>
-                <para>Galaitsi SE, Cegan JC, Volk K, Joyner M, Trump BD, Linkov I. The challenges of
-                    data usage for the United States’ COVID-19 response. Int J Inf Manage
-                    [Internet]. 2021 Aug [cited 2025 Aug 5];59:102352. Available from:
-                    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8017563/</para>
-            </listitem>
-            <listitem>
-                <para>Hasley A, Kamoie B, Mariani J, Karnik C, Sinha I, Egizi A. Deloitte Insights.
-                    2024 [cited 2025 Aug 5]. Leveraging AI for effective emergency management and
-                    crisis response. Available from:
-                    https://www.deloitte.com/us/en/insights/industry/government-public-sector-services/automation-and-generative-ai-in-government/leveraging-ai-in-emergency-management-and-crisis-response.html</para>
-            </listitem>
-            <listitem>
-                <para>Austin T, Mariani J, Dickau D, Kishnani P, Kannan T. Perspectives By Deloitte.
-                    2024 [cited 2025 Aug 5]. How teaming artificial intelligence with humans can
-                    help de-bias decision-making. Available from:
-                    https://www.deloitte.com/us/en/services.html</para>
-            </listitem>
-            <listitem>
-                <para>Hasley A, Kamoie B, Mariani J, Karnik C, Sinha I, Egizi A. Deloitte Insights.
-                    2024 [cited 2025 Aug 5]. Leveraging AI for effective emergency management and
-                    crisis response Hasley A. Kamoie B. Mariani J. Karnik C. Sinha I. Egizi AM.
-                    Available from:
-                    https://www.deloitte.com/us/en/insights/industry/government-public-sector-services/automation-and-generative-ai-in-government/leveraging-ai-in-emergency-management-and-crisis-response.html</para>
-            </listitem>
-        </orderedlist>
     </section>
     
 </chapter>

@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>References</title>
+        <para>
+            <orderedlist>
+                <listitem>
+                <para>HIPPA Guide [Internet]. HIPPA Updates. Available from:
+                    https://www.hipaaguide.net/hipaa-updates/</para>
+            </listitem>
+            <listitem>
+                <para>U.S. Department of Health &amp; Human Services [Internet]. Privacy, Security,
+                    and Electronic Health Records. Available from: <link
+                        xlink:href="https://www.hhs.gov/hipaa/for-professionals/privacy/index.html"
+                        >https://www.hhs.gov/hipaa/for-professionals/privacy/index.html</link></para>
+            </listitem>
+            <listitem>
+                <para>Office of Inspector General | Government Oversight | U.S. Department of Health
+                    and Human Services [Internet]. 2023 [cited 2025 Jul 31]. Information Blocking.
+                    Available from:
+                    https://oig.hhs.gov/reports/featured/information-blocking/</para>
+            </listitem>
+            <listitem>
+                <para>Information Blocking | HealthIT.gov [Internet]. [cited 2025 Jul 31]. Available
+                    from: https://www.healthit.gov/topic/information-blocking</para>
+            </listitem>
+            <listitem>
+                <para>Congress [Internet]. 2020. Care Act. Available from:
+                    https://www.congress.gov/bill/116th-congress/house-bill/748</para>
+            </listitem>
+            <listitem>
+                <para>GDPR.eu [Internet]. 2018 [cited 2025 Jul 31]. What is GDPR, the EU’s new data
+                    protection law? Available from: https://gdpr.eu/what-is-gdpr/</para>
+            </listitem>
+            <listitem>
+                <para>info@gdpr-advisor.com. GDPR Compliance in the Healthcare Industry: Protecting
+                    Patient Data [Internet]. GDPR Advisor. 2023 [cited 2025 Jul 31]. Available from:
+                    https://www.gdpr-advisor.com/gdpr-compliance-in-the-healthcare-industry-protecting-patient-data/</para>
+            </listitem>
+            <listitem>
+                <para>U.S. Department of Health &amp; Human Services [Internet]. Covered Entities
+                    and Business Associates. Available from:
+                    https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html</para>
+            </listitem>
+            <listitem>
+                <para>Does GDPR Impact US Healthcare Providers? [Internet]. [cited 2025 Jul 31].
+                    Available from:
+                    https://natlawreview.com/article/does-gdpr-regulate-clinical-care-delivery-us-health-care-providers</para>
+            </listitem>
+            <listitem>
+                <para>Iubenda [Internet]. [cited 2025 Jul 31]. Privacy Policy of SNOMED
+                    International Services. Available from:
+                    https://www.iubenda.com/privacy-policy/46600952</para>
+            </listitem>
+            <listitem>
+                <para>LOINC [Internet]. [cited 2025 Jul 31]. Home. Available from: <link
+                        xlink:href="https://loinc.org/">https://loinc.org/</link></para>
+            </listitem>
+            <listitem>
+                <para>Deloitte. CCPA Compliance and Readiness [Internet]. Available from:
+                    https://www2.deloitte.com/us/en/pages/advisory/articles/ccpa-compliance-readiness.html</para>
+            </listitem>
+            <listitem>
+                <para>Health IT Playbook [Internet]. [cited 2025 Aug 5]. Available from:
+                    https://www.healthit.gov/playbook/</para>
+            </listitem>
+            <listitem>
+                <para>Kwok CS, Muntean EA, Mallen CD, Borovac JA. Data Collection Theory in
+                    Healthcare Research: The Minimum Dataset in Quantitative Studies. Clin Pract
+                    [Internet]. 2022 Oct 26 [cited 2025 Aug 5];12(6):832–44. Available from:
+                    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9680355/</para>
+            </listitem>
+            <listitem>
+                <para>somasundaram P. Document360. 2022 [cited 2025 Aug 5]. How is knowledge
+                    management used in healthcare? Available from: <link
+                        xlink:href="https://document360.com/blog/knowledge-management-in-healthcare/"
+                        >https://document360.com/blog/knowledge-management-in-healthcare/</link></para>
+            </listitem>
+            <listitem>
+                <para>World Health Organization [Internet]. 2023 [cited 2024 Feb 23]. Mental Health:
+                    Strengthening Our Response. Available from:
+                    https://www.who.int/news-room/fact-sheets/detail/mental-health-strengthening-our-response</para>
+            </listitem>
+            <listitem>
+                <para>Stronge I. National Elf Service. 2022. [cited 2024 Feb 23]. The complex
+                    challenges in sharing mental health data. Available from:
+                    https://www.nationalelfservice.net/commissioning/technology/sharing-mental-health-data/</para>
+            </listitem>
+            <listitem>
+                <para>Lustgarten SD, Garrison YL, Sinnard MT, Flynn AW. Digital privacy in mental
+                    healthcare: current issues and recommendations for technology use. Curr Opin
+                    Psychol. 2020 Dec;36:25–31.</para>
+            </listitem>
+            <listitem>
+                <para>Golay P, Bonsack C, Silva B, Pauli G, de Boer E, Morandi S. Patterns of
+                    Service Use in Intensive Case Management: A Six Year Longitudinal Study. Adm
+                    Policy Ment Health [Internet]. 2022 Sept 1 [cited 2025 Aug 5];49(5):798–809.
+                    Available from: https://doi.org/10.1007/s10488-022-01198-y</para>
+            </listitem>
+            <listitem>
+                <para>Types of Mental Health Facilities | HealthyPlace [Internet]. [cited 2025 Aug
+                    5]. Available from:
+                    https://www.healthyplace.com/other-info/mental-illness-overview/types-of-mental-health-facilities</para>
+            </listitem>
+            <listitem>
+                <para>Insel T. Digital mental health care: five lessons from Act 1 and a preview of
+                    Acts 2–5. npj Digit Med [Internet]. 2023 Jan 26 [cited 2025 Aug 5];6(1):1–3.
+                    Available from: https://www.nature.com/articles/s41746-023-00760-8</para>
+            </listitem>
+            <listitem>
+                <para>Iqbal M. Business of Apps [Internet]. [cited 2025 Aug 5]. App Downloads Data
+                    (2025). Available from:
+                    https://www.businessofapps.com/data/app-statistics/</para>
+            </listitem>
+            <listitem>
+                <para>American Psychiatric Association [Internet]. 2019 [cited 2024 Mar 8].
+                    Thousands of Mental Health Apps Available: Supporting Evidence Not So Plentiful.
+                    Available from:
+                    https://www.psychiatry.org/news-room/apa-blogs/mental-health-apps-evidence-not-so-plentiful#:~:text=There%20are%20more%20than%2010%2C000,%E2%80%9D%20(1)%20Several%20recent%20studies</para>
+            </listitem>
+            <listitem>
+                <para>Tewari S. How to Navigate Mental Health Apps That May Share Your Data | ACLU
+                    [Internet]. American Civil Liberties Union. 2022 [cited 2025 Aug 5]. Available
+                    from:
+                    https://www.aclu.org/news/privacy-technology/how-to-navigate-mental-health-apps-that-may-share-your-data</para>
+            </listitem>
+            <listitem>
+                <para>Hujala T, Laihonen H. Knowledge management in a regional integrated health and
+                    social care system. JICA [Internet]. 2023 Dec 18 [cited 2025 Aug 5];31(5):15–28.
+                    Available from: http://www.emerald.com/jica/article/31/5/15-28/215327</para>
+            </listitem>
+            <listitem>
+                <para>Agency for Healthcare Research and Quality [Internet]. 2023 [cited 2025 Aug
+                    5]. Data Management in Health Care. Available from:
+                    https://www.ahrq.gov/data/resources/index.html</para>
+            </listitem>
+            <listitem>
+                <para>Health IT and EHR [Internet]. [cited 2025 Aug 5]. What is population health
+                    management (PHM)? | Definition from TechTarget. Available from:
+                    https://www.techtarget.com/searchhealthit/definition/Population-health-management-PHM</para>
+            </listitem>
+            <listitem>
+                <para>McIsaac JLD, Penney TL, Storey KE, Sigfridson L, Cunningham J, Kuhle S, et al.
+                    Integrated knowledge translation in population health intervention research: a
+                    case study of implementation and outcomes from a school-based project. Health
+                    Research Policy and Systems [Internet]. 2018 Aug 2 [cited 2025 Aug 5];16(1):72.
+                    Available from: https://doi.org/10.1186/s12961-018-0351-8</para>
+            </listitem>
+            <listitem>
+                <para>Anziolotti A. Nemours KidsHealth. 2021. What Is a Medical Record? Available
+                    from: https://www.aap.org/en/patient-care/pediatric-health-records/</para>
+            </listitem>
+            <listitem>
+                <para>U.S. Department of Health &amp; Human Services [Internet]. 2017. Understanding
+                    HIPAA Privacy For Individuals. Available from:
+                    https://www.hhs.gov/hipaa/for-individuals/index.html</para>
+            </listitem>
+            <listitem>
+                <para>Interoperability in Healthcare | HIMSS [Internet]. 2020 [cited 2025 Aug 5].
+                    Available from:
+                    https://legacy.himss.org/resources/interoperability-healthcare</para>
+            </listitem>
+            <listitem>
+                <para>Next gen innovation: Opportunities in pediatric digital health | Rock Health
+                    [Internet]. 2023 [cited 2025 Aug 5]. Available from:
+                    https://rockhealth.com/insights/next-gen-innovation-opportunities-in-pediatric-digital-health/</para>
+            </listitem>
+            <listitem>
+                <para>Centers for Disease Control and Prevention [Internet]. 2024. Data and
+                    Statistics on Infectious Disease. Available from:
+                    https://www.cdc.gov/datastatistics/index.html</para>
+            </listitem>
+            <listitem>
+                <para>Global Health Observatory [Internet]. [cited 2025 Aug 5]. Available from:
+                    https://www.who.int/data/gho</para>
+            </listitem>
+            <listitem>
+                <para>Open Domain-Specific Data Sharing Repositories [Internet]. [cited 2025 Aug 5].
+                    Available from:
+                    https://www.nlm.nih.gov/NIHbmic/domain_specific_repositories.html</para>
+            </listitem>
+            <listitem>
+                <para>Johns Hopkins Coronavirus Resource Center [Internet]. [cited 2025 Aug 5].
+                    Home. Available from: https://coronavirus.jhu.edu/</para>
+            </listitem>
+            <listitem>
+                <para>Overview | Infectious Diseases Data Observatory [Internet]. [cited 2025 Aug
+                    5]. Available from: https://www.iddo.org/research-themes</para>
+            </listitem>
+            <listitem>
+                <para>Griggs RC, Batshaw M, Dunkle M, Gopal-Srivastava R, Kaye E, Krischer J, et al.
+                    Clinical research for rare disease: Opportunities, challenges, and solutions.
+                    Molecular Genetics and Metabolism [Internet]. 2009 Jan 1 [cited 2025 Aug
+                    5];96(1):20–6. Available from:
+                    https://www.sciencedirect.com/science/article/pii/S1096719208002539</para>
+            </listitem>
+            <listitem>
+                <para>Liu J, Barrett JS, Leonardi ET, Lee L, Roychoudhury S, Chen Y, et al. Natural
+                    History and Real-World Data in Rare Diseases: Applications, Limitations, and
+                    Future Perspectives. J Clin Pharmacol. 2022 Dec;62 Suppl 2(Suppl
+                    2):S38–55.</para>
+            </listitem>
+            <listitem>
+                <para>Orphanet [Internet]. [cited 2025 Aug 5]. Available from:
+                    http://www.orpha.net/</para>
+            </listitem>
+            <listitem>
+                <para>Subbiah V. The next generation of evidence-based medicine. Nat Med [Internet].
+                    2023 Jan [cited 2025 Aug 5];29(1):49–58. Available from:
+                    https://www.nature.com/articles/s41591-022-02160-z</para>
+            </listitem>
+            <listitem>
+                <para>Nabbout R, Zanello G, Baker D, Black L, Brambilla I, Buske OJ, et al. Towards
+                    the international interoperability of clinical research networks for rare
+                    diseases: recommendations from the IRDiRC Task Force. Orphanet J Rare Dis
+                    [Internet]. 2023 May 9 [cited 2025 Aug 5];18:109. Available from:
+                    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10169162/</para>
+            </listitem>
+            <listitem>
+                <para>Lurie Children’s Hospital First in Illinois to Be Designated as a Rare Disease
+                    Center of Excellence by National Organization for Rare Disorders (NORD)
+                    [Internet]. [cited 2025 Aug 5]. Available from:
+                    https://www.luriechildrens.org/en/news-stories/lurie-childrens-hospital-first-in-illinois-to-be-designated-as-a-rare-disease-center-of-excellence-by-national-organization-for-rare-disorders-nord/</para>
+            </listitem>
+            <listitem>
+                <para>Guidelines for Data Integration Across Disciplines; 2023 [Internet]. 2024.
+                    Interdisciplinary Standards for Systematic Data Integration. Available from:
+                    https://www.issdi.org/guidelines-for-data-integration</para>
+            </listitem>
+            <listitem>
+                <para>Green BN, Johnson CD. Interprofessional collaboration in research, education,
+                    and clinical practice: working together for a better future. J Chiropr Educ
+                    [Internet]. 2015 Mar [cited 2025 Aug 5];29(1):1–10. Available from:
+                    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4360764/</para>
+            </listitem>
+            <listitem>
+                <para>Zaugg I. The Data Science Institute at Columbia University [Internet]. 2021
+                    [cited 2025 Aug 5]. Top 10 Strategies for Successful Data Science Teamwork.
+                    Available from:
+                    https://datascience.columbia.edu/news/2021/top-ten-advice-for-successful-data-science-teamwork/</para>
+            </listitem>
+            <listitem>
+                <para>Caizon B. 24 Real Life Examples of Big Data In Healthcare Analytics.
+                    [Internet] Business Intelligence; June 2013 [cited 2024 Feb 23]. Available from:
+                    https://www.datapine.com/blog/big-data-examples-in-healthcare/</para>
+            </listitem>
+            <listitem>
+                <para>Ginburg PB, Loera-Brust A, Brandt C, Durak A. Brookings [Internet]. [cited
+                    2025 Aug 5]. The opportunities and challenges of data analytics in health care.
+                    Available from: <link
+                        xlink:href="https://www.brookings.edu/articles/the-opportunities-and-challenges-of-data-analytics-in-health-care/"
+                        >https://www.brookings.edu/articles/the-opportunities-and-challenges-of-data-analytics-in-health-care/</link></para>
+            </listitem>
+            <listitem>
+                <para>Johns Hopkins Medicine [Internet]. 2022 [cited 2025 Aug 5]. Quality
+                    Improvement. Available from:
+                    https://www.hopkinsmedicine.org/nursing/center-nursing-inquiry/nursing-inquiry/quality-improvement</para>
+            </listitem>
+            <listitem>
+                <para>Centers for Medicare &amp; Medicaid Services [Internet]. 2023. Quality measure
+                    and quality improvement. Available from:
+                    https://www.cms.gov/Medicare/Quality-Initiatives-Patient-Assessment-Instruments/MMS/Quality-Measure-and-Quality-Improvement</para>
+            </listitem>
+            <listitem>
+                <para>Batalden PB, Davidoff F. What is “quality improvement” and how can it
+                    transform healthcare? Qual Saf Health Care [Internet]. 2007 Feb [cited 2025 Aug
+                    5];16(1):2–3. Available from:
+                    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2464920/</para>
+            </listitem>
+            <listitem>
+                <para>Office of Institutional Knowledge Management [Internet]. [cited 2024 Feb 28].
+                    Communications FIUD. Available from:
+                    https://medicine.fiu.edu/about/administrative-offices/office-of-
+                    institutional-knowledge-management/</para>
+            </listitem>
+            <listitem>
+                <para>Shahmoradi L, Safadari R, Jimma W. Knowledge Management Implementation and the
+                    Tools Utilized in Healthcare for Evidence-Based Decision Making: A Systematic
+                    Review. Ethiop J Health Sci [Internet]. 2017 Sept [cited 2025 Aug
+                    5];27(5):541–58. Available from:
+                    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5615016/</para>
+            </listitem>
+            <listitem>
+                <para>Benefits of knowledge management in healthcare | CKEditor [Internet]. 2023
+                    [cited 2025 Aug 5]. Available from:
+                    https://ckeditor.com/blog/benefits-of-knowledge-management-in-healthcare/</para>
+            </listitem>
+            <listitem>
+                <para>KnowledgeBase Blog [Internet]. [cited 2025 Aug 5]. Why is Knowledge Management
+                    in Healthcare so Important? Available from:
+                    https://www.knowledgebase.com/blog/knowledge-management-in-healthcare-so-important/</para>
+            </listitem>
+            <listitem>
+                <para>Evidence, Policy, Impact. WHO Guide for Evidence-Informed Decision-making. 1st
+                    ed. Geneva: World Health Organization; 2022. 1 p.</para>
+            </listitem>
+            <listitem>
+                <para>Carande-Kulis V. Standards Required for the Development of CDC Evidence-Based
+                    Guidelines. MMWR Suppl [Internet]. 2022 [cited 2025 Aug 5];71. Available from:
+                    https://www.cdc.gov/mmwr/volumes/71/su/su7101a1.htm</para>
+            </listitem>
+            <listitem>
+                <para>Bilheimer LT, Klein RJ. Data and Measurement Issues in the Analysis of Health
+                    Disparities. Health Serv Res [Internet]. 2010 Oct [cited 2025 Aug 5];45(5 Pt
+                    2):1489–507. Available from:
+                    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2965888/</para>
+            </listitem>
+            <listitem>
+                <para>Kluwer W. Six challenges to delivering quality healthcare [Internet]. 2022
+                    [cited 2025 Aug 5]. Available from:
+                    https://www.wolterskluwer.com/en/expert-insights/six-challenges-to-delivering-quality-healthcare</para>
+            </listitem>
+            <listitem>
+                <para>Adane K, Gizachew M, Kendie S. The role of medical data in efficient patient
+                    care delivery: a review. Risk Manag Healthc Policy [Internet]. 2019 Apr 24
+                    [cited 2025 Aug 5];12:67–73. Available from:
+                    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6486797/</para>
+            </listitem>
+            <listitem>
+                <para>Borwn J. Knowledge Management in the Healthcare Industry [Internet]. [cited
+                    2025 Aug 5]. Available from:
+                    https://helpjuice.com/blog/healthcare-knowledge-management</para>
+            </listitem>
+            <listitem>
+                <para>Mujumdar J. ACS. [cited 2025 Aug 5]. Leveraging knowledge management for
+                    better quality surgical care: An introduction. Available from:
+                    https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/bulletin/2021/03/leveraging-knowledge-management-for-better-quality-surgical-care-an-introduction/</para>
+            </listitem>
+            <listitem>
+                <para>Koo E, McNamara S, Lansing B, Olmsted RN, Rye RA, Fitzgerald T, et al. Making
+                    infection prevention education interactive can enhance knowledge and improve
+                    outcomes: Results from the Targeted Infection Prevention (TIP) Study. American
+                    Journal of Infection Control [Internet]. 2016 [cited 2025 Aug 5];44(11):1241–6.
+                    Available from:
+                    https://linkinghub.elsevier.com/retrieve/pii/S0196655316002455</para>
+            </listitem>
+            <listitem>
+                <para>Wilson LAM, Giles-Corti B, Burton NW, Giskes K, Haynes M, Turrell G. The
+                    Association between Objectively Measured Neighborhood Features and Walking in
+                    Middle-Aged Adults. Am J Health Promot [Internet]. 2011 [cited 2025 Aug
+                    5];25(4):e12–21. Available from:
+                    https://journals.sagepub.com/doi/10.4278/ajhp.090421-QUAN-144</para>
+            </listitem>
+            <listitem>
+                <para>Reducing Tobacco Use Initiation: Mass Media Campaigns When Combined with Other
+                    Interventions [Internet]. 2024 [cited 2024 Mar 28]. Available from:
+                    https://www.thecommunityguide.org/sites/default/files/Tobacco-Mass-Media-Combined-Cessation-Archive.pdf</para>
+            </listitem>
+            <listitem>
+                <para>World Health Organization, Regional Office for the Eastern Mediterranean
+                    [Internet]. 2012 [cited 2024 Mar 26]. Health education: Theoretical concepts,
+                    effective strategies, and core competencies: A foundation document to guide
+                    capacity development of Health Educators. Available from:
+                    https://iris.who.int/bitstream/handle/10665/119953/EMRPUB_2012_EN_1362.pdf?sequence=1</para>
+            </listitem>
+            <listitem>
+                <para>Agency for Healthcare Research &amp; Quality [Internet]. [cited 2025 Aug 5].
+                    Case Studies of Quality Improvement Initiatives. Available from:
+                    https://www.ahrq.gov/cahps/quality-improvement/reports-and-case-studies/Case-Study_QI-Initiatives.html</para>
+            </listitem>
+            <listitem>
+                <para>Pathstream [Internet]. [cited 2025 Aug 5]. Upskilling in healthcare to retain
+                    talent and reduce burnout. Available from: https://pathstream.com//</para>
+            </listitem>
+            <listitem>
+                <para>Scoping Review Report Data Elements for Research on the Role of Social
+                    Determinants of Health in Coronavirus Disease 2019 Infection and Outcomes in the
+                    U.S. PROJECT REPORT [Internet]. 2022 [cited 2024 May 9]. Available from:
+                    https://aspe.hhs.gov/sites/default/files/documents/53fc356858b67f5e9810d107f09ce169/sdoh-covid-19-scoping-review-report.pdf</para>
+            </listitem>
+            <listitem>
+                <para>Secretary’s Advisory Committee Report #5: Stakeholder Engagement and
+                    Communication for Healthy People 2030 [Internet]. Available from:
+                    https://health.gov/sites/default/files/2021-09/Stakeholder%20Engagement_Communication%20Report_12-02-18_FINAL-WEB-Version_508c.pdf</para>
+            </listitem>
+            <listitem>
+                <para>Galgotia D, Lakshmi N. Implementation of Knowledge Management in Higher
+                    Education: A Comparative Study of Private and Government Universities in India
+                    and Abroad. Front Psychol [Internet]. 2022 June 16 [cited 2025 Aug 5];13:944153.
+                    Available from:
+                    https://www.frontiersin.org/articles/10.3389/fpsyg.2022.944153/full</para>
+            </listitem>
+            <listitem>
+                <para>Chen B, Shin S, Wu M, Liu Z. Visualizing the Knowledge Domain in Health
+                    Education: A Scientometric Analysis Based on CiteSpace. IJERPH [Internet]. 2022
+                    May 25 [cited 2025 Aug 5];19(11):6440. Available from:
+                    https://www.mdpi.com/1660-4601/19/11/6440</para>
+            </listitem>
+            <listitem>
+                <para>Centers for Disease Control and Prevention [Internet]. 2023. CDC Policy
+                    Process | Policy, Performance, and Evaluation. Available from: <link
+                        xlink:href="https://www.cdc.gov/policy/paeo/process/index.html"
+                        >https://www.cdc.gov/policy/paeo/process/index.html</link></para>
+            </listitem>
+            <listitem>
+                <para>Most Important Metrics for a Healthcare Quality Management Dashboard
+                    [Internet]. 2024 [cited 2025 Aug 5]. Available from: <link
+                        xlink:href="https://www.symplr.com/blog/most-important-metrics-healthcare-quality-dashboard"
+                        >https://www.symplr.com/blog/most-important-metrics-healthcare-quality-dashboard</link></para>
+            </listitem>
+            <listitem>
+                <para>8 Healthcare Quality Improvement Tips | Harvard T.H. Chan School of Public
+                    Health [Internet]. 2016 [cited 2025 Aug 5]. Available from:
+                    https://hsph.harvard.edu/exec-ed/news/8-healthcare-quality-improvement-tips/</para>
+            </listitem>
+            <listitem>
+                <para>Cholan RA, Pappas G, Rehwoldt G, Sills AK, Korte ED, Appleton IK, et al.
+                    Encoding laboratory testing data: case studies of the national implementation of
+                    HHS requirements and related standards in five laboratories. Journal of the
+                    American Medical Informatics Association [Internet]. 2022 July 12 [cited 2025
+                    Aug 5];29(8):1372–80. Available from:
+                    https://academic.oup.com/jamia/article/29/8/1372/6592172</para>
+            </listitem>
+            <listitem>
+                <para>Bernstam EV, Warner JL, Krauss JC, Ambinder E, Rubinstein WS, Komatsoulis G,
+                    et al. Quantitating and assessing interoperability between electronic health
+                    records. J Am Med Inform Assoc. 2022 Apr 13;29(5):753–60.</para>
+            </listitem>
+            <listitem>
+                <para>Greene DN, McClintock DS, Durant TJS. Interoperability: COVID-19 as an Impetus
+                    for Change. Clin Chem [Internet]. 2021 Feb 13 [cited 2025 Aug 5];hvab006.
+                    Available from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7929044/</para>
+            </listitem>
+            <listitem>
+                <para>Holst J. Global Health – emergence, hegemonic trends and biomedical
+                    reductionism. Global Health [Internet]. 2020 May 6 [cited 2025 Aug 5];16:42.
+                    Available from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7201392/</para>
+            </listitem>
+            <listitem>
+                <para>Palilonis M. Wake Forest University. 2020. An Introduction to Global Health
+                    and Global Health Ethics: A Brief History of Global Health. Available from:
+                    https://cbhs.wfu.edu/wp-content/uploads/2020/03/Topic-3-A-Brief-History-of-Global-Health.pdf</para>
+            </listitem>
+            <listitem>
+                <para>Farmer P, Kleinman A, Kim J, Balisico M. Reimagining Global Health: An
+                    Introduction. United States (US): California; 2013. (Series in Public
+                    Anthropology).</para>
+            </listitem>
+            <listitem>
+                <para>Boudreau F. United States (US): The Milbank Memorial Fund Quarterly. 1933.
+                    Health Committee of the League of Nations.</para>
+            </listitem>
+            <listitem>
+                <para>History of the Pan American Health Organization (PAHO) - PAHO/WHO | Pan
+                    American Health Organization [Internet]. [cited 2025 Aug 5]. Available from:
+                    https://www.paho.org/en/who-we-are/history-pan-american-health-organization-paho</para>
+            </listitem>
+            <listitem>
+                <para>International Health Board Archives [Internet]. REsource. [cited 2025 Aug 5].
+                    Available from:
+                    https://resource.rockarch.org/institutions/international-health-board/</para>
+            </listitem>
+            <listitem>
+                <para>International Monetary Fund. [Internet]. 2024. What is the IMF? Available
+                    from: https://www.imf.org/en/About/Factsheets/IMF-at-a-Glance</para>
+            </listitem>
+            <listitem>
+                <para>World Bank [Internet]. [cited 2025 Aug 5]. History. Available from:
+                    https://www.worldbank.org/en/archive/history</para>
+            </listitem>
+            <listitem>
+                <para>Nungarai N. Lausanne Movement. 2024 [cited 2025 Aug 5]. The 21st Century
+                    Healthcare Missionary. Available from:
+                    https://lausanne.org/global-analysis/the-changing-face-of-healthcare-missions-opportunities-and-challenges-in-the-21st-century</para>
+            </listitem>
+            <listitem>
+                <para>WHO [Internet]. 2021. World Health Organization. Global strategy on digital
+                    health 2020-2025. Available from:
+                    https://www.who.int/docs/default-source/documents/gs4dhdaa2a9f352b0445bafbc79ca799dce4d.pdf</para>
+            </listitem>
+            <listitem>
+                <para>The Commonwealth Fund [Internet]. 2021. The Federal Government Has Put
+                    Billions into Promoting electronic Health Record Use: How is it Going? Available
+                    from: https://www.commonwealthfund.org/improving-health-care-quality</para>
+            </listitem>
+            <listitem>
+                <para>SNOMED International [Internet]. [cited 2025 Aug 5]. Partnerships. Available
+                    from: https://www.snomed.org/our-partnerships</para>
+            </listitem>
+            <listitem>
+                <para>World Health Assembly [Internet]. [cited 2025 Aug 5]. Available from:
+                    https://www.who.int/about/governance/world-health-assembly</para>
+            </listitem>
+            <listitem>
+                <para>DICOM [Internet]. [cited 2025 Aug 5]. About DICOM- Overview. Available from:
+                    https://www.dicomstandard.org/about</para>
+            </listitem>
+            <listitem>
+                <para>About IMDRF | International Medical Device Regulators Forum [Internet]. [cited
+                    2025 Aug 5]. Available from: https://www.imdrf.org/about</para>
+            </listitem>
+            <listitem>
+                <para>What we do - GMDN [Internet]. 2024 [cited 2025 Aug 5]. Available from:
+                    https://www.gmdnagency.org/what-we-do/</para>
+            </listitem>
+            <listitem>
+                <para>About Health Level Seven International | HL7 International [Internet]. [cited
+                    2025 Aug 5]. Available from: https://www.hl7.org/about/index.cfm?ref=nav</para>
+            </listitem>
+            <listitem>
+                <para>IHE International [Internet]. [cited 2025 Aug 5]. FAQ. Available from:
+                    https://www.ihe.net/about_ihe/faq/</para>
+            </listitem>
+            <listitem>
+                <para>MedDRA [Internet]. [cited 2025 Aug 5]. Available from:
+                    https://www.meddra.org/</para>
+            </listitem>
+            <listitem>
+                <para>Regenstrief Institute Inc. and SNOMED International [Internet]. 2024 [cited
+                    2024 Mar 25]. International Health Terminology Standards Development
+                    Organization. Available from:
+                    https://confluence.ihtsdotools.org/display/DOCGLOSS/International+Health+Terminology+Standards+Development+Organisati</para>
+            </listitem>
+            <listitem>
+                <para>Regenstrief Institute Inc. and SNOMED International [Internet]. 2024. SNOMED
+                    International determines global standards for health terms, an essential part of
+                    improving the health of humankind. Available from:
+                    https://www.snomed.org/</para>
+            </listitem>
+            <listitem>
+                <para>Cornet R, de Keizer N. Forty years of SNOMED: a literature review. BMC Med
+                    Inform Decis Mak [Internet]. 2008 Oct 27 [cited 2025 Aug 5];8(Suppl 1):S2.
+                    Available from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2582789/</para>
+            </listitem>
+            <listitem>
+                <para>American Medical Association [Internet]. 2025 [cited 2025 Aug 5]. CPT®.
+                    Available from: https://www.ama-assn.org/practice-management/cpt</para>
+            </listitem>
+            <listitem>
+                <para>VocabularyDocumentation [Internet]. [cited 2025 Aug 5]. Available from:
+                    https://www.nlm.nih.gov/research/umls/sourcereleasedocs/current/HCPCS/index.html</para>
+            </listitem>
+            <listitem>
+                <para>Centers for Disease Control and Prevention. [Internet]. 2021 [cited 2024 Mar
+                    7]. International Classification of Disease, Tenth Revision (ICD-10). Available
+                    from: https://www.cdc.gov/nchs/icd/icd10.htm</para>
+            </listitem>
+            <listitem>
+                <para>LOINC [Internet]. [cited 2025 Aug 5]. LOINC – The freely available standard
+                    for identifying health measurements, observations, and documents. Available
+                    from: https://loinc.org/</para>
+            </listitem>
+            <listitem>
+                <para>Medicomp Systems [Internet]. 2024 [cited 2025 Aug 5]. Medicomp Systems.
+                    Medicomp Systems: A History of Innovation. Available from:
+                    https://medicomp.com/history/</para>
+            </listitem>
+            <listitem>
+                <para>Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR) |
+                    HealthIT.gov [Internet]. [cited 2025 Aug 5]. Available from:
+                    https://www.healthit.gov/topic/standards-technology/standards/fhir</para>
+            </listitem>
+            <listitem>
+                <para>The Epidemic Intelligence from Open Sources Initiative [Internet]. [cited 2025
+                    Aug 5]. Available from: https://www.who.int/initiatives/eios</para>
+            </listitem>
+            <listitem>
+                <para>Global Digital Health Partnership (GDNP). Advancing Interoperability Together
+                    Globally: GDHP White Paper on Interoperability [Internet]. 2020 [cited 2024 Mar
+                    26]. Available from: <link
+                        xlink:href="https://gdhp.health/wp-content/uploads/2022/03/GDHP-Interop-Final.pdf"
+                        >https://gdhp.health/wp-content/uploads/2022/03/GDHP-Interop-Final.pdf</link></para>
+            </listitem>
+            <listitem>
+                <para>U.S. Department of Labor [Internet]. 2024 [cited 2024 Apr 9]. Occupational
+                    Safety and Health Administration. Emergency Preparedness and Response. Available
+                    from: https://www.osha.gov/emergency-preparedness</para>
+            </listitem>
+            <listitem>
+                <para>Centers for Disease Control and Prevention [Internet]. The National Institute
+                    for Occupational Safety and Health (NIOSH). Natural Disasters and Extreme
+                    Weather Topics. Available from:
+                    https://www.cdc.gov/niosh/topics/emres/natural.html#:~:text=Natural%20disasters%20can%20cause%20great,volcanic%20eruptions%2C%20and%20extreme%20temperatures</para>
+            </listitem>
+            <listitem>
+                <para>JCAT. [Internet]. [cited 2024 Apr 24]. Counter Terrorism Guide for Public
+                    Safety Personnel. Available from:
+                    https://www.dni.gov/nctc/jcat/index.html</para>
+            </listitem>
+            <listitem>
+                <para>Frequently Asked Chernobyl Questions [Internet]. 2016 [cited 2025 Aug 5].
+                    Available from: https://www.iaea.org/newscenter/focus/chernobyl/faqs</para>
+            </listitem>
+            <listitem>
+                <para>Okumura T, Takasu N, Ishimatsu S, Miyanoki S, Mitsuhashi A, Kumada K, et al.
+                    Report on 640 victims of the Tokyo subway sarin attack. Ann Emerg Med. 1996
+                    Aug;28(2):129–35.</para>
+            </listitem>
+            <listitem>
+                <para>FEMA Commemorates 45 Years of Emergency Management | FEMA.gov [Internet]. 2024
+                    [cited 2025 Aug 5]. Available from:
+                    https://www.fema.gov/press-release/20240401/fema-commemorates-45-years-emergency-management</para>
+            </listitem>
+            <listitem>
+                <para>The 9/11 Commission Report: Final Report of the National Commission on
+                    Terrorist Attacks upon the United States (Authorized Edition). 1st ed.
+                    Erscheinungsort nicht ermittelbar: W. W. Norton &amp; Company, Incorporated;
+                    2004. 1 p.</para>
+            </listitem>
+            <listitem>
+                <para>History of FEMA | FEMA.gov [Internet]. 2021 [cited 2025 Aug 5]. Available
+                    from: https://www.fema.gov/about/history</para>
+            </listitem>
+            <listitem>
+                <para>National Preparedness Goal | FEMA.gov [Internet]. 2025 [cited 2025 Aug 5].
+                    Available from:
+                    https://www.fema.gov/emergency-managers/national-preparedness/goal</para>
+            </listitem>
+            <listitem>
+                <para>Mission Areas and Core Capabilities | FEMA.gov [Internet]. 2020 [cited 2025
+                    Aug 5]. Available from:
+                    https://www.fema.gov/emergency-managers/national-preparedness/mission-core-capabilities</para>
+            </listitem>
+            <listitem>
+                <para>NDEMU | Emergency Management Institute [Internet]. [cited 2025 Aug 5].
+                    Available from:
+                    https://training.fema.gov/ndemu/schools/emergency-management-institute/</para>
+            </listitem>
+            <listitem>
+                <para>National Incident Management System | FEMA.gov [Internet]. 2025 [cited 2025
+                    Aug 5]. Available from: https://www.fema.gov/emergency-managers/nims</para>
+            </listitem>
+            <listitem>
+                <para>Federal Emergency Management Agency [Internet]. 2023. Six Fire Departments
+                    Onboarded onto the New National Emergency Response Information System. Available
+                    from:
+                    https://www.fema.gov/press-release/20240312/six-fire-departments-onboarded-new-national-emergency-response-information</para>
+            </listitem>
+            <listitem>
+                <para>Moss K, Wexler A, Dawson L, Long M, Kates J, Cubanski J, et al. The
+                    Coronavirus Aid, Relief, and Economic Security Act: Summary of Key Health
+                    Provisions [Internet]. KFF. 2020 [cited 2025 Aug 5]. Available from:
+                    https://www.kff.org/coronavirus-covid-19/issue-brief/the-coronavirus-aid-relief-and-economic-security-act-summary-of-key-health-provisions/</para>
+            </listitem>
+            <listitem>
+                <para>Cholan RA, Pappas G, Rehwoldt G, Sills AK, Korte ED, Appleton IK, et al.
+                    Encoding laboratory testing data: case studies of the national implementation of
+                    HHS requirements and related standards in five laboratories. Journal of the
+                    American Medical Informatics Association [Internet]. 2022 July 12 [cited 2025
+                    Aug 5];29(8):1372–80. Available from:
+                    https://academic.oup.com/jamia/article/29/8/1372/6592172</para>
+            </listitem>
+            <listitem>
+                <para>Wallace M, Sharfstein JM. The Patchwork U.S. Public Health System. N Engl J
+                    Med [Internet]. 2022 Jan 6 [cited 2025 Aug 5];386(1):1–4. Available from:
+                    http://www.nejm.org/doi/10.1056/NEJMp2104881</para>
+            </listitem>
+            <listitem>
+                <para>Galaitsi SE, Cegan JC, Volk K, Joyner M, Trump BD, Linkov I. The challenges of
+                    data usage for the United States’ COVID-19 response. Int J Inf Manage
+                    [Internet]. 2021 Aug [cited 2025 Aug 5];59:102352. Available from:
+                    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8017563/</para>
+            </listitem>
+            <listitem>
+                <para>Hasley A, Kamoie B, Mariani J, Karnik C, Sinha I, Egizi A. Deloitte Insights.
+                    2024 [cited 2025 Aug 5]. Leveraging AI for effective emergency management and
+                    crisis response. Available from:
+                    https://www.deloitte.com/us/en/insights/industry/government-public-sector-services/automation-and-generative-ai-in-government/leveraging-ai-in-emergency-management-and-crisis-response.html</para>
+            </listitem>
+            <listitem>
+                <para>Austin T, Mariani J, Dickau D, Kishnani P, Kannan T. Perspectives By Deloitte.
+                    2024 [cited 2025 Aug 5]. How teaming artificial intelligence with humans can
+                    help de-bias decision-making. Available from:
+                    https://www.deloitte.com/us/en/services.html</para>
+            </listitem>
+            <listitem>
+                <para>Hasley A, Kamoie B, Mariani J, Karnik C, Sinha I, Egizi A. Deloitte Insights.
+                    2024 [cited 2025 Aug 5]. Leveraging AI for effective emergency management and
+                    crisis response Hasley A. Kamoie B. Mariani J. Karnik C. Sinha I. Egizi AM.
+                    Available from:
+                    https://www.deloitte.com/us/en/insights/industry/government-public-sector-services/automation-and-generative-ai-in-government/leveraging-ai-in-emergency-management-and-crisis-response.html</para>
+            </listitem>
+            <listitem>
+                <para>Interoperability in Healthcare | HIMSS [Internet]. 2020 [cited 2025 Aug 5].
+                    Available from: <link
+                        xlink:href="https://legacy.himss.org/resources/interoperability-healthcare"
+                        >https://legacy.himss.org/resources/interoperability-healthcare</link></para>
+            </listitem>
+            <listitem>
+                <para>Healthcare Information and Management Systems Society [Internet]. 2020 [cited
+                    2025 Aug 5]. Available from:
+                    https://legacy.himss.org/resources/interoperability-healthcare</para>
+            </listitem>
+            <listitem>
+                <para>Raghupathi W, Raghupathi V. Big data analytics in healthcare: promise and
+                    potential. Health Inf Sci Syst [Internet]. 2014 [cited 2025 Aug 5];2(1):3.
+                    Available from: http://link.springer.com/10.1186/2047-2501-2-3</para>
+            </listitem>
+            <listitem>
+                <para>Khozin S, Blumenthal GM, Pazdur R. Real-world Data for Clinical Evidence
+                    Generation in Oncology. JNCI: Journal of the National Cancer Institute
+                    [Internet]. 2017 Nov 1 [cited 2025 Aug 5];109(11). Available from:
+                    https://academic.oup.com/jnci/article/doi/10.1093/jnci/djx187/4157738</para>
+            </listitem>
+            <listitem>
+                <para>HealthIT.gov [Internet]. 2024. 2024-2030 Federal Health IT Strategic Plan.
+                    Available from:
+                    https://www.healthit.gov/topic/2024-2030-federal-health-it-strategic-plan</para>
+            </listitem>
+            <listitem>
+                <para>Friedman C, Rubin J, Brown J, Buntin M, Corn M, Etheredge L, et al. Toward a
+                    science of learning systems: a research agenda for the high-functioning Learning
+                    Health System. Journal of the American Medical Informatics Association
+                    [Internet]. 2015 Jan 1 [cited 2025 Aug 5];22(1):43–50. Available from:
+                    https://academic.oup.com/jamia/article/22/1/43/834511</para>
+            </listitem>
+            <listitem>
+                <para>Hersh WR, Totten AM, Eden KB, Devine B, Gorman P, Kassakian SZ, et al.
+                    Outcomes From Health Information Exchange: Systematic Review and Future Research
+                    Needs. JMIR Med Inform [Internet]. 2015 Dec 15 [cited 2025 Aug 5];3(4):e39.
+                    Available from: http://medinform.jmir.org/2015/4/e39/</para>
+            </listitem>
+            <listitem>
+                <para>HealthIT.gov [Internet]. [cited 2024 Apr 5]. 2020-2025 Federal Health IT
+                    Strategic Plan. Available from:
+                    https://www.healthit.gov/topic/2020-2025-federal-health-it-strategic-plan</para>
+            </listitem>
+            <listitem>
+                <para>Kaplan R, Porter M. The Big Idea: How to Solve the Cost Crisis in Health Care.
+                    Harvard Business Review [Internet]. 2011 Sept 1 [cited 2025 Aug 5]; Available
+                    from: https://hbr.org/2011/09/how-to-solve-the-cost-crisis-in-health-care</para>
+            </listitem>
+            <listitem>
+                <para>Adler-Milstein J, Jha AK. HITECH Act Drove Large Gains In Hospital Electronic
+                    Health Record Adoption. Health Affairs [Internet]. 2017 [cited 2025 Aug
+                    5];36(8):1416–22. Available from:
+                    http://www.healthaffairs.org/doi/10.1377/hlthaff.2016.1651</para>
+            </listitem>
+            <listitem>
+                <para>Davenport T, McNeill D. Analytics in Healthcare and the Life Sciences:
+                    Strategies, Implementation Methods, and Best Practices. 1st Edition. Pearson FT
+                    Press; 2013.</para>
+            </listitem>
+            <listitem>
+                <para>Routledge &amp; CRC Press [Internet]. [cited 2025 Aug 5]. Improving Outcomes
+                    with Clinical Decision Support: An Implementer’s Guide, Second Edition.
+                    Available from:
+                    https://www.routledge.com/Improving-Outcomes-with-Clinical-Decision-Support-An-Implementers-Guide-Second-Edition/Osheroff-Teich-Levick-Saldana-Velasco-Sittig-Rogers-Jenders/p/book/9780984457731</para>
+            </listitem>
+            <listitem>
+                <para>Davenport T. Just-in-Time Delivery Comes to Knowledge Management. Harvard
+                    Business Review [Internet]. 2002 July 1 [cited 2025 Aug 5]; Available from:
+                    https://hbr.org/2002/07/just-in-time-delivery-comes-to-knowledge-management</para>
+            </listitem>
+            <listitem>
+                <para>Walker J, Pan E, Johnston D, Adler-Milstein J, Bates DW, Middleton B. The
+                    Value Of Health Care Information Exchange And Interoperability: There is a
+                    business case to be made for spending money on a fully standardized nationwide
+                    system. Health Affairs [Internet]. 2005 [cited 2025 Aug
+                    5];24(Suppl1):W5-10-W5-18. Available from:
+                    http://www.healthaffairs.org/doi/10.1377/hlthaff.W5.10</para>
+            </listitem>
+            <listitem>
+                <para>Sheikh A, Cornford T, Barber N, Avery A, Takian A, Lichtner V, et al.
+                    Implementation and adoption of nationwide electronic health records in secondary
+                    care in England: final qualitative results from prospective national evaluation
+                    in “early adopter” hospitals. BMJ [Internet]. 2011 Oct 17 [cited 2025 Aug
+                    5];343(oct17 1):d6054–d6054. Available from:
+                    https://www.bmj.com/lookup/doi/10.1136/bmj.d6054</para>
+            </listitem>
+            <listitem>
+                <para>The Strategy That Will Fix Health Care. Harvard Business Review [Internet].
+                    2013 Oct 1 [cited 2025 Aug 5]; Available from:
+                    https://hbr.org/2013/10/the-strategy-that-will-fix-health-care</para>
+            </listitem>
+            <listitem>
+                <para>Goldzweig CL, Towfigh A, Maglione M, Shekelle PG. Costs And Benefits Of Health
+                    Information Technology: New Trends From The Literature: Since 2005,
+                    patient-focused applications have proliferated, but data on their costs and
+                    benefits remain sparse. Health Affairs [Internet]. 2009 [cited 2025 Aug
+                    5];28(Supplement 2):w282–93. Available from:
+                    http://www.healthaffairs.org/doi/10.1377/hlthaff.28.2.w282</para>
+            </listitem>
+            <listitem>
+                <para>Buntin MB, Burke MF, Hoaglin MC, Blumenthal D. The Benefits Of Health
+                    Information Technology: A Review Of The Recent Literature Shows Predominantly
+                    Positive Results. Health Affairs [Internet]. 2011 [cited 2025 Aug
+                    5];30(3):464–71. Available from:
+                    http://www.healthaffairs.org/doi/10.1377/hlthaff.2011.0178</para>
+            </listitem>
+            <listitem>
+                <para>Lorenzi NM, Riley RT. Managing Technological Change [Internet]. New York, NY:
+                    Springer New York; 2004 [cited 2025 Aug 5]. Available from:
+                    http://link.springer.com/10.1007/978-1-4757-4116-2</para>
+            </listitem>
+            <listitem>
+                <para>Wiley.com [Internet]. [cited 2025 Aug 5]. The Strategic Management of Health
+                    Care Organizations, 8th Edition | Wiley. Available from:
+                    https://www.wiley.com/en-us/The+Strategic+Management+of+Health+Care+Organizations%2C+8th+Edition-p-9781119349709</para>
+            </listitem>
+            <listitem>
+                <para>Kuperman GJ. Health-information exchange: why are we doing it, and what are we
+                    doing? J Am Med Inform Assoc [Internet]. 2011 [cited 2025 Aug 5];18(5):678–82.
+                    Available from:
+                    https://academic.oup.com/jamia/article-lookup/doi/10.1136/amiajnl-2010-000021</para>
+            </listitem>
+            <listitem>
+                <para>Frisse ME, Johnson KB, Nian H, Davison CL, Gadd CS, Unertl KM, et al. The
+                    financial impact of health information exchange on emergency department care.
+                    Journal of the American Medical Informatics Association [Internet]. 2012 May 1
+                    [cited 2025 Aug 5];19(3):328–33. Available from:
+                    https://academic.oup.com/jamia/article-lookup/doi/10.1136/amiajnl-2011-000394</para>
+            </listitem>
+            <listitem>
+                <para>Vest JR, Gamm LD. Health information exchange: persistent challenges and new
+                    strategies: Table 1. J Am Med Inform Assoc [Internet]. 2010 [cited 2025 Aug
+                    5];17(3):288–94. Available from:
+                    https://academic.oup.com/jamia/article-lookup/doi/10.1136/jamia.2010.003673</para>
+            </listitem>
+            <listitem>
+                <para>Blumenthal D. Launching HITECH. N Engl J Med [Internet]. 2010 Feb 4 [cited
+                    2025 Aug 5];362(5):382–5. Available from:
+                    http://www.nejm.org/doi/abs/10.1056/NEJMp0912825</para>
+            </listitem>
+            <listitem>
+                <para>McKinsey [Internet]. [cited 2024 Apr 23]. Big data: The next frontier for
+                    innovation, competition, and productivity. Available from:
+                    https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/big-data-the-next-frontier-for-innovation</para>
+            </listitem>
+            <listitem>
+                <para>Werder M. Health information technology: A key ingredient of the patient
+                    experience. Patient Experience Journal [Internet]. 2015 Apr 29 [cited 2025 Aug
+                    5];2(1):143–7. Available from: https://pxjournal.org/journal/vol2/iss1/19</para>
+            </listitem>
+            <listitem>
+                <para>Specialists PP. Physician Practice Specialists. 2023 [cited 2025 Aug 5]. What
+                    is a Healthcare Technology Consultant? Available from:
+                    https://physicianpracticespecialists.com/billing/what-is-a-healthcare-technology-consultant/</para>
+            </listitem>
+            <listitem>
+                <para>Krouth G. Why Healthcare Industry Needs IT Consulting Services [Internet]. DS
+                    Tech. 2023 [cited 2025 Aug 5]. Available from:
+                    https://dstech.net/blog/it-consulting-services-in-healthcare-industry/</para>
+            </listitem>
+            </orderedlist>
+        </para>
+</chapter>
+
