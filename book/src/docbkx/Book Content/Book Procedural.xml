@@ -13,9 +13,9 @@
         situations.</para>
     <section>
         <title>Introduction to Clinical Decision Support (CDS)</title>
-        <para>As defined by Osheroff et al. [1] CDS “provides clinicians, staff, patients, or other
+        <para>As defined by Osheroff et al.  CDS “provides clinicians, staff, patients, or other
             individuals with knowledge and person-specific information, intelligently filtered or
-            presented at appropriate times, to enhance health and health care.” CDS encompasses a
+            presented at appropriate times, to enhance health and health care.”[1] CDS encompasses a
             variety of tools to enhance decision-making in the clinical workflow. Examples of CDS
             tools include but are not limited to: </para>
         <itemizedlist>
@@ -107,9 +107,10 @@
         </para>
         <para>To capitalize on the benefits that CDS provides, it is essential to understand and
             address the foundational elements that enable the proper implementation within
-            healthcare systems. Osheroff et al. [1] have also published “The CDS 5 Rights framework”
+            healthcare systems. Osheroff et al.  have also published “The CDS 5 Rights framework”
             (5Rights), which asserts that, to improve targeted healthcare decisions and outcomes
-            through well developed and deployed CDS interventions, the interventions must provide: </para>
+            through well developed and deployed CDS interventions, the interventions must provide:
+            [1]</para>
         <itemizedlist>
             <listitem>
                 <para>the <emphasis role="bold">right</emphasis> information,</para>
@@ -135,8 +136,9 @@
             tools needs to occur in a manner that is consistent, systematic, and comprehensive.
             There have been a number of historical efforts that have aimed to achieve interoperable
             and robust CDS tools and artifacts that appropriately translate guidelines into care.
-            The AHRQ depicts the following image representing the “CDS lifecycle” for the following
-            areas: [1]<itemizedlist>
+            The AHRQ depicts in
+            <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T163810-0500" comment="Update"?>Figure
+            #.<?oxy_comment_end?>  representing the “CDS lifecycle” for the following areas: [1]<itemizedlist>
                 <listitem>
                     <para>Authoring CDS tools and artifacts that leverage knowledge sources such as
                         clinical practice guidelines, quality measure specifications, and
@@ -167,14 +169,15 @@
         <title>Lack of Standardized Encoded Clinical Data - Impact on CDS</title>
         <para>In this section, we will explore the challenges of delivering patient-centered
             clinical decision support in the context of inconsistent data encoding standards.</para>
-        <para>The following figure depicts how the lack of standardization in data transfer can
-            impact decision support.
-            <figure xml:id="ShortcomingsDataTransfers">
+        <para>The
+            <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T152015-0500" comment="Update Figure #"?>Figure
+            #<?oxy_comment_end?>. depicts how the lack of standardization in data transfer can
+            impact decision support. <figure xml:id="ShortcomingsDataTransfers">
                 <title>Shortcomings in Structured Data Transfers</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="../images/ShortcomingsDataTransfers.svg"
-                            scale="25" align="center"/>
+                        <imagedata fileref="../images/ShortcomingsDataTransfers.svg" scale="25"
+                            align="center"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -235,14 +238,14 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
             the four IQ-MAPLE study sites would have varied. One of the reasons that CDS
             interventions are difficult to implement between health care systems is because
             different EHR systems and health care systems utilize different underlying patient data
-            models and CDS integration mechanisms. Even different instantiations of use of the same
-            EHR systems differ in how they represent patient data. The ONC and NAM report stated
-            that "[b]ecause CDS relies on inferencing using patient data, this heterogeneity in
-            patient data representation poses an immense obstacle to sharing CDS." [13] In IQ-MAPLE,
-            there were likely vast variations in the EHR user interfaces for how clinical data was
-            entered in problem lists, representation of lab results, status and recording of
-            currently active medications, and other miscellaneous clinical data inputs in patients’
-            encounter notes.</para>
+            models and CDS integration mechanisms. Even different instances of use of the same EHR
+            systems differ in how they represent patient data. The ONC and NAM report stated that
+            "because CDS relies on inferencing using patient data, this heterogeneity in patient
+            data representation poses an immense obstacle to sharing CDS." [13] In IQ-MAPLE, there
+            were likely vast variations in the EHR user interfaces for how clinical data was entered
+            in problem lists, representation of lab results, status and recording of currently
+            active medications, and other miscellaneous clinical data inputs in patients’ encounter
+            notes.</para>
         <para>In addition, there were likely variations in the usage of the value set and
             terminology content at the four study organizations. Therefore, there may have been
             discrepancies in how the CDS rules were triggered when they were deployed. For example,
@@ -266,7 +269,9 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
                     <para>Lack of standards and incentives to use and improve CDS</para>
                 </listitem>
                 <listitem>
-                    <para>Poor data quality</para>
+                    <para>Poor data quality
+                        <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T152003-0500" comment="Update Figure #"?>(Figure
+                        #)<?oxy_comment_end?></para>
                 </listitem>
                 <listitem>
                     <para>Gaps in the evidence </para>
@@ -390,8 +395,9 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
                 is to reduce the burden on providers and health systems to each identify important
                 lessons on their own." [14]</para>
             <para>To address this need, a range of quality metrics can be used to assess the
-                effectiveness and impact of CDS interventions. The following table provides examples
-                of commonly captured measures. [14]</para>
+                effectiveness and impact of CDS interventions. The
+                following<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T163852-0500" comment="Update"?>
+                Table #<?oxy_comment_end?> provides examples of commonly captured measures. </para>
             <para>
                 <table frame="all">
                     <title>Examples of Measures Commonly Captured to Measure the Effects of CDS
@@ -606,7 +612,7 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
         <title>Best Practices for CDS Knowledge Management and Deployment</title>
         <para>While the AMIA CDS Roadmap Development Steering Committee outlines three pillars for
             effective CDS, we propose adding a fourth given our discussion of the challenges that
-            plahue CDS implementations:</para>
+            plague CDS implementations:</para>
         <itemizedlist>
             <listitem>
                 <para><emphasis role="bold">Standardization Related to how we Encode and Represent
@@ -687,13 +693,13 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
                 Ten Commandments for Effective CDS:</para>
             <orderedlist>
                 <listitem>
-                    <para><emphasis role="bold">Speed is Everything</emphasis> - “[T]he speed of an
+                    <para><emphasis role="bold">Speed is Everything</emphasis> - “The speed of an
                         information system is the parameter that users value most. If the decision
                         support is wonderful, but takes too long to appear, it will be useless.” </para>
                 </listitem>
                 <listitem>
                     <para><emphasis role="bold">Anticipate Needs and Deliver in Real Time</emphasis>
-                        - “[A]pplications must anticipate clinician needs and bring information to
+                        - “Applications must anticipate clinician needs and bring information to
                         clinicians at the time they need it.” </para>
                 </listitem>
                 <listitem>
@@ -731,7 +737,7 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
                 <listitem>
                     <para><emphasis role="bold">Ask for Additional Information Only When You Really
                             Need It</emphasis> -
-                        “[<?oxy_comment_start author="steph" timestamp="20190717T122242-0600" comment="Is the right bracket missing or is the left included by mistake?" id="cgt_4lr_q3b" flag="done"?><?oxy_comment_start author="timowilliams" timestamp="20190806T153107-0500" comment="Removed the bracket" parentID="cgt_4lr_q3b" flag="done" mid="12"?><?oxy_comment_start author="rcholan" timestamp="20190808T094757-0400" comment="Fixed the bracket" parentID="cgt_4lr_q3b" flag="done" mid="13"?>T<?oxy_comment_end mid="13"?><?oxy_comment_end mid="12"?><?oxy_comment_end?>]he
+                        “<?oxy_comment_start author="steph" timestamp="20190717T122242-0600" comment="Is the right bracket missing or is the left included by mistake?" id="cgt_4lr_q3b" flag="done"?><?oxy_comment_start author="timowilliams" timestamp="20190806T153107-0500" comment="Removed the bracket" parentID="cgt_4lr_q3b" flag="done" mid="9"?><?oxy_comment_start author="rcholan" timestamp="20190808T094757-0400" comment="Fixed the bracket" parentID="cgt_4lr_q3b" flag="done" mid="10"?>T<?oxy_comment_end mid="10"?><?oxy_comment_end mid="9"?><?oxy_comment_end?>he
                         likelihood of success in implementing a computerized guideline is inversely
                         proportional to the number of extra data elements needed.”</para>
                 </listitem>
@@ -773,23 +779,23 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
             important early work in pseudocode logic expression. McDonald realized that the number
             of CDS reminders and alerts would quickly increase, so rather than hand-crafting each
             rule into computer code with programmers, he created one of the first CDS rule languages
-            called CARE. [19] The CARE language allowed clinical experts and those without
-            programming expertise to structure if-then logic alerts using a flexible scripting
-            language that could be interpreted by programmers to implement against the patient
-            record system. As computerized EHRs continued to spread to other academic medical
-            centers in the years that followed, it became clear that a standard way to replicate the
-            expression logic of CARE-style if-then decision rules would be needed. In the late
-            1980s, informaticists at Columbia led an important initiative to standardize CDS
-            scripting language and created the Arden Syntax or Medical Logic Modules, the goal of
-            which was to encode if-then-else rules in a standard format that could be computed
-            against different EHR systems, regardless of the location or specific vendor. Arden
-            Syntax logic modules were novel in that they consisted of standard sections called
-            ‘categories’, and each category contained several ‘slots’. For instance, the ‘logic’
-            slot contained the actual clinical logic of a rule, and the ‘action’ slot defined the
-            message that the rule would display to the clinician-user. Modern EHRs often still use
-            this framework even if the full Arden Syntax is not used: when a clinician’s workflow
-            reaches a trigger point, then a rule in the system is fired, and evaluates the clinical
-            logic attached to the trigger point. [19] </para>
+            called CARE. The CARE language allowed clinical experts and those without programming
+            expertise to structure if-then logic alerts using a flexible scripting language that
+            could be interpreted by programmers to implement against the patient record system. As
+            computerized EHRs continued to spread to other academic medical centers in the years
+            that followed, it became clear that a standard way to replicate the expression logic of
+            CARE-style if-then decision rules would be needed. In the late 1980s, informaticists at
+            Columbia led an important initiative to standardize CDS scripting language and created
+            the Arden Syntax or Medical Logic Modules, the goal of which was to encode if-then-else
+            rules in a standard format that could be computed against different EHR systems,
+            regardless of the location or specific vendor. Arden Syntax logic modules were novel in
+            that they consisted of standard sections called ‘categories’, and each category
+            contained several ‘slots’. For instance, the ‘logic’ slot contained the actual clinical
+            logic of a rule, and the ‘action’ slot defined the message that the rule would display
+            to the clinician-user. Modern EHRs often still use this framework even if the full Arden
+            Syntax is not used: when a clinician’s workflow reaches a trigger point, then a rule in
+            the system is fired, and evaluates the clinical logic attached to the trigger point.
+            [19] </para>
         <para>By the mid 1990’s, CDS rules using the Arden Syntax began to spread to numerous
             commercial systems, however dissemination was limited in that rules written in one
             facility would not run against any other system. While the ‘logic’ slot contained
@@ -985,9 +991,9 @@ I don&apos;t see this cited but adding it here"?>GAM<?oxy_comment_end?>)
                 clinical care by simplifying the treatment options, particularly in primary health
                 care. Standard treatment protocols can be developed by preparing new treatment
                 guidelines or by adapting or adopting existing national or international guidelines.
-                [26] When embedded in electronic health records, treatment protocols can serve as
+                When embedded in electronic health records, treatment protocols can serve as
                 clinical decision support at the point of care so no opportunities are missed to
-                achieve control. [26]  </para>
+                achieve control. [26] </para>
         </section>
         <section>
             <title>Order Sets</title>
@@ -1011,176 +1017,4 @@ I don&apos;t see this cited but adding it here"?>GAM<?oxy_comment_end?>)
                 enabling the implementation of best practices across different EHR platforms.</para>
         </section>
     </section>
-    <section>
-        <title>References</title>
-        <para>
-            <orderedlist>
-                <listitem>
-                    <para>Osheroff JA, Teich JM, Middleton B, Steen EB, Wright A, Detmer DE. A
-                        Roadmap for National Action on Clinical Decision Support. Journal of the
-                        American Medical Informatics Association [Internet]. 2007 Mar 1 [cited 2025
-                        Jul 31];14(2):141–5. Available from:
-                        https://academic.oup.com/jamia/article-lookup/doi/10.1197/jamia.M2334</para>
-                </listitem>
-                <listitem>
-                    <para>Lobach D, Sanders GD, Bright TJ, Wong A, Dhurjati R, Bristow E, et al.
-                        Enabling health care decisionmaking through clinical decision support and
-                        knowledge management. Evid Rep Technol Assess (Full Rep) [Internet]. 2012
-                        Apr [cited 2025 Jul 31];(203):1–784. Available from:
-                        https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4781172/</para>
-                </listitem>
-                <listitem>
-                    <para>Smithburger PL, Buckley MS, Bejian S, Burenheide K, Kane-Gill SL. A
-                        critical evaluation of clinical decision support for the detection of
-                        drug–drug interactions. Expert Opinion on Drug Safety [Internet]. 2011
-                        [cited 2025 Jul 31];10(6):871–82. Available from:
-                        http://www.tandfonline.com/doi/full/10.1517/14740338.2011.583916</para>
-                </listitem>
-                <listitem>
-                    <para>Sönnichsen A, Trampisch US, Rieckert A, Piccoliori G, Vögele A, Flamm M,
-                        et al. Polypharmacy in chronic diseases–Reduction of Inappropriate
-                        Medication and Adverse drug events in older populations by electronic
-                        Decision Support (PRIMA-eDS): study protocol for a randomized controlled
-                        trial. Trials [Internet]. 2016 [cited 2025 Jul 31];17(1):57. Available from:
-                        http://trialsjournal.biomedcentral.com/articles/10.1186/s13063-016-1177-8</para>
-                </listitem>
-                <listitem>
-                    <para>Fritz D, Ceschi A, Curkovic I, Huber M, Egbring M, Kullak-Ublick GA, et
-                        al. Comparative evaluation of three clinical decision support systems:
-                        prospective screening for medication errors in 100 medical inpatients. Eur J
-                        Clin Pharmacol [Internet]. 2012 [cited 2025 Jul 31];68(8):1209–19. Available
-                        from: http://link.springer.com/10.1007/s00228-012-1241-6</para>
-                </listitem>
-                <listitem>
-                    <para>Felcher AH, Gold R, Mosen DM, Stoneburner AB. Decrease in unnecessary
-                        vitamin D testing using clinical decision support tools: making it harder to
-                        do the wrong thing. Journal of the American Medical Informatics Association
-                        [Internet]. 2017 Jul 1 [cited 2025 Jul 31];24(4):776–80. Available from:
-                        https://academic.oup.com/jamia/article/24/4/776/3038206</para>
-                </listitem>
-                <listitem>
-                    <para>Cleveringa FGW, Gorter KJ, Van Den Donk M, Rutten GEHM. Combined Task
-                        Delegation, Computerized Decision Support, and Feedback Improve
-                        Cardiovascular Risk for Type 2 Diabetic Patients. Diabetes Care [Internet].
-                        2008 Dec 1 [cited 2025 Jul 31];31(12):2273–5. Available from:
-                        https://diabetesjournals.org/care/article/31/12/2273/24934/Combined-Task-Delegation-Computerized-Decision</para>
-                </listitem>
-                <listitem>
-                    <para>Garg AX, Adhikari NKJ, McDonald H, Rosas-Arellano MP, Devereaux PJ, Beyene
-                        J, et al. Effects of Computerized Clinical Decision Support Systems on
-                        Practitioner Performance and Patient Outcomes: A Systematic Review. JAMA
-                        [Internet]. 2005 Mar 9 [cited 2025 Jul 31];293(10):1223. Available from:
-                        http://jama.jamanetwork.com/article.aspx?doi=10.1001/jama.293.10.1223</para>
-                </listitem>
-                <listitem>
-                    <para>Wells S, Furness S, Rafter N, Horn E, Whittaker R, Stewart A, et al.
-                        Integrated electronic decision support increases cardiovascular disease risk
-                        assessment four fold in routine primary care practice. European Journal of
-                        Cardiovascular Prevention &amp; Rehabilitation [Internet]. 2008 [cited 2025
-                        Jul 31];15(2):173–8. Available from:
-                        https://academic.oup.com/eurjpc/article/15/2/173-178/5933040</para>
-                </listitem>
-                <listitem>
-                    <para>Wu WY, Hripcsak G, Lurio J, Pichardo M, Berg R, Buck MD, et al. Impact of
-                        Integrating Public Health Clinical Decision Support Alerts Into Electronic
-                        Health Records on Testing for Gastrointestinal Illness. Journal of Public
-                        Health Management and Practice [Internet]. 2012 [cited 2025 Jul
-                        31];18(3):224–7. Available from:
-                        https://journals.lww.com/00124784-201205000-00006</para>
-                </listitem>
-                <listitem>
-                    <para>Calloway S, Akilo HA, Bierman K. Impact of a clinical decision support
-                        system on pharmacy clinical interventions, documentation efforts, and costs.
-                        Hosp Pharm. 2013 Oct;48(9):744–52.</para>
-                </listitem>
-                <listitem>
-                    <para>Wright A. Improving Quality by Maintaining Accurate Problems in the
-                        Electronic Health Record [Internet]. clinicaltrials.gov; 2023 Feb [cited
-                        2025 Jul 31]. Report No.: NCT02596087. Available from:
-                        https://clinicaltrials.gov/study/NCT02596087</para>
-                </listitem>
-                <listitem>
-                    <para>Medicine NA of, Series TLHS, Lopez MH, Weingarten S, Teich JM, Middleton
-                        B, et al. PRIORITIES FOR ACCELERATING CDS PROGRESS. In: Optimizing
-                        Strategies for Clinical Decision Support: Summary of a Meeting Series
-                        [Internet]. National Academies Press (US); 2017 [cited 2025 Jul 31].
-                        Available from: https://www.ncbi.nlm.nih.gov/books/NBK594839/</para>
-                </listitem>
-                <listitem>
-                    <para>Wright A, Hickman TTT, McEvoy D, Aaron S, Ai A, Andersen JM, et al.
-                        Analysis of clinical decision support system malfunctions: a case series and
-                        survey. J Am Med Inform Assoc. 2016 Nov;23(6):1068–76.</para>
-                </listitem>
-                <listitem>
-                    <para>Department of Health and Human Services, Office of the National
-                        Coordinator for Health Information Technology [Internet]. Rollout of
-                        Effective CDS Interventions. Available from:
-                        https://www.healthit.gov/sites/default/files/3-4-3-rollout-effective-cds.pdf</para>
-                </listitem>
-                <listitem>
-                    <para>Kassakian SZ, Yackel TR, Gorman PN, Dorr DA. Clinical decisions support
-                        malfunctions in a commercial electronic health record. Appl Clin Inform.
-                        2017 Sep 6;8(3):910–23.</para>
-                </listitem>
-                <listitem>
-                    <para>Wright A. Best Practices for CDS Knowledge Management.</para>
-                </listitem>
-                <listitem>
-                    <para>Bates DW, Kuperman GJ, Wang S, Gandhi T, Kittler A, Volk L, et al. Ten
-                        Commandments for Effective Clinical Decision Support: Making the Practice of
-                        Evidence-based Medicine a Reality. J Am Med Inform Assoc [Internet]. 2003
-                        [cited 2025 Jul 31];10(6):523–30. Available from:
-                        https://academic.oup.com/jamia/article-lookup/doi/10.1197/jamia.M1370</para>
-                </listitem>
-                <listitem>
-                    <para>McCallie DP. Clinical Decision Support: History and Basic Concepts. In:
-                        Weaver CA, Ball MJ, Kim GR, Kiel JM, editors. Healthcare Information
-                        Management Systems: Cases, Strategies, and Solutions [Internet]. Cham:
-                        Springer International Publishing; 2016 [cited 2025 Jul 31]. p. 3–19.
-                        Available from: https://doi.org/10.1007/978-3-319-20765-0_1</para>
-                </listitem>
-                <listitem>
-                    <para>Jiang G, Prud’Hommeax E, Solbrig H. Developing A Semantic Web-based
-                        Framework for Executing the Clinical Quality Language Using FHIR.
-                        Proceedings of a SWAT4LS Workshop. Available from:
-                        www.swat4ls.org/wp-content/uploads/2017/11/SWAT4LS-2017_paper_40.pdf</para>
-                </listitem>
-                <listitem>
-                    <para>NCCIH [Internet]. [cited 2025 Jul 31]. Clinical Practice Guidelines.
-                        Available from:
-                        https://www.nccih.nih.gov/health/providers/clinicalpractice</para>
-                </listitem>
-                <listitem>
-                    <para>Clinical Practice [Internet]. [cited 2025 Jul 31]. Available from:
-                        https://captions.snmmi.org/CAPTIONS/Web/Clinical-Practice/Default.aspx</para>
-                </listitem>
-                <listitem>
-                    <para>Clinical Practice Guideline Manual [Internet]. [cited 2025 Jul 31].
-                        Available from:
-                        https://www.aafp.org/family-physician/patient-care/clinical-recommendations/cpg-manual.html</para>
-                </listitem>
-                <listitem>
-                    <para>Guidelines and Measures | Agency for Healthcare Research and Quality
-                        [Internet]. [cited 2025 Jul 31]. Available from:
-                        https://www.ahrq.gov/gam/index.html</para>
-                </listitem>
-                <listitem>
-                    <para>Rao TSS, Radhakrishnan R, Andrade C. Standard operating procedures for
-                        clinical practice. Indian J Psychiatry. 2011 Jan;53(1):1–3.</para>
-                </listitem>
-                <listitem>
-                    <para>CDC. Centers for Disease Control and Prevention. 2023 [cited 2025 Jul 31].
-                        Million Hearts® Treatment Protocols. Available from:
-                        https://millionhearts.hhs.gov/tools-protocols/protocols.html</para>
-                </listitem>
-                <listitem>
-                    <para>Order set - Clinfowiki [Internet]. [cited 2025 Jul 31]. Available from:
-                            <link
-                            xlink:href="https://clinfowiki.org/wiki/index.php/Order_Set#:~:text=An%20order%20set%20is%20a%20group%20of%20related"
-                            >https://clinfowiki.org/wiki/index.php/Order_Set#:~:text=An%20order%20set%20is%20a%20group%20of%20related</link></para>
-                </listitem>
-            </orderedlist>
-        </para>
-    </section>
-   
 </chapter>
