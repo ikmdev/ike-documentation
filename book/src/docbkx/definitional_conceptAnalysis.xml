@@ -7,7 +7,7 @@
         <title>Purpose</title>
         <para>The creation of groupings (Assemblage) containing SNOMED CT® concepts that require
             special handling supports the maintenance of this content over time without the
-            necessity of re-reviewing the entire content. Within Solor, these various Assemblages
+            necessity of re-reviewing the entire content. Within Komet, these various Assemblages
             are imported and are properly grouped within the system. Subsequently, a set of rules
             could be developed and applied to handle each of the cases appropriately. </para>
         <para>Concepts may require special handling for a number of reasons:<itemizedlist>
@@ -93,7 +93,7 @@
                 concept in a hierarchical structure significantly complicates any calculations.
                 Without a way to properly identify if a concept is an 'absence' concept,
                 computational methods could not be applied because the directionality as shown with
-                the apple/fruit example would complicate any calculations.Therefore, it was deemed
+                the apple/fruit example would complicate any calculations. Therefore, it was deemed
                 necessary that such "absent" concepts within SNOMED required identification such
                 that they can be segregated for further special handling.</para>
             <para>“Absence” vs. “Affirmation” are two polar opposite paradigms within the SNOMED CT®
@@ -678,9 +678,7 @@
                 information on laterality vs sidedness, please see <link
                     xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2244155/?page=1"
                         ><emphasis role="italic">Choosing Sides. Assigning Laterality as an
-                        Attribute in SNOMED® CT.</emphasis></link><footnote>
-                    <para>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2244155/?page=1</para>
-                </footnote></para>
+                        Attribute in SNOMED® CT.</emphasis></link>[6].</para>
             <section>
                 <title>Approach</title>
                 <para>To identify content that would need to be evaluated for laterality
@@ -729,7 +727,8 @@
                                 correct laterality, it will be marked as incorrect. For example,
                                 16730001000004104 |Thrombosis of left peroneal vein (disorder)|
                                 should be defined with Structure of left peroneal vein, which does
-                                not currently exist in SNOMED CT®.</para>
+                                not currently exist in SNOMED CT® as shown in the figure
+                                below.</para>
                             <para>
                                 <figure>
                                     <title>Thrombosis of left peroneal vein (disorder) Laterality
@@ -755,7 +754,8 @@
                                 degeneration of macula (disorder)| should have two different role
                                 groups, one with 721947001 |Structure of macula lutea of left eye
                                 (body structure)| and the other with 721945009 |Structure of macula
-                                lutea of right eye (body structure)|.</para>
+                                lutea of right eye (body structure)| as shown in the figure
+                                below.</para>
                             <para>
                                 <figure>
                                     <title>Bilateral degeneration of macula (disorder) Laterality
@@ -1209,11 +1209,11 @@
                                 concept to represent a single parent or by adding a single concept
                                 that could be used as a value for a current concept model attribute,
                                 the concept will be placed in the Can Be Fully Defined Assemblage.
-                                For example, 207959006 |Closed fracture lumbar vertebra, wedge
-                                (disorder)| currently cannot be considered as fully defined because
-                                an Associated Morphology concept doesn’t currently exist to
-                                represent a Wedge Fracture. By adding that single concept, the
-                                concept will then be able to be fully defined.</para>
+                                As shown in the figure below, 207959006 |Closed fracture lumbar
+                                vertebra, wedge (disorder)| currently cannot be considered as fully
+                                defined because an Associated Morphology concept doesn’t currently
+                                exist to represent a Wedge Fracture. By adding that single concept,
+                                the concept will then be able to be fully defined.</para>
                             <para>
                                 <figure><title>Closed fracture lumbar vertebra, wedge (disorder) Primitive Example</title>
                                 <mediaobject>
@@ -1501,7 +1501,10 @@
                                             modeling issues but can be an indicator of them.</para>
                                         <figure>
                                             <title>Example of Inverse Concepts modeled with radical differences</title>
-                                            <para>The Open subcapital facture of left femur concept is incorrectly modeled with multiple role groups while the Closed subcapital fracture of left femur is correctly modeled with a single role group</para>
+                                            <para>The Open subcapital fracture of left femur concept
+                                        is incorrectly modeled with multiple role groups while the
+                                        Closed subcapital fracture of left femur is correctly
+                                        modeled with a single role group</para>
                                             <mediaobject>
                                                 <imageobject>
                                                     <imagedata fileref="images/definitional_conceptAnalysis_symmetry_fig3.svg" scalefit="1" width="100%" contentdepth="100%"/>
@@ -1841,7 +1844,7 @@
                                                   Correctly modeled in separate Role Groups.</para>
                                             </entry>
                                             <entry><emphasis role="bold">*</emphasis>Concepts, which
-                                                fit this rule will be in the “SymmetricConcepts”
+                                                fit this rule will be in the “Symmetric Concepts”
                                                 Assemblage, unless they have other modeling issues
                                                 that pertain to symmetry</entry>
                                         </row>
@@ -1961,7 +1964,8 @@
                                             </entry>
                                             <entry>Concepts <emphasis role="bold">DO</emphasis> have more than one of the same attribute with <emphasis role="bold">DIFFERENT</emphasis> values in the inferred view</entry>
                                             <entry><emphasis role="bold"></emphasis></entry>
-                                            <entry><para><emphasis role="bold">16024431000119108 |Acute polyarticular juvenile idiopathic arthritis (disorder)|</emphasis></para><para>has 2 “clinical course” attributes, one with a “chronic” and one with a “sudden onset and/or short duration” value.</para></entry>
+                                            <entry><para><emphasis role="bold">16024431 000119108 |Acute polyarticular juvenile idiopathic arthritis
+                                                  (disorder)|</emphasis></para><para>has 2 “clinical course” attributes, one with a “chronic” and one with a “sudden onset and/or short duration” value.</para></entry>
                                             <entry> </entry>
                                         </row>
                                         <row>

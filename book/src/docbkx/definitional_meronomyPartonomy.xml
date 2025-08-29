@@ -92,7 +92,7 @@
             Model at:
             https://confluence.ihtsdotools.org/display/IAP/Revision+of+IS-A+relationships+for+anatomy </para>
         <para>FMA also includes a role hierarchy for <emphasis role="italic">Part-of</emphasis>
-            relationships.</para>
+            relationships shown in the figure below.</para>
         <figure>
             <title>FMA Part-of Role Hierarchy</title>
             <mediaobject>
@@ -180,7 +180,7 @@
         <para>Part-of Relationships will be useful in the definition of LOINC concepts that
             represent Panels. These panel concepts contain both individual laboratory tests and
             other panel concepts. Panels may also require multiple sufficient sets to represent
-            tests that are not always a part of the panel but optional. </para>
+            tests that are not always a part of the panel but optional as shown below. </para>
         <figure>
             <title>LOINC Panel with optional parts</title>
             <mediaobject>
@@ -191,9 +191,10 @@
         </figure>
         <section>
             <title>Proposed Laboratory Model</title>
-            <para>Add a new attribute that applies to concepts in the Observable
-                Entity hierarchy named Contains lab test (attribute). This attribute will take other
-                Observable Entity concepts as values and will be transitive and reflexive.</para>
+            <para>Add a new attribute that applies to concepts in the Observable Entity hierarchy
+                named Contains lab test (attribute). This attribute will take other Observable
+                Entity concepts as values and will be transitive and reflexive as shown
+                below.</para>
             <figure>
                 <title>LOINC Panel with multiple levels of parts</title>
                 <mediaobject>

@@ -11,7 +11,7 @@
         collections of medical terms and codes—such as SNOMED CT, LOINC®, and RxNorm—that define
         important clinical concepts, including their descriptions, languages, and hierarchical
         relationships. This layer establishes which valid codes or expressions can be used by
-        higher-level systems.</para>
+        higher-level systems as outlined in the figure below.</para>
     <para> </para>
     <figure xml:id="KnowledgeArchitectureTerminology">
         <title>Terminology Knowledge Layer</title>
