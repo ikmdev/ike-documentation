@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>References</title>
+    <para>       
+            <orderedlist>
+                <listitem>
+                    <para>Porter, P. 3M Inside Angle [Internet]. 2022 [cited 2024 Feb 7].
+                        Crowdsourcing: Using the wisdom of the crowd in health care. Available from:
+                        https://www.solventum.com/en-us/home/health-information-technology/resources-education/blog/2022/2/crowdsourcing-using-the-wisdom-of-the-crowd-in-health-care/</para>
+                </listitem>
+                <listitem>
+                    <para>Penn LDI [Internet]. 2023 [cited 2024 Feb 7]. Making Doctors Better with
+                        the Wisdom of the Crowd. Available from:
+                        https://ldi.upenn.edu/our-work/research-updates/making-doctors-better-with-the-wisdom-of-the-crowd/</para>
+                </listitem>
+                <listitem>
+                    <para>Lord C. Aristotle’s Politics. 2nd ed. Chicago: University of Chicago
+                        Press; 2013.</para>
+                </listitem>
+                <listitem>
+                    <para>Surowieki J. The Wisdom of Crowds. Reprint Edition. Anchor; 2005.</para>
+                </listitem>
+                <listitem>
+                    <para>Lossio-Ventura JA, Hogan W, Modave F, Guo Y, He Z, Yang X, et al. OC-2-KB:
+                        integrating crowdsourcing into an obesity and cancer knowledge base curation
+                        system. BMC Med Inform Decis Mak [Internet]. 2018 Jul 23 [Cited 2024
+                        February 16];18(Suppl 2):55. Available from:
+                        https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6069686/</para>
+                </listitem>
+                <listitem>
+                    <para>Stewart RE, Williams N, Byeon YV, Buttenheim A, Sridharan S, Zentgraf K,
+                        et al. The clinician crowdsourcing challenge: using participatory design to
+                        seed implementation strategies. Implementation Science [Internet]. 2019 Jun
+                        14 [Cited 2024 February 14];14(1):63. Available from:
+                        https://doi.org/10.1186/s13012-019-0914-2</para>
+                </listitem>
+                <listitem>
+                    <para>Apathy NC, Holmgren AJ, Adler-Milstein J. A decade post-HITECH: Critical
+                        access hospitals have electronic health records but struggle to keep up with
+                        other advanced functions. Journal of the American Medical Informatics
+                        Association [Internet]. 2021 Aug 13 [cited 2025 Aug 5];28(9):1947–54. Available
+                        from: https://academic.oup.com/jamia/article/28/9/1947/6312883</para>
+                </listitem>
+                <listitem>
+                    <para>Bernstam EV, Warner JL, Krauss JC, Ambinder E, Rubinstein WS, Komatsoulis G,
+                        et al. Quantitating and assessing interoperability between electronic health
+                        records. Journal of the American Medical Informatics Association [Internet].
+                        2022 Apr 13 [cited 2025 Aug 5];29(5):753–60. Available from:
+                        https://academic.oup.com/jamia/article/29/5/753/6500181</para>
+                </listitem>
+                <listitem>
+                    <para>What is Free Software? - GNU Project - Free Software Foundation [Internet].
+                        [cited 2025 Aug 5]. Available from:
+                        https://www.gnu.org/philosophy/free-sw.en.html#copyleft</para>
+                </listitem>
+                <listitem>
+                    <para>Wilbanks J. Public domain, copyright licenses and the freedom to integrate
+                        science. JCOM [Internet]. 2008 June 20 [cited 2025 Aug 5];07(02):C04. Available
+                        from: https://jcom.sissa.it/article/pubid/Jcom0702(2008)C04/</para>
+                </listitem>
+                <listitem>
+                    <para>Reynolds CJ, Wyatt JC. Open Source, Open Standards, and Health Care
+                        Information Systems. J Med Internet Res [Internet]. 2011 Feb 17 [cited 2025 Aug
+                        5];13(1):e24. Available from: http://www.jmir.org/2011/1/e24/</para>
+                </listitem>
+                <listitem>
+                    <para>GDPR.eu [Internet]. 2018 [cited 2025 Aug 5]. What is GDPR, the EU’s new data
+                        protection law? Available from: https://gdpr.eu/what-is-gdpr/</para>
+                </listitem>
+                <listitem>
+                    <para>GDPR and healthcare: Understanding health data and consent | Pega [Internet].
+                        2018 [cited 2025 Aug 5]. Available from:
+                        https://www.pega.com/insights/articles/gdpr-and-healthcare-understanding-health-data-and-consent</para>
+                </listitem>
+                <listitem>
+                    <para>Hosking R, Gahegan M. The Effects of Licensing on Open Data: Computing a
+                        Measure of Health for Our Scholarly Record. In: Salinesi C, Norrie MC, Pastor Ó,
+                        editors. Advanced Information Systems Engineering [Internet]. Berlin,
+                        Heidelberg: Springer Berlin Heidelberg; 2013 [cited 2025 Aug 5]. p. 432–9.
+                        Available from: http://link.springer.com/10.1007/978-3-642-41338-4_28</para>
+                </listitem>
+                <listitem>
+                    <para>Android (operating system) - Wikiwand [Internet]. [cited 2025 Aug 5].
+                        Available from:
+                        https://www.wikiwand.com/en/articles/Android%20(operating%20system)</para>
+                </listitem>
+                <listitem>
+                    <para>Android Open Source Project [Internet]. [cited 2025 Aug 5]. Contributor
+                        license agreements and headers. Available from:
+                        https://source.android.com/docs/setup/contribute/licenses</para>
+                </listitem>
+                <listitem>
+                    <para>LOINC [Internet]. [cited 2025 Aug 5]. Mission, Vision, and Principles for Open
+                        Terminology Development. Available from: https://loinc.org/principles/</para>
+                </listitem>
+                <listitem>
+                    <para>SNOMED CT® [Internet]. SNOMED CT Affiliate License Agreement. Available from:
+                        https://www.snomed.org/_files/ugd/900274_689013e9e0c74d23892abe9caee02612.pdf</para>
+                </listitem>
+                <listitem>
+                    <para>Scheibner J. What Price Freedom (of Software)? A Guide for Australian Legal
+                        Practitioners on Open Source Licensing. Precedent (Australian Lawyers Alliance)
+                        [Internet]. 2017 [cited 2025 Aug 5]; Available from:
+                        https://www.austlii.edu.au/au/journals/PrecedentAULA/2017/23.html#fnB3</para>
+                </listitem>
+                <listitem>
+                    <para>LOINC and SNOMED CT: LOINC SNOMED CT Extension - Why, What and How [Internet].
+                        [cited 2025 Aug 5]. Available from:
+                        https://www.linkedin.com/pulse/loinc-snomed-ct-extension-why-what-how-termlex</para>
+                </listitem>
+                <listitem>
+                    <para>SNOMED International [Internet]. [cited 2025 Aug 5]. Regenstrief and SNOMED
+                        International broaden collaboration to facilitate interoperability nationally
+                        and globally by linking LOINC and SNOMED CT. Available from:
+                        https://www.snomed.org/news/regenstrief-and-snomed-international-broaden-collaboration-to-facilitate-interoperability-nationally-and-globally-by-linking-loinc-and-snomed-ct</para>
+                </listitem>
+                <listitem>
+                    <para>GitHub Docs [Internet]. [cited 2025 Aug 5]. Changing the layout of a view.
+                        Available from:
+                        https://docs-internal.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/changing-the-layout-of-a-view</para>
+                </listitem>
+                <listitem>
+                    <para>SNOMED International Browser [Internet]. [cited 2025 Aug 5]. Available from:
+                        https://browser.loincsnomed.org/?perspective=full&amp;conceptId1=363787002&amp;edition=MAIN/LOINC/2023-10-15&amp;release=&amp;languages=en</para>
+                </listitem>
+                <listitem>
+                    <para>LOINC [Internet]. [cited 2025 Aug 5]. Answer File. Available from:
+                        https://loinc.org/answer-file/</para>
+                </listitem>
+                <listitem>
+                    <para>Engineering LibreTexts [Internet]. 2018 [cited 2025 Aug 5]. 1.3:
+                        Characteristics and Benefits of a Database. Available from:
+                        https://eng.libretexts.org/Bookshelves/Computer_Science/Databases_and_Data_Structures/Database_Design_2e_(Watt)/01%3A_Chapters/1.03%3A_Characteristics_and_Benefits_of_a_Database</para>
+                </listitem>
+                <listitem>
+                    <para>LOINC [Internet]. [cited 2025 Aug 5]. Home. Available from:
+                        https://loinc.org/</para>
+                </listitem>
+            </orderedlist>
+    </para>
+</chapter>

@@ -72,10 +72,12 @@
                 could easily aggregate clinical information managed by multiple health information
                 networks.</para>
             <para>ANF statements are comprised of two basic components, the “Context” and the
-                “Circumstance,” each having their own unique set of data elements or “attributes”
-                which capture, in a uniform and normalized way, all the clinical detail of the
-                statement. Both the Context and the Circumstance are required to create a normalized
-                clinical statement. </para>
+                “Circumstance,”
+                (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161120-0500" comment="Update Figure #"?>Figure
+                #<?oxy_comment_end?>.) each having their own unique set of data elements or
+                “attributes” which capture, in a uniform and normalized way, all the clinical detail
+                of the statement. Both the Context and the Circumstance are required to create a
+                normalized clinical statement. </para>
             <figure xml:id="ANFStatements">
                 <title>ANF Statement</title>
                 <mediaobject>
@@ -101,18 +103,21 @@
             <para><emphasis role="bold">Circumstance</emphasis></para>
             <para>The Circumstance provides the clinical detail for the ANF Statement. There are
                 three types of Circumstances that can be part of an ANF statement: Performance
-                Circumstance, Request Circumstance and Narrative circumstance. Each type of
-                circumstance has its own unique set of attributes to capture the unique data germane
-                to the specific circumstance. A Performance Circumstance specifies the result of an
-                action or an observation. The Request Circumstance describes a request made by a
-                clinician for a patient. The Narrative Circumstance is intentionally not meant to be
-                used frequently and is only intended to document components of the clinical
-                narrative that cannot be documented by the data structure of the Performance or
-                Request Circumstances. <figure xml:id="ANFContextandCircumstance.svg">
+                Circumstance, Request Circumstance and Narrative circumstance
+                (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161157-0500" comment="Update Figure #"?>Figure
+                #.<?oxy_comment_end?>). Each type of circumstance has its own unique set of
+                attributes to capture the unique data germane to the specific circumstance. A
+                Performance Circumstance specifies the result of an action or an observation. The
+                Request Circumstance describes a request made by a clinician for a patient. The
+                Narrative Circumstance is intentionally not meant to be used frequently and is only
+                intended to document components of the clinical narrative that cannot be documented
+                by the data structure of the Performance or Request Circumstances. <figure
+                    xml:id="ANFContextandCircumstance.svg">
                     <title>ANF Statement Components: Context and Circumstance</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../images/ANF%20Context%20and%20Circumstance.svg" scale="75" align="center"/>
+                            <imagedata fileref="../images/ANF%20Context%20and%20Circumstance.svg"
+                                scale="75" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure></para>
@@ -134,19 +139,22 @@
                 <emphasis role="italic">A 58-year-old male presents at urgent care with a
                     temperature of 102.5 and a sore throat. </emphasis></para>
             <para>Analysis of the clinical narrative allows for the separation of clinical
-                information to four basic elements (Figure 2). The clinical narrative states that
-                the patient is a 58-year-old male which, when separating Clinical Elements, results
-                in two separate ANF statements about the patient’s demographic data, one for the
-                patient’s age (58 yo) and one for the patient’s gender (male). In addition, there is
-                information in the narrative regarding the patient’s symptoms, each of which would
-                be the topic of its own ANF statement (one for Body Temperature, and one for Sore
-                Throat). In this example, there are 4 separate “Clinical Elements” that will be
-                dealt with in 4 separate ANF Statements. <figure xml:id="ClinicalNarrative">
+                information to four basic elements
+                (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161214-0500" comment="Update Figure #"?>Figure
+                2).<?oxy_comment_end?> The clinical narrative states that the patient is a
+                58-year-old male which, when separating Clinical Elements, results in two separate
+                ANF statements about the patient’s demographic data, one for the patient’s age (58
+                yo) and one for the patient’s gender (male). In addition, there is information in
+                the narrative regarding the patient’s symptoms, each of which would be the topic of
+                its own ANF statement (one for Body Temperature, and one for Sore Throat). In this
+                example, there are 4 separate “Clinical Elements” that will be dealt with in 4
+                separate ANF Statements. <figure xml:id="ClinicalNarrative">
                     <title>Break Down of Clinical Narrative into Clinical Elements for ANF
                         Statements</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../images/ANF%20Clinical%20Narrative.svg" scale="65" align="center"/>
+                            <imagedata fileref="../images/ANF%20Clinical%20Narrative.svg" scale="65"
+                                align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure></para>
@@ -195,7 +203,9 @@
         <para>In Analysis Normal Form (ANF), each statement is built from a standard structure which
             captures the clinical information. This standard structure will contain different data
             element types, depending on what kind of information is being captured. These data types
-            are summarized in Table 1 and are discussed in further detail below.</para>
+            are summarized in
+            <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161233-0500" comment="Update table #"?>Table
+            1<?oxy_comment_end?> and are discussed in further detail below.</para>
         <para>
             <table>
                 <title><emphasis role="italic">Table 1: Data Types used in ANF statement
@@ -337,12 +347,15 @@
                 statement can be determined and the specific attributes for Context and Circumstance
                 can be populated. In order to illustrate how to break down the clinical narrative,
                 determine the topic and populate the associated attributes, the following clinical
-                narrative will be used as an example. </para>
+                narrative will be used as an example
+                (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161318-0500" comment="Update Figure #"?>Figure
+                #<?oxy_comment_end?>. ). </para>
             <para/>
             <table frame="all">
-                <title><emphasis role="bold"><emphasis role="italic">Figure
-                        3:</emphasis></emphasis><emphasis role="italic"> Clinical narrative for a
-                        Syphilis Use Case </emphasis></title>
+                <title><emphasis role="bold"><emphasis role="italic"
+                            ><?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161329-0500" comment="Update Figure #"?>Figure
+                            3<?oxy_comment_end?>:</emphasis></emphasis><emphasis role="italic">
+                        Clinical narrative for a Syphilis Use Case </emphasis></title>
                 <tgroup cols="1">
                     <colspec colnum="1" colname="c1"/>
                     <thead>
@@ -399,10 +412,14 @@
                     </tbody>
                 </tgroup>
             </table>
-            <para>The clinical narrative above (Figure 3) contains multiple key Clinical Elements
-                that can be identified and separated into separate ANF statements, each with their
-                own Topic and relevant attributes. The first step is to identify the separate pieces
-                of relevant clinical information for the patient as seen in Table 2. </para>
+            <para>The clinical narrative above
+                (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161341-0500" comment="Update Figure #"?>Figure
+                3<?oxy_comment_end?>) contains multiple key Clinical Elements that can be identified
+                and separated into separate ANF statements, each with their own Topic and relevant
+                attributes. The first step is to identify the separate pieces of relevant clinical
+                information for the patient as seen in
+                <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161352-0500" comment="Update"?>Table
+                2<?oxy_comment_end?>. </para>
             <para>
                 <table>
                     <title><emphasis>Table 2: Isolation of Clinical Elements for Syphilis use case
@@ -474,13 +491,14 @@
                 is that the Topic can only contain one Clinical Element. </para>
             <para>ANF requires an ability to define a precise Topic of a statement using a logical
                 standard terminology expression. For the syphilis use case clinical narrative above
-                (Figure 3), topics can be assigned to the Clinical Elements that were identified. It
-                is important to understand that the Topic chosen requires a clear measure or result
-                of what was observed, requested or assessed during treatment. The Topic should be as
-                specific as possible, so the result “reacts” to the topic. Per the example above
-                about smoking, the topic of the ANF statement would not be “Smoking status,” for an
-                individual patient it would be “Smoker”, and the result would be a qualitative
-                result of “yes.” </para>
+                (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161402-0500" comment="Update"?>Figure
+                3<?oxy_comment_end?>), topics can be assigned to the Clinical Elements that were
+                identified. It is important to understand that the Topic chosen requires a clear
+                measure or result of what was observed, requested or assessed during treatment. The
+                Topic should be as specific as possible, so the result “reacts” to the topic. Per
+                the example above about smoking, the topic of the ANF statement would not be
+                “Smoking status,” for an individual patient it would be “Smoker”, and the result
+                would be a qualitative result of “yes.” </para>
             <para>The result will fall into one of two categories: a quantitative result or a
                 qualitative result. A quantitative ANF statement would have a result that is
                 intended to represent a numeric result. A qualitative ANF statement would have a
@@ -648,18 +666,20 @@
                     </tgroup>
                 </table>
             </para>
-            <para>As seen in the table above (Table 3), the Topic will often align with an
-                established clinical term or concept that may be present in the SNOMED or LOINC
-                databases. However, there are times when the SNOMED or LOINC terminology isn’t an
-                exact match for what the topic of the ANF statement should be or there may be no
-                code at all to describe the topic. For example, to describe the white spots in the
-                mouth, the Topic is “Oral Lesion with white color.” The closest SNOMED code is “Oral
-                Lesion” (SCTID: 1081000119107), but the color description is missing and that is a
-                key clinical feature of the oral syphilis lesions. In this case, a new concept would
-                need to be created for the Topic for “Oral lesion with white color,” assigned a
-                unique ID and submitted to SNOMED as a new extension. For denoting the patient’s
-                ethnicity, a new concept for “not Hispanic” would need to be created as there is no
-                code for that in SNOMED (as of July 2025). </para>
+            <para>As seen in the table above
+                (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161442-0500" comment="Update"?>Table
+                3<?oxy_comment_end?>), the Topic will often align with an established clinical term
+                or concept that may be present in the SNOMED or LOINC databases. However, there are
+                times when the SNOMED or LOINC terminology isn’t an exact match for what the topic
+                of the ANF statement should be or there may be no code at all to describe the topic.
+                For example, to describe the white spots in the mouth, the Topic is “Oral Lesion
+                with white color.” The closest SNOMED code is “Oral Lesion” (SCTID: 1081000119107),
+                but the color description is missing and that is a key clinical feature of the oral
+                syphilis lesions. In this case, a new concept would need to be created for the Topic
+                for “Oral lesion with white color,” assigned a unique ID and submitted to SNOMED as
+                a new extension. For denoting the patient’s ethnicity, a new concept for “not
+                Hispanic” would need to be created as there is no code for that in SNOMED (as of
+                July 2025). </para>
             <para>It is possible to have multiple ANF statements with the same Topic. In the
                 Syphilis use case, there are two ANF statements with the Topic of “Eruption of
                 Skin.” From the clinical narrative you can see that there is assessment of the
@@ -694,14 +714,18 @@
                 part of an ANF statement: Performance Circumstance, Request Circumstance and
                 Narrative circumstance. The ANF statement will contain the correct Circumstance and
                 associated attributes for the Topic along with the timing and purpose (if
-                applicable) for the circumstance (Figure 4). Different narratives require different
-                circumstances. Allowing clinicians to choose between circumstance instances further
-                categorizes the flow of data, allowing for ease of access later. <figure xml:id="Figure4CircumstanceChoice">
+                applicable) for the circumstance
+                (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161518-0500" comment="Update"?>Figure
+                4<?oxy_comment_end?>). Different narratives require different circumstances.
+                Allowing clinicians to choose between circumstance instances further categorizes the
+                flow of data, allowing for ease of access later. <figure
+                    xml:id="Figure4CircumstanceChoice">
                     <title>Figure 4: The Circumstance provides the clinical detail for the ANF
                         statement.</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../images/Figure%204%20Circumstance%20Choice.svg" scale="75" align="center"/>
+                            <imagedata fileref="../images/Figure%204%20Circumstance%20Choice.svg"
+                                scale="75" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure></para>
@@ -734,10 +758,15 @@
                 example, an ANF statement may document the presence of a mutation in the BRCA1 gene.
                 The Narrative Circumstance could contain the exact mutation contained in the BRCA1
                 gene. The Narrative Circumstance will be described in more detail in later sections. </para>
-            <para>Going back to the Syphilis use case (Figure 3), a circumstance choice can be
-                determined for each ANF statement Topic (Table 4 below). To demonstrate, the ANF
-                statement Topics in the table are specific to the Patient Roberta in the Syphilis
-                narrative (Figure 3). </para>
+            <para>Going back to the Syphilis use case
+                (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161534-0500" comment="Update"?>Figure
+                3<?oxy_comment_end?>), a circumstance choice can be determined for each ANF
+                statement Topic
+                (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161542-0500" comment="Update"?>Table
+                4 below<?oxy_comment_end?>). To demonstrate, the ANF statement Topics in the table
+                are specific to the Patient Roberta in the Syphilis narrative
+                (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161548-0500" comment="Update"?>Figure
+                3<?oxy_comment_end?>). </para>
             <para>
                 <table>
                     <title><emphasis>Table 4: Circumstance Choice for each of the Topics for ANF
@@ -869,8 +898,10 @@
                 number of other associated attributes for the Context. Each of the potential
                 attributes for the Context of an ANF statement are discussed below. It is important
                 to note that not all attributes are required for every ANF statement. The following
-                simple clinical narrative for Systolic Blood Pressure (Figure 5) will be used to
-                demonstrate the attributes for the Context component of an ANF statement.</para>
+                simple clinical narrative for Systolic Blood Pressure
+                (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161600-0500" comment="Update"?>Figure
+                5<?oxy_comment_end?>) will be used to demonstrate the attributes for the Context
+                component of an ANF statement.</para>
             <para>
                 <table frame="all">
                     <title><emphasis>Figure 5: Clinical narrative example for a Systolic Blood
@@ -1005,7 +1036,7 @@
             <para><emphasis role="bold">Subject of Record:</emphasis></para>
             <para>The <emphasis role="bold"><emphasis role="italic">subjectOfRecord
                     </emphasis></emphasis>attribute will always be the patient, or rather the
-                patient’s clinical record. The data elements in this attribute are IDand the
+                patient’s clinical record. The data elements in this attribute are Id and the
                 associatedSemantic code<emphasis role="bold"><emphasis role="italic">.
                     </emphasis></emphasis> The ID is a unique ID. This will typically be the ID
                 assigned to the patient or the patient chart by the healthcare practitioner or
@@ -1755,10 +1786,13 @@
                 observation/finding described by the Topic. For the Complete Blood Count Use Case
                 (Figure 7) the reference range for Hemoglobin (HGB) is 11.8 g/dl – 16.8 g/dl.
                 Therefore, the <emphasis role="italic">lowerBound</emphasis> of the reference range
-                for the ANF statement with topic Hemoglobin would be 11.8 and the <emphasis role="italic">upperBound</emphasis> would be 16.8 (Table 18). The range is
+                for the ANF statement with topic Hemoglobin would be 11.8 and the <emphasis
+                    role="italic">upperBound</emphasis> would be 16.8 (Table 18). The range is
                 inclusive of the upperBound and lowerBound number and therefore the response to
-                including these numbers is “True.” The <emphasis role="italic">Resolution</emphasis>for the Reference Range would be “0.1” g/dl because “g/dl” can
-                be counted in increments of one tenth. The <emphasis role="italic">Semantic</emphasis> for the Attribute would be Concept “g/dl.”</para>
+                including these numbers is “True.” The <emphasis role="italic">Resolution</emphasis>
+                for the Reference Range would be “0.1” g/dl because “g/dl” can be counted in
+                increments of one tenth. The <emphasis role="italic">Semantic</emphasis> for the
+                Attribute would be Concept “g/dl.”</para>
             <para>
                 <table>
                     <title><emphasis role="bold"><emphasis role="italic">Table
@@ -2710,7 +2744,7 @@
         </section>
     </section>
     <section>
-        <title>Using Attributes to Build ANF Statments</title>
+        <title>Using Attributes to Build ANF Statements</title>
         <section>
             <title>ANF Statements for Blood Pressure Clinical Narrative</title>
             <para>In order to provide a complete picture of the ANF statements that would result
@@ -2760,7 +2794,7 @@
             <para>The ANF statements is presented in the form of a table for each Clinical Element
                 in the clinical narrative in Figure 1. Each ANF statement has two columns, one for
                 “Template” (Yellow Column) and one for “Statement” (Blue Column). The Template
-                column includes a description of the information that that will be coded in the ANF
+                column includes a description of the information that will be coded in the ANF
                 statement. The Statement column contains the actual codes. The reason for the two
                 columns is to ensure there is the ability for these statements to be human-readable
                 in the context of this user guide. If a particular attribute is not relevant to the
@@ -7825,7 +7859,7 @@
             </para>
         </section>
         <section>
-            <title>List of Attributes Used in ANF Statments</title>
+            <title>List of Attributes Used in ANF Statements</title>
             <para>The following table contains a list of all the attributes used in this user guide
                 to build ANF statements.</para>
             <para>
@@ -7854,7 +7888,7 @@
                             </row>
                             <row>
                                 <entry>subjectOfRecord </entry>
-                                <entry>Thisattribute will always be the patient, or rather the
+                                <entry>This attribute will always be the patient, or rather the
                                     patient’s clinical record. </entry>
                             </row>
                             <row>

@@ -49,16 +49,15 @@
         <xi:include href="Book%20Content/Part6References.xml"/>
             </part>
     <part>
-            <title>Statement Model Principles</title>
-            <xi:include href="Book%20Content/Book%20Statement%20Skyscraper%20Intro.xml"/>
-            <xi:include href="statement-intro-begin.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-            <xi:include href="statement-intro-patterns.xml"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>   
+            <title>Statement Model
+            <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T150444-0500" comment="Removed statement-intro-begin.xml and statement-intro-patterns.xml and replaced with ANF User Guide 2025"?>Principles<?oxy_comment_end?></title>
+            <xi:include href="Book%20Content/Book%20Statement%20Skyscraper%20Intro.xml"/>             
         <xi:include href="Book%20Content/ANF%20User%20Guide%202025.xml"/>       
     </part>    
     <part>
         <title>Procedural Representation</title>
         <xi:include href="../../src/docbkx/Book%20Content/Book%20Procedural.xml"/>
+        <xi:include href="Book%20Content/Book%20Procedural%20References.xml"/>
     </part>
     <part>
         <title>Ecosystem</title>
@@ -66,8 +65,8 @@
         <xi:include
             href="Book%20Content/Book%20Summary%20of%20Findings%20-%20Managing%20the%20Best%20Practice%20for%20Open-Source%20Communities.xml"/>
         <xi:include
-            href="Book%20Content/Book%20Evaluation%20of%20Current%20SNOMED%20CT%20LOINC%20Collaboration.xml"
-        />
+            href="Book%20Content/Book%20Evaluation%20of%20Current%20SNOMED%20CT%20LOINC%20Collaboration.xml"/>
+        <xi:include href="Book%20Content/Book%20Ecosystem%20References.xml"/>
     </part>
     <part>
         <title><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240715T101026-0500" comment="add transition sentence about exploring current stae km solutions and current state environment, best practices, lessons learned and more from other efforts"?>Knowledge
