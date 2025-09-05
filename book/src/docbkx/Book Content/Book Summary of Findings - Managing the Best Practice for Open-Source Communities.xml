@@ -161,7 +161,7 @@
             implementation of the specific version of software being used. The license acts as a
             copyright agreement where organizations and creators can control the distribution,
             duplication, and modification of their work. </para>
-        <para>There are many different types of licenses, as seen in the figure below, and are often
+        <para>There are many different types of licenses, as seen in <xref linkend="RestrictionsImposed"></xref> below, and are often
             created to be intentionally vague to apply to a multitude of situations and preserve the
             rights of the licensor: </para>
         <figure xml:id="RestrictionsImposed">
@@ -478,62 +478,58 @@
             mentality where confusion ensues. Additionally, open-source licenses can continue to
             protect against impersonations and false endorsements through their agreements. </para>
         <section>
-                <title>Open-Source Licensing Within a Knowledge Architecture</title>
-                <para><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240712T165045-0500" comment="remove" id="nms_gy1_ccc"?><?oxy_comment_start author="tocrow" timestamp="20240717T135106-0400" parentID="nms_gy1_ccc" comment="Any reason for removing?" mid="7"?>A
-                    Knowledge Architecture is a framework for clinical information that is organized
-                    into distinct layers such that each higher layer relies upon artifacts from the
-                    lower layer. It aims to define a standardized form of clinical statements and
-                    harmonize existing terminologies together into a single system. </para>
-                <para>A knowledge architecture intended for use in the current Health IT ecosystem
-                    is listed below: </para>
-                <figure xml:id="LayersWithinKnowledgeArchitecture">
-                    <title>Layers Within Knowledge Architecture</title>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata fileref="../images/New%20PASTF.svg" align="center" scale="10"
-                                ><?oxy_comment_end?><?oxy_comment_end mid="7"?></imagedata>
-                        </imageobject>
-                    </mediaobject>
-                </figure>
-                <para>Rather than a broad transformation of existing licenses in a purely
-                    open-source model, not all components of software and standard licensing require
-                    a pivot away from proprietary oversight to lead to successful implementation of
-                    an IKM ecosystem. The commercial usage of aspects of licenses allows for ongoing
-                    support and maintenance of software and standards. The move towards a permissive
-                    license does not require a seismic shift in organization structure or its
-                    ability monetize its commercial license, especially for organizations already
-                    promoting open-standards. <emphasis>Allowing for open-licensing encourages
-                        improvements of terminology and standards by ancillary bodies and creates a
-                        more robust, flexible system that can further adapt into the varying needs
-                        of organizations. </emphasis></para>
-                <para>Data harmonization improves when foundational layers of Knowledge Architecture
-                    are integrated into common, collective sources of data. If utilized correctly
-                    under a Knowledge Architecture, a single-data journey can be completed with
-                    integrity intact every time. Permissive licensing throughout the foundational
-                    architecture, terminology knowledge, and statement model layers removes barriers
-                    imposed on modifications and extensions and instead aids in the creation of
-                    common understandings of knowledge. The Terminology Knowledge layer within
-                    Knowledge Architecture oversees the structure of medical terminologies, such as
-                    the language and semantic hierarchy within data. It is in this layer where the
-                    IKM platform arbitrates the valid codes and expressions to be used in higher
-                    layers. Currently, the usage of terminology standards like SNOMED CT®, LOINC®,
-                    and additional standards pose questions regarding compatibility due to
-                    modification and extensions limitations. The complexity widens when further
-                    standards based on other standards are integrated further in the terminology
-                    layer, like the Laboratory Interoperability Data Repository (LIDR) and Tinkar.
-                    The loss of data often occurs in this layer and breaks the functionality of
-                    standards where local codes are mapped to the incorrect standard codes. The IKM
-                    platform aims to solve this issue by harmonizing standards but cannot be
-                    successfully implemented unless the underlying licenses allow an IKM platform to
-                    reconcile variances. In the Statement Model, the artifacts as defined below are
-                    reused and demonstrate how the data elements should be packaged into clinical
-                    statements through clinical formatting, such as Health Level 7 Fast Healthcare
-                    Interoperability Resources (HL7 FHIR) or Clinical Informational Modeling
-                    Initiative (CIMI). The shift towards a permissive license in regard to
-                    terminologies and standards improves the compatibility of how different
-                    terminologies work together and thereby is integral to the functionality of
-                    higher layers and interoperability overall. </para>
-            </section>
+            <title>Open-Source Licensing Within a Knowledge Architecture</title>
+            <para>A Knowledge Architecture is a framework for clinical information that is organized
+                into distinct layers such that each higher layer relies upon artifacts from the
+                lower layer (<xref linkend="LayersWithinKnowledgeArchitecture"></xref>. It aims to define a standardized form of clinical statements and
+                harmonize existing terminologies together into a single system. </para>
+            <para>A knowledge architecture intended for use in the current Health IT ecosystem is
+                listed below: </para>
+            <figure xml:id="LayersWithinKnowledgeArchitecture">
+                <title>Layers Within Knowledge Architecture</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="../images/New%20PASTF.svg" align="center" scale="10"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            <para>Rather than a broad transformation of existing licenses in a purely open-source
+                model, not all components of software and standard licensing require a pivot away
+                from proprietary oversight to lead to successful implementation of an IKM ecosystem.
+                The commercial usage of aspects of licenses allows for ongoing support and
+                maintenance of software and standards. The move towards a permissive license does
+                not require a seismic shift in organization structure or its ability monetize its
+                commercial license, especially for organizations already promoting open-standards.
+                    <emphasis>Allowing for open-licensing encourages improvements of terminology and
+                    standards by ancillary bodies and creates a more robust, flexible system that
+                    can further adapt into the varying needs of organizations. </emphasis></para>
+            <para>Data harmonization improves when foundational layers of Knowledge Architecture are
+                integrated into common, collective sources of data. If utilized correctly under a
+                Knowledge Architecture, a single-data journey can be completed with integrity intact
+                every time. Permissive licensing throughout the foundational architecture,
+                terminology knowledge, and statement model layers removes barriers imposed on
+                modifications and extensions and instead aids in the creation of common
+                understandings of knowledge. The Terminology Knowledge layer within Knowledge
+                Architecture oversees the structure of medical terminologies, such as the language
+                and semantic hierarchy within data. It is in this layer where the IKM platform
+                arbitrates the valid codes and expressions to be used in higher layers. Currently,
+                the usage of terminology standards like SNOMED CT®, LOINC®, and additional standards
+                pose questions regarding compatibility due to modification and extensions
+                limitations. The complexity widens when further standards based on other standards
+                are integrated further in the terminology layer, like the Laboratory
+                Interoperability Data Repository (LIDR) and Tinkar. The loss of data often occurs in
+                this layer and breaks the functionality of standards where local codes are mapped to
+                the incorrect standard codes. The IKM platform aims to solve this issue by
+                harmonizing standards but cannot be successfully implemented unless the underlying
+                licenses allow an IKM platform to reconcile variances. In the Statement Model, the
+                artifacts as defined below are reused and demonstrate how the data elements should
+                be packaged into clinical statements through clinical formatting, such as Health
+                Level 7 Fast Healthcare Interoperability Resources (HL7 FHIR) or Clinical
+                Informational Modeling Initiative (CIMI). The shift towards a permissive license in
+                regard to terminologies and standards improves the compatibility of how different
+                terminologies work together and thereby is integral to the functionality of higher
+                layers and interoperability overall. </para>
+        </section>
     </section>
     <section>
         <title>Conclusion</title>

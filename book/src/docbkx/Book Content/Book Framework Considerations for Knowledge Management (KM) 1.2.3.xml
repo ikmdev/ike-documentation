@@ -111,11 +111,8 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata
-                            fileref="../images/Unit%20Test%20Code%20Coverage%20Report%20for%20Komet%20Using%20JaCoCo.svg"
-                            scale="80" align="center"/>
-                        <imagedata
-                            fileref="../images/Unit%20Test%20Code%20Coverage%20Report%20for%20Komet%20Using%20JaCoCo.svg"
-                            scale="80" align="center"/>
+                            fileref="../images/Unit Test Code Coverage Report for Komet Using JaCoCo.svg"
+                            scale="80" align="center"/>                        
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -505,7 +502,7 @@
                                         control. Any function or class parameters are required.
                                         Deprecation is a good notice, too, as it will indicate when
                                         a class may soon be retired and replaced with another class.
-                                        An example is shown below.</para>
+                                        An example is shown below (<xref linkend="ExampleofClassComments"></xref>).</para>
                                 </listitem>
                             </itemizedlist><figure xml:id="ExampleofClassComments">
                                 <title>Example of Class Comments</title>
@@ -521,7 +518,7 @@
                             directly related to calling of a function or method. These often contain
                             a usage description, the description of the input and output values, and
                             any information about deprecation or templating. An example of this is
-                            shown below.</para>
+                            shown below (<xref linkend="ExampleofMethodFunctionComments"></xref>).</para>
                     </listitem>
                 </itemizedlist>
                 </para><figure xml:id="ExampleofMethodFunctionComments">
@@ -594,7 +591,7 @@
                 are expensive when they occur, both the direct costs of fixing the defects and the
                 indirect costs because of damaged relationships, lost business, and lost development
                 time.” – Kent Beck, from Extreme Programming Explained</para>
-            <para>The following graph, courtesy of <emphasis role="bold">the National Institute of
+            <para>The following graph (<xref linkend="RelativeCosttoFixBugsBasedonTimeofDetection"></xref>), courtesy of <emphasis role="bold">the National Institute of
                     Standards and Technology,</emphasis> helps in visualizing how the effort in
                 detecting and fixing defects increases as the software moves through the five broad
                 phases of software development.</para><figure xml:id="RelativeCosttoFixBugsBasedonTimeofDetection">
@@ -1091,8 +1088,8 @@
                     <itemizedlist>
                         <listitem>
                             <para><emphasis role="bold">Deploy</emphasis> - Titan provides simple
-                                pathways to execute deployments using standard branching, meaning
-                                that the code will always represent what is deployed.</para>
+                            pathways to execute deployments using standard branching, meaning that
+                            the code will always represent what is deployed (<xref linkend="FrameworkforContinousDeployment"></xref>).</para>
                             <itemizedlist>
                                 <listitem>
                                     <para>Titan Deploy allows teams to execute deployments without

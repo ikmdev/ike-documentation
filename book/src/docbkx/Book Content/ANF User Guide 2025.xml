@@ -72,12 +72,10 @@
                 could easily aggregate clinical information managed by multiple health information
                 networks.</para>
             <para>ANF statements are comprised of two basic components, the “Context” and the
-                “Circumstance,”
-                (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161120-0500" comment="Update Figure #"?>Figure
-                #<?oxy_comment_end?>.) each having their own unique set of data elements or
-                “attributes” which capture, in a uniform and normalized way, all the clinical detail
-                of the statement. Both the Context and the Circumstance are required to create a
-                normalized clinical statement. </para>
+                “Circumstance,” (<xref linkend="ANFStatements"/>) each having their own unique set
+                of data elements or “attributes” which capture, in a uniform and normalized way, all
+                the clinical detail of the statement. Both the Context and the Circumstance are
+                required to create a normalized clinical statement. </para>
             <figure xml:id="ANFStatements">
                 <title>ANF Statement</title>
                 <mediaobject>
@@ -103,16 +101,14 @@
             <para><emphasis role="bold">Circumstance</emphasis></para>
             <para>The Circumstance provides the clinical detail for the ANF Statement. There are
                 three types of Circumstances that can be part of an ANF statement: Performance
-                Circumstance, Request Circumstance and Narrative circumstance
-                (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161157-0500" comment="Update Figure #"?>Figure
-                #.<?oxy_comment_end?>). Each type of circumstance has its own unique set of
-                attributes to capture the unique data germane to the specific circumstance. A
-                Performance Circumstance specifies the result of an action or an observation. The
-                Request Circumstance describes a request made by a clinician for a patient. The
-                Narrative Circumstance is intentionally not meant to be used frequently and is only
-                intended to document components of the clinical narrative that cannot be documented
-                by the data structure of the Performance or Request Circumstances. <figure
-                    xml:id="ANFContextandCircumstance.svg">
+                Circumstance, Request Circumstance and Narrative circumstance (<xref linkend="ANFContextandCircumstance"></xref>). Each type of circumstance has its own
+                unique set of attributes to capture the unique data germane to the specific
+                circumstance. A Performance Circumstance specifies the result of an action or an
+                observation. The Request Circumstance describes a request made by a clinician for a
+                patient. The Narrative Circumstance is intentionally not meant to be used frequently
+                and is only intended to document components of the clinical narrative that cannot be
+                documented by the data structure of the Performance or Request Circumstances.
+                <figure xml:id="ANFContextandCircumstance">
                     <title>ANF Statement Components: Context and Circumstance</title>
                     <mediaobject>
                         <imageobject>
@@ -139,16 +135,14 @@
                 <emphasis role="italic">A 58-year-old male presents at urgent care with a
                     temperature of 102.5 and a sore throat. </emphasis></para>
             <para>Analysis of the clinical narrative allows for the separation of clinical
-                information to four basic elements
-                (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161214-0500" comment="Update Figure #"?>Figure
-                2).<?oxy_comment_end?> The clinical narrative states that the patient is a
-                58-year-old male which, when separating Clinical Elements, results in two separate
-                ANF statements about the patient’s demographic data, one for the patient’s age (58
-                yo) and one for the patient’s gender (male). In addition, there is information in
-                the narrative regarding the patient’s symptoms, each of which would be the topic of
-                its own ANF statement (one for Body Temperature, and one for Sore Throat). In this
-                example, there are 4 separate “Clinical Elements” that will be dealt with in 4
-                separate ANF Statements. <figure xml:id="ClinicalNarrative">
+                information to four basic elements (<xref linkend="ClinicalNarrative"></xref>). The clinical narrative states that
+                the patient is a 58-year-old male which, when separating Clinical Elements, results
+                in two separate ANF statements about the patient’s demographic data, one for the
+                patient’s age (58 yo) and one for the patient’s gender (male). In addition, there is
+                information in the narrative regarding the patient’s symptoms, each of which would
+                be the topic of its own ANF statement (one for Body Temperature, and one for Sore
+                Throat). In this example, there are 4 separate “Clinical Elements” that will be
+                dealt with in 4 separate ANF Statements. <figure xml:id="ClinicalNarrative">
                     <title>Break Down of Clinical Narrative into Clinical Elements for ANF
                         Statements</title>
                     <mediaobject>
@@ -203,12 +197,10 @@
         <para>In Analysis Normal Form (ANF), each statement is built from a standard structure which
             captures the clinical information. This standard structure will contain different data
             element types, depending on what kind of information is being captured. These data types
-            are summarized in
-            <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161233-0500" comment="Update table #"?>Table
-            1<?oxy_comment_end?> and are discussed in further detail below.</para>
+            are summarized in Table 1 and are discussed in further detail below.</para>
         <para>
             <table>
-                <title><emphasis role="italic">Table 1: Data Types used in ANF statement
+                <title><emphasis role="italic">Data Types used in ANF statement
                         attributes</emphasis></title>
                 <tgroup cols="3">
                     <colspec colnum="1" colname="col1"/>
@@ -347,15 +339,10 @@
                 statement can be determined and the specific attributes for Context and Circumstance
                 can be populated. In order to illustrate how to break down the clinical narrative,
                 determine the topic and populate the associated attributes, the following clinical
-                narrative will be used as an example
-                (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161318-0500" comment="Update Figure #"?>Figure
-                #<?oxy_comment_end?>. ). </para>
-            <para/>
+                narrative will be used as an example. </para>
             <table frame="all">
-                <title><emphasis role="bold"><emphasis role="italic"
-                            ><?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161329-0500" comment="Update Figure #"?>Figure
-                            3<?oxy_comment_end?>:</emphasis></emphasis><emphasis role="italic">
-                        Clinical narrative for a Syphilis Use Case </emphasis></title>
+                <title><emphasis role="italic"> Clinical narrative for a
+                        Syphilis Use Case </emphasis></title>
                 <tgroup cols="1">
                     <colspec colnum="1" colname="c1"/>
                     <thead>
@@ -412,18 +399,16 @@
                     </tbody>
                 </tgroup>
             </table>
-            <para>The clinical narrative above
-                (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161341-0500" comment="Update Figure #"?>Figure
-                3<?oxy_comment_end?>) contains multiple key Clinical Elements that can be identified
-                and separated into separate ANF statements, each with their own Topic and relevant
-                attributes. The first step is to identify the separate pieces of relevant clinical
-                information for the patient as seen in
+            <para>The clinical narrative above contains multiple key Clinical Elements that can be
+                identified and separated into separate ANF statements, each with their own Topic and
+                relevant attributes. The first step is to identify the separate pieces of relevant
+                clinical information for the patient as seen in
                 <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161352-0500" comment="Update"?>Table
                 2<?oxy_comment_end?>. </para>
             <para>
                 <table>
-                    <title><emphasis>Table 2: Isolation of Clinical Elements for Syphilis use case
-                            narrative </emphasis></title>
+                    <title><emphasis>Isolation of Clinical Elements for Syphilis use case narrative
+                        </emphasis></title>
                     <tgroup cols="1">
                         <colspec colnum="1" colname="col1"/>
                         <tbody>
@@ -490,15 +475,14 @@
                 original intent and clarity of meaning. The 3<superscript>rd</superscript> principal
                 is that the Topic can only contain one Clinical Element. </para>
             <para>ANF requires an ability to define a precise Topic of a statement using a logical
-                standard terminology expression. For the syphilis use case clinical narrative above
-                (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161402-0500" comment="Update"?>Figure
-                3<?oxy_comment_end?>), topics can be assigned to the Clinical Elements that were
-                identified. It is important to understand that the Topic chosen requires a clear
-                measure or result of what was observed, requested or assessed during treatment. The
-                Topic should be as specific as possible, so the result “reacts” to the topic. Per
-                the example above about smoking, the topic of the ANF statement would not be
-                “Smoking status,” for an individual patient it would be “Smoker”, and the result
-                would be a qualitative result of “yes.” </para>
+                standard terminology expression. For the syphilis use case clinical narrative above,
+                topics can be assigned to the Clinical Elements that were identified. It is
+                important to understand that the Topic chosen requires a clear measure or result of
+                what was observed, requested or assessed during treatment. The Topic should be as
+                specific as possible, so the result “reacts” to the topic. Per the example above
+                about smoking, the topic of the ANF statement would not be “Smoking status,” for an
+                individual patient it would be “Smoker”, and the result would be a qualitative
+                result of “yes.” </para>
             <para>The result will fall into one of two categories: a quantitative result or a
                 qualitative result. A quantitative ANF statement would have a result that is
                 intended to represent a numeric result. A qualitative ANF statement would have a
@@ -518,10 +502,10 @@
                 statement was about. </para>
             <para>
                 <table>
-                    <title><emphasis>Table 3: Isolated Clinical Elements and resulting Topics from
-                            the Syphilis use case Clinical Narrative (Figure 3). Table shows
-                            alignment with existing Clinical Terminology in SNOMED, current as of
-                            July 2025. </emphasis></title>
+                    <title><emphasis>Isolated Clinical Elements and resulting Topics from the
+                            Syphilis use case Clinical Narrative (Figure 3). Table shows alignment
+                            with existing Clinical Terminology in SNOMED, current as of July 2025.
+                        </emphasis></title>
                     <tgroup cols="3">
                         <colspec colnum="1" colname="col1"/>
                         <colspec colnum="2" colname="col2"/>
@@ -666,20 +650,18 @@
                     </tgroup>
                 </table>
             </para>
-            <para>As seen in the table above
-                (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161442-0500" comment="Update"?>Table
-                3<?oxy_comment_end?>), the Topic will often align with an established clinical term
-                or concept that may be present in the SNOMED or LOINC databases. However, there are
-                times when the SNOMED or LOINC terminology isn’t an exact match for what the topic
-                of the ANF statement should be or there may be no code at all to describe the topic.
-                For example, to describe the white spots in the mouth, the Topic is “Oral Lesion
-                with white color.” The closest SNOMED code is “Oral Lesion” (SCTID: 1081000119107),
-                but the color description is missing and that is a key clinical feature of the oral
-                syphilis lesions. In this case, a new concept would need to be created for the Topic
-                for “Oral lesion with white color,” assigned a unique ID and submitted to SNOMED as
-                a new extension. For denoting the patient’s ethnicity, a new concept for “not
-                Hispanic” would need to be created as there is no code for that in SNOMED (as of
-                July 2025). </para>
+            <para>As seen in the table above, the Topic will often align with an established
+                clinical term or concept that may be present in the SNOMED or LOINC databases.
+                However, there are times when the SNOMED or LOINC terminology isn’t an exact match
+                for what the topic of the ANF statement should be or there may be no code at all to
+                describe the topic. For example, to describe the white spots in the mouth, the Topic
+                is “Oral Lesion with white color.” The closest SNOMED code is “Oral Lesion” (SCTID:
+                1081000119107), but the color description is missing and that is a key clinical
+                feature of the oral syphilis lesions. In this case, a new concept would need to be
+                created for the Topic for “Oral lesion with white color,” assigned a unique ID and
+                submitted to SNOMED as a new extension. For denoting the patient’s ethnicity, a new
+                concept for “not Hispanic” would need to be created as there is no code for that in
+                SNOMED (as of July 2025). </para>
             <para>It is possible to have multiple ANF statements with the same Topic. In the
                 Syphilis use case, there are two ANF statements with the Topic of “Eruption of
                 Skin.” From the clinical narrative you can see that there is assessment of the
@@ -714,11 +696,9 @@
                 part of an ANF statement: Performance Circumstance, Request Circumstance and
                 Narrative circumstance. The ANF statement will contain the correct Circumstance and
                 associated attributes for the Topic along with the timing and purpose (if
-                applicable) for the circumstance
-                (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161518-0500" comment="Update"?>Figure
-                4<?oxy_comment_end?>). Different narratives require different circumstances.
-                Allowing clinicians to choose between circumstance instances further categorizes the
-                flow of data, allowing for ease of access later. <figure
+                applicable) for the circumstance (<xref linkend="Figure4CircumstanceChoice"></xref>). Different narratives require different
+                circumstances. Allowing clinicians to choose between circumstance instances further
+                categorizes the flow of data, allowing for ease of access later. <figure
                     xml:id="Figure4CircumstanceChoice">
                     <title>Figure 4: The Circumstance provides the clinical detail for the ANF
                         statement.</title>
@@ -758,19 +738,13 @@
                 example, an ANF statement may document the presence of a mutation in the BRCA1 gene.
                 The Narrative Circumstance could contain the exact mutation contained in the BRCA1
                 gene. The Narrative Circumstance will be described in more detail in later sections. </para>
-            <para>Going back to the Syphilis use case
-                (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161534-0500" comment="Update"?>Figure
-                3<?oxy_comment_end?>), a circumstance choice can be determined for each ANF
-                statement Topic
-                (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161542-0500" comment="Update"?>Table
-                4 below<?oxy_comment_end?>). To demonstrate, the ANF statement Topics in the table
-                are specific to the Patient Roberta in the Syphilis narrative
-                (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161548-0500" comment="Update"?>Figure
-                3<?oxy_comment_end?>). </para>
+            <para>Going back to the Syphilis use case, a circumstance choice can be determined for
+                each ANF statement Topic (Table 4 below). To demonstrate, the ANF statement Topics
+                in the table are specific to the Patient Roberta in the Syphilis narrative. </para>
             <para>
                 <table>
-                    <title><emphasis>Table 4: Circumstance Choice for each of the Topics for ANF
-                            statements for the Syphilis Use Case (Figure 3) </emphasis></title>
+                    <title><emphasis>Circumstance Choice for each of the Topics for ANF statements
+                            for the Syphilis Use Case (Figure 3) </emphasis></title>
                     <tgroup cols="3">
                         <colspec colnum="1" colname="col1"/>
                         <colspec colnum="2" colname="col2"/>
@@ -904,8 +878,8 @@
                 component of an ANF statement.</para>
             <para>
                 <table frame="all">
-                    <title><emphasis>Figure 5: Clinical narrative example for a Systolic Blood
-                            Pressure Use Case</emphasis></title>
+                    <title><emphasis>Clinical narrative example for a Systolic Blood Pressure Use
+                            Case</emphasis></title>
                     <tgroup cols="1">
                         <colspec colnum="1" colname="c1"/>
                         <thead>
@@ -980,7 +954,7 @@
                 Seconds.” </para>
             <para>
                 <table>
-                    <title><emphasis>Table 5: Data elements in the Time Attribute for Context
+                    <title><emphasis>Data elements in the Time Attribute for Context
                         </emphasis></title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1"/>
@@ -1044,7 +1018,7 @@
                 for this attribute would be Concept “Patient” as seen in Table 6. </para>
             <para>
                 <table>
-                    <title><emphasis>Table 6: Data elements in the subjectOfRecord Attribute for
+                    <title><emphasis>Data elements in the subjectOfRecord Attribute for
                             Context</emphasis></title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1"/>
@@ -1082,8 +1056,8 @@
                 clinician, the ID would be their personal identifier ID (Table 7). </para>
             <para>
                 <table>
-                    <title><emphasis>Table 7: Data element in the author Attribute for
-                            Context</emphasis></title>
+                    <title><emphasis>Data element in the author Attribute for
+                        Context</emphasis></title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1"/>
                         <colspec colnum="2" colname="col2"/>
@@ -1122,7 +1096,7 @@
                 majority of statements will have a value of “patient” since most statements in a
                 patient’s clinical record will be about the patient (Table 8). </para>
             <table>
-                <title><emphasis>Table 8: Data element in the subjectOfInformation Attribute for
+                <title><emphasis>Data element in the subjectOfInformation Attribute for
                         Context</emphasis></title>
                 <tgroup cols="4">
                     <colspec colnum="1" colname="col1"/>
@@ -1157,8 +1131,7 @@
                 Figure 5, the Topic for one of the ANF statements would be “Systolic Blood
                 Pressure.”</para>
             <table>
-                <title><emphasis>Table 9: Data element in the Topic Attribute for
-                    Context</emphasis></title>
+                <title><emphasis>Data element in the Topic Attribute for Context</emphasis></title>
                 <tgroup cols="4">
                     <colspec colnum="1" colname="col1"/>
                     <colspec colnum="2" colname="col2"/>
@@ -1198,8 +1171,8 @@
                 result of "true."</para>
             <para>
                 <table>
-                    <title><emphasis>Table 10: Data element in the Type Attribute for
-                            Context</emphasis></title>
+                    <title><emphasis>Data element in the Type Attribute for
+                        Context</emphasis></title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1"/>
                         <colspec colnum="2" colname="col2"/>
@@ -1248,9 +1221,7 @@
                 (Figure 6). </para>
             <para>
                 <table frame="all">
-                    <title><emphasis role="bold"><emphasis role="italic">Figure
-                            6:</emphasis></emphasis><emphasis role="italic"> Clinical narrative
-                            example for a Urinary Tract Infection Use Case</emphasis></title>
+                    <title>Clinical narrative example for a Urinary Tract Infection Use Case</title>
                     <tgroup cols="1">
                         <colspec colnum="1" colname="c1"/>
                         <thead>
@@ -1327,7 +1298,7 @@
                 with this attribute is the unit of the Time measure, concept “Seconds.” </para>
             <para>
                 <table>
-                    <title><emphasis>Table 11: Data elements in the Time Attribute for Performance
+                    <title><emphasis>Data elements in the Time Attribute for Performance
                             Circumstance</emphasis></title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1"/>
@@ -1391,8 +1362,8 @@
                 therefore the timing attribute for request Circumstance would be left blank (Table
                 12). </para>
             <table>
-                <title><emphasis>Table 12: Data elements in the Time Attribute for Request
-                        Circumstance with conditional future occurrence</emphasis></title>
+                <title><emphasis>Data elements in the Time Attribute for Request Circumstance with
+                        conditional future occurrence</emphasis></title>
                 <tgroup cols="4">
                     <colspec colnum="1" colname="col1"/>
                     <colspec colnum="2" colname="col2"/>
@@ -1456,7 +1427,7 @@
                 be a combination of “has focus” and “kidney infection” (Table 13). </para>
             <para>
                 <table>
-                    <title><emphasis>Table 13: Data element in the Purpose Attribute for
+                    <title><emphasis>Data element in the Purpose Attribute for
                             Circumstance</emphasis></title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1"/>
@@ -1498,8 +1469,8 @@
                 statement with Topic of leukocyte esterase would be “performed” (Table 14).</para>
             <para>
                 <table>
-                    <title><emphasis>Table 14: Data element in the Status Attribute for Circumstance
-                            for Topic Leukocyte Esterase</emphasis></title>
+                    <title><emphasis>Data element in the Status Attribute for Circumstance for Topic
+                            Leukocyte Esterase</emphasis></title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1"/>
                         <colspec colnum="2" colname="col2"/>
@@ -1553,9 +1524,9 @@
                 of a degree increments. </para>
             <para>
                 <table>
-                    <title><emphasis>Table 15: Data elements in the Result Attribute for
-                            Circumstance demonstrating the result for chronological age per the
-                            Urinary Tract Infection Clinical Narrative</emphasis></title>
+                    <title><emphasis>Data elements in the Result Attribute for Circumstance
+                            demonstrating the result for chronological age per the Urinary Tract
+                            Infection Clinical Narrative</emphasis></title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1"/>
                         <colspec colnum="2" colname="col2"/>
@@ -1619,9 +1590,9 @@
                 Quantity.”</para>
             <para>
                 <table>
-                    <title><emphasis>Table 16: Data elements in the Result Attribute for
-                            Circumstance demonstrating the result for female per the Urinary Tract
-                            Infection Clinical Narrative</emphasis></title>
+                    <title><emphasis>Data elements in the Result Attribute for Circumstance
+                            demonstrating the result for female per the Urinary Tract Infection
+                            Clinical Narrative</emphasis></title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1"/>
                         <colspec colnum="2" colname="col2"/>
@@ -1683,8 +1654,7 @@
                 low and therefore is flagged as “Low” in the ANF statement (Table 17). </para>
             <para>
                 <table frame="all">
-                    <title><emphasis role="italic">Figure 7:</emphasis><emphasis role="italic">
-                            Clinical narrative example for a Complete Blood Count Use Case
+                    <title><emphasis>Clinical narrative example for a Complete Blood Count Use Case
                         </emphasis></title>
                     <tgroup cols="1">
                         <colspec colnum="1" colname="c1"/>
@@ -1753,9 +1723,8 @@
             </para>
             <para>
                 <table>
-                    <title><emphasis>Table 17: Data elements in the Health Risk Attribute for
-                            Circumstance for the Hemoglobin result in the CBC clinical narrative
-                        </emphasis></title>
+                    <title><emphasis>Data elements in the Health Risk Attribute for Circumstance for
+                            the Hemoglobin result in the CBC clinical narrative </emphasis></title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1"/>
                         <colspec colnum="2" colname="col2"/>
@@ -1795,10 +1764,9 @@
                 Attribute would be Concept “g/dl.”</para>
             <para>
                 <table>
-                    <title><emphasis role="bold"><emphasis role="italic">Table
-                            18:</emphasis></emphasis><emphasis role="italic"> Data elements in the
-                            Reference Range Attribute for Circumstance for the Hemoglobin result in
-                            the CBC clinical narrative </emphasis></title>
+                    <title><emphasis role="italic"> Data elements in the Reference Range Attribute
+                            for Circumstance for the Hemoglobin result in the CBC clinical narrative
+                        </emphasis></title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1"/>
                         <colspec colnum="2" colname="col2"/>
@@ -1855,9 +1823,8 @@
                 (ID#47-3659) is responsible for the result for systolic Blood Pressure (Table 19). </para>
             <para>
                 <table>
-                    <title><emphasis>Table 19: Data elements in the Participant Attribute for
-                            Circumstance for the Hemoglobin result in the CBC clinical narrative
-                        </emphasis></title>
+                    <title><emphasis>Data elements in the Participant Attribute for Circumstance for
+                            the Hemoglobin result in the CBC clinical narrative </emphasis></title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1"/>
                         <colspec colnum="2" colname="col2"/>
@@ -1902,9 +1869,8 @@
                 for the reagents is 04987562422982. </para>
             <para>
                 <table>
-                    <title><emphasis>Table 20: Data elements in the Device ID Attribute for
-                            Circumstance for the WBC result in the CBC clinical narrative
-                        </emphasis></title>
+                    <title><emphasis>Data elements in the Device ID Attribute for Circumstance for
+                            the WBC result in the CBC clinical narrative </emphasis></title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1"/>
                         <colspec colnum="2" colname="col2"/>
@@ -1936,8 +1902,8 @@
                 Cytometry.” </para>
             <para>
                 <table>
-                    <title><emphasis>Table 21: Data elements in the Method Attribute for
-                            Circumstance for the WBC result in the CBC clinical narrative</emphasis>
+                    <title><emphasis>Data elements in the Method Attribute for Circumstance for the
+                            WBC result in the CBC clinical narrative</emphasis>
                     </title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1"/>
@@ -1973,9 +1939,8 @@
                 panel.</para>
             <para>
                 <table frame="all">
-                    <title><emphasis role="italic">Figure 8:</emphasis><emphasis role="italic">
-                            Clinical narrative example for a patient with Invasive Breast Cancer
-                        </emphasis></title>
+                    <title><emphasis role="italic">Clinical narrative example for a patient with
+                            Invasive Breast Cancer </emphasis></title>
                     <tgroup cols="1">
                         <colspec colnum="1" colname="c1"/>
                         <thead>
@@ -2012,9 +1977,9 @@
                 location information, such as the palpable mass in the upper portion of left breast,
                 an additional semantic for “upper” could be added to the location. </para>
             <table>
-                <title><emphasis>Table 22: Data elements in the Location Attribute for Circumstance
-                        for the palpable mass result in the invasive breast cancer clinical
-                        narrative </emphasis></title>
+                <title><emphasis>Data elements in the Location Attribute for Circumstance for the
+                        palpable mass result in the invasive breast cancer clinical narrative
+                    </emphasis></title>
                 <tgroup cols="4">
                     <colspec colnum="1" colname="col1"/>
                     <colspec colnum="2" colname="col2"/>
@@ -2049,9 +2014,9 @@
                 the Specimen Type would be breast tissue or breast biopsy specimen (Table 23). </para>
             <para>
                 <table>
-                    <title><emphasis>Table 23: Data elements in the Specimen Type Attribute for
-                            Circumstance for the Breast Biopsy Topic in the invasive breast cancer
-                            clinical narrative </emphasis></title>
+                    <title><emphasis>Data elements in the Specimen Type Attribute for Circumstance
+                            for the Breast Biopsy Topic in the invasive breast cancer clinical
+                            narrative </emphasis></title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1"/>
                         <colspec colnum="2" colname="col2"/>
@@ -2087,9 +2052,9 @@
                 24). </para>
             <para>
                 <table>
-                    <title><emphasis>Table 24: Data elements in the Specimen Source Site Attribute
-                            for Circumstance for the Breast Biopsy Topic in the invasive breast
-                            cancer clinical narrative </emphasis></title>
+                    <title><emphasis>Data elements in the Specimen Source Site Attribute for
+                            Circumstance for the Breast Biopsy Topic in the invasive breast cancer
+                            clinical narrative </emphasis></title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1"/>
                         <colspec colnum="2" colname="col2"/>
@@ -2130,9 +2095,9 @@
                 which could trigger the request. </para>
             <para>
                 <table>
-                    <title><emphasis>Table 25: Data elements in the Conditional Trigger Attribute
-                            for Request Circumstance for the UTI clinical narrative with
-                            instructions to return for further evaluation</emphasis></title>
+                    <title><emphasis>Data elements in the Conditional Trigger Attribute for Request
+                            Circumstance for the UTI clinical narrative with instructions to return
+                            for further evaluation</emphasis></title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1"/>
                         <colspec colnum="2" colname="col2"/>
@@ -2173,9 +2138,8 @@
                 fasting for 8 hours prior to collection. </para>
             <para>
                 <table frame="all">
-                    <title><emphasis role="italic">Figure 9:</emphasis><emphasis role="italic">
-                            Clinical narrative example for a patient requiring routine bloodwork
-                        </emphasis></title>
+                    <title><emphasis role="italic">Clinical narrative example for a patient
+                            requiring routine bloodwork </emphasis></title>
                     <tgroup cols="1">
                         <colspec colnum="1" colname="c1"/>
                         <thead>
@@ -2217,8 +2181,8 @@
                 be taken solely by the patient, like daily blood pressure readings. </para>
             <para>
                 <table>
-                    <title><emphasis>Table 26: Data elements in the Requested Participant Attribute
-                            for Request Circumstance for the Comprehensive Metabolic Panel clinical
+                    <title><emphasis>Data elements in the Requested Participant Attribute for
+                            Request Circumstance for the Comprehensive Metabolic Panel clinical
                             narrative</emphasis></title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1"/>
@@ -2264,7 +2228,7 @@
                 a routine request (Table 27). </para>
             <para>
                 <table>
-                    <title><emphasis>Table 27: Data elements in the Priority Attribute for Request
+                    <title><emphasis>Data elements in the Priority Attribute for Request
                             Circumstance for the Comprehensive Metabolic Panel clinical
                             narrative</emphasis></title>
                     <tgroup cols="4">
@@ -2309,7 +2273,7 @@
                 attribute below.</para>
             <para>
                 <table frame="all">
-                    <title><emphasis>Figure 10: Clinical narrative example for a patient with ankle
+                    <title><emphasis>Clinical narrative example for a patient with ankle
                             sprain</emphasis></title>
                     <tgroup cols="1">
                         <colspec colnum="1" colname="c1"/>
@@ -2351,8 +2315,8 @@
                 value is set to [0, INF) with a result semantic of "Countable Quantity.”</para>
             <para>
                 <table>
-                    <title><emphasis>Table 28: Data elements in the Requested Result for Request
-                            Circumstance for taking ibuprofen for the Sprained Ankle clinical
+                    <title><emphasis>Data elements in the Requested Result for Request Circumstance
+                            for taking ibuprofen for the Sprained Ankle clinical
                             narrative</emphasis></title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1"/>
@@ -2466,7 +2430,7 @@
                 illustrated in Table 29.</para>
             <para>
                 <table>
-                    <title><emphasis>Table 29: Data elements in the Repetition Attribute for Request
+                    <title><emphasis>Data elements in the Repetition Attribute for Request
                             Circumstance for taking ibuprofen for the Sprained Ankle clinical
                             narrative</emphasis></title>
                     <tgroup cols="4">
@@ -2560,8 +2524,8 @@
                 may request a PCR-based Molecular Test (Table 30). </para>
             <para>
                 <table>
-                    <title><emphasis>Table 30: Data elements in the Method Attribute for Request
-                            Circumstance for a molecular influenza test</emphasis></title>
+                    <title><emphasis>Data elements in the Method Attribute for Request Circumstance
+                            for a molecular influenza test</emphasis></title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1"/>
                         <colspec colnum="2" colname="col2"/>
@@ -2602,7 +2566,7 @@
                 31.</para>
             <para>
                 <table>
-                    <title><emphasis>Table 31: Data elements in the Location Attribute for Request
+                    <title><emphasis>Data elements in the Location Attribute for Request
                             Circumstance for Blood Pressure</emphasis></title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1"/>
@@ -2641,8 +2605,8 @@
                 that the sample be taken from the right nostril (Table 32). </para>
             <para>
                 <table>
-                    <title><emphasis>Table 32: Data elements in the Specimen Type Attribute for
-                            Request Circumstance for a SARS-CoV test using a nasopharyngeal swab and
+                    <title><emphasis>Data elements in the Specimen Type Attribute for Request
+                            Circumstance for a SARS-CoV test using a nasopharyngeal swab and
                             swabbing the right nostril</emphasis></title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1"/>
@@ -2675,9 +2639,9 @@
                 right nostril, the ANF statement is illustrated below (Table 33).</para>
             <para>
                 <table>
-                    <title><emphasis>Table 33: Data elements in the Specimen Source Site Attribute
-                            for Request Circumstance for a SARS-CoV test using a nasopharyngeal swab
-                            and swabbing the right nostril</emphasis></title>
+                    <title><emphasis>Data elements in the Specimen Source Site Attribute for Request
+                            Circumstance for a SARS-CoV test using a nasopharyngeal swab and
+                            swabbing the right nostril</emphasis></title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1"/>
                         <colspec colnum="2" colname="col2"/>
@@ -2755,7 +2719,7 @@
                 11).</para>
             <para>
                 <table frame="all">
-                    <title><emphasis>Figure 11: Clinical narrative example for blood pressure
+                    <title><emphasis>Clinical narrative example for blood pressure
                             results</emphasis></title>
                     <tgroup cols="1">
                         <colspec colnum="1" colname="c1"/>
@@ -2810,8 +2774,8 @@
                 Circumstance. </para>
             <para>
                 <table>
-                    <title><emphasis>Table 34: Isolation of Clinical Elements for Blood Pressure Use
-                            Case </emphasis></title>
+                    <title><emphasis>Isolation of Clinical Elements for Blood Pressure Use Case
+                        </emphasis></title>
                     <tgroup cols="2">
                         <colspec colnum="1" colname="col1"/>
                         <colspec colnum="2" colname="col2"/>
@@ -4982,8 +4946,7 @@
                 will be 10 ANF statements created for this clinical narrative. </para>
             <para>
                 <table frame="all">
-                    <title><emphasis>Figure 12: Medication History Clinical
-                        Narrative</emphasis></title>
+                    <title><emphasis>Medication History Clinical Narrative</emphasis></title>
                     <tgroup cols="1">
                         <colspec colnum="1" colname="c1"/>
                         <thead>
@@ -5023,8 +4986,8 @@
             </para>
             <para>
                 <table>
-                    <title><emphasis>Table 35: Isolation of Clinical Elements for Medication History
-                            Use Case </emphasis></title>
+                    <title><emphasis>Isolation of Clinical Elements for Medication History Use Case
+                        </emphasis></title>
                     <tgroup cols="2">
                         <colspec colnum="1" colname="col1"/>
                         <colspec colnum="2" colname="col2"/>

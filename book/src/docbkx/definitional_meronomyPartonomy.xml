@@ -92,8 +92,8 @@
             Model at:
             https://confluence.ihtsdotools.org/display/IAP/Revision+of+IS-A+relationships+for+anatomy </para>
         <para>FMA also includes a role hierarchy for <emphasis role="italic">Part-of</emphasis>
-            relationships shown in the figure below.</para>
-        <figure>
+            relationships shown in <xref linkend="definitionalmeronmoyPartonomy00"></xref> below.</para>
+        <figure xml:id="definitionalmeronmoyPartonomy00">
             <title>FMA Part-of Role Hierarchy</title>
             <mediaobject>
                 <imageobject>
@@ -180,8 +180,8 @@
         <para>Part-of Relationships will be useful in the definition of LOINC concepts that
             represent Panels. These panel concepts contain both individual laboratory tests and
             other panel concepts. Panels may also require multiple sufficient sets to represent
-            tests that are not always a part of the panel but optional as shown below. </para>
-        <figure>
+            tests that are not always a part of the panel but optional as in <xref linkend="definitionalmeronmoyPartonomy01"></xref> below. </para>
+        <figure xml:id="definitionalmeronmoyPartonomy01">
             <title>LOINC Panel with optional parts</title>
             <mediaobject>
                 <imageobject>
@@ -193,9 +193,9 @@
             <title>Proposed Laboratory Model</title>
             <para>Add a new attribute that applies to concepts in the Observable Entity hierarchy
                 named Contains lab test (attribute). This attribute will take other Observable
-                Entity concepts as values and will be transitive and reflexive as shown
+                Entity concepts as values and will be transitive and reflexive as shown in <xref linkend="definitionalmeronmoyPartonomy02"></xref>
                 below.</para>
-            <figure>
+            <figure xml:id="definitionalmeronmoyPartonomy02">
                 <title>LOINC Panel with multiple levels of parts</title>
                 <mediaobject>
                     <imageobject>

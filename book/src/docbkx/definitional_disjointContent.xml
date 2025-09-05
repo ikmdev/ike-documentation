@@ -47,9 +47,9 @@
             product (product)|. A particular focus was placed on primitive hierarchies of substance
             and body structure. For each hierarchy, all concepts that are currently disjoint from
             each other beginning at the top of the hierarchy and traversing downward were the focus.
-            This method, outlined in the figure below, will identify potential disjoint statements,
+            This method, outlined in <xref linkend="definitionaldisjointContent00"></xref> below, will identify potential disjoint statements,
             which were reviewed by clinicians to confirm that they are correct.</para>
-        <figure>
+        <figure xml:id="definitionaldisjointContent00">
             <title>Query strategy to identify potential disjoint content</title>
             <mediaobject>
                 <imageobject>

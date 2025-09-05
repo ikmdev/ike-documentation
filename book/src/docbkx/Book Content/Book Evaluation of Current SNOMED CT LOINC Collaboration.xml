@@ -54,7 +54,7 @@
                 <title>Hearing from the Community</title>
                 <para>The LOINC® and SNOMED CT® Interoperability Solution encourages the community
                 to provide input to help inform how the solution will proceed. [21] Responders can
-                provide their perspective related to content, releases and use case (Figure 24.1).
+                provide their perspective related to content, releases and use case (<xref linkend="ScreenshotofFeedbackPageonLoincSnomedWebsite"></xref>).
                 Additionally, responders can leverage the feedback form to ask questions.</para>
                 <figure xml:id="ScreenshotofFeedbackPageonLoincSnomedWebsite">
                     <title>Screenshot of Feedback Page on loincsnomed.org</title>
@@ -66,7 +66,7 @@
                 </figure>
                 <para>Community involvement is a key to ensure the solutions that are being made
                 available meet the needs of the users. Similarly, IKM provides the ability for users
-                to provide feedback through GitHub issues (Figure 24.2). GitHub provides custom form
+                to provide feedback through GitHub issues (<xref linkend="ScreenshotofGitHubNonTechnicalIssueSubmissionPage"></xref>). GitHub provides custom form
                 layouts to give users the best experience for submitting technical and non-technical
                 issues or questions. [22]</para>
                 <figure xml:id="ScreenshotofGitHubNonTechnicalIssueSubmissionPage">
@@ -89,7 +89,7 @@
                     that all members have access to the same information. [21]</para>
                 <para>IKM provides the ability for all issues submitted to be visible. The team can
                 provide transparent updates, such as commenting to answer questions, assigning the
-                issue for work, or assigning the issue to a milestone for release (Figure 24.3).
+                issue for work, or assigning the issue to a milestone for release (<xref linkend="ScreenshotofGitHubIssueScreen"></xref>).
                 This will allow the issue creator and the rest of the community to have full insight
                 into when the issue may be addressed.</para>
                 <figure xml:id="ScreenshotofGitHubIssueScreen">
@@ -122,7 +122,7 @@
                     edit the input field and wait for the results to refresh.</para>
                 <para>In addition to the search bar, the search option also includes a list of
                 filters to narrow search results as shown on the left side of the image below
-                (Figure 24.4). Prior to entering text in the search bar, only the four green filter
+                (<xref linkend="LOINCOntologySNOMEDCTBrowserSearchFilters"></xref>). Prior to entering text in the search bar, only the four green filter
                 options and the “Group by concept” checkbox appear. After entering text, additional
                 filters appear, which are filtering by: language (e.g., English), semantic tag
                 (e.g., observable event), module (SNOMED CT® core vs. LOINC® Extension module), and
@@ -136,7 +136,7 @@
                     </mediaobject>
                 </figure>
                 <para>The user can also navigate through concepts using the taxonomy structure in
-                the LOINC® Ontology SNOMED CT® Browser (Figure 24.5). In the default "Perspective”,
+                    the LOINC® Ontology SNOMED CT® Browser (<xref linkend="TaxonomyStructureintheLOINCOntologySNOMEDCTBrowser"></xref>). In the default "Perspective”,
                 the taxonomy structure lists all SNOMED CT® observable entity concepts in
                 alphabetical order. If the user changes the “Perspective” to “Comparing Hierarchy”,
                 the system displays a more robust taxonomy of SNOMED CT® concepts, as shown below.
@@ -160,7 +160,7 @@
                 <para>Noted improvements can be made to search to enhance the function and
                 experience. Improving the search user interface, making search and navigation more
                 intuitive (e.g., filters, taxonomy), and optimizing page space use will enhance the
-                tool’s usability. The image below (Figure 24.6) demonstrates what an optimized
+                tool’s usability. The image below (<xref linkend="HypotheticalOptimizedSearchFunction"></xref>) demonstrates what an optimized
                 search function might look like for an Integrated Knowledge Management tool. The
                 view below is simplified and clean but simultaneously more functional and
                 user-friendly. [24]</para>
@@ -178,7 +178,7 @@
                     Browser</title>
                 <para>Upon selecting a concept to view within the LOINC® Ontology SNOMED CT®
                 browser, the Concept Details tab on the right side of the screen displays
-                information pertaining to that concept (Figure 24.7). The initial view is the
+                information pertaining to that concept (<xref linkend="ViewoftheSummaryTab"></xref>). The initial view is the
                 Summary tab that displays parent/child information within the SNOMED CT® hierarchy
                 as well as LOINC® equivalents (if applicable). The other tabs, Details, Diagram,
                 Expression, Refsets, Members, History, and References provide further information on
@@ -192,7 +192,7 @@
                     </mediaobject>
                 </figure>
                 <para>In addition, there is a settings button in the upper right corner of the
-                Concept Details window (Figure 24.8) that allows the user to change some settings to
+                    Concept Details window (<xref linkend="ConceptDetailsWindow"></xref>) that allows the user to change some settings to
                 their preference. This type of customizable functionality is needed for a tool that
                 will be so widely used across fields. [25]</para>
                 <figure xml:id="ConceptDetailsWindow">
@@ -207,7 +207,7 @@
                 straightforward manner, but there stands room for improvement. For example, most
                 tabs of a given concept do not present useful or novel information, if they have
                 information at all. Notably, after searching through dozens of concepts, this team
-                was unable to locate one that had information in the History tab (Figure 24.9).
+                was unable to locate one that had information in the History tab (<xref linkend="HistoryTabofConceptDetails"></xref>).
                 Because the team was unable to locate a concept with a populated history, it was not
                 clear whether this functionality was not yet available or simply empty. It would
                 benefit the user to communicate more clearly which concepts are missing information.
@@ -233,7 +233,7 @@
                 concept. Trials in finding LOINC®-equivalents using SNOMED® concepts often proved
                 fruitless as many SNOMED® concepts did not produce a LOINC® equivalent. Upon finding
                 a concept that has a LOINC® equivalent, the indication is rather small and does not
-                provide a great deal of information, as shown below (Figure 24.10). [25]</para>
+                provide a great deal of information, as shown below (<xref linkend="LOINCOntologySNOMEDCTBrowserIndicationofEquivalence"></xref>). [25]</para>
                 <figure xml:id="LOINCOntologySNOMEDCTBrowserIndicationofEquivalence">
                     <title>LOINC® Ontology SNOMED CT® Browser Indication of Equivalence</title>
                     <mediaobject>
@@ -244,7 +244,7 @@
                 </figure>
                 <para>To enhance the existing system, there should be a more complete record for
                 concepts, including the ability to view how they have changed over time. An example
-                of how this could be done in an IKM system is shown below (Figure 24.11).</para>
+                of how this could be done in an IKM system is shown below (<xref linkend="ExampleofHypotheticalConceptsVersioningRecord"></xref>).</para>
                 <figure xml:id="ExampleofHypotheticalConceptsVersioningRecord">
                     <title>Example of Hypothetical Concepts Versioning Record</title>
                     <mediaobject>
@@ -265,7 +265,7 @@
                     contributions. Specialized tools like this one are better off when they capture
                     the expertise of the individual user through open-source collaboration rather
                     than restricting editing rights. </para>
-                <para>The image below (Figure 24.12) captures what collaboration within an IKM tool
+                <para>The image below (<xref linkend="HypotheticalIKMToolingCollaboration"></xref>) captures what collaboration within an IKM tool
                 might look like. Allowing users to edit and contribute increases the knowledge base
                 and the momentum at which the tool itself improves. </para>
                 <figure xml:id="HypotheticalIKMToolingCollaboration">
@@ -431,7 +431,7 @@
             <para>Across many domains, the meaning of a particular observation can be best
             understood in the context of the set of possible answers (result values). For example,
             qualitative laboratory tests often have fixed answer lists for expected lab values, as
-            seen in the screenshot below (Figure 24.13). Answers are not linked to Observable Entity
+            seen in the screenshot below (<xref linkend="ExampleofQualitativeLaboratoryTestswithFixedAnswerLists"></xref>). Answers are not linked to Observable Entity
             concepts in SNOMED CT®. [24]</para>
             <figure xml:id="ExampleofQualitativeLaboratoryTestswithFixedAnswerLists">
                 <title>Example of Qualitative Laboratory Tests with Fixed Answer Lists</title>
