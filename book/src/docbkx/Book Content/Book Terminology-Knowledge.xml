@@ -324,12 +324,11 @@ content available via a FHIR API as part of its normal release process beginning
             (UMLS).</para>
         <para>RxNorm provides normalized clinical drug names and relationships between those names
             and common drug vocabularies for the purpose of easing the exchange of clinical drug
-            information between systems that use different drug vocabularies as outlined in the
-            figure below. Every concept in RxNorm is given a unique Concept Unique Identifiers
+            information between systems that use different drug vocabularies as outlined in <xref linkend="RxNorm"/> below. Every concept in RxNorm is given a unique Concept Unique Identifiers
             (RxCUIs). The names and codes from the common drug vocabularies are then linked to that
             RxCUI.</para>
         <para>
-            <figure>
+            <figure xml:id="RxNorm">
                 <title> Breakdown of RxNorm Drug Properties</title>
                 <mediaobject>
                     <imageobject>
@@ -724,7 +723,7 @@ OHDSI&apos;s Standard Vocabulary relies heavily on mapping non-standard concepts
             </para>
             <para>LOINC® has names spread across multiple fields with the Fully Specified Name
                 constructed as a concatenation of the six parts. It also contains a Long Common Name
-                and a Short Name. The screenshot from Komet below exemplifies the 6 LOINC® parts:
+                and a Short Name. The screenshot from Komet below, <xref linkend="LOINCkomet"/>, exemplifies the 6 LOINC® parts:
                 Component, Method, Property, Scale, System, and Timing. </para>
             <para>
                 <table>
@@ -754,7 +753,7 @@ OHDSI&apos;s Standard Vocabulary relies heavily on mapping non-standard concepts
                     </tgroup>
                 </table>
             </para>
-            <para><figure>
+            <para><figure xml:id="LOINCkomet">
                     <title> Plasmodium Description Coding Example</title>
                     <mediaobject>
                         <imageobject>
@@ -1381,7 +1380,7 @@ OHDSI&apos;s Standard Vocabulary relies heavily on mapping non-standard concepts
                 <para><emphasis role="bold">Case Study 1: Cardiac Marker and Coagulation Laboratory
                         Proficiency Tests [17]</emphasis></para>
                 <para>Depending on the lab, technicians may choose different LOINC® codes for the
-                    same test as shown in the figure below. The College of American Pathologists
+                    same test as shown in <xref linkend="BreakdownofLOINCCodesProvidedbyEachLaboratory"></xref> below. The College of American Pathologists
                     (CAP) surveyed 90 lab participants on “practice setting, instrument(s) and test
                     method(s), and LOINC® code selection and usage in the laboratory and electronic
                     health records” for 10 commonly ordered tests. 19.6% of codes reported were
@@ -1630,7 +1629,7 @@ OHDSI&apos;s Standard Vocabulary relies heavily on mapping non-standard concepts
             <section>
                 <title>LOINC® Hierarchy Browser</title>
                 <para>LOINC’s® website currently hosts ‘The Hierarchy Browser’ tool which allows
-                    users to view various hierarchies located in LOINC® as shown in the figure
+                    users to view various hierarchies located in LOINC® as shown in <xref linkend="RepresentationofASTinTheLOINCHierarchyBrowserTool"></xref>
                     below. Much of this functionality was previously only available in the RELMA®
                     application. [25] While a good starting point towards formal knowledge
                     representation, the current hierarchies are limited, and still do not provide

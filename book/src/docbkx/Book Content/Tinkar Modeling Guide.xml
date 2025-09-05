@@ -50,7 +50,7 @@
         </section>
     <section>
         <title><anchor xml:id="Toc196843728"/>Tinkar Logical Model</title>
-        <para>Before representing a data set using the Tinkar Logical Model, it is essential to
+        <para>Before representing a data set using the Tinkar Logical Model (see <xref linkend="TinkarLogicalModelExample"/> below, it is essential to
             understand the Tinkar starter data of Concepts, Patterns, and Semantics. The goal is to
             use what already exists in Tinkar and only create new Components when needed. This
             section provides a basic overview of the Tinkar Logical Model. The full description of
@@ -290,7 +290,7 @@
             </section>
             <section>
                 <title><anchor xml:id="Toc196843732"/>Semantics</title>
-                <para>To give machine-readable meaning to Components, Tinkar uses Semantics. A
+                <para>To give machine-readable meaning to Components, Tinkar uses Semantics (<xref linkend="TinkarArchitectureModel"/>). A
                     Semantic is a Component that contains a set of fields about the subject (the
                     meaning and purpose defined by its Pattern). A Semantic provides meaning to the
                     Components it references through its fields. A Semantic supports the
@@ -442,7 +442,7 @@
             </table>
             <para>When representing a new data set using the Tinkar Reference Model, only the status
                 values above are allowed and must follow the business rules defined. The business
-                rules do not account for the accidental moving of a Component. The diagram below
+                rules do not account for the accidental moving of a Component. The <xref linkend="StatusDiagram"/> below
                 shows the mapping between each status.</para>
             <para>
                 <figure xml:id="StatusDiagram">
@@ -631,7 +631,7 @@
                     </mediaobject>
                 </figure>
             </para>
-            <para>Figure 3 illustrates the relationship between the five main paths detailed in
+            <para><xref linkend="PathDiagram"/> illustrates the relationship between the five main paths detailed in
                 Table 10 through which the project flows. The project begins in the Prerequisite
                 Path, incorporating essential infrastructure Components shared across all paths. The
                 established Components of the Prerequisite Path then move into the Master Path to
@@ -866,7 +866,7 @@
                 and LOINC® terminologies can be modeled in the Tinkar Logical Model.</para>
             <section>
                 <title><anchor xml:id="Toc196843736"/>Ex. 1 Urine Homocysteine</title>
-                <para>Figure 4 illustrates a Urine Homocysteine Test represented in the Tinkar
+                <para><xref linkend="UrineHomocysteineRepresentationinTinkar"/> illustrates a Urine Homocysteine Test represented in the Tinkar
                     Logical Model. The Concept contains both the description for the test as well as
                     its corresponding UUID. This Concept serves as the subject for further
                     classification. The Pattern uses field definitions to explain and categorize the
@@ -890,7 +890,7 @@
             <section>
                 <title><anchor xml:id="Toc196843737"/>Ex. 2 Substance concentration of glucose in
                     specimen at point in time</title>
-                <para>Figure 5 illustrates a Substance Concentration of Glucose in Specimen Test
+                <para><xref linkend="SubstanceConcentrationofGlucoseinSpecimeninTinkar"/>illustrates a Substance Concentration of Glucose in Specimen Test
                     represented in the Tinkar Logical Model. The Concept contains both the
                     description for the test as well as its corresponding UUID. This Concept serves
                     as the subject for further classification. The Pattern uses field definitions to
@@ -916,8 +916,9 @@
         <title><anchor xml:id="Toc196843738"/>Creating a Representative Tinkar Reference Model for a
             Data set</title>
         <para>Creating a representative Tinkar Reference Model for a domain data set involves
-            several key steps. The sections below detail the current Tinkar starter data and outline
-            the steps for translating a data set into the Tinkar Logical Model.</para><figure xml:id="KeyStepstoRepresentaDataSetinTinkar">
+            several key steps, as seen in <xref linkend="KeyStepstoRepresentaDataSetinTinkar"/>. The sections below detail the current Tinkar starter
+            data and outline the steps for translating a data set into the Tinkar Logical
+            Model.</para><figure xml:id="KeyStepstoRepresentaDataSetinTinkar">
             <title>Key Steps to Represent a Data Set in Tinkar</title>
             <mediaobject>
                 <imageobject>
@@ -995,7 +996,7 @@
             CT®, field definitions can typically be found in online documentation of the
             terminology. For a data set that is not well-established, definitions may need to be
             created.</para>
-        <para>To illustrate a practical example of a predefined data set, the image below shows a
+        <para>To illustrate a practical example of a predefined data set, <xref linkend="ExampleofLOINCDataElements"/> below shows a
             snippet of the LOINC® transformation. LOINC® is a predefined data set with definitions
             and fields listed in its source file. In this snippet, some unique LOINC® fields
             provided in the data set are added to an Excel sheet in preparation. The purpose,
@@ -1025,8 +1026,8 @@
             will be referred to as examples of how to model certain fields.</para>
         <para><emphasis role="bold"><emphasis role="italic">Example 1: SNOMED CT® Regular Name
                 </emphasis></emphasis></para>
-        <para>The example in the screenshot below, shows a row of SNOMED CT® data that will be used
-            to demonstrate how the data set was represented using the Description Semantics.</para>
+        <para>The example in <xref linkend="SNOMEDCTDescriptionDataExample"/>, shows a row of SNOMED CT® data that will be used to demonstrate how
+            the data set was represented using the Description Semantics.</para>
         <para>Source: <link
                 xlink:href="https://confluence.ihtsdotools.org/display/DOCRELFMT/4.2.2.+Description+File+Specification"
                 >https://confluence.ihtsdotools.org/display/DOCRELFMT/4.2.2.+Description+File+Specification</link>.</para>
@@ -1041,7 +1042,7 @@
         </figure>
         <para><emphasis role="bold"><emphasis role="italic">Example 2: LOINC® Long Common
                     Name</emphasis></emphasis></para>
-        <para>The example in the screenshot below shows a row of LOINC® data that will be used to
+        <para>The example in <xref linkend="LOINCDescriptionDataExample"/> below shows a row of LOINC® data that will be used to
             demonstrate how the data set was represented using the Description Semantics.</para>
         <para>Source: <link xlink:href="https://loinc.org/search/?t=1&amp;s=7364-3"
                 >https://LOINC®.org/search/?t=1&amp;s=7364-3</link>. </para><figure xml:id="LOINCDescriptionDataExample">
@@ -1055,7 +1056,7 @@
                 </figure>
         <para><emphasis role="bold"><emphasis role="italic">Example 3: RxNorm
                 Name</emphasis></emphasis></para>
-        <para>The example in the screenshot below shows a row of RxNorm data that will be used to
+        <para>The example in <xref linkend="RxNormOWLFileExample"/> below shows a row of RxNorm data that will be used to
             demonstrate how the data set was represented using the Description Semantics.</para>
         <para><emphasis role="bold">Source File: </emphasis><link
                 xlink:href="https://lhncbc.nlm.nih.gov/RxNav/news/RxNorm-in-OWL.html"><emphasis
@@ -1549,7 +1550,7 @@
             for how to model certain fields.</para>
         <para><emphasis role="bold"><emphasis role="italic">Example 1: SNOMED
                 CT®</emphasis></emphasis></para>
-        <para>The example in the screenshot below shows a row of SNOMED CT® data used to illustrate
+        <para>The example in <xref linkend="SNOMEDCTUUIDExample"/> below shows a row of SNOMED CT® data used to illustrate
             how the data set was represented using the Identifier Semantics.</para>
         <para>Source: <link
                 xlink:href="https://confluence.ihtsdotools.org/display/DOCRELFMT/4.2.1+Concept+File+Specification"
@@ -1565,7 +1566,7 @@
         </figure>
         <para><emphasis role="bold"><emphasis role="italic">Example 2:
             LOINC®</emphasis></emphasis></para>
-        <para>The example in the screenshot below shows a row of LOINC® data used to illustrate how
+        <para>The example in <xref linkend="LOINCUUIDExample"/> below shows a row of LOINC® data used to illustrate how
             the data set was represented using the Identifier Semantics.</para>
         <para>Source: <link xlink:href="https://loinc.org/search/?t=1&amp;s=7364-3"
                 >https://LOINC®.org/search/?t=1&amp;s=7364-3</link>. </para><figure xml:id="LOINCUUIDExample">
@@ -1579,7 +1580,7 @@
         </figure>
         <para><emphasis role="bold"><emphasis role="italic">Example 3:
             RxNorm</emphasis></emphasis></para>
-        <para>The example in the screenshot below shows a row of RxNorm data used to illustrate how
+        <para>The example in <xref linkend="RxNormOWLFileIdentifier"/> below shows a row of RxNorm data used to illustrate how
             the data set was represented using the Identifier Semantics.</para>
         <figure xml:id="RxNormOWLFileIdentifier">
             <title>RxNorm OWL File Identifier</title>
@@ -1886,7 +1887,7 @@
                 fields.</para>
             <para><emphasis role="bold"><emphasis role="italic">Example 1: SNOMED
                     CT®</emphasis></emphasis></para>
-            <para>The example in the screenshots below shows a SNOMED CT® Axiom example and its
+            <para>The example in <xref linkend="SNOMEDCTExampleOWLExpression"/> <xref linkend="SNOMEDCTExampleOWLExpression2"/>below shows a SNOMED CT® Axiom example and its
                 Axiom expression, illustrating how the data set was represented using the Stated
                 Definitions Semantics.</para>
             <para>Source: <link
@@ -1912,7 +1913,7 @@
             </figure>
             <para><emphasis role="bold"><emphasis role="italic">Example 2:
                     LOINC®</emphasis></emphasis></para>
-            <para>LOINC® does not have an OWL String representation. However, the information below
+            <para>LOINC® does not have an OWL String representation. However, the information in <xref linkend="LOINCExampleOWLExpression"/> below
                 shows the data from LOINC® used to represent LOINC® using the Tinkar Stated
                 Definitions Semantics.</para>
             <para>Source: <link xlink:href="https://loinc.org/search/?t=1&amp;s=7364-3"
@@ -1928,7 +1929,7 @@
             </figure>
             <para><emphasis role="bold"><emphasis role="italic"> Example 3:
                     RxNorm</emphasis></emphasis></para>
-            <para>The example in the screenshot below shows the RxNorm OWL file, illustrating how
+            <para>The example in <xref linkend="RxNormExampleOWLExpression"/> below shows the RxNorm OWL file, illustrating how
                 the data was represented using the Stated Definitions Semantics.</para>
             <para>Source File: <link
                     xlink:href="https://lhncbc.nlm.nih.gov/RxNav/news/RxNorm-in-OWL.html"
@@ -2338,12 +2339,8 @@
         <para>
             <itemizedlist>
                 <listitem>
-                    <para>The Data Model is created using a modeling tool, mapping out the Patterns,
+                    <para>The Data Model (<xref linkend="BuildDataModelandStarterData"/>) is created using a modeling tool, mapping out the Patterns,
                         Semantics, and Concepts</para>
-                </listitem>
-                <listitem>
-                    <para>Examples of current data models will be added here with
-                        descriptions.</para>
                 </listitem>
             </itemizedlist>
         </para>
@@ -2361,7 +2358,7 @@
     <section>
         <title>Validating Models</title>
         <para>To create a stable and reliable model, each must undergo a validation process. The
-            validation process involves two key roles:</para>
+            validation process involves two key roles (<xref linkend="ValidatingModelsProcessFlowDiagram"/>):</para>
         <orderedlist>
             <listitem>
                 <para>Domain Subject Matter Experts (SMEs) provide critical feedback based on their

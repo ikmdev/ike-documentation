@@ -48,7 +48,7 @@
                     support rapid development, we still needed a clear understanding of what system
                     capabilities were important to showcase for the demonstration and detailed
                     documentation in the form of user stories for the developers to reference. </para>
-                <para>As seen in the figure below, we established a new process to describe the
+                <para>As seen in <xref linkend="IKMProductBacklogEpicBoard"></xref> below, we established a new process to describe the
                     system capabilities in the form of Agile epics and plot them against the
                     appropriate milestones to generate our product feature backlog. As per agile
                     development best practices, these epics are revisited weekly to be defined,

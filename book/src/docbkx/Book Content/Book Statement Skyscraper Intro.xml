@@ -6,7 +6,7 @@
     <title>Statement Model Layer</title>
     <para>In the following sections we will discuss the Statement Model Layer of the Knowledge
         Architecture. </para>
-    <para>The Statement Model Layer (Figure #.) defines how individual data elements are combined to form
+    <para>The Statement Model Layer (<xref linkend="KnowledgeArchitectureStatement"></xref>) defines how individual data elements are combined to form
         complete clinical statements, using the terminology and structures established in earlier
         layers. It incorporates standards-based models such as ANF and CIMI, and supports
         implementation through formats like HL7 V2, CDA, and FHIR. </para>

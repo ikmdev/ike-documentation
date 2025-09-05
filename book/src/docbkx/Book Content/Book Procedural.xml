@@ -136,9 +136,7 @@
             tools needs to occur in a manner that is consistent, systematic, and comprehensive.
             There have been a number of historical efforts that have aimed to achieve interoperable
             and robust CDS tools and artifacts that appropriately translate guidelines into care.
-            The AHRQ depicts in
-            <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T163810-0500" comment="Update"?>Figure
-            #.<?oxy_comment_end?>  representing the “CDS lifecycle” for the following areas: [1]<itemizedlist>
+            The AHRQ depicts in <xref linkend="CDSConnectLifestyle"></xref>. representing the “CDS lifecycle” for the following areas: [1]<itemizedlist>
                 <listitem>
                     <para>Authoring CDS tools and artifacts that leverage knowledge sources such as
                         clinical practice guidelines, quality measure specifications, and
@@ -169,10 +167,8 @@
         <title>Lack of Standardized Encoded Clinical Data - Impact on CDS</title>
         <para>In this section, we will explore the challenges of delivering patient-centered
             clinical decision support in the context of inconsistent data encoding standards.</para>
-        <para>The
-            <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T152015-0500" comment="Update Figure #"?>Figure
-            #<?oxy_comment_end?>. depicts how the lack of standardization in data transfer can
-            impact decision support. <figure xml:id="ShortcomingsDataTransfers">
+        <para>The <xref linkend="ShortcomingsDataTransfers"></xref> depicts how the lack of standardization in data transfer can impact
+            decision support. <figure xml:id="ShortcomingsDataTransfers">
                 <title>Shortcomings in Structured Data Transfers</title>
                 <mediaobject>
                     <imageobject>
@@ -269,9 +265,7 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
                     <para>Lack of standards and incentives to use and improve CDS</para>
                 </listitem>
                 <listitem>
-                    <para>Poor data quality
-                        <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T152003-0500" comment="Update Figure #"?>(Figure
-                        #)<?oxy_comment_end?></para>
+                    <para>Poor data quality (<xref linkend="RiskofPoorDataQuality"></xref></para>
                 </listitem>
                 <listitem>
                     <para>Gaps in the evidence </para>
@@ -395,9 +389,8 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
                 is to reduce the burden on providers and health systems to each identify important
                 lessons on their own." [14]</para>
             <para>To address this need, a range of quality metrics can be used to assess the
-                effectiveness and impact of CDS interventions. The
-                following<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T163852-0500" comment="Update"?>
-                Table #<?oxy_comment_end?> provides examples of commonly captured measures. </para>
+                effectiveness and impact of CDS interventions. The following Table provides examples
+                of commonly captured measures. </para>
             <para>
                 <table frame="all">
                     <title>Examples of Measures Commonly Captured to Measure the Effects of CDS
