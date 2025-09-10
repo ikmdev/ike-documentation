@@ -137,21 +137,21 @@
                     the data exchange process creates additional opportunities for error and for
                     loss of information that may lead to a patient’s harm. SNOMED CT® and other
                     meaningful use standards are frequently used as targets of this mapping, and
-                    their use is mandated as part of the Meaningful Use regulations. Tables 1 and 2
-                    below show how equivalent concepts in two different care settings leads to
-                    information loss when they are mapped to SNOMED CT® because SNOMED CT® does not
-                    represent the equivalent meaning. In Tables 1 and 2, the Local Concept column
-                    represents the concept created by Hospital A during the care of a patient, the
-                    Map Type column specifies broader than or narrower than or equivalent, and the
-                    SNOMED CT® Concept column represents the concept to which the local concept has
-                    been mapped. The Meaning Lost column describes the information lost due to
-                    mapping because an equivalent match of the local concept is not found in SNOMED
-                    CT. In Table 1 below, the SNOMED CT® Concept is broader than the local concept,
-                    causing important tumor morphology information to be lost during mapping. In
-                    Table 2, the SNOMED CT® Concept is also broader than the local concept, causing
-                    important tumor location information to be lost in the mapping process.</para>
+                    their use is mandated as part of the Meaningful Use regulations. In <xref linkend="Mapping"/> below show
+                    how equivalent concepts in two different care settings leads to information loss
+                    when they are mapped to SNOMED CT® because SNOMED CT® does not represent the
+                    equivalent meaning. In Tables 1 and 2, the Local Concept column represents the
+                    concept created by Hospital A during the care of a patient, the Map Type column
+                    specifies broader than or narrower than or equivalent, and the SNOMED CT®
+                    Concept column represents the concept to which the local concept has been
+                    mapped. The Meaning Lost column describes the information lost due to mapping
+                    because an equivalent match of the local concept is not found in SNOMED CT. In
+                    Table 1 below, the SNOMED CT® Concept is broader than the local concept, causing
+                    important tumor morphology information to be lost during mapping. In Table 2,
+                    the SNOMED CT® Concept is also broader than the local concept, causing important
+                    tumor location information to be lost in the mapping process.</para>
                 <para>
-                    <figure>
+                    <figure xml:id="Mapping">
                         <title> Medical Practice Mapping Example</title>
                         <mediaobject>
                             <imageobject>
@@ -330,12 +330,12 @@
             original LOINC® identifier for this concept is properly represented, as are the other
             data elements required by the LOINC® license. These Komet concepts integrate SNOMED CT®
             and LOINC® semantics; the LOINC® Method semantic and SNOMED CT® semantic are grouped
-            under the same Komet concept. The
-            f<?oxy_comment_start author="steph" timestamp="20190508T131130-0600" comment="In the PDF, it&apos;s actually Figure 3.1.  Also, in the figure, while the SNOMED CT name is displayed, there isn&apos;t anything that states that.  Should there be?" flag="done"?>igure
+            under the same Komet concept. The <xref linkend="KometLoincInt"/>
+            <?oxy_comment_start author="steph" timestamp="20190508T131130-0600" comment="In the PDF, it&apos;s actually Figure 3.1.  Also, in the figure, while the SNOMED CT name is displayed, there isn&apos;t anything that states that.  Should there be?" flag="done"?>
             <?oxy_comment_end?>below exemplifies the integration: the LOINC® method attribute is
             “AUDIT”, and the SNOMED CT® concept is displayed as “Alcohol use disorders
             identification test”.</para>
-        <figure>
+        <figure xml:id="KometLoincInt">
             <title><emphasis role="bold">Komet Editor: Representation of LOINC® and SNOMED CT® in a
                     common model</emphasis></title>
             <mediaobject>
@@ -456,7 +456,7 @@
             </listitem>
         </orderedlist>
         <para>
-            <figure>
+            <figure xml:id="NNT">
                 <title> Example Results</title>
                 <mediaobject>
                     <imageobject>
@@ -473,7 +473,7 @@
             the promoted therapy. For aspirin use, Number-Needed-to- Treat (NNT) statistics show
             that of patients with known cardiovascular risk who took aspirin, 1.3% were helped by
             preventing a non-fatal heart attack, and 0.25% were harmed by a major bleeding
-                event.<citation>Aspirin</citation>, <citation>antiplatelet</citation> In the Cholan
+                event <xref linkend="NNT"/>.<citation>Aspirin</citation>, <citation>antiplatelet</citation> In the Cholan
             et al study <citation>Cholan_shift</citation>, 121 (92%) of the patients dropped in the
             Komet version of the Aspirin measure were also taking an anticoagulant medication, so
             the Number-Needed-to-Harm (NNH) statistic for this subset of patients is likely much

@@ -74,7 +74,7 @@
             represent terminologies differs, leading to variations in clinical data exchange across
             the ecosystem as organizations use inconsistent and varied concept representation.
             Although there are standardized codes and formats, there are many ways to use these
-            standards. </para>
+            standards as seen below in <xref linkend="IKMinPractice"/>. </para>
         <figure xml:id="IKMinPractice"> 
             
             <title>Integrated Knowledge Management in Practice</title> 
@@ -100,8 +100,7 @@
             interoperable, high-quality data, and accurate transmission within and between
             healthcare systems. Improved data quality will cascade to other refinements within the
             healthcare ecosystem, such as improved research capabilities, identification of
-            real-world data trends, and real-time public health information as outlined in the
-            following figure.</para>
+            real-world data trends, and real-time public health information as outlined in <xref linkend="CreatingIKM.svg"/>            .</para>
         <figure xml:id="CreatingIKM.svg"> 
             
             <title>Creating Integrated Knowledge Management</title> 
@@ -170,7 +169,7 @@
             </itemizedlist></para>
         <para>Employing the architectural design principle of Separation of Concerns (SoC), a system
             can be divided into sections and each section can be addressed and allowed to evolve
-            irrespective of other sections as shown in the figure below. In our apporach to IKM and
+            irrespective of other sections as shown in <xref linkend="SeparationofConcerns"/>. In our apporach to IKM and
             our knowledge architecture, the foundational layer provides the common elements of
             interoperability including object identity, versioning, modularity, and knowledge
             representation. In this Versioned Foundation Layer, we find the shared module system

@@ -200,13 +200,13 @@
                 <listitem>
                     <para>Create an analysis normal form for clinical statements</para>
                 </listitem>
-            </itemizedlist>The proposed architecture, shown below in the Knowledge Architecture
-            Model, serves as an implementation of SoC, and helps to break out and organize
+            </itemizedlist>The proposed architecture, shown below in <xref linkend="PASTFModel"/>, serves as an implementation of SoC, and helps to break out and organize
             inter-dependent types of knowledge in a way that allows for reuse, ongoing development,
             and independent updates. If employed, this model can help the healthcare ecosystem to
             individually resolve issues in their data within their layers, rather than the entire
-            system, leading to much more agile improvement.</para><figure xml:id="PASTFModel">
-                <title>Knowledge Architecture </title>
+            system, leading to much more agile improvement.</para>
+        <figure xml:id="PASTFModel">
+                <title>Knowledge Architecture Model </title>
                 
                     <mediaobject>
                         <imageobject>
@@ -421,7 +421,7 @@
             <para>Numerous distinct systems and organizations across the healthcare ecosystem lead
                 to a large variation in how data are handled, e.g., data collection, data
                 manipulation, data transmission, data storage, and real-world application. An
-                example data exchange path is depicted in the figure below. Each system has a
+                example data exchange path is depicted in <xref linkend="ExampleDataExchangePath"/> below. Each system has a
                 proprietary, standard, or ad-hoc information model and is typically configured to
                 satisfy organization-specific needs, resulting in differences in data handling
                 within systems. While this variation is not an innate issue, the difficulty

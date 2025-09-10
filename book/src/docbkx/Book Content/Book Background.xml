@@ -105,7 +105,8 @@
                     data in an identical way as the original system. </para>
             </listitem>
         </orderedlist>
-        <para>The figure below expands on the two aspects of interoperability.</para><figure xml:id="ChallengesofStructureandMeaning">
+        <para><xref linkend="ChallengesofStructureandMeaning"/> below expands on the two aspects of interoperability.</para>
+        <figure xml:id="ChallengesofStructureandMeaning">
             <title>Challenges of Structure and Meaning</title>
             
             <mediaobject>
@@ -323,7 +324,7 @@
             interpretation. When this framework is applied to the healthcare system, clinical data,
             and more specifically clinical statements, we need <emphasis role="italic"
                 >terminology</emphasis> and <emphasis role="italic">structure</emphasis> to convey a
-            patient’s condition or health history from one provider to another. </para>
+            patient’s condition or health history from one provider to another, as seen in <xref linkend="TerminologyandStructureExamples"/>. </para>
         <figure xml:id="TerminologyandStructureExamples">
             <title>Terminology and Structure Examples</title>
             <mediaobject>
@@ -701,7 +702,7 @@
             modules, and higher-level modules depend on lower-level ones. A particular program or
             library is a top-level module of its own hierarchy, but can in turn be seen as a
             lower-level module of a higher-level program, library, or system.</para>
-        <para>For example, the following figure shows how each module could be given a unique
+        <para>For example, in <xref linkend="ModulesandExtensions"/> each module could be given a unique
             version number and contain all layers of the architectural stack. In the instance that a
             particular versioned module needs to be extended, an extension module could be added to
             that main versioned module without the need to go to a completely new full module
