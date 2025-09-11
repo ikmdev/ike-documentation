@@ -15,10 +15,10 @@
                 Logical Observation Identifiers, Names, and Codes (LOINC®)) do not provide the level
                 of detail or precision needed for the advanced analytics that power the clinical,
                 regulatory, public health, and coverage determination decisions. </para>
-            <para>As a result of these low-quality data, patient safety is at risk, quality of care
+            <para>As a result of this low-quality data, patient safety is at risk, quality of care
                 diminishes, and accuracy of test results come into question. Simultaneously, this
                 low-quality data has negatively impacted operational efficiency within both federal
-                and private sectors. Examples of negative effects of federal agencies are seen
+                and private sectors. Examples of the negative effects on federal agencies are seen
                 below: </para>
             <itemizedlist>
                 <listitem>
@@ -84,12 +84,12 @@
                 extension is intended to be <emphasis role="bold"><emphasis role="italic">a reliable
                         reference source to inform end users how to populate data
                         dictionaries</emphasis></emphasis>. This reduces the variance in laboratory
-                data representation and will also provide laboratories with guidance on LOINC/SNOMED
-                CT code usage for specific tests. This extension also <emphasis role="bold"
-                        ><emphasis role="italic">enables the linking of laboratory devices through
-                        Unique Device Identifier (UDIs) with supporting contextual information to
-                        enable deeper insights and accurate comparison of
-                    results</emphasis></emphasis>.</para>
+                data representation and will also provide laboratories with guidance on
+                LOINC®/SNOMED CT® code usage for specific tests. This extension also <emphasis
+                    role="bold"><emphasis role="italic">enables the linking of laboratory devices
+                        through Unique Device Identifiers (UDIs) with supporting contextual
+                        information to enable deeper insights and accurate comparison of
+                        results</emphasis></emphasis>.</para>
             <para>These two benefits directly contribute to a dramatic enhancement of advanced
                 analytical capabilities across a variety of mediums. Additional detail and
                 consistent encoding of test results empower artificial intelligence (AI) algorithms
@@ -97,18 +97,18 @@
         </section>
         <section>
             <title>Development and Implementation Progress</title>
-            <para>Data interoperability begins with the ability to represent data in a uniformed way
+            <para>Data interoperability begins with the ability to represent data in a uniform way
                 with quality standards that are adhered to by the community. SNOMED CT® and LOINC®
                 are two international interoperability standards that both work to communicate
-                clinical data information, LOINC® focusing on clinical and laboratory observations
-                and SNOMED CT® focusing on clinical terminology for diagnoses, procedures, findings,
+                clinical data information, LOINC® focuses on clinical and laboratory observations
+                and SNOMED CT® focuses on clinical terminology for diagnoses, procedures, findings,
                 and more. </para>
-            <para>LOINC® and SNOMED CT® signed an agreement in October 2022 to collaborate the work
-                between the two standards. The shared effort worked to eliminate duplicative data
-                between the standards and integrate shared information to create an extension of
-                SNOMED CT® with LOINC® knowledge standards included. The collaborative use of these
-                terminologies will provide defined and accessible formats and concepts to represent
-                data captured in laboratories or clinical settings.</para>
+            <para>LOINC® and SNOMED CT® signed an agreement in October 2022 to collaborate on
+                aligning and integrating their two standards. The shared effort worked to eliminate
+                duplicative data between the standards and integrate shared information to create an
+                extension of SNOMED CT® that incorporates LOINC® knowledge standards. The
+                collaborative use of these terminologies will provide defined and accessible formats
+                and concepts to represent data captured in laboratories or clinical settings.</para>
             <para>The LOINC® Ontology SNOMED CT® Browser builds on the capabilities of the SNOMED
                 CT® Browser by providing visibility to LOINC® data through search or query. The
                 impact the agreement has on the interoperability community spans across the
@@ -134,7 +134,7 @@
                         Ontology SNOMED CT® Browser</para>
                 </listitem>
             </itemizedlist>
-            <para>The SNOMED LOINC® Collaborative Agreement has made significant strides in
+            <para>The LOINC® and SNOMED CT® Collaborative Agreement has made significant strides in
                 technical communications by providing comprehensive documentation on the processes
                 used to link the two data standards. The ontology browser homepage offers an
                 introductory technical explanation, detailing the content inclusions, modeling
@@ -143,9 +143,7 @@
                 audiences, offering insights into the collaborative processes and technical efforts,
                 and allowing individuals to understand the development and align their own
                 implementations accordingly. The availability of this information ensures
-                transparency and facilitates a deeper understanding of the integration
-                efforts.
-            </para>
+                transparency and facilitates a deeper understanding of the integration efforts. </para>
             <para>Looking forward, the collaboration faces challenges in integrated knowledge communications and ensuring end-user adoption. The virtual location for the LOINC®-SNOMED CT® Ontology Browser showcases the progress made but lacks clear communication of the overarching goals. Engaging the community and building trust is essential to advancing healthcare information technology, and this can be achieved by enhancing understanding and support. The device extension will utilize the most recent updates published to the LOINC®-SNOMED CT® Ontology Browser. The ability of the device extension to utilize relevant standards from the source enhances effective communication strategies, which are critical for promoting tool adoption, requiring tailored messaging for different end-user segments. The end-user adoption strategy must balance detailed technical guidance for experts with non-technical communications that highlight the benefits and address specific pain points. This dual approach, including user guides, collaboration forums, and feedback channels, will support operational collaboration and encourage broader user engagement with the tools.</para>
         </section>
     </section>
@@ -163,7 +161,7 @@
                     of a unique care journey. </emphasis>SHIELD has utilized an infectious disease
                 care diagram to highlight the functionality and impact of this tool in the patient
                 care journey while focusing on a plethora of use cases with an emphasis on
-                preventive care. The use case, while iterative, is subjected to evolution based on
+                preventive care. The use case, while iterative, is subject to evolution based on
                 additional stakeholder feedback. These use cases aim to comprehensively detail how
                 the implementation of integrated knowledge resources, such as the device extension,
                 will enrich data quality and empower advanced analytical tools to drive enhanced
@@ -171,18 +169,18 @@
         </section>
         <section>
             <title>Patient Journey Use Case (Emerging Infectious Disease)</title>
-            <para>The Emerging Infectious Disease Use Case, depicted in Figure 1, showcases the
+            <para>The Emerging Infectious Disease Use Case, depicted in <xref linkend="EmergingInfectiousDiseaseUseCase"></xref>, showcases the
                 details of a patient's journey within medical facilities and processes taking place
                 during an emerging infectious disease, covering an array of processes from symptom
                 recognition to final diagnosis. As seen below, the primary patient journey is
                 denoted by blue. This is where a patient who has been either notified of an exposure
-                (Figure 1, Box 1) or begins to develop symptoms that align with that of an emerging
-                infectious disease (Figure 1, Box 2) is interacting with the various points of care.
-                This journey covers the patient's whole journey within the healthcare ecosystem,
-                culminating in a diagnosis of chronic post-infectious disease (Figure 1, Box 1 –
+                (<xref linkend="EmergingInfectiousDiseaseUseCase"></xref>, Box 1) or begins to develop symptoms that align with that of an emerging
+                infectious disease (<xref linkend="EmergingInfectiousDiseaseUseCase"></xref>, Box 2) is interacting with the various points of care.
+                This journey covers the patient's whole experience within the healthcare ecosystem,
+                culminating in a diagnosis of chronic post-infectious disease (<xref linkend="EmergingInfectiousDiseaseUseCase"></xref>, Box 1 –
                 9).</para>
             <para>To fully understand the patient care journey, the individual sub-cycles (black in
-                    <emphasis role="italic">Figure 2</emphasis>) denote the potential processes
+                <emphasis role="italic"><xref linkend="EmergingInfectiousDiseaseUserJourneyDeviceExtensionCaptureFunctionality"></xref></emphasis>) denote the potential processes
                 where a patient interacts with different care delivery individuals, systems, and/or
                 organizations. These sub-cycles are utilized to collect data, inform decision-making
                 for the patient outcome, and/or further exchange data to improve the healthcare
@@ -190,7 +188,7 @@
                 results in specific secondary processes that interconnect between the patient
                 journey and differing state/federal health organizations that are responsible for
                 the reporting and diagnostic device monitoring for public health reporting (Yellow,
-                    <emphasis role="italic">Figure 1, </emphasis>Box 12, 16, 22).</para>
+                <emphasis role="italic"><xref linkend="EmergingInfectiousDiseaseUseCase"></xref>, </emphasis>Box 12, 16, 22).</para>
             <para>Our device extension was designed to interconnect these sub cycles, which
                 correspond to health IT platforms or systems, to inform individual patient care
                 outcomes and public health reporting. It can support the increased interconnectivity
@@ -198,19 +196,27 @@
                 responsible for creating and extending relevant terminology subsets or modules.
                 Supported by our Integrated Knowledge Management (IKM) environment, this procedure
                 enables authoring a new extension record and integrates the newly formed terminology
-                subsets. Figure 2 showcases how an IKM-powered ecosystem would interact with
+                subsets. <xref linkend="EmergingInfectiousDiseaseUserJourneyDeviceExtensionCaptureFunctionality"></xref> showcases how an IKM-powered ecosystem would interact with
                 patients and evolve based on the advances in clinical diagnostics during an
                 infectious disease outbreak.</para>
-            <para>Like Figure 1, Figure 2 showcases a patient's journey through the healthcare system. For example, if a patient needs to order an Over-The-Counter (OTC) emerging infectious disease test kit, the patient must use a patient portal that has been enabled with the appropriate listing of tests. Figure 2 showcases that certain functions are only actionable if the current Information Technology (IT) Systems, relevant to the career journey, and key players across the organization update the existing health terminology gaps currently enacted and affect patient care. Utilizing the IKM environment, our device extension provides the functionality to efficiently reconcile these gaps in standards that have been discovered as a result of:</para>
+            <para>Like <xref linkend="EmergingInfectiousDiseaseUseCase"></xref>, <xref linkend="EmergingInfectiousDiseaseUserJourneyDeviceExtensionCaptureFunctionality"></xref> showcases a patient's journey through the healthcare
+                system. For example, if a patient needs to order an Over-The-Counter (OTC) emerging
+                infectious disease test kit, the patient must use a patient portal that has been
+                enabled with the appropriate test listings. <xref linkend="EmergingInfectiousDiseaseUserJourneyDeviceExtensionCaptureFunctionality"></xref> showcases that certain
+                functions are only actionable if the current Information Technology (IT) Systems,
+                relevant to the care journey, and key players across the organization update the
+                existing health terminology gaps currently enacted and impacting patient care.
+                Utilizing the IKM environment, our device extension provides the functionality to
+                efficiently reconcile these gaps in standards that have been discovered as a result
+                of:</para>
             <orderedlist>
                 <listitem>
                     <para>The new emerging infectious disease prompting the identification of a
-                        terminology gap (Figure 2, Box B, Box 9)</para>
+                        terminology gap (<xref linkend="EmergingInfectiousDiseaseUseCase"></xref>, Box B, Box 9)</para>
                 </listitem>
                 <listitem>
-                    <para>A patient recording their medical history in a digital health app (Figure
-                        2, Box A, Box 1) <figure xml:id="EmergingInfectiousDiseaseUseCase">
-                            <title>Figure 1: Emerging Infectious Disease Use Case</title>
+                    <para>A patient recording their medical history in a digital health app (<xref linkend="EmergingInfectiousDiseaseUseCase"></xref>, Box A, Box 1) <figure xml:id="EmergingInfectiousDiseaseUseCase">
+                            <title>Emerging Infectious Disease Use Case</title>
                             <mediaobject>
                                 <imageobject>
                                     <imagedata
@@ -222,13 +228,13 @@
                         </figure>
                         <figure
                             xml:id="EmergingInfectiousDiseaseUserJourneyDeviceExtensionCaptureFunctionality">
-                            <title>Figure 2: Emerging Infectious Disease User Journey – Device
+                            <title>Emerging Infectious Disease User Journey – Device
                                 Extension Capture Functionality </title>
                             <mediaobject>
                                 <imageobject>
                                     <imagedata
                                         fileref="../images/Emerging%20Infectious%20Disease%20User%20Journey%20Device%20Extension%20Capture%20Functionality.svg"
-                                        scale="25" align="center"/>
+                                        scale="20" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -240,17 +246,22 @@
             <title>Introduction to Secondary Processes of Emerging Infectious Disease Use Case</title>
             <para>Secondary process documentation has been provided below to enhance understanding
                 of these process flows and showcase the high-level process documentation of our
-                device extension. These process flows dive further into the patient journey and
-                highlight the unique data transfers that occur while detailing the effective use of
-                the device extension in Symptom Surveillance, which overviews the patient data
-                relating to acute symptoms, including questionaries, reporting data, and recording
-                negative symptoms, to highlight risk and protocol. These secondary processes, in
-                addition, highlight the advanced flow of data, expanding how Testing Recommendations occur and how Comparator Testing will take place. The following sections showcase the device extension’s ability to interconnect different large-scale organization databases and the potential for device interoperability.</para>
+                device extension. These process flows provide a deeper look into the patient
+                journey, emphasizing the unique data transfers involved. They detail the effective
+                use of the device extension in Symptom Surveillance, which captures patient data
+                related to acute symptoms—including questionnaires, reporting information, and
+                documentation of negative symptoms—to better identify risk and inform clinical
+                protocols. These secondary processes, in addition, highlight the advanced flow of
+                data, expanding how Testing Recommendations occur and how Comparator Testing will
+                take place. The following sections showcase the device extension’s ability to
+                interconnect different large-scale organization databases and the potential for
+                device interoperability.</para>
             <section>
                 <title>Sub-Cycle 1: Symptom Surveillance</title>
                 <para>The first secondary process documentation highlights the data processes and
                     flows that occur when individual patient data, along its emerging infectious
-                    disease journey, integrates with the larger symptom surveillance ecosystem. As
+                    disease journey, integrates with the larger symptom surveillance ecosystem 
+                    <xref linkend="FigureBox12SymptomSurveillance"></xref>. As
                     individual data is obtained at the various collection points throughout
                     diagnosis, testing, and treatment processes, this information can be directly
                     aggregated into the larger data repository/lakes that will enable public health
@@ -265,15 +276,15 @@
                     newly identified facets. </para>
                 <para>As public health institutions update this information, data collection
                     processes, such as questionnaires, need to be updated as well to coincide with
-                    these updates. IKE solutions including Komet enable the modifications of
-                    concepts directly in a single source that can be integrated across the various
-                    data standards and implemented into data collection tools automatically. Once
-                    the data collection methods are updated with new concept definitions and
+                    these updates. IKE solutions including Komet enable the modification of concepts
+                    directly in a single source that can be integrated across the various data
+                    standards and implemented into data collection tools automatically. Once the
+                    data collection methods are updated with new concept definitions and
                     specifications based on public health recommendations, future patient care
                     journeys have the functionality to capture the new information effectively and
                     securely to track performance in the future. <figure
                         xml:id="FigureBox12SymptomSurveillance">
-                        <title>Figure 3: Figure Box 12: Symptom Surveillance</title>
+                        <title>Figure Box 12: Symptom Surveillance</title>
                         <mediaobject>
                             <imageobject>
                                 <imagedata
@@ -285,9 +296,9 @@
             </section>
             <section>
                 <title>Sub-Cycle 2: Comparator Testing</title>
-                <para>Sub-Cycle 2 references FIGURE 1 box 16, specifying an additional process that
-                    may occur when administering an over-the-counter (OTC test to diagnose emerging
-                    infectious disease(s)). In this sub-cycle, the individual patient data entering
+                <para>Sub-Cycle 2 references <xref linkend="FigureBox16ComparatorTesting"></xref> box 16, specifying an additional process that
+                    may occur when administering an over-the-counter (OTC) test to diagnose emerging
+                    infectious disease(s). In this sub-cycle, the individual patient data entering
                     the cycle are additional samples collected during the OTC test that serve as the
                     samples for Return to Lab (RTL) testing. RTL testing can be utilized for (1)
                     providing a “Gold Standard” test that has a higher rate of accuracy of
@@ -303,7 +314,7 @@
                     device-level data specifications to adhere to public health institutions’
                     updates seamlessly into knowledge resources and systems. <figure
                         xml:id="FigureBox16ComparatorTesting">
-                        <title>Figure 4: Figure Box 16: Comparator Testing</title>
+                        <title>Figure Box 16: Comparator Testing</title>
                         <mediaobject>
                             <imageobject>
                                 <imagedata
@@ -317,21 +328,21 @@
                 <title>Sub-Cycle 3: Revised Testing Recommendations</title>
                 <para>The last secondary process documentation highlights the additional data flow
                     that occurs during a medical consultation during a patient’s journey through the
-                    emerging infectious disease use case. When that medical consult occurs,
+                    emerging infectious disease use case <xref linkend="FigureBox22TestingRecommendations"></xref>. When that medical consult occurs,
                     additional patient data is collected and will be integrated into the larger RWD
                     repositories for use amongst the greater research and public health institutions
                     to assess patterns and trends. As that data is analyzed, new associated risk
                     factors and/or comorbidities may be identified to bolster identification and
                     diagnosis of an emerging infectious disease. </para>
-                <para> Public health institutions, as well as peer-reviewed journals, will submit
-                    insights and publications for the healthcare ecosystem to adopt into their
-                    practices to capture any risk factors, or comorbidities in the medical
-                    consultation process, in the future to identify any additional factors that may
-                    impact emerging infectious disease diagnosis. These new identifications can be
-                    implemented into the healthcare information technology ecosystem using IKE
-                    solutions, such as Komet, to modify concept data to include comorbidities within
-                    their definitions to ensure the capture of that new factor to consider with the
-                    emerging infectious disease. <figure xml:id="FigureBox22TestingRecommendations">
+                <para>Public health institutions and peer-reviewed journals will submit insights and
+                    publications for adoption within the healthcare ecosystem. These resources help
+                    capture risk factors and comorbidities during medical consultations, enabling
+                    providers to identify additional factors that may impact the diagnosis of
+                    emerging infectious diseases. These new identifications can be implemented into
+                    the healthcare information technology ecosystem using IKE solutions, such as
+                    Komet, to modify concept data to include comorbidities within their definitions
+                    to ensure the capture of that new factor to consider with the emerging
+                    infectious disease. <figure xml:id="FigureBox22TestingRecommendations">
                         <title>Figure 5: Figure Box 22: Testing Recommendations</title>
                         <mediaobject>
                             <imageobject>
@@ -375,7 +386,7 @@
                     <para>
                         <emphasis role="bold">Disparate standards require a centralized
                             repository:</emphasis> The knowledge from standard terminologies that
-                        are used to encode data elements need to be managed so that implementers can
+                        are used to encode data elements need to be managed so implementers can
                         easily handle dependencies, version control, and data provenance for the
                         integrity of patient records. Komet, via the IKE environment, can enable
                         such data management for informed decision making.</para>
@@ -398,7 +409,7 @@
                 the goal of being able to represent the same healthcare information, the same way,
                 every time though its Integrated Knowledge Management tools. With support from
                 stakeholders across the ecosystem, SHIELD can achieve the shared foundation
-                necessary to improves the quality and interoperability of laboratory data.</para>
+                necessary to improve the quality and interoperability of laboratory data.</para>
         </section>
     </section>
 </chapter>

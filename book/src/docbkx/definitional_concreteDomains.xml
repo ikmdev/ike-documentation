@@ -19,7 +19,7 @@
             temperature, dosages, etc), and SNOMED CT has already begun work on addressing concrete
             domain. In order to "stand on the
             <?oxy_comment_start author="steph" timestamp="20190313T103040-0600" comment="Should this be &quot;shoulders&quot;?" flag="done"?>shoulder<?oxy_comment_end?>s
-            of giants", Solor developers rely heavily on current SNOMED CT work to extend the
+            of giants", Komet developers rely heavily on current SNOMED CT work to extend the
             representation of concrete domains. Therefore, the intent of this discussion is to
             propose the use of the SNOMED CT model to represent and reason over values like integers
             in Description Logic.</para>

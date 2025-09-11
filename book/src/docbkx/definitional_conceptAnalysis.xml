@@ -7,7 +7,7 @@
         <title>Purpose</title>
         <para>The creation of groupings (Assemblage) containing SNOMED CT® concepts that require
             special handling supports the maintenance of this content over time without the
-            necessity of re-reviewing the entire content. Within Solor, these various Assemblages
+            necessity of re-reviewing the entire content. Within Komet, these various Assemblages
             are imported and are properly grouped within the system. Subsequently, a set of rules
             could be developed and applied to handle each of the cases appropriately. </para>
         <para>Concepts may require special handling for a number of reasons:<itemizedlist>
@@ -61,9 +61,9 @@
                 and it means "everything but". If one were to express "not diabetes", it equates to
                 "everything but diabetes".</para>
             <para>This is further complicated within SNOMED by the parent-child relationship "Is A".
-                Take the following figure as an example:</para>
+                Take the following figure (<xref linkend="definitionalconceptAnalysisnegation00"/>) as an example:</para>
             <para>
-                <figure>
+                <figure xml:id="definitionalconceptAnalysisnegation00">
                     <title>Effect of Is A on absence</title>
                     <mediaobject>
                         <imageobject>
@@ -93,7 +93,7 @@
                 concept in a hierarchical structure significantly complicates any calculations.
                 Without a way to properly identify if a concept is an 'absence' concept,
                 computational methods could not be applied because the directionality as shown with
-                the apple/fruit example would complicate any calculations.Therefore, it was deemed
+                the apple/fruit example would complicate any calculations. Therefore, it was deemed
                 necessary that such "absent" concepts within SNOMED required identification such
                 that they can be segregated for further special handling.</para>
             <para>“Absence” vs. “Affirmation” are two polar opposite paradigms within the SNOMED CT®
@@ -239,67 +239,82 @@
             <section>
                 <title><?oxy_comment_start author="steph" timestamp="20190312T103757-0600" comment="Recommend showing the examples in the same order as they are listed above." flag="done"?>Examples<?oxy_comment_end?>
                     for Inclusion/Exclusion in Absence Assemblage</title>
-                <para><emphasis role="bold">Keyword: “NO”</emphasis>
-                    <mediaobject>
+                <para><emphasis role="bold">Keyword: “NO”</emphasis> <xref linkend="definitionalconceptAnalysisinclusionExclusionnegation00"/>
+                   <figure xml:id="definitionalconceptAnalysisinclusionExclusionnegation00">
+                    <title>Definitional Concept Analysis Inclusion/Exclusion Negation 00</title>
+                       <mediaobject>
                         <imageobject>
                             <imagedata
                                 fileref="images/definitional_conceptAnalysis_inclusionExclusion_negation_00.jpg"
                                 format="jpg" scalefit="1" width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
+                   </figure>
                 </para>
                 
-                <para><emphasis role="bold">Keyword: “NONE” or "NON-X"</emphasis>
-                    <mediaobject>
+                <para><emphasis role="bold">Keyword: “NONE” or "NON-X"</emphasis> <xref linkend="DefinitionalConceptAnalysisInclusionExclusionNegation03"/>
+                    <figure xml:id="DefinitionalConceptAnalysisInclusionExclusionNegation03">
+                    <title>Definitional Concept Analysis Inclusion/Exclusion Negation 03</title>
+                        <mediaobject>
                         <imageobject>
                             <imagedata
                                 fileref="images/definitional_conceptAnalysis_inclusionExclusion_negation_03.jpg"
                                 format="jpg" scalefit="1" width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
-                </para>
+               </figure> </para>
 
-                <para><emphasis role="bold">Keyword: “NOT”</emphasis>
-                    <mediaobject>
+                <para><emphasis role="bold">Keyword: “NOT”</emphasis> <xref linkend="definitionalconceptAnalysisincludsionExclusionnegation01"/>
+                    <figure xml:id="definitionalconceptAnalysisincludsionExclusionnegation01">
+                    <title>Definitional Concept Analysis Inclusion/Exclusion Negation 01</title>
+                        <mediaobject>
                         <imageobject>
                             <imagedata
                                 fileref="images/definitional_conceptAnalysis_inclusionExclusion_negation_01.jpg"
                                 format="jpg" scalefit="1" width="100%" contentdepth="100%"/>
                         </imageobject>
-                    </mediaobject>
+                    </mediaobject></figure>
                 </para>
                 
-                <para><emphasis role="bold">Keyword: “UNILATERAL”</emphasis>
-                    <mediaobject>
+                <para><emphasis role="bold">Keyword: “UNILATERAL”</emphasis><xref linkend="definitionalconceptAnalysisinclusionExclusionnegationunilateral"/>
+                    <figure xml:id="definitionalconceptAnalysisinclusionExclusionnegationunilateral">
+                    <title>Definitional Concept Analysis Inclusion/Exclusion Negation Unilateral</title> 
+                        <mediaobject>
                         <imageobject>
                             <imagedata
                                 fileref="images/definitional_conceptAnalysis_inclusionExclusion_negation_unilateral.jpg"
                                 format="jpg" scalefit="1" width="100%" contentdepth="100%"/>
                         </imageobject>
-                    </mediaobject>
+                    </mediaobject></figure>
                 </para>
 
-                <para><emphasis role="bold">Keyword: “WITHOUT”</emphasis>
-                    <mediaobject>
+                <para><emphasis role="bold">Keyword: “WITHOUT”</emphasis><xref linkend="definitionalconceptAnalysisinclusionExclusionnegation02"/>
+                    <figure xml:id="definitionalconceptAnalysisinclusionExclusionnegation02">
+                    <title>Definitional Concept Analysis Inclusion/Exclusion Negation 02</title>
+                        <mediaobject>
                         <imageobject>
                             <imagedata
                                 fileref="images/definitional_conceptAnalysis_inclusionExclusion_negation_02.jpg"
                                 format="jpg" scalefit="1" width="100%" contentdepth="100%"/>
                         </imageobject>
-                    </mediaobject>
+                    </mediaobject></figure>
                 </para>
 
-                <para><emphasis role="bold">Keyword: “ONLY”</emphasis>
-                    <mediaobject>
+                <para><emphasis role="bold">Keyword: “ONLY”</emphasis><xref linkend="definitionalconceptAnalysisinclusionExclusionnegation04"/>
+                    <figure xml:id="definitionalconceptAnalysisinclusionExclusionnegation04">
+                    <title>Definitional Concept Analysis Inclusion Exclusion Negation 04</title>
+                        <mediaobject>
                         <imageobject>
                             <imagedata
                                 fileref="images/definitional_conceptAnalysis_inclusionExclusion_negation_04.jpg"
                                 format="jpg" scalefit="1" width="100%" contentdepth="100%"/>
                         </imageobject>
-                    </mediaobject>
+                    </mediaobject></figure>
                 </para>
 
-                <para><emphasis role="bold">Keyword: “UNABLE”</emphasis>
+                <para><emphasis role="bold">Keyword: “UNABLE”</emphasis><xref linkend="definitionalconceptAnalysisinclusionExclusionnegation05"/>
+                    <figure xml:id="definitionalconceptAnalysisinclusionExclusionnegation05">
+                        <title>Definitional Concept Analysis Inclusion Exclusion Negation 05</title>                    
                     <mediaobject>
                         <imageobject>
                             <imagedata
@@ -307,29 +322,37 @@
                                 format="jpg" scalefit="1" width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
+                    </figure>
                 </para>
 
-                <para><emphasis role="bold">Keyword: “INABILITY”</emphasis>
-                    <mediaobject>
+                <para><emphasis role="bold">Keyword: “INABILITY”</emphasis><xref linkend="definitionalconceptAnalysisinclusionExclusionnegation06"/>
+                    <figure xml:id="definitionalconceptAnalysisinclusionExclusionnegation06">
+                        <title>Definitional Concept Analysis Inclusion Exclusion Negation 06</title>            
+                   <mediaobject>
                         <imageobject>
                             <imagedata
                                 fileref="images/definitional_conceptAnalysis_inclusionExclusion_negation_06.jpg"
                                 format="jpg" scalefit="1" width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
+                    </figure>
                 </para>
 
                 <para><emphasis role="bold">Keyword:
-                        “<?oxy_comment_start author="steph" timestamp="20190312T103414-0600" comment="This wasn&apos;t included in the list of search strings in the prior section.  Should it have been?" id="a3c_ckk_hhb" flag="done" mid="6"?><?oxy_comment_start author="timowilliams" timestamp="20190402T125246-0500" comment="It was not one that we originally queried for but it was one that we found as a result of the review." parentID="a3c_ckk_hhb" flag="done" mid="7"?><?oxy_comment_start author="timowilliams" timestamp="20190424T110630-0500" comment="Include reason it wasnt in the initial query" parentID="a3c_ckk_hhb" flag="done"?>REJECTED<?oxy_comment_end?><?oxy_comment_end mid="7"?><?oxy_comment_end mid="6"?>”</emphasis>
+                        “<?oxy_comment_start author="steph" timestamp="20190312T103414-0600" comment="This wasn&apos;t included in the list of search strings in the prior section.  Should it have been?" id="a3c_ckk_hhb" flag="done" mid="6"?><?oxy_comment_start author="timowilliams" timestamp="20190402T125246-0500" comment="It was not one that we originally queried for but it was one that we found as a result of the review." parentID="a3c_ckk_hhb" flag="done" mid="7"?><?oxy_comment_start author="timowilliams" timestamp="20190424T110630-0500" comment="Include reason it wasnt in the initial query" parentID="a3c_ckk_hhb" flag="done"?>REJECTED<?oxy_comment_end?><?oxy_comment_end mid="7"?><?oxy_comment_end mid="6"?>”</emphasis><xref linkend="definitionalconceptAnalysisinclusionExclusionnegation07"/>
                 </para>
                 <para>Note: "Rejected" was not one of the original search strings but was identified
-                    while evaluating the concepts for inclusion.<mediaobject>
+                    while evaluating the concepts for inclusion.
+                    <figure xml:id="definitionalconceptAnalysisinclusionExclusionnegation07">
+                        <title>Definitional Concept Analysis Inclusion Exclusion Negation 07</title> 
+                    <mediaobject>
                         <imageobject>
                             <imagedata
                                 fileref="images/definitional_conceptAnalysis_inclusionExclusion_negation_07.jpg"
                                 format="jpg" scalefit="1" width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
+                    </figure>
                 </para>
             </section>
         </section>
@@ -463,7 +486,9 @@
                 <title>Examples for Inclusion/Exclusion in “Patient Not Subject of Record”
                     Assemblage</title>
                 <para><emphasis role="bold">Examples: “Family”, “Family Members”, “Friends” or Other
-                        “Social Contacts”</emphasis>
+                    “Social Contacts”</emphasis><xref linkend="definitionalconceptAnalysisinclusionExclusionpatientNotSubject00"/>
+                    <figure xml:id="definitionalconceptAnalysisinclusionExclusionpatientNotSubject00">
+                        <title>Definitional Concept Analysis Inclusion/Exclusion Patient Not Subject 00</title>                    
                     <mediaobject>
                         <imageobject>
                             <imagedata
@@ -471,6 +496,7 @@
                                 format="jpg" scalefit="1" width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
+                    </figure>
                 </para>
             </section>
         </section>
@@ -627,41 +653,52 @@
             </section>
                 <section>
                     <title>Examples for Inclusion/Exclusion in “Compound” Assemblage</title>
-                <para><emphasis role="bold">Examples “X and Y”</emphasis>
+                <para><emphasis role="bold">Examples “X and Y”</emphasis><xref linkend="definitionalconceptAnalysisinclusionExclusioncompound00"/>
+                    <figure xml:id="definitionalconceptAnalysisinclusionExclusioncompound00">
+                       <title>Definitional Concept Analysis Inclusion/Exclusion Compound 00</title>
                     <mediaobject>
                         <imageobject>
                             <imagedata
                                 fileref="images/definitional_conceptAnalysis_inclusionExclusion_compound_00.JPG"
                                 format="jpg" scalefit="1" width="100%" contentdepth="100%"/>
                         </imageobject>
-                    </mediaobject></para>
+                    </mediaobject></figure></para>
 
-                <para><emphasis role="bold">Examples “X or Y”</emphasis>
-                    <mediaobject>
+                <para><emphasis role="bold">Examples “X or Y”</emphasis><xref linkend="definitionalconceptAnalysisinclusionExclusioncompound01"/>
+                    <figure xml:id="definitionalconceptAnalysisinclusionExclusioncompound01">
+                        <title>Definitional Concept Analysis Inclusion/Exclusion Compound 01</title>
+                        <mediaobject>
                         <imageobject>
                             <imagedata
                                 fileref="images/definitional_conceptAnalysis_inclusionExclusion_compound_01.JPG"
                                 format="jpg" scalefit="1" width="100%" contentdepth="100%"/>
                         </imageobject>
-                    </mediaobject></para>
+                    </mediaobject></figure>
+                </para>
 
-                <para><emphasis role="bold">Examples “X with Y”</emphasis>
-                    <mediaobject>
+                <para><emphasis role="bold">Examples “X with Y”</emphasis><xref linkend="definitionalconceptAnalysisinclusionExclusioncompound02"/>
+                    <figure xml:id="definitionalconceptAnalysisinclusionExclusioncompound02">
+                        <title>Definitional Concept Analysis Inclusion/Exclusion Compound 02</title>
+                        <mediaobject>
                         <imageobject>
                             <imagedata
                                 fileref="images/definitional_conceptAnalysis_inclusionExclusion_compound_02.JPG"
                                 format="jpg" scalefit="1" width="100%" contentdepth="100%"/>
                         </imageobject>
-                    </mediaobject></para>
+                    </mediaobject></figure>
+                </para>
 
-                <para><emphasis role="bold">Examples “X without Y”</emphasis>
-                    <mediaobject>
+                <para><emphasis role="bold">Examples “X without Y”</emphasis><xref linkend="definitionalconceptAnalysisinclusionExclusioncompound03"/>
+                    <figure xml:id="definitionalconceptAnalysisinclusionExclusioncompound03">
+                        <title>Definitional Concept Analysis Inclusion/Exclusion Compound 03</title>
+                        <mediaobject>
                         <imageobject>
                             <imagedata
                                 fileref="images/definitional_conceptAnalysis_inclusionExclusion_compound_03.JPG"
                                 format="jpg" scalefit="1" width="100%" contentdepth="100%"/>
                         </imageobject>
-                    </mediaobject></para>
+                    </mediaobject></figure>
+                </para>
             </section>
         </section>
 
@@ -678,9 +715,7 @@
                 information on laterality vs sidedness, please see <link
                     xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2244155/?page=1"
                         ><emphasis role="italic">Choosing Sides. Assigning Laterality as an
-                        Attribute in SNOMED® CT.</emphasis></link><footnote>
-                    <para>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2244155/?page=1</para>
-                </footnote></para>
+                        Attribute in SNOMED® CT.</emphasis></link>[6].</para>
             <section>
                 <title>Approach</title>
                 <para>To identify content that would need to be evaluated for laterality
@@ -729,9 +764,10 @@
                                 correct laterality, it will be marked as incorrect. For example,
                                 16730001000004104 |Thrombosis of left peroneal vein (disorder)|
                                 should be defined with Structure of left peroneal vein, which does
-                                not currently exist in SNOMED CT®.</para>
+                                not currently exist in SNOMED CT® as shown in the figure
+                                below (<xref linkend="definitionalidentifySolorContentRequiringSpecialHandling00"></xref>).</para>
                             <para>
-                                <figure>
+                                <figure xml:id="definitionalidentifySolorContentRequiringSpecialHandling00">
                                     <title>Thrombosis of left peroneal vein (disorder) Laterality
                                         Example</title>
                                 <mediaobject>
@@ -755,9 +791,10 @@
                                 degeneration of macula (disorder)| should have two different role
                                 groups, one with 721947001 |Structure of macula lutea of left eye
                                 (body structure)| and the other with 721945009 |Structure of macula
-                                lutea of right eye (body structure)|.</para>
+                                lutea of right eye (body structure)| as shown in the figure
+                                below (<xref linkend="definitionalidentifySolorContentRequiringSpecialHandling01"></xref>.</para>
                             <para>
-                                <figure>
+                                <figure xml:id="definitionalidentifySolorContentRequiringSpecialHandling01">
                                     <title>Bilateral degeneration of macula (disorder) Laterality
                                         Example</title>
                                 <mediaobject>
@@ -1209,13 +1246,14 @@
                                 concept to represent a single parent or by adding a single concept
                                 that could be used as a value for a current concept model attribute,
                                 the concept will be placed in the Can Be Fully Defined Assemblage.
-                                For example, 207959006 |Closed fracture lumbar vertebra, wedge
-                                (disorder)| currently cannot be considered as fully defined because
-                                an Associated Morphology concept doesn’t currently exist to
-                                represent a Wedge Fracture. By adding that single concept, the
-                                concept will then be able to be fully defined.</para>
+                                As shown in <xref linkend="definitionalidentifySolorContentRequiringSpecialHandling02"></xref> below, 207959006 |Closed fracture lumbar
+                                vertebra, wedge (disorder)| currently cannot be considered as fully
+                                defined because an Associated Morphology concept doesn’t currently
+                                exist to represent a Wedge Fracture. By adding that single concept,
+                                the concept will then be able to be fully defined.</para>
                             <para>
-                                <figure><title>Closed fracture lumbar vertebra, wedge (disorder) Primitive Example</title>
+                                <figure xml:id="definitionalidentifySolorContentRequiringSpecialHandling02">
+                                    <title>Closed fracture lumbar vertebra, wedge (disorder) Primitive Example</title>
                                 <mediaobject>
                                     <imageobject>
                                         <imagedata
@@ -1453,8 +1491,8 @@
                                 <para><emphasis role="bold">Content Modeled Inappropriately – Non-Inverse</emphasis></para>
                                 <itemizedlist>
                                     <listitem>
-                                        <para>Concepts that are inferred where concepts each have more than one of the same Attribute Type</para>
-                                        <figure>
+                                        <para>Concepts that are inferred where concepts each have more than one of the same Attribute Type <xref linkend="definitionalconceptAnalysissymmetryfig1"></xref></para>
+                                        <figure xml:id="definitionalconceptAnalysissymmetryfig1">
                                             <title>Concept with multiple Clinical Course attributes that have different values</title>
                                             <mediaobject>
                                                 <imageobject>
@@ -1465,8 +1503,8 @@
                                     </listitem>
                                     
                                     <listitem>
-                                        <para>From this set of concepts, remove any Concept that is modeled with more than one of the same Attribute Type and the same Value</para>
-                                        <figure>
+                                        <para>From this set of concepts, remove any Concept that is modeled with more than one of the same Attribute Type and the same Value <xref linkend="definitionalconceptAnalysissymmetryfig2"></xref></para>
+                                        <figure xml:id="definitionalconceptAnalysissymmetryfig2">
                                             <title>Concept with multiple Associated morphology attributes and the same values</title>
                                             <mediaobject>
                                                 <imageobject>
@@ -1499,9 +1537,13 @@
                                             querying the number of defining relationship differences. Not
                                             all of the identified modeling differences are symmetrical
                                             modeling issues but can be an indicator of them.</para>
-                                        <figure>
-                                            <title>Example of Inverse Concepts modeled with radical differences</title>
-                                            <para>The Open subcapital facture of left femur concept is incorrectly modeled with multiple role groups while the Closed subcapital fracture of left femur is correctly modeled with a single role group</para>
+                                         
+                                            <para>The Open subcapital fracture of left femur concept
+                                        is incorrectly modeled with multiple role groups while the
+                                        Closed subcapital fracture of left femur is correctly
+                                        modeled with a single role group (<xref linkend="definitionalconceptAnalysissymmetryfig3"></xref></para>
+                                            <figure xml:id="definitionalconceptAnalysissymmetryfig3">
+                                                <title>Definitional Concept Analysis Symmetry Fig3</title>
                                             <mediaobject>
                                                 <imageobject>
                                                     <imagedata fileref="images/definitional_conceptAnalysis_symmetry_fig3.svg" scalefit="1" width="100%" contentdepth="100%"/>
@@ -1613,9 +1655,7 @@
                                                 </row>
                                             </tbody>
                                         </tgroup>
-                                    </table>
-                                    
-                                        
+                                    </table>                                 
                                     </listitem>
                                 </itemizedlist>
                             </listitem>
@@ -1624,10 +1664,10 @@
                             <para>This does not necessarily cause a symmetry issue as the concept may still be placed in the correct hierarchy, but can be used as a query to find a symmetry issue. If the concepts are in the appropriate hierarchy, they are considered to be symmetrical even though they are under-modeled.</para>
                             <itemizedlist>
                                 <listitem>
-                                    <para>Find all concepts that have common phrases like “Acute”, “Chronic”, “Acquired”, “Congenital” and that do not have the corresponding attribute. </para>
+                                    <para>Find all concepts that have common phrases like “Acute”, “Chronic”, “Acquired”, “Congenital” and that do not have the corresponding attribute (<xref linkend="definitionalconceptAnalysissymmetryfig4"></xref>. </para>
                                 </listitem>
                             </itemizedlist>
-                            <figure>
+                            <figure xml:id="definitionalconceptAnalysissymmetryfig4">
                                 <title><?oxy_comment_start author="steph" timestamp="20190312T152013-0600" comment="The figure below has a lot of white space and it should be cropped." flag="done"?>FSN
                                 contains "Acute", but does not have a Clinical Course =
                                 Acute<?oxy_comment_end?></title>
@@ -1841,7 +1881,7 @@
                                                   Correctly modeled in separate Role Groups.</para>
                                             </entry>
                                             <entry><emphasis role="bold">*</emphasis>Concepts, which
-                                                fit this rule will be in the “SymmetricConcepts”
+                                                fit this rule will be in the “Symmetric Concepts”
                                                 Assemblage, unless they have other modeling issues
                                                 that pertain to symmetry</entry>
                                         </row>
@@ -1961,7 +2001,8 @@
                                             </entry>
                                             <entry>Concepts <emphasis role="bold">DO</emphasis> have more than one of the same attribute with <emphasis role="bold">DIFFERENT</emphasis> values in the inferred view</entry>
                                             <entry><emphasis role="bold"></emphasis></entry>
-                                            <entry><para><emphasis role="bold">16024431000119108 |Acute polyarticular juvenile idiopathic arthritis (disorder)|</emphasis></para><para>has 2 “clinical course” attributes, one with a “chronic” and one with a “sudden onset and/or short duration” value.</para></entry>
+                                            <entry><para><emphasis role="bold">16024431 000119108 |Acute polyarticular juvenile idiopathic arthritis
+                                                  (disorder)|</emphasis></para><para>has 2 “clinical course” attributes, one with a “chronic” and one with a “sudden onset and/or short duration” value.</para></entry>
                                             <entry> </entry>
                                         </row>
                                         <row>
@@ -2110,8 +2151,11 @@
              <para>The Findings and Disorders reviewed were found to use a Procedure 42 times
                         vs. an Observable Entity 352 times. In 41 cases, both a Procedure and
                         Observable Entity were used for the Interprets attribute. 400 of the
-                        concepts had no Interprets Attribute at all. </para>
-            <figure>
+                        concepts had no Interprets Attribute at all (<xref linkend="definitionalconceptAnalysissymmetryfig5"></xref>. 
+                 <xref linkend="definitionalconceptAnalysissymmetryfig6"></xref><xref linkend="definitionalconceptAnalysissymmetryfig7"></xref>
+                 <xref linkend="definitionalconceptAnalysissymmetryfig8"></xref>)
+             </para>
+            <figure xml:id="definitionalconceptAnalysissymmetryfig5">
                 <title>Grade concept with an Interprets = Procedure</title>
                 <mediaobject>
                     <imageobject>
@@ -2120,7 +2164,7 @@
                 </mediaobject>
             </figure>
             
-            <figure>
+            <figure xml:id="definitionalconceptAnalysissymmetryfig6">
                 <title>Grade concept with an Interprets = Observable Entity</title>
                 <mediaobject>
                     <imageobject>
@@ -2129,7 +2173,7 @@
                 </mediaobject>
             </figure>
             
-            <figure>
+            <figure xml:id="definitionalconceptAnalysissymmetryfig7">
                 <title><?oxy_comment_start author="steph" timestamp="20190312T151907-0600" comment="The figures below have a lot of white space in it and should be cropped." flag="done"?>Grade
                     Concept with both a Procedure and Observable Entity used for the Interprets
                     Attribute<?oxy_comment_end?></title>
@@ -2140,7 +2184,7 @@
                 </mediaobject>
             </figure>
             
-            <figure>
+            <figure xml:id="definitionalconceptAnalysissymmetryfig8">
                 <title>Grade with no Interprets Attribute</title>
                 <mediaobject>
                     <imageobject>
@@ -2158,8 +2202,8 @@
                     new concept model attributes. It will require the addition of 254291000 |Staging and
                     scales (staging scale)| as an allowable value for Interprets. A large number of
                     Observable Entity concepts would either need to be retired or remodeled as subtypes
-                    in the Procedure hierarchy.</para>
-                <figure>
+                    in the Procedure hierarchy (<xref linkend="definitionalconceptAnalysissymmetryfig9"></xref>.</para>
+                <figure xml:id="definitionalconceptAnalysissymmetryfig9">
                     <title>Proposed Model for Grades, Scales, Stages, and Scores Concepts</title>
                     <mediaobject>
                         <imageobject>
@@ -2167,17 +2211,17 @@
                         </imageobject>
                     </mediaobject>
                 </figure>
-            <para>In the example below, the 120861000119102 |Systolic heart failure stage C
-                (disorder)| concept is modeled using an Interprets to a new concept |American Heart
-                Association (AHA) and American College of Cardiology (ACC) Stages of Heart Failure
-                (staging scale)| and a Has interpretation to the existing concept 261626008 |Stage C
-                (qualifier value)|. Separately, a new Procedure concept would need to be created,
-                |Assessment using American Heart Association (AHA) and American College of
-                Cardiology (ACC) Stages of Heart Failure (Procedure)|. Since these stages focus on
-                the functioning of the cardiovascular system, the new procedure concepts would have
-                a Has focus attribute that would link it to the 301458000 |Functional cardiovascular
-                finding (finding)|.</para>
-                <figure>
+                <para>In the example below (<xref linkend="definitionalconceptAnalysissymmetryfig10"></xref>, the 120861000119102 |Systolic heart failure stage C
+                    (disorder)| concept is modeled using an Interprets to a new concept |American
+                    Heart Association (AHA) and American College of Cardiology (ACC) Stages of Heart
+                    Failure (staging scale)| and a Has interpretation to the existing concept
+                    261626008 |Stage C (qualifier value)|. Separately, a new Procedure concept would
+                    need to be created, |Assessment using American Heart Association (AHA) and
+                    American College of Cardiology (ACC) Stages of Heart Failure (Procedure)|. Since
+                    these stages focus on the functioning of the cardiovascular system, the new
+                    procedure concepts would have a Has focus attribute that would link it to the
+                    301458000 |Functional cardiovascular finding (finding)|.</para>
+                <figure xml:id="definitionalconceptAnalysissymmetryfig10">
                     <title>Example of Systolic heart failure stage modeled with the new concept model</title>
                     <mediaobject>
                         <imageobject>

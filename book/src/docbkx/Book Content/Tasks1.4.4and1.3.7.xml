@@ -103,7 +103,7 @@
                         They ensure code quality and adherence to best practices, oversee the
                         integration and delivery of code to all non-production environments, and
                         manage deployments to staging and hotfix environments. Tech Leads also
-                        provides technical guidance and mentorship to developers. They have
+                        provide technical guidance and mentorship to developers. They have
                         permission to deploy to all non-production, staging, and hotfix
                         environments.</para>
                 </listitem>
@@ -174,13 +174,13 @@
                 </listitem>
             </orderedlist>
             <para>The source code repository offers several additional features, including detailed
-                tracking of changes, which records who made changes, what changes were made, and
-                when, ensuring auditing and accountability. It also provides versioning
-                capabilities, allowing developers to manage different code versions and roll back if
-                necessary, using branching strategies like feature and release branches.
-                Additionally, the repository aids in release management by tagging specific code
-                versions for release, documenting release notes, and managing the deployment
-                process.</para>
+                tracking of changes, capturing which records were changed and by whom, what changes
+                were made, and when the changes occurred. This ensures auditing and accountability.
+                It also provides versioning capabilities, allowing developers to manage different
+                code versions and roll back if necessary, using branching strategies like feature
+                and release branches. Additionally, the repository aids in release management by
+                tagging specific code versions for release, documenting release notes, and managing
+                the deployment process.</para>
         </section>
         <section>
             <title><anchor xml:id="Toc198809515"/>Artifact Repository</title>
@@ -227,8 +227,8 @@
                 package and deploy applications. It enhances development speed, collaboration,
                 flexibility, and resource optimization while simplifying deployment and management
                 processes. Ensuring a CI/CD project has the proper tools to support containerization
-                allows the team to be flexible so that we can deploy on any platform and continue to
-                develop and prototype at speed.</para>
+                provides the team the flexibility to deploy on any platform and continue to develop
+                and prototype at speed.</para>
             <para>Kubernetes is the industry standard for container orchestration. It can be used
                 throughout the entire software delivery lifecycle, from development to production,
                 providing a consistent deployment target. To deploy Kubernetes, an IaC tool is used
@@ -306,17 +306,18 @@
                 our previously defined framework. The process is centered around GitHub as the
                 source of truth, which replaces Jenkins with GitHub Actions for builds, and replaces
                 SonarQube with SonarCloud.</para>
-            <para>Since Option Year 1, we’ve matured our processes around releasing both software
+            <para>Since Option Year 1, we have matured our processes around releasing both software
                 and data artifacts to Maven Central. Users can now access Tinkar starter data and
                 sample data artifacts from Maven Central required to successfully run Komet.
                 Additionally, we are currently developing the CI/CD pipeline components necessary to
-                build and release container images to Docker Hub for public use. <figure
+                build and release container images to Docker Hub for public use (<xref linkend="CICDDiagram"></xref>). <figure
                     xml:id="CICDDiagram">
-                    <title>Current State Continuous Integration and Continuous Delivery (CI/CD)
-                        Architecture Diagram</title>
+                    <title><?oxy_custom_start type="oxy_content_highlight" color="255,64,0"?>Current
+                        State Continuous Integration and Continuous Delivery (CI/CD) Architecture
+                        Diagram<?oxy_custom_end?></title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../images/CICDDiagram.svg" scale="25" align="center"
+                            <imagedata fileref="../images/CICDDiagram.svg" scale="35" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -364,8 +365,8 @@
                         <listitem>
                             <para>Upon approval from the code review, the PR is merged into the main
                                 branch of the team/parent repository. GitHub actions will perform a
-                                build process that will trigger a couple events resulting in a push
-                                of the Maven SNAPSHOT artifact to Nexus.</para>
+                                build process that will trigger a series of events resulting in a
+                                push of the Maven SNAPSHOT artifact to Nexus.</para>
                         </listitem>
                         <listitem>
                             <para>Once the engineers determine the code is ready for release, they
@@ -379,12 +380,13 @@
         </section>
         <section>
             <title><anchor xml:id="Toc198809522"/>Timeline</title>
-            <para>The following roadmap (Figure 2) depicts the phases and timelines the team
+            <para>The following roadmap (<xref linkend="SaaSRoadMap"></xref>) depicts the phases and timelines the team
                 followed to migrate to the target architecture. <figure xml:id="SaaSRoadMap">
-                    <title>Software as a Service (SaaS) Migration RoadMap</title>
+                    <title><?oxy_custom_start type="oxy_content_highlight" color="255,64,0"?>Software
+                        as a Service (SaaS) Migration RoadMap<?oxy_custom_end?></title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../images/SaaSRoadMap.svg" scale="25" align="center"
+                            <imagedata fileref="../images/SaaSRoadMap.svg" scale="35" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -633,9 +635,9 @@
                 <para>Minikube is a single-node Kubernetes cluster that runs on a software
                     engineer’s computer system, providing a local development environment. It mimics
                     the production environment closely, facilitating consistent development and
-                    testing [1].</para>
+                    testing [10].</para>
                 <para>An alternative approach to running Docker containers directly is using Compose
-                    [2]. It is lightweight and easy to set up, but it may lead to inconsistencies
+                    [11]. It is lightweight and easy to set up, but it may lead to inconsistencies
                     due to the different deployment environment compared to Kubernetes.</para>
             </section>
             <section>
@@ -653,18 +655,18 @@
                         <para>Namespace-per-Environment - This approach uses a single Kubernetes
                             cluster for all deployment environments, with each environment separated
                             by namespace for efficient resource utilization. The benefits include
-                            efficient use of resources and simplified management, but it requires
+                            optimal resource utilization and simplified management, but it requires
                             careful namespace management to avoid conflicts.</para>
                     </listitem>
                 </itemizedlist>
             </section>
             <section>
                 <title><anchor xml:id="Toc198809534"/>Configuration Management</title>
-                <para>Configuration managementrefers to the practices and tools used to manage and
+                <para>Configuration management refers to the practices and tools used to manage and
                     maintain the configuration of Kubernetes clusters and the applications running
                     on them. There are two main tools used in industry to manage Kubernetes
-                    configurations: Argo CD and Helm [3, 4]. A third optional tool, Kustomize, can
-                    also be used [5]. </para>
+                    configurations: Argo CD and Helm [12, 13]. A third optional tool, Kustomize, can
+                    also be used [14]. </para>
                 <para>The tools are further described as follows:</para>
                 <itemizedlist>
                     <listitem>
@@ -672,13 +674,13 @@
                             the deployment of Kubernetes resources, providing continuous delivery
                             capabilities. It employs a declarative GitOps approach to managing
                             Kubernetes configurations, ensuring consistency and reliability
-                            [6].</para>
+                            [15].</para>
                     </listitem>
                     <listitem>
                         <para><emphasis role="bold">Helm Charts</emphasis> - Helm charts are used
                             for packaging and deploying Kubernetes applications. They simplify the
                             deployment and management of Kubernetes applications by providing
-                            reusable and customizable templates [7].</para>
+                            reusable and customizable templates [16].</para>
                     </listitem>
                     <listitem>
                         <para><emphasis role="bold">Kustomize (Optional)</emphasis> - Kustomize is a
@@ -694,7 +696,7 @@
                 <title><anchor xml:id="Toc198809535"/>Build Automation Improvements</title>
                 <para>In the future, if Komet and other IKM capabilities are used at-scale in a
                     production environment, the adoption of a dedicated CD tool like Spinnaker could
-                    enhance the robustness and reliability of production deployments.Spinnaker is a
+                    enhance the robustness and reliability of production deployments. Spinnaker is a
                     Kubernetes-native CD platform that can be integrated with any CI/CD system. It
                     offers automated deployments that can be triggered by other CI/CD systems and
                     supports manually triggered, scripted deployments on demand. Spinnaker provides
@@ -720,7 +722,7 @@
                 <listitem>
                     <para><emphasis role="bold">Kubernetes Cluster Monitoring</emphasis> - Within a
                         Kubernetes cluster, Prometheus can be used for gathering metrics, and
-                        Grafana can be used for visualizing these metrics [8, 9]. Prometheus is an
+                        Grafana can be used for visualizing these metrics [17, 18]. Prometheus is an
                         open-source systems monitoring and alerting toolkit that collects metrics
                         from configured targets at given intervals, evaluates rule expressions, and
                         displays the results. Grafana is an open-source platform for monitoring and
@@ -728,9 +730,9 @@
                         into insightful graphs and visualizations.</para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="bold">Application-Level Monitoring - </emphasis>Often
-                        times, application-level monitoring is done using Elasticsearch, Logstash,
-                        and Kibana (known as the “ELK stack”) [10]. Elasticsearch is a search and
+                    <para><emphasis role="bold">Application-Level Monitoring - </emphasis>Often,
+                        application-level monitoring is done using Elasticsearch, Logstash, and
+                        Kibana (known as the “ELK stack”) [19]. Elasticsearch is a search and
                         analytics engine that stores, searches, and analyzes big volumes of data
                         quickly and in near real-time. Logstash is a server-side data processing
                         pipeline that ingests data from multiple sources, transforms it, and sends
@@ -758,62 +760,5 @@
             meet the evolving needs and requirements of a maturing solution. As this process
             evolves, we will work to train the team to ensure they are proficient with the tools and
             resources that support the efficient development and deployment of our work.</para>
-    </section>
-    <section>
-        <title>References</title>
-        <para>
-            <orderedlist>
-                <listitem>
-                    <para>Welcome! (n.d.). Minikube. Retrieved May 27, 2025, from <link
-                            xlink:href="https://minikube.sigs.k8s.io/docs/"
-                            >https://minikube.sigs.k8s.io/docs/</link></para>
-                </listitem>
-                <listitem>
-                    <para>Docker Compose. (2025, April 28). Docker Documentation. <link
-                            xlink:href="https://docs.docker.com/compose/"
-                            >https://docs.docker.com/compose/</link></para>
-                </listitem>
-                <listitem>
-                    <para>Argo CD - Declarative GitOps CD for Kubernetes. (n.d.). Retrieved May 27,
-                        2025, from <link xlink:href="https://argo-cd.readthedocs.io/en/stable/"
-                            >https://argo-cd.readthedocs.io/en/stable/</link></para>
-                </listitem>
-                <listitem>
-                    <para>Helm. (n.d.). Retrieved May 27, 2025, from <link
-                            xlink:href="https://helm.sh/">https://helm.sh/</link></para>
-                </listitem>
-                <listitem>
-                    <para>Kustomize - Kubernetes native configuration management. (n.d.). Retrieved
-                        May 27, 2025, from <link xlink:href="https://kustomize.io/"
-                            >https://kustomize.io/</link></para>
-                </listitem>
-                <listitem>
-                    <para>GitOps. (n.d.). GitOps. Retrieved May 27, 2025, from <link
-                            xlink:href="https://www.gitops.tech/"
-                        >https://www.gitops.tech/</link></para>
-                </listitem>
-                <listitem>
-                    <para>Documentation | Artifact Hub documentation. (n.d.). Retrieved May 27,
-                        2025, from <link xlink:href="https://artifacthub.io/docs/"
-                            >https://artifacthub.io/docs/</link></para>
-                </listitem>
-                <listitem>
-                    <para>Prometheus. (n.d.). Prometheus - Monitoring system &amp; time series
-                        database. Retrieved May 27, 2025, from <link
-                            xlink:href="https://prometheus.io/">https://prometheus.io/</link></para>
-                </listitem>
-                <listitem>
-                    <para>Grafana: The open and composable observability platform. (n.d.). Grafana
-                        Labs. Retrieved May 27, 2025, from <link xlink:href="https://grafana.com/"
-                            >https://grafana.com/</link></para>
-                </listitem>
-                <listitem>
-                    <para>Elastic Stack: (ELK) Elasticsearch, Kibana &amp; Logstash. (n.d.).
-                        Elastic. Retrieved May 27, 2025, from <link
-                            xlink:href="https://www.elastic.co/elastic-stack"
-                            >https://www.elastic.co/elastic-stack</link></para>
-                </listitem>
-            </orderedlist>
-        </para>
     </section>
 </chapter>

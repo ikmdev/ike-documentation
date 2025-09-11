@@ -6,7 +6,10 @@
     <title>Assertional Knowledge Layer</title>
     <para>In the following sections we will discuss the Assertional Knowledge Layer of the Knowledge
         Architecture. </para>
-    <para>The Assertional Knowledge Layer uses the versioned foundation and terminology knowledge to define non-defining facts, such as relationships between data elements, which can inform knowledge algorithms. This layer helps specify associations like symptoms linked to a disorder or optimal treatments for a condition. </para>
+    <para>The Assertional Knowledge Layer uses the versioned foundation and terminology knowledge to
+        define non-defining facts, such as relationships between data elements, which can inform
+        knowledge algorithms. This layer, shown in <xref linkend="KnowledgeArchitectureAssertional"></xref> below, helps specify associations like
+        symptoms linked to a disorder or optimal treatments for a condition. </para>
     <para> </para>
     <figure xml:id="KnowledgeArchitectureAssertional">
         <title>Assertional Knowledge Layer</title>

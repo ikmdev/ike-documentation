@@ -26,7 +26,7 @@
         <?oxy_comment_start author="rgeorgacopoulos" timestamp="20240625T162627-0500" comment="We can add teh solor-foundation.xml here as part of the ikm overview and write a 2 sentence intro to solor? "?>
     </part>
     <part>
-        <title>Foundational Architecture</title>
+        <title>Versioned Foundation</title>
         <xi:include href="Book%20Content/Book%20Versioned%20Foundation%20Intro.xml"/>
         <xi:include href="Book%20Content/Tinkar%20Modeling%20Guide.xml"
             xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -38,23 +38,26 @@
             xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="Book%20Content/Book%20Terminology-Knowledge.xml"
             xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Book%20Content/Part5References.xml"/>
     </part>
     <part>
         <title>Assertional Knowledge</title>
         <xi:include href="Book%20Content/Book%20Assertional%20Skyscraper%20Intro.xml"/>
-        <xi:include href="../../../volume5-Knowledge-Layers/chapter2-solor-assertional/src/docbkx/SOLOR-assertional.xml"/>
-    </part>
+        <xi:include
+            href="../../../volume5-Knowledge-Layers/chapter2-solor-assertional/src/docbkx/SOLOR-assertional.xml"
+        />
+        <xi:include href="Book%20Content/Part6References.xml"/>
+            </part>
     <part>
-            <title>Statement Model Principles</title>
-            <xi:include href="Book%20Content/Book%20Statement%20Skyscraper%20Intro.xml"/>
-            <xi:include href="statement-intro-begin.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-            <xi:include href="statement-intro-patterns.xml"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>   
+            <title>Statement Model
+            <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T150444-0500" comment="Removed statement-intro-begin.xml and statement-intro-patterns.xml and replaced with ANF User Guide 2025"?>Principles<?oxy_comment_end?></title>
+            <xi:include href="Book%20Content/Book%20Statement%20Skyscraper%20Intro.xml"/>             
         <xi:include href="Book%20Content/ANF%20User%20Guide%202025.xml"/>       
     </part>    
     <part>
         <title>Procedural Representation</title>
         <xi:include href="../../src/docbkx/Book%20Content/Book%20Procedural.xml"/>
+        <xi:include href="Book%20Content/Book%20Procedural%20References.xml"/>
     </part>
     <part>
         <title>Ecosystem</title>
@@ -63,6 +66,7 @@
             href="Book%20Content/Book%20Summary%20of%20Findings%20-%20Managing%20the%20Best%20Practice%20for%20Open-Source%20Communities.xml"/>
         <xi:include
             href="Book%20Content/Book%20Evaluation%20of%20Current%20SNOMED%20CT%20LOINC%20Collaboration.xml"/>
+        <xi:include href="Book%20Content/Book%20Ecosystem%20References.xml"/>
     </part>
     <part>
         <title><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240715T101026-0500" comment="add transition sentence about exploring current stae km solutions and current state environment, best practices, lessons learned and more from other efforts"?>Knowledge
@@ -77,21 +81,25 @@
             href="Book%20Content/Book%20Summary%20of%20Findings%20%E2%80%93%20Functional%20and%20Non-Functional%20Issues%20Related%20to%20Knowledge%20Management%20Proof%20of%20Concept.xml"/>
         <xi:include href="Book%20Content/Tasks1.4.4and1.3.7.xml"/>
         <xi:include href="../../../volume8-Komet-User-Guide/src/docbkx/Komet-User-Guide%20-%20Pizza.xml"/>
+        <xi:include href="Book%20Content/Part%2010%20References.xml"/>
     </part>
     <part>
         <title>Use Cases and Summary of Findings</title>
         <xi:include href="../../../volume7-Use-Cases/chapter3-use-case/src/docbkx/Use-Case-Chapter%20Updated.xml"/>
         <xi:include href="Book%20Content/Updated%20Advanced%20Analytics%20Platform%20Proof%20of%20Concept%20Use%20Case(s)%20(Months%2013-24).xml"/>
-        <xi:include
-            href="../../../volume7-Use-Cases/chapter2-summary-of-findings/src/docbkx/Summary%20of%20Findings%20%E2%80%93%20RWE%20Search%20and%20Query%20Methods.xml"/>
+        <xi:include href="../../../volume7-Use-Cases/chapter2-summary-of-findings/src/docbkx/Summary%20of%20Findings%20%E2%80%93%20RWE%20Search%20and%20Query%20Methods.xml"/>
+        <xi:include href="Book%20Content/ArtificialIntelligence.xml"/>
+        <xi:include href="Book%20Content/Part%2011%20References.xml"/>
     </part>
     <part>
         <title>Real World Applications</title>
-        <xi:include href="../../../volume10-Patient-Data-Privacy/chapter1-patient-data-privacys/src/docbkx/Patient%20Data%20Privacy.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include
+            href="../../../volume10-Patient-Data-Privacy/chapter1-patient-data-privacys/src/docbkx/Patient%20Data%20Privacy.xml"
+            xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="Book%20Content/Book%20Healthcare%20Data%20Management.xml"
             xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="Book%20Content/Book%20Healthcare%20Quality%20Improvement.xml"
-            xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
+            xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include
             href="Book%20Content/Book%20Global%20Health%20and%20International%20Collaboration.xml"
             xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -99,10 +107,12 @@
             xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="Book%20Content/Book%20ROI.xml" xmlns:xi="http://www.w3.org/2001/XInclude"
         />
+        <xi:include href="Book%20Content/Part%2012%20References.xml"/>
     </part>
     <part>
         <title>Appendix</title>
-        <xi:include href="../../../volume-appendix/quick-reference-guide/src/docbkx/Quick%20Reference%20Guide.xml"/>
+        <xi:include
+            href="../../../volume-appendix/quick-reference-guide/src/docbkx/Quick%20Reference%20Guide.xml"/>
         <xi:include
             href="../../../volume4-Tinkar-Ballot/chapter1-introduction-tinkar/src/docbkx/Introduction.xml"/>
         <xi:include

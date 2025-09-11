@@ -34,15 +34,15 @@
                     <?oxy_comment_start author="tocrow" timestamp="20240624T131234-0400" comment="cite"?>1998
                     paper <citation>Representing Thoughts, Words, and Things in the
                         UMLS<?oxy_comment_end?></citation> the authors describe that the Ogden
-                    Richards' semiotic triangle "shows that, although written or spoken symbols
-                    (words) cannot completely capture the essence of a reference (thought) or of a
-                    referent (thing), there is a correspondence among them. Either a word or an
-                    object can inspire a thought, and people may endeavor to express their thoughts
-                    with words or by identifying objects in the world. The relationship between a
-                    word and a thing is indirect, however. The link can be completed only when an
-                    interpreter (usually a person) processes the word, which invokes a corresponding
-                    thought, and then links that thought to a thing in the world (the “referent”).
-                    This diagram is seductive in its simplicity."</para>
+                    Richards' semiotic triangle, shown in <xref linkend="terminologysemiotictriangle"/> below, "shows that, although
+                    written or spoken symbols (words) cannot completely capture the essence of a
+                    reference (thought) or of a referent (thing), there is a correspondence among
+                    them. Either a word or an object can inspire a thought, and people may endeavor
+                    to express their thoughts with words or by identifying objects in the world. The
+                    relationship between a word and a thing is indirect, however. The link can be
+                    completed only when an interpreter (usually a person) processes the word, which
+                    invokes a corresponding thought, and then links that thought to a thing in the
+                    world (the “referent”). This diagram is seductive in its simplicity."</para>
                 <para><quote>By implying a one-to-one relationship between each pair of members in
                         the triangle, this simple diagram masks hidden complexity. Ogden and
                         Richards alluded to this complexity by the dotted line between a symbol and
@@ -56,7 +56,7 @@
                         context that we seek solutions to improve our ability to communicate about
                         biomedical concepts.</quote></para>
                 <para>
-                    <figure>
+                    <figure xml:id="terminologysemiotictriangle">
                         <title>Ogden and Richards semiotic triangle</title>
                         <mediaobject>
                             <imageobject>
@@ -88,10 +88,10 @@
                     systems, categories are only allowed to exist in a single monohierarchical
                     representation. For example, in International Classification of Diseases Tenth
                     Revision (ICD-10) A39.0 Meningococcal meningitis only exists as a subtype of A39
-                    Meningococcal infection. In this representation you can easily find all
+                    Meningococcal infection <xref linkend="meningitismonohierarchy"/>. In this representation you can easily find all
                     meningococcal infections, but if you need to find all types of meningitis you
                     are required to know all the various codes that represent the different
-                    classifications of meningitis.<figure>
+                    classifications of meningitis.<figure xml:id="meningitismonohierarchy">
                         <title><?oxy_comment_start author="steph" timestamp="20190903T155353-0600" comment="Can you center the text in the boxes below and fix the first box where the text is cutoff?" flag="done"?><?oxy_comment_start author="steph" timestamp="20191016T113247-0600" comment="This is still a problem - the text is cutoff." mid="3"?>Monohierarchy
                             Example<?oxy_comment_end?><?oxy_comment_end mid="3"?></title>
                         <mediaobject>
@@ -102,11 +102,11 @@
                         </mediaobject>
                     </figure></para>
                 <para>In a well designed terminology, concepts should be allowed to exist in
-                    multiple hierarchies if multiple parent concepts are appropriate. For example,
+                    multiple hierarchies if multiple parent concepts are appropriate, as outlined in <xref linkend="meningitispolyhierarchy"/> below. For example,
                     <?oxy_comment_start author="timowilliams" timestamp="20190430T201423-0500" comment="Add image representing the polyhierarchy" id="m3l_gb2_xhb" flag="done"?><?oxy_comment_start author="rcholan" timestamp="20190528T215454-0400" comment="Adding initial image. Will re-create." parentID="m3l_gb2_xhb" flag="done" mid="5"?><?oxy_comment_start author="steph" timestamp="20190806T085004-0600" comment="Recommend removing most of the white space around the image that isn&apos;t needed and is forcing &quot;hierarchies&quot; to be hyphenated and shown before and after the image." flag="done" mid="6"?>Bacterial
                     meningitis is both a subtype of Bacterial Meningitis and Meningococcal
                     infectious disease and should exist in both hierarchies.<?oxy_comment_end mid="6"?><?oxy_comment_end mid="5"?><?oxy_comment_end?>
-                    <figure>
+                    <figure xml:id="meningitispolyhierarchy">
                         <title>Polyhierarchy Example</title>
                         <mediaobject>
                             <imageobject>
@@ -133,7 +133,7 @@
                     large terminologies, correctly adding all the possible valid hierarchical
                     relationships can be difficult as it requires the content modeler to think of
                     all the possible parents. By adding the additional information, like Finding
-                    Site in the example below, additional hierarchical relationships can be inferred.<figure>
+                    Site in <xref linkend="statedrelationships"/> below, additional hierarchical relationships can be inferred.<figure xml:id="statedrelationships">
                         <?oxy_comment_start author="steph" timestamp="20190903T164307-0600" comment="Need to fix the text in circles to make it fit fully and not be cutoff, as it currently is.  With the text being white on a white background, the cutoff text cannot be read outside of the circles.  Same for the second diagram for inferred below." flag="done"?>
                         <?oxy_comment_start author="steph" timestamp="20191016T113507-0600" comment="Still not fixed.  I think it needs to be fixed; otherwise, it appears as sloppy work." mid="12"?>
                         <title>Relationships Stated by a Content
@@ -152,7 +152,8 @@
 
 deleted this as it is mentioned for the first time with no context of SOLOR
 
-this sentence was originally at the end of this paragraph "?>concepts<?oxy_comment_end?>. <figure>
+this sentence was originally at the end of this paragraph "?>concepts<?oxy_comment_end?>
+                    as shown in <xref linkend="inferredrelationships"/> below.<figure xml:id="inferredrelationships">
                         <title>Inferred Relationships by DL Classifier</title>
                         <mediaobject>
                             <imageobject>
@@ -184,7 +185,7 @@ this sentence was originally at the end of this paragraph "?>concepts<?oxy_comme
                     representing meaning at various levels, the display of the concepts that are
                     relevant to certain users should be able to be customized. Allowing users to
                     view concepts in a way that is intuitive will support the adoption of
-                    terminologies by making the terminology more usable. <figure>
+                    terminologies by making the terminology more usable as shown in <xref linkend="CranialNerves"/> below.<figure xml:id="CranialNerves">
                         <title>Multiple Consistent Views</title>
                         <mediaobject>
                             <imageobject>

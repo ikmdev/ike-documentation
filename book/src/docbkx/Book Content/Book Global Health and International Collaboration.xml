@@ -36,15 +36,15 @@
             decreased the quality of care across the healthcare ecosystem. While lab data is
             analyzed and transferred from the Laboratory Information System (LIS) to Provider EHRs
             to appropriate end users, much of the meaning of the original report is lost. Only 22 -
-            26% of the single-trip data integrity is achieved, highlight the need for greater
-            interoperability standards. [1]</para>
-        <para>Efforts to standardize clinical terminology systems is often impacted by data siloes
+            26% of the single-trip data integrity is achieved, highlighting the need for greater
+            interoperability standards. [76]</para>
+        <para>Efforts to standardize clinical terminology systems are often impacted by data siloes
             and incompatible Healthcare IT systems that make data difficult to exchange and
-            interpret at a national level. [2] Health information specialists around the world noted
-            the lack of interoperability standards between different systems during the COVID-19
-            pandemic. Recently, we have seen a growing awareness and recognition of the need to
-            standardize clinical terminology across the US and around the world. This chapter
-            intends to explore various ongoing efforts to achieve interoperability at the
+            interpret at a national level. [77] Health information specialists around the world
+            noted the lack of interoperability standards between different systems during the
+            COVID-19 pandemic. Recently, we have seen a growing awareness and recognition of the
+            need to standardize clinical terminology across the US and around the world. This
+            chapter intends to explore various ongoing efforts to achieve interoperability at the
             international level, the current utilization of IKM in the areas of global health,
             on-going international collaborations, challenges, and potential opportunities for
             further international collaboration to improve the quality of healthcare around the
@@ -53,7 +53,7 @@
     <section>
         <title>Introduction </title>
         <para>Numerous international organizations have been established to collaborate on global
-            health initiatives and to expand upon certain areas of focus, like public health. [3]
+            health initiatives and to expand upon certain areas of focus, like public health. [78]
             This chapter will introduce the overall landscape of international healthcare
             organizations participating in global health, on-going efforts to achieve international
             interoperable digital health infrastructure, challenges with global interoperability,
@@ -64,65 +64,64 @@
         <title>Brief History of Global Health</title>
         <para>Global health originates from efforts to control infectious diseases and individual
             health through the delivery of healthcare to 16<superscript>th</superscript> and
-                17<superscript>th</superscript> century European colonies. [4] Great Britain,
+                17<superscript>th</superscript> century European colonies. [79] Great Britain,
             France, and Portugal established colonies in India, China, Africa and elsewhere, where
             infectious diseases were devastating to both the native and European colonist
-            populations. [5] Diseases spread rapidly, wiping out large portions of the population in
-            the first years of colonization and giving birth to the field of Tropical Medicine. [6]
-            Tropical Medicine bloomed throughout much of the 19<superscript>th</superscript> century
-            and expanded to the field of public health with the development of military medicine and
-            medical missions as more people traveled across the world. </para>
+            populations. [80] Diseases spread rapidly, wiping out large portions of the population
+            in the first years of colonization and giving birth to the field of Tropical Medicine.
+            [81] Tropical Medicine bloomed throughout much of the 19<superscript>th</superscript>
+            century and expanded to the field of public health with the development of military
+            medicine and medical missions as more people traveled across the world. </para>
         <para>The formation of three organizations served as the precursor to forming a Health
-            Committee under the League of Nations after World War II. [7] The International Sanitary
-            Convention was formed in 1851 to create an international code for containing epidemics
-            when a series of six cholera pandemics claimed the lives of thousands of tradesmen on
-            the Silk Road between Rome and China. The Pan-American Sanitary Bureau was formed by the
-            US and their trade partners in Central and South American in 1924, addressing the
-            outbreak of yellow fever and starting the immigration health conversation. [8] The third
-            group was the Rockefeller Foundation International Board of Health in 1913 as the single
-            largest funder of global health in the early part of the 20<superscript>th</superscript>
-            century, constructing public health schools in North America and Europe to train
-            personnel to send to Latin America and the Caribbean to treat “tropical diseases”.
-            [9]</para>
+            Committee under the League of Nations after World War II. [82] The International
+            Sanitary Convention was formed in 1851 to create an international code for containing
+            epidemics when a series of six cholera pandemics claimed the lives of thousands of
+            tradesmen on the Silk Road between Rome and China. The Pan-American Sanitary Bureau was
+            formed by the US and their trade partners in Central and South American in 1924,
+            addressing the outbreak of yellow fever and starting the immigration health
+            conversation. [83] The third group was the Rockefeller Foundation International Board of
+            Health in 1913, as the single largest funder of global health in the early part of the
+                20<superscript>th</superscript> century, constructing public health schools in North
+            America and Europe to train personnel to send to Latin America and the Caribbean to
+            treat “tropical diseases”. [84]</para>
         <para>After World War II, the United Nations (UN) was formed and approved a constitution for
-            the formation of the WHO that provided a wide range of aid to developing countries in
-            the midst of the Cold War. After World War II, the creation and participation of
-            Non-Governmental Organizations (NGOs), such as the International Monetary Fund (IMF) and
-            the World Bank, increased to support re-building global infrastructure in the post-war
-            era. [10] [11] </para>
+            the formation of the WHO that provided a wide range of aid to developing countries amid
+            the Cold War. After World War II, the creation and participation of Non-Governmental
+            Organizations (NGOs), such as the International Monetary Fund (IMF) and the World Bank,
+            increased to support re-building global infrastructure in the post-war era. [85-86] </para>
         <para> Much of global health in the earlier years was shaped around tropical medicine and
             the public health work of overseas colonies. This trend was expanded to the work of
             medical missions and military medicine that provided a strong foundation for
             international collaboration in the latter half of the 21<superscript>st</superscript>
-            century. [12] </para>
+            century. [87] </para>
     </section>
     <section>
         <title>International Organizations Collaborating on Healthcare Information Technology
             (IT)</title>
         <para>The global trend of adopting computerized medical record systems was spearheaded by
             digital movements in the United States. In 2003, the Institute of Medicine, a division
-            of the national Academies of Sciences, Engineering, and Medicine chose to coin the term,
+            of the National Academies of Sciences, Engineering, and Medicine chose to coin the term,
                 <emphasis role="italic">electronic health records</emphasis>, with the goal of
             computerizing medical records to improve safety and quality of patient-centered care. In
             2005, the World Health Assembly adopted the resolution WHA58.28 on electronic Health
             (eHealth) and urged Member States “to consider drawing up a long-term strategic plan for
             developing and implementing eHealth services… to develop the infrastructure for
             information and communication technologies for health … to promote equitable, affordable
-            and universal access to their benefits.” [13] Passing this resolution encouraged more
+            and universal access to their benefits.” [88] Passing this resolution encouraged more
             than 120 Member States, including low-and middle-income countries, to direct their
             efforts towards implementing eHealth to meet their country’s health priorities and
             resources through action-oriented steps. </para>
         <para>The U.S. federal government’s announcement of Health Information Technology for
             Economic and Clinical Health (HITECH) Act in 2009 set aside $27 billion for an incentive
-            program that encouraged hospitals and healthcare systems to adopt EHRs. [14] In 2010,
+            program that encouraged hospitals and healthcare systems to adopt EHRs. [89] In 2010,
             WHO and SNOMED International initiated a formal collaborative relationship. SNOMED
             International and WHO began aligning their respective standards by enabling SNOMED CT®
             users to use WHO classifications, creating a joint and interoperable medical terminology
-            system. [15] </para>
+            system. [90] </para>
         <para>Additional United Nations Health Assembly sessions in 2013 and 2018 continued
             encouraging Member States to adopt eHealth strategies and identify priority areas,
             creating online public forums, providing technical consultations, and utilizing WHO
-            regional committees to improve the global strategy on digital health. [16] </para>
+            regional committees to improve the global strategy on digital health. [91] </para>
         <para>Below is a list of several international organizations that have joined collective
             efforts to achieve standardization in a particular domain of healthcare and are actively
             collaborating with one another worldwide. While this list provides some key examples, it
@@ -133,11 +132,11 @@
             <para>Digital Imaging and Communications in Medicine (DICOM) provides the international
                 standard for medical images and related information, defining formats for medical
                 images that “can be exchanged with the data and quality necessary for clinical use”.
-                [17] Established in 1993, DICOM has been an established name in cardiology imaging,
+                [92] Established in 1993, DICOM has been an established name in cardiology imaging,
                 radiology, dentistry, ophthalmology, and other medical service lines that involve
                 any radiologic devices including X-ray, CT, MRI, and ultrasound. DICOM drove efforts
                 to replace X-ray film with digital images, eliminating industry waste and improving
-                the transfer of high-quality images. [17] </para>
+                the transfer of high-quality images. [92] </para>
             <para>The initial open-source reference implementation of DICOM provided a crucial
                 foundation for developers and healthcare entities to understand and utilize the
                 DICOM standard. It offered developers, researchers, and manufacturers a free and
@@ -171,24 +170,24 @@
                 precursor organization called the International Medical Device Regulatory Forum
                 (IMDRF), GMDN helps accelerate and standardize medical device regulation globally
                 with more than 70 national medical device regulators across more than 145 member
-                countries worldwide. [18] [19] </para>
+                countries worldwide. [93-94] </para>
         </section>
         <section>
             <title>HL7</title>
             <para>Founded in 1987, Health Level Seven International (HL7) is a not-for-profit
-                standard-development organization that provides a digital framework and relevant
+                standard development organization that provides a digital framework and relevant
                 standards “for the exchange, integration, sharing and retrieval of electronic health
                 information that supports clinical practice and the management, delivery and
-                evaluation of health services.” [20] HL7 collaborates with over 25 benefactors from
+                evaluation of health services.” [95] HL7 collaborates with over 25 benefactors from
                 both private and public spheres across the US and around the world. </para>
         </section>
         <section>
             <title>Integrating the Healthcare Enterprise (IHE)</title>
             <para>Integrating the Healthcare Enterprise (IHE) is an international organization with
                 the vision of “enabling seamless and secure access to health information that is
-                usable whenever and wherever needed”. Established in 17 countries around the globe
-                with IHE national deployment committees and other stakeholder organizations from 21
-                countries, members come from four main sources: </para>
+                usable whenever and wherever needed”. IHE national deployment committees are
+                established in 17 countries, and other stakeholder organizations are present in 21
+                countries with members coming from four main sources: </para>
             <orderedlist>
                 <listitem>
                     <para>Health IT and Consulting Companies</para>
@@ -200,12 +199,12 @@
                     <para>Provider or Research Organizations</para>
                 </listitem>
                 <listitem>
-                    <para>Standards Development Organizations [21] </para>
+                    <para>Standards Development Organizations [96] </para>
                 </listitem>
             </orderedlist>
             <para>Healthcare professionals and relevant stakeholders collaborate to configure the
                 way computer systems in healthcare share information through the coordinated use of
-                DICOM and HL7. [21] </para>
+                DICOM and HL7. [96] </para>
         </section>
         <section>
             <title>International Council for Harmonization of Technical Requirements for
@@ -218,7 +217,7 @@
                 MedDRA to catalyze the process of registration, documentation, and safety monitoring
                 of medical products before and after a medical device is fully authorized for use.
                 MedDRA focuses on key pharmacovigilance terms from the European Medicines Agency and
-                the UK’s Medicines &amp; Healthcare products Regulatory Agency. [22]</para>
+                the UK’s Medicines &amp; Healthcare products Regulatory Agency. [97]</para>
         </section>
         <section>
             <title>LOINC®</title>
@@ -231,16 +230,16 @@
                 CT® interoperability solution, a standardized terminology system that combines
                 clinical and regulatory requirements in a single solution. SNOMED CT® provides the
                 computerized framework while LOINC® provides laboratory and pathology content in
-                easy-to-read format to countries that have not adopted LOINC® yet. [23]</para>
+                easy-to-read format to countries that have not yet adopted LOINC®. [98]</para>
         </section>
         <section>
             <title>SNOMED International</title>
             <para>SNOMED started in 1965 as a Systematized Nomenclature Pathology (SNOP) and created
-                SNOMED CT® in 1991 and SNOMED International in 2007. [24] SNOMED International is
+                SNOMED CT® in 1991 and SNOMED International in 2007. [99] SNOMED International is
                 the trading name for a not-for-profit organization called The International Health
-                Terminology Standards Development Organization (IHTSDO). [25] The purpose of IHTSDO
+                Terminology Standards Development Organization (IHTSDO). [100] The purpose of IHTSDO
                 is to support safe, accurate, and effective health information exchange, with over
-                29 member countries that support four major areas; customer relations, operations,
+                29 member countries that support four major areas: customer relations, operations,
                 products and services, and strategy.</para>
         </section>
     </section>
@@ -251,7 +250,7 @@
         <section>
             <title>Current Procedural Terminology (CPT®) </title>
             <para>Current Procedural Terminology (CPT®) is a code set by the American Medical
-                Association to bill outpatient and office procedure. [27] </para>
+                Association to bill outpatient and office procedures. [101] </para>
         </section>
         <section>
             <title>Healthcare Common Procedure Coding System (HCPCS)</title>
@@ -260,7 +259,7 @@
                 represent medical procedures, supplies, products and services. Health insurance
                 entities utilize the HCPCS to process claims by Medicare and other insurers. Level I
                 of HCPCS consists of Current Procedural Terminology® (HCPT). Level II of HCPCS
-                includes the Current Dental Terminology (HDT) codes. [28] </para>
+                includes the Current Dental Terminology (HDT) codes. [102] </para>
         </section>
         <section>
             <title>Tenth Revision International Classification of Disease (ICD-10)</title>
@@ -270,18 +269,18 @@
                 mortality data. ICD-10 consists of tabular lists containing cause-of-death titles
                 and codes, inclusion and exclusion terms for cause-of-death titles, an alphabetical
                 index to diseases and nature of injury, external causes of injury, table of drugs
-                and chemicals, and description, guidelines, and coding rules. [29] </para>
+                and chemicals, and description, guidelines, and coding rules. [103] </para>
         </section>
         <section>
             <title>LOINC®</title>
             <para>The Regenstrief in Germany started the Logical Observation Identifiers Names and
                 Codes in 1994 with Clem McDonald’s idea of developing a common terminology for
-                laboratory and clinical observations because the growing trend demonstrated the use
-                of laboratory data not only for clinical care but also for research and management
-                purposes. The terminology system that began at Indiana University now collaborates
-                with HL7 to send numerous lab results with painstaking efforts to continue
-                standardizing existing codes with the addition of new codes or other codes from the
-                growing number of various other sources. [30] </para>
+                laboratory and clinical observations due to the growing use of laboratory data not
+                only for clinical care but also for research and management purposes. The
+                terminology system that began at Indiana University now collaborates with HL7 to
+                send numerous lab results with painstaking efforts to continue standardizing
+                existing codes with the addition of new codes or other codes from the growing number
+                of various other sources. [104] </para>
         </section>
         <section>
             <title>MEDCIN</title>
@@ -292,8 +291,8 @@
                 the advanced version available for healthcare providers. As a leading provider of
                 clinical documentation tools, Medicomp has spent over 45 years with the goal of
                 driving better patient care through better management of patient’s clinical data and
-                is now looking into adopting artificial intelligence (IA) technologies and
-                interoperability to enhance its current documentation technology. [31] </para>
+                is now looking into adopting artificial intelligence (AI) technologies and
+                interoperability to enhance its current documentation technology. [105] </para>
         </section>
         <section>
             <title>Radiology Lexicon (RadLex)</title>
@@ -301,7 +300,7 @@
                 Society of North America (RSNA). It is a reservoir for a unified language of
                 radiology terms for standardized indexing and retrieval of radiologic information
                 resources. It unifies and supplements other lexicons and standards including SNOMED
-                CT® and DICOM. [15] </para>
+                CT® and DICOM. [90] </para>
         </section>
         <section>
             <title>RxNorm</title>
@@ -309,8 +308,8 @@
                 it as a source of “normalized names for clinical drugs and links its names to many
                 of the drug vocabularies commonly used in pharmacy management and drug interaction
                 software, including those of First Databank, Micromedex, Multum, and Gold Standard
-                Drug Database.” [15] The National Library of Medicine started the RxNorm Project in
-                2001 and has continued to grow the effort with collaboration from HL7. [15] </para>
+                Drug Database.” [90] The National Library of Medicine started the RxNorm Project in
+                2001 and has continued to grow the effort with collaboration from HL7. [90] </para>
         </section>
         <section>
             <title>SNOMED CT®</title>
@@ -319,13 +318,13 @@
                 terminology system and gave the name SNOMED CT® that has been widely used in the
                 United States. In 2013, EHR systems in the United States were required to include
                 SNOMED CT® for the Stage 2 Meaningful Use certification of the clinical software
-                systems installed in medical settings. [15] </para>
+                systems installed in medical settings. [90] </para>
         </section>
         <section>
             <title>United Code for Units of Measure (UCUM)</title>
             <para>The United Code for Units of Measure (UCUM) is a code system intended to include
                 all units of measures being contemporarily used in international science,
-                engineering, and business. [15] </para>
+                engineering, and business. [90] </para>
             <para>The list of the commonly used healthcare standards is growing faster than ever
                 before. One challenging aspect of developing global healthcare standards is that the
                 act of developing the standard needs to start somewhere on a small scale with
@@ -343,37 +342,38 @@
         <section>
             <title>eHealth Exchange to improve the exchange of patient data between agencies and
                 medical entities</title>
-            <para>eHealth Exchange is an interoperability system a “one connection-to-many” model,
-                creating the principal network that connects federal agencies and non-federal
-                organizations, including over 75% of U.S. hospitals, health systems, and clinics of
-                various types and sizes, to share patient records for better access of care of
-                better quality. [34] The eHealth Exchange further supports reporting of the social
-                determinants of health, such as public health reporting, quality reporting, and
-                disability and insurance determinations. The eHealth Exchange uses InterSystems
-                    HealthShare<superscript>TM</superscript> Managed Solutions to make a more
-                powerful information exchange, scale its network and maintain added features such as
-                push notifications and discrete data-level queries using HL7 Fast Healthcare
-                Interoperability Resources (FHIR®). [34] </para>
+            <para>eHealth Exchange is an interoperability system utilizing a “one
+                connection-to-many” model, and creating the principal network that connects federal
+                agencies and non-federal organizations, including over 75% of U.S. hospitals, health
+                systems, and clinics of various types and sizes, to share patient records for better
+                access of care of better quality. [106] The eHealth Exchange further supports
+                reporting of the social determinants of health, such as public health reporting,
+                quality reporting, and disability and insurance determinations. The eHealth Exchange
+                leverages InterSystems HealthShare™ Managed Solutions to enhance the power and
+                scalability of its information exchange network. This partnership enables eHealth
+                Exchange to support advanced features such as push notifications and discrete
+                data-level queries using HL7 Fast Healthcare Interoperability Resources (FHIR).
+                [106] </para>
         </section>
         <section>
             <title>Working with a better early warning system for emerging infectious
                 diseases</title>
             <para>The Covid-19 pandemic also provided an opportunity to catalyze an existing
                 data-sharing methodology. WHO’s Epidemic Intelligence from Open Sources (EIOS) was
-                established 2017 with the purpose of building a global community of public health
+                established in 2017 with the purpose of building a global community of public health
                 stakeholders to share ideas, expertise, and best practices for facilitating early
                 threat detection. WHO then launched its hub for Pandemic and Epidemic Intelligence
                 which empowered traditional data sharing with artificial intelligence, further
                 contributing to the exchange of emerging information about coronavirus throughout
-                the pandemic. This system is activated not only for COVID-19 but other infectious
-                diseases including zoonotic diseases around the globe now. [35] </para>
+                the pandemic. This system is now activated not only for COVID-19, but also for other
+                infectious diseases—including zoonotic diseases—worldwide. [107] </para>
         </section>
         <section>
             <title>Challenges in global collaboration</title>
             <para>Many international organizations discuss the importance of interoperability and
-                the dire need for connected and translatable systems to exchanges health data,
+                the dire need for connected and translatable systems to exchange health data,
                 scripts, and imaging in a standardized format. In this section, we discuss the
-                challenges of interoperability in general and at the international level and
+                challenges of interoperability in general and at the international level, along with
                 potential solutions. </para>
             <para>The first challenge is the sheer amount and types of data that must be made
                 interoperable. There is a wide range of data, disciplines, and file types in
@@ -383,43 +383,43 @@
                 pathology reports and images, diagnostic imaging reports, medication management,
                 electronic prescriptions, patient access, and regulatory approval for medical
                 devices. Determining the priority for which data to make interoperable first or
-                which components would provide patients and providers with the greatest value add is
-                a difficult question. [36] </para>
+                which components would provide patients and providers with the greatest value-add is
+                a difficult question. [108] </para>
             <para>The next challenge is that efforts to improve interoperability require extensive
                 research, trial and error, time, and resources to create a successful model. The
                 desire to achieve interoperable EHRs or Electronic Medical Records (EMRs) has been
-                around for a long time in many developed countries like the United States, Canada,
-                and United Kingdom, but even in these developed countries, the existing EMR has a
-                long way to go to achieve the data quality needed to provide safe patient care and
-                improve provider satisfaction. [36] Even before discussing interoperability, rolling
-                out EHRs can pose a challenge in many countries. </para>
+                around for a long time in many developed countries such as the United States,
+                Canada, and United Kingdom, but even in these developed countries, the existing EHR
+                has a long way to go to achieve the data quality needed to provide safe patient care
+                and improve provider satisfaction. [108] Even before discussing interoperability,
+                rolling out EHRs can pose a challenge in many countries. </para>
             <para>Third, we need to provide a different approach for middle or low-income countries,
                 instead of merely generalizing the implementation of IKM with the promise of
-                unconditionally improving the quality of medical care. [36]. Some countries do not
+                unconditionally improving the quality of medical care. [108] Some countries do not
                 have the necessary medical professionals due to brain drain or the lack of medical
                 infrastructures and cannot afford to have a separate pool of IT professionals or
                 researchers in the field of medicine. International organizations need to assess
                 different situations in different parts of the world, research every situation
                 judiciously, and allocate appropriate IKM resources to provide impactful assistance. </para>
-            <para>Fourth, not all nations in the world have the equal need for all interoperable
-                systems or a-la-carte terminology systems in all service lines. [36] While some
-                nations have a more need for the standardized clinical terminology in the field of
-                tropical medicine, other nations have a more need for standardized cancer
-                terminology and relevant interoperable system to exchange lab data and radiologic
-                images. Achieving the global interoperability may neglect what’s most needed in a
+            <para>Fourth, not all nations in the world have the equal need for interoperable systems
+                nor for a-la-carte terminology systems in all service lines. [108] While some
+                nations have a greater need for standardized clinical terminology in the field of
+                tropical medicine, other nations have a greater need for standardized cancer
+                terminology and relevant interoperable systems to exchange lab data and radiologic
+                images. Achieving global interoperability may neglect what’s most needed in a
                 particular area of the world or at the scale of each continent. </para>
-            <para>Finally, new technologies evolve more rapidly than ever before, bringing new legal
-                and logistical challenges over data management, including emerging healthcare or
-                well-being apps, telemedicine, and managing international patient data. [36] We need
-                reliable international organizations that oversee these emerging interdisciplinary
-                areas while identifying and developing standardization and technical tools for
-                deployment around the world. </para>
+            <para>Finally, new technologies evolve more rapidly than ever before, presenting new
+                legal and logistical challenges over data management, including emerging healthcare
+                or well-being apps, telemedicine, and managing international patient data. [108] We
+                need reliable international organizations that oversee these emerging
+                interdisciplinary areas while identifying and developing standardization and
+                technical tools for deployment around the world. </para>
         </section>
         <section>
             <title>Summary on Lessons Learned</title>
-            <para>According to the research survey conducted by the Global Digital Health
-                Partnership, the following four top-three barriers in advancing the global
-                interoperability were identified (Items 3 and 4 were tied): [36] </para>
+            <para>According to a research survey conducted by the Global Digital Health Partnership,
+                the following were identified as the top three barriers to advancing global
+                interoperability (with items 3 and 4 tied): [108] </para>
             <orderedlist>
                 <listitem>
                     <para>EHRs lack the capability to take action based on exchanged data</para>
@@ -436,201 +436,24 @@
                     </para>
                 </listitem>
             </orderedlist>
-            <para>Most countries have systems that generate and communicate data to other providers
+            <para>Most countries have systems that generate and communicate data to other providers,
                 but they lack the necessary functions to achieve truly interoperable data exchange
-                and management. One area for the global effort to improve healthcare IT to focus on
-                is recognizing the lack of EHR capabilities as the most important barrier to
-                overcome. This barrier is directly tied to the “poor usability” barrier in cases
-                where EHRs possess capabilities that are underused because adopting the new language
-                takes significant training and time. [36] Redesigning clinical process is often an
-                external quality improvement initiative in addition to implementing a good EHR
-                system, adding more burden and disrupting the on-going flow within the existing EHR
-                capability. </para>
-            <para>Interoperability in healthcare is inherently more complex than in any other fields
-                because achieving the purpose of interoperability involves multiple stakeholders on
-                different sectors within healthcare and each of their agreement with the following
-                stakeholders: payers, providers and pharmaceutical components. In addition,
-                different countries operate on various models of healthcare insurance and network
-                management that its own EHR system and interoperability planning need to scrutinize.
-                Local, state, and federal regulations must cooperate with private and NGO
-                institutions to solve these challenges. [36] </para>
+                and management. A key priority for global efforts to improve healthcare IT should be
+                addressing the limited capabilities of  EHRs, which is widely recognized as the most
+                significant barrier to progress. This barrier is directly tied to the “poor
+                usability” barrier in cases where EHRs possess capabilities that are underutilized
+                because adopting the new language takes significant training and time. [108]
+                Redesigning clinical process is often an external quality improvement initiative in
+                addition to implement a good EHR system, adding additional burden and disrupting the
+                ongoing flow within the existing EHR capability. </para>
+            <para>Interoperability in healthcare is inherently more complex than in other fields
+                because it requires collaboration among multiple stakeholders from various sectors
+                including payers, providers, and pharmaceutical companies. Achieving true
+                interoperability depends upon reaching a consensus and coordinated agreement among
+                all these groups. In addition, different countries operate on various models of
+                healthcare insurance and network management that its own EHR system and
+                interoperability planning need to scrutinize. Local, state, and federal regulations
+                must cooperate with private and NGO institutions to solve these challenges. [108] </para>
         </section>
-    </section>
-    <section>
-        <title>References</title>
-        <orderedlist>
-            <listitem>
-                <para>Cholan RA, Pappas G, Rehwoldt G, Sills AK, Korte ED, Appleton IK, et al.
-                    Encoding laboratory testing data: case studies of the national implementation of
-                    HHS requirements and related standards in five laboratories. Journal of the
-                    American Medical Informatics Association [Internet]. 2022 July 12 [cited 2025
-                    Aug 5];29(8):1372–80. Available from:
-                    https://academic.oup.com/jamia/article/29/8/1372/6592172</para>
-            </listitem>
-            <listitem>
-                <para>Bernstam EV, Warner JL, Krauss JC, Ambinder E, Rubinstein WS, Komatsoulis G,
-                    et al. Quantitating and assessing interoperability between electronic health
-                    records. J Am Med Inform Assoc. 2022 Apr 13;29(5):753–60.</para>
-            </listitem>
-            <listitem>
-                <para>Greene DN, McClintock DS, Durant TJS. Interoperability: COVID-19 as an Impetus
-                    for Change. Clin Chem [Internet]. 2021 Feb 13 [cited 2025 Aug 5];hvab006.
-                    Available from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7929044/</para>
-            </listitem>
-            <listitem>
-                <para>Holst J. Global Health – emergence, hegemonic trends and biomedical
-                    reductionism. Global Health [Internet]. 2020 May 6 [cited 2025 Aug 5];16:42.
-                    Available from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7201392/</para>
-            </listitem>
-            <listitem>
-                <para>Palilonis M. Wake Forest University. 2020. An Introduction to Global Health
-                    and Global Health Ethics: A Brief History of Global Health. Available from:
-                    https://cbhs.wfu.edu/wp-content/uploads/2020/03/Topic-3-A-Brief-History-of-Global-Health.pdf</para>
-            </listitem>
-            <listitem>
-                <para>Farmer P, Kleinman A, Kim J, Balisico M. Reimagining Global Health: An
-                    Introduction. United States (US): California; 2013. (Series in Public
-                    Anthropology).</para>
-            </listitem>
-            <listitem>
-                <para>Boudreau F. United States (US): The Milbank Memorial Fund Quarterly. 1933.
-                    Health Committee of the League of Nations.</para>
-            </listitem>
-            <listitem>
-                <para>History of the Pan American Health Organization (PAHO) - PAHO/WHO | Pan
-                    American Health Organization [Internet]. [cited 2025 Aug 5]. Available from:
-                    https://www.paho.org/en/who-we-are/history-pan-american-health-organization-paho</para>
-            </listitem>
-            <listitem>
-                <para>International Health Board Archives [Internet]. REsource. [cited 2025 Aug 5].
-                    Available from:
-                    https://resource.rockarch.org/institutions/international-health-board/</para>
-            </listitem>
-            <listitem>
-                <para>International Monetary Fund. [Internet]. 2024. What is the IMF? Available
-                    from: https://www.imf.org/en/About/Factsheets/IMF-at-a-Glance</para>
-            </listitem>
-            <listitem>
-                <para>World Bank [Internet]. [cited 2025 Aug 5]. History. Available from:
-                    https://www.worldbank.org/en/archive/history</para>
-            </listitem>
-            <listitem>
-                <para>Nungarai N. Lausanne Movement. 2024 [cited 2025 Aug 5]. The 21st Century
-                    Healthcare Missionary. Available from:
-                    https://lausanne.org/global-analysis/the-changing-face-of-healthcare-missions-opportunities-and-challenges-in-the-21st-century</para>
-            </listitem>
-            <listitem>
-                <para>WHO [Internet]. 2021. World Health Organization. Global strategy on digital
-                    health 2020-2025. Available from:
-                    https://www.who.int/docs/default-source/documents/gs4dhdaa2a9f352b0445bafbc79ca799dce4d.pdf</para>
-            </listitem>
-            <listitem>
-                <para>The Commonwealth Fund [Internet]. 2021. The Federal Government Has Put
-                    Billions into Promoting electronic Health Record Use: How is it Going? Available
-                    from: https://www.commonwealthfund.org/improving-health-care-quality</para>
-            </listitem>
-            <listitem>
-                <para>SNOMED International [Internet]. [cited 2025 Aug 5]. Partnerships. Available
-                    from: https://www.snomed.org/our-partnerships</para>
-            </listitem>
-            <listitem>
-                <para>World Health Assembly [Internet]. [cited 2025 Aug 5]. Available from:
-                    https://www.who.int/about/governance/world-health-assembly</para>
-            </listitem>
-            <listitem>
-                <para>DICOM [Internet]. [cited 2025 Aug 5]. About DICOM- Overview. Available from:
-                    https://www.dicomstandard.org/about</para>
-            </listitem>
-            <listitem>
-                <para>About IMDRF | International Medical Device Regulators Forum [Internet]. [cited
-                    2025 Aug 5]. Available from: https://www.imdrf.org/about</para>
-            </listitem>
-            <listitem>
-                <para>What we do - GMDN [Internet]. 2024 [cited 2025 Aug 5]. Available from:
-                    https://www.gmdnagency.org/what-we-do/</para>
-            </listitem>
-            <listitem>
-                <para>About Health Level Seven International | HL7 International [Internet]. [cited
-                    2025 Aug 5]. Available from: https://www.hl7.org/about/index.cfm?ref=nav</para>
-            </listitem>
-            <listitem>
-                <para>IHE International [Internet]. [cited 2025 Aug 5]. FAQ. Available from:
-                    https://www.ihe.net/about_ihe/faq/</para>
-            </listitem>
-            <listitem>
-                <para>MedDRA [Internet]. [cited 2025 Aug 5]. Available from:
-                    https://www.meddra.org/</para>
-            </listitem>
-            <listitem>
-                <para>Regenstrief Institute Inc. and SNOMED International [Internet]. 2024 [cited
-                    2024 Mar 25]. International Health Terminology Standards Development
-                    Organization. Available from:
-                    https://confluence.ihtsdotools.org/display/DOCGLOSS/International+Health+Terminology+Standards+Development+Organisation</para>
-            </listitem>
-            <listitem>
-                <para>Regenstrief Institute Inc. and SNOMED International [Internet]. 2024. SNOMED
-                    International determines global standards for health terms, an essential part of
-                    improving the health of humankind. Available from:
-                    https://www.snomed.org/</para>
-            </listitem>
-            <listitem>
-                <para>Cornet R, de Keizer N. Forty years of SNOMED: a literature review. BMC Med
-                    Inform Decis Mak [Internet]. 2008 Oct 27 [cited 2025 Aug 5];8(Suppl 1):S2.
-                    Available from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2582789/</para>
-            </listitem>
-            <listitem>
-                <para>SNOMED International [Internet]. [cited 2025 Aug 5]. Frequently Asked
-                    Questions. Available from: https://www.snomed.org</para>
-            </listitem>
-            <listitem>
-                <para>American Medical Association [Internet]. 2025 [cited 2025 Aug 5]. CPT®.
-                    Available from: https://www.ama-assn.org/practice-management/cpt</para>
-            </listitem>
-            <listitem>
-                <para>VocabularyDocumentation [Internet]. [cited 2025 Aug 5]. Available from:
-                    https://www.nlm.nih.gov/research/umls/sourcereleasedocs/current/HCPCS/index.html</para>
-            </listitem>
-            <listitem>
-                <para>Centers for Disease Control and Prevention. [Internet]. 2021 [cited 2024 Mar
-                    7]. International Classification of Disease, Tenth Revision (ICD-10). Available
-                    from: https://www.cdc.gov/nchs/icd/icd10.htm</para>
-            </listitem>
-            <listitem>
-                <para>LOINC [Internet]. [cited 2025 Aug 5]. LOINC – The freely available standard
-                    for identifying health measurements, observations, and documents. Available
-                    from: https://loinc.org/</para>
-            </listitem>
-            <listitem>
-                <para>Medicomp Systems [Internet]. 2024 [cited 2025 Aug 5]. Medicomp Systems.
-                    Medicomp Systems: A History of Innovation. Available from:
-                    https://medicomp.com/history/</para>
-            </listitem>
-            <listitem>
-                <para>Terminology Standards | HIMSS [Internet]. 2017 [cited 2025 Aug 5]. Available
-                    from: https://legacy.himss.org/terminology-standards</para>
-            </listitem>
-            <listitem>
-                <para>Barriers to Health IT Interoperability Are Not Just Technical; They Also
-                    Include Legal and Policy Impediments [Internet]. eHealth Exchange. 2024 [cited
-                    2024 Mar 27]. Available from:
-                    https://ehealthexchange.org/what-we-do/governance/</para>
-            </listitem>
-            <listitem>
-                <para>Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR) |
-                    HealthIT.gov [Internet]. [cited 2025 Aug 5]. Available from:
-                    https://www.healthit.gov/topic/standards-technology/standards/fhir</para>
-            </listitem>
-            <listitem>
-                <para>The Epidemic Intelligence from Open Sources Initiative [Internet]. [cited 2025
-                    Aug 5]. Available from: https://www.who.int/initiatives/eios</para>
-            </listitem>
-            <listitem>
-                <para>Global Digital Health Partnership (GDNP). Advancing Interoperability Together
-                    Globally: GDHP White Paper on Interoperability [Internet]. 2020 [cited 2024 Mar
-                    26]. Available from: <link
-                        xlink:href="https://gdhp.health/wp-content/uploads/2022/03/GDHP-Interop-Final.pdf"
-                        >https://gdhp.health/wp-content/uploads/2022/03/GDHP-Interop-Final.pdf</link></para>
-            </listitem>
-        </orderedlist>
     </section>
 </chapter>

@@ -35,19 +35,16 @@
         <para>Instead of fully describing the state of a domain, as one would with a database, DLs
             contain axioms, or statements. These axioms capture partial knowledge about the
             situation that the ontology is describing, and there may be many different states of the
-            world that are consistent with the ontology<footnote>
-                <para>Krötzsch, M., Simančík, F., Horrocks, I. (2013). A Description Logic Primer.
-                    Retrieved from https://arxiv.org/pdf/1201.4089.pdf</para>
-            </footnote>. With a proper modeling of formal semantics, DLs allows humans and computer
-            systems to unambiguously exchange ontologies without losing their meaning, and also
-            provides the capability to infer (reason) additional information from given facts in
-            order compute a conclusion. </para>
+            world that are consistent with the ontology [8]. With a proper modeling of formal
+            semantics, DLs allows humans and computer systems to unambiguously exchange ontologies
+            without losing their meaning, and also provides the capability to infer (reason)
+            additional information from given facts in order compute a conclusion. </para>
 
         <section>
             <title>Definitional Operators</title>
             <para>Once statements or axioms are established, a set of syntax and properties are used
                 for further expressivity. Below is an overview of common DL syntax and properties
-                seen in the medical domain, and major design considerations for Solor. </para>
+                seen in the medical domain, and major design considerations for Komet. </para>
             <section xml:id="section_8c35c127-885e-4150-b5e2-61a8b52781ae">
                 <title>Conjunction &#x2227;</title>
                 <para>Example: A &#x2227; B (A and B)</para>
@@ -103,9 +100,8 @@
                 <title>Defining relationships</title>
                 <para>Role relationships are represented as existential restrictions. These are used
                     to logically represent a concept by establishing a relationship with other
-                    concepts. This will be further elaborated in the
-                    <?oxy_comment_start author="steph" timestamp="20190306T100949-0700" comment="Insert &quot;the&quot; here, before &quot;Solor&quot;." id="s4x_vqc_1hb" flag="done" mid="3"?><?oxy_comment_start author="erhwang" timestamp="20190307T083955-0700" comment="fixed" parentID="s4x_vqc_1hb" flag="done"?>Solor<?oxy_comment_end?><?oxy_comment_end mid="3"?>
-                    Definitional Knowledge chapter of the Definitional section.</para>
+                    concepts. This will be further elaborated in the Komet Definitional Knowledge
+                    chapter of the Definitional section.</para>
             </section>
             <section xml:id="section_898d51d6-ab3a-4d63-8922-2c64d1dc3beb">
                 <title>Quantities</title>
@@ -114,9 +110,7 @@
                     to other concepts). The binary operators, equal to, greater than, greater than
                     or equal to, less than, and less than or equal to, can be used in concrete
                     domain expressions, and literal values can be integers, floating point numbers,
-                    string literals, and dates. <footnote>
-                        <para>SNOROCKET 2.0 Concurrent Domains and Concurrent Classification</para>
-                    </footnote></para>
+                    string literals, and dates [9].</para>
                 <para>Concrete domains are used to model quantities in the definition of concepts,
                     such as defining how much ibuprofen may be in a medication tablet. This is
                     further examined in the Topics of Concern chapter of the Definitional
@@ -124,13 +118,13 @@
             </section>
             <section>
                 <title>EL++</title>
-                <para>Since Solor is based on SNOMED, and SNOMED utilizes a subset of EL++, a brief
+                <para>Since Komet is based on SNOMED, and SNOMED utilizes a subset of EL++, a brief
                     introduction to this topic appears to be necessary. </para>
                 <para>According to <link xlink:href="https://www.w3.org/2007/OWL/wiki/EL"
-                    >w3.org</link><footnote><para>https://www.w3.org/2007/OWL/wiki/EL</para></footnote>, EL++ is a lightweight description logic that admits sound
-                    and complete reasoning in polytime. It is a syntactic fragment of OWL 1.1 DL. In
-                    particular, it shares the semantics of OWL 1.1 DL. The design goals behind EL++
-                    were two-fold: <itemizedlist>
+                        >w3.org</link>, EL++ is a lightweight description logic that admits sound
+                    and complete reasoning in polytime [10]. It is a syntactic fragment of OWL 1.1
+                    DL. In particular, it shares the semantics of OWL 1.1 DL. The design goals
+                    behind EL++ were two-fold: <itemizedlist>
                         <listitem>
                             <para>capture the expressive power that is used by large-scale
                                 ontologies from practical applications</para>
@@ -141,38 +135,37 @@
                         </listitem>
                     </itemizedlist>
                 </para>
-                <para>As of 2011<footnote><para>https://en.wikipedia.org/wiki/SNOMED_CT</para>
-                </footnote>, SNOMED CT content limits itself to a subset of the EL++ formalism, restricting itself to
-                    the following operators: 
-                    <itemizedlist>
+                <para>As of 2011, SNOMED CT content limits itself to a subset of the EL++ formalism,
+                    restricting itself to the following operators [11]: <itemizedlist>
                         <listitem>
                             <para>Top, bottom</para>
                         </listitem>
                         <listitem>
-                            <para>Primitive roles and concepts with asserted
-                                parent(s) for each</para>
+                            <para>Primitive roles and concepts with asserted parent(s) for
+                                each</para>
                         </listitem>
                         <listitem>
                             <para>Concept definition and conjunction but NOT disjunction or
                                 representation of
-                                <?oxy_comment_start author="steph" timestamp="20190306T102859-0700" comment="Should this be changed to representation of absence?" id="ghz_drc_1hb" flag="done" mid="8"?><?oxy_comment_start author="erhwang" timestamp="20190307T084216-0700" comment="fixed" parentID="ghz_drc_1hb" flag="done"?>absence<?oxy_comment_end?><?oxy_comment_end mid="8"?></para>
+                                <?oxy_comment_start author="steph" timestamp="20190306T102859-0700" comment="Should this be changed to representation of absence?" id="ghz_drc_1hb" flag="done"?><?oxy_comment_start author="erhwang" timestamp="20190307T084216-0700" comment="fixed" parentID="ghz_drc_1hb" flag="done" mid="3"?>absence<?oxy_comment_end mid="3"?><?oxy_comment_end?></para>
                         </listitem>
                         <listitem>
-                            <para>Role hierarchy but not role composition Domain and range constraints</para>
+                            <para>Role hierarchy but not role composition Domain and range
+                                constraints</para>
                         </listitem>
                         <listitem>
                             <para>Existential but not universal restriction</para>
                         </listitem>
                         <listitem>
-                            <para>A restricted form of role inclusion
-                                axiom (xRy ^ ySz => xRz)</para>
+                            <para>A restricted form of role inclusion axiom (xRy ^ ySz =>
+                                xRz)</para>
                         </listitem>
                         <listitem>
-                            <para>The logic will be extended in the near future to
-                                include General Concept Inclusion Axioms</para>
+                            <para>The logic will be extended in the near future to include General
+                                Concept Inclusion Axioms</para>
                         </listitem>
-                    </itemizedlist>   
-                       </para>
+                    </itemizedlist>
+                </para>
             </section>
             
             

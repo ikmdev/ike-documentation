@@ -138,7 +138,7 @@
                 structured representation of the knowledge domain.
                 <?oxy_comment_start author="timowilliams" timestamp="20190827T125144-0500" comment="Change this to be an example of simplifying the concept hierarchy eliminating some the the lesser used concepts under Diabetes mellitus type 1.  "?>For
                 instance, in the following
-                <?oxy_comment_start author="rcholan" timestamp="20190528T234635-0400" comment="Need to update the following image." mid="4"?><?oxy_comment_start author="steph" timestamp="20190806T090107-0600" comment="Yes, the font without the blue background is very light and should be in a darker color instead of light grey." id="rnr_hzd_r3b" mid="5"?><?oxy_comment_start author="rcholan" timestamp="20190808T095157-0400" comment="We will fix in a future iteration" parentID="rnr_hzd_r3b"?>screenshot<?oxy_comment_end?><?oxy_comment_end mid="5"?><?oxy_comment_end mid="4"?>,
+                <?oxy_comment_start author="rcholan" timestamp="20190528T234635-0400" comment="Need to update the following image." mid="4"?><?oxy_comment_start author="steph" timestamp="20190806T090107-0600" comment="Yes, the font without the blue background is very light and should be in a darker color instead of light grey." id="rnr_hzd_r3b" mid="5"?><?oxy_comment_start author="rcholan" timestamp="20190808T095157-0400" comment="We will fix in a future iteration" parentID="rnr_hzd_r3b"?><xref linkend="InterfaceTerm"></xref><?oxy_comment_end?><?oxy_comment_end mid="5"?><?oxy_comment_end mid="4"?>,
                 when "Diabetes mellitus type 1" is selected, the options for "type 2" are hidden and
                 de-emphasized to the user.</para><?oxy_comment_end?><figure xml:id="InterfaceTerm">
                     <title>Interface Term</title>
@@ -221,16 +221,6 @@
         <para>The capability of associating statements enables the use of Assertional Knowledge to
             clinical decision support applications, clinical pathways and general information (“info
             button”) that can be made available to users of EMR systems. </para>
-    </section>
-    <section>
-        <title>References</title>
-        <orderedlist>
-            <listitem>
-                <para>Rosenbloom ST, Miller RA, Johnson KB, Elkin PL, Brown SH. Interface
-                    terminologies: Facilitating direct entry of clinical data into Electronic Health
-                    Record Systems. J AM Med Inform Assoc.. 2006;13(3):277–88.</para>
-            </listitem>
-        </orderedlist>
     </section>
     
     

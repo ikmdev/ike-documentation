@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>References</title>
+    <para>
+        <orderedlist>
+            <listitem>
+                <para>Bodenreider O, Cornet R, Vreeman DJ. Recent Developments in Clinical
+                    Terminologies - SNOMED CT, LOINC, and RxNorm. Yearb Med Inform. 2018
+                    Aug;27(1):129-139. doi: 10.1055/s-0038-1667077. Epub 2018 Aug 29. PMID:
+                    30157516; PMCID: PMC6115234.</para>
+            </listitem>
+            <listitem>
+                <para>McDonald C, Huff SM, Suico J, Mercer K. Logical Observation Identifiers Names
+                    and Codes (LOINC) users’ guide. <emphasis role="italic">Indianapolis:
+                        Regenstrief Institute. </emphasis>2004</para>
+            </listitem>
+            <listitem>
+                <para>SNOMED Owl Toolkit [Internet]. IHTSDO. June 3 2022. Available from: <link
+                        xlink:href="https://github.com/IHTSDO/snomed-owl-toolkit"
+                        >IHTSDO/snomed-owl-toolkit: The official SNOMED CT OWL Toolkit. OWL
+                        conversion, classification and authoring support. (github.com)</link></para>
+            </listitem>
+            <listitem>
+                <para>OWL refsets preview [Internet]. IHTSDO. Sept 28 2022. Available from: <link
+                        xlink:href="https://confluence.ihtsdotools.org/mag/owl-refsets-preview"
+                        >https://confluence.ihtsdotools.org/mag/owl-refsets-preview</link></para>
+            </listitem>
+            <listitem>
+                <para>Cimino, J. Desiderata for controlled medical vocabularies in the twenty-first
+                    century. Methods of information in medicine vol. 37,4-5 (1998): 394-403.</para>
+            </listitem>
+            <listitem>
+                <para> van Berkum MM, Rallins MC, Spackman KA. Choosing Sides. Assigning Laterality
+                    as an Attribute in SNOMED® CT. Proc AMIA Symp [Internet]. 2002 [cited 2025 Aug
+                    29];1184. Available from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2244155/
+                </para>
+            </listitem>
+            <listitem>
+                <para> Scope (computer science). In: Wikipedia [Internet]. 2025 [cited 2025 Aug 29].
+                    Available from:
+                    https://en.wikipedia.org/w/index.php?title=Scope_(computer_science)&amp;oldid=1303386321</para>
+            </listitem>
+            <listitem>
+                <para> Google Docs [Internet]. [cited 2025 Aug 29]. SNOMED DL Profile Enhancements.
+                    Available from:
+                    https://docs.google.com/document/d/1tqNEA6S4fEF4fgj15OPabYA2E0VTz8epxvRRwczKizQ/edit?tab=t.0&amp;usp=embed_facebook</para>
+            </listitem>
+            <listitem>
+                <para>Krötzsch M, Simancik F, Horrocks I. A Description Logic Primer [Internet].
+                    arXiv; 2012 [cited 2025 Aug 27]. Available from: https://arxiv.org/abs/1201.4089
+                </para>
+            </listitem>
+            <listitem>
+                <para> Metke-Jimenez A, Lawley M. The Australian e-Health Research Centre. [cited
+                    2025 Aug 27]. Snorocket 2.0: Concrete Domains and Concurrent Classification.
+                    Available from:
+                    https://scispace.com/pdf/snorocket-2-0-concrete-domains-and-concurrent-classification-3gmmasfnux.pdf#:~:text=This%20paper%20presents%20Snorocket%202.0%2C%20a%20high-performance%20ontology,SNOMED%20CT%20and%20support%20incremental%20classi%20cation%20%5B1%5D.
+                </para>
+            </listitem>
+            <listitem>
+                <para> EL - OWL [Internet]. [cited 2025 Aug 27]. Available from:
+                    https://www.w3.org/2007/OWL/wiki/EL </para>
+            </listitem>
+            <listitem>
+                <para> SNOMED CT. In: Wikipedia [Internet]. 2025 [cited 2025 Aug 27]. Available
+                    from: https://en.wikipedia.org/w/index.php?title=SNOMED_CT&amp;oldid=1300576993
+                </para>
+            </listitem>
+            <listitem>
+                <para>Spackman K, Guillermo R. Examining SNOMED from the perspective of formal
+                    ontological principles: Some preliminary analysis and observations. KR-MED 2004
+                    Proceedings 2004; 72-80. </para>
+            </listitem>
+            <listitem>
+                <para>Campbell KE. Distributed development of a logic based controlled medical
+                    Terminology. PhD Dissertation, Stanford University, June 1997. </para>
+            </listitem>
+            <listitem>
+                <para>Cornet R, Chute CG. Health Concept and Knowledge Management: Twenty-five Years
+                    of Evolution. Yearb Med Inform. 2016 Aug 2;Suppl 1(Suppl 1):S32-41. doi:
+                    10.15265/IYS-2016-s037. PMID: 27488404; PMCID: PMC5171511.</para>
+            </listitem>
+            <listitem>
+                <para>Rudolph S. Foundations of Description Logics. Krlsruhe Institute of Technology
+                    [Internet]. 2011 May [cited 2022 Jul 7]. Available from:
+                    https://www.aifb.kit.edu/images/1/19/DL-Intro.pdf </para>
+            </listitem>
+            <listitem>
+                <para>Stram M, Seheult J, Sinard J, et al. ; Members of the Informatics Committee,
+                    College of American Pathologists. A survey of LOINC code selection practices
+                    among participants of the College of American Pathologists Coagulation (CGL) and
+                    Cardiac Markers (CRT) proficiency testing programs. Arch Pathol Lab Med 2020;
+                    144 (5): 586–96.</para>
+            </listitem>
+            <listitem>
+                <para>Enhancing the drug ontology with semantically-rich representation of National
+                    Drug codes and RxNorm unique concept identifiers [Internet]. BMC Bioinformatics.
+                    Available from: <link
+                        xlink:href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-3192-8"
+                        >https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-3192-8</link></para>
+            </listitem>
+            <listitem>
+                <para>Bietenbeck A, Boeker M, Schulz S. NPU, loinc, and SNOMED CT: A comparison of
+                    terminologies for laboratory results reveals individual advantages and a lack of
+                    possibilities to encode interpretive comments [Internet]. De Gruyter. De Gru
+                </para>
+            </listitem>
+            <listitem>
+                <para>SHIELD Participants. Discussion on LOINC Challenges. [Personal interview, 6
+                    May] Zoom; 2022 (unpublished).</para>
+            </listitem>
+            <listitem>
+                <para>Lin M, Vreeman D, McDonald C, et al. Auditing consistency and usefulness of
+                    LOINC use among three large institutions—using version spaces for grouping LOINC
+                    codes. J Biomed Inform 2012; 45 (4): 658–66.</para>
+            </listitem>
+            <listitem>
+                <para>Lin M, Vreeman D, McDonald C, et al. A characterization of local LOINC mapping
+                    for laboratory tests in three large institutions. Methods Inf Med 2011; 50 (2):
+                    105–14.</para>
+            </listitem>
+            <listitem>
+                <para>Cholan RA, Pappas G, Rehwoldt G, Sills AK, Korte ED, Appleton IK, Scott NM,
+                    Rubinstein WS, Brenner SA, Merrick R, Hadden WC, Campbell KE, Waters MS.
+                    Encoding laboratory testing data: case studies of the national implementation of
+                    HHS requirements and related standards in five laboratories. J Am Med Inform
+                    Assoc. 2022 May 25:ocac072. doi: 10.1093/jamia/ocac072. Epub ahead of print.
+                    PMID: 35639494.</para>
+            </listitem>
+            <listitem>
+                <para>Adamusiak T, Bodenreider O. Quality assurance in LOINC using Description
+                    Logic. AMIA Annu Symp Proc. 2012;2012:1099-108. Epub 2012 Nov 3. PMID: 23304386;
+                    PMCID: PMC3540427.</para>
+            </listitem>
+            <listitem>
+                <para>LOINC Document Ontology. Regenstrief [Internet]. 2022 [cited 2022 Jul 7].
+                    Available from: https://loinc.org/document-ontology/ </para>
+            </listitem>
+            <listitem>
+                <para>LOINC Hierarchy Browser [Internet]. Regenstrief. Available from:
+                    https://loinc.org/tree/?about </para>
+            </listitem>
+            <listitem>
+                <para>LOINC License [Internet]. Copyright Notice and License. Regenstrief. 2020.
+                    Available from: https://loinc.org/kb/license/ </para>
+            </listitem>
+            <listitem>
+                <para>Campbell J, Campbell WS. Nebraska Lexicon Release Notes: Cancer Protocols and
+                    Observables Ontology [Internet]. 2017 Mar [cited 2022 Jul 7]. Available from:
+                    https://app1.unmc.edu/pathmicro/umls/docs/Nebraska_Lexicon_Release_Notes_20170331.pdf
+                </para>
+            </listitem>
+            <listitem>
+                <para>LOINC Submission Queue Stats [Internet]. Regenstreif. July 6 2022. Available
+                    from: <link xlink:href="https://loinc.org/submissions/stats/"
+                        >https://loinc.org/submissions/stats/</link></para>
+            </listitem>
+            <listitem>
+                <para>Nelson SJ, Zeng K, Kilbourne J, Powell T, Moore R. Normalized names for
+                    clinical drugs: RxNorm at 6 years. J Am Med Inform Assoc. 2011
+                    Jul-Aug;18(4):441-8. doi: 10.1136/amiajnl-2011-000116. Epub 2011 Apr 21. PMID:
+                    21515544; PMCID: PMC3128404.</para>
+            </listitem>
+            <listitem>
+                <para>Termlex. LOINC and SNOMED CT: LOINC SNOMED CT Extension - why, what and how
+                    [Internet]. LinkedIn. 2022 [cited 2022Oct19]. Available from:
+                    https://www.linkedin.com/pulse/loinc-snomed-ct-extension-why-what-how-termlex/?trackingId=XkAk09Q2Xn3Y0kj2HUSnXg%3D%3D
+                </para>
+            </listitem>
+            <listitem>
+                <para>Covid-19 value sets in VSAC [Internet]. U.S. National Library of Medicine.
+                    National Institutes of Health; [cited 2023Mar10]. Available from: <link
+                        xlink:href="https://www.nlm.nih.gov/vsac/support/usingvsac/covid19valuesets.html"
+                        >https://www.nlm.nih.gov/vsac/support/usingvsac/covid19valuesets.html</link></para>
+            </listitem>
+        </orderedlist>
+    </para>
+</chapter>

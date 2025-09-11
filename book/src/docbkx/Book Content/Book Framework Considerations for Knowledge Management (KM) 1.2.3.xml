@@ -9,25 +9,24 @@
         <para>This document will serve to identify a framework for comparing KM technologies.
             Incorporated within is analysis of the architecture and codebase for any known
             scalability, licensing, and privacy needs, as well as how to manage these non-functional
-            requirements continuously as the product develops. In doing this, we will make
-            suggestions for software solutions to cover code maturity, automation, and
-            security.</para>
+            requirements as the product develops. In doing this, we will make suggestions for
+            software solutions to cover code maturity, automation, and security.</para>
     </sect1>
     <sect1>
         <title>Introduction to KM Processes</title>
         <para>As we progress along our journey to improve the open-source software base for a
             reference implementation for IKM capabilities, it is important to take note of what is
             currently being done and what we will focus on as we develop this work further. As part
-            of this observation, we are defining the processes that needs to be executed to achieve
+            of this observation, we are defining the processes that need to be executed to achieve
             the goals of this work, such as becoming a well-supported and contributed open-source
             product that encourages adoption by the larger community.</para>
     </sect1>
     <sect1>
         <title>Current State Analysis</title>
         <para>As part of the work on the KM tooling, we first need to document the current state of
-            the project so that we can define a future state and develop a plan to address any
-            concerns. To do this, we have completed code reviews and stakeholder interviews to
-            ensure that we understand what work is outstanding. </para>
+            the project so we can define a future state and develop a plan to address any concerns.
+            To do this, we have completed code reviews and stakeholder interviews to ensure that we
+            understand what work is outstanding. </para>
     </sect1>
     <sect1>
         <title>Methodology</title>
@@ -38,17 +37,16 @@
             <para>Stakeholder interviewers were conducted with identified individuals that had
                 either prior experience with the existing KM code base (e.g., Komet, ISAAC,
                 Tinkar-core) or the Informatics Knowledge Architecture (e.g., a description-logic
-                based integration of <emphasis role="bold">S</emphasis>N<emphasis role="bold"
-                    >O</emphasis>MED CT®, <emphasis role="bold">LO</emphasis>INC®, and <emphasis
-                    role="bold">R</emphasis>xNorm [Solor]). A basic semi-structured thematic
-                analysis was performed to identify qualitative themes from the interview.</para>
+                based integration of SNOMED CT®, LOINC®, and RxNorm). A basic semi-structured
+                thematic analysis was performed to identify qualitative themes from the
+                interview.</para>
         </sect2>
         <sect2>
             <title>Requirements, Architecture, and Documentation Review</title>
             <para>Analysis included reviewing the website documentation, READMEs, any ancillary
                 postscript/PowerPoint/etc. documentation that was available to determine how a
-                customer would approach using the software and how an open-sourced developer would
-                approach to contributing to the codebase.</para>
+                customer would approach using the software and how an open-source developer would
+                approach contributing to the codebase.</para>
             <para>Analysis included reviewing any documentation that discussed what the project must
                 do and must continue to do. This could be contained in provided requirements lists
                 or architecture diagrams. Architecture diagrams include (but are not limited to)
@@ -60,10 +58,10 @@
         <sect2>
             <title>Code Review</title>
             <para>Analysis of code included doing a full code review, as is described in further
-                sections. This code will determine how well documented, object-oriented (OO) (when
-                applicable), layered, and modular the code is. Analysis will also include validating
-                the frequency in which automated unit and integration testing is being performed on
-                the codebase.</para>
+                sections. This code determined how well documented, object-oriented (OO) (when
+                applicable), layered, and modular the code was. Analysis also included validating
+                the frequency with which automated unit and integration testing was performed on the
+                codebase.</para>
         </sect2>
     </sect1>
     <sect1>
@@ -74,26 +72,27 @@
         <sect2>
             <title>Requirements Review</title>
             <para>There is a general lack of both functional and non-functional requirements. A lot
-                of promotional material regarding the design of Solor and its Knowledge Architecture
-                exist, from which some functional requirements could be inferred, but this isn’t
+                of promotional material regarding the design of Komet and its Knowledge Architecture
+                exist, from which some functional requirements could be inferred, but this is not
                 sufficient to develop highly reliable KM capabilities. There are some existing Jira
                 and Confluence sites from Logica (formerly HSPC) that describe some groupings of
                 capabilities and functionality (e.g., Personas, SNOMED CT® export, Simple Search)
-                but not enough detail is present to be considered requirements user stories can be
-                based off.</para>
-            <para>Additionally, there is a lack of Key Performance Indicators and Service Level
-                Agreements as they pertain to the larger idea of a reference implementation for IKM
-                capabilities that will be host to and a conduit of resolving extremely complex
-                knowledge standards-based issues within the health IT landscape.</para>
+                but not enough detail is present to be considered requirements that can serve as the
+                basis for user stories.</para>
+            <para>Additionally, Key Performance Indicators and Service Level Agreements are lacking
+                in relation to the broader concept of a reference implementation for IKM
+                capabilities. Such an implementation is intended to serve as both a host and a
+                conduit for addressing highly complex, standards-based knowledge challenges within
+                the health IT landscape.</para>
         </sect2>
         <sect2>
             <title>Architecture and Documentation Review</title>
             <para>Identified through various stakeholder interviews were Unified Modeling Language
                 (UML) diagrams that detailed some aspects of Tinkar data structure and overall class
-                hierarchy. These were found within HL7 informational ballot for Tinkar and some HL7
-                Vocabulary working group presentations. There were also some identified attempts at
-                using JetBrains IntelliJ IDEA IDE to auto-generate UML class diagrams of core Tinkar
-                concepts.</para>
+                hierarchy. These were found within the HL7 informational ballot for Tinkar and some
+                HL7 Vocabulary working group presentations. There were also some identified attempts
+                at using JetBrains IntelliJ IDEA IDE to auto-generate UML class diagrams of core
+                Tinkar concepts.</para>
             <para>As mentioned previously, some pre-existing Jira and Confluence websites (Logica)
                 were identified and found to contain some outdated information regarding the
                 Knowledge Architecture.</para>
@@ -102,17 +101,21 @@
             <title>Code Review</title>
             <para>In general, there is no formal external documentation describing code
                 functionality – either at the class or method level. Some Java Classes were
-                identified to have properly formatted JavaDoc annotations, but this wasn’t
+                identified to have properly formatted JavaDoc annotations, but this was not
                 consistently applied across the entire code base. Below the unit test code was
                 examined using a Java-based code coverage tool (JaCoCo)</para><figure xml:id="UnitTestCodeCoverageReportforKometUsingJaCoCo">
-                    <title>Unit Test Code Coverage Report for Komet Using JaCoCo</title>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata fileref="../images/Unit%20Test%20Code%20Coverage%20Report%20for%20Komet%20Using%20JaCoCo.svg" scale="80" align="center"/>
-                            <imagedata fileref="../images/Unit%20Test%20Code%20Coverage%20Report%20for%20Komet%20Using%20JaCoCo.svg" scale="80" align="center"/>
-                        </imageobject>
-                    </mediaobject>
-                </figure>
+                <?oxy_custom_start type="oxy_content_highlight" color="255,198,140"?>
+                <?oxy_comment_start author="ecundiff" timestamp="20250822T162237-0400" comment="These tables/images are not rendered in pdf build" mid="3"?>
+                <title>Unit Test Code Coverage Report for Komet Using
+                    JaCoCo<?oxy_custom_end?></title><?oxy_comment_end mid="3"?>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata
+                            fileref="../images/Unit Test Code Coverage Report for Komet Using JaCoCo.svg"
+                            scale="80" align="center"/>                        
+                    </imageobject>
+                </mediaobject>
+            </figure>
             <figure xml:id="UnitTestCodeCoverageReportforTinkarusingJaCoCo">
                 <title>Unit Test Code Coverage Report for Tinkar using JaCoCo</title>
                 <mediaobject>
@@ -129,10 +132,11 @@
                 identified as containing several large integration tests. These integration tests
                 currently use Junit5 (historically TestNG) to build test suites to validate that the
                 three main Tinkar providers Ephemeral, ulti-version store (MVStore), and Spined
-                Array properly load a preset test sample of Tinkar data. The selection of and
+                Array properly load a preset test sample of Tinkar data. The selection of an
                 adequate testing suite is important because the codebase utilizes inversion of
-                controls (or dependency injection) to start appropriate Tinkar-core “services” which
-                requires the testing suite to have proper setup and tear annotations.</para>
+                controls (or dependency injection) to start appropriate Tinkar-core “services.” This
+                appraoch requires the testing suite to have proper setup and teardown
+                annotations.</para>
             <para>Overall, the codebase had low code maturity. This is attributed to a lack of
                 continuous integration and continuous delivery infrastructure. It was identified
                 that historically a previous version of the codebase utilized the open-source
@@ -158,9 +162,9 @@
             will first define the use case in the architecture. Then, the team will create an
             Analysis of Alternatives to review with stakeholders. This analysis of alternatives must
             include resource and license costs as well as its fit with the system requirements. For
-            example, if it needs to be an extremely fast system and must use a key-value read
-            pattern, it will be defined empirically, when possible, how fast it is and how well it
-            fits that pattern.</para>
+            example, if the system needs to be extremely fast and must use a key-value read pattern,
+            its speed and suitability for that pattern will be defined empirically whenever
+            possible.</para>
     </sect1>
     <sect1>
         <title>Code Maturity</title>
@@ -169,16 +173,16 @@
             and maintainable the codebase is and how likely the code is to continuously meet
             functional and non-functional requirements upon release.</para>
         <para>To achieve a maintainable product, we need to make sure the documentation is thorough
-            and understandable, allowing for new developers to analyze the codebase and contribute
-            fixes to defects. Our processes must provide procedures for contributing code to the
-            codebase, encouraging feedback, and providing avenues for support. The procedures must
-            allow for traceability and reproduceable actions, enforcing consistency the output
+            and understandable, allowing new developers to analyze the codebase and contribute fixes
+            to defects. Our processes must provide procedures for contributing code to the codebase,
+            encouraging feedback, and providing avenues for support. The procedures must allow for
+            traceability and reproduceable actions, enforcing consistency in the output
             products.</para>
         <para>To guarantee that the code meets functional and non-functional requirements, one of
             the most important steps is automated and manual testing. Testing provides the ability
             to validate that functional and non-functional requirements are being met and regression
-            test when the code changes. There are many types of tests, and the ones that the teams
-            will focus on are:</para>
+            test when the code changes. There are many types of tests, though the teams will
+            concentrate on the following:</para>
         <itemizedlist>
             <listitem>
                 <para>Unit Tests</para>
@@ -205,7 +209,7 @@
         <sect2>
             <title>Code Reviews</title>
             <para>Code reviews are a way to ensure that the features being delivered match the
-                request and the architecture, to improve code quality and save time. This is because
+                request and the architecture to improve code quality and save time. This is because
                 code reviews:</para>
             <itemizedlist>
                 <listitem>
@@ -218,12 +222,13 @@
                     <para>mentor newer engineers.</para>
                 </listitem>
             </itemizedlist>
-            <para>We suggest doing code reviews inline as well as at a regularly scheduled interval.
-                For example, if you are using GitHub/GitLab, you should perform inline reviews on
-                the code pull/merge request, preferably keeping traceability via approvals. This can
-                be done by any team member but ideally those with the next most knowledge around a
-                subject. Then, on a weekly cadence, we suggest doing a review of stories that is or
-                has been closed so that everyone on the team has exposure to the changes.</para>
+            <para>We suggest conducting code reviews inline as well as at a regularly scheduled
+                interval. For example, if you are using GitHub/GitLab, you should perform inline
+                reviews on the code pull/merge request, preferably keeping traceability via
+                approvals. This can be done by any team member but ideally those with the next most
+                knowledge around a subject. Then, on a weekly cadence, we recommend reviewing
+                stories that are or have been closed so everyone on the team has exposure to the
+                changes.</para>
             <para>In doing a code review, you should make sure that:</para>
             <itemizedlist>
                 <listitem>
@@ -242,11 +247,11 @@
                     <para>any parallel programming is done safely.</para>
                 </listitem>
                 <listitem>
-                    <para>code isn’t more complex than it needs to be.</para>
+                    <para>code is not more complex than it needs to be.</para>
                 </listitem>
                 <listitem>
-                    <para>the developer isn’t implementing things they might need in the future but
-                        don’t know they need now.</para>
+                    <para>the developer is not implementing things they might need in the future but
+                        do not know they need now.</para>
                 </listitem>
                 <listitem>
                     <para>code has appropriate unit tests.</para>
@@ -269,15 +274,15 @@
                     <para>code conforms to our style guides.</para>
                 </listitem>
                 <listitem>
-                    <para>developers haven't (inadvertently or not) subverted code quality
+                    <para>developers have not (inadvertently or not) subverted code quality
                         checks.</para>
                 </listitem>
             </itemizedlist>
-            <para>Make sure to review <emphasis role="bold">every line</emphasis> of code you’ve
+            <para>Make sure to review <emphasis role="bold">every line</emphasis> of code you have
                 been asked to review, look at the <emphasis role="bold">context</emphasis>, make
-                sure you’re <emphasis role="bold">improving code health</emphasis>, and compliment
+                sure you are <emphasis role="bold">improving code health</emphasis>, and compliment
                 developers on <emphasis role="bold">good things</emphasis> that they do.</para>
-            <para>Some of these require some nuance, so we'll go into further detail below.</para>
+            <para>Some of these require some nuance, so we will go into further detail below.</para>
             <sect3>
                 <title>Functionality​</title>
                 <para>When executing a code review on a story, the team member should review the
@@ -288,16 +293,16 @@
                 <title>Code Design​</title>
                 <para>It is important that code has a simple, cohesive and intuitive design. Is the
                     code more complex than it should be? Are functions/classes too complex? “Too
-                    complex” usually means “can’t be understood quickly by code readers”. It can
+                    complex” usually means “cannot be understood quickly by code readers”. It can
                     also mean “developers are likely to introduce bugs when they try to call or
                     modify this code”.</para>
                 <para>A particular type of complexity is over-engineering, where developers have
-                    made the code more generic than it needs to be or added functionality that isn’t
-                    presently needed by the system. Reviewers should be especially vigilant about
-                    over-engineering. Encourage developers to solve the problem at hand, not the
-                    problem that the developer speculates might need to be solved in the future. The
-                    future problem should be solved once it arrives, allowing visibility into its
-                    actual shape and requirements in the physical universe.</para>
+                    made the code more generic than it needs to be or added functionality that is
+                    not presently needed by the system. Reviewers should be especially vigilant
+                    about over-engineering. Encourage developers to solve the problem at hand, not
+                    the problem that the developer speculates might need to be solved in the future.
+                    The future problem should be solved once it arrives, allowing visibility into
+                    its actual shape and requirements in the physical universe.</para>
             </sect3>
             <sect3>
                 <title>Duplication​</title>
@@ -350,7 +355,7 @@
                 <para>Some simple rules of thumb include:</para>
                 <itemizedlist>
                     <listitem>
-                        <para>Data and it’s representation should be in a layer all by itself,
+                        <para>Data and its representation should be in a layer all by itself,
                             separate from the business logic.</para>
                     </listitem>
                     <listitem>
@@ -429,12 +434,14 @@
             </itemizedlist>
             <sect3>
                 <title>Multithreading</title>
-                <para>Multithreading is a complex topic and requires the use of complex math to
-                    prove that most multithreading really works with locking. It is suggested that,
-                    if you are reviewing code using major multithreading, you utilize established
-                    libraries with millions of eyes on them as this will be more effective than
-                    home-grown locking mechanisms. In reviews, just make sure that this is the case.
-                    For a book on the topic, please refer to the book <emphasis role="italic">Java
+                <para>Multithreading is a complex topic and often requires careful reasoning to
+                    ensure that locking and synchronization mechanisms work correctly. When
+                    reviewing code that makes significant use of multithreading, it is recommended
+                    to rely on established libraries that have been widely tested and reviewed,
+                    rather than implementing custom locking mechanisms. This approach is generally
+                    more reliable and less error-prone. During code reviews, ensure that
+                    well-established concurrency libraries are being used. For a comprehensive
+                    resource on the topic, refer to the book <emphasis role="italic">Java
                         Concurrency in Practice</emphasis>, the bible of Java concurrency. It
                     explains just how complex this is. The author of this book was integral in
                     creating the Akka framework, which is heavily used in Java, for example.</para>
@@ -465,8 +472,8 @@
             </sect3>
             <sect3>
                 <title>Comments describing Code​</title>
-                <para>Code surrounding classes and methods should be fully describe the
-                    functionality of the single operation object or method.</para>
+                <para>Code surrounding classes and methods should fully describe the functionality
+                    of the single operation object or method.</para>
                 <itemizedlist>
                     <listitem>
                         <para><emphasis role="bold">Package/Namespace Comments</emphasis> - Some
@@ -495,7 +502,7 @@
                                         control. Any function or class parameters are required.
                                         Deprecation is a good notice, too, as it will indicate when
                                         a class may soon be retired and replaced with another class.
-                                        An example is shown below.</para>
+                                        An example is shown below (<xref linkend="ExampleofClassComments"></xref>).</para>
                                 </listitem>
                             </itemizedlist><figure xml:id="ExampleofClassComments">
                                 <title>Example of Class Comments</title>
@@ -511,7 +518,7 @@
                             directly related to calling of a function or method. These often contain
                             a usage description, the description of the input and output values, and
                             any information about deprecation or templating. An example of this is
-                            shown below.</para>
+                            shown below (<xref linkend="ExampleofMethodFunctionComments"></xref>).</para>
                     </listitem>
                 </itemizedlist>
                 </para><figure xml:id="ExampleofMethodFunctionComments">
@@ -565,33 +572,33 @@
                     <para>explain your reasoning.</para>
                 </listitem>
                 <listitem>
-                    <para>balance giving explicit directions with just pointing out problems and
+                    <para>balance giving explicit directions with only pointing out problems and
                         letting the developer decide.</para>
                 </listitem>
                 <listitem>
-                    <para>encourage developers to simplify code or add code comments instead of just
-                        explaining the complexity to you.</para>
+                    <para>encourage developers to simplify code or add code comments instead of
+                        merely  explaining the complexity to you.</para>
                 </listitem>
             </itemizedlist>
         </sect2>
         <sect2>
             <title>Testing and the Cost of Defects</title>
-            <para>The cost of defects can be measured by the impact of the defects and when we find
-                them. The earlier the defect is found, the cheaper it is to fix. Kent Beck, a leader
-                in the field of software testing said, via his book <emphasis role="italic">Extreme
-                    Programming Explained </emphasis></para>
+            <para>The cost of defects can be measured by the impact of the defects and when they are
+                found. The earlier the defect is found, the cheaper it is to fix. Kent Beck, a
+                leader in the field of software testing said, via his book <emphasis role="italic"
+                    >Extreme Programming Explained </emphasis></para>
             <para>“Most defects end up costing more than it would have cost to prevent them. Defects
                 are expensive when they occur, both the direct costs of fixing the defects and the
                 indirect costs because of damaged relationships, lost business, and lost development
                 time.” – Kent Beck, from Extreme Programming Explained</para>
-            <para>The following graph, courtesy of <emphasis role="bold">the National Institute of
+            <para>The following graph (<xref linkend="RelativeCosttoFixBugsBasedonTimeofDetection"></xref>), courtesy of <emphasis role="bold">the National Institute of
                     Standards and Technology,</emphasis> helps in visualizing how the effort in
                 detecting and fixing defects increases as the software moves through the five broad
                 phases of software development.</para><figure xml:id="RelativeCosttoFixBugsBasedonTimeofDetection">
                     <title>Relative Cost to Fix Bugs, Based on Time of Detection</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../images/Relative%20Cost%20to%20Fix%20Bugs,%20Based%20on%20Time%20of%20Detection.svg" scale="80" align="center"/>
+                            <imagedata fileref="../images/Relative%20Cost%20to%20Fix%20Bugs,%20Based%20on%20Time%20of%20Detection.svg" scale="50" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -605,26 +612,26 @@
                     </listitem>
                     <listitem>
                         <para>If the error is found in development (defect), then the developer must
-                            work with the requirements team to figure out how the requirements need
-                            to be change. The defect can be corrected by refactoring and or
-                            rewriting the problematic code to accommodate new requirement
-                            changes.</para>
+                        work with the requirements team to figure out how the requirements need to
+                        be changed. The defect can be corrected by refactoring and/or rewriting the
+                        problematic code to accommodate new requirement changes.</para>
                     </listitem>
                     <listitem>
-                        <para>If the error is found in production, then the requirements team needs
-                            to be consulted with to adjust requirements and architecture,
-                            development needs to determine refactoring, a cost to schedule must be
-                            determined. Additionally, if this service has done data processing, then
-                            that needs to be designed and developed. Both the application and the
-                            correction to the data processing need to go through testing now.
-                            Backups need to be made of the data so that if there is an issue, the
-                            original data can be recovered, as this now has the business risk of
-                            impacting production users.</para>
+                        <para>If the error is found in production, the requirements team should be
+                        consulted to adjust requirements and architecture as needed. The development
+                        team must determine necessary refactoring, and the impact on the schedule
+                        should be assessed. Additionally, if the affected service has performed data
+                        processing, a plan for redesigning and redeveloping the data correction must
+                        be created. Both the application changes and the corrections to data
+                        processing should undergo thorough testing. Backups of the data should be
+                        made to ensure that, in case of further issues, the original data can be
+                        restored. This is crucial, as such errors carry the business risk of
+                        impacting production users.</para>
                     </listitem>
                 </itemizedlist>
                 <para>There will always be defects in production, but the key is to reduce them to
-                    the ones that can't be predicted. The mantra of any developer should be to
-                        <emphasis role="italic">detect early and often</emphasis>.</para>
+                the ones that cannot be predicted. The mantra of any developer should be to
+                    <emphasis role="italic">detect early and often</emphasis>.</para>
             <sect3>
                 <title>Right Size the Testing​</title>
                 <para>Given the above information, it is common to want to completely switch gears
@@ -638,15 +645,14 @@
                         <title>Monetary and Time Costs of Testing Types</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../images/Monetary%20and%20Time%20Costs%20of%20Testing%20Types.svg" scale="30" align="center"/>
+                                <imagedata fileref="../images/Monetary%20and%20Time%20Costs%20of%20Testing%20Types.svg" scale="25" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
-                <para>When doing a story tasking as part of Iteration Planning, teams should
-                        create tasking for integration and end-to-end tests that consider the amount
-                        of time that you need to thoroughly test the acceptance criteria. This
-                        should be the minimal amount required to achieve proving the criteria have
-                        been met.</para>
+                <para>When doing story tasking as part of Iteration Planning, teams should create
+                    tasking for integration and end-to-end tests that consider the amount of time
+                    needed to thoroughly test the acceptance criteria. This should be the minimum
+                    amount required to prove that the criteria have been met.</para>
             </sect3>
             <sect3>
                 <title>Test Driven Development (TDD) Standards​</title>
@@ -661,10 +667,10 @@
             <sect3>
                 <title>Test Driven Development</title>
                 <para>TDD is an idea that was introduced by Kent Beck. This is a principle of
-                    defining requirements before writing code. How this translates to modern
-                    development is that it is expected that this is the first thing that you do when
-                    you pick up a story. This is a set of tests that should match the acceptance
-                    criteria and showcase to the product owner that the story is complete.</para>
+                    defining requirements before writing code. In modern development, when you begin
+                    working on a new story, your first step is to create these tests.  The tests
+                    should match the story's acceptance criteria and showcase to the product owner
+                    that the story is complete.</para>
                 <para>TDD is a simple three-phase cycle of writing something that is failing, making
                     a test pass, then refactoring, and repeating. This process is depicted in <xref
                         linkend="TDDCycleDiagram"/>.</para><figure xml:id="TDDCycleDiagram">
@@ -700,17 +706,17 @@
                     </itemizedlist>
                     <para>Once these tests are created, the development team can start working on
                         the stories using the Red-Green-Refactor Loop. This means that all these
-                        tests fail initially - the software doesn't currently support these actions.
-                    </para>
+                        tests fail initially - the software does not currently support these
+                        actions. </para>
                 </sect4>
                 <sect4>
                     <title>Writing the Solutions (Green)</title>
-                    <para>Developers start by picking a test and working on it. You should be doing
-                        the minimum amount to make the test pass. This is confusing to some people,
-                        as they want to create all functionality upfront. The problem with this is
-                        that you may not be able to finish your story within the sprint time frame,
-                        and as developers, we want to ensure that test requirements are met before
-                        pivoting.</para>
+                    <para>Developers start by selecting a test and working on it. You should be
+                        doing the minimum amount to make the test pass. This is confusing to some
+                        people, as they want to create all functionality upfront. The problem with
+                        this is that you may not be able to finish your story within the sprint time
+                        frame, and as developers, we want to ensure that test requirements are met
+                        before pivoting.</para>
                     <para>Example:</para>
                     <para>The requirement is that you create a myArrayList application. <xref linkend="PseudocodeforCreatingMyArrayList"/>
                         below contains some pseudocode for that test.</para><figure xml:id="PseudocodeforCreatingMyArrayList">
@@ -736,7 +742,7 @@
                 </sect4>
                 <sect4>
                     <title>Making the Code Reusable (Blue)</title>
-                    <para>Realistically, we know that's not the long-term solution to this problem.
+                    <para>Realistically, we know that is not the long-term solution to this problem.
                         This is where you spend some time refactoring in preparation for the next
                         test(s). You can move your code around, reorganizing your tests in methods
                         and classes that make more logical sense now that you have gotten a passing
@@ -804,17 +810,18 @@
                         functionality, and more on a user action. BDD should generally be used in
                         conjunction with TDD, as their goals are slightly different. UI, for
                         example, should primarily utilize BDD over TDD to test requirements.</para>
-                    <para>A collaboration between functional and development teams to create feature
-                        development solution expectations driven by test case definitions prior to
-                        development. The goal of BDD is to ensure that functional and business teams
-                        have input and visibility into the software development process, and in turn
-                        development teams will have clearer understanding on what the expected
-                        solutions should accomplish. BDD is great when there is a need for
-                        functional teams to be involved with designing and testing features. BDD
-                        requires test cases to be written in Gherkin syntax which is then translated
-                        to code. Gherkin (format → Given, When, Then) is readable to functional
-                        teams, hence providing visibility. An example of BDD is shown below in <xref
-                            linkend="ExampleofBehaviorDrivenDevelopment"/>.</para><figure xml:id="ExampleofBehaviorDrivenDevelopment">
+                    <para>A collaboration between functional and development teams is necessary to
+                        create feature development solution expectations driven by test case
+                        definitions prior to development. The goal of BDD is to ensure that
+                        functional and business teams have input and visibility into the software
+                        development process, and in turn development teams will have a clearer
+                        understanding of what the expected solutions should accomplish. BDD is great
+                        when there is a need for functional teams to be involved with designing and
+                        testing features. BDD requires test cases to be written in Gherkin syntax
+                        which is then translated to code. Gherkin (format → Given, When, Then) is
+                        readable to functional teams, hence providing visibility. An example of BDD
+                        is shown below in <xref linkend="ExampleofBehaviorDrivenDevelopment"
+                        />.</para><figure xml:id="ExampleofBehaviorDrivenDevelopment">
                             <title>Example of Behavior Driven Development</title>
                             <mediaobject>
                                 <imageobject>
@@ -822,12 +829,12 @@
                                 </imageobject>
                             </mediaobject>
                         </figure>
-                    <para>BDD can be practiced using most testing frameworks. <emphasis
-                                role="bold">Cucumber,</emphasis> however, is a common tool used in
-                            industry as it provides, amongst many features, .dsl files which are
-                            maintained by the functional team. Note: Use the framework/methodology
-                            that works for your team. Given the descriptions in this article, teams
-                            should be able to discern what will work for their projects.</para>
+                    <para>BDD can be practiced using most testing frameworks. <emphasis role="bold"
+                            >Cucumber,</emphasis> however, is a common tool used in industry as it
+                        provides, amongst many features, .dsl files which are maintained by the
+                        functional team. Note: Use the framework/methodology that works for your
+                        team. Given the descriptions in this text, teams should be able to discern
+                        what will work for their projects.</para>
                 </sect4>
                 <sect4>
                     <title>UI Testing</title>
@@ -856,15 +863,15 @@
                         </listitem>
                     </itemizedlist>
                     <para>The scope of UI testing should be strategic. UI tests can take a
-                        significant amount of time to both implement and run, and it's challenging
+                        significant amount of time to both implement and run, and it is challenging
                         to test every type of user interaction in a production application due to
                         the large number of possible interactions.</para>
                     <para>Designing the UI tests around the functional tests makes sense. For
                         example, given an input form, a UI test would ensure that the visual
                         representation is consistent across devices, is accessible and interactive,
                         and is consistent across code changes.</para>
-                    <para>UI Tests will catch 'runtime' bugs that unit and functional tests won't.
-                        For example, if the submit button for an input form is rendered but not
+                    <para>UI Tests will catch 'runtime' bugs that unit and functional tests will
+                        not. For example, if the submit button for an input form is rendered but not
                         clickable due to a positioning bug in the UI, then this could be considered
                         a runtime bug that would not have been caught by unit or functional
                         tests.</para>
@@ -873,7 +880,7 @@
                     <title>Accessibility Testing​</title>
                     <para>Designers should focus on promoting UIs and designs that are accessible
                         for all users. Accessibility considerations should be reviewed for all
-                        wireframes before considered for development. More than general
+                        wireframes before consideration for development. More than general
                         accessibility, there is often strict accessibility standards that are part
                         of requirements. For example, many government sites encourage accessibility
                         by requiring 508, Americans with Disabilities Act (ADA) or Web Content
@@ -934,8 +941,7 @@
                     </imageobject>
                 </mediaobject>
             </figure>
-            <para>The current Software Factory installation allow teams to do the
-                    following:</para>
+            <para>The current Software Factory installation allows teams to do the following:</para>
                 <itemizedlist>
                     <listitem>
                         <para><emphasis role="bold">Plan</emphasis> - Processes have been developed
@@ -1082,12 +1088,12 @@
                     <itemizedlist>
                         <listitem>
                             <para><emphasis role="bold">Deploy</emphasis> - Titan provides simple
-                                pathways to execute deployments using standard branching, meaning
-                                that the code will always represent what is deployed.</para>
+                            pathways to execute deployments using standard branching, meaning that
+                            the code will always represent what is deployed (<xref linkend="FrameworkforContinousDeployment"></xref>).</para>
                             <itemizedlist>
                                 <listitem>
                                     <para>Titan Deploy allows teams to execute deployments without
-                                    knowing anything about target Kubernetes environment but the
+                                    knowing anything about target Kubernetes environment except the
                                     name.</para>
                                 </listitem>
                             </itemizedlist>
@@ -1105,7 +1111,7 @@
                                 </listitem>
                                 <listitem>
                                     <para>Titan Deploy allows teams to promote without knowing
-                                    anything about the target environment but the name.</para>
+                                    anything about the target environment except the name.</para>
                                 </listitem>
                             </itemizedlist>
                         </listitem>
@@ -1167,15 +1173,14 @@
         </sect2>
         <sect2>
             <title>Expected Changes to CI/CD</title>
-            <para>As we build out the CI/CD processes, we will regularly re-evaluate our tooling, as
-                we want to move to a solution that best can be executed and delivered with
-                contributors that will not be able to access private environments and use private
-                licenses.</para>
+            <para>As we develop our CI/CD processes, we will regularly reassess our tooling to
+                ensure we adopt solutions that can be executed and delivered by contributors who do
+                not have access to private environments or private licenses.</para>
             <para>The first of these is the move from the private hosted Atlassian JIRA solution to
                 a more sustainable Atlassian JIRA SaaS, which can be accessed by the community and
                 contributors can provide regular feedback.</para>
             <para>Other pieces will be more difficult, as security and license scanning require
-                licensing and will need to have gatekeeping in place to not over-extend the project,
+                licensing and will need to have gatekeeping in place to not over-extend the project
                 financially.</para>
         </sect2>
     </sect1>
@@ -1202,16 +1207,16 @@
     <sect1>
         <title>Security</title>
         <para>As part of the CI processes, we will integrate Security scanning. Security scans will
-            be applied so that users can be sure that code that is installed will not have adverse
-            effects on the installed computer. Also, it needs to ensure that bad actors don’t get
+            be applied so users can be sure that code that is installed will not have adverse
+            effects on the installed computer. Also, it needs to ensure that bad actors do not get
             access to data that they should not be privileged to. To accomplish this, our team will
             need to include several forms of SAST and Dynamic Application Security Testing
             (DAST).</para>
         <para>SAST helps to analyze a software program without executing the program, providing
-            security scanning and defect scanning. Comparing with dynamic analysis, static analysis
-            analyses the exact source code line while dynamic analysis analyses the program while it
-            is being executed; by performing analysis of all kinds of tests on the object codes and
-            executable. In summary, static analysis tools help:</para>
+            security scanning and defect scanning. Compared with dynamic analysis, static analysis
+            evaluates the exact source code line while dynamic analysis evaluates the program while
+            it is being executed; by performing analysis of all kinds of tests on the object codes
+            and executable. In summary, static analysis tools help:</para>
         <itemizedlist>
             <listitem>
                 <para>detect possible bugs which the debugger is unable to detect.</para>
@@ -1227,15 +1232,14 @@
     </sect1>
     <sect1>
         <title>Privacy Needs</title>
-        <para>As we further develop this reference implementation that may contain sensitive
-            information, with things like Health Insurance Portability and Accountability Act
-            (HIPAA) protected information and Personally Identifiable Information (PII), it becomes
-            very important that this data protected. Communications will need to be designed to
-            require encryption in transit. Services will need to be designed to require encryption
-            at rest. To share any data, there will need to be designed sharing patterns that either
-            strip information of identifying information and aggregate it with other information, or
-            it will need to facilitate data sharing agreements as part of the sharing
-            process.</para>
+        <para>As we continue to develop this reference implementation, which may include sensitive
+            data such as Health Insurance Portability and Accountability Act (HIPAA) protected
+            information and Personally Identifiable Information (PII), it is essential to ensure
+            that this data is properly protected. Communications will need to be designed to require
+            encryption in transit. Services will need to be designed to require encryption at rest.
+            To share any data, there will need to be designed sharing patterns that either strip
+            identifying information and aggregate it with other information, or it will need to
+            facilitate data sharing agreements as part of the sharing process.</para>
         <para>This is a complex topic, and we will need to bring in security experts as part of this
             process to make sure that this is maintained. Also, we will need to have notification
             systems in place to cover zero-day issues and allow us to regularly update the codebase

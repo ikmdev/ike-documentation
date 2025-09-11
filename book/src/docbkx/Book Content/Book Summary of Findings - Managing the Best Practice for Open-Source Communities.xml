@@ -3,9 +3,7 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-       <title>Summary of Findings - Managing the Best Practice for Open-Source Communities</title>
-    <section>
-        <title>The Current State of Healthcare Knowledge Management</title>
+       <title>Managing the Best Practice for Open-Source Communities</title>
         <para>Over the last decade, billion dollars have been poured into achieving interoperability
             in the healthcare industry. Patients, providers, and healthcare agencies have
             collectively identified the need for a more harmonized, integrated health system to
@@ -16,7 +14,7 @@
             that by 2018, 98.3% of hospitals have adopted Electronic Health Record (EHR) systems –
             the primary creators and curators of digital health data. Yet, across the board, health
             systems have struggled to move beyond simple adoption and implement advanced use in
-            patient engagement and clinical data analytics. [1] Notably, critical access hospitals
+            patient engagement and clinical data analytics. [7] Notably, critical access hospitals
             in rural areas were less likely to demonstrate advanced usage with an expanding deficit
             to their counterparts in clinical data analytics since 2015, leading to gaps in patient
             access of quality healthcare. </para>
@@ -24,7 +22,7 @@
             and beyond their system. To be truly useful, clinical data must move through numerous
             systems without loss of meaning. In an idealized situation, data transfers would
             complete a single round-trip with total integrity intact. In reality, only 22% - 68% of
-            data integrity is successfully preserved through its transfer journey. [2] A patient’s
+            data integrity is successfully preserved through its transfer journey. [8] A patient’s
             record may correctly showcase the correct numerical result from a test but could lose
             the context and meaning surrounding the test. Ever-increasing system complexity and
             resulting low-quality data, however, has ultimately impacted the quality of care across
@@ -81,7 +79,6 @@
                 collaboration within the IKM community to address these issues within the entire
                 Health IT ecosystem. </para>
         </section>
-    </section>
     <section>
         <title>The Case for a More Open Future in Healthcare</title>
         <para>The rapid expansion of technology and connectivity has created ill-defined guidelines
@@ -128,7 +125,7 @@
         <itemizedlist>
             <listitem>
                 <para>The freedom to distribute copies of your modified versions to others (freedom
-                    3). [3] </para>
+                    3). [9] </para>
             </listitem>
         </itemizedlist>
         <para>This is controlled in the forms of licenses and is discussed further below. Closed
@@ -164,7 +161,7 @@
             implementation of the specific version of software being used. The license acts as a
             copyright agreement where organizations and creators can control the distribution,
             duplication, and modification of their work. </para>
-        <para>There are many different types of licenses, as seen in the figure below, and are often
+        <para>There are many different types of licenses, as seen in <xref linkend="RestrictionsImposed"></xref> below, and are often
             created to be intentionally vague to apply to a multitude of situations and preserve the
             rights of the licensor: </para>
         <figure xml:id="RestrictionsImposed">
@@ -201,7 +198,7 @@
             private type of licensing. In software, no source code is available. </para>
         <para>Open-source licensing is seen as a method to resolve the dispute between unauthorized
             copying and distribution of content as well as the copyright laws that have been created
-            to protect individual and businesses of their own work. [4] Instead of users finding
+            to protect individual and businesses of their own work. [10] Instead of users finding
             ways to circumvent barriers of access to content, the license serves as a pathway on how
             to freely access and modify software to the needs of users while protecting the
             proprietary interests of the originator. In this context, discussion surrounding the
@@ -221,7 +218,7 @@
             that the quality of software and source code is not inherently affected by the structure
             of the license. A balance, however, is required ensuring that the licenses do not cause
             unintended consequences surrounding the proper development and evolution of the code by
-            the user. [5] </para>
+            the user. [11] </para>
     </section>
     <section>
         <?oxy_comment_start author="rgeorgacopoulos" timestamp="20240712T164721-0500" comment="random? why adrres data privacy in open-source section. suggest to remove" id="vk4_3w1_ccc"?>
@@ -231,7 +228,7 @@
             security law that was put into effect May 25, 2018. This EU law imposes obligations onto
             organizations anywhere in the world if they target or collect data related to EU
             citizens or residents. The law outlines seven protection and accountability principles,
-            listed below [6]:</para>
+            listed below [12]:</para>
         <para>
             <orderedlist>
                 <listitem>
@@ -262,7 +259,7 @@
             transparency in data handling. According to GDPR law, health data is defined as personal
             data related to the physical or mental health of a natural person, including the
             provision of health care services, which reveal information about their health. This
-            health data also includes genetic and biometric data. [7]</para>
+            health data also includes genetic and biometric data. [13]</para>
         <para>Healthcare organizations must adapt to these strict new regulations, and are charged
             with managing patient consent, data portability, and the consequences of non-compliance,
             which could be fines up to €22M+. For U.S. healthcare organization this means complying
@@ -303,7 +300,7 @@
             providers navigate the intentional vague complexity of licenses when attempting to solve
             interoperability? Instead, they experience restrictions and lock-in from standards that
             act as a hindrance to solving patient problems. Two related but distinguishable
-            implication of licenses are [8]: </para>
+            implication of licenses are [14]: </para>
         <para>1. the explicit terms and rights maintained on content derived from software, and </para>
         <para>2. the incompatibility of licensing in competing and related standards. </para>
         <para>The current siloed approach of licensing models prevents interoperability within
@@ -384,28 +381,29 @@
                 AOSP, throughout healthcare highlights the impact that licensing has on the
                 development, adoption, and implementation of code, software, and products in the
                 healthcare industry and the importance of having a well-curated licensing agreement.
-                [9, 10]<?oxy_comment_end mid="4"?><?oxy_comment_end?></para>
+                [15, 16]<?oxy_comment_end mid="4"?><?oxy_comment_end?></para>
         </section>
         <section>
         <title>Case-Study: LOINC® and SNOMED International Licensing
             Agreements</title>
         <para>Logical Observation Identifiers Names and Code® (LOINC®) and Systemized Nomenclature
-            of Medicine – Clinical Terms® (SNOMED CT®) are two of the most widely used health data
-            standards in the U.S. for clinical terminology. LOINC® is overseen by the Regenstrief
-            Institute and utilizes a global team for maintaining, developing, and updating guidance
-            on its terminology with the vision of promoting open terminology standards across every
-            clinical information system [11]. LOINC® advocates for open terminology standards but
-            does not issue an open-source license. Instead, all users are required to hold a license
-            to utilize LOINC®, with some licenses requiring a fee to implement and utilize the full
-            functionality of LOINC®. Similarly, SNOMED CT® is overseen by SNOMED International with
-            the intent to support, maintain, and implement SNOMED CT®. All users are required to
-            accept SNOMED International’s licensing agreement through an end-user agreement and are
-            issued a proprietary license with some requiring a fee depending on the usage and intent
-            of the license. Both organizations issue guidance on new and existing codes to reflect
-            current events and needs at least biannually by engaging in a rigorous feedback function
-            where users can engage. SNOMED International is moving towards more timely standard
-            updates, not limited to the biannual timeline, especially for rapid developing arenas,
-            such as COVID-19. </para>
+                of Medicine – Clinical Terms® (SNOMED CT®) are two of the most widely used health
+                data standards in the U.S. for clinical terminology. LOINC® is overseen by the
+                Regenstrief Institute and utilizes a global team for maintaining, developing, and
+                updating guidance on its terminology with the vision of promoting open terminology
+                standards across every clinical information system. [17] LOINC® advocates for open
+                terminology standards but does not issue an open-source license. Instead, all users
+                are required to hold a license to utilize LOINC®, with some licenses requiring a fee
+                to implement and utilize the full functionality of LOINC®. Similarly, SNOMED CT® is
+                overseen by SNOMED International with the intent to support, maintain, and implement
+                SNOMED CT®. All users are required to accept SNOMED International’s licensing
+                agreement through an end-user agreement and are issued a proprietary license with
+                some requiring a fee depending on the usage and intent of the license. Both
+                organizations issue guidance on new and existing codes to reflect current events and
+                needs at least biannually by engaging in a rigorous feedback function where users
+                can engage. SNOMED International is moving towards more timely standard updates, not
+                limited to the biannual timeline, especially for rapid developing arenas, such as
+                COVID-19. </para>
         </section>
         <section>
             <title>Where Licenses Break Interoperability: Redistribution and Modification</title>
@@ -421,7 +419,7 @@
                 to be created without a Namespace Identifier. Modifications are disallowed under
                 their SNOMED CT® Affiliate license, and users must go through a feedback process to
                 petition for added codes in future release cycles. This approach aims to avoid
-                confusion and ambiguity and to prevent inconsistencies between systems. [12] As a
+                confusion and ambiguity and to prevent inconsistencies between systems. [18] As a
                 result, there may be various forms of similarly derived codes in localized
                 formats.</para>
             <para>The process of waiting for new codes may result in gaps that can affect data
@@ -461,7 +459,7 @@
             extension of a modified code, disallowed under the existing licensing structure? Some
             licenses consider any work to be referential to be a “derivative” without fully
             specifying the scope of the reference. This is seen, for example, in the form of the
-            GNU's Not Unix (GNU) GPL and in references to GPL licensed libraries. [13] The
+            GNU's Not Unix (GNU) GPL and in references to GPL licensed libraries. [19] The
             navigation of differing licenses and determining the varying responsibilities imposed by
             them can be a costly, time-consuming burden that often acts as a barrier for meaningful
             progress. It can quickly become a convoluted process that inhibits success of
@@ -469,7 +467,7 @@
             in LOINC®. Licenses must walk a tight line on preventing extension of standards, thereby
             slowing down the evolution of these standards, and allowing full extensions that can
             subvert the standard in and of itself, creating confusion where modifications look to be
-            endorsements by the issuing body. [5]</para>
+            endorsements by the issuing body. [11]</para>
         <para>In practice, strong open-source licenses can encourage the development and evolution
             of standards without subversion of standards through guardrails on community
             contributions. Instead of a few chosen contributors, solutions can be developed openly
@@ -480,62 +478,58 @@
             mentality where confusion ensues. Additionally, open-source licenses can continue to
             protect against impersonations and false endorsements through their agreements. </para>
         <section>
-                <title>Open-Source Licensing Within a Knowledge Architecture</title>
-                <para><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240712T165045-0500" comment="remove" id="nms_gy1_ccc"?><?oxy_comment_start author="tocrow" timestamp="20240717T135106-0400" parentID="nms_gy1_ccc" comment="Any reason for removing?" mid="7"?>A
-                    Knowledge Architecture is a framework for clinical information that is organized
-                    into distinct layers such that each higher layer relies upon artifacts from the
-                    lower layer. It aims to define a standardized form of clinical statements and
-                    harmonize existing terminologies together into a single system. </para>
-                <para>A knowledge architecture intended for use in the current Health IT ecosystem
-                    is listed below: </para>
-                <figure xml:id="LayersWithinKnowledgeArchitecture">
-                    <title>Layers Within Knowledge Architecture</title>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata fileref="../images/New%20PASTF.svg" align="center" scale="10"
-                                ><?oxy_comment_end?><?oxy_comment_end mid="7"?></imagedata>
-                        </imageobject>
-                    </mediaobject>
-                </figure>
-                <para>Rather than a broad transformation of existing licenses in a purely
-                    open-source model, not all components of software and standard licensing require
-                    a pivot away from proprietary oversight to lead to successful implementation of
-                    an IKM ecosystem. The commercial usage of aspects of licenses allows for ongoing
-                    support and maintenance of software and standards. The move towards a permissive
-                    license does not require a seismic shift in organization structure or its
-                    ability monetize its commercial license, especially for organizations already
-                    promoting open-standards. <emphasis>Allowing for open-licensing encourages
-                        improvements of terminology and standards by ancillary bodies and creates a
-                        more robust, flexible system that can further adapt into the varying needs
-                        of organizations. </emphasis></para>
-                <para>Data harmonization improves when foundational layers of Knowledge Architecture
-                    are integrated into common, collective sources of data. If utilized correctly
-                    under a Knowledge Architecture, a single-data journey can be completed with
-                    integrity intact every time. Permissive licensing throughout the foundational
-                    architecture, terminology knowledge, and statement model layers removes barriers
-                    imposed on modifications and extensions and instead aids in the creation of
-                    common understandings of knowledge. The Terminology Knowledge layer within
-                    Knowledge Architecture oversees the structure of medical terminologies, such as
-                    the language and semantic hierarchy within data. It is in this layer where the
-                    IKM platform arbitrates the valid codes and expressions to be used in higher
-                    layers. Currently, the usage of terminology standards like SNOMED CT®, LOINC®,
-                    and additional standards pose questions regarding compatibility due to
-                    modification and extensions limitations. The complexity widens when further
-                    standards based on other standards are integrated further in the terminology
-                    layer, like the Laboratory Interoperability Data Repository (LIDR) and Tinkar.
-                    The loss of data often occurs in this layer and breaks the functionality of
-                    standards where local codes are mapped to the incorrect standard codes. The IKM
-                    platform aims to solve this issue by harmonizing standards but cannot be
-                    successfully implemented unless the underlying licenses allow an IKM platform to
-                    reconcile variances. In the Statement Model, the artifacts as defined below are
-                    reused and demonstrate how the data elements should be packaged into clinical
-                    statements through clinical formatting, such as Health Level 7 Fast Healthcare
-                    Interoperability Resources (HL7 FHIR) or Clinical Informational Modeling
-                    Initiative (CIMI). The shift towards a permissive license in regard to
-                    terminologies and standards improves the compatibility of how different
-                    terminologies work together and thereby is integral to the functionality of
-                    higher layers and interoperability overall. </para>
-            </section>
+            <title>Open-Source Licensing Within a Knowledge Architecture</title>
+            <para>A Knowledge Architecture is a framework for clinical information that is organized
+                into distinct layers such that each higher layer relies upon artifacts from the
+                lower layer (<xref linkend="LayersWithinKnowledgeArchitecture"></xref>. It aims to define a standardized form of clinical statements and
+                harmonize existing terminologies together into a single system. </para>
+            <para>A knowledge architecture intended for use in the current Health IT ecosystem is
+                listed below: </para>
+            <figure xml:id="LayersWithinKnowledgeArchitecture">
+                <title>Layers Within Knowledge Architecture</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="../images/New%20PASTF.svg" align="center" scale="10"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            <para>Rather than a broad transformation of existing licenses in a purely open-source
+                model, not all components of software and standard licensing require a pivot away
+                from proprietary oversight to lead to successful implementation of an IKM ecosystem.
+                The commercial usage of aspects of licenses allows for ongoing support and
+                maintenance of software and standards. The move towards a permissive license does
+                not require a seismic shift in organization structure or its ability monetize its
+                commercial license, especially for organizations already promoting open-standards.
+                    <emphasis>Allowing for open-licensing encourages improvements of terminology and
+                    standards by ancillary bodies and creates a more robust, flexible system that
+                    can further adapt into the varying needs of organizations. </emphasis></para>
+            <para>Data harmonization improves when foundational layers of Knowledge Architecture are
+                integrated into common, collective sources of data. If utilized correctly under a
+                Knowledge Architecture, a single-data journey can be completed with integrity intact
+                every time. Permissive licensing throughout the foundational architecture,
+                terminology knowledge, and statement model layers removes barriers imposed on
+                modifications and extensions and instead aids in the creation of common
+                understandings of knowledge. The Terminology Knowledge layer within Knowledge
+                Architecture oversees the structure of medical terminologies, such as the language
+                and semantic hierarchy within data. It is in this layer where the IKM platform
+                arbitrates the valid codes and expressions to be used in higher layers. Currently,
+                the usage of terminology standards like SNOMED CT®, LOINC®, and additional standards
+                pose questions regarding compatibility due to modification and extensions
+                limitations. The complexity widens when further standards based on other standards
+                are integrated further in the terminology layer, like the Laboratory
+                Interoperability Data Repository (LIDR) and Tinkar. The loss of data often occurs in
+                this layer and breaks the functionality of standards where local codes are mapped to
+                the incorrect standard codes. The IKM platform aims to solve this issue by
+                harmonizing standards but cannot be successfully implemented unless the underlying
+                licenses allow an IKM platform to reconcile variances. In the Statement Model, the
+                artifacts as defined below are reused and demonstrate how the data elements should
+                be packaged into clinical statements through clinical formatting, such as Health
+                Level 7 Fast Healthcare Interoperability Resources (HL7 FHIR) or Clinical
+                Informational Modeling Initiative (CIMI). The shift towards a permissive license in
+                regard to terminologies and standards improves the compatibility of how different
+                terminologies work together and thereby is integral to the functionality of higher
+                layers and interoperability overall. </para>
+        </section>
     </section>
     <section>
         <title>Conclusion</title>
@@ -665,79 +659,5 @@
                 </tgroup>
             </informaltable>
         </para>
-    </section>
-    <section>
-        <title>References</title>
-        <orderedlist>
-            <listitem>
-                <para>Apathy NC, Holmgren AJ, Adler-Milstein J. A decade post-HITECH: Critical
-                    access hospitals have electronic health records but struggle to keep up with
-                    other advanced functions. Journal of the American Medical Informatics
-                    Association [Internet]. 2021 Aug 13 [cited 2025 Aug 5];28(9):1947–54. Available
-                    from: https://academic.oup.com/jamia/article/28/9/1947/6312883</para>
-            </listitem>
-            <listitem>
-                <para>Bernstam EV, Warner JL, Krauss JC, Ambinder E, Rubinstein WS, Komatsoulis G,
-                    et al. Quantitating and assessing interoperability between electronic health
-                    records. Journal of the American Medical Informatics Association [Internet].
-                    2022 Apr 13 [cited 2025 Aug 5];29(5):753–60. Available from:
-                    https://academic.oup.com/jamia/article/29/5/753/6500181</para>
-            </listitem>
-            <listitem>
-                <para>What is Free Software? - GNU Project - Free Software Foundation [Internet].
-                    [cited 2025 Aug 5]. Available from:
-                    https://www.gnu.org/philosophy/free-sw.en.html#copyleft</para>
-            </listitem>
-            <listitem>
-                <para>Wilbanks J. Public domain, copyright licenses and the freedom to integrate
-                    science. JCOM [Internet]. 2008 June 20 [cited 2025 Aug 5];07(02):C04. Available
-                    from: https://jcom.sissa.it/article/pubid/Jcom0702(2008)C04/</para>
-            </listitem>
-            <listitem>
-                <para>Reynolds CJ, Wyatt JC. Open Source, Open Standards, and Health Care
-                    Information Systems. J Med Internet Res [Internet]. 2011 Feb 17 [cited 2025 Aug
-                    5];13(1):e24. Available from: http://www.jmir.org/2011/1/e24/</para>
-            </listitem>
-            <listitem>
-                <para>GDPR.eu [Internet]. 2018 [cited 2025 Aug 5]. What is GDPR, the EU’s new data
-                    protection law? Available from: https://gdpr.eu/what-is-gdpr/</para>
-            </listitem>
-            <listitem>
-                <para>GDPR and healthcare: Understanding health data and consent | Pega [Internet].
-                    2018 [cited 2025 Aug 5]. Available from:
-                    https://www.pega.com/insights/articles/gdpr-and-healthcare-understanding-health-data-and-consent</para>
-            </listitem>
-            <listitem>
-                <para>Hosking R, Gahegan M. The Effects of Licensing on Open Data: Computing a
-                    Measure of Health for Our Scholarly Record. In: Salinesi C, Norrie MC, Pastor Ó,
-                    editors. Advanced Information Systems Engineering [Internet]. Berlin,
-                    Heidelberg: Springer Berlin Heidelberg; 2013 [cited 2025 Aug 5]. p. 432–9.
-                    Available from: http://link.springer.com/10.1007/978-3-642-41338-4_28</para>
-            </listitem>
-            <listitem>
-                <para>Android (operating system) - Wikiwand [Internet]. [cited 2025 Aug 5].
-                    Available from:
-                    https://www.wikiwand.com/en/articles/Android%20(operating%20system)</para>
-            </listitem>
-            <listitem>
-                <para>Android Open Source Project [Internet]. [cited 2025 Aug 5]. Contributor
-                    license agreements and headers. Available from:
-                    https://source.android.com/docs/setup/contribute/licenses</para>
-            </listitem>
-            <listitem>
-                <para>LOINC [Internet]. [cited 2025 Aug 5]. Mission, Vision, and Principles for Open
-                    Terminology Development. Available from: https://loinc.org/principles/</para>
-            </listitem>
-            <listitem>
-                <para>SNOMED CT® [Internet]. SNOMED CT Affiliate License Agreement. Available from:
-                    https://www.snomed.org/_files/ugd/900274_689013e9e0c74d23892abe9caee02612.pdf</para>
-            </listitem>
-            <listitem>
-                <para>Scheibner J. What Price Freedom (of Software)? A Guide for Australian Legal
-                    Practitioners on Open Source Licensing. Precedent (Australian Lawyers Alliance)
-                    [Internet]. 2017 [cited 2025 Aug 5]; Available from:
-                    https://www.austlii.edu.au/au/journals/PrecedentAULA/2017/23.html#fnB3</para>
-            </listitem>
-        </orderedlist>
-    </section>
+    </section>    
 </chapter>

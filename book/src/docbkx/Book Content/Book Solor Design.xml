@@ -3,14 +3,13 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
     version="5.1">
-    <title><?oxy_comment_start author="steph" timestamp="20190306T103648-0700" comment="This is nitpicky but I think you should be consistent in your headings WRT capitalization.  As you can see here, sometimes the first letter of each word is capitalized, where appropriate, but sometimes it&apos;s just the first word." id="l15_jmk_1hb" flag="done"?><?oxy_comment_start author="timowilliams" timestamp="20190308T113005-0600" comment="Changes will be made where Relevant.  In some cases words after the first may need to be capitalized since that is they way they are in the terminology.  For example SNOMED CT Model Component." parentID="l15_jmk_1hb" flag="done" mid="1"?><?oxy_comment_start author="steph" timestamp="20190402T155220-0600" comment="Okay" flag="done" mid="2"?>Solor<?oxy_comment_end mid="2"?><?oxy_comment_end mid="1"?><?oxy_comment_end?>
-        definitional knowledge</title>
-    <para>In order to represent the various domains of healthcare, Solor "stands on the shoulder of
+    <title>Komet definitional knowledge</title>
+    <para>In order to represent the various domains of healthcare, Komet "stands on the shoulder of
         giants" by building on existing content from SNOMED CT®, LOINC®, and RxNorm. The purpose of
-        this section is to discuss the categories within Solor where concepts reside, as well as the
+        this section is to discuss the categories within Komet where concepts reside, as well as the
         relationships used to define the concepts. Ultimately, the goal of this representation of
         concepts and their relationships would support the description logic component of
-        Solor.</para>
+        Komet.</para>
     <section xml:id="section_c115dbd9-5a84-4499-a3a5-2b15b93a3df2">
         <title>Top level categories</title>
         <para>In SNOMED, various hierarchies (e.g. Procedures, Clinical Findings, etc) are used to
@@ -19,7 +18,7 @@
             level concepts, which are more granular (e.g. Type 1 diabetes mellitus). Through a
             series of Is a relationships, which will be explained in the next section, one could
             traverse down the hierarchy from a top level generic concept to a very specific concept.
-            In an attempt to gather 'like' concepts, Solor created top level categories of concepts
+            In an attempt to gather 'like' concepts, Komet created top level categories of concepts
             to 'house' concepts that belong to those categories. This section will describe the
             intent and purpose of these categories. </para>
         <section>
@@ -121,7 +120,7 @@
             1 diabetes mellitus". Although it may connect these two concepts, there needs to be
             additional relationship types to further define each concept to provide more context and
             knowledge such that a concept is further defined and could provide additional knowledge.
-            This section describes the relationship types of Solor and provides example of its
+            This section describes the relationship types of Komet and provides example of its
             usage. </para>
         <section>
             <title>Accepted relationship types</title>
@@ -138,10 +137,10 @@
                 </formalpara>
                 <formalpara>
                     <title>Utility</title>
-                    <para><?oxy_comment_start author="steph" timestamp="20190306T111442-0700" comment="When will the information here and below be provided?  Same question throughout the document where placeholders/stubs are shown." id="u5j_lp2_1hb"?><?oxy_comment_start author="timowilliams" timestamp="20190307T160515-0600" comment="Yes.  It will be provided.  " parentID="u5j_lp2_1hb" mid="5"?><?oxy_comment_start author="steph" timestamp="20190402T155427-0600" comment="Okay" mid="6"?>Is
-                        a Relationships give a hierarchical structure to Solor and provide a
+                    <para><?oxy_comment_start author="steph" timestamp="20190306T111442-0700" comment="When will the information here and below be provided?  Same question throughout the document where placeholders/stubs are shown." id="u5j_lp2_1hb"?><?oxy_comment_start author="timowilliams" timestamp="20190307T160515-0600" comment="Yes.  It will be provided.  " parentID="u5j_lp2_1hb" mid="2"?><?oxy_comment_start author="steph" timestamp="20190402T155427-0600" comment="Okay" mid="3"?>Is
+                        a Relationships give a hierarchical structure to Komet and provide a
                         mechanism to query and retrieve subtype
-                        concepts<?oxy_comment_end mid="6"?><?oxy_comment_end mid="5"?><?oxy_comment_end?>.</para>
+                        concepts<?oxy_comment_end mid="3"?><?oxy_comment_end mid="2"?><?oxy_comment_end?>.</para>
                 </formalpara>
                 <formalpara>
                     <title>Example</title>

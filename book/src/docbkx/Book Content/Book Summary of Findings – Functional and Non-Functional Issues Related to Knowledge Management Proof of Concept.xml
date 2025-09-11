@@ -21,7 +21,7 @@
             <title>Knowledge Management</title>
             <para>The team rapidly developed an IKM prototype leveraging the latest Tinkar data
                 model standard to showcase IKM capabilities at the SNOMED CT® conference in October
-                of 2023. Through the effort over the past year and leading up to that event, we’ve
+                of 2023. Through the effort over the past year and leading up to that event, we have
                 identified a few findings that have been resolved or will need to be resolved in the
                 future.</para>
             <section>
@@ -33,12 +33,12 @@
                     would influence a large community of users, such as hospitals, laboratories and
                     clinical informaticists so there are many thoughts and opinions about how IKM
                     should work and what features would be important. Though the potential
-                    stakeholder base is large, the access to the community to illicit requirements
-                    is very limited. While we were able to conduct user interviews during our User
+                    stakeholder base is large, the access to the community to elicit requirements is
+                    very limited. While we were able to conduct user interviews during our User
                     Interface and User Experience (UI/UX) analysis to gain some understanding of
-                    necessary system functionalities, we do have not regular access to those
+                    necessary system functionalities, we do not have regular access to those
                     participants. </para>
-                <para>To solve for this, we’re leveraging experts to identify high priority
+                <para>To solve for this, we are leveraging experts to identify high priority
                     capabilities that will be prioritized for upcoming milestones. These milestones
                     will take shape in the form of conferences, community events, and other
                     demonstration opportunities. For example, we plan to organize a Health Level
@@ -48,7 +48,7 @@
                     support rapid development, we still needed a clear understanding of what system
                     capabilities were important to showcase for the demonstration and detailed
                     documentation in the form of user stories for the developers to reference. </para>
-                <para>As seen in the figure below, we established a new process to describe the
+                <para>As seen in <xref linkend="IKMProductBacklogEpicBoard"></xref> below, we established a new process to describe the
                     system capabilities in the form of Agile epics and plot them against the
                     appropriate milestones to generate our product feature backlog. As per agile
                     development best practices, these epics are revisited weekly to be defined,
@@ -92,7 +92,7 @@
                     <listitem>
                         <para>User interviews with multiple professionals in the healthcare
                             space—such as clinicians, health informaticists, public health
-                            scientist—to uncover specific needs and pain points of potential
+                            scientists—to uncover specific needs and pain points of potential
                             users.</para>
                     </listitem>
                     <listitem>
@@ -133,21 +133,21 @@
                     investment in Development and Operations (DevOps) technologies and tooling to
                     allow our open-source solutions to be rapidly developed and released to reach
                     the largest audiences possible. We began by hosting our DevOps tools, as it was
-                    the quickest way to begin rapid prototyping. However, through this process,
-                    we’ve found that the hosting of these tools requires more overhead and manhours
-                    than we would like. Our larger goals and priorities require developers’ time to
-                    contribute to our solutions rather than supporting our DevOps tools. We are
-                    currently investigating and analyzing different alternative approaches to move
-                    to Software-as-a-Service (SaaS) solutions for DevOps.</para>
+                    the quickest way to begin rapid prototyping. However, through this process, we
+                    have found that the hosting of these tools requires more overhead and
+                    person-hours than we would like. Our larger goals and priorities require
+                    developers’ time to contribute to our solutions rather than supporting our
+                    DevOps tools. We are currently investigating and analyzing different alternative
+                    approaches to move to Software-as-a-Service (SaaS) solutions for DevOps.</para>
                 <para>Additionally, due to the licensing issues around proprietary data, as well as
                     other open-source technologies, we leverage both an internal and external code
                     repository. This arrangement allows us to continue development while we work
                     through licensing with the goal of becoming fully open-source. [5] Currently,
                     this complication keeps us from leveraging open-source supported tooling and
                     requires us to support complex DevOps processes to restrict the publishing of
-                    code. Once these license issues are resolved, we’ll be able to leverage
+                    code. Once these license issues are resolved, we will be able to leverage
                     additional tools to streamline and simplify our processes.</para>
-                <para>However, our DevOps processes are largely successful as we’re able to
+                <para>However, our DevOps processes are largely successful as we are able to
                     collaboratively develop across a large team and release both code and artifacts
                     to our public repository often and with little manual effort. Additionally,
                     every promotion to GitHub releases Windows, Mac and Linux versions of the Komet
@@ -179,23 +179,22 @@
                 <title>Protocol Buffers</title>
                 <para>With the requirement of being able to support many types of information
                     systems, the ingestion of data requires a programming language neutral format.
-                    Protocol buffers solve this issue, by serializing the structure data with a
+                    Protocol buffers solve this issue by serializing the structure data with a
                     format that supports many programming languages. Additionally, it is open-source
                     code and does not require a licensing to implement. This would allow the data to
-                    be exported in easy to share formats that can be simply shared and imported.
-                </para>
+                    be exported in easy to share formats that can be simply shared and imported. </para>
             </section>
             <section>
                 <title>Data Retrieval and Curation</title>
                 <para>As the Komet users increase, adoption of the tool will need to accommodate a
                     variety of experienced users. Currently, the Tinkar database requires a
-                    significant amount of coding and or prior knowledge of lower-level data
+                    significant amount of coding and/or prior knowledge of lower-level data
                     structures to successfully retrieve and manipulate Tinkar data elements. This
                     inevitably limits the immediate number of users who can implement meaningful
-                    solutions using Komet and the Tinkar data. Creating an abstraction layer and or
+                    solutions using Komet and the Tinkar data. Creating an abstraction layer and/or
                     user experience that allows users to have an easier and streamlined approach
-                    working with and updating Tinkar data will result in users utilizing the Komet
-                    to its full potential. </para>
+                    working with and updating Tinkar data will result in users utilizing  Komet to
+                    its full potential. </para>
             </section>
         </section>
         <section>
@@ -205,7 +204,7 @@
                 of increasing awareness, the team has developed and disseminated informational
                 presentations and trainings both internally and externally to federal and industry
                 partners. Through this and additional presentations and demos of Komet at industry
-                conferences (i.e., SNOMED International Expo, American Medical Informatics
+                conferences (i.e., SNOMED® International Expo, American Medical Informatics
                 Association), the team has been able to identify champions for the IKM movement
                 across the ecosystem. As awareness has increased, the team has been able to maintain
                 stakeholder relationships through personalized communications to individual invested
@@ -227,8 +226,8 @@
                 <title>Defining IKM</title>
                 <para>IKM is an evolving and novel movement in the healthcare information technology
                     field. Therefore, communicating to all potential invested parties effectively on
-                    the mission to increase cohesion in health data standards and what problems that
-                    it may solve is paramount to advancing the movement. Based on feedback from
+                    the mission to increase cohesion in health data standards and what problems it
+                    may solve is paramount to advancing the movement. Based on feedback from
                     stakeholder engagement sessions, the team has been iteratively refining
                     strategic communications initiatives to develop concise and aimed messaging to
                     key invested parties.</para>
@@ -288,58 +287,5 @@
                 sources, but it also highlights the importance of thoughtful customization to ensure
                 effective integration. [6]</para>
         </section>
-    </section>
-    <section>
-        <title>References</title>
-        <para>
-            <orderedlist>
-                <listitem>
-                    <para>IKM Epic Board - Agile board - Jira [Internet]. [cited 2024 Jan 8].
-                        Available from:
-                        https://id.atlassian.com/login?continue=https%3A%2F%2Fid.atlassian.com%2Fjoin%2Fuser-access%3Fresource%3Dari%253Acloud%253Ajira%253A%253Asite%252F0ace1edd-c50a-4607-bb3f-3856a4809fba%26continue%3Dhttps%253A%252F%252Fikmdev.atlassian.net%252Fjira%252Fsoftware%252Fc%252Fprojects%252FIPB%252Fboards%252F40&amp;application=ji</para>
-                </listitem>
-                <listitem>
-                    <para>A library for manipulating with proofs that use inference rules.
-                        [Internet]. GitHub. [cited 2023 September 15]. Available from: <link
-                            xlink:href="https://github.com/liveontologies/puli"
-                            >https://github.com/liveontologies/puli</link></para>
-                </listitem>
-                <listitem>
-                    <para>Bug and Issue Reporting Process Framework. [Deloitte Deliverable].
-                        December 20, 2023 [Cited 2024 Jan 9] Available Internally at Deloitte
-                        Consulting LLP. DeloitteBAA_Task_2.3.4_Bugs and Issue Reporting Process
-                        Framework.pdf</para>
-                </listitem>
-                <listitem>
-                    <para>The Integrated Knowledge Management Application | Komet [Internet].
-                        Available from: https://www.ikm.dev/application</para>
-                </listitem>
-                <listitem>
-                    <para>Reynolds CJ, Wyatt JC. Open source, open standards, and health care
-                        information systems. J Med Internet Res. 2011 Feb 17;13(1):e24.</para>
-                </listitem>
-                <listitem>
-                    <para>HL7 Logical Model: Standardized Terminology Knowledgebase, Release 1. HL7
-                        International [Internet]. 2021; Available from:
-                        https://www.hl7.org/documentcenter/private/standards/HL7_LM_TERM_KB_R1_INFORM_2021AUG_FINAL.pdf</para>
-                </listitem>
-                <listitem>
-                    <para>Engineering LibreTexts [Internet]. 2018 [cited 2024 Jan 9]. 1.3:
-                        Characteristics and Benefits of a Database. Available from:
-                        https://eng.libretexts.org/Bookshelves/Computer_Science/Databases_and_Data_Structures/Database_Design_2e_(Watt)/01%3A_Chapters/1.03%3A_Characteristics_and_Benefits_of_a_Databas</para>
-                </listitem>
-                <listitem>
-                    <para>Abad-Navarro F, Martínez-Costa C. A knowledge graph-based data
-                        harmonization framework for secondary data reuse. Computer Methods and
-                        Programs in Biomedicine [Internet]. 2024 Jan 1 [cited 2024 Jan
-                        9];243:107918. Available from:
-                        https://www.sciencedirect.com/science/article/pii/S0169260723005849</para>
-                </listitem>
-                <listitem>
-                    <para>LOINC [Internet]. [cited 2025 Jul 31]. Home. Available from: <link
-                            xlink:href="https://loinc.org/">https://loinc.org/</link></para>
-                </listitem>
-            </orderedlist>
-        </para>
     </section>
 </chapter>

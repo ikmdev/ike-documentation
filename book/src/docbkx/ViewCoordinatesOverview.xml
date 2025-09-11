@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>View Coordinates Overview</title>
+    <section>
+        <title>Purpose</title>
+        <para>This area of documentation will contain several guides that explain both the existing
+            functionality of the edit coordinate features in classic Komet, but also outline the
+            ongoing work to bring these features and functionalities into Next Gen Komet. </para>
+        <para><emphasis role="italic"><emphasis role="bold">NOTE: This document is a work in
+                    progress… as research comes out of the spike efforts, more information will be
+                    added to this document.</emphasis></emphasis></para>
+    </section>
+    <section>
+        <title>Goals</title>
+        <para>Once finalized, this document should clearly compare the classic and NextGen
+            approaches for each feature, highlight any gaps or challenges, and provide actionable
+            recommendations for implementation in NextGen Komet.</para>
+    </section>
+    <section>
+        <title>Functionalities that Need Fixing in Classic Komet</title>
+        <para>This is a spike effort <link xlink:href="https://ikmdev.atlassian.net/browse/IIA-2140"
+                >IIA-2140: Spike 1: Explore Classic Komet filters on Coordinates Menu and
+                Functionalities and code that need fixingDone</link></para>
+        <itemizedlist>
+            <listitem>
+                <para>Perform analysis of current Coordinates Menu functionality in Classic Komet
+                        <link
+                        xlink:href="https://ikmdev.atlassian.net/wiki/spaces/IIA/pages/929202187/Knowledge+Sharing?atlOrigin=eyJpIjoiZWU0OGI1OWVlYjNiNDA1ZTg2NTQ4OGM0MzgwOTI4NjkiLCJwIjoiYyJ9"
+                        >Knowledge Sharing</link>, <link
+                        xlink:href="https://ikmdev.atlassian.net/wiki/spaces/IIA/pages/928776193/View+Coordinates+Menu+Classic+Komet+Version?atlOrigin=eyJpIjoiYzhmOGJkNGRkODg3NGE3ZDhiYWJkZGY5NGVjYjdiMTIiLCJwIjoiYyJ9"
+                        >View Coordinates Menu (Classic Komet Version)</link></para>
+            </listitem>
+            <listitem>
+                <para>Document functionalities that currently do not work as intended
+                    (defects)</para>
+            </listitem>
+            <listitem>
+                <para>Create stories to fix defects Coordinates Menu in Classic Komet</para>
+            </listitem>
+        </itemizedlist>
+    </section>
+    <section>
+        <title>Coordinate Cascade Functionality</title>
+        <para>This is a spike effort <link xlink:href="https://ikmdev.atlassian.net/browse/IIA-2141"
+                >IIA-2141: Spike 2: Explore Classic Komet filters on Coordinates Menu- Coordinate
+                CascadeDone</link></para>
+        <itemizedlist>
+            <listitem>
+                <para>Research and describe how the Coordinate Cascade feature operates in the
+                    classic Komet application. <link
+                        xlink:href="https://ikmdev.atlassian.net/wiki/spaces/IIA/pages/929202187/Knowledge+Sharing?atlOrigin=eyJpIjoiZWU0OGI1OWVlYjNiNDA1ZTg2NTQ4OGM0MzgwOTI4NjkiLCJwIjoiYyJ9"
+                        >Knowledge Sharing</link>, <link
+                        xlink:href="https://ikmdev.atlassian.net/wiki/spaces/IIA/pages/928776193/View+Coordinates+Menu+Classic+Komet+Version?atlOrigin=eyJpIjoiYzhmOGJkNGRkODg3NGE3ZDhiYWJkZGY5NGVjYjdiMTIiLCJwIjoiYyJ9"
+                        >View Coordinates Menu (Classic Komet Version)</link></para>
+            </listitem>
+            <listitem>
+                <para>Detail the steps and logic behind its implementation.</para>
+            </listitem>
+            <listitem>
+                <para>Propose an approach for implementing equivalent functionality in NextGen
+                    Komet.</para>
+            </listitem>
+        </itemizedlist>
+    </section>
+    <section>
+        <title>Override Functionality</title>
+        <para>This is a spike effort <link xlink:href="https://ikmdev.atlassian.net/browse/IIA-2142"
+                >IIA-2142: Spike 3: Explore Classic Komet filters and override functionality on
+                Coordinates MenuDone</link></para>
+        <itemizedlist>
+            <listitem>
+                <para>Investigate how the Override feature works in the classic Komet
+                    application.</para>
+            </listitem>
+            <listitem>
+                <para>Explain the user experience, technical workflow, and any dependencies.</para>
+            </listitem>
+            <listitem>
+                <para>Recommend a method for implementing this feature in NextGen Komet.</para>
+            </listitem>
+        </itemizedlist>
+    </section>
+</chapter>
+
