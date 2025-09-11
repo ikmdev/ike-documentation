@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Functional Overview of View Coordinate Behaviors in Classic Komet</title>
+    <section>
+        <title>Purpose and Scope</title>
+        <para>This documentation provides a granular, step-by-step explanation of View Coordinate behaviors in the Search Panel, Concept Navigator, and Details Viewer within Classic Komet. It covers the menu structure, filtering logic, fallback mechanisms, data model relationships, and nuanced edge cases, referencing the foundational anatomy of concepts/patterns and the law of path transitivity. This is intended for functional analysts, solution architects, and developers designing, testing, or maintaining Komet functionality.</para>
+    </section>
+    <section>
+        <title>View Coordinate Menu Structure</title>
+        <section>
+            <title>Overview</title>
+            <para>The <emphasis role="bold">View Coordinate menu</emphasis> is a dynamic filter and
+                display control present in multiple Classic Komet panels. For this documentation, we
+                focus on its behavior in the Search Panel, Concept Navigator, and Details Viewer.
+                The menu is identical in structure across these panels, consisting of three main
+                coordinate types, each with specific sub-options.</para>
+        </section>
+        <section>
+            <title>Menu Breakdown</title>
+            <itemizedlist>
+                <listitem>
+                    <para><emphasis role="bold">Stamp Filter Coordinate</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para><emphasis role="bold">Change path:</emphasis> Selects the
+                                versioning path context.</para>
+                        </listitem>
+                        <listitem>
+                            <para><emphasis role="bold">Change position (time):</emphasis> Selects a
+                                temporal cutoff for version visibility.</para>
+                        </listitem>
+                        <listitem>
+                            <para><emphasis role="bold">Change filter states (status):</emphasis>
+                                Filters by semantic status (e.g., active, inactive, retired).</para>
+                        </listitem>
+                        <listitem>
+                            <para><emphasis role="bold">Change included modules:</emphasis>
+                                Restricts to specified modules.</para>
+                        </listitem>
+                        <listitem>
+                            <para><emphasis role="bold">Change excluded modules:</emphasis> Excludes
+                                specified modules.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Language Coordinate</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para><emphasis role="bold">Change description preference:</emphasis>
+                                Sets the order of description types (e.g., Fully Specified Name,
+                                Preferred Term, Synonym).</para>
+                        </listitem>
+                        <listitem>
+                            <para><emphasis role="bold">Change language:</emphasis> Filters by
+                                language (e.g., English, Spanish).</para>
+                        </listitem>
+                        <listitem>
+                            <para><emphasis role="bold">Change dialect preference order:</emphasis>
+                                Sets the order of dialects (e.g., US English, UK English).</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Navigation Coordinate</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para><emphasis role="bold">Change navigation:</emphasis> Selects the
+                                Navigation Pattern Semantic (e.g., Inferred, Stated) for hierarchy
+                                construction.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+            </itemizedlist>
+        </section>
+    </section>
+    <section>
+        <title>Data Model Foundations</title>
+        <section>
+            <title>Anatomy of Concepts and Patterns</title>
+            <itemizedlist>
+                <listitem>
+                    <para><emphasis role="bold">Concepts</emphasis> and <emphasis role="bold"
+                            >patterns</emphasis> are core entities, each composed of multiple
+                            <emphasis role="bold">semantics</emphasis> (e.g., descriptions,
+                        relationships, navigation patterns).</para>
+                </listitem>
+                <listitem>
+                    <para>Each <emphasis role="bold">semantic</emphasis> can have multiple <emphasis
+                            role="bold">versions</emphasis> (instances over time or across
+                        paths).</para>
+                </listitem>
+                <listitem>
+                    <para>Each version is defined by five <emphasis role="bold">STAMP</emphasis>
+                        attributes:</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para><emphasis role="bold">Status:</emphasis> The state of the version
+                                (active, inactive, etc.).</para>
+                        </listitem>
+                        <listitem>
+                            <para><emphasis role="bold">Time:</emphasis> The timestamp of the
+                                version.</para>
+                        </listitem>
+                        <listitem>
+                            <para><emphasis role="bold">Author:</emphasis> The creator of the
+                                version.</para>
+                        </listitem>
+                        <listitem>
+                            <para><emphasis role="bold">Module:</emphasis> The module to which the
+                                version belongs.</para>
+                        </listitem>
+                        <listitem>
+                            <para><emphasis role="bold">Path:</emphasis> The versioning
+                                branch/path.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+            </itemizedlist>
+        </section>
+        <section>
+            <title>Path Transitivity</title>
+            <itemizedlist>
+                <listitem>
+                    <para><emphasis role="bold">Paths</emphasis> are hierarchical and transitive,
+                        meaning higher-level paths inherit versions from lower-level paths.</para>
+                </listitem>
+                <listitem>
+                    <para>Example hierarchy:</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Primordial → Sandbox → Development → Master</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Transitive dependency:</emphasis> If a semantic
+                        version exists on Development, it is visible when Master is selected, but
+                        not vice versa.</para>
+                </listitem>
+                <listitem>
+                    <para>Unlike Git, Komet allows skipping intermediate paths when evaluating
+                        transitive relationships.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Example:</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Semantic A has versions on Primordial, Sandbox,
+                                Development.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Semantic B has a version only on Development.</para>
+                        </listitem>
+                        <listitem>
+                            <para>If path = Development: Both A and B appear.</para>
+                        </listitem>
+                        <listitem>
+                            <para>If path = Sandbox: Only A appears (B lacks a Sandbox
+                                version).</para>
+                        </listitem>
+                        <listitem>
+                            <para>If path = Master: Both A and B appear (Development is a transitive
+                                path for Master).</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+            </itemizedlist>
+        </section>
+    </section>
+    <section>
+        <title>Search Panel</title>
+        <section>
+            <title>Stamp Filter Coordinate Logic</title>
+            <para><emphasis role="bold">Purpose:</emphasis> Filters which Description Semantics of
+                the concept/pattern are displayed in search results.</para>
+            <para><emphasis role="bold">Step-by-step Filtering:</emphasis></para>
+            <orderedlist>
+                <listitem>
+                    <para><emphasis role="bold">Change path:</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Only semantics with a version on the selected path or any
+                                preceding transitive path are considered.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Example: If path = Sandbox, only versions on Sandbox or Primordial
+                                are eligible.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Change position (time):</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Only versions with a timestamp on or before the selected position
+                                are eligible.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Example: If position = 2023-01-01, only versions created before or
+                                on this date are considered.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Change filter states (status):</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Only versions with the selected status(es) are considered.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Example: If status = Active, only active versions are
+                                eligible.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Change included modules:</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Only versions in the included modules are considered.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Example: If included modules = [A, B], only versions in A or B are
+                                considered.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Change excluded modules:</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Versions in the excluded modules are filtered out.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Example: If excluded modules = [C], versions in C are
+                                omitted.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+            </orderedlist>
+            <para><emphasis role="bold">Fallback Mechanism:</emphasis></para>
+            <itemizedlist>
+                <listitem>
+                    <para>If a Description Semantic does not have a version meeting all criteria,
+                        the system attempts to find the latest version on the next available
+                        preceding transitive path, still honoring status and module criteria.</para>
+                </listitem>
+                <listitem>
+                    <para>If no valid version is found after all fallbacks, the semantic is not
+                        displayed.</para>
+                </listitem>
+            </itemizedlist>
+            <para><emphasis role="bold">Edge Case Example:</emphasis></para>
+            <itemizedlist>
+                <listitem>
+                    <para>Path = Master, but a semantic only has a version on Development.</para>
+                </listitem>
+                <listitem>
+                    <para>The system recognizes Development as a transitive path for Master, so the
+                        semantic is displayed.</para>
+                </listitem>
+            </itemizedlist>
+        </section>
+        <section>
+            <title>Language Coordinate Logic</title>
+            <para><emphasis role="bold">Purpose:</emphasis> Determines the display name for
+                top-level components (concepts/patterns).</para>
+            <para><emphasis role="bold">Step-by-step Filtering:</emphasis></para>
+            <orderedlist>
+                <listitem>
+                    <para><emphasis role="bold">Change description preference:</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>The system attempts to display the first available description
+                                type in the specified order.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Example: Preference order = [Preferred Term, Fully Specified
+                                Name]. If no Preferred Term exists, fallback to Fully Specified
+                                Name.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Change language:</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Only descriptions in the selected language are considered.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Example: If language = Spanish, only Spanish descriptions are
+                                eligible.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Change dialect preference order:</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>The system attempts to display the first available dialect in the
+                                specified order.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Example: Dialect order = [UK English, US English]. If no UK
+                                English version exists, fallback to US English.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+            </orderedlist>
+            <para><emphasis role="bold">Fallback Mechanism:</emphasis></para>
+            <itemizedlist>
+                <listitem>
+                    <para>If no matching Description Semantic is found, a negative nid (identifier)
+                        is displayed for the component.</para>
+                </listitem>
+            </itemizedlist>
+            <para><emphasis role="bold">Note:</emphasis> Semantics themselves are not top-level
+                components and are not affected by Language Coordinates in the Search Panel.</para>
+        </section>
+    </section>
+    <section>
+        <title>Concept Navigator</title>
+        <section>
+            <title>Navigation Coordinate Logic</title>
+            <para><emphasis role="bold">Purpose:</emphasis> Determines which Navigation Pattern
+                Semantic of the concept is used to build the concept hierarchy.</para>
+            <para><emphasis role="bold">Step-by-step Behavior:</emphasis></para>
+            <orderedlist>
+                <listitem>
+                    <para><emphasis role="bold">Change navigation:</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>User selects a Navigation Pattern Semantic (e.g., Inferred or
+                                Stated).</para>
+                        </listitem>
+                        <listitem>
+                            <para>The hierarchy is rebuilt based on the is-a relationships defined
+                                in the selected semantic.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+            </orderedlist>
+            <para><emphasis role="bold">Data Model Note:</emphasis></para>
+            <itemizedlist>
+                <listitem>
+                    <para>Each Navigation Pattern Semantic can have multiple versions, each with its
+                        own set of is-a relationships and STAMP attributes. These is-a relationships
+                        are used to determine the parent-child relationship between concepts when
+                        building the concept hierarchy.</para>
+                </listitem>
+            </itemizedlist>
+        </section>
+        <section>
+            <title>Stamp Filter Coordinate Logic</title>
+            <para><emphasis role="bold">Purpose:</emphasis> Selects the appropriate version of the
+                current Navigation Pattern Semantic for each concept in the hierarchy.</para>
+            <para><emphasis role="bold">Step-by-step Filtering:</emphasis></para>
+            <orderedlist>
+                <listitem>
+                    <para><emphasis role="bold">Change path:</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Version must be on the selected path.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Change position (time):</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Version must be on or before the selected time.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Change filter states (status):</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Version must have the selected status.</para>
+                        </listitem>
+                        <listitem>
+                            <para><emphasis role="bold">Open Question:</emphasis> Does the
+                                priority/order of statuses affect selection? (Requires
+                                clarification.)</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Change included modules:</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Version must be in the included modules.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Change excluded modules:</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>(Functionality under review; may not be required.)</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+            </orderedlist>
+            <para><emphasis role="bold">All filters are applied together to select the final version
+                    used for hierarchy construction.</emphasis></para>
+        </section>
+        <section>
+            <title>Language Coordinate Logic</title>
+            <para><emphasis role="bold">Purpose:</emphasis> Determines the display name for each
+                concept in the hierarchy.</para>
+            <para><emphasis role="bold">Step-by-step Filtering:</emphasis></para>
+            <orderedlist>
+                <listitem>
+                    <para><emphasis role="bold">Change description preference:</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>The system attempts to display the first available description
+                                type in the specified order.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Example: Preference order = [Preferred Term, Fully Specified
+                                Name]. If no Preferred Term exists, fallback to Fully Specified
+                                Name.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Change language:</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Only descriptions in the selected language are considered.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Example: If language = Spanish, only Spanish descriptions are
+                                eligible.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Change dialect preference order:</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>The system attempts to display the first available dialect in the
+                                specified order.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Example: Dialect order = [UK English, US English]. If no UK
+                                English version exists, fallback to US English.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+            </orderedlist>
+            <para><emphasis role="bold">Fallback Mechanism:</emphasis></para>
+            <itemizedlist>
+                <listitem>
+                    <para>If no matching Description Semantic is found, a negative nid (identifier)
+                        is displayed for the component.</para>
+                </listitem>
+            </itemizedlist>
+            <para><emphasis role="bold">Fallback Mechanism:</emphasis></para>
+            <para>If no matching Description Semantic is found, a negative nid is displayed.</para>
+        </section>
+    </section>
+    <section>
+        <title>Details Viewer</title>
+        <section>
+            <title>Stamp Filter Coordinate Logic</title>
+            <para><emphasis role="bold">Purpose:</emphasis> Determines which semantics of the
+                concept/pattern are displayed in detail.</para>
+            <para><emphasis role="bold">Step-by-step Filtering:</emphasis></para>
+            <orderedlist>
+                <listitem>
+                    <para><emphasis role="bold">Change path:</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Only semantics with a version on the selected or preceding
+                                transitive path are considered.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Change position (time):</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Only versions on or before the selected time are
+                                considered.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Change filter states (status):</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Only semantics with the latest version in a valid status are
+                                considered.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Change included modules:</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Only semantics in the included modules are considered.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Change excluded modules:</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Semantics in the excluded modules are filtered out.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+            </orderedlist>
+            <para><emphasis role="bold">Fallback Mechanism:</emphasis></para>
+            <itemizedlist>
+                <listitem>
+                    <para>If a semantic does not have a version that meets the criteria, the system
+                        checks the next available preceding transitive path. If still no match, the
+                        semantic is not displayed.</para>
+                </listitem>
+            </itemizedlist>
+        </section>
+        <section>
+            <title>Language Coordinate Logic</title>
+            <para><emphasis role="bold">Purpose:</emphasis> Determines the display names for all
+                semantic labels, field labels, and field values.</para>
+            <para><emphasis role="bold">Step-by-step Filtering:</emphasis></para>
+            <para>Same as in the Search Panel and Concept Navigator.</para>
+            <para><emphasis role="bold">Fallback Mechanism:</emphasis></para>
+            <para>If no matching Description Semantic is found, a negative nid is displayed for the
+                label or value.</para>
+        </section>
+    </section>
+    <section>
+        <title>Fallback and Display Logic</title>
+        <section>
+            <title>Stamp Filter Fallback</title>
+            <itemizedlist>
+                <listitem>
+                    <para>For each semantic, check if a version matches all selected Stamp Filter
+                        criteria.</para>
+                </listitem>
+                <listitem>
+                    <para>If not, fallback to the latest version on the next available preceding
+                        transitive path.</para>
+                </listitem>
+                <listitem>
+                    <para>Continue fallback until a valid version is found or all paths are
+                        exhausted.</para>
+                </listitem>
+                <listitem>
+                    <para>If no valid version is found, omit the semantic from display.</para>
+                </listitem>
+            </itemizedlist>
+        </section>
+        <section>
+            <title>Language Coordinate Fallback</title>
+            <itemizedlist>
+                <listitem>
+                    <para>For each concept or label, check if a Description Semantic matches all
+                        selected Language Coordinate criteria.</para>
+                </listitem>
+                <listitem>
+                    <para>If not, fallback to the next priority description type or dialect.</para>
+                </listitem>
+                <listitem>
+                    <para>Continue fallback until a valid description is found or all options are
+                        exhausted.</para>
+                </listitem>
+                <listitem>
+                    <para>If no valid description is found, display a negative nid.</para>
+                </listitem>
+            </itemizedlist>
+        </section>
+    </section>
+    <section>
+        <title>Panel Comparison Table</title>
+        <table>
+            <title>Panel Comparison Table</title>
+            <tgroup cols="4">
+                <colspec colnum="1" colname="col1"/>
+                <colspec colnum="2" colname="col2"/>
+                <colspec colnum="3" colname="col3"/>
+                <colspec colnum="4" colname="col4"/>
+                <tbody>
+                    <row>
+                        <entry>
+                            <para><emphasis role="bold">Panel</emphasis></para>
+                        </entry>
+                        <entry>
+                            <para><emphasis role="bold">Stamp Filter Coordinates</emphasis></para>
+                        </entry>
+                        <entry>
+                            <para><emphasis role="bold">Language Coordinates</emphasis></para>
+                        </entry>
+                        <entry>
+                            <para><emphasis role="bold">Navigation Coordinate</emphasis></para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="bold">Search Panel</emphasis></entry>
+                        <entry>Filters Description Semantics for search results</entry>
+                        <entry>Determines display name for top-level components</entry>
+                        <entry>N/A</entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="bold">Concept Navigator</emphasis></entry>
+                        <entry>Filters Navigation Pattern Semantic version for hierarchy</entry>
+                        <entry>Determines display names in the hierarchy</entry>
+                        <entry>Selects Navigation Pattern Semantic</entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="bold">Details Viewer</emphasis></entry>
+                        <entry>Filters all semantics for detailed display</entry>
+                        <entry>Determines display names for all labels/values</entry>
+                        <entry>N/A</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </section>
+    <section>
+        <title>Example Scenarios</title>
+        <section>
+            <title>Path Filtering in Search Panel</title>
+            <itemizedlist>
+                <listitem>
+                    <para><emphasis role="bold">Setup:</emphasis> Concept X has Description
+                        Semantics on Primordial, Sandbox, and Development paths.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">User selects:</emphasis> Path = Sandbox.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Result:</emphasis> Only Description Semantics with
+                        versions on Sandbox or Primordial are displayed. Versions only on
+                        Development are not shown.</para>
+                </listitem>
+            </itemizedlist>
+        </section>
+        <section>
+            <title>Language Fallback in Concept Navigator</title>
+            <itemizedlist>
+                <listitem>
+                    <para><emphasis role="bold">Setup:</emphasis> Concept Y has a Preferred Term in
+                        US English, but not in UK English.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">User selects:</emphasis> Language = English, Dialect
+                        Preference Order = [UK English, US English].</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Result:</emphasis> System attempts UK English first,
+                        finds none, falls back to US English, and displays the Preferred Term in US
+                        English.</para>
+                </listitem>
+            </itemizedlist>
+        </section>
+        <section>
+            <title>Details Viewer Module Filtering</title>
+            <itemizedlist>
+                <listitem>
+                    <para><emphasis role="bold">Setup:</emphasis> Concept Z has semantics in modules
+                        A and B.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">User selects:</emphasis> Included Modules =
+                        A.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Result:</emphasis> Only semantics in module A are
+                        displayed in the Details Viewer.</para>
+                </listitem>
+            </itemizedlist>
+        </section>
+    </section>
+    <section>
+        <title>Edge Cases and Nuances</title>
+        <itemizedlist>
+            <listitem>
+                <para><emphasis role="bold">Transitive Path Skipping:</emphasis> Unlike Git, Komet
+                    allows skipping intermediate paths when evaluating transitive relationships for
+                    version visibility.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Negative nid Display:</emphasis> If no valid description
+                    or semantic is found after all fallbacks, the system displays a negative nid as
+                    a placeholder.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Status Priority:</emphasis> In Concept Navigator,
+                    clarification is needed on whether the order of statuses affects which
+                    Navigation Pattern Semantic version is selected.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Excluded Modules in Concept Navigator:</emphasis> The
+                    necessity and implementation of this filter are under review.</para>
+            </listitem>
+        </itemizedlist>
+    </section>
+    <section>
+        <title>Glossary</title>
+        <itemizedlist>
+            <listitem>
+                <para><emphasis role="bold">Concept:</emphasis> A primary data entity consisting of
+                    multiple semantics.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Semantic:</emphasis> A type of metadata or relationship
+                    associated with a concept.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Version:</emphasis> A specific instance of a semantic,
+                    defined by STAMP.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">STAMP:</emphasis> Status, Time, Author, Module,
+                    Path.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Negative nid:</emphasis> A placeholder identifier shown
+                    when no valid description is available.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Transitive Path:</emphasis> A path that inherits
+                    versions from preceding paths in the path hierarchy.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Navigation Pattern Semantic:</emphasis> Defines
+                    parent-child (is-a) relationships for building concept hierarchies.</para>
+            </listitem>
+        </itemizedlist>
+    </section>
+    <section>
+        <title>Summary</title>
+        <itemizedlist>
+            <listitem>
+                <para><emphasis role="bold">View Coordinate menus</emphasis> provide robust,
+                    context-sensitive filtering and display logic across Classic Komet
+                    panels.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Stamp Filter Coordinates</emphasis> and <emphasis
+                        role="bold">Language Coordinates</emphasis> work in tandem to ensure users
+                    see the most relevant and contextually appropriate data.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Transitive path logic</emphasis> and <emphasis
+                        role="bold">fallback mechanisms</emphasis> maximize data visibility while
+                    respecting user-selected filters.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Panel-specific roles</emphasis> ensure that each
+                    coordinate type fulfills its intended function (e.g., hierarchy construction in
+                    Concept Navigator, label/value display in Details Viewer).</para>
+            </listitem>
+        </itemizedlist>
+        <para><emphasis role="bold">Action Items</emphasis></para>
+        <itemizedlist>
+            <listitem>
+                <para><emphasis role="bold">Clarify status priority logic</emphasis> in Concept
+                    Navigator for Navigation Pattern Semantic version selection.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Review necessity of excluded modules filter</emphasis>
+                    in Concept Navigator.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Consider UI enhancements</emphasis> to visualize
+                    fallback logic and negative nid occurrences for user transparency.</para>
+            </listitem>
+        </itemizedlist>
+    </section>
+</chapter>
