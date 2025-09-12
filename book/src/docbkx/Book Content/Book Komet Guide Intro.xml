@@ -60,14 +60,6 @@
         data management systems. This integrated knowledge base is backed by HL7 ballot and built
         upon the foundational pillars of STAMP, concepts/patterns/semantics, and versioned knowledge
         graphs. </para>
-    <figure xml:id="TinkarLogicalModel">
-        <title>Tinkar Logical Model</title>
-        <mediaobject>
-            <imageobject>
-                <imagedata fileref="../images/TinkarLogicalModel.svg" scale="25" align="center"/>
-            </imageobject>
-        </mediaobject>
-    </figure>
     <para>STAMP (Status, Time, Author, Module, Path) is a common metadata set for each data model
         component, enabling precise recording and tracking of all historical changes with context to
         maintain semantic meaning. Each STAMP version represents a unique state of an object at a
@@ -96,7 +88,7 @@
         extend. </para>
     <para>The connection between concepts, patterns, semantics (along with the associated STAMPS)
         can network together by their relationships to create a <emphasis role="bold">Versioned
-            Knowledge Graph, </emphasis>a foundational method to efficiently track and retrieve data
+            Knowledge Graph, </emphasis> (<xref linkend="VersionedKnowledgeGraphs"></xref>a foundational method to efficiently track and retrieve data
         in a dynamic knowledge environment. These graph structures support rapid data querying, as
         both the data and relationships are permanently stored and can be retrieved with a single
         request. Versioned knowledge graphs ensure clinical concepts are represented in a

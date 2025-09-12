@@ -1,0 +1,1128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Developers Onboarding Guide</title>
+    <section>
+        <title>Purpose</title>
+        <para>It has been written to assist end users in installing the necessary tools for Tinkar
+            and Komet environments. This guide will help with the installation of prerequisites, the
+            establishment of a safe work environment, and the acquisition of data needed for these
+            environments.</para>
+        <para/>
+        <para><emphasis role="bold">Please, read this ENTIRE guide and follow the below <xref linkend="OOO"/> and the appropriate steps, in-order, to be successful in setting up the
+                necessary environments. </emphasis></para> 
+        
+    </section>
+    <section xml:id="OOO">
+        <title>Order of Operations</title>
+        <para>Working top-down, beginning with “Pre-Req Installs”, complete all numbered steps (if
+            applicable), to ensure no user errors occur in your environment set up:</para>
+        <para><emphasis role="bold"><emphasis role="underline"><xref linkend="Pre-ReqInstalls"/></emphasis></emphasis></para>
+        <orderedlist>
+            <listitem>
+                <para>Install IDE</para>
+            </listitem>
+            <listitem>
+                <para>Install Git Bash (Windows only)</para>
+            </listitem>
+            <listitem>
+                <para>Install Java and Maven</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Install Java Environments</para>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+        </orderedlist>
+        <para><emphasis role="bold"><emphasis role="underline"><xref linkend="DevEnvironment"
+                    /></emphasis></emphasis></para>
+        <orderedlist>
+            <listitem>
+                <para>Set up your GitHub Account</para>
+            </listitem>
+            <listitem>
+                <para>Get added to IKM team on GitHub </para>
+            </listitem>
+            <?oxy_custom_start type="oxy_content_highlight" color="255,198,140"?>
+            <listitem>
+                <para><?oxy_custom_end?>Access the Important Sites</para>
+            </listitem>
+        </orderedlist>
+        <para><emphasis role="bold"><emphasis role="underline"><xref linkend="KOMETSetUp"/></emphasis></emphasis></para>
+        <orderedlist>
+            <listitem>
+                <para>Clone Komet</para>
+            </listitem>
+            <listitem>
+                <para>Build/run Komet</para>
+            </listitem>
+            <listitem>
+                <para>Download IntelliJ</para>
+            </listitem>
+            <listitem>
+                <para>Configure IntelliJ</para>
+            </listitem>
+        </orderedlist>
+    </section>
+    <section xml:id="Pre-ReqInstalls">
+        <title>PRE-REQ INSTALLS</title>
+        <section>
+            <title>Install an Integrated Development Environment (IDE)</title>
+            <para>IDE is a software application that provides comprehensive facilities to computer
+                programmers for software development. The IDE you choose must support Java
+                programming language.</para>
+            <para><emphasis role="bold">Recommended</emphasis>: IntelliJ or Visual Studio
+                Code</para>
+            <para> </para>
+            <para><emphasis role="bold">Download IntelliJ (<emphasis role="italic">preferred</emphasis>):</emphasis></para>
+            <orderedlist>
+                <listitem>
+                    <para>Go to jetbrains.com and navigate to IntelliJ under Developer Tools.</para>
+                </listitem>
+                <listitem>
+                    <para>Find the IntelliJ community version for the free option (you may have to
+                        scroll down the page).</para>
+                </listitem>
+                <listitem>
+                    <para>Download IntelliJ for your operating system and follow the directions for
+                        set up found in <xref linkend="DownloadIntelliJ"/> (<emphasis role="bold"
+                            >Note</emphasis>: certain criteria must be selected so make sure you
+                        follow the download directions!).</para>
+                    <para/>
+                </listitem>
+            </orderedlist>
+            <para><emphasis role="bold">Download Visual Studio Code:</emphasis></para>
+            <orderedlist>
+                <listitem>
+                    <para>Go to Microsoft’s Visual Studio Code website and go to “Downloads” for all
+                        download options.</para>
+                </listitem>
+                <listitem>
+                    <para>Find the Visual Studio Code Community Edition and download the version for
+                        your software. This is the only free edition available.</para>
+                </listitem>
+            </orderedlist>
+        </section>
+        <section>
+            <title>Git Bash (Windows only)</title>
+            <para><emphasis role="bold">Git Bash (Windows only)</emphasis></para>
+            <para>Git for Windows provides BASH emulation used to run Git from the command line for
+                Windows. </para>
+            <para><emphasis role="bold">NOTE</emphasis>: Git Bash is <emphasis role="underline">only</emphasis> applicable for Windows Devices. Linux and Mac Devices will
+                utilize the built in terminal system. </para>
+            <para><emphasis>To install Git Bash:</emphasis></para>
+            <orderedlist>
+                <listitem>
+                    <para>Navigate to the following link: <link xlink:href="https://git-scm.com/downloads/win">Git Bash
+                        Installer</link></para>
+                </listitem>
+                <listitem>
+                    <para>Under “Standalone Installer”, select “64-bit Git for Windows Setup” to
+                        launch the 64-bit Git Bash Installer. </para>
+                </listitem>
+                <listitem>
+                    <para>Once you launch the Git Bash Installer, continue with the Default
+                        settings, until you reach the “Select Component” prompt.</para>
+                </listitem>
+                <listitem>
+                    <para>Check the “<emphasis role="bold">Additional Icons</emphasis>” box within
+                        the Setup prompt. For example, look for the “Windows Terminal integration”
+                        item for add the Git Bash profile to Windows Terminal – highly recommended
+                        on Windows 11.</para>
+                    <itemizedlist>
+                        <listitem>
+                            <figure>
+                                <title>This action will put a Git Bash file on your desktop
+                                    screen.</title>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="../images/DevOBGuide-Additional%20Icons.svg" scale="25" align="center"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </figure>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para>Select "Next" </para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Select “Visual Studio Code" or “IntelliJ” if you wish to have this
+                                as your default editor. Otherwise, <emphasis role="italic">you will
+                                    select your IDE of choice that supports Java.</emphasis></para>
+                            <figure xml:id="DevOBGuide-DefaultEditor">
+                                <title>     Pre-req: You must have an IDE installed PRIOR to
+                                    downloading Git Bash</title>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="../images/DevOBGuide-Default%20Editor.svg" scale="25" align="center"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </figure>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Enable Symbolic Links</emphasis>. This is a checkbox
+                        that is unchecked by default and you will need to <emphasis role="bold">check it.</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para>Select “Next” and complete the Git Bash Download</para>
+                </listitem>
+            </orderedlist>
+            <para><emphasis>Setting Git Bash to always Run as Administrator</emphasis></para>
+            <orderedlist>
+                <listitem>
+                    <para>Launch Git Bash </para>
+                </listitem>
+                <listitem>
+                    <para>After launching Git Bash, <emphasis role="bold">right click</emphasis> the
+                        icon in the taskbar and <emphasis role="bold">select</emphasis>
+                        Properties.</para>
+                    <figure xml:id="DevOBGuide-Properties"> 
+                        <title>Properties</title> 
+                        <mediaobject> 
+                            <imageobject> 
+                                <imagedata fileref="../images/DevOBGuide-Properties.svg" scale="30" align="center"/> 
+                            </imageobject> 
+                        </mediaobject> 
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Within the Git Bash Properties Menu, select the ‘Shortcut’ tab and click
+                        ‘Advanced’</para>
+                    <figure>
+                        <title>Advanced</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/DevOBGuide-Shortcut%20Tab.svg" scale="25" align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Check the ‘Run as administrator’ box</para>
+                    <figure>
+                        <title>Run as administrator</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/DevOBGuide-Run%20as%20Administrator.svg" scale="25" align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Click “OK” within the “Advanced Properties” pop-up menu.</para>
+                </listitem>
+                <listitem>
+                    <para>Select “Apply” within the “Git Bash Properties” menu, followed by
+                        “OK”</para>
+                </listitem>
+                <listitem>
+                    <para>CLOSE out of Git Bash.</para>
+                </listitem>
+            </orderedlist>
+        </section>
+        <section>
+            <title>Git Setup</title>
+            <para>Git requires some basic setup before it is very useful – specifically setting the
+                user’s email and name to identify commits as the user.</para>
+            <para>Set the user’s name:</para>
+            <para>      git config --global user.name "John Doe"</para>
+            <para>Of course, replace “John Doe” with your own name.</para>
+            <para>Next, set your email address:</para>
+            <para>      git config --global user.email "john.doe@domain.com"</para>
+            <para>Replace the example email address with your own. Tip – do not use your Deloitte
+                email address as commits will be put on GitHub. Instead, either use your personal
+                email address associated with your GitHub account (see later on) or a generated
+                private email available within your GitHub profile settings page (Emails section –
+                look for an item called “Keep my email private”).</para>
+            <para>Optional Settings</para>
+            <para>There are a few settings worth considering.</para>
+            <para>Using the “simple” push strategy by default:</para>
+            <para>      git config --global push.default simple</para>
+            <para>Automatically setup remote branches upon pushing:</para>
+            <para>      git config --global push.autoSetupRemote true</para>
+            <para>Setting the default branch to “main”:</para>
+            <para>      git config --global init.defaultBranch main</para>
+            <para>Default editors</para>
+            <para>If you did not select a default text editor to use with Git, you can set this via
+                the command line. Only choose one of the following.</para>
+            <para>Use VSCode as your default editor:</para>
+            <para>          git config –global core.editor “code --wait”</para>
+            <para>Use Nano as your default editor:</para>
+            <para>          git config –global core.editor nano</para>
+        </section>
+        <section>
+            <title>Java</title>
+        <para>Java is a popular programming language and computing platform.</para>
+            <orderedlist>
+                <listitem>
+                    <para>If you already have Java installed, uninstall your version. </para>
+                </listitem>
+                <listitem>
+                    <para>Find the Java version that Komet is currently using by following the
+                        directions below.</para>
+                </listitem>
+                <listitem>
+                    <para>Go to the pom.xml file in the root of ikmdev/komet in GitHub and view the
+                            file.<link xlink:href="https://github.com/ikmdev/komet/blob/main/pom.xml">https://github.com/ikmdev/komet/blob/main/pom.xml</link></para>
+                </listitem>
+                <listitem>
+                    <para>On your keyboard, hit CTL+F to search this file in your browser for the
+                        term “maven-compiler”</para>
+                </listitem>
+                <listitem>
+                    <para>Look for the number under source/target/release.</para>
+                </listitem>
+                <listitem>
+                    <para>Look to see if “—enable-preview” exists under that</para>
+                    <figure xml:id="DevOBGuide--enable-preview">
+                        <title>maven-compiler</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/DevOBGuide--enable-preview.svg" scale="25" align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                    <para> This will determine which version you will download. In this screenshot
+                        example: “Java 23 preview”.</para>
+                    <para><emphasis role="bold">NOTE: Your version may vary, as Komet will go
+                            through upgrades since the release of this document.</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para>Navigate to this URL to download the open source JDK from Azul<link xlink:href="https://www.azul.com/downloads/?package=jdk&amp;show-old-builds=true#zulu">https://www.azul.com/downloads/?package=jdk&amp;show-old-builds=true#zulu</link></para>
+                </listitem>
+                <listitem>
+                    <para>Select your operating system (if it isn’t selected for you already) and
+                        select the version (e.g. 23), select the architecture based on your machine.
+                        For <emphasis role="bold">Windows</emphasis> it is most commonly “x86
+                        64-bit”. For <emphasis role="bold">Mac</emphasis> with M1 chip and above:
+                        choose “ARM 64-bit”.</para>
+                </listitem>
+                <listitem>
+                    <para>Select the latest version after those filters are set.</para>
+                </listitem>
+                <listitem>
+                    <para>Click “Download”. Select the .msi installer for Windows and for Mac (M1
+                        chip and above) choose the .dmg installer.</para>
+                    <figure xml:id="DevOBGuide-InstallJavaversion"> 
+                        <title>Windows:</title> 
+                        <mediaobject> 
+                            <imageobject> 
+                                <imagedata fileref="../images/DevOBGuide-Install%20Java%20version.svg" scale="25" align="center"/> 
+                            </imageobject> 
+                        </mediaobject> 
+                    </figure> 
+                    <figure xml:id="DevOBGuide-InstallJavaversionMAC"> 
+                        <title>Mac:</title> 
+                        <mediaobject> 
+                            <imageobject> 
+                                <imagedata fileref="../images/DevOBGuide-Install%20Java%20version%20MAC.svg" scale="25" align="center"/> 
+                            </imageobject> 
+                        </mediaobject> 
+                    </figure> 
+                    <para>If Windows warns you about the file, click ‘keep’.</para>
+                    <figure xml:id="DevOBGuide-SetJAVAHomevariable"> 
+                        <title>Windows only: During installation click the red ‘x’ icon for Set
+                            JAVA_HOME variable to change that option to ‘Will be installed on local
+                            hard drive’</title> 
+                        <mediaobject> 
+                            <imageobject> 
+                                <imagedata fileref="../images/DevOBGuide-Set%20JAVA_Home%20variable.svg" scale="25" align="center"/> 
+                            </imageobject> 
+                        </mediaobject> 
+                    </figure> 
+                    <figure xml:id="DevOBGuide-Installer"> 
+                        <title>Mac Only: Go through the install steps until complete. No extra steps
+                            are necessary.</title> 
+                        <mediaobject> 
+                            <imageobject> 
+                                <imagedata fileref="../images/DevOBGuide-Installer.svg" scale="25" align="center"/> 
+                            </imageobject> 
+                        </mediaobject> 
+                    </figure> 
+                    <figure xml:id="DevOBGuide-InstallationCompleted"> 
+                        <title>Mac: Installation Complete</title> 
+                        <mediaobject> 
+                            <imageobject> 
+                                <imagedata fileref="../images/DevOBGuide-Installation%20Completed.svg" scale="25" align="center"/> 
+                            </imageobject> 
+                        </mediaobject> 
+                    </figure> 
+                    
+                </listitem>
+            </orderedlist>
+       </section>     
+    </section>
+    <section xml:id="DevEnvironment">
+        <title>DEVELOPMENT ENVIRONMENT SET UP</title>
+        <para>Tinkarbuild is the environment we use to build our Integrated Knowledge Management
+            (IKM) project called Tinkar (Terminology Knowledge Architecture). Tinkar is a logical
+            model that aims to provide a foundation for a knowledge of architecture that will
+            integrate local systems and medical and laboratory terminologies to support clinical
+            information that can communicate effectively across multiple systems. The application we
+            use to do this is called Komet.</para>
+        <section>
+            <title>GitHub Account </title>
+            <para>Git is a version-control management and collaboration software since 2005. GitHub
+                (since 2008) is an online application that is a great tool to collaborate on work
+                and provides:</para>
+            <itemizedlist>
+                <listitem>
+                    <para>A visual interface for Git</para>
+                </listitem>
+                <listitem>
+                    <para>A free cloud storage for all your projects' code/files</para>
+                </listitem>
+            </itemizedlist>
+            <para>For more detailed information on Git &amp; GitHub, navigate to <link xlink:href="https://docs.github.com/en/get-started/start-your-journey/about-github-and-git">About GitHub and Git</link></para>
+            <section>
+                <title>GitHub Account Creation</title>
+                <para><emphasis role="bold">If you already have an account, please proceed to the
+                        next step.</emphasis></para>
+                <para><emphasis role="bold">IMPORTANT NOTE:</emphasis> You'll need to create a free
+                    personal account on GitHub with a personal email address. Below are steps to
+                    sign-up for GitHub:</para>
+                <orderedlist>
+                    <listitem>
+                        <para>Navigate to <link xlink:href="https://github.com/">https://github.com</link>.</para>
+                    </listitem>
+                    <listitem>
+                        <para>From the top-right of the screen, select “<emphasis role="bold">Sign
+                                up”.</emphasis></para>
+                    </listitem>
+                    <listitem>
+                        <para>Follow the prompts to create your personal account.</para>
+                    </listitem>
+                </orderedlist>
+                <para><emphasis role="bold">Note</emphasis>: During sign up, you'll be asked to
+                        <emphasis role="bold"><emphasis role="underline">verify your email
+                            address</emphasis></emphasis>. Ensure this step is complete so you may
+                    be granted access to basic GitHub tasks, such as creating a repository. In
+                    addition, you may utilize your personal GitHub account if you wish.</para>
+            </section>
+            <section>
+                <title>Accessing IKMDEV GitHub repositories</title>
+                <para><emphasis role="bold">IKMDEV</emphasis> is the name of the repository and
+                    organization that keeps all the projects under it. It has public and private
+                    repos. Once you are added to the organization, you can checkout, check-in to any
+                    project available on IKMDEV. </para>
+                <para>Once your GitHub account and profile is set up, please notify the GitHub
+                    IKMDEV organization Admin to add your GitHub User ID (email address) to the
+                    IKMDEV organization on GitHub. </para>
+                <para>You can see list of all projects/repos here: <link xlink:href="https://github.com/ikmdev">Integrated Knowledge Management
+                        (github.com)</link></para>
+            </section>
+            <section>
+                <title>Navigating IKMDEV</title>
+                <para><emphasis>Verifying Access</emphasis></para>
+                <para>Once your request has been sent and the admin has confirmed your access, you
+                    will see “IKMDEV” listed under “Organizations” as shown here:</para>
+                <figure xml:id="DevOBGuide-Organizations"> 
+                    <title>Organizations</title> 
+                    <mediaobject> 
+                        <imageobject> 
+                            <imagedata fileref="../images/DevOBGuide-Organizations.svg" scale="25" align="center"/> 
+                        </imageobject> 
+                    </mediaobject> 
+                </figure>
+                <para><emphasis>IKMDEV workflow &amp; permissions</emphasis></para>
+                <para>For all <emphasis role="underline">IKMDEV repositories/projects</emphasis>,
+                    you will need to understand and <emphasis role="underline">follow our specified
+                        workflow with forking process</emphasis> (for cloning, forking and branching
+                    in IKMDEV GitHub space) and permissions to be able to do read and write
+                    operations on the IKMDEV repositories (check-in and check-out): </para>
+                <orderedlist>
+                    <listitem>
+                        <para><link xlink:href="https://ikmdev.atlassian.net/wiki/spaces/IAT/pages/345440258">GitHub Workflow - Individual Fork - IKM Automation - IKM Confluence
+                                (atlassian.net)</link></para>
+                    </listitem>
+                    <listitem>
+                        <para><link xlink:href="https://ikmdev.atlassian.net/wiki/spaces/IAT/pages/494305307">GitHub Permissions - IKM Automation - IKM Confluence
+                                (atlassian.net)</link></para>
+                    </listitem>
+                </orderedlist>
+            </section>
+            <section>
+                <title>Additional GitHub Learning (optional)</title>
+                <para><emphasis>First GitHub exercise (If Applicable)</emphasis></para>
+                <para>To learn more about GitHub's pull request workflow navigate to the link
+                    below:</para>
+                <para>
+                    <link xlink:href="https://docs.github.com/en/get-started/start-your-journey/hello-world">Hello World - GitHub Docs</link></para>
+                <para><emphasis>GitHub Downloading, Cloing, and Forking</emphasis></para>
+                <para>To learn how to download files/repositories from GitHub, and understand the
+                    difference between downloading, cloning, and forking please read the steps
+                    outlined below:</para>
+                <para>
+                    <link xlink:href="https://docs.github.com/en/get-started/start-your-journey/downloading-files-from-github">Downloading files from GitHub - GitHub Docs</link></para>
+                <para><emphasis>How to upload your project to GitHub</emphasis></para>
+                <para>To Learn more about how to upload the files for your project to GitHub please
+                    read the steps outlined below:</para>
+                <para>
+                    <link xlink:href="https://docs.github.com/en/get-started/start-your-journey/uploading-a-project-to-github">Uploading a project to GitHub - GitHub Docs</link></para>
+                <para><emphasis>Uploading a project to GitHub - GitHub Docs</emphasis></para>
+                <para><emphasis><emphasis role="bold">For more information on Git/GitHub and how you
+                            can use Git/GitHub while working on IKMDEV repositories/projects can be
+                            found in the <xref linkend="Appendix"/></emphasis></emphasis></para>
+            </section>
+        </section>
+    </section>
+    <section xml:id="KOMETSetUp">
+        <title>KOMET ENVIRONMENT SET UP</title>
+        <para>Komet is our tool to achieve our goal of integrated knowledge management.</para>
+        <section>
+            <title>Clone Komet</title>
+            <para>To clone Komet, follow the steps below:</para>
+            <orderedlist>
+                <listitem>
+                    <para><emphasis role="bold">Go</emphasis> to <link xlink:href="https://github.com/ikmdev/komet">https://github.com/ikmdev/komet</link> website.</para>
+                </listitem>
+                <listitem>
+                    <para>Navigate to the drop-down options under “&lt;> Code” </para>
+                </listitem>
+                <listitem>
+                    <para>Next <emphasis role="bold">clone</emphasis> (copy) the Komet Git
+                        repository (the HTTPS URL shown in the red box below) from GitHub and run it
+                        within the <emphasis role="bold">terminal (on macOS or Linux</emphasis>)
+                            <emphasis role="bold">OR</emphasis>
+                        <emphasis role="bold">Git Bash terminal (on Windows)</emphasis>. This will
+                        put the repository at directory &lt;username>/projects/komet.</para>
+                    <figure xml:id="DevOBGuide-HTTPS_URL"> 
+                        <title>Clone Komet Git repository</title> 
+                        <mediaobject> 
+                            <imageobject> 
+                                <imagedata fileref="../images/DevOBGuide-HTTPS_URL.svg" scale="25" align="center"/> 
+                            </imageobject> 
+                        </mediaobject> 
+                    </figure> 
+                    
+                </listitem>
+                <listitem>
+                    <para>Utilizing <emphasis role="bold">terminal (on macOS or Linux</emphasis>)
+                            <emphasis role="bold">OR</emphasis>
+                        <emphasis role="bold">Git Bash terminal (on Windows)</emphasis>. <emphasis role="bold">Run</emphasis> the following commands one by one:</para>
+                    <para>mkdir -p $HOME/projects</para>
+                    <para>cd $HOME/projects</para>
+                    <para>git clone https://github.com/ikmdev/komet.git</para>
+                    <para>Note for Mac Users:<emphasis role="italic"> On macOS after you run the
+                            above commands, you may then be prompted to install the Xcode developer
+                            tools. Accept the agreement to install the toolkit, and the git clone
+                            should finish. </emphasis>
+                    </para>
+                    <para>After the Git clone is done, the respository folder can be found in the
+                        projects directory as shown below.</para>
+                    <figure xml:id="DevOBGuide-Komet_Repository_Folder"> 
+                        <title>Komet repository folder in projects directory</title> 
+                        <mediaobject> 
+                            <imageobject> 
+                                <imagedata fileref="../images/DevOBGuide-Komet_Repository_Folder.svg" scale="25" align="center"/> 
+                            </imageobject> 
+                        </mediaobject> 
+                    </figure> 
+                    
+                </listitem>
+            </orderedlist>
+        </section>
+        <section>
+            <title>Build/Run Komet</title>
+            <para>To build &amp; run Komet, follow the steps below:</para>
+            <orderedlist>
+                <listitem>
+                    <para>Open a <emphasis role="bold">New Terminal (on macOS or Linux) or Git Bash
+                            Terminal (for Windows)</emphasis>.</para>
+                </listitem>
+                <listitem>
+                    <para>Run the below command:</para>
+                    <para>     mvn clean install</para>
+                </listitem>
+                <listitem>
+                    <para>Once the above command has been run, run the following command list
+                        below:</para>
+                    <para>     mvn -f application javafx:run</para>
+                </listitem>
+            </orderedlist>
+        </section>
+        <section>
+            <title>Download Komet Sample Data</title>
+            <para>Starter data must be downloaded prior to downloading IntelliJ. To download Komet
+                starter data:</para>
+            <orderedlist>
+                <listitem>
+                    <para>Navigate to the following link <link xlink:href="https://repo1.maven.org/maven2/dev/ikm/data/tinkar/tinkar-starter-data/">Starter Data Sets</link>, which is the landing page for the latest
+                        transformed and started data sets.  </para>
+                </listitem>
+                <listitem>
+                    <para>Click the link for the "Latest Starter Set" under the Tinkar Core Starter
+                        Set header. This will open a browser window to automatically initiate the
+                        download from Nexus. </para>
+                </listitem>
+                <listitem>
+                    <para>Once downloaded, move the zip file to the “Solor” folder as depicted in
+                        the screenshot above “Build/Run Komet”. </para>
+                </listitem>
+            </orderedlist>
+        </section>
+        <section xml:id="DownloadIntelliJ">
+            <title>Download IntelliJ (if you haven’t
+                already)<?oxy_custom_start type="oxy_content_highlight" color="255,198,140"?></title><?oxy_custom_end?>
+            <para>IntelliJ is an IDE written in Java for developing computer software written in
+                JVM-based languages like Java. This is the IDE used to make changes to our Komet
+                application. </para>
+            <para>To download IntelliJ, following the steps below:</para>
+            <orderedlist>
+                <listitem>
+                    <para>Navigate to the following link: <link
+                            xlink:href="https://www.jetbrains.com/idea/download/?section=windows"
+                            >Download IntelliJ IDEA – The Leading Java and Kotlin IDE
+                            (jetbrains.com)</link></para>
+                </listitem>
+                <listitem>
+                    <para>Go to the community edition. This is the free version that is available
+                        (you may have to scroll down)</para>
+                </listitem>
+                <listitem>
+                    <para>Select "Download" under your applicable operating system. </para>
+                    <para><emphasis><emphasis role="bold">NOTE</emphasis>: You may download the
+                            license for Ultimate at your own cost, however, the Community Edition is
+                            free. You can find the Community Edition by scrolling to the bottom of
+                            the screen. </emphasis></para>
+                    <figure xml:id="DevOBGuide-IntelliJ">
+                        <title>Downloading IntelliJ</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/DevOBGuide-IntelliJ.svg" scale="25"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Do not enter your email if a prompted. Select the downloaded IntelliJ file
+                        from Downloads at the top right-hand screen.</para>
+                </listitem>
+                <listitem>
+                    <para>When installing IntelliJ, proceed with the default setings <emphasis
+                            role="bold">EXCEPT</emphasis> for when you reach the following screen
+                        below. Checkmark the boxes as shown:</para>
+                    <figure xml:id="DevOBGuide-IntelliJCheckmarks">
+                        <title>IntelliJ Installation Options</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/DevOBGuide-IntelliJCheckmarks.svg"
+                                    scale="25" align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+            </orderedlist>
+        </section>
+        <section>
+            <title>Configure IntelliJ</title>
+            <para>Tonconfigure IntelliJ, you must:</para>
+            <orderedlist>
+                <listitem>
+                    <para><emphasis role="bold">Click</emphasis> "Open Project" within IntelliJ and
+                        navigate to the cloned project (i.e., ~/Code/komet)</para>
+                    <figure xml:id="DevOBGuide-Open_Project"> 
+                        <title>Open Project</title> 
+                        <mediaobject> 
+                            <imageobject> 
+                                <imagedata fileref="../images/DevOBGuide-Open_Project.svg" scale="25" align="center"/> 
+                            </imageobject> 
+                        </mediaobject> 
+                    </figure> 
+                    
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Click</emphasis> "Trust Project"</para>
+                </listitem>
+                <listitem>
+                    <para>Navigate to "File", follwoed by Project Structure"</para>
+                </listitem>
+                <listitem>
+                    <para>Within the SDK dropdown, <emphasis role="bold">select</emphasis> the
+                        detected SDK in your case the Azul SDK we downloaded earlier</para>
+                    <figure xml:id="DevOBGuide-SDK_Dropdown"> 
+                        <title>SDK Dropdown</title> 
+                        <mediaobject> 
+                            <imageobject> 
+                                <imagedata fileref="../images/DevOBGuide-SDK_Dropdown.svg" scale="25" align="center"/> 
+                            </imageobject> 
+                        </mediaobject> 
+                    </figure> 
+                    
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Select</emphasis> the language level that aligns
+                        with what we saw in Komet’s pom.xml (for example: 23 preview but your
+                        version may vary)</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>If prompted, you may ignore the "Read Me" instructions</para>
+                        </listitem>
+                    </itemizedlist>
+                    <figure xml:id="DevOBGuide-Language_Level"> 
+                        <title>Selecting Language Level</title> 
+                        <mediaobject> 
+                            <imageobject> 
+                                <imagedata fileref="../images/DevOBGuide-Language_Level.svg" scale="25" align="center"/> 
+                            </imageobject> 
+                        </mediaobject> 
+                    </figure> 
+                    
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Select</emphasis> "Run", followed by "Edit
+                        Configurations..."</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Click</emphasis> 'Add new run configuration...' and
+                            <emphasis role="bold">select</emphasis> Applications</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Click</emphasis> "Modify Options" <emphasis role="bold">and select</emphasis> "Add VM options"</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para><emphasis role="bold">NOTE</emphasis>: VM options <emphasis role="bold">shifts</emphasis><emphasis role="bold">positions</emphasis> when you click “modify options” then “add
+                                VM options”, so ensure you <emphasis role="bold">are pasting in VM
+                                    options and NOT program arguments</emphasis></para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Set up </emphasis>Run Configurations, as shown
+                        below, for IntelliJ to run Komet</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>For your convenience, you can copy and paste the VM args from here
+                                instead of retyping from the screenshot:</para>
+                            <para>-Xmx10g --add-exports </para>
+                            <para>javafx.controls/com.sun.javafx.scene.control.behavior=dev.ikm.komet.navigator
+                                --add-exports</para>
+                            <para>javafx.base/com.sun.javafx.event=one.jpro.platform.file
+                                --add-exports
+                                javafx.base/com.sun.javafx.event=org.controlsfx.controls</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para>Once Run Configuration is set up, ensure all run options are selected,
+                        similar to screenshot below within the "Add Run Options"</para>
+                    <figure xml:id="DevOBGuide-Run_Options"> 
+                        <title>Add Run Options</title> 
+                        <mediaobject> 
+                            <imageobject> 
+                                <imagedata fileref="../images/DevOBGuide-Run_Options.svg" scale="25" align="center"/> 
+                            </imageobject> 
+                        </mediaobject> 
+                    </figure> 
+                    
+                </listitem>
+                <listitem>
+                    <para>For the "Main Class" field <emphasis role="bold">click</emphasis> the
+                        “Browse” icon and then <emphasis role="bold">click </emphasis>the option
+                        “App of dev.ikm.komet.app”. After that <emphasis role="bold">click</emphasis> “ok:</para>
+                    <figure xml:id="DevOBGuide-Main_Class"> 
+                        <title>Selecting Main Class</title> 
+                        <mediaobject> 
+                            <imageobject> 
+                                <imagedata fileref="../images/DevOBGuide-Main_Class.svg" scale="25" align="center"/> 
+                            </imageobject> 
+                        </mediaobject> 
+                    </figure> 
+                    
+                </listitem>
+                <listitem>
+                    <para>Once run options have been selected, select "Apply" and then "OK"</para>
+                    <figure xml:id="DevOBGuide-Apply_Run_Configurations"> 
+                        <title>Select "OK" </title> 
+                        <mediaobject> 
+                            <imageobject> 
+                                <imagedata fileref="../images/DevOBGuide-Apply_Run_Configurations.svg" scale="25" align="center"/> 
+                            </imageobject> 
+                        </mediaobject> 
+                    </figure> 
+                    
+                </listitem>
+                <listitem>
+                    <para>To create the Maven, build first <emphasis role="bold">select</emphasis>
+                        the lower case "m" in the right-hand corner of the screen. Then <emphasis role="bold">click</emphasis> the "execute maven goal" icon.</para>
+                    <figure xml:id="DevOBGuide-Creating_the_Maven_Build"> 
+                        <title>Creating the Maven Build</title> 
+                        <mediaobject> 
+                            <imageobject> 
+                                <imagedata fileref="../images/DevOBGuide-Creating_the_Maven_Build.svg" scale="25" align="center"/> 
+                            </imageobject> 
+                        </mediaobject> 
+                    </figure> 
+                    
+                </listitem>
+                <listitem>
+                    <para>After that<emphasis role="bold"> type</emphasis> “mvn clean install -U
+                        -DskipTests -Dmaven.build.cache.skipCache=true -Dmaven.javadoc.skip=true”
+                        and hit enter. It will take around 5-10 minutes to install the first time.
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Then <emphasis role="bold">click</emphasis> the green play button and
+                        IntelliJ set up is complete</para>
+                    <figure xml:id="DevOBGuide-IntelliJ_SetUp_Complete"> 
+                        <title>Name of Image Normally Written</title> 
+                        <mediaobject> 
+                            <imageobject> 
+                                <imagedata fileref="../images/DevOBGuide-IntelliJ_SetUp_Complete.svg" scale="25" align="center"/> 
+                            </imageobject> 
+                        </mediaobject> 
+                    </figure> 
+                    
+                    <para><emphasis role="bold">Note:</emphasis> can click highlighted icon in blue
+                        to put mvn clean commands</para>
+                    <para><emphasis role="bold">Note:</emphasis> IntelliJ can get corrupted so must
+                        invalidate cache from time to time. </para>
+                </listitem>
+            </orderedlist>
+        </section>
+        <section>
+            <title>Komet – Getting Started Guide</title>
+            <para>To learn more about Komet and the Integrated Knowledge Management (IKM) Community,
+                you may access this <link xlink:href="https://ikmdev.atlassian.net/wiki/x/AYD3E">Guide</link> to further expand your understand of this Project</para>
+        </section>
+        <section>
+            <title>Komet Commands</title>
+            <para>Once you have Komet up and running, you can use the follow commands in your
+                terminal to get a new version of Komet, open Komet, and get the status on latest
+                version of Komet without having to install/uninstall Komet each time.</para>
+            <para>
+                <informaltable>
+                    <tgroup cols="2">
+                        <colspec colnum="1" colname="col1"/>
+                        <colspec colnum="2" colname="col2"/>
+                        <tbody>
+                            <row>
+                                <entry namest="col1" nameend="col2" align="center"><emphasis role="bold">Common Git
+                                        Commands</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry>git add </entry>
+                                <entry>used to stage changes for commit</entry>
+                            </row>
+                            <row>
+                                <entry>git commit</entry>
+                                <entry>used to save changes to the local repositor</entry>
+                            </row>
+                            <row>
+                                <entry>git push</entry>
+                                <entry>used to upload local commits to a remote repository</entry>
+                            </row>
+                            <row>
+                                <entry>git pull</entry>
+                                <entry>Used to fetch and merge any commits from the tracking remote
+                                    branch</entry>
+                            </row>
+                            <row>
+                                <entry>git clone</entry>
+                                <entry>used to create a local copy of a remote repository</entry>
+                            </row>
+                            <row>
+                                <entry>git branch</entry>
+                                <entry>used to create, list, and delete branches</entry>
+                            </row>
+                            <row>
+                                <entry>git checkout</entry>
+                                <entry>used to switch between branches</entry>
+                            </row>
+                            <row>
+                                <entry namest="col1" nameend="col2" align="center"><emphasis role="bold">Common
+                                        Terminal Commands</emphasis></entry>
+                            </row>
+                            <row>
+                                <entry>pwd</entry>
+                                <entry>Lists the path to the working directory</entry>
+                            </row>
+                            <row>
+                                <entry>ls</entry>
+                                <entry>List directory contents</entry>
+                            </row>
+                            <row>
+                                <entry>ls -a</entry>
+                                <entry>List contents including hidden files (Files that begin with a
+                                    dot)</entry>
+                            </row>
+                            <row>
+                                <entry>ls -l</entry>
+                                <entry>List contents with more info including permissions (long
+                                    listing)</entry>
+                            </row>
+                            <row>
+                                <entry>ls -r</entry>
+                                <entry>List contents reverse order</entry>
+                            </row>
+                            <row>
+                                <entry>cd</entry>
+                                <entry>Change directory to home</entry>
+                            </row>
+                            <row>
+                                <entry>cd [dirname]</entry>
+                                <entry>Change directory to specific directory</entry>
+                            </row>
+                            <row>
+                                <entry>cd ~</entry>
+                                <entry>Change to home directory</entry>
+                            </row>
+                            <row>
+                                <entry>cd ..</entry>
+                                <entry>Change to parent directory</entry>
+                            </row>
+                            <row>
+                                <entry>cd -</entry>
+                                <entry>Change to previous directory (which could be different than
+                                    the parent of course)</entry>
+                            </row>
+                            <row>
+                                <entry>find [dirtosearch] -name [filename]</entry>
+                                <entry>Find location of a program</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </informaltable>
+            </para>
+            <section>
+                <title>Run Komet from Maven</title>
+                <para><emphasis role="bold">IMPORTANT NOTE</emphasis>: <emphasis role="underline">If
+                        Komet is being run on</emphasis> IntelliJ, you must quit IntelliJ in order
+                    to successfully run the below command</para>
+                <para><emphasis>Open terminal and type in the following commands:</emphasis></para>
+                <para>     cd $HOME/project/komet</para>
+                <para>     git pull</para>
+                <para>     mvn clean install</para>
+                <para>     mvn -f application javafx:run</para>
+            </section>
+            <section>
+                <title>Confiming Komet</title>
+                <para>Once you have download the necessary tools for Komet, run the application and
+                    verify you see the below:</para>
+                <figure xml:id="DevOBGuide-Database_Picker"> 
+                    <title>When it first starts up (Database Picker)</title> 
+                    <mediaobject> 
+                        <imageobject> 
+                            <imagedata fileref="../images/DevOBGuide-Database_Picker.svg" 
+                                scale="25" align="center"/> 
+                        </imageobject> 
+                    </mediaobject> 
+                </figure> 
+                <figure xml:id="DevOBGuide-Komet_Landing_Page"> 
+                    <title>Landing Page:</title> 
+                    <mediaobject> 
+                        <imageobject> 
+                            <imagedata fileref="../images/DevOBGuide-Komet_Landing_Page.svg" 
+                                scale="25" align="center"/> 
+                        </imageobject> 
+                    </mediaobject> 
+                </figure> 
+                
+            </section>
+        </section>
+    </section>  
+    <section xml:id="Appendix">
+        <title>Appendix</title>
+        <section>
+            <title>Important Links</title>
+            <para><emphasis role="bold">Our website:</emphasis></para>
+            <para>
+                <link xlink:href="https://www.ikm.dev/">Komet (ikm.dev)</link></para>
+            <para><emphasis role="bold">Atlassian</emphasis>:</para>
+            <para>
+                <link xlink:href="https://ikmdev.atlassian.net/jira"/></para>
+            <para>
+                <link xlink:href="https://ikmdev.atlassian.net/wiki"/></para>
+            <para><emphasis role="bold">GitHub</emphasis>:</para>
+            <para>
+                <link xlink:href="https://github.com/ikmdev"/></para>
+            <para><emphasis role="bold">SonarCloud</emphasis>:</para>
+            <para>
+                <link xlink:href="https://sonarcloud.io/login">https://sonarcloud.io</link></para>
+        </section>
+        <section>
+            <title>Additional GitHub Resources</title>
+            <para><emphasis role="bold">GitHub flow: </emphasis> GitHub flow is a lightweight,
+                branch-based workflow which is described in detail here, </para>
+            <para><link xlink:href="https://docs.github.com/en/get-started/using-github/github-flow"
+                    >GitHub flow - GitHub Docs</link>.</para>
+            <para><emphasis role="bold">Connecting to GitHub:</emphasis> To Learn about the tools
+                you can use to work with repositories hosted on GitHub, refer to link here,</para>
+            <para><link
+                    xlink:href="https://docs.github.com/en/get-started/using-github/connecting-to-github"
+                    >Connecting to GitHub - GitHub Docs</link>.</para>
+            <para><emphasis role="bold">Communicating on GitHub:</emphasis> How GitHub community of
+                developers communicate is outlined in detail and is included here, </para>
+            <para><link
+                    xlink:href="https://docs.github.com/en/get-started/using-github/communicating-on-github"
+                    >Communicating on GitHub - GitHub Docs</link></para>
+            <para>To learn how<emphasis role="bold"> Exploring early access releases with feature
+                    preview </emphasis>happens please refer to this link, </para>
+            <para><link
+                    xlink:href="https://docs.github.com/en/get-started/using-github/exploring-early-access-releases-with-feature-preview"
+                    >Exploring early access releases with feature preview - GitHub
+                Docs</link></para>
+            <para><emphasis role="bold">Supported browsers for GitHub are:</emphasis> Latest
+                versions of Chrome, Edge, Firefox and Safari is recommended, more can be found
+                here,</para>
+            <para><link
+                    xlink:href="https://docs.github.com/en/get-started/using-github/supported-browsers"
+                    >Supported browsers - GitHub Docs</link>.</para>
+            <para>
+                <emphasis role="bold">GitHub Mobile </emphasis>allows you toTriage, collaborate, and
+                manage your work on GitHub from your mobile device, more information is on this
+                link, </para>
+            <para><link
+                    xlink:href="https://docs.github.com/en/get-started/using-github/github-mobile"
+                    >GitHub Mobile - GitHub Docs</link>.</para>
+            <para><emphasis role="bold">Allowing access to GitHub's services from a restricted
+                    network</emphasis>: If your network restricts access to specific domains, a
+                network administrator may be able to grant access to GitHub's services by creating
+                exceptions for GitHub's domain names then please refer to this document,</para>
+            <para><link
+                    xlink:href="https://docs.github.com/en/get-started/using-github/allowing-access-to-githubs-services-from-a-restricted-network"
+                    >Allowing access to GitHub's services from a restricted network - GitHub
+                    Docs</link>.</para>
+            <para><emphasis role="bold">Troubleshooting connectivity problems</emphasis>: If you're
+                having trouble connecting to GitHub, you can troubleshoot your connection, then use
+                the GitHub Debug tool to diagnose problems then find possible solutions in this
+                document, </para>
+            <para><link
+                    xlink:href="https://docs.github.com/en/get-started/using-github/troubleshooting-connectivity-problems"
+                    >Troubleshooting connectivity problems - GitHub Docs</link>.</para>
+            <para><emphasis role="bold">Using Git</emphasis></para>
+            <para><emphasis role="bold">Git </emphasis>is a distributed version control system, to
+                manage your GitHub repositories from your computer, To get started with Git, please
+                read this introductory information,</para>
+            <para><link xlink:href="https://docs.github.com/en/get-started/getting-started-with-git"
+                    >Getting started with Git - GitHub Docs</link>.</para>
+            <para><emphasis role="bold">To Set up Git</emphasis> please refer to this link, </para>
+            <para><link
+                    xlink:href="https://docs.github.com/en/get-started/getting-started-with-git/set-up-git"
+                    >Set up Git - GitHub Docs</link>. At the heart of GitHub is an open-source
+                version control system (VCS) called Git. Git is responsible for everything
+                GitHub-related that happens locally on your computer.</para>
+            <para><emphasis role="bold">To Set your username in Git </emphasis>please refer to this
+                link, </para>
+            <para><link
+                    xlink:href="https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git"
+                    >Setting your username in Git - GitHub Docs</link> . Git uses a username to
+                associate commits with an identity. The Git username is not the same as your GitHub
+                username.</para>
+            <para><emphasis role="bold">To Cache your GitHub credentials in Git</emphasis>, please
+                refer to this link, </para>
+            <para><link
+                    xlink:href="https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git"
+                    >Caching your GitHub credentials in Git - GitHub Docs</link>. If you're <link
+                    xlink:href="https://docs.github.com/en/github/getting-started-with-github/about-remote-repositories"
+                    >cloning GitHub repositories using HTTPS</link>, it is recommend to use GitHub
+                CLI or Git Credential Manager (GCM) to remember your credentials.</para>
+            <para><emphasis role="bold">To learn why Git is always asking for my password,
+                </emphasis>please refer to this link, </para>
+            <para><link
+                    xlink:href="https://docs.github.com/en/get-started/getting-started-with-git/why-is-git-always-asking-for-my-password"
+                    >Why is Git always asking for my password? - GitHub Docs</link>, If Git prompts
+                you for a username and password every time you try to interact with GitHub, you're
+                probably using the HTTPS clone URL for your repository.</para>
+            <para><emphasis role="bold">To Update credentials from the macOS Keychain</emphasis>,
+                please refer to this link, </para>
+            <para><link
+                    xlink:href="https://docs.github.com/en/get-started/getting-started-with-git/updating-credentials-from-the-macos-keychain"
+                    >Updating credentials from the macOS Keychain - GitHub Docs</link>. You'll need
+                to update your saved credentials in the git-credential-osxkeychain helper if you
+                change your username, password, or personal access token on GitHub.</para>
+            <para><emphasis role="bold">To learn about Git workflows</emphasis>, please refer to
+                this link, </para>
+            <para><link
+                    xlink:href="https://docs.github.com/en/get-started/getting-started-with-git/git-workflows"
+                    >Git workflows - GitHub Docs</link>. GitHub flow is a lightweight, branch-based
+                workflow that supports teams and projects that deploy regularly.</para>
+            <para><emphasis role="bold">To learn more about remote repositories on GitHub,
+                </emphasis>please refer to this link, </para>
+            <para><link
+                    xlink:href="https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories"
+                    >About remote repositories - GitHub Docs</link>. GitHub's collaborative approach
+                to development depends on publishing commits from your local repository to GitHub
+                for other people to view, fetch, and update.</para>
+            <para><emphasis role="bold">To learn how connect to GitHub with SSH</emphasis>, please
+                refer to this link,</para>
+            <para><link
+                    xlink:href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh"
+                    >Connecting to GitHub with SSH - GitHub Docs</link>. You can connect to GitHub
+                using the Secure Shell Protocol (SSH), which provides a secure channel over an
+                unsecured network.</para>
+            <para><emphasis role="bold">To learn how to clone projects with HTTPS URLs,
+                </emphasis>please refer to this link, </para>
+            <para><link
+                    xlink:href="https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls"
+                    >About remote repositories - GitHub Docs</link>. The https:// clone URLs are
+                available on all repositories, regardless of visibility. https:// clone URLs work
+                even if you are behind a firewall or proxy.</para>
+            <para><emphasis role="bold">To managing your personal access tokens, </emphasis>please
+                refer to this link, <link
+                    xlink:href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens"
+                    >Managing your personal access tokens - GitHub Docs</link>. You can use a
+                personal access token in place of a password when authenticating to GitHub in the
+                command line or with the API.</para>
+            <para><emphasis role="bold">On managing remote repositories</emphasis>, please refer to
+                this link, </para>
+            <para><link
+                    xlink:href="https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories"
+                    >Managing remote repositories - GitHub Docs</link>, This is to show how to work
+                with your local repositories on your computer and remote repositories hosted on
+                GitHub.</para>
+            <para>
+                <emphasis role="bold">For how to</emphasis>
+                <emphasis role="bold">Associate text editors with Git</emphasis>, please refer to
+                this link, </para>
+            <para><link
+                    xlink:href="https://docs.github.com/en/get-started/getting-started-with-git/associating-text-editors-with-git"
+                    >Associating text editors with Git - GitHub Docs</link>. You need to use a text
+                editor to open and edit your files with Git.</para>
+            <para><emphasis role="bold">To Configure Git to handle line endings, </emphasis>please
+                refer to this link, </para>
+            <para><link
+                    xlink:href="https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings"
+                    >Configuring Git to handle line endings - GitHub Docs</link>. To avoid problems
+                in your diffs, you can configure Git to properly handle line endings.</para>
+            <para><emphasis role="bold">To ignore files in Git, </emphasis>please refer to this
+                link, </para>
+            <para><link
+                    xlink:href="https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files"
+                    >Ignoring files - GitHub Docs</link>. You can configure Git to ignore files you
+                don't want to check in to GitHub.</para>
+            <para><emphasis role="bold">Git cheat sheet</emphasis> is a time saver when you forget a
+                command or don't want to use help in the CLI. To learn more about it, please refer
+                to this link, </para>
+            <para><link
+                    xlink:href="https://docs.github.com/en/get-started/getting-started-with-git/git-cheatsheet"
+                    >Git cheatsheet - GitHub Docs</link>.</para>
+            <para><emphasis role="bold">Online courses: </emphasis></para>
+            <para>GitHub Skills offers free interactive courses that are built into GitHub with
+                instant automated feedback and help. Learn to open your first pull request, make
+                your first open source contribution, create a GitHub Pages site, and more. For more
+                information about course offerings, see <link
+                    xlink:href="https://skills.github.com/">GitHub Skills</link></para>
+            <para><link xlink:href="http://learngitbranching.js.org/">Git branching</link> is a free
+                interactive tool for learning and practicing Git concepts.</para>
+            <para>An interactive <link
+                    xlink:href="https://www.pluralsight.com/courses/code-school-git-real">online Git
+                    course</link> from <link xlink:href="https://www.pluralsight.com/codeschool"
+                    >Pluralsight</link> can also teach you the basics of Git.</para>
+            <para><emphasis role="bold">Community:</emphasis> You can connect with developers around
+                the world to ask and answer questions, learn, and interact directly with GitHub
+                staff. To get the conversation started, see "<link
+                    xlink:href="https://github.com/orgs/community/discussions/">GitHub Community
+                    Support</link>."</para>
+            <para><emphasis role="bold">To get started with more of GitHub documentation</emphasis>,
+                see </para>
+            <para><link xlink:href="https://docs.github.com/en/get-started">Get started with GitHub
+                    documentation - GitHub Docs</link>.<anchor xml:id="Toc170229425"/></para>
+        </section>
+    </section>
+</chapter>

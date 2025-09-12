@@ -11,7 +11,7 @@
         low-quality health data management practices can lead to under treatment, over treatment, or
         delayed treatment resulting in preventable patient harm. [16]</para>
     <section>
-        <title>Patient Safety – Then and Now</title>
+        <title>Patient Safety – Then and Now </title>
         <para>Patient safety has been defined as the “prevention of harm to patients.” [17] To
             achieve patient safety, the whole healthcare system must work collaboratively to prevent
             errors, learn from the errors that occur, and develop a culture of safety similar to
@@ -41,7 +41,7 @@
             across the healthcare ecosystem due to the prevalence of preventable patient harm.
             [19-24] </para>
         <section>
-            <title>High Reliability Organizations (HROs)</title>
+            <title>High Reliability Organizations</title>
             <para>High reliability organization (HRO) principles from other safety critical
                 industries, such as commercial aviation and nuclear power, began to be adopted as a
                 patient safety framework in some healthcare settings. [25] These principles,
@@ -119,7 +119,7 @@
                 are <emphasis role="italic">not</emphasis> schematics or flow charts; instead, they
                 serve as abstract representations of highly complex sociotechnical relationships
                 between a controller and the process being controlled. These relationships are known
-                as control loops, which is displayed below. [28]</para>
+                as control loops, which is displayed below in <xref linkend="Provider-PatientControlLoop"/>. [28]</para>
             <figure xml:id="Provider-PatientControlLoop">
                 <title>Provider-Patient Control Loop</title>
                 <mediaobject>
@@ -155,7 +155,7 @@
         </section>
         <section>
             <title>Safety Management</title>
-            <para>Safety Management Systems (SMS)are used by high-risk industries such as aviation,
+            <para>Safety Management Systems (SMS) are used by high-risk industries such as aviation,
                 military commands, health care, and nuclear power to reduce or eliminate hazards for
                 safer outcomes. SMS is a formalized approach to safety decision-making, proactive
                 safety management, safety culture promotion, and quality assurance. An effective SMS

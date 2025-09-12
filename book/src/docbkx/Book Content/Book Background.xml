@@ -105,7 +105,8 @@
                     data in an identical way as the original system. </para>
             </listitem>
         </orderedlist>
-        <para>The firgure below expands on the two aspects of interoperability.</para><figure xml:id="ChallengesofStructureandMeaning">
+        <para><xref linkend="ChallengesofStructureandMeaning"/> below expands on the two aspects of interoperability.</para>
+        <figure xml:id="ChallengesofStructureandMeaning">
             <title>Challenges of Structure and Meaning</title>
             
             <mediaobject>
@@ -127,12 +128,11 @@
             as data interoperability tooling that can determine equivalence between concepts and
             data sets from various organizations. </para> 
             <para>To facilitate such tooling, data must be represented by a normal form that can
-                safely and reliably support data analysis and be used to aggregate data using a
-                standard or non-standard input form or exchange mechanism. Examples of such data
-                models include Health Level 7 (HL7) Clinical Information Modeling Initiative (CIMI)
-                efforts, including the HL7 Analysis Normal Form (ANF) specification. The model to
-                support a Knowledge Management Platform should meet the following evolutionary
-                design criteria: </para>
+            safely and reliably support data analysis and be used to aggregate data using a standard
+            or non-standard input form or exchange mechanism. Examples of such data models include
+            Health Level 7 (HL7®) Clinical Information Modeling Initiative (CIMI) efforts, including
+            the HL7 Analysis Normal Form (ANF) specification. The model to support a Knowledge
+            Management Platform should meet the following evolutionary design criteria: </para>
             <itemizedlist>
                 <listitem>
                     <para><emphasis role="bold">Understandable</emphasis>: The data model for
@@ -157,7 +157,7 @@
             (i.e., unambiguous representation)." [1] This transformation/normalization would involve
             a data instance to data instance transformation. An example could be John Doe's Systolic
             Blood Pressure measurement taken on June 4, 2019 represented as a Fast Health
-            Interoperability Resources (FHIR) Observation instance, which is then transformed to a
+            Interoperability Resources (FHIR®) Observation instance, which is then transformed to a
             common data model/normal form instance representing this same data. Transformation, in
             this case, is not a simple endeavor that one can hope to implement on clinical data. It
             will likely involve navigating disparate data structure trees and include variable
@@ -223,12 +223,12 @@
         <section>
             <title>Metadata Overview</title>
             <para>An important construct for enabling RWE analytics, knowledge management, data
-                integration, and decision support, is adoption and reproducible encoding of health
-                data using biomedical terminologies. Acceleration and development of EHR systems
-                have precipitated the emergence of “standard terminologies” and their widespread
-                adoption in the health data community. These standard terminologies include
-                Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT®), the Logical
-                Observation Identifiers, Names, and Codes (LOINC®) and RxNorm. </para>
+            integration, and decision support, is adoption and reproducible encoding of health data
+            using biomedical terminologies. Acceleration and development of EHR systems have
+            precipitated the emergence of “standard terminologies” and their widespread adoption in
+            the health data community. These standard terminologies include Systematized
+            Nomenclature of Medicine Clinical Terms (SNOMED CT®), the Logical Observation
+            Identifiers, Names, and Codes (LOINC®), and RxNorm. </para>
             <para>While these standards are widely implemented and adopted, aggregation and
             analytics can be difficult because there is no standard representation across these
             terminologies. Traversing the data models of these various terminology standards in an
@@ -324,7 +324,7 @@
             interpretation. When this framework is applied to the healthcare system, clinical data,
             and more specifically clinical statements, we need <emphasis role="italic"
                 >terminology</emphasis> and <emphasis role="italic">structure</emphasis> to convey a
-            patient’s condition or health history from one provider to another. </para>
+            patient’s condition or health history from one provider to another, as seen in <xref linkend="TerminologyandStructureExamples"/>. </para>
         <figure xml:id="TerminologyandStructureExamples">
             <title>Terminology and Structure Examples</title>
             <mediaobject>
@@ -443,7 +443,7 @@
         <section>
             <title>The Adoption of Three Key Terminology Standards: Systematized Nomenclature of
                 Medicine Clinical Terms (SNOMED CT®), Logical Observation Identifiers Names and
-                Codes® (LOINC®) and RxNorm</title>
+                Codes (LOINC®) and RxNorm</title>
             <para>Over the last several decades, SNOMED CT®, LOINC®, and RxNorm have been
                 increasingly recognized as key resources for: <orderedlist>
                     <listitem>
@@ -615,11 +615,9 @@
                                 as a common format for LOINC®. This issue will be addressed by
                                 SHIELD by building on the SNOMED CT® foundation. Nonetheless, SNOMED
                                 CT's® commitment to develop and expand their use of description
-                                logics formalism as called out by the System of Logical
-                                Representation
-                                (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20240625T154501-0500" comment="first instance of solor"?>SOLOR<?oxy_comment_end?>)
-                                as well as their alignment with the Desiderata as described by
-                                Cimino, et at, is a step in the right direction. [13]</para>
+                                logics formalism as called out by SHIELD as well as their alignment
+                                with the Desiderata as described by Cimino, et at, is a step in the
+                                right direction. [13]</para>
                         </listitem>
                     </itemizedlist></para>
                 <para>Examples of Scholarly and Practical Efforts to Assess LOINC® from LOINC®
@@ -704,7 +702,7 @@
             modules, and higher-level modules depend on lower-level ones. A particular program or
             library is a top-level module of its own hierarchy, but can in turn be seen as a
             lower-level module of a higher-level program, library, or system.</para>
-        <para>For example, the following figure shows how each module could be given a unique
+        <para>For example, in <xref linkend="ModulesandExtensions"/> each module could be given a unique
             version number and contain all layers of the architectural stack. In the instance that a
             particular versioned module needs to be extended, an extension module could be added to
             that main versioned module without the need to go to a completely new full module
@@ -723,243 +721,5 @@
     </section>
     <xi:include href="Book%20Patient%20Safety%20Overview.xml"
         xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <section>
-        <title><?oxy_comment_start author="tocrow" timestamp="20250225T184250-0500" comment="Highlighted Citations need to be updated to Vancouver"?>References<?oxy_comment_end?></title>
-        <para>
-            <orderedlist>
-                <listitem>
-                    <para>Elkin, P. Terminology and Terminological Systems. London: Springer; 2012.
-                    </para>
-                </listitem>
-                <listitem>
-                    <para>Bernstam EV, Warner JL, Krauss JC, Ambinder E, Rubinstein WS, Komatsoulis
-                        G, Miller RS, Chen JL. Quantitating and assessing interoperability between
-                        electronic health records. J Am Med Inform Assoc. 2022 Jan 7:ocab289. doi:
-                        10.1093/jamia/ocab289. Epub ahead of print. PMID: 35015861.</para>
-                </listitem>
-                <listitem>
-                    <para>Wong A, Otles E, Donnelly JP, et al. External Validation of a Widely
-                        Implemented Proprietary Sepsis Prediction Model in Hospitalized Patients.
-                        JAMA Intern Med. 2021;181(8):1065–1070.
-                        doi:10.1001/jamainternmed.2021.2626</para>
-                </listitem>
-                <listitem>
-                    <para>Bodenreider O, Cornet R, Vreeman DJ. Recent Developments in Clinical
-                        Terminologies - SNOMED CT, LOINC®, and RxNorm. Yearb Med Inform. 2018
-                        Aug;27(1):129-139. doi: 10.1055/s-0038-1667077. Epub 2018 Aug 29. PMID:
-                        30157516; PMCID: PMC6115234.</para>
-                </listitem>
-                <listitem>
-                    <para>Logica Health, Health Level Seven International, Vocabulary Working Group.
-                        HL7 Standardized Terminology Knowledgebase, Release 1. [Internet]. Creative
-                        Commons Attribution 4.0 International (CC BY 4.0); 2021. Available from: HL7
-                        Standardized Terminology Knowledgebase, Release</para>
-                </listitem>
-                <listitem>
-                    <para>Analysis Normal Form Informative Ballot. HL7 CIMI Work Group. Sept 2019.
-                            <link
-                            xlink:href="http://www.hl7.org/documentcenter/public/ballots/2019SEP/downloads/HL7_CIMI_LM_ANF_R1_I1_2019SEP.pdf"
-                            >http://www.hl7.org/documentcenter/public/ballots/2019SEP/downloads/HL7_CIMI_LM_ANF_R1_I1_2019SEP.pdf</link>.</para>
-                </listitem>
-                <listitem>
-                    <para>Health Level Seven international [Internet]. HL7 Standards Product Brief -
-                        HL7 Version 2 Product Suite | HL7 International. [cited 2023Jan12].
-                        Available from: <link
-                            xlink:href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=185"
-                            >https://www.hl7.org/implement/standards/product_brief.cfm?product_id=185</link></para>
-                </listitem>
-                <listitem>
-                    <para>How Doctors Feel about Electronic Health Records [presentation]. Stanford
-                        Medicine. National Physician Poll by The Harris Poll. [cited
-                        2023Jan13].</para>
-                </listitem>
-                <listitem>
-                    <para>Cholan RA, Pappas G, Rehwoldt G, Sills AK, Korte ED, Appleton IK, Scott
-                        NM, Rubinstein WS, Brenner SA, Merrick R, Hadden WC, Campbell KE, Waters MS.
-                        Encoding laboratory testing data: case studies of the national
-                        implementation of HHS requirements and related standards in five
-                        laboratories. J Am Med Inform Assoc. 2022 May 25:ocac072. doi:
-                        10.1093/jamia/ocac072. Epub ahead of print. PMID: 35639494.</para>
-                </listitem>
-                <listitem>
-                    <para>Stram M, Seheult J, Sinard J, et al. ; Members of the Informatics
-                        Committee, College of American Pathologists. A survey of LOINC® code
-                        selection practices among participants of the College of American
-                        Pathologists Coagulation (CGL) and Cardiac Markers (CRT) proficiency testing
-                        programs. Arch Pathol Lab Med 2020; 144 (5): 586–96.</para>
-                </listitem>
-                <listitem>
-                    <para>Stram M, Gigliotti T, Hartman D, et al. Logical observation identifiers
-                        names and codes for laboratorians: potential solutions and challenges for
-                        interoperability. Arch Pathol Lab Med 2020; 144 (2): 229–39.</para>
-                </listitem>
-                <listitem>
-                    <para>Lin M, Vreeman D, McDonald C, et al. A characterization of local LOINC®
-                        mapping for laboratory tests in three large institutions. Methods Inf Med
-                        2011; 50 (2): 105–14.</para>
-                </listitem>
-                <listitem>
-                    <para>Bietenbeck A, Boeker M, Schulz S. NPU, LOINC, and SNOMED CT: A comparison
-                        of terminologies for laboratory results reveals individual advantages and a
-                        lack of possibilities to encode interpretive comments [Internet]. De
-                        Gruyter. De Gruyter; 2018 [cited 2022Oct19]. Available from:
-                        https://www.degruyter.com/document/doi/10.1515/labmed-2018-0103/html?lang=en
-                    </para>
-                </listitem>
-                <listitem>
-                    <para>Lin M, Vreeman D, McDonald C, et al. Auditing consistency and usefulness
-                        of LOINC® use among three large institutions—using version spaces for
-                        grouping LOINC® codes. J Biomed Inform 2012; 45 (4): 658–66.</para>
-                </listitem>
-                <listitem>
-                    <para>Enhancing the drug ontology with semantically-rich representation of
-                        National Drug codes and RxNorm unique concept identifiers [Internet]. BMC
-                        Bioinformatics. Available from: <link
-                            xlink:href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-3192-8"
-                            >https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-3192-8</link></para>
-                </listitem>
-                <listitem>
-                    <para>Department of Veterans Affairs [Internet]. 2022 [cited 2025 Jul 29]. The
-                        New Electronic Health Record’s Unknown Queue Caused Multiple Events of
-                        Patient Harm. Available from:
-                        https://www.vaoig.gov/reports/national-healthcare-review/new-electronic-health-records-unknown-queue-caused-multiple</para>
-                </listitem>
-                <listitem>
-                    <para>Mitchell PH. Defining Patient Safety and Quality Care. In: Hughes RG,
-                        editor. Patient Safety and Quality: An Evidence-Based Handbook for Nurses
-                        [Internet]. Rockville (MD): Agency for Healthcare Research and Quality (US);
-                        2008 [cited 2025 Jul 29]. (Advances in Patient Safety). Available from:
-                        http://www.ncbi.nlm.nih.gov/books/NBK2681/</para>
-                </listitem>
-                <listitem>
-                    <para>Plebani M. Diagnostic Errors and Laboratory Medicine - Causes and
-                        Strategies. EJIFCC. 2015 Jan;26(1):7–14.</para>
-                </listitem>
-                <listitem>
-                    <para>Dekker S. Just Culture: Balancing Safety and Accountability. Farnham:
-                        Ashgate Publishing Ltd; 2012. 200 p.</para>
-                </listitem>
-                <listitem>
-                    <para>Institute of Medicine (US) Committee on Quality of Health Care in America.
-                        To Err is Human: Building a Safer Health System [Internet]. Kohn LT,
-                        Corrigan JM, Donaldson MS, editors. Washington (DC): National Academies
-                        Press (US); 2000 [cited 2025 Jul 29]. Available from:
-                        http://www.ncbi.nlm.nih.gov/books/NBK225182/</para>
-                </listitem>
-                <listitem>
-                    <para>Makary, M. A., &amp; Daniel, M. (2016). Medical error—the third leading
-                        cause of death in the US. BMJ, 353. Available from: <link
-                            xlink:href="https://pubmed.ncbi.nlm.nih.gov/27143499/"/></para>
-                </listitem>
-                <listitem>
-                    <para>Crossing the Quality Chasm: A New Health System for the 21st Century
-                        [Internet]. Washington, D.C.: National Academies Press; 2001 [cited 2025 Jul
-                        29]. Available from: http://www.nap.edu/catalog/10027</para>
-                </listitem>
-                <listitem>
-                    <para>Committee on Patient Safety and Health Information Technology, Institute
-                        of Medicine. Health IT and Patient Safety: Building Safer Systems for Better
-                        Care [Internet]. Washington (DC): National Academies Press (US); 2011 [cited
-                        2025 Jul 29]. Available from:
-                        http://www.ncbi.nlm.nih.gov/books/NBK189661/</para>
-                </listitem>
-                <listitem>
-                    <para>Balogh EP, Miller BT, Ball JR, Care C on DE in H, Services B on HC,
-                        Medicine I of, et al. Preface. In: Improving Diagnosis in Health Care
-                        [Internet]. National Academies Press (US); 2015 [cited 2025 Jul 29].
-                        Available from: https://www.ncbi.nlm.nih.gov/books/NBK338585/</para>
-                </listitem>
-                <listitem>
-                    <para>Duclos A, Frits ML, Iannaccone C, Lipsitz SR, Cooper Z, Weissman JS, et
-                        al. Safety of inpatient care in surgical settings: cohort study. BMJ. 2024
-                        Nov 13;387:e080480.</para>
-                </listitem>
-                <listitem>
-                    <para>Chassin MR, Loeb JM. High-reliability health care: getting there from
-                        here. Milbank Q. 2013 Sep;91(3):459–90.</para>
-                </listitem>
-                <listitem>
-                    <para>Weick KE, Sutcliffe KM. Managing the unexpected: Assuring high performance
-                        in an age of complexity. San Francisco, CA, US: Jossey-Bass; 2001. xvi, 200
-                        p. (Managing the unexpected: Assuring high performance in an age of
-                        complexity).</para>
-                </listitem>
-                <listitem>
-                    <para>Leveson N, Dulac N, Marais K, Carroll J. Moving Beyond Normal Accidents
-                        and High Reliability Organizations: A Systems Approach to Safety in Complex
-                        Systems. Organization Studies [Internet]. 2009 [cited 2025 Jul
-                        29];30(2–3):227–49. Available from:
-                        https://journals.sagepub.com/doi/10.1177/0170840608101478</para>
-                </listitem>
-                <listitem>
-                    <para>Leveson NG. Engineering a Safer World: Systems Thinking Applied to Safety
-                        [Internet]. The MIT Press; 2012 [cited 2025 Jul 29]. Available from:
-                        https://direct.mit.edu/books/book/2908/Engineering-a-Safer-WorldSystems-Thinking-Applied</para>
-                </listitem>
-                <listitem>
-                    <para>Leveson NG, Stephanopoulos G. A system-theoretic, control-inspired view
-                        and approach to process safety. Prof Stephanopoulos via Erja Kajosalo
-                        [Internet]. 2013 Nov [cited 2025 Jul 29]; Available from:
-                        https://dspace.mit.edu/handle/1721.1/92371</para>
-                </listitem>
-                <listitem>
-                    <para>MIT Press [Internet]. [cited 2025 Jul 29]. An Introduction to System
-                        Safety Engineering. Available from:
-                        https://mitpress.mit.edu/9780262546881/an-introduction-to-system-safety-engineering/</para>
-                </listitem>
-                <listitem>
-                    <para>Li Y, Guldenmund FW. Safety management systems: A broad overview of the
-                        literature. Safety Science [Internet]. 2018 [cited 2025 Jul 29];103:94–123.
-                        Available from:
-                        https://linkinghub.elsevier.com/retrieve/pii/S0925753517309463</para>
-                </listitem>
-                <listitem>
-                    <para>Kristiansen TB, Kristensen K, Uffelmann J, Brandslund I. Erroneous data:
-                        The Achilles’ heel of AI and personalized medicine. Front Digit Health
-                        [Internet]. 2022 Jul 22 [cited 2025 Jul 29];4:862095. Available from:
-                        https://www.frontiersin.org/articles/10.3389/fdgth.2022.862095/full</para>
-                </listitem>
-                <listitem>
-                    <para>National Trends in Hospital and Physician Adoption of Electronic Health
-                        Records | HealthIT.gov [Internet]. [cited 2025 Jul 29]. Available from:
-                        https://www.healthit.gov/data/quickstats/national-trends-hospital-and-physician-adoption-electronic-health-records</para>
-                </listitem>
-                <listitem>
-                    <para>Alotaibi YK, Federico F. The impact of health information technology on
-                        patient safety. SMJ [Internet]. 2017 [cited 2025 Jul 29];38(12):1173–80.
-                        Available from:
-                        https://smj.org.sa/lookup/doi/10.15537/smj.2017.12.20631</para>
-                </listitem>
-                <listitem>
-                    <para>Singh H, Sittig DF. Measuring and improving patient safety through health
-                        information technology: The Health IT Safety Framework. BMJ Qual Saf. 2016
-                        Apr;25(4):226–32.</para>
-                </listitem>
-                <listitem>
-                    <para>Alder S. July 26, 2024: CrowdStrike issues update on outage cause;
-                        healthcare hit hardest with estimated $1.94B in losses [Internet]. HIPAA
-                        Journal. 2024 Jul [cited 2024 Jul 26]. Available from:
-                        https://www.hipaajournal.com/crowdstrike-issues-update-on-outage-cause-healthcare-hit-hardest-with-estimated-1-94b-in-losses/</para>
-                </listitem>
-                <listitem>
-                    <para>Mijic, M., &amp; Tripathi, M. Accelerating the exchange of health and
-                        human services data to improve outcomes and disrupt inequities [Internet].
-                        Health Affairs Forefront. 2024 Jun 25 [cited 2024 Jul 26]. Available from:
-                        https://www.healthaffairs.org/content/forefront/accelerating-exchange-health-and-human-services-data-improve-outcomes-and-disrupt</para>
-                </listitem>
-                <listitem>
-                    <para>Lehne M, Sass J, Essenwanger A, Schepers J, Thun S. Why digital medicine
-                        depends on interoperability. npj Digit Med [Internet]. 2019 Aug 20 [cited
-                        2025 Jul 29];2(1):1–5. Available from:
-                        https://www.nature.com/articles/s41746-019-0158-1</para>
-                </listitem>
-                <listitem>
-                    <para>Wilkinson MD, Dumontier M, Aalbersberg IJJ, Appleton G, Axton M, Baak A,
-                        et al. The FAIR Guiding Principles for scientific data management and
-                        stewardship. Sci Data. 2016 Mar 15;3:160018.</para>
-                </listitem>
-            </orderedlist>
-        </para>
-    </section>
     
 </chapter>

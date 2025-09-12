@@ -13,11 +13,11 @@
             encompasses most sources of health data derived from common sources such as traditional
             clinical trial settings, including EHRs, claims and billing activities, disease
             registries, pharmacy records, as well as non-standard sources such as social media and
-            wearable devices. [1] </para>
+            wearable devices. [41] </para>
         <para>Large quantities of clinical data are generated throughout the various stages of an
             individual’s health care journey. When a patient visits a care provider, has their
             vitals recorded, reports their symptoms, undergoes laboratory tests, receives a
-            prescription, and submits an insurance claim, valuable clinical data is created at each
+            prescription, or submits an insurance claim, valuable clinical data is created at each
             step. The data from each individual stage is stored in a variety of ways. Some data is
             discrete in nature, some is encoded, and still other data is recorded using natural
             language or text. In addition, data collected is contained within a siloed data
@@ -26,13 +26,13 @@
             to step, aggregation and standardization is difficult to reliably perform meaningful
             analytics without substantial data curation efforts. </para>
         <para>Similar to RWD, RWE is defined as clinical evidence about the usage and potential
-            benefits, or risks of medical treatments, technology, drug, or intervention derived from
-            sources other than clinical trials. [2] It refers to analysis of data that has been
-            collected outside the traditional randomized clinical trial (RCT) setting. RWE has
+            benefits, or risks of medical treatments, technologies, drugs, or interventions derived
+            from sources other than clinical trials. [42] It refers to analysis of data that has
+            been collected outside the traditional randomized clinical trial (RCT) setting. RWE has
             immense value in advancing medical research, particularly when deriving the required
-            information in a clinical trial would be unfeasible or unethical. [3]. By design, RWD
+            information in a clinical trial would be unfeasible or unethical. [43]. By design, RWD
             and RWE are generated independent of a specific research question or study design and
-            must be aggregated across. This can be a benefit in some cases and a barrier in others.
+            must be aggregated. This can be a benefit in some cases and a barrier in others.
             Aggregating RWD across multiple sites is necessary to establish sufficient
             representation of the study and control cohorts but is difficult due to data
             interoperability barriers. </para>
@@ -47,44 +47,44 @@
             the primary applications of RWE thus far has been in post-market surveillance monitoring
             drug safety and efficacy as well as researching health outcomes that are difficult to
             study with traditional methods, such as with lesser understood conditions, smaller
-            patient populations, and long follow-up periods. [3] However, during the COVID-19
+            patient populations, and long follow-up periods. [43] However, during the COVID-19
             pandemic, RWD served as the primary source of information available to the medical
-            community to understand COVID, evaluate the safety and efficacy of IVD testing, antigen
-            testing, and vaccination safety/efficacy. As an example, the State of Nebraska
-            Department of Epidemiology and the Nebraska Public Health Laboratory operated large
-            numbers of specimen collection centers for COVID testing. Each patient was required to
-            report symptom status for loss of smell or taste prior to testing by antigen or
-            polymerase chain reaction (PCR). Analysis showed that the presence of one or both
-            symptoms had a positive predictive value (PPV) of 80% for COVID. These RWD provided the
-            RWE to support pool testing of specimens to conserve testing reagents during a period of
-            severe test supply shortages. [4] </para>
+            community to understand COVID and evaluate the safety and efficacy of IVD testing,
+            antigen testing, and vaccinations. As an example, the State of Nebraska Department of
+            Epidemiology and the Nebraska Public Health Laboratory operated large numbers of
+            specimen collection centers for COVID testing. Each patient was required to report
+            symptom status for loss of smell or taste prior to testing by antigen or polymerase
+            chain reaction (PCR). Analysis showed that the presence of one or both symptoms had a
+            positive predictive value (PPV) of 80% for COVID. These RWD provided the RWE to support
+            pool testing of specimens to conserve testing reagents during a period of severe test
+            supply shortages. [44] </para>
         <para>The use of RWD that is of sufficient quality to be used as RWE for market approval,
             post-market surveillance of medicines, and in IVD presents a potentially rich
             environment and supplement to the current gold-standard controlled clinical trial
             methodologies. To this effect, Congress signed the 21st Century Cures Act (Cures Act)
             into law in 2016 to help accelerate the development of medical products and bring new
-            innovations to patient populations. [1] The law intends to increase federal focus on
+            innovations to patient populations. [41] The law intends to increase federal focus on
             evaluating RWD and RWE for regulatory decision making for new approvals, support
             post-approval study requirements, and evaluate additional indications for approved
-            treatments. [1]</para>
+            treatments. [41]</para>
         <para>Unfortunately, RWD and RWE face numerous obstacles that hinder their reliable
             widespread use ranging from data quality and bias, lack of standardization, data access
             challenges, and privacy concerns. One of the most significant challenges is that of data
             interoperability. The movement of a Portable Document Format (PDF) medical report from
-            institution A to institution B is done routinely, but none of the data held within the
-            report is computable, thus not interoperable. Discrete EHR data can be computable within
-            its source system but cannot be electronically exchanged to a second institution and
-            reliably and safely computed to convey the exact same meaning as initially intended
+            Institution A to Institution B is done routinely, but none of the data held within the
+            report is computable, and thus is not interoperable. Discrete EHR data can be computable
+            within its source system but cannot be electronically exchanged to a second institution
+            and reliably and safely computed to convey the exact same meaning as initially intended
             because these data, even data between identical EHR systems, do not carry sufficient
             context to convey appropriate meaning to be safely and reliably reconstructed between
             system instances. Finally, data encoded using standardized medical terminology, such as
             laboratory data, that is electronically exchanged and computable between systems does
             not safely guarantee the data will be considered to have the exact same meaning between
-            systems. [5] Such a gap in surveillance, data capture, data exchange, data harmonization
-            and subsequent analytics place the U.S. at risk to repeat the “data scramble” in the
-            event of another emerging disease, as experienced during COVID. To realize the potential
-            of RWD which is suitable as RWE for regulatory, research, public health, and clinical
-            care purposes, data interoperability must be achieved. </para>
+            systems. [45] Such a gap in surveillance, data capture, data exchange, data
+            harmonization, and subsequent analytics place the U.S. at risk to repeat the 'data
+            scramble' in the event of another emerging disease, as experienced during COVID. To
+            realize the potential of RWD which is suitable as RWE for regulatory, research, public
+            health, and clinical care purposes, data interoperability must be achieved. </para>
         <section>
             <title>Current RWD Uses</title>
             <para>There are several national and international efforts to aggregate and expose
@@ -97,18 +97,17 @@
                 aggregating entities’ datasets in consolidated or federated mechanisms for analyses. </para>
             <section>
                 <title>National Covid Cohort Collaborative (N3C)</title>
-                <para>N3C is one of the one of the largest cloud-based collections of secure and
-                    de-identified COVID-19 clinical data. N3C aims to harmonize EHR data into a
-                    common data model to enhance research and clinical access to reliable COVID-19
-                    data, generate novel approaches to better understand and address the impact of
-                    COVID-19, and mitigate future pandemics. The National Center for Advancing
-                    Translational Sciences (NCATS) N3C Data Enclave contains RWD from contributing
-                    sites’ EHR systems with COVID-19 positive patients and patients with symptoms
-                    consistent with COVID-19, Severe acute respiratory syndrome coronavirus 1 (SARS
-                    1), Middle East Respiratory Syndrome (MERS), and H1N1 flu (a.k.a. Swine flu).
-                    De-identified data is contributed monthly and augmented by public health
-                    laboratory data and whole genome sequence data of paired patient/specimen
-                    isolates. </para>
+                <para>N3C is one of the largest cloud-based collections of secure and de-identified
+                    COVID-19 clinical data. N3C aims to harmonize EHR data into a common data model
+                    to enhance research and clinical access to reliable COVID-19 data, generate
+                    novel approaches to better understand and address the impact of COVID-19, and
+                    mitigate future pandemics. The National Center for Advancing Translational
+                    Sciences (NCATS) N3C Data Enclave contains RWD from contributing sites’ EHR
+                    systems with COVID-19 positive patients and patients with symptoms consistent
+                    with COVID-19, Severe acute respiratory syndrome coronavirus 1 (SARS 1), Middle
+                    East Respiratory Syndrome (MERS), and H1N1 flu (a.k.a. Swine flu). De-identified
+                    data is contributed monthly and augmented by public health laboratory data and
+                    whole genome sequence data of paired patient/specimen isolates. </para>
                 <para>N3C has paved the way as a successful model for other data enclaves. Data
                     codification is well described, and the data harmonization team ingests limited
                     data sets and transforms them according to a harmonized Observational Medical
@@ -120,7 +119,7 @@
                     sources, and cohort discovery. Organizations submitting data must have an
                     approved Data Transfer Agreement (DTA), and an optional Linkage Honest Broker
                     Agreement (LHBA), through which organizations maintain control over their data.
-                    Data analyses must be performed within the platform and is supported through R,
+                    Data analyses must be performed within the platform and are supported through R,
                     Python, and Slate. R packages include SciPy and scikit-learn and are
                     pre-installed, and others can be added by contacting the data enclave support
                     team. Overall, the enclave provides a secure and focused space for research
@@ -130,7 +129,7 @@
                     U.S., inclusion of only patients with recorded COVID-19 positive tests, limited
                     RWD on non-COVID patients, security constraints that can impact data quality and
                     participation, and no method for testing data equivalence between sites.
-                    [6]</para>
+                    [46]</para>
             </section>
             <section>
                 <title>Patient-Centered Outcomes Research Institute (PCORI) and National
@@ -145,19 +144,20 @@
                     sharing of data sets and documentation to build on findings and generate new
                     evidence. PCORI approved $1 million in funding for the development of automated
                     ways to more efficiently and accurately identify patients with rare diseases via
-                    EHR data, facilitating earlier treatments and research participation. [7]</para>
+                    EHR data, facilitating earlier treatments and research participation.
+                    [47]</para>
                 <para>In 2013, PCORI funded development of the PCORnet, a national resource for
                     health data and research expertise aimed at providing patient centered outcomes
-                    research in a timely manner. [8] PCORnet is a well established and fully
+                    research in a timely manner. [48] PCORnet is a well established and fully
                     integrated network that leverages EHR data and registries to expand the role of
                     patients and care providers in the research process and conduct research that is
-                    inexpensive, faster, and more patient-centered in its design. [9] It includes a
+                    inexpensive, faster, and more patient-centered in its design. [49] It includes a
                     distributed network of Clinical Research Networks (CRNs) drawn from millions of
                     EHRs, with links to patient-reported and payer data, creating a standardized
                     data set for large-scale research. The network comprises 251 institutions
                     organized into 61 data contributors, including 337 hospitals, 169,695
                     physicians, 3,564 primary care practices, 338 emergency departments, and 1,024
-                    community clinics serving underserved populations [8-10].</para>
+                    community clinics serving underserved populations [48-50].</para>
                 <para>PCORnet provides access to the health records of 66 million patients for
                     observational studies, ensuring data quality through rigorous conformance,
                     completeness, plausibility, and persistence standards and a Common Data Model
@@ -167,7 +167,7 @@
                     this security approach, researchers receive answers to queries rather than
                     direct access to data, but the network's scope and embedded expertise make it a
                     powerful tool for answering clinical questions that impact patients' lives,
-                    including studies on populations affected by Long COVID [7, 11].</para>
+                    including studies on populations affected by Long COVID [47, 51].</para>
             </section>
             <section>
                 <title>Observational Health Data Sciences and Informatics (OHDSI)</title>
@@ -179,7 +179,7 @@
                     contributors from various sectors and data representing 810 million unique
                     individuals, OHDSI benefits patients, providers, researchers, and larger
                     organizations (such as hospital systems and government agencies) with open
-                    source solutions and products. [12]</para>
+                    source solutions and products. [52]</para>
                 <para>Since its founding, OHDSI has made significant progress, including creating a
                     federated database with patient records representing about 12 percent of the
                     world’s population, and has been referenced by the European Medicines Agency and
@@ -200,7 +200,7 @@
                     industries. Finally, OHDSI has developed products like the Health Analytics
                     Data-to-Evidence Suite (HADES) and ATLAS, which support population-level
                     estimations, patient-level predictions, design and execution of observational
-                    analyses to generate RWE from patient level data, and more.[12, 13]</para>
+                    analyses to generate RWE from patient level data, and more.[52, 53]</para>
                 <para>Despite the various achievements, OHDSI faces obstacles such as the complexity
                     of using international data for federal regulatory applications and the
                     limitations of fully de-identified data, which can restrict analyses requiring
@@ -227,7 +227,7 @@
                     different institutions, evaluate privacy concerns surrounding patient consent
                     and continuing genomic research, and identify optimal methods for the
                     development and cross-site deployment of algorithms to identify case and control
-                    cohorts. [6, 14, 15]</para>
+                    cohorts. [46, 54, 55]</para>
                 <para>eMERGE has provided valuable insights into genomics research and effective
                     data analysis across various institutions. For instance, investigators found
                     projects had better outcomes when performed across the entire network or across
@@ -236,15 +236,15 @@
                     sites in addition to the existing adult data was challenging but enabled
                     researchers to examine heritable diseases that presented in childhood and
                     continued into adulthood. This type of analysis would have been unfeasible for
-                    one site alone. [16] While data quality is of paramount importance when
+                    one site alone. [56] While data quality is of paramount importance when
                     collaborating across multiple sites, eMERGE uses common definitions and coding
                     for phenotype variables being deposited into the database of Genotypes and
                     Phenotypes (dpGaP) to support effective Quality Assurance/Quality Control
-                    (QA/QC) of data as it comes in. [17]</para>
+                    (QA/QC) of data as it comes in. [57]</para>
                 <para>The size, scope, diversity, and continued collection of eMERGE’s data allows
                     the network to develop and execute additional analyses and cost-effective
                     longitudinal genomic studies as data evolves and medical interpretations change.
-                    [16] The ability to build upon existing data is particularly valuable in fields
+                    [56] The ability to build upon existing data is particularly valuable in fields
                     where scientific understanding is still evolving, as with genomics and novel
                     diseases or treatments. Even with the challenges inherent with multi-site
                     collaboration, eMERGE has demonstrated that interoperability risk can be
@@ -255,7 +255,7 @@
                     collection to protect patient privacy. Ethical questions also arise regarding
                     whether an individual’s original consent allows for the continued sharing of
                     data with the database of Genotypes and Phenotypes (dpGaP) or expanded research
-                    into additional phenotypes. [14] Additionally, data completeness within EHRs is
+                    into additional phenotypes. [54] Additionally, data completeness within EHRs is
                     not guaranteed and there are no established processes for the secure,
                     generalizable, and interoperable data exchange between different healthcare
                     systems or terminology standards. This issue is exacerbated by the ever-changing
@@ -264,7 +264,7 @@
                     eMERGE addresses these challenges by developing practices and communicating
                     findings to the genomic research community, emphasizing the need for consensus
                     on data standards and harmonization to perform effective multi-site analytics.
-                    [16]</para>
+                    [56]</para>
             </section>
             <section>
                 <title>Sentinel</title>
@@ -273,17 +273,17 @@
                     and flexible analytic tools help and develop new ways of evaluating the safety
                     of approved drugs, devices, and treatments in response to the FDA Amendments Act
                     (FDAAA) of 2007 that mandated the use of EHR to perform safety assessments more
-                    effectively. [18, 19]</para>
+                    effectively. [58, 59]</para>
                 <para>Sentinel collects EHR data that covers approximately 700 million person-years
                     of longitudinal observation time, much of which comes from a network of over 170
                     inpatient facilities and some of the nation’s largest health insurance
-                    providers, including Aetna, Anthem, Humana, and Kaiser Permanente. [17, 18] The
+                    providers, including Aetna, Anthem, Humana, and Kaiser Permanente. [57, 58] The
                     Sentinel System is not a data repository, but rather a distributed network in
                     which each data partner maintains ownership and operational control of their
                     data in a way that allows Sentinel access to select full-text medical records,
                     inpatient data, and lab results from the nation’s largest hospital network that
                     covers approximately five percent of inpatient care and over 10 billion pharmacy
-                    and medication encounters. [17] Data is standardized into the Sentinel Common
+                    and medication encounters. [57] Data is standardized into the Sentinel Common
                     Data Model (SCDM) format for efficient analysis across data sources and flexible
                     computer programs that can run routine queries and perform analyses to inform
                     FDA decision making, ranging from medication utilization patterns among patient
@@ -294,20 +294,18 @@
                     RWE and associated analytics rapidly and reliably with relative ease, all while
                     minimizing risk to patient privacy. The capabilities of the Sentinel System are
                     varied, including the ability to access full-text medical records, support RCTs,
-                    and streamline the collection of patient data from mobile devices. [17] This
+                    and streamline the collection of patient data from mobile devices. [57] This
                     system has enhanced the FDA’s central purpose by allowing it to design and
                     execute post-market studies that would have previously been required of medical
-                    product sponsors. [19] Similarly, the FDA maintains authority to mandate
+                    product sponsors. [59] Similarly, the FDA maintains authority to mandate
                     companies perform post-approval studies when potential safety concerns arise,
                     and Sentinel could be used to drive those decisions. Sentinel’s Active Risk
                     Identification and Analysis (ARIA) System evaluates the safety of approved
                     medical devices and drugs and has performed hundreds of such analyses to date.
-                    [<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>2<?oxy_custom_end?>0]
-                    The operations of ARIA are of particular significance when considering the known
-                    limitations of the FDA’s Adverse Event Reporting System (FAERS), which the FDA
-                    itself estimates to have received only one to ten percent of adverse events that
-                    occur.
-                    [<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>2<?oxy_custom_end?>1]</para>
+                    [60] The operations of ARIA are of particular significance when considering the
+                    known limitations of the FDA’s Adverse Event Reporting System (FAERS), which the
+                    FDA itself estimates to have received only one to ten percent of adverse events
+                    that occur. [61]</para>
                 <para>Although the Sentinel System has already provided measurable impact since its
                     implementation, it has some undesirable holes. The most notable one reveals the
                     limitations inherent to the data sources Sentinel accesses. The majority of
@@ -318,7 +316,7 @@
                     prioritization of insurance coverage over medical precision. While a heart
                     attack may be diagnosed and billed accurately, outcomes like psychiatric side
                     effects, digestive problems, cognitive impairment, and countless others are
-                    often reflected unreliably or not at all. [17]</para>
+                    often reflected unreliably or not at all. [57]</para>
                 <para>The data within the Sentinel System exhibits additional flaws. There is a
                     strong potential for selection bias, leading to unknown generalizability to
                     underrepresented populations, particularly those lacking health insurance. Even
@@ -329,7 +327,7 @@
                     months, limiting its usefulness when addressing rapidly developing situations
                     like COVID-19. Finally, data consistency and interoperability are additional
                     concerns, as data can vary in content, accessibility, and completeness across
-                    the multiple data partners. [17] These functional gaps limit potential
+                    the multiple data partners. [57] These functional gaps limit potential
                     applications of RWD, but once improved, the Sentinel System can further improve
                     as a powerful centralized tool for RWE generation, regulation, analytics,
                     research, and patient care. As with all applications of RWD, strategies for how
@@ -348,12 +346,12 @@
             and 97% electronically recorded broad determinants of health (BDOH) data. Rates of
             electronic recording of SDOH and BDOH data were slightly higher among primary care
             physicians, with 89% of primary care physicians electronically recording SDOH data and
-            98% electronically recording BDOH data in 2021. [22] </para>
+            98% electronically recording BDOH data in 2021. [62] </para>
        <para>In the past, research relied upon billing data from the UB-04 and CMS-1500 billing
             forms as the source of structured data for research purposes. The UB-04 and CMS-1500
             billing forms are the standard claim forms that healthcare organization use for the
             billing of inpatient and outpatient, respectively, medical and mental health claims.
-            [23-24] Although developed by CMS, the form has become the standard form used by all
+            [63-64] Although developed by CMS, the form has become the standard form used by all
             insurance carriers. This form captures data in a structured format and captures
             diagnoses, treatments and procedures, type of admission, medications, and demographic
             information. While the UB-04 and similar administrative data have been considered rich
@@ -430,139 +428,5 @@
             their report. Data curators or NLP may be challenged to interpret the actual clinical
             finding being described. Similarly, the presence or absence of a clinical finding may be
             hidden in the clinical prose as well.</para>
-    </section>
-    <section>
-        <title>References</title>
-        <orderedlist>
-            <listitem>
-                <para>Commissioner O of the. FDA. 2025 [cited 2025 Aug 6]. Real-World Evidence.
-                    Available from:
-                    https://www.fda.gov/science-research/science-and-research-special-topics/real-world-evidence</para>
-            </listitem>
-            <listitem>
-                <para>Commissioner O of the. FDA. 2025 [cited 2025 Aug 6]. 21st Century Cures Act.
-                    Available from:
-                    https://www.fda.gov/regulatory-information/selected-amendments-fdc-act/21st-century-cures-act</para>
-            </listitem>
-            <listitem>
-                <para>Beaulieu‐Jones BK, Finlayson SG, Yuan W, Altman RB, Kohane IS, Prasad V, et
-                    al. Examining the Use of Real‐World Evidence in the Regulatory Process. Clin
-                    Pharma and Therapeutics [Internet]. 2020 [cited 2025 Aug 6];107(4):843–52.
-                    Available from:
-                    https://ascpt.onlinelibrary.wiley.com/doi/10.1002/cpt.1658</para>
-            </listitem>
-            <listitem>
-                <para>Abdalhamid B, Bilder CR, McCutchen EL, Hinrichs SH, Koepsell SA, Iwen PC.
-                    Assessment of Specimen Pooling to Conserve SARS CoV-2 Testing Resources.
-                    American Journal of Clinical Pathology [Internet]. 2020 May 5 [cited 2025 Aug
-                    6];153(6):715–8. Available from:
-                    https://academic.oup.com/ajcp/article/153/6/715/5822023</para>
-            </listitem>
-            <listitem>
-                <para>Stram M, Gigliotti T, Hartman D, Pitkus A, Huff SM, Riben M, et al. Logical
-                    Observation Identifiers Names and Codes for Laboratorians. Archives of Pathology
-                    &amp; Laboratory Medicine [Internet]. 2020 Feb 1 [cited 2025 Aug
-                    6];144(2):229–39. Available from:
-                    http://meridian.allenpress.com/aplm/article/144/2/229/433652/Logical-Observation-Identifiers-Names-and-Codes</para>
-            </listitem>
-            <listitem>
-                <para>National Center for Advancing Translational Science. U.S. Department of Health
-                    and Human Services. NCATS 2022. [Internet]. National COVID Cohort Collaborative.
-                    Available from: https://ncats.nih.gov/</para>
-            </listitem>
-            <listitem>
-                <para>Patient-Centered Outcomes Research Institute [Internet]. 2022 [cited 2025 Aug
-                    6]. Highlights of PCORI-Funded Research Results. Available from:
-                    https://www.pcori.org/</para>
-            </listitem>
-            <listitem>
-                <para>Forrest CB, McTigue KM, Hernandez AF, Cohen LW, Cruz H, Haynes K, et al.
-                    PCORnet® 2020: current state, accomplishments, and future directions. J Clin
-                    Epidemiol [Internet]. 2021 Jan [cited 2025 Aug 6];129:60–7. Available from:
-                    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7521354/</para>
-            </listitem>
-            <listitem>
-                <para>Timbie J, Rudin R, Towe V, Chen E, Hunter L, Case S. National Patient-Centered
-                    Clinical Research Network (PCORnet) Phase I: Final Evaluation Report [Internet].
-                    RAND Corporation; 2015 [cited 2022 Dec 20]. Available from:
-                    https://www.jstor.org/stable/10.7249/j.ctt19rmdhd.10?seq=1</para>
-            </listitem>
-            <listitem>
-                <para>Data [Internet]. PCORnet®. [cited 2025 Aug 6]. Available from:
-                    https://pcornet.org/data/</para>
-            </listitem>
-            <listitem>
-                <para>PCORnet® [Internet]. [cited 2025 Aug 6]. Home. Available from:
-                    https://pcornet.org/</para>
-            </listitem>
-            <listitem>
-                <para>Who We Are – OHDSI [Internet]. [cited 2025 Aug 6]. Available from:
-                    https://www.ohdsi.org/who-we-are/</para>
-            </listitem>
-            <listitem>
-                <para>OHDSI – Observational Health Data Sciences and Informatics [Internet]. [cited
-                    2025 Aug 6]. Available from: https://www.ohdsi.org/</para>
-            </listitem>
-            <listitem>
-                <para>welcome to eMerge [Internet]. [cited 2025 Aug 6]. Available from:
-                    https://emerge-network.org/about-emerge/</para>
-            </listitem>
-            <listitem>
-                <para>Electronic Medical Records and Genomics (eMERGE) Network [Internet]. [cited
-                    2025 Aug 6]. Available from:
-                    https://www.genome.gov/Funded-Programs-Projects/Electronic-Medical-Records-and-Genomics-Network-eMERGE</para>
-            </listitem>
-            <listitem>
-                <para>Gottesman O, Kuivaniemi H, Tromp G, Faucett WA, Li R, Manolio TA, et al. The
-                    Electronic Medical Records and Genomics (eMERGE) Network: past, present, and
-                    future. Genetics in Medicine [Internet]. 2013 [cited 2025 Aug 6];15(10):761–71.
-                    Available from:
-                    https://linkinghub.elsevier.com/retrieve/pii/S1098360021027143</para>
-            </listitem>
-            <listitem>
-                <para>the eMERGE Team, McCarty CA, Chisholm RL, Chute CG, Kullo IJ, Jarvik GP, et
-                    al. The eMERGE Network: A consortium of biorepositories linked to electronic
-                    medical records data for conducting genomic studies. BMC Med Genomics
-                    [Internet]. 2011 [cited 2025 Aug 6];4(1):13. Available from:
-                    http://bmcmedgenomics.biomedcentral.com/articles/10.1186/1755-8794-4-13</para>
-            </listitem>
-            <listitem>
-                <para>About the Food and Drug Administration (FDA) Sentinel Initiative | Sentinel
-                    Initiative [Internet]. [cited 2025 Aug 6]. Available from:
-                    https://www.sentinelinitiative.org/about</para>
-            </listitem>
-            <listitem>
-                <para>Brown JS, Maro JC, Nguyen M, Ball R. Using and improving distributed data
-                    networks to generate actionable evidence: the case of real-world outcomes in the
-                    Food and Drug Administration’s Sentinel system. Journal of the American Medical
-                    Informatics Association [Internet]. 2020 May 1 [cited 2025 Aug 6];27(5):793–7.
-                    Available from: https://academic.oup.com/jamia/article/27/5/793/5819225</para>
-            </listitem>
-            <listitem>
-                <para>Sentinel Initiative [Internet]. 2022. Drug Studies. Available from:
-                    https://www.sentinelinitiative.org/studies/drugs</para>
-            </listitem>
-            <listitem>
-                <para>World of Drug Safety Module [Internet]. 2022. World of Drug Safety Unit List:
-                    Overview Of Drug Safety. Available from:
-                    https://www.accessdata.fda.gov/scripts/cderworld/index.cfm?action=drugsafety%3Amain&amp;unit=1&amp;lesson=1&amp;topic=8&amp;page=</para>
-            </listitem>
-            <listitem>
-                <para>Congressional Research Service [Internet]. 2009. American Recovery and
-                    Reinvestment Act of 2009 (P.L. 111-5): Summary and Legislative History.
-                    Available from:
-                    https://www.congress.gov/crs_external_products/R/PDF/R40537/R40537.6.pdf</para>
-            </listitem>
-            <listitem>
-                <para>National Uniform Billing Committee (UBC) [Internet]. [cited 2022 Dec 1].
-                    National Uniform Billing Committee Official Data Specifications Manual.
-                    Available from: https://www.nubc.org/subscription-information</para>
-            </listitem>
-            <listitem>
-                <para>Professional paper claim form (CMS-1500) | CMS [Internet]. [cited 2025 Aug 6].
-                    Available from:
-                    https://www.cms.gov/Medicare/Billing/ElectronicBillingEDITrans/1500</para>
-            </listitem>
-        </orderedlist>
     </section>
 </chapter>
