@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Data Types for General Semantic Authoring</title>
+    <para>
+        <figure xml:id="HighLevelStatusTable1">
+            <title>High Level Status</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/HighLevelStatusTable1.svg" scale="80"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <figure xml:id="HighLevelStatusTable2">
+        <title>Other Data Types (enum list in tinkar-core)</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata fileref="../images/HighLevelStatusTable2.svg" scale="80"
+                    align="center"/>
+            </imageobject>
+        </mediaobject>
+        </figure>
+        <figure xml:id="HighLevelStatusTable3">
+            <title>Enumerated Status Part 1</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/HighLevelStatusTable3.svg" scale="80"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <figure xml:id="HighLevelStatusTable4">
+            <title>Enumerated Status Part 2</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/HighLevelStatusTable4.svg" scale="80"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <figure xml:id="HighLevelStatusTable5">
+            <title>Enumerated Status Part 3</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/HighLevelStatusTable5.svg" scale="80"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <figure xml:id="HighLevelStatusTable6">
+            <title>Definitions</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/HighLevelStatusTable6.svg" scale="80"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+    </para>
+</chapter>
