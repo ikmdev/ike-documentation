@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Hybrid Reasoner Test Script - Absence Feature</title>
+    <section>
+        <title>Summary</title>
+        <para>In Komet, there are now two possible Reasoner capabilities, the full ELKreasoner and
+            the Hybrid Reasoner. The Hybrid Reasoner currently handles “absent semantics” which is a
+            form of negation where the presence of the role "Finding context" with value "Known
+            absent" treats the concept definition within that role group as a negation.
+            Specifically, the feature is limited to the "No family history" sub-hierarchy. The
+            following test script will illustrate how to complete the definition changes in order to
+            demonstrate the new reasoning capability. </para>
+    </section>
+    <section>
+        <title>Test Scenario –  No Relevant Family History</title>
+        <section>
+            <title>Part 1: Update the Axioms for No Relevant Family History</title>
+            <para><emphasis role="bold">Step 1:</emphasis></para>
+            <para>Open the Komet Application with a database that contains SNOMED concepts. </para>
+            <para><emphasis role="bold">Step 2:</emphasis></para>
+            <para>Create a new project journal by selecting the <emphasis role="bold">+
+                </emphasis></para>
+            <figure xml:id="HybridReasonserStep2"> 
+                <title>Select the +</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/HybridReasonserStep2.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure> 
+            
+            <para><emphasis role="bold">Step 3:</emphasis></para>
+            <para>Navigate to the Search pane and search for the SCTID <emphasis role="bold"
+                    >160266009</emphasis></para>
+            <figure xml:id="HybridReasonserStep3"> 
+                <title>Search for 160266009</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/HybridReasonserStep3.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure> 
+            
+            <para><emphasis role="bold">Step 4:</emphasis></para>
+            <para>Open the concept viewer for <emphasis role="bold">No relevant family history
+                    (context-dependent category) </emphasis>by double clicking on Fully Qualified
+                Name (FQN)</para>
+            <figure xml:id="HybridReasonserStep4"> 
+                <title>Concept Viewer for 'No relevant family history'</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/HybridReasonserStep4.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure> 
+            <para><emphasis role="italic"><emphasis role="bold">The user will see the concept viewer
+                        appear in the Journal as seen in the above
+                screenshot.</emphasis></emphasis></para>
+            <para><emphasis role="bold">Step 5:</emphasis></para>
+            <para>Scroll down to the stated axioms and locate the pencil icon next to <emphasis
+                    role="bold">Sufficient set: No relevant family history. </emphasis></para>
+            <figure xml:id="HybridReasonserStep5"> 
+                <title>Sufficient set: No relevant family history</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/HybridReasonserStep5.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure> 
+            
+            <para><emphasis role="bold">Step 6:</emphasis></para>
+            <para>Click the pencil icon and select <emphasis role="bold">Change to necessary
+                    set</emphasis></para>
+            <figure xml:id="HybridReasonserStep6"> 
+                <title>Change to necessary set</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/HybridReasonserStep6.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure> 
+            
+            <para><emphasis role="bold">Step 7:</emphasis></para>
+            <para>Remove the axiom <emphasis role="bold">All times past </emphasis>by selecting the
+                pencil icon and selecting <emphasis role="bold">Remove axiom</emphasis></para>
+            <figure xml:id="HybridReasonserStep7"> 
+                <title>Remove 'All times past' axiom</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/HybridReasonserStep7.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure> 
+            
+            <para><emphasis role="bold">Step 8:</emphasis></para>
+            <para>Remove the axiom <emphasis role="bold">Known absent </emphasis>by selecting the
+                pencil icon and selecting <emphasis role="bold">Remove axiom</emphasis></para>
+            <figure xml:id="HybridReasonserStep8"> 
+                <title>Remove 'Known absent' axiom</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/HybridReasonserStep8.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure> 
+            
+            <para><emphasis role="bold">Step 9:</emphasis></para>
+            <para>Remove the axiom <emphasis role="bold">People in the family </emphasis>by
+                selecting the pencil icon and selecting <emphasis role="bold">Remove
+                    axiom</emphasis></para>
+            <figure xml:id="HybridReasonserStep9"> 
+                <title>Remove 'People in the family' axiom</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/HybridReasonserStep9.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure> 
+            
+            <para><emphasis role="bold">Step 10:</emphasis></para>
+            <para>In the inferred navigation, select the concept <emphasis role="bold">Family
+                    history of</emphasis></para>
+            <figure xml:id="HybridReasonserStep10"> 
+                <title>Select 'Family history of' Concept</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/HybridReasonserStep10.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure> 
+            <para><emphasis role="italic"><emphasis role="bold">User will see the concept in the
+                        journal. This concept can be closed. </emphasis></emphasis></para>
+            <para><emphasis role="bold">Step 11:</emphasis></para>
+            <para>Go back and change <emphasis role="bold">Context-dependent categories
+                </emphasis>for the<emphasis role="bold"> No relevant family history
+                </emphasis>concept by selecting the pencil icon</para>
+            <figure xml:id="HybridReasonserStep11"> 
+                <title>Change Context-dependent categories </title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/HybridReasonserStep11.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure> 
+            
+            <para><emphasis role="bold">Step 12:</emphasis></para>
+            <para>Select <emphasis role="bold">Choose replacement is-a </emphasis>> and select one
+                of the details history <emphasis role="bold">for Family history of</emphasis></para>
+            <figure xml:id="HybridReasonserStep12"> 
+                <title>Select Choose replacement is-a</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/HybridReasonserStep12.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure> 
+            
+            <para><emphasis role="bold">Step 13:</emphasis></para>
+            <para>Open the Reasoner by selecting the Reasoner icon from the left navigation
+                pane</para>
+            <figure xml:id="HybridReasonserStep13"> 
+                <title>Open the Reasoner</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/HybridReasonserStep13.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure> 
+            
+            <para><emphasis role="bold">Step 14:</emphasis></para>
+            <para>Select the <emphasis role="bold">Use HybridReasonerService</emphasis> and select
+                    <emphasis role="bold">Run reasoner </emphasis></para>
+            <figure xml:id="HybridReasonserStep14.1"> 
+                <title>Run Reasoner</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/HybridReasonserStep14.1.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure>
+            <para>The user will be prompted with a popup confirming that the user would like to run
+                the full reasoner using the HybridReasonerService. User should select <emphasis
+                    role="bold">Ok</emphasis></para>
+            <figure xml:id="HybridReasonserStep14.2"> 
+                <title>Select Ok to Run Full Reasoner</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/HybridReasonserStep14.2.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure> 
+            <para><emphasis role="italic"><emphasis role="bold">The user will see a status message
+                        appear as the Reasoner loads and completes the process.
+                    </emphasis></emphasis></para>
+            <figure xml:id="HybridReasonserStep14.3"> 
+                <title>Completion Message</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/HybridReasonserStep14.3.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure> 
+            
+            <para><emphasis role="bold">Step 15:</emphasis></para>
+            <para>The user can now see the updated hierarchy by<emphasis role="italic">
+                    dragging</emphasis>
+                <emphasis role="bold">No relevant family history of </emphasis>into the Concept
+                Navigator. </para>
+            <figure xml:id="HybridReasonserStep15"> 
+                <title>Viewing Updated Hierarchy</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/HybridReasonserStep15.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure> 
+            
+        </section>
+        <section>
+            <title>Part 2: Update Remaining Concepts with Inaccurate Axioms</title>
+            <para><emphasis role="bold">Step 16:</emphasis></para>
+            <para>Next search for the SCTID <emphasis role="bold">704008007 </emphasis>and double
+                click on <emphasis role="bold">No family history of asthma
+                (situation)</emphasis></para>
+            <figure xml:id="HybridReasonserStep16"> 
+                <title>Search for 704008007</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/HybridReasonserStep16.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure> 
+            
+            <para><emphasis role="italic"><emphasis role="bold">User will see the concept appear in
+                        the Concept viewer in the Journal. </emphasis></emphasis></para>
+            <para><emphasis role="bold">Step 17:</emphasis></para>
+            <para>Edit the axiom <emphasis role="bold">Context-dependent categories </emphasis>by
+                selecting the pencil icon</para>
+            <figure xml:id="HybridReasonserStep17"> 
+                <title>Edit Context-dependent categories  </title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/HybridReasonserStep17.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure> 
+            
+            <para><emphasis role="bold">Step 18:</emphasis></para>
+            <para>Select <emphasis role="bold">Choose replacement is-a </emphasis>> <emphasis
+                    role="bold">navigation-journal 1 history </emphasis>> <emphasis role="bold">No
+                    relevant family history</emphasis></para>
+            <figure xml:id="HybridReasonserStep18"> 
+                <title>Choose replacement is-a > navigation-journal 1 history > No relevant family
+                    history</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/HybridReasonserStep18.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure> 
+            
+            <para><emphasis role="bold">Step 19:</emphasis></para>
+            <para>Next search for the SCTID <emphasis role="bold">1344634002 </emphasis>and double
+                click on <emphasis role="bold">No family history of multiple sclerosis
+                    (situation)</emphasis></para>
+            <figure xml:id="HybridReasonserStep19"> 
+                <title>Search for 1344634002</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/HybridReasonserStep19.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure> 
+            
+            <para><emphasis role="italic"><emphasis role="bold">User will see the concept appear in
+                        the Concept viewer in the Journal. </emphasis></emphasis></para>
+            <para><emphasis role="bold">Step 20:</emphasis></para>
+            <para>Edit the axiom <emphasis role="bold">Context-dependent categories </emphasis>by
+                selecting the pencil icon</para>
+            <figure xml:id="HybridReasonserStep20"> 
+                <title>Edit Context-dependent categories  </title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/HybridReasonserStep20.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure> 
+            
+            <para><emphasis role="bold">Step 21:</emphasis></para>
+            <para>Select <emphasis role="bold">Choose replacement is-a </emphasis>> <emphasis
+                    role="bold">navigation-journal 1 history </emphasis>> <emphasis role="bold">No
+                    relevant family history</emphasis></para>
+            <figure xml:id="HybridReasonserStep21"> 
+                <title>Choose replacement is-a > navigation-journal 1 history > No relevant family
+                    history</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/HybridReasonserStep21.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure> 
+            
+            <para><emphasis role="bold">Step 22:</emphasis></para>
+            <para>Next search for the SCTID <emphasis role="bold">160274005 </emphasis>and double
+                click on <emphasis role="bold">No family history of diabetes
+                (situation)</emphasis></para>
+            <figure xml:id="HybridReasonserStep22"> 
+                <title>Search for 160274005</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/HybridReasonserStep22.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure> 
+            
+            <para><emphasis role="italic"><emphasis role="bold">User will see the concept appear in
+                        the Concept viewer in the Journal. </emphasis></emphasis></para>
+            <para><emphasis role="bold">Step 23:</emphasis></para>
+            <para>Edit the axiom <emphasis role="bold">Context-dependent categories </emphasis>by
+                selecting the pencil icon</para>
+            <figure xml:id="HybridReasonserStep23"> 
+                <title>Edit Context-dependent categories </title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/HybridReasonserStep23.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure> 
+            
+            <para><emphasis role="bold">Step 24:</emphasis></para>
+            <para>Select <emphasis role="bold">Choose replacement is-a </emphasis>> <emphasis
+                    role="bold">navigation-journal 1 history </emphasis>> <emphasis role="bold">No
+                    relevant family history</emphasis></para>
+            <figure xml:id="HybridReasonserStep24"> 
+                <title>Choose replacement is-a > navigation-journal 1 history > No relevant family
+                    history</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/HybridReasonserStep24.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure> 
+            
+            <para><emphasis role="bold">Step 25:</emphasis></para>
+            <para>Complete <emphasis role="bold">Step 13 </emphasis>to rerun the Hybrid Reasoner </para>
+            <para><emphasis role="bold">Step 26:</emphasis></para>
+            <para>Confirm that have results have completed successfully, by validating the results
+                in the concept navigator with the screenshot below. </para>
+            <figure xml:id="HybridReasonserStep26"> 
+                <title>Validate Results in Concept Navigator</title> 
+                <mediaobject> 
+                    <imageobject> 
+                        <imagedata fileref="../images/HybridReasonserStep26.svg" 
+                            scale="25" align="center"/> 
+                    </imageobject> 
+                </mediaobject> 
+            </figure> 
+            
+        </section>
+    </section>
+</chapter>

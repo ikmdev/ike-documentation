@@ -1624,14 +1624,43 @@
         <title>Git Sync</title>
         <para>Users may want to use Git Sync to connect to their GitHub account in the Komet
             application so they can pull and sync change sets to a repository that they have
-            created</para>
-        <orderedlist>
+            created. To collaborate, Git Sync can allow a user to contribute change set(s) to others
+            and integrate changeset(s) from others.</para>
+        <para>Menu Options:</para>
+        <itemizedlist>
             <listitem>
-                <para>To get started, you will need to be signed into your personal GitHub account.
-                    If you do not have an account, create one at <link
-                        xlink:href="https://github.com/">GitHub</link></para>
+                <para><emphasis role="bold">Exchange</emphasis></para>
+                <itemizedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Info - </emphasis>Just connects to GitHub
+                            without pulling or syncing any changesets.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Pull - </emphasis>Pulls the change sets from the
+                            Git Hub repo that the connection was made with, loads them into Komet
+                            and then automatically runs the Reasoner.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Sync </emphasis>- Pulls the change sets from the
+                            repository, loads them into Komet, runs the Reasoner, and then pushes
+                            the changesets to the repository. </para>
+                        <figure xml:id="GitSyncTestingScript"> 
+                            <title>Collaboration Workflows</title> 
+                            <mediaobject> 
+                                <imageobject> 
+                                    <imagedata fileref="../../../book/src/docbkx/images/GitSyncTestingScript.svg" 
+                                        scale="25" align="center"/> 
+                                </imageobject> 
+                            </mediaobject> 
+                        </figure> 
+                        
+                    </listitem>
+                </itemizedlist>
             </listitem>
-            </orderedlist>  
+        </itemizedlist>
+        <para>To get started, you will need to be signed into your personal GitHub account. If you
+            do not have an account, create one at <link xlink:href="https://github.com/"
+                >GitHub</link></para>  
         <section>
             <title>Personal Access Token</title>
         <orderedlist>
@@ -1938,7 +1967,17 @@
                         <para>To ensure the Sync completed successfully, go to the repository you
                             created earlier to validate that the change sets were successfully
                             completed. This process can take a minute or so, as the change sets are
-                            pushed to GitHub (<xref linkend="RunningTheReasoner"></xref>)</para>
+
+                        <figure xml:id="GitSyncTestingScript2"> 
+                            <title>Validating Change Sets in Repository</title> 
+                            <mediaobject> 
+                                <imageobject> 
+                                    <imagedata fileref="../../../book/src/docbkx/images/GitSyncTestingScript2.svg" 
+                                        scale="25" align="center"/> 
+                                </imageobject> 
+                            </mediaobject> 
+                        </figure> 
+                 
                     </listitem>
                 </orderedlist>
             </section>
