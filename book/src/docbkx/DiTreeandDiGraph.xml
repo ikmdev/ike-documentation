@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>What is a DiTree and DiGraph?</title>
+    <section>
+        <title>Introduction</title>
+        <para>This is a primer for IA team as it relates to what/how to display a DiTree and DiGraph
+            to a user and how it is stored in the database.</para>
+        <figure xml:id="DiTree1.1">
+            <title>Directed Hierarchy Tree Layout (Reigngold-Tilford algorithm)</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/DiTree1.1.svg" scale="25" align="center"/> 
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <figure xml:id="DiTree1.2">
+            <title>Undirected Network Force Directed Graph Layout(Fruchterman-Reingold algorithm)</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/DiTree1.2.svg" scale="25" align="center"/> 
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <para>In Komet the user can create a Pattern with field types such as String, Float,
+            Integer, etc. these common datatypes are well known when displayed to the user. For
+            example a String field data type would have a value of “Hello World”. But what if it
+            were a datatype of DiTree or DiGraph? Before we begin to display this data type let’s
+            define some terms and describe how they are stored or structured in memory. The
+            displaying of graphs or visualizing them is a bigger topic called ‘graph drawing
+            algorithms’. Where it is subjective when displaying graphs can depend on the data. There
+            are criteria such as reducing the amount of edges that cross and nodes should never
+            overlap. Graph Drawing Algorithms for the visualization of Graphs book <link
+                xlink:href="https://www.amazon.com/Graph-Drawing-Algorithms-Visualization-Graphs/dp/0133016153"
+            />.</para>
+        <para><emphasis role="bold">Here is a primer on graph terminology and
+                definitions:</emphasis></para>
+        <para>
+            <emphasis role="bold">Vertex</emphasis> - Denoted as a circle or box shape represented
+            as a node in a graph structure. Each vertex will have a label</para>
+        <para> such as text for the user.</para>
+        <para><emphasis role="bold"> Edge</emphasis> - Denoted as a line connecting to node(s) in a
+            graph structure. Each edge always connects two vertices.</para>
+        <para> Optionally an edge can have a label that describes to the user the relationship
+            between the two vertices.</para>
+        <para> A label for an edge could be depicted as (Bob) --related to-– (Joe) as an undirected
+            graph.</para>
+        <figure xml:id="DiTree3">
+            <title>Example Edge</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/DiTree3.svg" scale="25" align="center"/> 
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <para>Directed Edge - When an edge (or line) has an arrow it implies a path or direction
+            when walking a graph or tree. If there is no arrow it usually means the edge is
+            Undirected meaning the vertices are simply connected. Sometimes Undirected can mean they
+            are bidirectional when graph walking. Often this can lead to a cycle (cyclical
+            reference). </para>
+        <figure xml:id="DiTree4">
+            <title>Example Directed Edge</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/DiTree4.svg" scale="25" align="center"/> 
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <para>Note: In Directed Trees It’s okay to not have arrows denoted whenever a hierarchy is
+            shown. E.g. When representing a tree, it is often implied that you have a parent and
+            child relationship and therefore it can thought of as a directed graph however, in
+            memory a parent or child are connected for easy tree traversal (aka navigation/graph
+            walking in either direction). </para>
+        <para><emphasis role="bold">Directed Tree (graph)</emphasis> - Often called a rooted tree.
+            These structures are typically hierarchical and a parent vertex having no parent called
+            the root node (vertex). </para>
+        <para><emphasis role="bold">Root Node (Vertex) </emphasis>- A parent vertex having no
+            parent. </para>
+        <para><emphasis role="bold">Leaf Node (Vertex) </emphasis>- A child or root vertex having no
+            children. </para>
+        <figure xml:id="DiTree5">
+            <title>Example Directed Graph</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/DiTree5.svg" scale="25" align="center"/> 
+                </imageobject>
+            </mediaobject>
+        </figure>
+    </section>
+    <section>
+        <title>Additional Examples</title>
+        <figure xml:id="DiTree6">
+            <title>A vertical display of a hierarchical tree or DiTree</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Picture10.svg" scale="25" align="center"/> 
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <figure xml:id="DiTree7">
+            <title>A display of a hierarchical tree or DiTree vertically as boxes</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/DiTree6.svg" scale="25" align="center"/> 
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <figure xml:id="DiTree8">
+            <title>A radial hierarchical tree or DiTree - the center is the root node</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/DiTree8.svg" scale="25" align="center"/> 
+                </imageobject>
+            </mediaobject>
+        </figure>
+    </section>
+</chapter>
