@@ -3,9 +3,9 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-     <title>Summary of Findings – RWE Search and Query Methods</title>
+     <title>RWE Search and Query Methods</title>
     <sect1>
-        <title>RWE Search and Query Methods Introduction</title>
+        <title>Querying and Normalizing Health Data for RWE</title>
         <para>Search and query methods are used for information retrieval to access unstructured
             data. Most health information is stored in an electronic health record (EHR), and most
             laboratory data is stored in a laboratory information system (LIS). It is important to
@@ -44,8 +44,7 @@
             to test and validate the “hypothesis” of the regulatory exercise.</para>
     </sect1>
     <sect1>
-        <title>Importance of RWD for Long Covid and Other Loosely Defined or Poorly Understood
-            Scenarios</title>
+        <title>Importance of RWD for Long Covid and Other Uncertain Scenarios</title>
         <para>Long COVID is a poorly understood sequela to a COVID infection. In general, it is
             characterized by a wide range of ongoing health symptoms lasting weeks or months
             following a COVID infection, including fatigue, post-exertional malaise, fever,
