@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.1">
+    <title>Change Sets Exchange Testing Script</title>
+    <section>
+        <title>Summary</title>
+        <para>Komet (both Classic and NextGen versions) enables users to exchange and import change sets into the application. 
+            A change set is a bundle of database record changes (committed and/or uncommitted) with associated metadata, intended for sharing, versioning, and collaboration. 
+            There are two ways to collaborate and share change sets. The first is to use Komet’s Git Sync feature. The second is to share the change set through email exchange.
+            The following document will illustrate the steps to complete a change set exchange using email. </para>
+    </section>
+    <section>
+        <title>How to Exchange Change Sets</title>
+        <para>The instructions below will demonstrate how a user can exchange a change set, specifically in this scenario, through email.</para>
+        <para>
+        <orderedlist>
+            <listitem>
+                <para>Access the Solor folder within your local drive by navigating to C-Drive → Users → [Your user folder] → Solor (e.g. C:\Users\YOURNAMEfolder\Solor)</para>
+                <figure xml:id="ExchangeSetsExchangeStep1">
+                    <title>Access Solor Folder</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/ExchangeSetsExchangeStep1.svg" scale="30"
+                                    align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>Open the Database folder with the change set you would like to exchange.</para>
+                <figure xml:id="ExchangeSetsExchangeStep2">
+                    <title>Open Database Folder</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/ExchangeSetsExchangeStep2.svg" scale="30"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>Select the changeSets folder.</para>
+                <figure xml:id="ExchangeSetsExchangeStep3">
+                    <title>Select changeSets Folder</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/ExchangeSetsExchangeStep3.svg" scale="30"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>In the changeSets folder you will find possible change sets that can be emailed or shared using other collaboration tools. (if you have multiple files within the folder, select the latest change set in the folder).</para>
+                <figure xml:id="ExchangeSetsExchangeStep4">
+                    <title>In changeSets Folder</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/ExchangeSetsExchangeStep4.svg" scale="30"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>Copy or drag and drop the desired file into your selected file transfer method. Examples of supported file transfer methods include email, Collaboration platforms (e.g. Microsoft Teams, slack, etc.), Cloud Storage Services  (e.g. OneDrive, SharePoint, Dropbox, etc.).</para>
+                <figure xml:id="ExchangeSetsExchangeStep5">
+                    <title>Drag and Drop Desired Files</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../images/ExchangeSetsExchangeStep5.svg" scale="30"
+                                align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+        </orderedlist>
+        </para>
+    </section>
+    <section>
+        <title>How to Import Change Sets</title>
+        <para>There are two places in the Komet application that a change set can be imported. The first is in the NextGen Komet UI and the second is in Classic Komet. Below are instructions on how to import the changeset that was exchanged into both NextGen and Classic Komet.</para>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para>Download the zipped change set file and unzip it to your Solor folder</para>
+                    <figure xml:id="ExchangeSetsImportStep1">
+                        <title>Download Zip File</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/ExchangeSetsImportStep1.svg" scale="30"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                    <figure xml:id="ExchangeSetsImportStep1B">
+                        <title>Zip File in SOLOR FOlder</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/ExchangeSetsImportStep1B.svg" scale="30"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Open Komet, and from the NextGen Komet Landing Page click on Import button.</para>
+                    <figure xml:id="ExchangeSetsImportStep2">
+                        <title>Click Import Button</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/ExchangeSetsImportStep2.svg" scale="30"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>The user can drag and drop or click on the Browse button to select the downloaded unzipped file previously added to the Solor folder.</para>
+                    <figure xml:id="ExchangeSetsImportStep3">
+                        <title>Select Unzipped File</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/ExchangeSetsImportStep3.svg" scale="30"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Once you have selected the desired file, click on the Open button.</para>
+                    <figure xml:id="ExchangeSetsImportStep4">
+                        <title>Click Open</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/ExchangeSetsImportStep4.svg" scale="30"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Once the file upload has completed, click on the Import button.</para>
+                    <figure xml:id="ExchangeSetsImportStep5">
+                        <title>Click Import</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/ExchangeSetsImportStep5.svg" scale="30"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+            </orderedlist>
+        </para>
+        <para><emphasis role="bold">User will be able to navigate to the journal and verify they see
+                the desired change set in the Komet application, by searching for a concept or
+                viewing the concept navigator. </emphasis></para>
+    </section>
+    <section>
+        <title>How to Import in Classic Komet</title>
+            <orderedlist>
+                <listitem>
+                    <para>Download the unzipped change set file and move to your Solor folder.</para>
+                    <figure xml:id="ExchangeSetsKometStep1">
+                        <title>Move to Solor Folder</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/ExchangeSetsKometStep1.svg" scale="30"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Open Komet and from the landing page, select View from the top banner and
+                    select Classic Komet </para>
+                    <figure xml:id="ExchangeSetsKometStep2">
+                        <title>Select View</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/ExchangeSetsKometStep2.svg" scale="30"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>In the Classic Komet journal, select the + icon on the left top corner to display the drop down menu.</para>
+                    <figure xml:id="ExchangeSetsKometStep3">
+                        <title>Select "+" Icon</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/ExchangeSetsKometStep3.svg" scale="30"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>From the dropdown menu, select Import Artifact.</para>
+                    <figure xml:id="ExchangeSetsKometStep4">
+                        <title>Select Import Artifact</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/ExchangeSetsKometStep4.svg" scale="30"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Click on Select a file button.</para>
+                    <figure xml:id="ExchangeSetsKometStep5">
+                        <title>Click Select a File</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/ExchangeSetsKometStep5.svg" scale="30"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Select the previously downloaded unzipped change set file added to your Solor folder.</para>
+                    <figure xml:id="ExchangeSetsKometStep6">
+                        <title>Unzip File to Solor Folder</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/ExchangeSetsKometStep6.svg" scale="30"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>Click on Import button.</para>
+                    <figure xml:id="ExchangeSetsKometStep7">
+                        <title>Click Import Button</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/ExchangeSetsKometStep7.svg" scale="30"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+            </orderedlist>
+        <para><emphasis role="bold">User will be able to navigate to the journal and verify they see
+                the desired change set in the Komet application, by searching for a concept or
+                viewing the concept navigator.</emphasis></para>
+    </section>
+   
+</chapter>
