@@ -105,12 +105,26 @@
                     a Semantic following in this Pattern will be. The field definitions are
                     equivalent to defining the columns in a database table. Using the Pattern,
                     Semantics with varying fields and field types can be specified to represent any
-                    structure needed to provide meaning to a Component. There are three key Patterns
+                    structure needed to provide meaning to a Component. There are four key Patterns
                     used to represent terminologies via Tinkar: the Description Pattern, the
-                    Identifier Pattern, and the Stated Definition Pattern. The table below
-                    illustrates the Description Pattern as an example. The Description Pattern is
-                    one of the three key Tinkar Patterns. It has four different fields, each with
-                    associated field definitions. </para>
+                    Identifier Pattern, the Stated Definition Pattern and the STAMP Pattern. Starter
+                    data is currently preloaded into the logical model to support ease of use for
+                    users. Patterns presented in the figure below are a sample of the full dataset
+                    that is already available within the model and can be populated with existing
+                    concepts in the starter set database.</para>
+                <figure xml:id="StarterSetPatterns">
+                    <title>Example Patterns Included in Tinker Starter Data</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                fileref="../images/Starterset1.svg"
+                                scale="25" align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <para>The table and figure below illustrate the Description Pattern as an example.
+                    The Description Pattern is one of the key Tinkar Patterns. It has four different
+                    fields, each with associated field definitions. </para>
                 <table>
                     <title>Description Pattern</title>
                     <tgroup cols="2">
@@ -193,10 +207,20 @@
                         </tbody>
                     </tgroup>
                 </table>
-                <para>The meaning and purpose Concepts shown in the above table for the Description
-                    Pattern are also types of Concepts in Tinkar, each with its own definitions. The
-                    table below shows the definition for the meaning and purpose Concepts from the
-                    Description Pattern table. Note how sometimes the meaning and the purpose is the
+                <figure xml:id="DescriptionPatternFieldValues">
+                    <title>Description Pattern Field Values</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                fileref="../images/Starterset2.svg"
+                                scale="20" align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <para>The meaning and purpose Concepts shown above for the Description Pattern are
+                    also types of Concepts in Tinkar, each with its own definitions. The table below
+                    shows the definition for the meaning and purpose Concepts from the Description
+                    Pattern table. Note how sometimes the meaning and the purpose is the
                     same.</para>
                 <table>
                     <title>Description Pattern Meaning and Purpose Concepts</title>
@@ -333,7 +357,18 @@
                 and Path. As a model changes and evolves, changes are made in Components. With each
                 change, a new change record and a new STAMP Coordinate are created. To track
                 information like when and who made the changes, a STAMP is assigned to each version
-                to record and preserve the history.</para>
+                to record and preserve the history. The figure below details the STAMP Pattern
+                included in the starter set data.</para>
+            <figure xml:id="StampStarterSetPattern">
+                <title>STAMP Pattern Field Values</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata
+                            fileref="../images/Starterset4.svg"
+                            scale="25" align="center"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
             <para>The following describes each of these attributes:</para>
             <para><emphasis role="bold">Status</emphasis> – A status is identified by a Concept and
                 may be annotated with additional information. For example, inactive or active. The
@@ -1722,8 +1757,18 @@
                 elements fit into the existing stated definition versus those that need new Patterns
                 and Semantics. In this step, it is essential to identify the properties of Concepts
                 that make them unique, i.e., the underlying properties that differentiate one
-                Concept from another in the model. The Stated Definition Pattern is depicted below,
-                along with the meaning and purpose Concepts.</para>
+                Concept from another in the model. The Stated Definition Pattern is depicted in the
+                figure and table below, along with the meaning and purpose Concepts.</para>
+            <figure xml:id="DefinitonPatternFieldValues">
+                <title>Definition Pattern Field Values</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata
+                            fileref="../images/Starterset3.svg"
+                            scale="25" align="center"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
             <table>
                 <title>Stated Definition Pattern</title>
                 <tgroup cols="2">
