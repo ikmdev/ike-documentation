@@ -391,7 +391,7 @@ Interoperability Resources (FHIR) terminology services. Regenstrief Institute ma
 content available via a FHIR API as part of its normal release process beginning Summer 2018.&quot;" mid="27"?></para><?oxy_comment_end?><?oxy_comment_end mid="27"?>
             <itemizedlist>
                 <listitem>
-                    <para>Beginning in April 2022, a FHIR-based API was launched that allows for
+                    <para>Beginning in April 2022, a FHIR®-based API was launched that allows for
                         automatic access to and use of the LOINC® Terminology Service, making
                         integration and updates much easier for healthcare
                         software.<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?></para>
@@ -484,7 +484,7 @@ content available via a FHIR API as part of its normal release process beginning
                 Department of Health and Human Services for SARS-CoV-2 reporting and harmonizes how
                 IVD test information is represented using LOINC®. The LIVD file format is currently
                 led by IVD Industry Connectivity Consortium (IICC), and the JavaScript Object
-                Notation (JSON) representation is a project at HL7. </para>
+                Notation (JSON) representation is a project at HL7®. </para>
             <para>To quantify the magnitude of problems that the lab data ecosystem faces, Cholan et
                 al. describes a pilot evaluation with five healthcare systems that found LOINC® data
                 maintained only 59% integrity as it moved from laboratory analyzer to laboratory
@@ -602,9 +602,10 @@ content available via a FHIR API as part of its normal release process beginning
                     [15]<?oxy_comment_start author="tocrow" timestamp="20250716T101049-0400" comment="i think we can summarize this" flag="done"?></para>
                 <para>The Nebraska Lexicon demonstrates how LOINC® and SNOMED CT® can be harmonized
                     within a unified concept model, with content published under CAP’s permission.
-                    Expanding this approach to include other terminologies like RxNorm and CVX,
-                    following models such as HL7’s Terminology Knowledge Architecture, would
-                    streamline integration and reduce duplication of effort.</para>
+                    Expanding this approach to include other terminologies like RxNorm and HL7®
+                    Table 0292, Vaccine Administered (CVX), following models such as HL7®’s
+                    Terminology Knowledge Architecture, would streamline integration and reduce
+                    duplication of effort.</para>
             </section><?oxy_comment_end?>
             <section>
                 <title>Quality Control</title>
@@ -765,7 +766,7 @@ why-what-how-termlex/?trk=pulse-article"?>[19]<?oxy_comment_end?></para>
                         classification systems and drug interaction information. [4]</para>
                 </listitem>
                 <listitem>
-                    <para>RxNorm is used in HL7 (FHIR) messaging standards for medication data
+                    <para>RxNorm is used in HL7® (FHIR®) messaging standards for medication data
                         exchange. [4] </para>
                 </listitem>
             </itemizedlist>
@@ -812,8 +813,8 @@ why-what-how-termlex/?trk=pulse-article"?>[19]<?oxy_comment_end?></para>
             representation in these technologies. [19]</para>
     </section>
     <section>
-        <title><emphasis role="bold">Comparing LOINC®, SNOMED CT® and RxNorm to Cimino’s
-                Desiderata</emphasis><?oxy_custom_start type="oxy_content_highlight" color="0,128,128"?><?oxy_comment_start author="ecundiff" timestamp="20250711T063806-0400" comment="Removed table showing all three terminologies alignment with the Desiderata as it is essentially a compliation of each of the tables below, but with slightly less information" mid="39"?></title><?oxy_custom_end?><?oxy_comment_end mid="39"?>
+        <title>Comparing LOINC®, SNOMED CT® and RxNorm to Cimino’s
+            Desiderata<?oxy_custom_start type="oxy_content_highlight" color="0,128,128"?><?oxy_comment_start author="ecundiff" timestamp="20250711T063806-0400" comment="Removed table showing all three terminologies alignment with the Desiderata as it is essentially a compliation of each of the tables below, but with slightly less information" mid="39"?></title><?oxy_custom_end?><?oxy_comment_end mid="39"?>
         <section>
             <title>Comparison of LOINC® to Cimino’s Desiderata</title>
             <para>Despite the guiding principles for terminology design and representation
@@ -827,8 +828,8 @@ why-what-how-termlex/?trk=pulse-article"?>[19]<?oxy_comment_end?></para>
             <table>
                 <title>Correspondence of LOINC® to Cimino’s Desiderata</title>
                 <tgroup cols="2">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Tenant</emphasis></entry>
@@ -891,8 +892,8 @@ why-what-how-termlex/?trk=pulse-article"?>[19]<?oxy_comment_end?></para>
             <table>
                 <title>Correspondence of SNOMED CT® to Cimino’s Desiderata</title>
                 <tgroup cols="2">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Tenant</emphasis></entry>
@@ -973,8 +974,8 @@ why-what-how-termlex/?trk=pulse-article"?>[19]<?oxy_comment_end?></para>
             <table>
                 <title>Correspondence of RxNorm to Cimino’s Desiderata</title>
                 <tgroup cols="2">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Tenant</emphasis></entry>
@@ -1868,5 +1869,5 @@ OHDSI&apos;s Standard Vocabulary relies heavily on mapping non-standard concepts
                 </section>
             </section>
         </section>
-    </section>    
+    </section>
 </chapter>

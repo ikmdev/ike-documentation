@@ -186,7 +186,7 @@
                     other policy makers as well as journals, including Journal of the American
                     Medical Association (JAMA). OHDSI currently operates 27 working groups, ranging
                     in topic from focus regions (Asia-Pacific and Latin America regions), specific
-                    care areas (oncology, psychiatry), FHIR, the OMOP Common Data Model (CDM), and
+                    care areas (oncology, psychiatry), FHIR®, the OMOP Common Data Model (CDM), and
                     Natural Language Processing (NLP). In April 2022, OHDSI and SNOMED International
                     formalized a five-year collaborative agreement in which OHDSI and the associated
                     user communities will receive “comprehensive ontologies on specific healthcare
@@ -195,8 +195,8 @@
                     and resolutions of composite concepts in large-scale observational research.”
                     While this is an enormous benefit to OHDSI, SNOMED International gains valuable
                     user data from interactions with their products. OHDSI also has an existing
-                    agreement with HL7 to integrate FHIR with the OMOP common data model in hopes of
-                    improving abilities to track and share data in the healthcare and research
+                    agreement with HL7® to integrate FHIR® with the OMOP common data model in hopes
+                    of improving abilities to track and share data in the healthcare and research
                     industries. Finally, OHDSI has developed products like the Health Analytics
                     Data-to-Evidence Suite (HADES) and ATLAS, which support population-level
                     estimations, patient-level predictions, design and execution of observational
@@ -391,7 +391,7 @@
         </para>
         <para>Ideally RWD for RWE is extracted directly from clinical documentation. EHR
             vendor-agnostic data and interoperability standards such as Health Information Exchanges
-            (HIEs), MU, HL7, and FHIR were created to encourage or mandate data interoperability
+            (HIEs), MU, HL7®, and FHIR® were created to encourage or mandate data interoperability
             across healthcare organizations. Yet healthcare organizations continue to consider their
             healthcare data as a proprietary asset. Adding complexity to this challenge is the
             inconsistent and/or proprietary nature of each EHR implementation to meet the needs and
