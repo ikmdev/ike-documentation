@@ -3,8 +3,7 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0"
     xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Content Requiring Special Handling</title>
-    <section>
-        <title>Purpose</title>
+    
         <para>The creation of groupings (Assemblage) containing SNOMED CT® concepts that require
             special handling supports the maintenance of this content over time without the
             necessity of re-reviewing the entire content. Within Komet, these various Assemblages
@@ -50,7 +49,6 @@
                 </listitem>
             </itemizedlist>
         </para>
-    </section>
 
     <section>
         <title>Special Handling Categories</title>
@@ -124,7 +122,7 @@
                 the patient has no pain.</para>
 
             <section>
-                <title>Approach</title>
+                <title>Approach to Absence Assemblages</title>
                 <para>The initial task was to evaluate 50,000 concepts and determine their potential
                     membership in one or more of the Assemblages.</para>
                 <para>For each of the Assemblages for inclusion, word patterns that explicitly or
@@ -371,7 +369,7 @@
                 focus on the concepts within the “situation with explicit context” hierarchy as they
                 have their context already identified using the context attributes.</para>
             <section>
-                <title>Approach</title>
+                <title>Approach to When Patient Is Not Subject of Record</title>
                 <para>The initial task was to evaluate 50,000 concepts and determine their potential
                     membership in one or more of the Assemblages.</para>
                 <para>For each of the Assemblages for inclusion, word patterns that explicitly or
@@ -509,7 +507,7 @@
                 cause modeling issues that affect retrieval.</para>
 
             <section>
-                <title>Approach</title>
+                <title>Approach to Compound Observations</title>
                 <para>The initial task was to evaluate 50,000 concepts and determine their potential
                     membership in one or more of the Assemblages.</para>
                 <para>For each of the Assemblages for inclusion, word patterns that explicitly or
@@ -717,7 +715,7 @@
                         ><emphasis role="italic">Choosing Sides. Assigning Laterality as an
                         Attribute in SNOMED® CT.</emphasis></link>[6].</para>
             <section>
-                <title>Approach</title>
+                <title>Approach to Laterality Concepts</title>
                 <para>To identify content that would need to be evaluated for laterality
                     concepts:</para>
                 <itemizedlist>
@@ -848,7 +846,7 @@
                 missing content.</para>
 
             <section>
-                <title>Approach</title>
+                <title>Approach to Inverse Concepts</title>
                 <para>To identify content where there is an inverse concept:</para>
                 <itemizedlist>
                     <listitem>
@@ -1214,7 +1212,7 @@
                 </listitem>
             </orderedlist>
             <section>
-                <title>Approach</title>
+                <title>Approach to Primitive Concepts</title>
                 <para>To identify content that are currently primitive concepts, but may be able to
                     be fully defined:</para>
                 <itemizedlist>
@@ -1418,7 +1416,7 @@
             
             
             <section>
-                <title>Approach</title>
+                <title>Approach to Symmetric Concepts</title>
                 <para>The below approach was used to identify the content to be reviewed to create
                     the Assemblages:</para>
                     <orderedlist>

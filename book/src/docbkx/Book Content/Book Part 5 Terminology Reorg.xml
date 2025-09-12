@@ -813,7 +813,7 @@ why-what-how-termlex/?trk=pulse-article"?>[19]<?oxy_comment_end?></para>
     </section>
     <section>
         <title><emphasis role="bold">Comparing LOINC®, SNOMED CT® and RxNorm to Cimino’s
-                Desiderata</emphasis><?oxy_custom_start type="oxy_content_highlight" color="0,128,128"?><?oxy_comment_start author="ecundiff" timestamp="20250711T063806-0400" comment="Removed table showing all three terminologies alignment with the Desiderata as it is essentially a compliation of each of the tables below, but with slightly less information" mid="45"?></title><?oxy_custom_end?><?oxy_comment_end mid="45"?>
+                Desiderata</emphasis><?oxy_custom_start type="oxy_content_highlight" color="0,128,128"?><?oxy_comment_start author="ecundiff" timestamp="20250711T063806-0400" comment="Removed table showing all three terminologies alignment with the Desiderata as it is essentially a compliation of each of the tables below, but with slightly less information" mid="39"?></title><?oxy_custom_end?><?oxy_comment_end mid="39"?>
         <section>
             <title>Comparison of LOINC® to Cimino’s Desiderata</title>
             <para>Despite the guiding principles for terminology design and representation
@@ -1344,64 +1344,68 @@ why-what-how-termlex/?trk=pulse-article"?>[19]<?oxy_comment_end?></para>
                 the concept itself. A concept should only have synonyms that accurately represent a
                 concept and not any of its children. If a synonym has a more specific meaning, a new
                 concept should be created.</para>
-        </section>
-        <section xml:id="section_c3d7371d-1785-4e89-b280-9b4a53cd3665">
-            <title>Language
-                <?oxy_comment_start author="steph" timestamp="20190305T154146-0700" comment="This section should be revised so it can be read as in the prior sections.  Here&apos;s it&apos;s just a list of what appear to be definitions.  You at least need some introductory paragraph that explains what you have listed here. " flag="done"?>Query<?oxy_comment_end?>
-                Requirements</title>
-            <para>For a search engine to retrieve meaningful results, it must be able to understand
-                common usages of everyday jargon, similar to how synonyms are used to help broaden
-                the way to express the same word. This section describes several strategies used to
-                help with a query.</para>
-            <para><emphasis role="bold">Word variants</emphasis> – Similar to synonyms, word
-                variants are used to express the same word. While synonyms are explicitly created as
-                a term to describe a concept (for example, SNOMED CT®'s "Heart attack" and
-                "Myocardial infarction"), word variants are utilized during searching to assist in
-                finding the correct concept, rather than explicitly creating the term. Hypothetical
-                example - if "kidney failure" is a term created for a concept, a word variant of
-                'renal' could be created for 'kidney'. Instead of explicitly creating a separate
-                term of "renal failure", this word variant could be utilized during searching to
-                find all concepts that have the explicit term of "kidney failure" when a user enters
-                "renal failure" by replacing "renal" with "kidney". This would create the burden of
-                creating all possible variant terms for a given word.</para>
-            <para><emphasis role="bold">Misspellings</emphasis> – Certain terms are more commonly
-                misspelled when searching over healthcare descriptions. The ability for a search
-                mechanism to recognize them and to search over both the correct and incorrect
-                spellings will help to identify the correct concept. For example, perineal vs
-                peroneal and aphagia vs aphasia. </para>
-            <para><emphasis role="bold">Word order</emphasis> – Terms can be combined in different
-                ways to mean the same synonym. The ability to search over a term in varying order of
-                phrases is important. For example, Disorder of the eye vs Eye disorder.</para>
-            <para><emphasis role="bold">Components query</emphasis> – The importance of this
-                searching strategy comes into play when a certain focus is desired for the search
-                result. For example, in LOINC®, there may be circumstances where a certain axis is
-                desired for the search. Similarly, a certain hierarchy may be desired when searching
-                in SNOMED CT®. For example, "cold" is a synonym of common cold (a disorder) in
-                SNOMED CT®, and also exists as "cold sensation quality" (a qualifier value). By
-                allowing users to limit the search criteria (disorder vs. qualifier), the most
-                appropriate query result will be returned to the user.</para>
-            <para><emphasis role="bold">Active and inactive</emphasis> – Concepts and terms will
-                come in and out of use over time. This is often indicated by an active/inactive
-                designation. In order to properly return concepts/terms that are active, query
-                parameters must contain a parameter to designate if the query result should/should
-                not return active and inactive concepts or terms.</para>
-            <para><emphasis role="bold">Regular Expressions</emphasis> - Regular expression or regex
-                is a sequence of characters that defines a search pattern. This pattern would allow
-                a user to retrieve results based on a certain pattern. For example "a|b*" would
-                return all "a", "b" and other b's that fits the pattern such as "bb", "bbb", "bab",
-                etc. Since the depth and breadth of regular expression is beyond the scope of this
-                document, various syntaxes, usage and explanation can be found in many resources
-                such as <link xlink:href="https://regexr.com/"/>.</para>
-            <para><emphasis role="bold">Grouping Results by hierarchy</emphasis> - This search
-                requirement can be thought of as a complement to "components query". After casting a
-                wide net, results could be a bag of various terms (common cold vs. feeling cold)
-                that may be cumbersome for users to sift through if it is not organized in an
-                orderly fashion. Therefore, if results are placed together in a logical grouping, it
-                would assist the user in finding the appropriate query result. For example, in
-                SNOMED CT®, it may be worthwhile to group results by hierarchy (disorder vs.
-                procedures) to allow a user to look for a result in a desired domain or in RxNorm
-                where all Ingredient results are grouped separately from Semantic Clinical Drug
-                results.</para>
+            <section xml:id="section_c3d7371d-1785-4e89-b280-9b4a53cd3665">
+                <title>Language
+                    <?oxy_comment_start author="steph" timestamp="20190305T154146-0700" comment="This section should be revised so it can be read as in the prior sections.  Here&apos;s it&apos;s just a list of what appear to be definitions.  You at least need some introductory paragraph that explains what you have listed here. " flag="done"?>Query<?oxy_comment_end?>
+                    Requirements</title>
+                <para>For a search engine to retrieve meaningful results, it must be able to
+                    understand common usages of everyday jargon, similar to how synonyms are used to
+                    help broaden the way to express the same word. This section describes several
+                    strategies used to help with a query.</para>
+                <para><emphasis role="bold">Word variants</emphasis> – Similar to synonyms, word
+                    variants are used to express the same word. While synonyms are explicitly
+                    created as a term to describe a concept (for example, SNOMED CT®'s "Heart
+                    attack" and "Myocardial infarction"), word variants are utilized during
+                    searching to assist in finding the correct concept, rather than explicitly
+                    creating the term. Hypothetical example - if "kidney failure" is a term created
+                    for a concept, a word variant of 'renal' could be created for 'kidney'. Instead
+                    of explicitly creating a separate term of "renal failure", this word variant
+                    could be utilized during searching to find all concepts that have the explicit
+                    term of "kidney failure" when a user enters "renal failure" by replacing "renal"
+                    with "kidney". This would create the burden of creating all possible variant
+                    terms for a given word.</para>
+                <para><emphasis role="bold">Misspellings</emphasis> – Certain terms are more
+                    commonly misspelled when searching over healthcare descriptions. The ability for
+                    a search mechanism to recognize them and to search over both the correct and
+                    incorrect spellings will help to identify the correct concept. For example,
+                    perineal vs peroneal and aphagia vs aphasia. </para>
+                <para><emphasis role="bold">Word order</emphasis> – Terms can be combined in
+                    different ways to mean the same synonym. The ability to search over a term in
+                    varying order of phrases is important. For example, Disorder of the eye vs Eye
+                    disorder.</para>
+                <para><emphasis role="bold">Components query</emphasis> – The importance of this
+                    searching strategy comes into play when a certain focus is desired for the
+                    search result. For example, in LOINC®, there may be circumstances where a
+                    certain axis is desired for the search. Similarly, a certain hierarchy may be
+                    desired when searching in SNOMED CT®. For example, "cold" is a synonym of common
+                    cold (a disorder) in SNOMED CT®, and also exists as "cold sensation quality" (a
+                    qualifier value). By allowing users to limit the search criteria (disorder vs.
+                    qualifier), the most appropriate query result will be returned to the
+                    user.</para>
+                <para><emphasis role="bold">Active and inactive</emphasis> – Concepts and terms will
+                    come in and out of use over time. This is often indicated by an active/inactive
+                    designation. In order to properly return concepts/terms that are active, query
+                    parameters must contain a parameter to designate if the query result
+                    should/should not return active and inactive concepts or terms.</para>
+                <para><emphasis role="bold">Regular Expressions</emphasis> - Regular expression or
+                    regex is a sequence of characters that defines a search pattern. This pattern
+                    would allow a user to retrieve results based on a certain pattern. For example
+                    "a|b*" would return all "a", "b" and other b's that fits the pattern such as
+                    "bb", "bbb", "bab", etc. Since the depth and breadth of regular expression is
+                    beyond the scope of this document, various syntaxes, usage and explanation can
+                    be found in many resources such as <link xlink:href="https://regexr.com/"
+                    />.</para>
+                <para><emphasis role="bold">Grouping Results by hierarchy</emphasis> - This search
+                    requirement can be thought of as a complement to "components query". After
+                    casting a wide net, results could be a bag of various terms (common cold vs.
+                    feeling cold) that may be cumbersome for users to sift through if it is not
+                    organized in an orderly fashion. Therefore, if results are placed together in a
+                    logical grouping, it would assist the user in finding the appropriate query
+                    result. For example, in SNOMED CT®, it may be worthwhile to group results by
+                    hierarchy (disorder vs. procedures) to allow a user to look for a result in a
+                    desired domain or in RxNorm where all Ingredient results are grouped separately
+                    from Semantic Clinical Drug results.</para>
+            </section>
         </section>
     </section>
     <section>
@@ -1440,8 +1444,8 @@ why-what-how-termlex/?trk=pulse-article"?>[19]<?oxy_comment_end?></para>
                 that implements mathematical logic to support formal expressions, reasoning, and
                 formal proof. It is typically more expressive than propositional logic, which only
                 deals with fixed truth values, which may or may not be true
-                (<?oxy_comment_start author="steph" timestamp="20190305T155849-0700" comment="Should be &quot;e.g.&quot; instead of &quot;i.e.&quot;  Same for example below for books or temperature." id="cpw_mqc_1hb" flag="done"?><?oxy_comment_start author="erhwang" timestamp="20190307T083716-0700" comment="fixed" parentID="cpw_mqc_1hb" flag="done" mid="55"?>e.g.
-                <?oxy_comment_end mid="55"?><?oxy_comment_end?>"it is raining"), and cannot have
+                (<?oxy_comment_start author="steph" timestamp="20190305T155849-0700" comment="Should be &quot;e.g.&quot; instead of &quot;i.e.&quot;  Same for example below for books or temperature." id="cpw_mqc_1hb" flag="done"?><?oxy_comment_start author="erhwang" timestamp="20190307T083716-0700" comment="fixed" parentID="cpw_mqc_1hb" flag="done" mid="49"?>e.g.
+                <?oxy_comment_end mid="49"?><?oxy_comment_end?>"it is raining"), and cannot have
                 variables to represent 'things' (e.g. books or temperature). However, it is less
                 expressive than first-order logic, which assumes the world contains Objects,
                 Relations and Functions, allows variables and can quantify over non-logical objects.
@@ -1486,8 +1490,8 @@ why-what-how-termlex/?trk=pulse-article"?>[19]<?oxy_comment_end?></para>
                 effects, or will be handled separately from normal description logic
                 operations.</para>
             <section>
-                <title><?oxy_comment_start author="steph" timestamp="20190306T102924-0700" comment="Should this be change to representation of absence?" id="drx_vrc_1hb" flag="done"?><?oxy_comment_start author="erhwang" timestamp="20190307T084732-0700" comment="Represetation of absence is kind of Logical Negation. Logical Negation is a known &apos;phrase&apos; in Description Logic. Since this section is addressing what Solor WON&apos;T be addressing, I think it is best to leave it as Logical negation &amp; write a bit on it when this section is expanded with verbiage." parentID="drx_vrc_1hb" flag="done" mid="59"?><?oxy_comment_start author="steph" timestamp="20190402T154919-0600" comment="Okay" flag="done" mid="60"?>Logical<?oxy_comment_end mid="60"?><?oxy_comment_end mid="59"?><?oxy_comment_end?>
-                    negation</title>
+                <title><?oxy_comment_start author="steph" timestamp="20190306T102924-0700" comment="Should this be change to representation of absence?" id="drx_vrc_1hb" flag="done"?><?oxy_comment_start author="erhwang" timestamp="20190307T084732-0700" comment="Represetation of absence is kind of Logical Negation. Logical Negation is a known &apos;phrase&apos; in Description Logic. Since this section is addressing what Solor WON&apos;T be addressing, I think it is best to leave it as Logical negation &amp; write a bit on it when this section is expanded with verbiage." parentID="drx_vrc_1hb" flag="done" mid="52"?><?oxy_comment_start author="steph" timestamp="20190402T154919-0600" comment="Okay" flag="done" mid="53"?>Logical<?oxy_comment_end mid="53"?><?oxy_comment_end mid="52"?><?oxy_comment_end?>
+                    Negation</title>
                 <para>Logical Negation, or "Representation of absence" as it is described throughout
                     this document, is the notion of how to describe something that is not present.
                     The complexity of this topic is described
@@ -1668,12 +1672,13 @@ Title = Terminology in Action &gt; Section = Interoperability deep dive (this wa
         <section>
             <title>Tools for Interoperability</title>
             <section>
-                <title>Unified Medical Language System (UMLS)</title>
+                <title>UMLS</title>
                 <para>The UMLS is a key tool for terminology interoperability. National Library of
                     Medicine integrates terms and codes from over 150 source vocabularies by
-                    concept, attribute, and meaning in a set of files and software called the UMLS.
-                    The UMLS brings together many health and biomedical vocabularies and standards
-                    to enable interoperability between computer systems.</para>
+                    concept, attribute, and meaning in a set of files and software called the
+                    Unified Medical Language System (UMLS). The UMLS brings together many health and
+                    biomedical vocabularies and standards to enable interoperability between
+                    computer systems.</para>
                 <para>The UMLS is used to enhance or develop applications such as electronic health
                     records, classification tools, dictionaries and language translators. The UMLS
                     has been used to link health information, medical terms, drug names, and billing
@@ -1761,8 +1766,7 @@ Source Concept: all remaining Concepts that are not Standard or Classification C
 OHDSI&apos;s Standard Vocabulary relies heavily on mapping non-standard concepts to the Standard Concepts. &quot;"?></para><?oxy_comment_end?>
             </section>
             <section>
-                <title><?oxy_comment_start author="ecundiff" timestamp="20250714T072352-0400" comment="Added VSAC back since it is another commonly used inteorp. tool and Solor can be used to assist with keeping it updated. See below section &quot;Evaluating the impact of implementing Solor&quot;"?>Value
-                    Set Authority Center (VSAC)<?oxy_comment_end?></title>
+                <title><?oxy_comment_start author="ecundiff" timestamp="20250714T072352-0400" comment="Added VSAC back since it is another commonly used inteorp. tool and Solor can be used to assist with keeping it updated. See below section &quot;Evaluating the impact of implementing Solor&quot;"?>VSAC<?oxy_comment_end?></title>
                 <para>The NLM, in collaboration with the Office of the National Coordinator for
                     Health Information Technology and the Centers for Medicare &amp; Medicaid
                     Services, hosts the Value Set Authority Center (VSAC). VSAC provides
@@ -1781,7 +1785,7 @@ OHDSI&apos;s Standard Vocabulary relies heavily on mapping non-standard concepts
                     extraneous and missing ingredients within value sets and drug classes.</para>
             </section>
             <section>
-                <title>Komet</title>
+                <title>Komet's Approach to Interoperability</title>
                 <para>What’s needed is a semantically normalized information model (i.e., Komet)
                     with an appropriate separation of concerns in regard to the informatics
                     architectural layers. Such a model is critical for the success of a number of
@@ -1846,8 +1850,7 @@ OHDSI&apos;s Standard Vocabulary relies heavily on mapping non-standard concepts
                 <section>
                     <title><?oxy_comment_start author="ecundiff" timestamp="20250714T144719-0400" comment="Section previously titled: Evaluating the impact of implementing Solor"?>Enhancing
                         eCQM Value Set Accuracy and Adoption with <?oxy_comment_end?>Komet</title>
-                    <para>The Value Set Authority Center (VASC) is the source of truth for value
-                        sets for CMS's
+                    <para>The VASC is the source of truth for value sets for CMS's
                         <?oxy_comment_start author="ecundiff" timestamp="20250713T214908-0400" comment="Significantly reduced explanation of eCQMs and Quality Improvement measures in healthcare settings"?>electronic
                         clinical quality measures (eCQMs)<?oxy_comment_end?> which rely on
                         standardized clinical terminologies. Inaccuracies or outdated
@@ -1865,178 +1868,5 @@ OHDSI&apos;s Standard Vocabulary relies heavily on mapping non-standard concepts
                 </section>
             </section>
         </section>
-    </section>
-    <section>
-        <title><?oxy_comment_start author="ecundiff" timestamp="20250714T093830-0400" comment="Reference list needs to be reordered. According to Vancouver style guide, references should be listed in the order they appear in the text. will address in final stages of part 5 rework"?>References<?oxy_comment_end?></title>
-        <para>
-            <orderedlist>
-                <listitem>
-                    <para>Cimino, JJ. Desiderata for controlled medical vocabularies in the
-                        twenty-first century. Methods Inf Med. 1998 Nov;37(4-5):394-403.</para>
-                </listitem>
-                <listitem>
-                    <para>Campbell KE, Oliver DE, Spackman KA, Shortliffe EH. Representing thoughts,
-                        words, and things in the UMLS. J Am Med Inform Assoc. 1998
-                        Sep-Oct;5(5):421-31. doi: 10.1136/jamia.1998.0050421</para>
-                </listitem>
-                <listitem>
-                    <para>The Office of the National Coordinator for Health Information Technology
-                        (ONC). Federal Health IT Strategic Plan 2015 - 2020 [Internet]. 2014.
-                        Available from:
-                        https://www.healthit.gov/sites/default/files/federal-healthIT-strategic-plan-2014.pdf</para>
-                </listitem>
-                <listitem>
-                    <para>Bodenreider O, Cornet R, Vreeman D. Recent Developments in Clinical
-                        Terminologies — SNOMED CT, LOINC, and RxNorm. Yearb Med Inform [Internet].
-                        2018;27(01):129–39. Available from:
-                        http://www.thieme-connect.de/DOI/DOI?10.1055/s-0038-1667077 </para>
-                </listitem>
-                <listitem>
-                    <para>McDonald C, Huff SM, Suico J, Mercer K. Logical Observation Identifiers
-                        Names and Codes (LOINC) users’ guide. Indianapolis: Regenstrief
-                            Institute.<emphasis role="italic"> </emphasis>2004</para>
-                </listitem>
-                <listitem>
-                    <para>SHIELD Participants. Discussion on LOINC Challenges. [Personal interview,
-                        6 May] Zoom; 2022 (unpublished).</para>
-                </listitem>
-                <listitem>
-                    <para>Campbell KE. Distributed development of a logic-based controlled medical
-                        Terminology. PhD Dissertation, Stanford University. 1997 Jun. Available
-                        from: https://api.semanticscholar.org/CorpusID:59707037 </para>
-                </listitem>
-                <listitem>
-                    <para>Stram M, Seheult J, Sinard J, et al. A survey of LOINC code selection
-                        practices among participants of the College of American Pathologists
-                        Coagulation (CGL) and Cardiac Markers (CRT) proficiency testing programs.
-                        Arch Pathol Lab Med 2020 May;144(5):586–96.</para>
-                </listitem>
-                <listitem>
-                    <para>Lin MC, Vreeman DJ, McDonald CJ, Huff SM. Auditing consistency and
-                        usefulness of LOINC use among three large institutions—using version spaces
-                        for grouping LOINC codes. J Biomed Inform [Internet]. 2012 [cited 2023 Dec
-                        4];45(4): 658–66. Available from:
-                        https://linkinghub.elsevier.com/retrieve/pii/S1532046412000093 </para>
-                </listitem>
-                <listitem>
-                    <para>Lin MC, Vreeman DJ, McDonald CJ, Huff SM. A characterization of local
-                        LOINC mapping for laboratory tests in three large institutions. Methods Inf
-                        Med [Internet]. 2011;50(02):105–14. Available from:
-                        http://www.thieme-connect.de/DOI/DOI?10.3414/ME09-01-0072 </para>
-                </listitem>
-                <listitem>
-                    <para>LOINC [Internet]. [cited 2023 Dec 4]. LOINC Document Ontology. Available
-                        from: https://loinc.org/document-ontology/ </para>
-                </listitem>
-                <listitem>
-                    <para>Cholan RA, Pappas G, Rehwoldt G, Sills AK, Korte ED, Appleton IK, et al.
-                        Encoding laboratory testing data: case studies of the national
-                        implementation of HHS requirements and related standards in five
-                        laboratories. J Am Med Inform Assoc [Internet]. 2022 Jul 12;29(8):1372-80.
-                        Available from: https://academic.oup.com/jamia/article/29/8/1372/6592172
-                    </para>
-                </listitem>
-                <listitem>
-                    <para>Adamusiak T, Bodenreider O. Quality assurance in LOINC using Description
-                        Logic. AMIA Annu Symp Proc. 2012;2012:1099-108. </para>
-                </listitem>
-                <listitem>
-                    <para>LOINC [Internet]. [cited 2023 Dec 4]. License. Available from:
-                        https://loinc.org/kb/license/ </para>
-                </listitem>
-                <listitem>
-                    <para> Nebraska_Lexicon_Release_Notes_20170331.pdf [Internet]. [cited 2023 Dec
-                        4]. Available from:
-                        https://app1.unmc.edu/pathmicro/umls/docs/Nebraska_Lexicon_Release_Notes_20170331.pdf
-                    </para>
-                </listitem>
-                <listitem>
-                    <para>LOINC [Internet]. [cited 2022 Jul 6]. Submission Queue Stats. Available
-                        from: <link xlink:href="https://loinc.org/submissions/stats/"
-                            >https://loinc.org/submissions/stats/</link></para>
-                </listitem>
-                <listitem>
-                    <para>IHTSDO/snomed-owl-toolkit [Internet]. SNOMED International; 2025 [cited
-                        2022 Jun 3]. Available from: https://github.com/IHTSDO/snomed-owl-toolkit </para>
-                </listitem>
-                <listitem>
-                    <para>IHTSDO. OWL refsets preview [Internet]. [cited 2022 Sep 28]. Available
-                        from: https://confluence.ihtsdotools.org/mag/owl-refsets-preview </para>
-                </listitem>
-                <listitem>
-                    <para>Termlex. LOINC and SNOMED CT: LOINC SNOMED CT Extension - why, what and
-                        how [Internet]. LinkedIn. 2022 [cited 2022 Oct 19]. Available from:
-                        https://www.linkedin.com/pulse/loinc-snomed-ct-extension-why-what-how-termlex/
-                    </para>
-                </listitem>
-                <listitem>
-                    <para>Bietenbeck A, Boeker M, Schulz S. NPU, LOINC, and SNOMED CT: a comparison
-                        of terminologies for laboratory results reveals individual advantages and a
-                        lack of possibilities to encode interpretive comments. LaboratoriumsMedizin
-                        [Internet]. 2018 Dec 19 [cited 2023 Dec 4];42(6):267–75. Available from:
-                        http://www.degruyter.com/view/j/labm.2018.42.issue-6/labmed-2018-0103/labmed-2018-0103.xml
-                    </para>
-                </listitem>
-                <listitem>
-                    <para>Bona JP, Brochhausen M, Hogan WR. Enhancing the drug ontology with
-                        semantically-rich representations of National Drug Codes and RxNorm unique
-                        concept identifiers. BMC Bioinformatics [Internet]. 2019;20(S21):708.
-                        Available from:
-                        https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-3192-8
-                    </para>
-                </listitem>
-                <listitem>
-                    <para>Spackman KA, Reynoso G. Examining SNOMED from the perspective of formal
-                        ontological principles: Some preliminary analysis and observations. In:
-                        KR-MED. 2004. p. 72–80. </para>
-                </listitem>
-                <listitem>
-                    <para>Cornet R, Chute CG. Health Concept and Knowledge Management: Twenty-five
-                        Years of Evolution. Yearb Med Inform [Internet]. 2016;25(S 01):S32–41.
-                        Available from: http://www.thieme-connect.de/DOI/DOI?10.15265/IYS-2016-s037
-                    </para>
-                </listitem>
-                <listitem>
-                    <para>Rudolph S. Foundations of Description Logics. In: Polleres A, d’Amato C,
-                        Arenas M, Handschuh S, Kroner P, Ossowski S, et al., editors. Reasoning Web
-                        Semantic Technologies for the Web of Data [Internet]. Berlin, Heidelberg:
-                        Springer Berlin Heidelberg; 2011 [cited 2022 Jul 7]. p. 76–136. Available
-                        from: http://link.springer.com/10.1007/978-3-642-23032-5_2 </para>
-                </listitem>
-                <listitem>
-                    <?oxy_custom_start type="oxy_content_highlight" color="255,64,0"?>
-                    <para><?oxy_custom_end?>Krötzsch M, Simancik F, Horrocks I. A Description Logic
-                        Primer [Internet]. arXiv; 2012. Available from:
-                        https://arxiv.org/abs/1201.4089 </para>
-                </listitem>
-                <listitem>
-                    <para>HL7 Logical Model: Standardized Terminology Knowledgebase, Release 1
-                        [Internet]. HL7 International; 2021 Aug. Available from:
-                        https://www.hl7.org/documentcenter/private/standards/HL7_LM_TERM_KB_R1_INFORM_2021AUG_FINAL.pd</para>
-                </listitem>
-                <listitem>
-                    <para>Staes A, Campbell K. From retrospective mapping to prospective
-                        standardization: A comparison of integration strategies to schieve semantic
-                        data interoperability [Internet]. 2017 Jan 1. Available from:
-                        https://www.academia.edu/71651790/From_retrospective_mapping_to_prospective_standardization_A_comparison_of_integration_strategies_to_achieve_semantic_data_interoperability
-                    </para>
-                </listitem>
-                <listitem>
-                    <para>Raje S, Bodenreider O. Interoperability of Disease Concepts in Clinical
-                        and Research Ontologies: Contrasting Coverage and Structure in the Disease
-                        Ontology and SNOMED CT. Stud Health Technol Inform. 2017;245:925-9</para>
-                </listitem>
-                <listitem>
-                    <para>Winnenburg R, Bodenreider, O. Issues in Creating and Maintaining Value
-                        Sets for Clinical Quality Measures. AMIA Annu Symp Proc. 2012 Nov
-                        3;2012:988-96</para>
-                </listitem>
-                <listitem>
-                    <para>Bahr NJ, Nelson SD, Winnenburg R, Bodenreider, O. Eliciting the Intension
-                        of Drug Value Sets - Principles and Quality Assurance Applications. Stud
-                        Health Technol Inform. 2017;245:843-7</para>
-                </listitem>
-            </orderedlist>
-        </para>
-    </section>
+    </section>    
 </chapter>

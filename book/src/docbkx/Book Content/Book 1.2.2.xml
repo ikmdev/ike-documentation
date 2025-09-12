@@ -3,8 +3,7 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
     version="5.1">
-    <title>Summary of Findings: Technologies that Support Harmonization of Terminology
-        Standards</title>
+    <title>Technologies that Support Harmonization of Terminology Standards</title>
     <para>While our approach to IKM, including the common model, authoring environment, and industry
         best practices like HRO principles, will serve as a well-structured architecture to support
         the harmonization and standardization of disparate clinical terminology standards, there are
@@ -55,7 +54,7 @@
             </listitem>
         </orderedlist>
         <section>
-            <title> Tinkar</title>
+            <title> Tinkar Versioning</title>
             <para>Tinkar is a self-describing knowledge architecture intended to represent other
                 terminology standards in a human readable and machine processable format. Tinkar
                 supports improvements to data management by integrating terminology standards into a
@@ -82,7 +81,7 @@
                 concept in the disparate, local terminology standard. [9] </para>
         </section>
         <section>
-            <title>Universally Unique Identifier (UUID) v5</title>
+            <title>UUID v5</title>
             <para>Universally Unique Identifier (UUID) version 5 uses a 128-bit label to
                 idempotently represent data in a completely unique and unambiguous way. Idempotent
                 data representation means that identical seed values or concepts will be labeled
@@ -226,7 +225,8 @@
                 (e.g., provenance, dependencies (LIDR depends on LOINC® and SNOMED®). </para>
         </section>
         <section>
-            <title>Starter Data</title>
+            <title><?oxy_comment_start author="rgeorgacopoulos" timestamp="20250909T124314-0500" comment="Add content from Lara here (9/9/2025)"?>Starter
+                Data</title><?oxy_comment_end?>
             <para>Tinkar Starter Data acts as the foundational dataset for SHIELD's Komet
                 application. It conforms to the Tinkar Data Model and is the minimum viable dataset
                 required for Komet usability. The Tinkar Starter Data consists of a Tinkar Concept
@@ -240,7 +240,7 @@
         </section>
     </section>
     <section>
-        <title>User Interface and Experience </title>
+        <title>The Importance of UI/UX Design for Harmonization</title>
         <para>Harmonizing self-sustaining and contained knowledge standards requires a robust and
             tailored UI/UX design. A strong UI/UX interface meets the needs of the user, is
             intuitive to use, and provides an environment for tackling complex terminological
@@ -268,20 +268,23 @@
                 </mediaobject>
             </figure>
         <section>
-            <title>Knowledge Management Environment (Komet)</title>
-            <para>Knowledge Management Environment (Komet) serves as the knowledge management
-                integrated development environment (IDE) for SHIELD. An IDE is a software used to
-                build applications that combines developer tools into one graphical user interface
-                (GUI). IDE are equipped with a well-integrated UI which allows the developer to
-                write, edit, debug, and compile code and automate tasks for software development.
-                [16] This IDE is open source, meaning the code being developed is open to the public
-                and available for all to edit and distribute. This decentralized production model is
-                a movement in the software community and has led to major advancements in code and
-                is often cheaper, flexible, and has more permanency than private or proprietary
-                software. [17] Komet has automated features such as a text editor, build automation,
-                and debugger, and can support additional features like refactoring, code search, and
-                continuous integration and continuous deployment (CI/CD) tools. Komet supports plug
-                ins and extensions for developers to customize workflows and needs (see <xref
+            <title>Komet</title>
+            <para>Knowledge Management Environment (Komet) serves as a knowledge management
+                integrated development environment (IDE) using the Tinkar standardized model for
+                knowledge representation. Komet will be covered in more detail in
+                <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250909T124830-0500" comment="Ellie to update with link (9/9/2025)"?>Part
+                10<?oxy_comment_end?>. An IDE is a software used to build applications that combines
+                developer tools into one graphical user interface (GUI). IDE are equipped with a
+                well-integrated UI which allows the developer to write, edit, debug, and compile
+                code and automate tasks for software development. [16] This IDE is open source,
+                meaning the code being developed is open to the public and available for all to edit
+                and distribute. This decentralized production model is a movement in the software
+                community and has led to major advancements in code and is often cheaper, flexible,
+                and has more permanency than private or proprietary software. [17] Komet has
+                automated features such as a text editor, build automation, and debugger, and can
+                support additional features like refactoring, code search, and continuous
+                integration and continuous deployment (CI/CD) tools. Komet supports plug ins and
+                extensions for developers to customize workflows and needs (see <xref
                     linkend="KometUI"/> below). [18] All standard harmonization will be facilitated
                 within Komet. </para>
             <figure xml:id="KometUI">
@@ -339,7 +342,7 @@
         </section>
     </section>
     <section>
-        <title>Conclusion</title>
+        <title>The Need for IKM</title>
         <para>Disparate terminology standards and healthcare IT systems continue to plague today’s
             healthcare ecosystem with patient safety challenges associated with data quality and
             interoperability. To improve patient outcomes and support informed policy and public

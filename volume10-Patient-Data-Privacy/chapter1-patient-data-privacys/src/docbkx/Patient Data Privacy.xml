@@ -129,8 +129,7 @@
             plays a vital role in preserving the integrity and quality of healthcare data that are
             transferred within and between systems in the healthcare labyrinth. </para>
         <section>
-            <title>Health Insurance Portability and Accountability Act (HIPAA) v. GDPR and Patient
-                Data Privacy</title>
+            <title>HIPAA v. GDPR and Patient Data Privacy</title>
             <para>HIPAA is a law designed specifically to protect individuals’ medical information
                 while GDPR is a broader regulation that encompasses protection of various types of
                 personal data, including health data. However, both laws protect an individual’s
@@ -195,17 +194,15 @@
                 clinical measures, that are not limited to vital signs and anthropometric measures,
                 and standardized survey instruments. LOINC® also contains codes for the collection
                 types for these items, such as panels, forms, and documents. [11]</para>
+            <para>Patient data privacy is an important aspect of delivering safe and effective
+                healthcare and is protected by HIPAA and other laws. The European Union’s General
+                Data Privacy regulation ushered in an era of stringent and protective data privacy
+                standards and have even influenced by new policies, such as the California Consumer
+                Privacy Act (CCPA). [12] As we navigate the complexities of data privacy
+                regulations, our team remains committed to protecting patient data and patient
+                privacy. Though not directly governed by HIPAA or GDPR, we believe patient data
+                privacy should remain at the forefront of our operations, reinforcing our commitment
+                to quality healthcare.</para>
         </section>
-    </section>
-    <section>
-        <title>Conclusion</title>
-        <para>Patient data privacy is an important aspect of delivering safe and effective
-            healthcare and is protected by HIPAA and other laws. The European Union’s General Data
-            Privacy regulation ushered in an era of stringent and protective data privacy standards
-            and have even influenced by new policies, such as the California Consumer Privacy Act
-            (CCPA). [12] As we navigate the complexities of data privacy regulations, our team
-            remains committed to protecting patient data and patient privacy. Though not directly
-            governed by HIPAA or GDPR, we believe patient data privacy should remain at the
-            forefront of our operations, reinforcing our commitment to quality healthcare.</para>
     </section>
 </chapter>

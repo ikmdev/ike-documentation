@@ -194,7 +194,7 @@
         </figure> 
     </section>
     <section>
-        <title>TermINology Knowledge Architecture (Tinkar) Overview</title>
+        <title>Tinkar Overview</title>
         <para>Today’s healthcare system uses certain information systems to capture and manage
             clinical statements and terminologies. While multiple information systems and
             terminology standards exist, these standards represent and format equivalent concepts,
@@ -299,16 +299,6 @@
         </orderedlist>
     </section>
     <section>
-        <title>IKM Capabilities</title>
-        <para>This work aims to demonstrate how Tinkar architecture can optimize and implement IKM
-            capabilities and IKM principles through the development of a reference implementation
-            through collaboration with federal agencies and the Systemic Harmonization and
-            Interoperability Enhancement for Laboratory Data (SHIELD) collaborative community.
-            SHIELD aims to support increased patient safety through improved interoperability,
-            transmission, and quality of laboratory data between and within healthcare systems.
-            [6]</para>
-    </section>
-    <section>
         <title>IKM Challenges</title>
         <para>While IKM promises a revolutionary way to improve the quality and interoperability of
             healthcare data in the name of improved patient safety and patient outcomes, achieving a
@@ -353,7 +343,11 @@
                 the intended goals, and benefits, and collaborate on requirements to support
                 improved data quality and patient safety. A detailed stakeholder engagement plan
                 that details timelines, stakeholder dependencies, and required actions is required
-                to efficiently develop these requirements.</para>
+                to efficiently develop these requirements. In addition to federal agencies, groups
+                like SHIELD, who aim to support increased patient safety through improved
+                interoperability, transmission, and quality of laboratory data between and within
+                healthcare systems, will be critical to the proper adoption and implementation of
+                IKM. [6]</para>
         </section>
         <section>
             <title>Stakeholder Incentives</title>

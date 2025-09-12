@@ -3,22 +3,21 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
     version="5.1">
-    <title>Summary of Findings – Functional and Non-Functional Issues Related to Knowledge
-        Management Proof of Concept</title>
-    <section>
-        <title>Introduction</title>
-        <para>Over the past year, our team has been working to develop an IKM reference
-            implementation, Komet, to demonstrate IKM capabilities. Our work with Komet builds upon
-            data property graph and RDF foundations and incorporates new concepts like versioned
-            concept-oriented property graph representation. Due to the relatively novel nature of
-            Komet and IKM, our team did not have guidelines or best practices to follow. Our initial
-            work serves as a prototype that identifies functional and non-functional areas related
-            to IKM that should be further explored. Throughout our experience, we have documented
-            the following lessons learned, best practices, and challenges to improve the
-            adoptability, functionality, and development of IKM as our team and other invested
-            parties work towards future iterations.</para>
+    <title>Functional and Non-Functional Issues Related to Knowledge Management Proof of
+        Concept</title>
+    
+        <para>Over the past few years the team has been working to develop an IKM reference
+        implementation, Komet, to demonstrate IKM capabilities. Our work with Komet builds upon data
+        property graph and RDF foundations and incorporates new concepts like versioned
+        concept-oriented property graph representation. Due to the relatively novel nature of Komet
+        and IKM, our team did not have guidelines or best practices to follow. Our initial work
+        serves as a prototype that identifies functional and non-functional areas related to IKM
+        that should be further explored. Throughout our experience, we have documented the following
+        lessons learned, best practices, and challenges to improve the adoptability, functionality,
+        and development of IKM as our team and other invested parties work towards future
+        iterations.</para>
         <section>
-            <title>Knowledge Management</title>
+            <title>Knowledge Management Prototype</title>
             <para>The team rapidly developed an IKM prototype leveraging the latest Tinkar data
                 model standard to showcase IKM capabilities at the SNOMED CT® conference in October
                 of 2023. Through the effort over the past year and leading up to that event, we have
@@ -72,7 +71,7 @@
                     releases back to the IKM community. [3]</para>
             </section>
             <section>
-                <title>User Interface and User Experience (UI/UX) Design</title>
+                <title>UI/UX Design</title>
                 <para>In early 2023, a UI/UX assessment for IKM was conducted to better understand
                     the needs and pain points of healthcare professionals in their daily operations
                     working with healthcare knowledge. The goal was to use findings from the
@@ -120,7 +119,7 @@
                     agile environment with changing requirements.</para>
             </section>
             <section>
-                <title>Development and Operations (DevOps) Processes</title>
+                <title>DevOps Processes</title>
                 <para>In the current state of Health IT, healthcare standards development
                     organizations have implemented restrictive licensing around their proprietary
                     data and technology which creates silos and the inability to collaborate across
@@ -253,7 +252,7 @@
             </section>
         </section>
         <section>
-            <title>Knowledge Representation</title>
+            <title>Knowledge Representations</title>
             <para>The advantages of utilizing a generalized, self-describing data structure are
                 well-documented. This data structure comprises not just the database but also
                 includes metadata that outlines and explains both the data and the connections
@@ -287,5 +286,4 @@
                 sources, but it also highlights the importance of thoughtful customization to ensure
                 effective integration. [6]</para>
         </section>
-    </section>
 </chapter>

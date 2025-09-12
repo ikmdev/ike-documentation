@@ -4,7 +4,7 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Tinkar Modeling Guide </title>
     <section>
-        <title><anchor xml:id="Toc196843725"/>Introduction</title>
+        <title><anchor xml:id="Toc196843725"/>Introduction to Tinkar Modeling</title>
         <para>This modeling guide establishes the processes and outputs for modeling domain Concepts
             in the Terminology Knowledge Architecture (Tinkar) specification. This guide describes
             the Tinkar Modeling Process and how the model can be applied to a unique data set. This
@@ -327,7 +327,7 @@
             </section>
         </section>
         <section>
-            <title>STAMP</title>
+            <title>STAMP Coordinates</title>
             <para>The STAMP in the Tinkar Reference Model allows for capturing a complete change
                 record of all changes to a Component. It includes the Status, Time, Author, Module,
                 and Path. As a model changes and evolves, changes are made in Components. With each
@@ -865,7 +865,7 @@
                 Tinkar. The examples demonstrate how tests currently represented in both SNOMED CT®
                 and LOINC® terminologies can be modeled in the Tinkar Logical Model.</para>
             <section>
-                <title><anchor xml:id="Toc196843736"/>Ex. 1 Urine Homocysteine</title>
+                <title><anchor xml:id="Toc196843736"/>Example 1 Urine Homocysteine</title>
                 <para><xref linkend="UrineHomocysteineRepresentationinTinkar"/> illustrates a Urine Homocysteine Test represented in the Tinkar
                     Logical Model. The Concept contains both the description for the test as well as
                     its corresponding UUID. This Concept serves as the subject for further
@@ -888,8 +888,8 @@
                 </para>
             </section>
             <section>
-                <title><anchor xml:id="Toc196843737"/>Ex. 2 Substance concentration of glucose in
-                    specimen at point in time</title>
+                <title><anchor xml:id="Toc196843737"/>Example 2 Substance Concentration of Glucose
+                    in Specimen at Point in Time</title>
                 <para><xref linkend="SubstanceConcentrationofGlucoseinSpecimeninTinkar"/>illustrates a Substance Concentration of Glucose in Specimen Test
                     represented in the Tinkar Logical Model. The Concept contains both the
                     description for the test as well as its corresponding UUID. This Concept serves
@@ -928,7 +928,7 @@
             </mediaobject>
         </figure>
         <section>
-            <title>Modeling Principles</title>
+            <title>Tinkar Modeling Principles</title>
             <para>There are specific principles to try and follow while executing the modeling
                 process. These principles are detailed below. </para>
             <orderedlist>
@@ -958,7 +958,7 @@
         </section>
     </section>
     <section>
-        <title>Defining The Data Element</title>
+        <title>Defining the Data Elements</title>
         <para>To represent a new standard in the Tinkar Logical Model, it is essential to determine
             the Patterns of the data set. Some Patterns will originate from the current Tinkar
             starter set, while others may be created specifically for the data set’s unique
@@ -2047,7 +2047,7 @@
             some outlying data may still need to be extended into new Patterns using the Tinkar
             Reference Model. This section reviews the steps for creating new Patterns.</para>
         <section>
-            <title><anchor xml:id="Toc196843752"/>Filter for Data Elements associated to
+            <title><anchor xml:id="Toc196843752"/>Filter for Data Elements Associated with
                 Concepts</title>
             <para>Start by filtering data elements associated with the Concept being modeled. Focus
                 on these elements rather than those describing other data elements in the file.
@@ -2065,7 +2065,7 @@
                 attributes of the STATUS.</para>
         </section>
         <section>
-            <title>Group by similar data elements </title>
+            <title>Group by Similar Data Elements </title>
             <para>Group data fields with similar elements together. Elements with similar purposes
                 and occurrences should be grouped together in a Pattern. These elements do not
                 always need to have the same values across Concepts. Once the related Concepts are
@@ -2442,7 +2442,7 @@
         </table>
     </section>
     <section>
-        <title>Appendix</title>
+        <title>Tinkar Modeling Guide Glossary and Tinkar Starter Data</title>
         <section>
             <title>Glossary</title>
             <para>

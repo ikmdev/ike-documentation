@@ -6,8 +6,7 @@
     <title>IKM Book Background</title>
     
     <section>
-        <title>Systemic Harmonization and Interoperability Enhancement for Laboratory Data (SHIELD)
-            Overview</title>
+        <title>SHIELD Overview</title>
         <para>Systemic Harmonization and Interoperability Enhancement for Laboratory Data (SHIELD)
             is a public-private collaboration that started in 2015 with a singular focus: improving
             the interoperability and utility of in vitro diagnostic (IVD) test data. Due to the
@@ -221,7 +220,7 @@
             and regulatory uses as described by SHIELD. </para>
         </section>
         <section>
-            <title>Metadata Overview</title>
+            <title>Common Terminology Model Overview</title>
             <para>An important construct for enabling RWE analytics, knowledge management, data
             integration, and decision support, is adoption and reproducible encoding of health data
             using biomedical terminologies. Acceleration and development of EHR systems have
@@ -342,7 +341,7 @@
             language processing of consult notes, and many others. </para>
     </section>
     <section>
-        <title>A Brief Overview of Health Data Standards</title>
+        <title>Health Data Standards Overview</title>
         <para>The broad goal of the application of standards to electronic health data is
             unambiguous data exchange, or “interoperability” – the ability of two parties, either
             human or machine, to exchange data or information so that it is transportable,
@@ -367,7 +366,7 @@
                 </listitem>
             </orderedlist></para>
         <section>
-            <title>Example of Overlapping and Intersecting Nature of Standards</title>
+            <title>Example of the Overlapping and Intersecting Nature of Standards</title>
             <para>Hospitals and independent reference labs are two primary entities in the health
                 data ecosystem which share direct relationships and interfaces in the exchange of
                 clinical data. Healthcare interfaces must leverage various existing standards for
@@ -441,9 +440,8 @@
                 one is to achieve interoperability. [8]</para>
         </section>
         <section>
-            <title>The Adoption of Three Key Terminology Standards: Systematized Nomenclature of
-                Medicine Clinical Terms (SNOMED CT®), Logical Observation Identifiers Names and
-                Codes (LOINC®) and RxNorm</title>
+            <title>The Adoption of Three Key Terminology Standards: SNOMED CT®,  LOINC® and
+                RxNorm</title>
             <para>Over the last several decades, SNOMED CT®, LOINC®, and RxNorm have been
                 increasingly recognized as key resources for: <orderedlist>
                     <listitem>

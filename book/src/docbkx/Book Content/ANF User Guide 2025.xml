@@ -3,9 +3,8 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
     version="5.1">
-    <title>Building Analysis Normal Form (ANF) Clinical Statements User Guide</title>
-    <section>
-        <title>Introduction</title>
+    <title>Building ANF Clinical Statements User Guide</title>
+   
         <para>This guide aims to provide an approachable introduction to understanding and building
             Analysis Normal Form (ANF) data structures, also called ANF statements, from existing
             clinical narratives and clinical terminology data. This guide explains all the
@@ -174,7 +173,7 @@
             </para>
         </section>
         <section>
-            <title>Associated Statments</title>
+            <title>Associated Statements</title>
             <para>As described above, ANF statements are a type of standardized clinical statement
                 that follow the principle of <emphasis role="italic">Clinical Element
                     Isolation.</emphasis> Given this distillation down to the simplest element, a
@@ -191,7 +190,6 @@
                 circumstances depending on the information that needs to be captured in the
                 statement. </para>
         </section>
-    </section>
     <section>
         <title>Data Element Types</title>
         <para>In Analysis Normal Form (ANF), each statement is built from a standard structure which
@@ -325,7 +323,7 @@
     <section>
         <title>Creating ANF Statements</title>
         <section>
-            <title>Identifing the Key Elements of a Clinical Narrative</title>
+            <title>Identifying the Key Elements of a Clinical Narrative</title>
             <para>The first step in creating ANF statements is to break down the clinical narrative
                 into the simplest key parts (or Clinical Elements) of information. The Clinical
                 Elements will convey the key clinical and demographic aspects of the narrative
@@ -690,7 +688,7 @@
                 cases.</para>
         </section>
         <section>
-            <title>Determining What Type of Circumstance is Appropraite</title>
+            <title>Determining What Type of Circumstance is Appropriate</title>
             <para>For ANF statements, the Circumstance provides the clinical detail of the requested
                 or performed action (the Topic). There are three types of Circumstances that can be
                 part of an ANF statement: Performance Circumstance, Request Circumstance and

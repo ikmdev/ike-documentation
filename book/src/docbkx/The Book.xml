@@ -5,7 +5,7 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <info>
         <title>Integrated Knowledge Management (IKM) Book</title>
-        <subtitle>Version 6 - Last Updated 08/21/2025</subtitle>
+        <subtitle>Version 7 - Last Updated 09/12/2025</subtitle>
     </info>
     <part>
         <title>Introduction</title>
@@ -19,7 +19,7 @@
         <xi:include href="Book%20Content/Part2References.xml"/>
     </part>
     <part>
-        <title>IKM Overview</title>
+        <title>Integrated Knowledge Management</title>
         <xi:include href="Book%20Content/Book%20Integrated%20Knowledge%20Management.xml"/>
         <xi:include href="Book%20Content/Book%201.2.2.xml"/>
         <xi:include href="Book%20Content/Part3References.xml"/>
@@ -34,33 +34,30 @@
     <part>
         <title>Terminology Knowledge</title>
         <xi:include href="Book%20Content/Book%20Terminology%20Skycraper%20Intro.xml"/>
-        <xi:include href="Book%20Content/Book%20terminology-intro.xml"
-            xmlns:xi="http://www.w3.org/2001/XInclude"/>
-        <xi:include href="Book%20Content/Book%20Terminology-Knowledge.xml"
-            xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Book%20Content/Book%20Part%205%20Terminology%20Reorg.xml"/>
         <xi:include href="Book%20Content/Part5References.xml"/>
     </part>
     <part>
         <title>Assertional Knowledge</title>
         <xi:include href="Book%20Content/Book%20Assertional%20Skyscraper%20Intro.xml"/>
         <xi:include
-            href="../../../volume5-Knowledge-Layers/chapter2-solor-assertional/src/docbkx/SOLOR-assertional.xml"
-        />
+            href="../../../volume5-Knowledge-Layers/chapter2-solor-assertional/src/docbkx/SOLOR-assertional.xml"/>
         <xi:include href="Book%20Content/Part6References.xml"/>
-            </part>
+    </part>
     <part>
-            <title>Statement Model
+        <title>Statement Model Knowledge
             <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T150444-0500" comment="Removed statement-intro-begin.xml and statement-intro-patterns.xml and replaced with ANF User Guide 2025"?>Principles<?oxy_comment_end?></title>
-            <xi:include href="Book%20Content/Book%20Statement%20Skyscraper%20Intro.xml"/>             
-        <xi:include href="Book%20Content/ANF%20User%20Guide%202025.xml"/>       
-    </part>    
+        <xi:include href="Book%20Content/Book%20Statement%20Skyscraper%20Intro.xml"/>
+        <xi:include href="Book%20Content/ANF%20User%20Guide%202025.xml"/>
+    </part>
     <part>
-        <title>Procedural Representation</title>
+        <title>Imperative Knowledge</title>
+        <xi:include href="Book%20Content/Book%20Imperative%20Skyscraper%20Intro.xml"/>
         <xi:include href="../../src/docbkx/Book%20Content/Book%20Procedural.xml"/>
         <xi:include href="Book%20Content/Book%20Procedural%20References.xml"/>
     </part>
     <part>
-        <title>Ecosystem</title>
+        <title>Engagement with the Healthcare Ecosystem</title>
         <xi:include href="Book%20Content/Book%20Ecosystem%20combined.xml"/>
         <xi:include
             href="Book%20Content/Book%20Summary%20of%20Findings%20-%20Managing%20the%20Best%20Practice%20for%20Open-Source%20Communities.xml"/>
@@ -69,25 +66,26 @@
         <xi:include href="Book%20Content/Book%20Ecosystem%20References.xml"/>
     </part>
     <part>
-        <title><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240715T101026-0500" comment="add transition sentence about exploring current stae km solutions and current state environment, best practices, lessons learned and more from other efforts"?>Knowledge
-            Management <?oxy_comment_end?>Environment (Komet)</title>
+        <title>Komet</title>
         <xi:include href="Book%20Content/Book%20Komet%20Guide%20Intro.xml"/>
         <xi:include
             href="Book%20Content/Book%20Framework%20Considerations%20for%20Knowledge%20Management%20(KM)%201.2.3.xml"/>
-        <xi:include
-            href="Book%20Content/Book%20Playbook%20of%20Current%20Knowledge%20Management%20Technologies,%20Industry%20Coding%20Standards,%20and%20Knowledge%20Management%20Hosting%20Options.xml"
-            ><?oxy_comment_end?></xi:include>
+        
         <xi:include
             href="Book%20Content/Book%20Summary%20of%20Findings%20%E2%80%93%20Functional%20and%20Non-Functional%20Issues%20Related%20to%20Knowledge%20Management%20Proof%20of%20Concept.xml"/>
         <xi:include href="Book%20Content/Tasks1.4.4and1.3.7.xml"/>
-        <xi:include href="../../../volume8-Komet-User-Guide/src/docbkx/Komet-User-Guide%20-%20Pizza.xml"/>
+        <xi:include
+            href="../../../volume8-Komet-User-Guide/src/docbkx/Komet-User-Guide%20-%20Pizza.xml"/>
         <xi:include href="Book%20Content/Part%2010%20References.xml"/>
     </part>
     <part>
         <title>Use Cases and Summary of Findings</title>
-        <xi:include href="../../../volume7-Use-Cases/chapter3-use-case/src/docbkx/Use-Case-Chapter%20Updated.xml"/>
-        <xi:include href="Book%20Content/Updated%20Advanced%20Analytics%20Platform%20Proof%20of%20Concept%20Use%20Case(s)%20(Months%2013-24).xml"/>
-        <xi:include href="../../../volume7-Use-Cases/chapter2-summary-of-findings/src/docbkx/Summary%20of%20Findings%20%E2%80%93%20RWE%20Search%20and%20Query%20Methods.xml"/>
+        <xi:include
+            href="../../../volume7-Use-Cases/chapter3-use-case/src/docbkx/Use-Case-Chapter%20Updated.xml"/>
+        <xi:include
+            href="Book%20Content/Updated%20Advanced%20Analytics%20Platform%20Proof%20of%20Concept%20Use%20Case(s)%20(Months%2013-24).xml"/>
+        <xi:include
+            href="../../../volume7-Use-Cases/chapter2-summary-of-findings/src/docbkx/Summary%20of%20Findings%20%E2%80%93%20RWE%20Search%20and%20Query%20Methods.xml"/>
         <xi:include href="Book%20Content/ArtificialIntelligence.xml"/>
         <xi:include href="Book%20Content/Part%2011%20References.xml"/>
     </part>
@@ -105,25 +103,7 @@
             xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="Book%20Content/Book%20Emergency%20Preparedness.xml"
             xmlns:xi="http://www.w3.org/2001/XInclude"/>
-        <xi:include href="Book%20Content/Book%20ROI.xml" xmlns:xi="http://www.w3.org/2001/XInclude"
-        />
+        <xi:include href="Book%20Content/Book%20ROI.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="Book%20Content/Part%2012%20References.xml"/>
-    </part>
-    <part>
-        <title>Appendix</title>
-        <xi:include
-            href="../../../volume-appendix/quick-reference-guide/src/docbkx/Quick%20Reference%20Guide.xml"/>
-        <xi:include
-            href="../../../volume4-Tinkar-Ballot/chapter1-introduction-tinkar/src/docbkx/Introduction.xml"/>
-        <xi:include
-            href="../../../volume4-Tinkar-Ballot/chapter2-business-requirements/src/docbkx/business-requirements.xml"/>
-        <xi:include
-            href="../../../volume4-Tinkar-Ballot/chapter3-tinkar-reference-model/src/docbkx/tinkar-reference-model.xml"/>
-        <xi:include
-            href="../../../volume4-Tinkar-Ballot/chapter4-implications/src/docbkx/implications.xml"/>
-        <xi:include
-            href="../../../volume4-Tinkar-Ballot/chapter5-conclusion/src/docbkx/conclusion.xml"/>
-        <xi:include href="../../../volume4-Tinkar-Ballot/chapter6-foundational-architecture/src/docbkx/Foundational-Architecture.xml"/>
-        <xi:include href="../../../volume4-Tinkar-Ballot/chapter7-references/src/docbkx/Volume%204%20-%20References.xml"/>     
     </part>
 </book>

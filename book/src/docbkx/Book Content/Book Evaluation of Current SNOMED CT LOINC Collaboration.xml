@@ -103,8 +103,7 @@
             </section>
         </section>
         <section>
-            <title>User Interface/User Experience (UI/UX): SNOMED LOINC® Collaborative Agreement
-            Demonstration Project</title>
+            <title>UI/UX: SNOMED LOINC® Collaborative Agreement Demonstration Project</title>
             <para>Through their collaborative agreement, LOINC® and SNOMED CT® have developed the
                 LOINC® Ontology SNOMED CT® Browser, which allows users to navigate concepts, view
                 concept details, and determine equivalency between LOINC® and SNOMED CT® concepts.
@@ -174,8 +173,7 @@
                 </figure>
             </section>
             <section>
-                <title>Viewing a Concept and its details in the LOINC® Ontology SNOMED CT®
-                    Browser</title>
+                <title>Viewing a Concept in the LOINC® Ontology SNOMED CT® Browser</title>
                 <para>Upon selecting a concept to view within the LOINC® Ontology SNOMED CT®
                 browser, the Concept Details tab on the right side of the screen displays
                 information pertaining to that concept (<xref linkend="ViewoftheSummaryTab"></xref>). The initial view is the
@@ -443,21 +441,5 @@
             </figure>
             <para>A Clinical LOINC® crosswalk for standardized assessment instruments and document
                 ontology has not been addressed yet in the LOINC® SNOMED CT® Collaboration.</para>
-        </section>
-    <section>
-        <title>Conclusion</title>
-        <para>This deliverable serves as an initial report to document the challenges our team faced
-            during the research and initial development of an IKM solution and environment. Our
-            summary of findings for various components of the SNOMED CT® LOINC® collaborative
-            agreement that aims to develop an IKM environment and the identification of functional
-            and non-functional issues our team experienced with IKM have identified critical areas
-            that will require additional and continued efforts to improve the implementation,
-            functionality, and adoption of IKM solutions.</para>
-        <para>While this deliverable will inform the direction and focus areas for our future work,
-            this report can also function as a resource and reference implementation for SNOMED CT®,
-            LOINC®, and other stakeholders working to develop IKM solutions. As our team works to
-            develop an open-source environment for IKM, we look forward to and encourage
-            collaboration with other stakeholders to gain a deeper understanding of the challenges
-            they faced, best practices, and IKM as a whole. </para>
-    </section>   
+        </section>   
 </chapter>

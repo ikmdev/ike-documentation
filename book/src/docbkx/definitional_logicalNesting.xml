@@ -3,16 +3,7 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0"
     xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Logical Nesting</title>
-    <section>
-        <title>Introduction</title>
-        <figure xml:id="ExampleofCompositionalGrammarwithanestedlaterality">
-            <title>Example of Compositional Grammar with a nested laterality</title>
-            <mediaobject>
-                <imageobject>
-                    <imagedata fileref="images/definitional_logicalNesting_00.svg" scalefit="1" width="100%" contentdepth="100%"/>
-                </imageobject>
-            </mediaobject>
-        </figure>
+    
         <para>A Nested Expression is an expression that is defined within another expression, the
             enclosing expression. Due to simple recursive <link
                 xlink:href="https://en.wikipedia.org/wiki/Scope_(programming)">scope</link> rules, a
@@ -20,7 +11,17 @@
             [7]. The nesting is theoretically possible to any ideas of depth, although only a few
             levels are normally used in practice. Nested Expressions have been a part of SNOMED CT
             post-coordinated expressions for years and are able to be represented as a part of the
-            compositional grammar <xref linkend="ExampleofCompositionalGrammarwithanestedlaterality"></xref>. </para>
+            compositional grammar <xref linkend="ExampleofCompositionalGrammarwithanestedlaterality"></xref>.
+            
+        <figure xml:id="ExampleofCompositionalGrammarwithanestedlaterality">
+            <title>Example of Compositional Grammar with a nested laterality</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/definitional_logicalNesting_00.svg" scalefit="1" width="100%" contentdepth="100%"/>
+                </imageobject>
+            </mediaobject>
+        </figure> 
+        </para>
         <para>However, SNOMED International is not currently permitting the use of nesting outside
             of post-coordinated expressions. The rationale as stated in the <link
                 xlink:href="https://docs.google.com/document/d/1tqNEA6S4fEF4fgj15OPabYA2E0VTz8epxvRRwczKizQ/edit#heading=h.yijdvy700v01"
@@ -52,9 +53,8 @@
         <para>The purpose of this study is to identify a sample of expressions that are not nested
             and do not require nesting and a sample of expressions that should be nested and where a
             model for nesting is proposed. </para>
-    </section>
     <section>
-        <title>Pharmaceutical / Biological Concepts</title>
+        <title>Pharmaceutical &amp; Biological Concepts</title>
         <para>During our work on partonomy, the need to use Nested Expressions to fully define
             products in two instances was identified. The first instance involved concepts that did
             not have a precoordinated concept available to fully define drugs that were representing
@@ -107,7 +107,7 @@
         </figure>
     </section>
     <section>
-        <title>Recommendations</title>
+        <title>Recommendations for Nested Expressions</title>
         <para>Support for Nested Expressions in the international and national releases would
             require major changes to the RF2 specification and are not a part of the recommended
             Logic Profile Enhancements. In addition, there must be constraints on the ability to
@@ -136,9 +136,9 @@
             laterality nesting and (2) those reviewed concepts that would not need nesting.</para>
     </section>
     <section>
-        <title>Additional Issues</title>
-        <para>When modeling the Pharmaceutical/Biological Product hierarchy, a model developed by
-            Komet developers was used to test concrete domains. SNOMED International has since
+        <title>Additional Issues with the Pharmaceutical &amp; Biological Product Model</title>
+        <para>When modeling the Pharmaceutical &amp; Biological Product hierarchy, a model developed
+            by Komet developers was used to test concrete domains. SNOMED International has since
             started utilizing the new drug model in the January 2018 international release, which
             will make the Komet developer model obsolete once the SNOMED model is implemented. The
             new SNOMED CT drug model will allow for the addition of more fully defined content

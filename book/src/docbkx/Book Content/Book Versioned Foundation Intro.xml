@@ -3,7 +3,7 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
     version="5.1">
-    <title>Versioned Foundation</title>
+    <title>Versioned Foundation Layer</title>
     <para>In the following sections we will discuss the Versioned Foundation Layer of the Knowledge
         Architecture. </para>
     <para>The Versioned Foundation provides the essential building blocks for a common model,

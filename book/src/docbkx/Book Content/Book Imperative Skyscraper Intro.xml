@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.1">
+    <title>Imperative Knowledge</title>
+    <para>In the following sections we will discuss the Imperative Knowledge Layer of the Knowledge
+        Architecture. </para>
+    <para>The Imperative Knowledge Layer (<xref linkend="KnowledgeArchitectureImperativeKnowledge"/>) (also
+        known as<emphasis role="bold"> Imperative </emphasis><emphasis role="bold"
+            >Knowledge</emphasis>) is <emphasis role="italic">the knowledge exercised in the
+            performance of </emphasis><emphasis role="italic">some task</emphasis>. ​. </para>
+    <para> </para>
+    <figure xml:id="KnowledgeArchitectureImperativeKnowledge">
+        <title>Statement Model Layer</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata fileref="../images/KnowledgeArchitectureImperativeKnowledge.svg" scale="25"
+                    align="center"/>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</chapter>

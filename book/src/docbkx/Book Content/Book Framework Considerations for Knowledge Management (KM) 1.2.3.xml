@@ -3,14 +3,15 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-     <title>Framework Considerations for Knowledge Management (KM)</title>
+     <title>Framework Considerations for Knowledge Management</title>
     <sect1>
         <title>Framework Considerations Purpose</title>
-        <para>This document will serve to identify a framework for comparing KM technologies.
-            Incorporated within is analysis of the architecture and codebase for any known
-            scalability, licensing, and privacy needs, as well as how to manage these non-functional
-            requirements as the product develops. In doing this, we will make suggestions for
-            software solutions to cover code maturity, automation, and security.</para>
+        <para>This chapter will serve to identify a framework for comparing KM technologies as of
+            2024 and served as a basis for our work. Incorporated within is analysis of the
+            architecture and codebase for any known scalability, licensing, and privacy needs, as
+            well as how to manage these non-functional requirements as the product develops. In
+            doing this, we will make suggestions for software solutions to cover code maturity,
+            automation, and security.</para>
     </sect1>
     <sect1>
         <title>Introduction to KM Processes</title>
@@ -20,16 +21,13 @@
             of this observation, we are defining the processes that need to be executed to achieve
             the goals of this work, such as becoming a well-supported and contributed open-source
             product that encourages adoption by the larger community.</para>
-    </sect1>
-    <sect1>
-        <title>Current State Analysis</title>
         <para>As part of the work on the KM tooling, we first need to document the current state of
             the project so we can define a future state and develop a plan to address any concerns.
             To do this, we have completed code reviews and stakeholder interviews to ensure that we
             understand what work is outstanding. </para>
     </sect1>
     <sect1>
-        <title>Methodology</title>
+        <title>Understanding the Current State of Knowledge Management </title>
         <para>The following section describes how we approached reviewing the current assets as it
             relates to development of the Knowledge Management suite of tooling.</para>
         <sect2>
@@ -65,7 +63,7 @@
         </sect2>
     </sect1>
     <sect1>
-        <title>Findings</title>
+        <title>Knowledge Management Findings to Address</title>
         <para>After interviews with the stakeholders and the review of the codebase, we determined
             that the following parts of the codebase must be addressed to make it useable by this
             team and the greater community.</para>
@@ -98,7 +96,7 @@
                 Knowledge Architecture.</para>
         </sect2>
         <sect2>
-            <title>Code Review</title>
+            <title>Unit Test Code Review </title>
             <para>In general, there is no formal external documentation describing code
                 functionality – either at the class or method level. Some Java Classes were
                 identified to have properly formatted JavaDoc annotations, but this was not
@@ -305,7 +303,7 @@
                     its actual shape and requirements in the physical universe.</para>
             </sect3>
             <sect3>
-                <title>Duplication​</title>
+                <title>Code Duplication​</title>
                 <para>It is important in reviewing complexity to review duplication. Duplication
                     means that you will have to update code in multiple places and fix defects in
                     multiple places. "Don't Repeat Yourself" (DRY), is a way to encourage code reuse
@@ -447,7 +445,7 @@
                     creating the Akka framework, which is heavily used in Java, for example.</para>
             </sect3>
             <sect3>
-                <title>Documentation</title>
+                <title>Comments and Repository Documentation</title>
                 <para>Since the biggest component of complexity is how easily a new developer can
                     pick a piece of code up, it should be obvious that comments and repository
                     documentation are integral to review. The documentation should be reviewed as
@@ -471,7 +469,7 @@
                     markdown and images that can be referred to there.</para>
             </sect3>
             <sect3>
-                <title>Comments describing Code​</title>
+                <title>Comments Describing Code​</title>
                 <para>Code surrounding classes and methods should fully describe the functionality
                     of the single operation object or method.</para>
                 <itemizedlist>
@@ -655,7 +653,7 @@
                     amount required to prove that the criteria have been met.</para>
             </sect3>
             <sect3>
-                <title>Test Driven Development (TDD) Standards​</title>
+                <title>Test Driven Development Standards​</title>
                 <para>Pipelines not only encourage Test Driven Development (TDD) but will require it
                     by default out of the box. Pipelines will have a requirement of 85% code
                     coverage which comprises a combination of line coverage, package coverage, and
@@ -804,7 +802,7 @@
                         needed.</para>
                 </sect4>
                 <sect4>
-                    <title>Behavior Driven Development (BDD)</title>
+                    <title>Behavior Driven Development</title>
                     <para>Behavior Driven Development (BDD) is a spin on TDD. Where TDD focuses on
                         testing a specific piece of functionality, BDD is focused less on a piece of
                         functionality, and more on a user action. BDD should generally be used in
@@ -920,7 +918,7 @@
         </sect2>
     </sect1>
     <sect1>
-        <title>Automation</title>
+        <title>Automation of Processes</title>
         <para><emphasis role="bold">CI</emphasis> and <emphasis role="bold">CD</emphasis> Processes,
                 <xref linkend="FrameworkforContinousIntegration"/> and <xref
                 linkend="FrameworkforContinousDeployment"/>, respectively, allow teams to be
@@ -1196,7 +1194,7 @@
             something we focus on in the architecture and design discussions.</para>
     </sect1>
     <sect1>
-        <title>License</title>
+        <title>License and Attribution Requirements</title>
         <para>As we prepare to make the products available with installers, teams will need to do a
             thorough analysis of licenses and attribution requirements. As the project plans on only
             using open-source licenses to reduce cost and increase adoption, we must maintain that

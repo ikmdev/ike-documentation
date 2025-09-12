@@ -3,8 +3,7 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0"
     xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Komet and Terminology Knowledge</title>
-<section>
-        <title>Komet</title>
+
         <para>Komet integrates terminology content (SNOMED CT®, LOINC®, RxNorm, etc.) from its
             native format into a common Komet format. Once the content is in Komet, where
             equivalency is determined through various methods where concepts of the same idea are
@@ -16,7 +15,6 @@
             not need to know if this is the SNOMED CT®/LOINC®/RxNorm Gentamycin that needs to be
             selected. Komet concepts are identified using a Universally Unique Identifier
             (UUID).</para>
-    </section>
     <section>
         <title>Inte<?oxy_comment_start author="tocrow" timestamp="20240624T173028-0400" comment="I think this is covered in other sections"?>roperability
             by Mappi<?oxy_comment_end?>ng</title>
@@ -110,7 +108,7 @@
                 </listitem>
             </itemizedlist>
             <section>
-                <title>Summary of Komet white paper - "From retrospective mapping to prospective
+                <title>Summary of Komet White Paper - "From retrospective mapping to prospective
                     standardization" </title>
                 <para>Methods: To describe the current mapping approach, we reviewed reports
                     submitted by a consulting terminology expert who evaluated the process and
@@ -132,7 +130,7 @@
                 </para>
             </section>
             <section>
-                <title>Example of Challenges due to Mapping</title>
+                <title>Example of Challenges Due to Mapping</title>
                 <para>Mapping is an approach to share data; unfortunately, mapping at each step in
                     the data exchange process creates additional opportunities for error and for
                     loss of information that may lead to a patient’s harm. SNOMED CT® and other
@@ -163,7 +161,7 @@
             </section>
         </section>
         <section>
-            <title>The Komet Solution</title>
+            <title>The Komet Solution for Terminology Knowledge</title>
             <para>What’s needed is a semantically normalized information model (i.e., Komet) with an
                 appropriate separation of concerns in regard to the informatics architectural
                 layers. Such a model is critical for the success of a number of forward-thinking
@@ -188,7 +186,7 @@
                 historical data so source terms (linked to alternative identifiers) are accurately
                 represented using standard concepts defined using description logic.</para>
             <section>
-                <title>Design Features - Understandable, Reproducible and Useful</title>
+                <title>Komet Design Features</title>
                 <para>Content in Komet aims to adhere to design features for concept
                     validity:</para>
                 <itemizedlist>

@@ -5,7 +5,7 @@
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
     version="5.1">
     <?oxy_comment_start author="tocrow" timestamp="20250717T021634-0400" comment="lets try to avoid having a section header and then a sub section header right after"?>
-    <title>Topics of Concerns</title>
+    <title>Topics of Concern</title>
         <para>In order for a computer system to perform reasoning properly, it must be instructed
             with very specific steps. However, there exist scenarios that would cause a reasoner to
             fail or improperly interpret the logic. Therefore, these different groups of concepts

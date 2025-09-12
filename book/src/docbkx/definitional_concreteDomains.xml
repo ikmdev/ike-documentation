@@ -3,11 +3,7 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0"
          xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Concrete Domains</title>
-    <para>All examples in this section are as of the April 2017 SNOMED CT US Edition Release.  Many
-        of the examples below have since been corrected in subsequent releases.</para>
-
-    <section>
-        <title>Introduction</title>
+  
         <para>Concrete domains are used to model concrete properties such as numbers, time
             intervals, and spatial regions.<citation>reasonConcreteDomain</citation> However, a
             limitation of description logic is the ability to fully represent concrete values. For
@@ -41,10 +37,11 @@
             units has begun to be modeled. However, this new Drug Concept Model currently does not
             utilize concrete domains but instead creates the strength numbers as concepts themselves
             to be used as values for the product strength attributes. </para>
-    </section>
+        <para>All examples in this section are as of the April 2017 SNOMED CT US Edition Release.
+            Some of the examples below have since been corrected in subsequent releases.</para>
     
     <section>
-        <title>Approach</title>
+        <title>Approach to Concrete Domains</title>
         <para>By using a lexical search for strings containing integers and textual representation
             of integers, 10,114 potential Pharmaceutical / Biologic Product concepts were
             identified, which were modeled with the proposed attributes, including one attribute to
@@ -133,7 +130,7 @@
     </section>
     
     <section>
-        <title>Findings</title>
+        <title>Potential Issues to Address</title>
         <para>Under the new SNOMED CT International Drug Concept Model, existing concepts will be
             updated to meet the new modeling guidelines and terming updated to conform to the
             terming guidelines in the editorial guide. One of the most frequent issues found while

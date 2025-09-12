@@ -3,7 +3,7 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-       <title>Managing the Best Practice for Open-Source Communities</title>
+       <title>Managing Best Practices for Open-Source Communities</title>
         <para>Over the last decade, billion dollars have been poured into achieving interoperability
             in the healthcare industry. Patients, providers, and healthcare agencies have
             collectively identified the need for a more harmonized, integrated health system to
@@ -39,7 +39,7 @@
             interoperability within the healthcare landscape where clinical decisions can be
             captured regardless of what point they originate in patient care. </para>
         <section>
-            <title>Defining a Key Issue: Restrictive Healthcare Licenses</title>
+            <title>The Impact of Restrictive Healthcare Licenses</title>
             <para>The root cause of insufficiencies within Health IT is not limited solely to a
                 group of vendors or organizations but is rather a foundational issue that permeates
                 throughout the ecosystem. Restrictive licenses are just one of these causes and are
@@ -92,7 +92,7 @@
             software to be used for any purpose, modified or otherwise. </para>
     </section>
     <section>
-        <title>Open-Source Software (OSS)  </title>
+        <title>Open-Source Software </title>
         <para>Open-Source Software (OSS) and proprietary, or closed-source, software are the two
             branches of software utilized by individuals and companies. At the most theoretical
             level, in an open-source environment, the source code is freely available and accessible
@@ -155,7 +155,7 @@
             licensing models through their end-user agreements.</para>
     </section>
     <section>
-        <title>Open-Source Licensing (OSL) </title>
+        <title>Open-Source Licensing </title>
         <para>The implementation of open-source software is managed in-hand through open-source
             licensing (OSL). The license of the software sets out the guidelines on the usage and
             implementation of the specific version of software being used. The license acts as a
@@ -223,7 +223,7 @@
     <section>
         <?oxy_comment_start author="rgeorgacopoulos" timestamp="20240712T164721-0500" comment="random? why adrres data privacy in open-source section. suggest to remove" id="vk4_3w1_ccc"?>
         <?oxy_comment_start author="tocrow" timestamp="20240717T133624-0400" parentID="vk4_3w1_ccc" comment="I think its fine. While we want to be open-source we also acknowledge we must maintain paitnet privacy" mid="1"?>
-        <title>General Data Protection Regulation (GDPR) and Data Privacy in Healthcare</title>
+        <title>General Data Protection Regulation and Data Privacy in Healthcare</title>
         <para>The General Data Protection Regulation (GDPR) is an European Union (EU) privacy and
             security law that was put into effect May 25, 2018. This EU law imposes obligations onto
             organizations anywhere in the world if they target or collect data related to EU
@@ -532,7 +532,7 @@
         </section>
     </section>
     <section>
-        <title>Conclusion</title>
+        <title>Benefits of Open-Source</title>
         <para>Achievement of interoperability within healthcare systems requires a multi-faceted
             approach through the extensive collaboration of various stakeholders involved. In its
             current form many licenses serve as unintended barriers to interoperability where

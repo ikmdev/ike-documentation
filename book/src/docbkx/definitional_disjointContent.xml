@@ -3,9 +3,6 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0"
     xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Disjoint Content</title>
-
-    <section>
-        <title>Introduction</title>
         <para>Classes are disjoint if they cannot have common instances. In an ontology, all classes
             are assumed to have potential overlapping instances unless they are explicitly stated to
             not have them. Since Komet relies heavily on SNOMED, a discussion of this topic is
@@ -18,10 +15,9 @@
             exception of the physical object and products that currently overlap, the top level
             primitive hierarchies like clinical findings and body structures should be
             disjoint.</para>
-    </section>
 
     <section>
-        <title>Problem</title>
+        <title>Problems with Disjoint Content</title>
         <para>Explicitly stating disjoint content would assist not only in detecting potential
             modeling errors, but also potentially aid in creating correct post-coordinated
             expressions. With more extensions to SNOMED CT being created at the National Release
@@ -41,7 +37,7 @@
     </section>
 
     <section>
-        <title>Solution</title>
+        <title>Solutions for Disjoint Content</title>
         <para>All top level primitive concepts should be stated as disjoint with the exception of
             260787004 |Physical object (physical object)|and 373873005 |Pharmaceutical / biologic
             product (product)|. A particular focus was placed on primitive hierarchies of substance
@@ -61,7 +57,7 @@
     </section>
 
     <section>
-        <title>Results</title>
+        <title>Evaluation of Disjoint Statements</title>
         <para>The US Extension to SNOMED CT was utilized to perform an initial assessment for
             disjoint statements. While calculating the disjoint statements for the upper level
             hierarchies, 243796009 |Situation with explicit context (situation)| and
@@ -104,10 +100,8 @@
             Focusing only on the first level below the upper level primitives in each of these
             hierarchies would be the best use of resources in the short term until the redesign of
             the concept model for body structure and substances is complete. </para>
-    </section>
-
-    <section>
-        <title>Conclusion</title>
+  
+      
         <para>Without statements to detect disjoint content, there is a potential for modeling
             errors, such as modeling incorrect parents for SNOMED CT concepts. This will affect both
             equivalence detection and content retrieval via the SNOMED CT hierarchies. Adding
