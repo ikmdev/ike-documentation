@@ -3,11 +3,9 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title>Updated Advanced Analytics Platform Proof of Concept Use Case(s) (Months 13-24)</title>
-    <section>
-        <title>Introduction</title>
+    <title>Updated Advanced Analytics Platform Proof of Concept Use Case(s)</title>
         <section>
-            <title>Background</title>
+            <title>Challenges of Laboratory Data Quality</title>
             <para>In today’s current state, <emphasis role="bold">Laboratory Real-World Data (RWD)
                     is of remarkably low-quality </emphasis>which affects quality of care.
                 Currently, standard test results and test information are encoded both
@@ -58,16 +56,15 @@
             </itemizedlist>
         </section>
         <section>
-            <title>Proposed Solution</title>
-            <para>In order to address these gaps in data, the Systemic Harmonization and
-                Interoperability Enhancement for Laboratory Data (SHIELD) Collaborative Community
-                (CC) curated a device extension that creates interoperability between different
-                systems. The extension was designed to be an authoritative source to educate
-                end-users on populating their data dictionaries. The device extension will provide
-                guidance and interact across systems on which data standards codes (e.g.
-                LOINC®/Systematized Nomenclature of Medicine Clinical Term (SNOMED CT®)) are to be
-                used for specific tests and/or devices. This source, designed by the CC, <emphasis
-                    role="bold"><emphasis role="italic">will link the laboratory analyzer with the
+            <title>Proposed Solution: Bridging Laboratory Data Gaps</title>
+            <para>In order to address these gaps in data, the SHIELD Collaborative Community (CC)
+                curated a device extension that creates interoperability between different systems.
+                The extension was designed to be an authoritative source to educate end-users on
+                populating their data dictionaries. The device extension will provide guidance and
+                interact across systems on which data standards codes (e.g. LOINC®/Systematized
+                Nomenclature of Medicine Clinical Term (SNOMED CT®)) are to be used for specific
+                tests and/or devices. This source, designed by the CC, <emphasis role="bold"
+                        ><emphasis role="italic">will link the laboratory analyzer with the
                         necessary information to support the comparison of test results without
                         switching laboratory codes, thus, increasing data
                     quality</emphasis></emphasis>.</para>
@@ -96,7 +93,7 @@
                 to uncover deeper health insights that aid in treatment.</para>
         </section>
         <section>
-            <title>Development and Implementation Progress</title>
+            <title>Advancing Interoperability: Development and Implementation Progress</title>
             <para>Data interoperability begins with the ability to represent data in a uniform way
                 with quality standards that are adhered to by the community. SNOMED CT® and LOINC®
                 are two international interoperability standards that both work to communicate
@@ -146,11 +143,10 @@
                 transparency and facilitates a deeper understanding of the integration efforts. </para>
             <para>Looking forward, the collaboration faces challenges in integrated knowledge communications and ensuring end-user adoption. The virtual location for the LOINC®-SNOMED CT® Ontology Browser showcases the progress made but lacks clear communication of the overarching goals. Engaging the community and building trust is essential to advancing healthcare information technology, and this can be achieved by enhancing understanding and support. The device extension will utilize the most recent updates published to the LOINC®-SNOMED CT® Ontology Browser. The ability of the device extension to utilize relevant standards from the source enhances effective communication strategies, which are critical for promoting tool adoption, requiring tailored messaging for different end-user segments. The end-user adoption strategy must balance detailed technical guidance for experts with non-technical communications that highlight the benefits and address specific pain points. This dual approach, including user guides, collaboration forums, and feedback channels, will support operational collaboration and encourage broader user engagement with the tools.</para>
         </section>
-    </section>
     <section>
-        <title>Proof of Concepts Use Cases</title>
+        <title>Proof of Concept Use Cases</title>
         <section>
-            <title>Use Case Purpose</title>
+            <title>Demonstrating Device Extension Impact Through Use Cases</title>
             <para>To better understand the impact and value of the device extension, <emphasis
                     role="bold">a </emphasis><emphasis role="bold">use case </emphasis><emphasis
                     role="bold">diagram has</emphasis><emphasis role="bold"> been developed to
@@ -168,7 +164,7 @@
                 patient care.</para>
         </section>
         <section>
-            <title>Patient Journey Use Case (Emerging Infectious Disease)</title>
+            <title>Patient Journey Use Case: Emerging Infectious Disease</title>
             <para>The Emerging Infectious Disease Use Case, depicted in Figure 1, showcases the
                 details of a patient's journey within medical facilities and processes taking place
                 during an emerging infectious disease, covering an array of processes from symptom
@@ -244,7 +240,7 @@
             </orderedlist>
         </section>
         <section>
-            <title>Introduction to Secondary Processes of Emerging Infectious Disease Use Case</title>
+            <title>Secondary Processes of Emerging Infectious Disease Use Case</title>
             <para>Secondary process documentation has been provided below to enhance understanding
                 of these process flows and showcase the high-level process documentation of our
                 device extension. These process flows provide a deeper look into the patient
