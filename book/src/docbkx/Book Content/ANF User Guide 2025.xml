@@ -51,13 +51,14 @@
                 Structure for the communication of medical Terminologies allows for the unambiguous
                 exchange of information between systems. </para>
             <para>Medical data can communicate much more when structured into an ordered statement.
-                Standardized clinical<emphasis role="italic"> terminology</emphasis> is essential,
-                but it cannot capture much of the context that is important to clinical care, such
-                as purpose, prerequisites, causality, etc. Incorporating structure through effective
-                order and rules can allow terminology to produce a standardized clinical <emphasis role="italic">statement. </emphasis>ANF is an HL7 balloted model for clinical
-                statement representation that is intended to safely and reliably support data
-                analysis and can be used to aggregate data created using any standard or
-                non-standard input form or exchange mechanism.​ </para>
+            Standardized clinical<emphasis role="italic"> terminology</emphasis> is essential, but
+            it cannot capture much of the context that is important to clinical care, such as
+            purpose, prerequisites, causality, etc. Incorporating structure through effective order
+            and rules can allow terminology to produce a standardized clinical <emphasis
+                role="italic">statement. </emphasis>ANF is an HL7® balloted model for clinical
+            statement representation that is intended to safely and reliably support data analysis
+            and can be used to aggregate data created using any standard or non-standard input form
+            or exchange mechanism.​ </para>
         </section>
         <section>
             <title>What are ANF Statments?</title>
