@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Strengthening AI Capabilities</title>
+    <section>
+        <title>Structured Data Enables Enhanced AI Output</title>
+        <para>By collaboratively enhancing and integrating existing laboratory standards, clinical
+            care organizations can reduce maintenance burdens and move towards achieving data
+            interoperability, enabling scalable solutions as the healthcare ecosystem evolves.
+            Healthcare must move beyond siloed, fragmented data toward integrated, curated
+            information that powers intelligent systems. Our logical model, backed by the HL7 Tinkar
+            ballot, helps enable this approach by enhancing the quality of healthcare data,
+            unlocking reliable innovation, faster decision-making, and improved interoperability.
+            Flexible data structures that can adapt to changes in regulatory and clinical
+            requirements are needed so that both human and Artificial Intelligence systems can
+            continue to use and benefit from the data as the healthcare landscape evolves. The
+            structured data can then serve as the backbone for advancing AI capabilities in
+            healthcare.</para>
+        <para>Currently, AI systems often struggle with gaps and inconsistencies due to unstructured
+            data, such as free text, resulting in variable answers and hallucinated responses. A
+            recent study published in the Journal of the American Medical Association demonstrates
+            that AI models perform dramatically better when enriched with linked, structured
+            information, improving accuracy and reliability in complex tasks such as the US Medical
+            Licensing Examinations [6].</para>
+        <figure xml:id="ScoreontheUSMLE3">
+            <title>Score on the USMLE (Step 3)</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/AIFig1.svg" scale="25" align="center"/> 
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <para>As public health agencies explore AI implementations, the data model provides various
+            capabilities that offer a robust data foundation to support reliable large language
+            models and regulatory automation. Device Extension (DeX) is one of the many use cases
+            enabled by the model. DeX creates a machine-readable network of relationships across
+            identifiers and attributes, providing an extendable pathway for AI tools to consistently
+            reason across datasets and deliver more accurate answers. It helps to organize and
+            connect critical device data, (such as product codes, manufacture data, naming
+            conventions, detection limits, reference ranges, etc.) by capturing essential
+            information from sources such as SNOMED, LOINC, and GUDID databases and define
+            relationships between devices, attributes, and regulatory metadata. Komet plays a key
+            role in structuring the information, as it works to create and store DeX content. The
+            interface also helps edit and reliably manage existing relationships as device data
+            evolves over time and export these relationships in standard, computable formats that AI
+            systems can easily ingest. </para>
+        <para>To take advantage of these functionalities, a robust data pipeline is essential to
+            help transform raw, fragmented healthcare information into structured, high-quality
+            datasets that fuel advanced AI systems. Industry leading tools such as GitHub, Maven,
+            SonarCloud, and more are used to help strengthen the data pipeline, which can then
+            systematically ingest, validate, and link data from diverse sources, including
+            laboratory standards, device registries, and regulatory databases, to ensure
+            consistency, completeness, and interoperability. This process not only eliminates
+            inaccuracies but also enriches the data with meaningful relationships and metadata,
+            making it readily accessible for AI models. Supported by this strengthened data
+            pipeline, AI systems can deliver more accurate, reliable, and context-aware insights,
+            enabling complex decision-making and driving innovation across clinical, regulatory, and
+            public health domains.</para>
+        <figure xml:id="DataPipeline">
+            <title>Data Pipeline</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/AIFigure2.svg" scale="25" align="center"/> 
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <para>Looking forward, our flexible, interoperable data model supports a diverse array of
+            use cases across the healthcare ecosystem. For example, it can support population health
+            analytics by aggregating and harmonizing data from multiple sources, enhance clinical
+            decision support tools that require real-time access to accurate information, and
+            facilitate regulatory reporting by automating the extraction and submission of required
+            data. Researchers can leverage higher quality data to accelerate healthcare
+            advancements, while public health agencies can more confidently rely on data to help
+            respond to emerging health threats. By providing a reliable foundation for these and
+            many other applications, the logical model provides a reliable foundation to enhance the
+            output of evolving technological capabilities in the healthcare ecosystem. </para>
+    </section>
+</chapter>

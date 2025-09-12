@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Status Definitions</title>
+    <section>
+        <title>Active</title>
+        <para>An active component is one that is fully committed, currently in use, and visible
+            throughout the application. This status represents the default “live” state for any
+            concept or semantic, meaning the component is displayed across all panels and is
+            accessible to users. On the backend, active components are fully committed, included in
+            all indexes, and exported as part of the system’s data outputs.</para>
+    </section>
+    <section>
+        <title>Inactive</title>
+        <para>An inactive component is one that has been explicitly marked as no longer active but
+            is retained within the system for historical and traceability purposes. This status is
+            used when a component is superseded, deprecated, or needs to be hidden from active use
+            while still remaining viewable for reference. Inactive components are shown with an
+            inactive status and are visible in history views and filters. On the backend, they are
+            retained with all historical versions and are included in exports and audit logs.</para>
+    </section>
+    <section>
+        <title>Withdrawn</title>
+        <para>A withdrawn component is one that was released by mistake and must be treated as if it
+            never existed, such as in cases of copyright violation, data breach, or legal removal.
+            This is a rare status, typically invoked under legal or policy mandates. Withdrawn
+            components are hidden from normal views and do not appear in searches or history unless
+            specifically surfaced. Although they still exist in the database, they are treated as
+            “voided” and do not appear in exports, indexes, or history trails. Importantly, a
+            withdrawn status is permanent and should never be recovered to active or inactive; it is
+            distinct from inactive because it fully suppresses visibility and treats the component
+            as retracted from the system.</para>
+    </section>
+    <section>
+        <title>Canceled</title>
+        <para>A canceled component refers to a temporary or uncommitted component or version that
+            was abandoned before being committed to the system. This occurs when a user cancels a
+            creation or exits the application without saving changes. Canceled components are never
+            visible in the application and are filtered from all user-facing views. On the backend,
+            they exist only in a transient state, marked with a “canceled” stamp, and are subject to
+            garbage collection and cleanup. They are not included in exports.</para>
+    </section>
+    <section>
+        <title>Retired (Deprecated Term)</title>
+        <para>The term “retired” was previously used informally or in reference to external
+            standards, such as SNOMED or LOINC, but it is not a valid or supported status in Komet.
+            It is recommended to avoid using “retired” to describe a component’s state and to use
+            “inactive” instead. There is no user interface or backend recognition of “retired” as a
+            formal status.</para>
+    </section>
+</chapter>

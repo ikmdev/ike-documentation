@@ -164,19 +164,22 @@
                 patient care.</para>
         </section>
         <section>
+
             <title>Patient Journey Use Case: Emerging Infectious Disease</title>
             <para>The Emerging Infectious Disease Use Case, depicted in Figure 1, showcases the
+ <xref linkend="EmergingInfectiousDiseaseUseCase"></xref>, showcases the
+
                 details of a patient's journey within medical facilities and processes taking place
                 during an emerging infectious disease, covering an array of processes from symptom
                 recognition to final diagnosis. As seen below, the primary patient journey is
                 denoted by blue. This is where a patient who has been either notified of an exposure
-                (Figure 1, Box 1) or begins to develop symptoms that align with that of an emerging
-                infectious disease (Figure 1, Box 2) is interacting with the various points of care.
+                (<xref linkend="EmergingInfectiousDiseaseUseCase"></xref>, Box 1) or begins to develop symptoms that align with that of an emerging
+                infectious disease (<xref linkend="EmergingInfectiousDiseaseUseCase"></xref>, Box 2) is interacting with the various points of care.
                 This journey covers the patient's whole experience within the healthcare ecosystem,
-                culminating in a diagnosis of chronic post-infectious disease (Figure 1, Box 1 –
+                culminating in a diagnosis of chronic post-infectious disease (<xref linkend="EmergingInfectiousDiseaseUseCase"></xref>, Box 1 –
                 9).</para>
             <para>To fully understand the patient care journey, the individual sub-cycles (black in
-                    <emphasis role="italic">Figure 2</emphasis>) denote the potential processes
+                <emphasis role="italic"><xref linkend="EmergingInfectiousDiseaseUserJourneyDeviceExtensionCaptureFunctionality"></xref></emphasis>) denote the potential processes
                 where a patient interacts with different care delivery individuals, systems, and/or
                 organizations. These sub-cycles are utilized to collect data, inform decision-making
                 for the patient outcome, and/or further exchange data to improve the healthcare
@@ -184,7 +187,7 @@
                 results in specific secondary processes that interconnect between the patient
                 journey and differing state/federal health organizations that are responsible for
                 the reporting and diagnostic device monitoring for public health reporting (Yellow,
-                    <emphasis role="italic">Figure 1, </emphasis>Box 12, 16, 22).</para>
+                <emphasis role="italic"><xref linkend="EmergingInfectiousDiseaseUseCase"></xref>, </emphasis>Box 12, 16, 22).</para>
             <para>Our device extension was designed to interconnect these sub cycles, which
                 correspond to health IT platforms or systems, to inform individual patient care
                 outcomes and public health reporting. It can support the increased interconnectivity
@@ -192,13 +195,13 @@
                 responsible for creating and extending relevant terminology subsets or modules.
                 Supported by our Integrated Knowledge Management (IKM) environment, this procedure
                 enables authoring a new extension record and integrates the newly formed terminology
-                subsets. Figure 2 showcases how an IKM-powered ecosystem would interact with
+                subsets. <xref linkend="EmergingInfectiousDiseaseUserJourneyDeviceExtensionCaptureFunctionality"></xref> showcases how an IKM-powered ecosystem would interact with
                 patients and evolve based on the advances in clinical diagnostics during an
                 infectious disease outbreak.</para>
-            <para>Like Figure 1, Figure 2 showcases a patient's journey through the healthcare
+            <para>Like <xref linkend="EmergingInfectiousDiseaseUseCase"></xref>, <xref linkend="EmergingInfectiousDiseaseUserJourneyDeviceExtensionCaptureFunctionality"></xref> showcases a patient's journey through the healthcare
                 system. For example, if a patient needs to order an Over-The-Counter (OTC) emerging
                 infectious disease test kit, the patient must use a patient portal that has been
-                enabled with the appropriate test listings. Figure 2 showcases that certain
+                enabled with the appropriate test listings. <xref linkend="EmergingInfectiousDiseaseUserJourneyDeviceExtensionCaptureFunctionality"></xref> showcases that certain
                 functions are only actionable if the current Information Technology (IT) Systems,
                 relevant to the care journey, and key players across the organization update the
                 existing health terminology gaps currently enacted and impacting patient care.
@@ -208,12 +211,11 @@
             <orderedlist>
                 <listitem>
                     <para>The new emerging infectious disease prompting the identification of a
-                        terminology gap (Figure 2, Box B, Box 9)</para>
+                        terminology gap (<xref linkend="EmergingInfectiousDiseaseUseCase"></xref>, Box B, Box 9)</para>
                 </listitem>
                 <listitem>
-                    <para>A patient recording their medical history in a digital health app (Figure
-                        2, Box A, Box 1) <figure xml:id="EmergingInfectiousDiseaseUseCase">
-                            <title>Figure 1: Emerging Infectious Disease Use Case</title>
+                    <para>A patient recording their medical history in a digital health app (<xref linkend="EmergingInfectiousDiseaseUseCase"></xref>, Box A, Box 1) <figure xml:id="EmergingInfectiousDiseaseUseCase">
+                            <title>Emerging Infectious Disease Use Case</title>
                             <mediaobject>
                                 <imageobject>
                                     <imagedata
@@ -225,7 +227,7 @@
                         </figure>
                         <figure
                             xml:id="EmergingInfectiousDiseaseUserJourneyDeviceExtensionCaptureFunctionality">
-                            <title>Figure 2: Emerging Infectious Disease User Journey – Device
+                            <title>Emerging Infectious Disease User Journey – Device
                                 Extension Capture Functionality </title>
                             <mediaobject>
                                 <imageobject>
@@ -257,7 +259,8 @@
                 <title>Sub-Cycle 1: Symptom Surveillance</title>
                 <para>The first secondary process documentation highlights the data processes and
                     flows that occur when individual patient data, along its emerging infectious
-                    disease journey, integrates with the larger symptom surveillance ecosystem. As
+                    disease journey, integrates with the larger symptom surveillance ecosystem 
+                    <xref linkend="FigureBox12SymptomSurveillance"></xref>. As
                     individual data is obtained at the various collection points throughout
                     diagnosis, testing, and treatment processes, this information can be directly
                     aggregated into the larger data repository/lakes that will enable public health
@@ -280,7 +283,7 @@
                     journeys have the functionality to capture the new information effectively and
                     securely to track performance in the future. <figure
                         xml:id="FigureBox12SymptomSurveillance">
-                        <title>Figure 3: Figure Box 12: Symptom Surveillance</title>
+                        <title>Figure Box 12: Symptom Surveillance</title>
                         <mediaobject>
                             <imageobject>
                                 <imagedata
@@ -292,7 +295,7 @@
             </section>
             <section>
                 <title>Sub-Cycle 2: Comparator Testing</title>
-                <para>Sub-Cycle 2 references FIGURE 1 box 16, specifying an additional process that
+                <para>Sub-Cycle 2 references <xref linkend="FigureBox16ComparatorTesting"></xref> box 16, specifying an additional process that
                     may occur when administering an over-the-counter (OTC) test to diagnose emerging
                     infectious disease(s). In this sub-cycle, the individual patient data entering
                     the cycle are additional samples collected during the OTC test that serve as the
@@ -310,7 +313,7 @@
                     device-level data specifications to adhere to public health institutions’
                     updates seamlessly into knowledge resources and systems. <figure
                         xml:id="FigureBox16ComparatorTesting">
-                        <title>Figure 4: Figure Box 16: Comparator Testing</title>
+                        <title>Figure Box 16: Comparator Testing</title>
                         <mediaobject>
                             <imageobject>
                                 <imagedata
@@ -324,7 +327,7 @@
                 <title>Sub-Cycle 3: Revised Testing Recommendations</title>
                 <para>The last secondary process documentation highlights the additional data flow
                     that occurs during a medical consultation during a patient’s journey through the
-                    emerging infectious disease use case. When that medical consult occurs,
+                    emerging infectious disease use case <xref linkend="FigureBox22TestingRecommendations"></xref>. When that medical consult occurs,
                     additional patient data is collected and will be integrated into the larger RWD
                     repositories for use amongst the greater research and public health institutions
                     to assess patterns and trends. As that data is analyzed, new associated risk

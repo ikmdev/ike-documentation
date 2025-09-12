@@ -5,7 +5,7 @@
     <title>Logical Nesting</title>
     <section>
         <title>Introduction</title>
-        <figure>
+        <figure xml:id="ExampleofCompositionalGrammarwithanestedlaterality">
             <title>Example of Compositional Grammar with a nested laterality</title>
             <mediaobject>
                 <imageobject>
@@ -15,17 +15,17 @@
         </figure>
         <para>A Nested Expression is an expression that is defined within another expression, the
             enclosing expression. Due to simple recursive <link
-                xlink:href="https://en.wikipedia.org/wiki/Scope_(programming)">scope</link><footnote><para>https://en.wikipedia.org/wiki/Scope_(programming)</para></footnote> rules, a
-            Nested Expression is itself invisible outside of its immediately enclosing expression.
-            The nesting is theoretically possible to any ideas of depth, although only a few levels
-            are normally used in practice. Nested Expressions have been a part of SNOMED CT
+                xlink:href="https://en.wikipedia.org/wiki/Scope_(programming)">scope</link> rules, a
+            Nested Expression is itself invisible outside of its immediately enclosing expression
+            [7]. The nesting is theoretically possible to any ideas of depth, although only a few
+            levels are normally used in practice. Nested Expressions have been a part of SNOMED CT
             post-coordinated expressions for years and are able to be represented as a part of the
-            compositional grammar. </para>
+            compositional grammar <xref linkend="ExampleofCompositionalGrammarwithanestedlaterality"></xref>. </para>
         <para>However, SNOMED International is not currently permitting the use of nesting outside
             of post-coordinated expressions. The rationale as stated in the <link
                 xlink:href="https://docs.google.com/document/d/1tqNEA6S4fEF4fgj15OPabYA2E0VTz8epxvRRwczKizQ/edit#heading=h.yijdvy700v01"
-                >SNOMED CT Logic Profile Enhancements document</link><footnote><para>https://docs.google.com/document/d/1tqNEA6S4fEF4fgj15OPabYA2E0VTz8epxvRRwczKizQ/edit#heading=h.yijdvy700v01</para></footnote> is due to two main reasons
-            currently limiting the use of nested expressions:</para>
+                >SNOMED CT Logic Profile Enhancements document</link> is due to two main reasons
+            currently limiting the use of nested expressions [8]:</para>
         <para>
             <orderedlist>
                 <listitem>
@@ -55,14 +55,16 @@
     </section>
     <section>
         <title>Pharmaceutical / Biological Concepts</title>
-        <para>During our work on partonomy, the need to use Nested Expressions to
-            fully define products in two instances was identified. The first instance involved concepts that did
+        <para>During our work on partonomy, the need to use Nested Expressions to fully define
+            products in two instances was identified. The first instance involved concepts that did
             not have a precoordinated concept available to fully define drugs that were representing
             packages that contain multiple drugs. The second set of concepts represented a powder
-            that is packaged separately from the solution used to mix prior to use. The model below
-            represents the pharmacy model tested, and it has not been updated to the
-            new drug model SNOMED International released in January 2018.</para>
-        <figure>
+            that is packaged separately from the solution used to mix prior to use. The model below 
+            (<xref linkend="definitionallogicalNesting01"></xref>
+            <xref linkend="definitionallogicalNesting02"></xref>)
+            represents the pharmacy model tested, and it has not been updated to the new drug model
+            SNOMED International released in January 2018.</para>
+        <figure xml:id="definitionallogicalNesting01">
             <title>Example of starter pack that contains multiple tablets. Diagram contains the current SCT definition (top) and the updated definition (bottom) using partonomy with a nested expression.</title>
             <mediaobject>
                 <imageobject>
@@ -70,7 +72,7 @@
                 </imageobject>
             </mediaobject>
         </figure>
-        <figure>
+        <figure xml:id="definitionallogicalNesting02">
             <title>Example of an injection powder that is packaged separate from the solvent. Diagram contains the current SCT definition (top) and the updated definition (bottom) using partonomy with a nested expression.</title>
             <mediaobject>
                 <imageobject>
@@ -86,8 +88,8 @@
             lateralized body structure not existing as a precoordinated concept. Rather than add
             these concepts to an extension or submit them for addition, they could easily use nested
             expressions to represent the missing body structure concepts that have a laterality
-            attribute assigned to them.</para>
-        <figure>
+            attribute assigned to them (<xref linkend="definitionallogicalNesting03"></xref><xref linkend="definitionallogicalNesting04"></xref>.</para>
+        <figure xml:id="definitionallogicalNesting03">
             <title>Current definition of Chronic deep venous thrombosis of femoral veins of both lower extremities (disorder) where laterality is not correctly defined.</title>
             <mediaobject>
                 <imageobject>
@@ -95,7 +97,7 @@
                 </imageobject>
             </mediaobject>
         </figure>
-        <figure>
+        <figure xml:id="definitionallogicalNesting04">
             <title>Updated definition of Chronic deep venous thrombosis of femoral veins of both lower extremities (disorder) where laterality is represented as a nested expression.</title>
             <mediaobject>
                 <imageobject>
@@ -136,9 +138,9 @@
     <section>
         <title>Additional Issues</title>
         <para>When modeling the Pharmaceutical/Biological Product hierarchy, a model developed by
-            Solor developers was used to test concrete domains. SNOMED International has since
+            Komet developers was used to test concrete domains. SNOMED International has since
             started utilizing the new drug model in the January 2018 international release, which
-            will make the Solor developer model obsolete once the SNOMED model is implemented. The
+            will make the Komet developer model obsolete once the SNOMED model is implemented. The
             new SNOMED CT drug model will allow for the addition of more fully defined content
             including the addition of more values to represent concepts that include units of
             presentation like cartridges. With the new SNOMED model, removal of definitions added

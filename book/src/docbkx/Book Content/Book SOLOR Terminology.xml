@@ -2,19 +2,19 @@
 <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0"
     xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>SOLOR and Terminology Knowledge</title>
+    <title>Komet and Terminology Knowledge</title>
 <section>
-        <title>Solor</title>
-        <para>Solor integrates terminology content (SNOMED CT®, LOINC®, RxNorm, etc.) from its
-            native format into a common Solor format. Once the content is in Solor, where
+        <title>Komet</title>
+        <para>Komet integrates terminology content (SNOMED CT®, LOINC®, RxNorm, etc.) from its
+            native format into a common Komet format. Once the content is in Komet, where
             equivalency is determined through various methods where concepts of the same idea are
             aggregated. For example, Gentamycin from SNOMED CT® is the same as Gentamycin from
             LOINC®, and is also the same Gentamycin from RxNorm. The end result from this process is
-            the creation of a Solor concept that is devoid of any source information (but will have
+            the creation of a Komet concept that is devoid of any source information (but will have
             traceability), and is exposed to the user to view, use, and extend. In the Gentamycin
             example, a user will find a concept that is devoid of any source information and will
             not need to know if this is the SNOMED CT®/LOINC®/RxNorm Gentamycin that needs to be
-            selected. Solor concepts are identified using a Universally Unique Identifier
+            selected. Komet concepts are identified using a Universally Unique Identifier
             (UUID).</para>
     </section>
     <section>
@@ -110,7 +110,7 @@
                 </listitem>
             </itemizedlist>
             <section>
-                <title>Summary of Solor white paper - "From retrospective mapping to prospective
+                <title>Summary of Komet white paper - "From retrospective mapping to prospective
                     standardization" </title>
                 <para>Methods: To describe the current mapping approach, we reviewed reports
                     submitted by a consulting terminology expert who evaluated the process and
@@ -137,34 +137,39 @@
                     the data exchange process creates additional opportunities for error and for
                     loss of information that may lead to a patient’s harm. SNOMED CT® and other
                     meaningful use standards are frequently used as targets of this mapping, and
-                    their use is mandated as part of the Meaningful Use regulations. Tables 1 and 2
-                    below show how equivalent concepts in two different care settings leads to
-                    information loss when they are mapped to SNOMED CT® because SNOMED CT® does not
-                    represent the equivalent meaning. In Tables 1 and 2, the Local Concept column
-                    represents the concept created by Hospital A during the care of a patient, the
-                    Map Type column specifies broader than or narrower than or equivalent, and the
-                    SNOMED CT® Concept column represents the concept to which the local concept has
-                    been mapped. The Meaning Lost column describes the information lost due to
-                    mapping because an equivalent match of the local concept is not found in SNOMED
-                    CT. In Table 1 below, the SNOMED CT® Concept is broader than the local concept,
-                    causing important tumor morphology information to be lost during mapping. In
-                    Table 2, the SNOMED CT® Concept is also broader than the local concept, causing
-                    important tumor location information to be lost in the mapping process.</para>
-                <para><inlinemediaobject>
-                        <imageobject>
-                            <imagedata fileref="../images/Mapping.png" scale="50"/>
-                        </imageobject>
-                    </inlinemediaobject></para>
+                    their use is mandated as part of the Meaningful Use regulations. In <xref linkend="Mapping"/> below show
+                    how equivalent concepts in two different care settings leads to information loss
+                    when they are mapped to SNOMED CT® because SNOMED CT® does not represent the
+                    equivalent meaning. In Tables 1 and 2, the Local Concept column represents the
+                    concept created by Hospital A during the care of a patient, the Map Type column
+                    specifies broader than or narrower than or equivalent, and the SNOMED CT®
+                    Concept column represents the concept to which the local concept has been
+                    mapped. The Meaning Lost column describes the information lost due to mapping
+                    because an equivalent match of the local concept is not found in SNOMED CT. In
+                    Table 1 below, the SNOMED CT® Concept is broader than the local concept, causing
+                    important tumor morphology information to be lost during mapping. In Table 2,
+                    the SNOMED CT® Concept is also broader than the local concept, causing important
+                    tumor location information to be lost in the mapping process.</para>
+                <para>
+                    <figure xml:id="Mapping">
+                        <title> Medical Practice Mapping Example</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../images/Mapping.png" align="center" scale ="50"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </para>
             </section>
         </section>
         <section>
-            <title>The Solor Solution</title>
-            <para>What’s needed is a semantically normalized information model (i.e., Solor) with an
+            <title>The Komet Solution</title>
+            <para>What’s needed is a semantically normalized information model (i.e., Komet) with an
                 appropriate separation of concerns in regard to the informatics architectural
                 layers. Such a model is critical for the success of a number of forward-thinking
-                healthcare initiatives. Solor does not map one terminology system to another.
-                Rather, Solor integrates specific terminologies such as – but not limited to –
-                SNOMED CT, LOINC®, RxNorm. These three terminologies form the foundation of Solor
+                healthcare initiatives. Komet does not map one terminology system to another.
+                Rather, Komet integrates specific terminologies such as – but not limited to –
+                SNOMED CT, LOINC®, RxNorm. These three terminologies form the foundation of Komet
                 because they are meaningful use standards, where when integrated together, they
                 represent the breadth of information necessary for clinical data
                 representation.</para>
@@ -184,7 +189,7 @@
                 represented using standard concepts defined using description logic.</para>
             <section>
                 <title>Design Features - Understandable, Reproducible and Useful</title>
-                <para>Content in Solor aims to adhere to design features for concept
+                <para>Content in Komet aims to adhere to design features for concept
                     validity:</para>
                 <itemizedlist>
                     <listitem>
@@ -202,19 +207,19 @@
                 </itemizedlist>
             </section>
             <section>
-                <title>Licensing and Solor</title>
-                <para>Solor is not intended to compete with existing standards and processes, and
-                    does not redistribute content. It enables the community of Solor to integrate
+                <title>Licensing and Komet</title>
+                <para>Komet is not intended to compete with existing standards and processes, and
+                    does not redistribute content. It enables the community of Komet to integrate
                     terminologies – their own terminology and others’ terminology. Those who are
                     distributing terminology must have a license to distribute these terminologies.
                     For example: If organization A is distributing SNOMED CT, LOINC® and its curated
                     terminology, then organization A needs to ensure it has a license to
-                    redistribute SNOMED CT® and LOINC®. Solor’s transformation processes and
+                    redistribute SNOMED CT® and LOINC®. Komet’s transformation processes and
                     architectural foundation are available under the Apache 2 Open Source License. </para>
-                <para>SNOMED CT, LOINC® and RXNorm are foundational terminologies in Solor. Solor
-                    fully supports and relies on these standards and their organizations. Solor’s
+                <para>SNOMED CT, LOINC® and RXNorm are foundational terminologies in Komet. Komet
+                    fully supports and relies on these standards and their organizations. Komet’s
                     intent is to complement these standards. Organizations are free to integrate
-                    Solor content into their standards.</para>
+                    Komet content into their standards.</para>
                 <section>
                     <title>LOINC® License</title>
                     <para>The LOINC® database can be obtained from the Regenstrief LOINC® website
@@ -255,13 +260,13 @@
     <section>
         <?oxy_comment_start author="timowilliams" timestamp="20190430T211931-0500" comment="How does this relate to the SNOMED CT Integration efforts?
 "?>
-        <title>Solor Integration - Integrating LOINC® Method Attributes and SNOMED CT®
+        <title>Komet Integration - Integrating LOINC® Method Attributes and SNOMED CT®
             Concepts<?oxy_comment_end?></title>
         <para>The collaborative agreement between LOINC® and SNOMED CT® developers has enabled
             informaticists to leverage SNOMED CT® for the representation of the building blocks of
             LOINC® (e.g., method) and for a more consistent representation of clinical and
             laboratory observations in SNOMED CT. We utilized the derivative works from this
-            collaborative effort to represent LOINC® and SNOMED CT® in Solor, an open-source
+            collaborative effort to represent LOINC® and SNOMED CT® in Komet, an open-source
             ecosystem for integrating disparate medical terminologies in a common model. </para>
         <para>Seamless integration of LOINC® and SNOMED CT® is non-trivial because LOINC® and SNOMED
             CT® have different semantics models, and use different formalisms and tools for their
@@ -271,11 +276,11 @@
             many clinical concepts from LOINC®. In this work, our objectives are: (1) to assess the
             extent to which LOINC® method attributes can be represented by concepts in SNOMED CT,
             (2) to describe how to integrate equivalent LOINC® method attributes and SNOMED CT®
-            concepts in the Solor common model, and (3) to explore the benefits and challenges of
-            integrating LOINC® and SNOMED CT® in the Solor common model. </para>
+            concepts in the Komet common model, and (3) to explore the benefits and challenges of
+            integrating LOINC® and SNOMED CT® in the Komet common model. </para>
         <para><emphasis role="bold">Methods:</emphasis> We sought to identify the overlaps and gaps
             between method attributes in LOINC® and concepts in SNOMED CT, and integrated the
-            equivalent concepts in Solor – an integrated common model for medical terminologies.
+            equivalent concepts in Komet – an integrated common model for medical terminologies.
             First, we gathered the list of method attributes from LOINC® version 2.63 and mapped
             each to a concept unique identifier (CUI) from the UMLS (using the UMLS API). For CUIs
             representing a LOINC® method attribute, we retrieved associated atoms from SNOMED CT® in
@@ -283,7 +288,7 @@
             <?oxy_comment_start author="steph" timestamp="20190508T125835-0600" comment="Is this correct?  What is UMLS.2?  Is it supposed to be a reference?" flag="done"?>UMLS.
                 <citation>Cholan_NLM</citation><?oxy_comment_end?>Next, we imported each LOINC®
             identifier and attached description logic defining whether there was equivalency of the
-            method attribute to SNOMED CT® concepts. When there was an overlap, a Solor-navigation
+            method attribute to SNOMED CT® concepts. When there was an overlap, a Komet-navigation
             concept was created which facilitated an inferred taxonomy representation with semantic
             context from SNOMED CT® attached to the right LOINC® method attribute. Finally, we
             evaluated the alignments obtained between LOINC® method attributes and SNOMED CT®
@@ -297,7 +302,7 @@
             method attributes include procedures (58%), concepts/ideas (14%), living beings (13%),
             occupations (8%), and disorders (2%). Whereas, SNOMED CT® concepts represent disorders
             (22%), procedures (17%), body structures (11%), clinical findings other than disorders
-            (10%), and organisms (10%).<citation>Bodenreider_Solor</citation>
+            (10%), and organisms (10%).<citation>Bodenreider_Komet</citation>
             <?oxy_comment_start author="steph" timestamp="20190508T130256-0600" comment="Is this supposed to be a reference?" flag="done"?><?oxy_comment_end?></para>
         <para><emphasis role="italic"><emphasis role="underline">Coverage of LOINC® method
                     attributes by the UMLS and </emphasis></emphasis><emphasis role="italic">SNOMED
@@ -308,30 +313,30 @@
             shared at least 1 UMLS CUI with a corresponding SNOMED CT® concept. Of the 1688 CUIs
             that represented LOINC® method attributes, 383 (23%) were associated with a SNOMED CT®
             concept.</para>
-        <para><emphasis role="italic"><emphasis role="underline">Solor
-                Transformation</emphasis></emphasis> –Solor is an ecosystem that allows users to
+        <para><emphasis role="italic"><emphasis role="underline">Komet
+                Transformation</emphasis></emphasis> –Komet is an ecosystem that allows users to
             import, transform, view, and export content from disparate medical terminologies, all in
-            one common model. Users can navigate and search Solor content, view details of the data
-            elements, and select specific concepts to view more information. Solor has two
+            one common model. Users can navigate and search Komet content, view details of the data
+            elements, and select specific concepts to view more information. Komet has two
             fundamental building blocks: concepts and semantics. A concept is defined as an idea or
             a general notion and is represented by a universally unique identifier (UUID). A
             semantic is attached to a concept to provide contextual meaning and semantic data to the
             concept’s content. </para>
-        <para> Integrating LOINC® method attributes into Solor required a transformation process in
-            which the LOINC® data was transformed into Solor components using these defining
+        <para> Integrating LOINC® method attributes into Komet required a transformation process in
+            which the LOINC® data was transformed into Komet components using these defining
             relationships to create OWL EL++ description logic definitions. The LOINC® identifier
-            was used to create a Type 5 UUID for a Solor concept, so that the identifiers used in
-            Solor are idempotent, and are derivable directly from the LOINC® data. Additionally, the
+            was used to create a Type 5 UUID for a Komet concept, so that the identifiers used in
+            Komet are idempotent, and are derivable directly from the LOINC® data. Additionally, the
             original LOINC® identifier for this concept is properly represented, as are the other
-            data elements required by the LOINC® license. These Solor concepts integrate SNOMED CT®
+            data elements required by the LOINC® license. These Komet concepts integrate SNOMED CT®
             and LOINC® semantics; the LOINC® Method semantic and SNOMED CT® semantic are grouped
-            under the same Solor concept. The
-            f<?oxy_comment_start author="steph" timestamp="20190508T131130-0600" comment="In the PDF, it&apos;s actually Figure 3.1.  Also, in the figure, while the SNOMED CT name is displayed, there isn&apos;t anything that states that.  Should there be?" flag="done"?>igure
+            under the same Komet concept. The <xref linkend="KometLoincInt"/>
+            <?oxy_comment_start author="steph" timestamp="20190508T131130-0600" comment="In the PDF, it&apos;s actually Figure 3.1.  Also, in the figure, while the SNOMED CT name is displayed, there isn&apos;t anything that states that.  Should there be?" flag="done"?>
             <?oxy_comment_end?>below exemplifies the integration: the LOINC® method attribute is
             “AUDIT”, and the SNOMED CT® concept is displayed as “Alcohol use disorders
             identification test”.</para>
-        <figure>
-            <title><emphasis role="bold">Solor Editor: Representation of LOINC® and SNOMED CT® in a
+        <figure xml:id="KometLoincInt">
+            <title><emphasis role="bold">Komet Editor: Representation of LOINC® and SNOMED CT® in a
                     common model</emphasis></title>
             <mediaobject>
                 <imageobject>
@@ -348,24 +353,24 @@
             number of procedures and specimen source details in LOINC® method attributes with little
             or no coverage by SNOMED CT®. One suggestion is for developers of LOINC® and SNOMED CT®
             to review these gaps and include better coverage in future versions, if appropriate. </para>
-        <para>Solor may assist in providing a collaborative ecosystem to host local extensions for
+        <para>Komet may assist in providing a collaborative ecosystem to host local extensions for
             SNOMED CT® to represent LOINC® method attributes. Currently, implementers of LOINC® and
             SNOMED CT® must traverse the distinct hierarchies of each source terminology and
-            version. Integrating the terminology content of LOINC® and SNOMED CT® into the Solor
+            version. Integrating the terminology content of LOINC® and SNOMED CT® into the Komet
             common model may have a beneficial impact on the usability (i.e., reduced burden) for
             implementers in both traversing distinct formalisms and maintaining version control. It
             may be helpful to communicate more specific details about LOINC® method attributes by
             leveraging the right SNOMED CT® concepts for additional details about the method
             attributes. Next steps include conducting a formative evaluation with a purposive sample
             of experts in standard clinical terminologies to assess the benefits and challenges of
-            integrating and representing overlapping LOINC® and SNOMED CT® content in Solor’s common
+            integrating and representing overlapping LOINC® and SNOMED CT® content in Komet’s common
             model. We aim to have this evaluation completed by Summer 2019 and will include these
-            updated results if accepted. Solor’s integration of disparate medical terminology
+            updated results if accepted. Komet’s integration of disparate medical terminology
             content may help implementers and authors of medical terminologies with orienting
             concepts and traversing relationships between disparate standards. </para>
     </section>
     <section>
-        <title>Evaluating the impact of implementing Solor</title>
+        <title>Evaluating the impact of implementing Komet</title>
         <para>Electronic clinical quality measures (eCQMs) and clinical decision support (CDS)
             alerts are triggered by clinical data that is encoded by standards based clinical
             terminologies. Because these measures and alerts intend to promote evidence-based
@@ -409,39 +414,39 @@
                 percentages.<citation>concepts</citation>
         </para>
         <para><emphasis role="bold"><emphasis role="underline">Proposed Study to Evaluate the Impact
-                    of Solor</emphasis></emphasis></para>
+                    of Komet</emphasis></emphasis></para>
         <para><emphasis role="underline">Purpose</emphasis></para>
-        <para>Solor provides an easier way to verify that value sets are up to date and covered.
-            Solor can also suggest and add additional codes based on Solor concepts to value set
-            specifications. In this study, our objective is to use Solor to identify codes from eCQM
+        <para>Komet provides an easier way to verify that value sets are up to date and covered.
+            Komet can also suggest and add additional codes based on Komet concepts to value set
+            specifications. In this study, our objective is to use Komet to identify codes from eCQM
             value sets, to better understand the usage of these codes against clinical data, and to
-            assess the impact of the pre and post Solor codes on eCQM performance. </para>
+            assess the impact of the pre and post Komet codes on eCQM performance. </para>
         <para><emphasis role="underline">Methods</emphasis></para>
         <para>First, we will identify differences in the coverage of vocabulary specifications –
             unique identifiers, concepts, code groups, and coding systems – between what is covered
-            in VSAC value sets and what is intended to be covered in value sets according to Solor
+            in VSAC value sets and what is intended to be covered in value sets according to Komet
             to define global concepts in measures. After this, we will query clinical data at xxx to
-            determine the frequency of patients for whom the new Solor codes are used. Finally, we
+            determine the frequency of patients for whom the new Komet codes are used. Finally, we
             will implement the measures in a quality measure calculation registry and CDS
-            environment to estimate the performance differences before and after Solor’s mapping of
+            environment to estimate the performance differences before and after Komet’s mapping of
             non-covered value set codes. </para>
         <para><emphasis role="underline">Evaluation</emphasis></para>
         <para>We will compute the frequency of patients who use any of the codes contained in CQM
             value sets, stratified by measure. We will compare the change in frequencies before and
-            after Solor’s addition of equivalent codes. We will use Fisher’s exact test to compare
+            after Komet’s addition of equivalent codes. We will use Fisher’s exact test to compare
             aggregate-CQM performance rates between the original versions of measures and the
-            versions of measures after Solor value sets are implemented. We will use the Jaccard
+            versions of measures after Komet value sets are implemented. We will use the Jaccard
             similarity index to assess the similarity between the patients included in the original
             versions of the measures, and the versions including complete value set coverage. Number
             Needed to Treat and Number Needed to Harm Statistics can be used to calculate the
-            potential harms avoided, and harms causes based on pre and post Solor encoded data. </para>
+            potential harms avoided, and harms causes based on pre and post Komet encoded data. </para>
         <para><emphasis role="underline">Goals</emphasis></para>
         <orderedlist>
             <listitem>
-                <para>Assess VSAC value sets before and after the use of Solor.</para>
+                <para>Assess VSAC value sets before and after the use of Komet.</para>
             </listitem>
             <listitem>
-                <para>Understand the frequency of patients that are impacted by newly added Solor
+                <para>Understand the frequency of patients that are impacted by newly added Komet
                     value set concepts. </para>
             </listitem>
             <listitem>
@@ -451,18 +456,16 @@
             </listitem>
         </orderedlist>
         <para>
-            <emphasis role="underline">Example Results</emphasis><emphasis role="bold"><emphasis
-                    role="underline">s</emphasis></emphasis></para>
-        <para>
-            <inlinemediaobject>
-                <imageobject>
-                    <?oxy_comment_start author="timowilliams" timestamp="20190430T212054-0500" comment="Convert to SVG?
-"?>
-                    <imagedata fileref="../images/NNT.png" scale="50"/><?oxy_comment_end?>
-                </imageobject>
-            </inlinemediaobject>
+            <figure xml:id="NNT">
+                <title> Example Results</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="../images/NNT.png" align="center" scale ="50"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
         </para>
-        <para> Assuming that the Solor value set specifications of a measure represent “perfect”
+        <para> Assuming that the Komet value set specifications of a measure represent “perfect”
             inclusion, then every newly included patient can be thought of as needing the
             evidence-based therapy (such as aspirin for secondary prevention of heart attacks) in
             order to avoid bad outcomes. Under the same assumption, every dropped patient between
@@ -470,11 +473,11 @@
             the promoted therapy. For aspirin use, Number-Needed-to- Treat (NNT) statistics show
             that of patients with known cardiovascular risk who took aspirin, 1.3% were helped by
             preventing a non-fatal heart attack, and 0.25% were harmed by a major bleeding
-                event.<citation>Aspirin</citation>, <citation>antiplatelet</citation> In the Cholan
+                event <xref linkend="NNT"/>.<citation>Aspirin</citation>, <citation>antiplatelet</citation> In the Cholan
             et al study <citation>Cholan_shift</citation>, 121 (92%) of the patients dropped in the
-            Solor version of the Aspirin measure were also taking an anticoagulant medication, so
+            Komet version of the Aspirin measure were also taking an anticoagulant medication, so
             the Number-Needed-to-Harm (NNH) statistic for this subset of patients is likely much
-            higher, and for these clinics, 1 to 2 people may have been harmed if the pre-Solor
+            higher, and for these clinics, 1 to 2 people may have been harmed if the pre-Komet
             definition persisted, as Hansen et. al showed that patients with combinations of
             aspirin, warfarin, and clopidogrel are associated with up to a three-fold higher risk of
             bleeding for patients on dual therapy and triple therapy.<citation>Hansen</citation>
@@ -488,5 +491,4 @@
             avoiding events, and avoiding harms for patients.</para>
     </section>
 </section>
-
 

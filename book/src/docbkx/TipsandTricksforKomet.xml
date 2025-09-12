@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Tips &amp; Tricks for Komet</title>
+    <section>
+        <title>No Tasks Displayed in Dataset Selection Dialog</title>
+        <para>When a user attempts to access the Komet app while another instance is already active
+            with the same dataset, they will see the message: “No task Running.”</para>
+        <figure xml:id="Fig1">
+            <title>No Task Running</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/TT1.svg" scale="25" align="center"/> 
+                </imageobject>
+            </mediaobject>
+            <para><emphasis role="bold">Resolution </emphasis>- Please ensure that all instances of
+                the Komet app (both web and desktop versions) are closed before attempting to open
+                the application again.</para>
+        </figure>
+        
+    </section>
+    <section>
+        <title>When user tries to add new stamp version for concept, the data will revert to
+            previous values after submitting</title>
+        <para><emphasis role="bold">Resolution: </emphasis>User needs to change the view coordinates
+            path to reflect the add new Stamp version changes to Concept.</para>
+        <para> Steps to create:</para>
+        <itemizedlist>
+            <listitem>
+                <para>Launch Komet and journal and access a concept.</para>
+            </listitem>
+            <listitem>
+                <para>If user wish to change the path for stamps from sandbox path to Master
+                    path.</para>
+            </listitem>
+            <listitem>
+                <para>Click on the parent view coordinate, and update the path to Master path</para>
+                <figure xml:id="Fig2">
+                    <title>Update to Master Path</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/TT2.svg" scale="25" align="center"/> 
+                        </imageobject>
+                    </mediaobject>
+                    <para>Now user can update the path from Sandbox path to Master path.</para>
+                </figure>
+            </listitem>
+        </itemizedlist>
+    </section>
+    <section>
+        <title>Users may face issues with GitHub sync/pull operations if prerequisites are not
+            met</title>
+        <para><emphasis role="bold">Resolution: </emphasis>Refer to the prerequisites document
+            attached below before attempting GitHub synchronization or pull actions. <link
+                xlink:href="https://ikmdev.atlassian.net/wiki/spaces/IIA/pages/999489619/Tips+Tricks+for+Komet"
+            /></para>
+    </section>
+    <section>
+        <title>The Komet app may perform slowly or experience delays when handling large
+            datasets</title>
+        <para><emphasis role="bold">Resolution: </emphasis>Close unnecessary background browsers,
+            applications (e.g., Zoom, Teams meetings/calls) to free up system memory to improve app
+            performance.</para>
+    </section>
+    <section>
+        <title>Launching the Komet app without clearing preferences and Changeset folders may cause
+            issues due to uncommitted values</title>
+        <para><emphasis role="bold">Resolution: </emphasis>Before launching, navigate to the dataset
+            folder in Solar, delete the preferences, and change the set folder to prevent using old
+            values.</para>
+        <figure xml:id="Fig3">
+            <title>Delete Folders</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/TT3.svg" scale="25" align="center"/> 
+                </imageobject>
+            </mediaobject>
+        </figure>
+    </section>
+    <section>
+        <title>Issues may arise when creating or editing LIDR records without the appropriate
+            dataset</title>
+        <para><emphasis role="bold">Resolution: </emphasis>Ensure you are using the correct dataset
+            (e.g., the September Connectathon dataset) that contains all necessary data for LIDR
+            record operations.</para>
+        <figure xml:id="Fig4">
+            <title>Correct Dataset</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/TT4.svg" scale="25" align="center"/> 
+                </imageobject>
+            </mediaobject>
+        </figure>
+    </section>
+    <section>
+        <title>Creating a pattern without specifying the concept in the correct fields can cause
+            runtime exceptions</title>
+        <para><emphasis role="bold">Resolution: </emphasis>When defining a pattern, always add the
+            concept in the "Purpose/Meaning" fields, not Semantics or Patterns. </para>
+        <figure xml:id="Fig5">
+            <title>Purpose/Meaning Fields</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/TT5.svg" scale="25" align="center"/> 
+                </imageobject>
+            </mediaobject>
+        </figure>
+    </section>
+    <section>
+        <title>If a journal window is minimized and the user tries to reopen it from the landing
+            page, it may not reappear</title>
+        <para><emphasis role="bold">Resolution: </emphasis>Check the taskbar for the minimized
+            journal window and restore it from there.</para>
+        <figure xml:id="Fig6">
+            <title>Minimized Journal Window</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/TT6.svg" scale="25" align="center"/> 
+                </imageobject>
+            </mediaobject>
+        </figure>
+    </section>
+    <section>
+        <title>Users may need to verify which main build version of Komet they are using</title>
+        <para><emphasis role="bold">Resolution: </emphasis>Search for "Komet" in Windows,
+            right-click the application, select "Uninstall", and check the version listed under
+            "Installed Apps" in the settings.</para>
+        <figure xml:id="Fig7">
+            <title>Main Build Version Check</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/TT7.svg" scale="25" align="center"/> 
+                </imageobject>
+            </mediaobject>
+        </figure>
+    </section>
+    <section>
+        <title>Type-ahead search may not always yield expected results</title>
+        <para><emphasis role="bold">Resolution: </emphasis>For more accurate results, use the
+            NextGen search icon, which provides improved search accuracy and if needed user can drag
+            and drop the concept instead of typeahead. </para>
+        <figure xml:id="Fig8">
+            <title>Next Gen Search</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/TT8.svg" scale="25" align="center"/> 
+                </imageobject>
+            </mediaobject>
+        </figure>
+    </section>
+    <section>
+        <title>Concept and pattern - For FQN and Other names, always select English language for
+            Language field</title>
+        <para><emphasis role="bold">Resolution </emphasis>: If user selects other languages apart
+            from English, an exception might occur during creation process. </para>
+        <figure xml:id="Fig9">
+            <title>Language Choice</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/TT9.svg" scale="25" align="center"/> 
+                </imageobject>
+            </mediaobject>
+        </figure>
+    </section>
+    <section>
+        <title>Refresh issue - The new concept created and reasoned does not show immediately in the
+            Concept navigator</title>
+        <para><emphasis role="bold">Resolution </emphasis>: The user should close the journal after
+            running the reasoner, and open a new journal to see the new concept listed. </para>
+        <figure xml:id="Fig10">
+            <title>New Journal View</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/TT10.svg" scale="25" align="center"/> 
+                </imageobject>
+            </mediaobject>
+        </figure>
+    </section>
+</chapter>

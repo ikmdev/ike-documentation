@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.1">
+    <title>References</title>
+    <para>
+        <orderedlist>
+            <listitem>
+                <para>Elkin, P. Terminology and Terminological Systems. London: Springer; 2012.
+                </para>
+            </listitem>
+            <listitem>
+                <para>Bernstam EV, Warner JL, Krauss JC, Ambinder E, Rubinstein WS, Komatsoulis
+                    G, Miller RS, Chen JL. Quantitating and assessing interoperability between
+                    electronic health records. J Am Med Inform Assoc. 2022 Jan 7:ocab289. doi:
+                    10.1093/jamia/ocab289. Epub ahead of print. PMID: 35015861.</para>
+            </listitem>
+            <listitem>
+                <para>Wong A, Otles E, Donnelly JP, et al. External Validation of a Widely
+                    Implemented Proprietary Sepsis Prediction Model in Hospitalized Patients.
+                    JAMA Intern Med. 2021;181(8):1065–1070.
+                    doi:10.1001/jamainternmed.2021.2626</para>
+            </listitem>
+            <listitem>
+                <para>Bodenreider O, Cornet R, Vreeman DJ. Recent Developments in Clinical
+                    Terminologies - SNOMED CT, LOINC®, and RxNorm. Yearb Med Inform. 2018
+                    Aug;27(1):129-139. doi: 10.1055/s-0038-1667077. Epub 2018 Aug 29. PMID:
+                    30157516; PMCID: PMC6115234.</para>
+            </listitem>
+            <listitem>
+                <para>Logica Health, Health Level Seven International, Vocabulary Working Group.
+                    HL7 Standardized Terminology Knowledgebase, Release 1. [Internet]. Creative
+                    Commons Attribution 4.0 International (CC BY 4.0); 2021. Available from: HL7
+                    Standardized Terminology Knowledgebase, Release</para>
+            </listitem>
+            <listitem>
+                <para>Analysis Normal Form Informative Ballot. HL7 CIMI Work Group. Sept 2019.
+                    <link
+                        xlink:href="http://www.hl7.org/documentcenter/public/ballots/2019SEP/downloads/HL7_CIMI_LM_ANF_R1_I1_2019SEP.pdf"
+                        >http://www.hl7.org/documentcenter/public/ballots/2019SEP/downloads/HL7_CIMI_LM_ANF_R1_I1_2019SEP.pdf</link>.</para>
+            </listitem>
+            <listitem>
+                <para>Health Level Seven international [Internet]. HL7 Standards Product Brief -
+                    HL7 Version 2 Product Suite | HL7 International. [cited 2023Jan12].
+                    Available from: <link
+                        xlink:href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=185"
+                        >https://www.hl7.org/implement/standards/product_brief.cfm?product_id=185</link></para>
+            </listitem>
+            <listitem>
+                <para>How Doctors Feel about Electronic Health Records [presentation]. Stanford
+                    Medicine. National Physician Poll by The Harris Poll. [cited
+                    2023Jan13].</para>
+            </listitem>
+            <listitem>
+                <para>Cholan RA, Pappas G, Rehwoldt G, Sills AK, Korte ED, Appleton IK, Scott
+                    NM, Rubinstein WS, Brenner SA, Merrick R, Hadden WC, Campbell KE, Waters MS.
+                    Encoding laboratory testing data: case studies of the national
+                    implementation of HHS requirements and related standards in five
+                    laboratories. J Am Med Inform Assoc. 2022 May 25:ocac072. doi:
+                    10.1093/jamia/ocac072. Epub ahead of print. PMID: 35639494.</para>
+            </listitem>
+            <listitem>
+                <para>Stram M, Seheult J, Sinard J, et al. ; Members of the Informatics
+                    Committee, College of American Pathologists. A survey of LOINC® code
+                    selection practices among participants of the College of American
+                    Pathologists Coagulation (CGL) and Cardiac Markers (CRT) proficiency testing
+                    programs. Arch Pathol Lab Med 2020; 144 (5): 586–96.</para>
+            </listitem>
+            <listitem>
+                <para>Stram M, Gigliotti T, Hartman D, et al. Logical observation identifiers
+                    names and codes for laboratorians: potential solutions and challenges for
+                    interoperability. Arch Pathol Lab Med 2020; 144 (2): 229–39.</para>
+            </listitem>
+            <listitem>
+                <para>Lin M, Vreeman D, McDonald C, et al. A characterization of local LOINC®
+                    mapping for laboratory tests in three large institutions. Methods Inf Med
+                    2011; 50 (2): 105–14.</para>
+            </listitem>
+            <listitem>
+                <para>Bietenbeck A, Boeker M, Schulz S. NPU, LOINC, and SNOMED CT: A comparison
+                    of terminologies for laboratory results reveals individual advantages and a
+                    lack of possibilities to encode interpretive comments [Internet]. De
+                    Gruyter. De Gruyter; 2018 [cited 2022Oct19]. Available from:
+                    https://www.degruyter.com/document/doi/10.1515/labmed-2018-0103/html?lang=en
+                </para>
+            </listitem>
+            <listitem>
+                <para>Lin M, Vreeman D, McDonald C, et al. Auditing consistency and usefulness
+                    of LOINC® use among three large institutions—using version spaces for
+                    grouping LOINC® codes. J Biomed Inform 2012; 45 (4): 658–66.</para>
+            </listitem>
+            <listitem>
+                <para>Enhancing the drug ontology with semantically-rich representation of
+                    National Drug codes and RxNorm unique concept identifiers [Internet]. BMC
+                    Bioinformatics. Available from: <link
+                        xlink:href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-3192-8"
+                        >https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-3192-8</link></para>
+            </listitem>
+            <listitem>
+                <para>Department of Veterans Affairs [Internet]. 2022 [cited 2025 Jul 29]. The
+                    New Electronic Health Record’s Unknown Queue Caused Multiple Events of
+                    Patient Harm. Available from:
+                    https://www.vaoig.gov/reports/national-healthcare-review/new-electronic-health-records-unknown-queue-caused-multiple</para>
+            </listitem>
+            <listitem>
+                <para>Mitchell PH. Defining Patient Safety and Quality Care. In: Hughes RG,
+                    editor. Patient Safety and Quality: An Evidence-Based Handbook for Nurses
+                    [Internet]. Rockville (MD): Agency for Healthcare Research and Quality (US);
+                    2008 [cited 2025 Jul 29]. (Advances in Patient Safety). Available from:
+                    http://www.ncbi.nlm.nih.gov/books/NBK2681/</para>
+            </listitem>
+            <listitem>
+                <para>Plebani M. Diagnostic Errors and Laboratory Medicine - Causes and
+                    Strategies. EJIFCC. 2015 Jan;26(1):7–14.</para>
+            </listitem>
+            <listitem>
+                <para>Dekker S. Just Culture: Balancing Safety and Accountability. Farnham:
+                    Ashgate Publishing Ltd; 2012. 200 p.</para>
+            </listitem>
+            <listitem>
+                <para>Institute of Medicine (US) Committee on Quality of Health Care in America.
+                    To Err is Human: Building a Safer Health System [Internet]. Kohn LT,
+                    Corrigan JM, Donaldson MS, editors. Washington (DC): National Academies
+                    Press (US); 2000 [cited 2025 Jul 29]. Available from:
+                    http://www.ncbi.nlm.nih.gov/books/NBK225182/</para>
+            </listitem>
+            <listitem>
+                <para>Makary, M. A., &amp; Daniel, M. (2016). Medical error—the third leading
+                    cause of death in the US. BMJ, 353. Available from: <link
+                        xlink:href="https://pubmed.ncbi.nlm.nih.gov/27143499/"/></para>
+            </listitem>
+            <listitem>
+                <para>Crossing the Quality Chasm: A New Health System for the 21st Century
+                    [Internet]. Washington, D.C.: National Academies Press; 2001 [cited 2025 Jul
+                    29]. Available from: http://www.nap.edu/catalog/10027</para>
+            </listitem>
+            <listitem>
+                <para>Committee on Patient Safety and Health Information Technology, Institute
+                    of Medicine. Health IT and Patient Safety: Building Safer Systems for Better
+                    Care [Internet]. Washington (DC): National Academies Press (US); 2011 [cited
+                    2025 Jul 29]. Available from:
+                    http://www.ncbi.nlm.nih.gov/books/NBK189661/</para>
+            </listitem>
+            <listitem>
+                <para>Balogh EP, Miller BT, Ball JR, Care C on DE in H, Services B on HC,
+                    Medicine I of, et al. Preface. In: Improving Diagnosis in Health Care
+                    [Internet]. National Academies Press (US); 2015 [cited 2025 Jul 29].
+                    Available from: https://www.ncbi.nlm.nih.gov/books/NBK338585/</para>
+            </listitem>
+            <listitem>
+                <para>Duclos A, Frits ML, Iannaccone C, Lipsitz SR, Cooper Z, Weissman JS, et
+                    al. Safety of inpatient care in surgical settings: cohort study. BMJ. 2024
+                    Nov 13;387:e080480.</para>
+            </listitem>
+            <listitem>
+                <para>Chassin MR, Loeb JM. High-reliability health care: getting there from
+                    here. Milbank Q. 2013 Sep;91(3):459–90.</para>
+            </listitem>
+            <listitem>
+                <para>Weick KE, Sutcliffe KM. Managing the unexpected: Assuring high performance
+                    in an age of complexity. San Francisco, CA, US: Jossey-Bass; 2001. xvi, 200
+                    p. (Managing the unexpected: Assuring high performance in an age of
+                    complexity).</para>
+            </listitem>
+            <listitem>
+                <para>Leveson N, Dulac N, Marais K, Carroll J. Moving Beyond Normal Accidents
+                    and High Reliability Organizations: A Systems Approach to Safety in Complex
+                    Systems. Organization Studies [Internet]. 2009 [cited 2025 Jul
+                    29];30(2–3):227–49. Available from:
+                    https://journals.sagepub.com/doi/10.1177/0170840608101478</para>
+            </listitem>
+            <listitem>
+                <para>Leveson NG. Engineering a Safer World: Systems Thinking Applied to Safety
+                    [Internet]. The MIT Press; 2012 [cited 2025 Jul 29]. Available from:
+                    https://direct.mit.edu/books/book/2908/Engineering-a-Safer-WorldSystems-Thinking-Applied</para>
+            </listitem>
+            <listitem>
+                <para>Leveson NG, Stephanopoulos G. A system-theoretic, control-inspired view
+                    and approach to process safety. Prof Stephanopoulos via Erja Kajosalo
+                    [Internet]. 2013 Nov [cited 2025 Jul 29]; Available from:
+                    https://dspace.mit.edu/handle/1721.1/92371</para>
+            </listitem>
+            <listitem>
+                <para>MIT Press [Internet]. [cited 2025 Jul 29]. An Introduction to System
+                    Safety Engineering. Available from:
+                    https://mitpress.mit.edu/9780262546881/an-introduction-to-system-safety-engineering/</para>
+            </listitem>
+            <listitem>
+                <para>Li Y, Guldenmund FW. Safety management systems: A broad overview of the
+                    literature. Safety Science [Internet]. 2018 [cited 2025 Jul 29];103:94–123.
+                    Available from:
+                    https://linkinghub.elsevier.com/retrieve/pii/S0925753517309463</para>
+            </listitem>
+            <listitem>
+                <para>Kristiansen TB, Kristensen K, Uffelmann J, Brandslund I. Erroneous data:
+                    The Achilles’ heel of AI and personalized medicine. Front Digit Health
+                    [Internet]. 2022 Jul 22 [cited 2025 Jul 29];4:862095. Available from:
+                    https://www.frontiersin.org/articles/10.3389/fdgth.2022.862095/full</para>
+            </listitem>
+            <listitem>
+                <para>National Trends in Hospital and Physician Adoption of Electronic Health
+                    Records | HealthIT.gov [Internet]. [cited 2025 Jul 29]. Available from:
+                    https://www.healthit.gov/data/quickstats/national-trends-hospital-and-physician-adoption-electronic-health-records</para>
+            </listitem>
+            <listitem>
+                <para>Alotaibi YK, Federico F. The impact of health information technology on
+                    patient safety. SMJ [Internet]. 2017 [cited 2025 Jul 29];38(12):1173–80.
+                    Available from:
+                    https://smj.org.sa/lookup/doi/10.15537/smj.2017.12.20631</para>
+            </listitem>
+            <listitem>
+                <para>Singh H, Sittig DF. Measuring and improving patient safety through health
+                    information technology: The Health IT Safety Framework. BMJ Qual Saf. 2016
+                    Apr;25(4):226–32.</para>
+            </listitem>
+            <listitem>
+                <para>Alder S. July 26, 2024: CrowdStrike issues update on outage cause;
+                    healthcare hit hardest with estimated $1.94B in losses [Internet]. HIPAA
+                    Journal. 2024 Jul [cited 2024 Jul 26]. Available from:
+                    https://www.hipaajournal.com/crowdstrike-issues-update-on-outage-cause-healthcare-hit-hardest-with-estimated-1-94b-in-losses/</para>
+            </listitem>
+            <listitem>
+                <para>Mijic, M., &amp; Tripathi, M. Accelerating the exchange of health and
+                    human services data to improve outcomes and disrupt inequities [Internet].
+                    Health Affairs Forefront. 2024 Jun 25 [cited 2024 Jul 26]. Available from:
+                    https://www.healthaffairs.org/content/forefront/accelerating-exchange-health-and-human-services-data-improve-outcomes-and-disrupt</para>
+            </listitem>
+            <listitem>
+                <para>Lehne M, Sass J, Essenwanger A, Schepers J, Thun S. Why digital medicine
+                    depends on interoperability. npj Digit Med [Internet]. 2019 Aug 20 [cited
+                    2025 Jul 29];2(1):1–5. Available from:
+                    https://www.nature.com/articles/s41746-019-0158-1</para>
+            </listitem>
+            <listitem>
+                <para>Wilkinson MD, Dumontier M, Aalbersberg IJJ, Appleton G, Axton M, Baak A,
+                    et al. The FAIR Guiding Principles for scientific data management and
+                    stewardship. Sci Data. 2016 Mar 15;3:160018.</para>
+            </listitem>
+            <listitem>
+                <para>Commissioner O of the. FDA. 2025 [cited 2025 Aug 6]. Real-World Evidence.
+                    Available from:
+                    https://www.fda.gov/science-research/science-and-research-special-topics/real-world-evidence</para>
+            </listitem>
+            <listitem>
+                <para>Commissioner O of the. FDA. 2025 [cited 2025 Aug 6]. 21st Century Cures Act.
+                    Available from:
+                    https://www.fda.gov/regulatory-information/selected-amendments-fdc-act/21st-century-cures-act</para>
+            </listitem>
+            <listitem>
+                <para>Beaulieu‐Jones BK, Finlayson SG, Yuan W, Altman RB, Kohane IS, Prasad V, et
+                    al. Examining the Use of Real‐World Evidence in the Regulatory Process. Clin
+                    Pharma and Therapeutics [Internet]. 2020 [cited 2025 Aug 6];107(4):843–52.
+                    Available from:
+                    https://ascpt.onlinelibrary.wiley.com/doi/10.1002/cpt.1658</para>
+            </listitem>
+            <listitem>
+                <para>Abdalhamid B, Bilder CR, McCutchen EL, Hinrichs SH, Koepsell SA, Iwen PC.
+                    Assessment of Specimen Pooling to Conserve SARS CoV-2 Testing Resources.
+                    American Journal of Clinical Pathology [Internet]. 2020 May 5 [cited 2025 Aug
+                    6];153(6):715–8. Available from:
+                    https://academic.oup.com/ajcp/article/153/6/715/5822023</para>
+            </listitem>
+            <listitem>
+                <para>Stram M, Gigliotti T, Hartman D, Pitkus A, Huff SM, Riben M, et al. Logical
+                    Observation Identifiers Names and Codes for Laboratorians. Archives of Pathology
+                    &amp; Laboratory Medicine [Internet]. 2020 Feb 1 [cited 2025 Aug
+                    6];144(2):229–39. Available from:
+                    http://meridian.allenpress.com/aplm/article/144/2/229/433652/Logical-Observation-Identifiers-Names-and-Codes</para>
+            </listitem>
+            <listitem>
+                <para>National Center for Advancing Translational Science. U.S. Department of Health
+                    and Human Services. NCATS 2022. [Internet]. National COVID Cohort Collaborative.
+                    Available from: https://ncats.nih.gov/</para>
+            </listitem>
+            <listitem>
+                <para>Patient-Centered Outcomes Research Institute [Internet]. 2022 [cited 2025 Aug
+                    6]. Highlights of PCORI-Funded Research Results. Available from:
+                    https://www.pcori.org/</para>
+            </listitem>
+            <listitem>
+                <para>Forrest CB, McTigue KM, Hernandez AF, Cohen LW, Cruz H, Haynes K, et al.
+                    PCORnet® 2020: current state, accomplishments, and future directions. J Clin
+                    Epidemiol [Internet]. 2021 Jan [cited 2025 Aug 6];129:60–7. Available from:
+                    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7521354/</para>
+            </listitem>
+            <listitem>
+                <para>Timbie J, Rudin R, Towe V, Chen E, Hunter L, Case S. National Patient-Centered
+                    Clinical Research Network (PCORnet) Phase I: Final Evaluation Report [Internet].
+                    RAND Corporation; 2015 [cited 2022 Dec 20]. Available from:
+                    https://www.jstor.org/stable/10.7249/j.ctt19rmdhd.10?seq=1</para>
+            </listitem>
+            <listitem>
+                <para>Data [Internet]. PCORnet®. [cited 2025 Aug 6]. Available from:
+                    https://pcornet.org/data/</para>
+            </listitem>
+            <listitem>
+                <para>PCORnet® [Internet]. [cited 2025 Aug 6]. Home. Available from:
+                    https://pcornet.org/</para>
+            </listitem>
+            <listitem>
+                <para>Who We Are – OHDSI [Internet]. [cited 2025 Aug 6]. Available from:
+                    https://www.ohdsi.org/who-we-are/</para>
+            </listitem>
+            <listitem>
+                <para>OHDSI – Observational Health Data Sciences and Informatics [Internet]. [cited
+                    2025 Aug 6]. Available from: https://www.ohdsi.org/</para>
+            </listitem>
+            <listitem>
+                <para>welcome to eMerge [Internet]. [cited 2025 Aug 6]. Available from:
+                    https://emerge-network.org/about-emerge/</para>
+            </listitem>
+            <listitem>
+                <para>Electronic Medical Records and Genomics (eMERGE) Network [Internet]. [cited
+                    2025 Aug 6]. Available from:
+                    https://www.genome.gov/Funded-Programs-Projects/Electronic-Medical-Records-and-Genomics-Network-eMERGE</para>
+            </listitem>
+            <listitem>
+                <para>Gottesman O, Kuivaniemi H, Tromp G, Faucett WA, Li R, Manolio TA, et al. The
+                    Electronic Medical Records and Genomics (eMERGE) Network: past, present, and
+                    future. Genetics in Medicine [Internet]. 2013 [cited 2025 Aug 6];15(10):761–71.
+                    Available from:
+                    https://linkinghub.elsevier.com/retrieve/pii/S1098360021027143</para>
+            </listitem>
+            <listitem>
+                <para>the eMERGE Team, McCarty CA, Chisholm RL, Chute CG, Kullo IJ, Jarvik GP, et
+                    al. The eMERGE Network: A consortium of biorepositories linked to electronic
+                    medical records data for conducting genomic studies. BMC Med Genomics
+                    [Internet]. 2011 [cited 2025 Aug 6];4(1):13. Available from:
+                    http://bmcmedgenomics.biomedcentral.com/articles/10.1186/1755-8794-4-13</para>
+            </listitem>
+            <listitem>
+                <para>About the Food and Drug Administration (FDA) Sentinel Initiative | Sentinel
+                    Initiative [Internet]. [cited 2025 Aug 6]. Available from:
+                    https://www.sentinelinitiative.org/about</para>
+            </listitem>
+            <listitem>
+                <para>Brown JS, Maro JC, Nguyen M, Ball R. Using and improving distributed data
+                    networks to generate actionable evidence: the case of real-world outcomes in the
+                    Food and Drug Administration’s Sentinel system. Journal of the American Medical
+                    Informatics Association [Internet]. 2020 May 1 [cited 2025 Aug 6];27(5):793–7.
+                    Available from: https://academic.oup.com/jamia/article/27/5/793/5819225</para>
+            </listitem>
+            <listitem>
+                <para>Sentinel Initiative [Internet]. 2022. Drug Studies. Available from:
+                    https://www.sentinelinitiative.org/studies/drugs</para>
+            </listitem>
+            <listitem>
+                <para>World of Drug Safety Module [Internet]. 2022. World of Drug Safety Unit List:
+                    Overview Of Drug Safety. Available from:
+                    https://www.accessdata.fda.gov/scripts/cderworld/index.cfm?action=drugsafety%3Amain&amp;unit=1&amp;lesson=1&amp;topic=8&amp;page=</para>
+            </listitem>
+            <listitem>
+                <para>Congressional Research Service [Internet]. 2009. American Recovery and
+                    Reinvestment Act of 2009 (P.L. 111-5): Summary and Legislative History.
+                    Available from:
+                    https://www.congress.gov/crs_external_products/R/PDF/R40537/R40537.6.pdf</para>
+            </listitem>
+            <listitem>
+                <para>National Uniform Billing Committee (UBC) [Internet]. [cited 2022 Dec 1].
+                    National Uniform Billing Committee Official Data Specifications Manual.
+                    Available from: https://www.nubc.org/subscription-information</para>
+            </listitem>
+            <listitem>
+                <para>Professional paper claim form (CMS-1500) | CMS [Internet]. [cited 2025 Aug 6].
+                    Available from:
+                    https://www.cms.gov/Medicare/Billing/ElectronicBillingEDITrans/1500</para>
+            </listitem>
+        </orderedlist>
+    </para>
+</chapter>
