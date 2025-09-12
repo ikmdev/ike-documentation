@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Lucene Search Functions and Tips</title>
+    <section>
+        <title>Lucene Search User Guide for the Pizza Ontology</title>
+        <para>This guide is designed to help users effectively search and explore data within the
+            Pizza Ontology using Lucene query syntax. The Pizza Ontology is a structured vocabulary
+            for describing pizzas, their ingredients, and related concepts. Whether you’re searching
+            for specific pizza types, toppings, or dietary restrictions, this guide will help you
+            get the most out of your search experience.</para>
+        <orderedlist>
+            <listitem>
+                <para><emphasis role="bold">Basic Searches</emphasis></para>
+                <itemizedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Single Term:</emphasis></para>
+                        <para>Enter a single word to find all entities containing that word.</para>
+                        <para><emphasis role="italic">Example:</emphasis></para>
+                        <para><code>Margherita</code></para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Phrase Search:</emphasis></para>
+                        <para>Use double quotes to search for an exact phrase.</para>
+                        <para><emphasis role="italic">Example:</emphasis></para>
+                        <para><code>"Four Cheese"</code></para>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Combining Terms</emphasis></para>
+                <itemizedlist>
+                    <listitem>
+                        <para><emphasis role="bold">AND (Both Terms Required):</emphasis></para>
+                        <para>Use <code>AND</code> or <code>+</code> to require both terms.</para>
+                        <para><emphasis role="italic">Examples:</emphasis></para>
+                        <para><code>Cheese AND Tomato</code></para>
+                        <para><code>+Cheese +Tomato</code></para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">OR (Either Term):</emphasis></para>
+                        <para>Use <code>OR</code> to find entities containing either term.</para>
+                        <para><emphasis role="italic">Example:</emphasis></para>
+                        <para><code>Olive OR Mushroom</code></para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">NOT (Exclude Term):</emphasis></para>
+                        <para>Use <code>NOT</code> or <code>-</code> to exclude entities containing
+                            a term.</para>
+                        <para><emphasis role="italic">Examples:</emphasis></para>
+                        <para><code>Pizza NOT Meat</code></para>
+                        <para><code>Pizza -Meat</code></para>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Field-Specific Searches</emphasis></para>
+                <para>If the Pizza Ontology supports fielded data (such as <code>topping</code>,
+                        <code>base</code>, <code>dietaryRestriction</code>), you can search within
+                    specific fields.</para>
+                <para><emphasis role="italic">Examples:</emphasis></para>
+                <para><code>topping:Cheese</code></para>
+                <para><code>base:ThinCrust</code></para>
+                <para><code>dietaryRestriction:Vegetarian</code></para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Wildcards and Fuzzy Searches</emphasis></para>
+                <itemizedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Wildcard (Partial Matches)</emphasis></para>
+                        <para>Use <code>*</code> for multiple characters, <code>?</code> for a
+                            single character.</para>
+                        <para><emphasis role="italic">Examples:</emphasis></para>
+                        <para><code>Chee*</code> (matches "Cheese", "Cheddar", etc.)</para>
+                        <para><code>Toma?o</code> (matches "Tomato", "Tomatoe")</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Fuzzy Search (Similar Words)</emphasis></para>
+                        <para>Add <code>~</code> to find similar terms.</para>
+                        <para><emphasis role="italic">Example:</emphasis></para>
+                        <para><code>Mozzarela~</code> (matches "Mozzarella", "Mozarella",
+                            etc.)</para>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Proximity Searches</emphasis></para>
+                <para>Find words within a certain number of words from each other.</para>
+                <para><emphasis role="italic">Example:</emphasis></para>
+                <para><code>"Cheese Tomato"~2</code>
+                </para>
+                <para><emphasis role="italic">Finds "Cheese" and "Tomato" within 2 words of each
+                        other.</emphasis></para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Range Searches (Could be something that becomes relevant
+                        with new data types, currently no data to search)</emphasis></para>
+                <para>If the ontology includes numeric or date fields (e.g., calories,
+                    creationDate), you can search within ranges.</para>
+                <itemizedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Inclusive Range:</emphasis></para>
+                        <para><code>calories:[200 to 400]</code>
+                        </para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Exclusive Range:</emphasis></para>
+                        <para><code>calories:{200 to 400}</code>
+                        </para>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Boosting Terms</emphasis></para>
+                <para>Increase the importance of a term using <code>^</code>.</para>
+                <para><emphasis role="italic">Example:</emphasis></para>
+                <para><code>Cheese^2 Tomato</code>
+                </para>
+                <para><emphasis role="italic">"Cheese" is considered twice as important as "Tomato"
+                        in ranking results.</emphasis></para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Grouping and Escaping</emphasis></para>
+                <itemizedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Grouping:</emphasis></para>
+                        <para>Use parentheses to group terms or clauses.</para>
+                        <para><emphasis role="italic">Example:</emphasis></para>
+                        <para><code>(Cheese OR Tomato) AND Pizza</code></para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Escaping Special Characters:</emphasis></para>
+                        <para>If your search includes special characters, prefix them with a
+                            backslash (<code>\</code>).</para>
+                        <para><emphasis role="italic">Example:</emphasis></para>
+                        <para><code>name:Four\ Cheese\ (Deluxe)</code></para>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Common Search Examples in the Pizza
+                    Ontology</emphasis></para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Find all vegetarian pizzas:</para>
+                        <para><code>dietaryRestriction:Vegetarian</code></para>
+                    </listitem>
+                    <listitem>
+                        <para>Find pizzas with both cheese and tomato toppings:</para>
+                        <para><code>topping:Cheese AND topping:Tomato</code></para>
+                    </listitem>
+                    <listitem>
+                        <para>Find pizzas without meat:</para>
+                        <para><code>Pizza -topping:Meat</code></para>
+                    </listitem>
+                    <listitem>
+                        <para>Find thin crust pizzas with mushrooms:</para>
+                        <para><code>base:ThinCrust AND topping:Mushroom</code></para>
+                    </listitem>
+                    <listitem>
+                        <para>Find pizzas with calorie count between 200 and 400:</para>
+                        <para><code>calories:[200 TO 400]</code></para>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Best Practices</emphasis></para>
+                <itemizedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Be Specific:</emphasis> Use fielded searches and
+                            phrases to narrow your results.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Test and Refine:</emphasis> Try different
+                            combinations to get the best results.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Avoid Overusing Wildcards:</emphasis> They can
+                            slow down searches on large datasets.</para>
+                        <para>If you need more advanced examples or have questions about a specific search scenario in the Pizza Ontology, let me know!</para>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+        </orderedlist>
+    </section>
+</chapter>
