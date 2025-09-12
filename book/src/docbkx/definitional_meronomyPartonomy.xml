@@ -2,15 +2,14 @@
 <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0"
     xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Meronomy / Partonomy</title>
+    <title>Meronomy &amp; Partonomy</title>
     <para>All examples in this section are as of the April 2017 SNOMED CT US Edition Release. Many
         of the examples below have since been corrected in subsequent releases.</para>
-    <section>
-        <title>Introduction</title>
-        <para>Meronomy /
-            <?oxy_comment_start author="steph" timestamp="20190313T130843-0600" comment="Above it&apos;s referred to as Meronomy/Partonomy.  I think all references to it should be consistent.  Which is correct?" flag="done"?>Partonomy<?oxy_comment_end?>
-            is a type of hierarchy that deals with part-whole relationships. <emphasis role="italic"
-                >Part-of</emphasis> Relationships are:</para>
+    <para>Meronomy /
+        <?oxy_comment_start author="steph" timestamp="20190313T130843-0600" comment="Above it&apos;s referred to as Meronomy/Partonomy.  I think all references to it should be consistent.  Which is correct?" flag="done"?>Partonomy<?oxy_comment_end?>
+        is a type of hierarchy that deals with part-whole relationships. <emphasis role="italic"
+            >Part-of</emphasis> Relationships are:</para>
+  
         <para>
             <itemizedlist>
                 <listitem>
@@ -50,20 +49,6 @@
                 >Part-of</emphasis> relationships in the Body Structure, Pharmaceutical/Biologic
             Product, and Laboratory Procedure (LOINC) hierarchies, and developing and testing a
             proposed model where appropriate.</para>
-    </section>
-    <section>
-        <title>Tooling</title>
-        <para>termMed’s termSpace authoring tool was used to evaluate the proposed model for the
-            three hierarchies. termSpace currently supports Object Properties with reflexive and
-            transitive properties. For the Pharmaceutical/Biological Product hierarchy, Nested
-            Expressions were used to represent the powders used for injection solutions, as they do
-            not currently exist as pre-coordinated concepts. termSpace can represent LOINC concepts
-            to support the partonomy modeling of laboratory concepts; however, these concepts will
-            need to be transformed into a SNOMED RF2 format in order to load them into termSpace.
-            However, the LOINC model was unable to be tested due to the complexities of adding LOINC
-            to termSpace. Collaboration will continue with termMed to represent LOINC in termSpace
-            to potentially test the model in future iterations.</para>
-    </section>
     <section>
         <title>Body Structure Concepts</title>
         <para>There are currently 42,596 <emphasis role="italic">Part-of</emphasis> Relationships
@@ -110,10 +95,10 @@
         </section>
     </section>
     <section>
-        <title>Pharmaceutical / Substance Concepts</title>
+        <title>Pharmaceutical &amp; Substance Concepts</title>
         <para>At this time, SNOMED project groups have not held a discussion around partonomy for
-            Pharmaceutical/Substances. The most promising area where partonomy would apply within
-            the Pharmaceutical Product hierarchy are products that are made up of two or more
+            Pharmaceutical &amp; Substances. The most promising area where partonomy would apply
+            within the Pharmaceutical Product hierarchy are products that are made up of two or more
             products, for example a package that contains two separate tablets. For example,
             Clarithromycin 500mg tablet and lansoprazole 30mg capsule would be considered parts of a
             concept like 317329000 |Clarithromycin 500mg tablet and lansoprazole 30mg capsule and
@@ -122,7 +107,7 @@
             of products that have different active ingredients or can be products that have the same
             active ingredient, but different strengths for each product in the package.</para>
         <section>
-            <title>Proposed Pharmaceutical / Substance Model</title>
+            <title>Proposed Pharmaceutical &amp; Substance Model</title>
             <para>Add a new attribute |Has packaging component (attribute)| that will
                 take as a value another concept from the product hierarchy. This will be a <emphasis
                     role="italic">Part-of</emphasis> attribute and will need to be transitive and

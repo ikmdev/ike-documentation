@@ -49,9 +49,6 @@
             on-going international collaborations, challenges, and potential opportunities for
             further international collaboration to improve the quality of healthcare around the
             world.</para>
-    </section>
-    <section>
-        <title>Introduction </title>
         <para>Numerous international organizations have been established to collaborate on global
             health initiatives and to expand upon certain areas of focus, like public health. [78]
             This chapter will introduce the overall landscape of international healthcare
@@ -96,8 +93,8 @@
             century. [87] </para>
     </section>
     <section>
-        <title>International Organizations Collaborating on Healthcare Information Technology
-            (IT)</title>
+        <title>International Organizations Collaborating on Healthcare Information
+            Technology</title>
         <para>The global trend of adopting computerized medical record systems was spearheaded by
             digital movements in the United States. In 2003, the Institute of Medicine, a division
             of the National Academies of Sciences, Engineering, and Medicine chose to coin the term,
@@ -128,7 +125,7 @@
             is not exhaustive and there are many other international organizations that contribute
             to standardizing clinical terminology or language in healthcare.</para>
         <section>
-            <title>Digital Imaging and Communication in Medicine (DICOM)</title>
+            <title>Digital Imaging and Communication in Medicine</title>
             <para>Digital Imaging and Communications in Medicine (DICOM) provides the international
                 standard for medical images and related information, defining formats for medical
                 images that “can be exchanged with the data and quality necessary for clinical use”.
@@ -161,16 +158,16 @@
                 the complexities of modern healthcare workflows.</para>
         </section>
         <section>
-            <title>Global Medical Device Nomenclature Agency (GMDN)</title>
+            <title>Global Medical Device Nomenclature Agency</title>
             <para>When a medical device is developed, it needs to go through a number of regulatory
-                approval steps. GMDN provides a standardized common language for all medical
-                technology and collaborates with medical device regulators, manufacturers, and other
-                relevant healthcare stakeholders to incorporate and develop established standards.
-                Established in 1991 as the Global Harmonization Task Force that took over its
-                precursor organization called the International Medical Device Regulatory Forum
-                (IMDRF), GMDN helps accelerate and standardize medical device regulation globally
-                with more than 70 national medical device regulators across more than 145 member
-                countries worldwide. [93-94] </para>
+                approval steps. Global Medical Device Nomenclature Agency (GMDN) provides a
+                standardized common language for all medical technology and collaborates with
+                medical device regulators, manufacturers, and other relevant healthcare stakeholders
+                to incorporate and develop established standards. Established in 1991 as the Global
+                Harmonization Task Force that took over its precursor organization called the
+                International Medical Device Regulatory Forum (IMDRF), GMDN helps accelerate and
+                standardize medical device regulation globally with more than 70 national medical
+                device regulators across more than 145 member countries worldwide. [93-94] </para>
         </section>
         <section>
             <title>HL7</title>
@@ -182,7 +179,7 @@
                 both private and public spheres across the US and around the world. </para>
         </section>
         <section>
-            <title>Integrating the Healthcare Enterprise (IHE)</title>
+            <title>Integrating the Healthcare Enterprise</title>
             <para>Integrating the Healthcare Enterprise (IHE) is an international organization with
                 the vision of “enabling seamless and secure access to health information that is
                 usable whenever and wherever needed”. IHE national deployment committees are
@@ -208,7 +205,7 @@
         </section>
         <section>
             <title>International Council for Harmonization of Technical Requirements for
-                Pharmaceuticals for Human Use (ICH)</title>
+                Pharmaceuticals for Human Use</title>
             <para>International Council for Harmonization of Technical Requirements for
                 Pharmaceuticals for Human Use (ICH) owns a Medical Dictionary for Regulatory
                 Activities (MedDRA) in the United Kingdom and supports the approval of regulatory
@@ -248,12 +245,12 @@
         <para>Below is a list of common terminology standards used in health information and
             technology.</para>
         <section>
-            <title>Current Procedural Terminology (CPT®) </title>
+            <title>Current Procedural Terminology </title>
             <para>Current Procedural Terminology (CPT®) is a code set by the American Medical
                 Association to bill outpatient and office procedures. [101] </para>
         </section>
         <section>
-            <title>Healthcare Common Procedure Coding System (HCPCS)</title>
+            <title>Healthcare Common Procedure Coding System</title>
             <para>The Centers for Medicare and Medicaid Services (CMS) generates the Healthcare
                 Common Procedure Coding System (HCPCS), a collection of standardized codes that
                 represent medical procedures, supplies, products and services. Health insurance
@@ -262,7 +259,7 @@
                 includes the Current Dental Terminology (HDT) codes. [102] </para>
         </section>
         <section>
-            <title>Tenth Revision International Classification of Disease (ICD-10)</title>
+            <title>Tenth Revision International Classification of Disease</title>
             <para>The tenth revision of the International Classification of Disease (ICD-10) is
                 designed primarily for validating mortality statistics. ICD-10 promotes
                 international comparability for collecting, processing, classifying and presenting
@@ -295,7 +292,7 @@
                 interoperability to enhance its current documentation technology. [105] </para>
         </section>
         <section>
-            <title>Radiology Lexicon (RadLex)</title>
+            <title>Radiology Lexicon</title>
             <para>Radiology Lexicon (RadLex) is a radiology terminology system by the Radiologic
                 Society of North America (RSNA). It is a reservoir for a unified language of
                 radiology terms for standardized indexing and retrieval of radiologic information
@@ -321,7 +318,7 @@
                 systems installed in medical settings. [90] </para>
         </section>
         <section>
-            <title>United Code for Units of Measure (UCUM)</title>
+            <title>United Code for Units of Measure</title>
             <para>The United Code for Units of Measure (UCUM) is a code system intended to include
                 all units of measures being contemporarily used in international science,
                 engineering, and business. [90] </para>
@@ -340,8 +337,7 @@
             Covid-19 pandemic demonstrated the need for interoperable and lossless data
             transfer.</para>
         <section>
-            <title>eHealth Exchange to improve the exchange of patient data between agencies and
-                medical entities</title>
+            <title>eHealth Exchange </title>
             <para>eHealth Exchange is an interoperability system utilizing a “one
                 connection-to-many” model, and creating the principal network that connects federal
                 agencies and non-federal organizations, including over 75% of U.S. hospitals, health
@@ -356,8 +352,7 @@
                 [106] </para>
         </section>
         <section>
-            <title>Working with a better early warning system for emerging infectious
-                diseases</title>
+            <title>Early Warning System for Emerging Infectious Diseases</title>
             <para>The Covid-19 pandemic also provided an opportunity to catalyze an existing
                 data-sharing methodology. WHO’s Epidemic Intelligence from Open Sources (EIOS) was
                 established in 2017 with the purpose of building a global community of public health
@@ -369,7 +364,7 @@
                 infectious diseases—including zoonotic diseases—worldwide. [107] </para>
         </section>
         <section>
-            <title>Challenges in global collaboration</title>
+            <title>Challenges in Global Collaboration</title>
             <para>Many international organizations discuss the importance of interoperability and
                 the dire need for connected and translatable systems to exchange health data,
                 scripts, and imaging in a standardized format. In this section, we discuss the

@@ -3,9 +3,8 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
     version="5.1">
-    <title>Return On Investment (ROI)</title>
-    <section>
-        <title>ROI Summary</title>
+    <title>Return On Investment</title>
+   
         <para>The adoption of IKM within healthcare organizations presents a compelling value
             proposition, aimed at addressing critical challenges of data accuracy, interoperability,
             quality management, and patient safety. [129-131] IKM's foundational premise is to
@@ -26,7 +25,6 @@
             pathway to not only meet the current demands of healthcare data management but to also
             position their organizations at the cutting edge of healthcare innovation and patient
             care excellence.</para>
-    </section>
     <section>
         <title>Introduction to ROI</title>
         <para>The healthcare data management landscape is currently confronted with significant
@@ -132,9 +130,8 @@
                 decisions. One controlled study found that when knowledge management was integrated
                 into a medication order-entry system, serious errors were reduced by 55%.
                 [141]</para>
-        </section>
-        <section>
-            <title>IKM in Healthcare ROI Summary</title>
+       
+        
             <para>In conclusion, the implementation of IKM within healthcare organizations promises
                 a multi-faceted ROI, enhancing interoperability, decision-making capabilities,
                 operational efficiency, and compliance. Together, these benefits enhance the
@@ -145,8 +142,7 @@
                 prepare end-users and stakeholders for the use of IKM. Change management efforts
                 that are similar to IKM can provide critical lessons learned and best practices that
                 can improve the implementation and adoption of IKM, while simultaneously minimizing
-                risks. [143]</para>
-        </section>
+                risks. [143]</para> </section>
     </section>
     <section>
         <title>Value Propositions for Leading Healthcare Organizations</title>

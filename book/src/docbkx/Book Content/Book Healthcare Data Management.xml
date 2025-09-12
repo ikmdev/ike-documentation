@@ -4,8 +4,7 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
     version="5.1">
     <title>Healthcare Data Management</title>
-    <sect1>
-        <title>Introduction to Healthcare Data Management</title>
+    
         <para>The healthcare data management landscape is rapidly evolving, driven by advances in
             technology and the increasing demand for comprehensive, interoperable healthcare
             systems. Data management in healthcare encompasses the practices, processes, and
@@ -28,7 +27,6 @@
             significantly enhance the interoperability of healthcare systems, ensuring that data is
             not only accessible and usable across different platforms and institutions, but also
             consistent and reliable. [15]</para>
-    </sect1>
     <sect1>
         <title>Mental Health Data Management</title>
         <para>Mental health data management is a critical aspect of healthcare that involves the
@@ -79,7 +77,7 @@
             standards.</para>
     </sect1>
     <sect1>
-        <title>Population Health Management (PHM)</title>
+        <title>Population Health Management</title>
         <para>Population health management (PHM) is an approach aimed at improving the health
             outcomes of a specifically defined group. PHM relies heavily on the aggregation,
             analysis, and application of health data to drive decision-making and resource

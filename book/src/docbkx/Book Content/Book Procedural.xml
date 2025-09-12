@@ -3,21 +3,21 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-      <title>Procedural Knowledge Representation</title>
-    <para>Generally, Procedural Knowledge can pertain to Clinical Decision Support (CDS), such as
+      <title>Imperative Knowledge Representation</title>
+    <para>Generally, Imperative Knowledge can pertain to Clinical Decision Support (CDS), such as
         standard ways of performing a procedure, treatment protocols for diseases, and standard
         evidence-based Order Sets.</para>
-    <para>Applied Procedural Knowledge can enable the use of CDS, Clinical Pathways, and Knowledge
+    <para>Applied Imperative Knowledge can enable the use of CDS, Clinical Pathways, and Knowledge
         Artifacts (KNARTs), that standardize patient documentation, quality improvement
         interventions, and protocols focused on specific clinical domains and patient
         situations.</para>
     <section>
-        <title>Introduction to Clinical Decision Support (CDS)</title>
-        <para>As defined by Osheroff et al.  CDS “provides clinicians, staff, patients, or other
-            individuals with knowledge and person-specific information, intelligently filtered or
-            presented at appropriate times, to enhance health and health care.”[1] CDS encompasses a
-            variety of tools to enhance decision-making in the clinical workflow. Examples of CDS
-            tools include but are not limited to: </para>
+        <title>Introduction to CDS</title>
+        <para>As defined by Osheroff et al. Clinical Decision Support (CDS) “provides clinicians,
+            staff, patients, or other individuals with knowledge and person-specific information,
+            intelligently filtered or presented at appropriate times, to enhance health and health
+            care.”[1] CDS encompasses a variety of tools to enhance decision-making in the clinical
+            workflow. Examples of CDS tools include but are not limited to: </para>
         <itemizedlist>
             <listitem>
                 <para>Order sets created for certain conditions or types of patients that assist in
@@ -164,7 +164,7 @@
         </para>
     </section>
     <section>
-        <title>Lack of Standardized Encoded Clinical Data - Impact on CDS</title>
+        <title>Non-Standardized Encoded Clinical Data - Impact on CDS</title>
         <para>In this section, we will explore the challenges of delivering patient-centered
             clinical decision support in the context of inconsistent data encoding standards.</para>
         <para>The <xref linkend="ShortcomingsDataTransfers"></xref> depicts how the lack of standardization in data transfer can impact
@@ -378,8 +378,7 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
             data prior to deployment to better understand the impact of proposed updates.
             [14]</para>
         <section>
-            <title>Metrics for Monitoring CDS Implementations before and after Go-Live
-                Deployment</title>
+            <title>Metrics for Monitoring CDS Implementations</title>
             <para>This section will describe quality metrics for monitoring CDS performance. The ONC
                 and NAM report highlighted the impetus for measuring whether CDS interventions are
                 working: “To optimize CDS and increase adoption and acceptance, it will be critical
@@ -677,7 +676,7 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
             </itemizedlist>
         </section>
         <section>
-            <title>Ten Commandments for Effective CDS</title>
+            <title>Principles for Effective CDS</title>
             <para>Bates et al published the<emphasis role="italic"> Ten Commandments for Effective
                     Clinical Decision Support: Making the Practice of Evidence-based Medicine a
                     Reality</emphasis> with “the goal…to present generic lessons from [their CDS]
@@ -748,8 +747,7 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
         </section>
     </section>
     <section xml:id="CDSHistory">
-        <title>Historical Context for Representing the Expression Logic of Clinical Decision
-            Support</title>
+        <title>Historical Context for Representing the Expression Logic of CDS</title>
         <para>While there have been advancements over the past few decades in implementing clinical
             data standards (e.g., SNOMED CT®, LOINC®), there is still room to improve portability of
             CDS implementations across healthcare organizations. Different health care institutions
@@ -843,7 +841,7 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
             Clinical Practice Guidelines, Clinical Pathways, Treatment Protocols, Order Sets, and
             KNARTs.</para>
         <section>
-            <title>Standard Operating Procedures (SOP)</title>
+            <title>SOPs</title>
             <para>Standard Operating Procedures (SOPs) "are a specific set of practices that are
                 required to be initiated and followed when specific circumstances arise. In clinical
                 care, clinicians have historically been familiar with SOPs in specific types of
@@ -997,7 +995,7 @@ I don&apos;t see this cited but adding it here"?>GAM<?oxy_comment_end?>)
                 improve user acceptance of computer-based physician order entry. [27] </para>
         </section>
         <section>
-            <title>Knowledge Artifacts (KNARTs)</title>
+            <title>KNARTs</title>
             <para>A Clinical Decision Support Knowledge Artifact (KNART) is a structured way of
                 documenting the knowledge and content used for three different types of CDS
                 interventions: 1) event condition action (ECA) rule (e.g., clinical reminder), 2)

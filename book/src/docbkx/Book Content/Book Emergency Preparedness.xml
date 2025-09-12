@@ -4,8 +4,7 @@
 <chapter xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Emergency Preparedness</title>
-    <section>
-        <title>Introduction</title>
+    
         <para>For the purpose of this chapter, we define emergency disaster response in regard to
             four different categories of disaster: natural disasters, public health crises, acts of
             terrorism and radiation and chemical emergencies. [109] Natural disasters include
@@ -42,7 +41,6 @@
             technical solutions is part of implementing IKM. This chapter explores the level of
             current adoption of IKM in the existing emergency natural response system and further
             discusses challenges and recommendations for better practice in the near future. </para>
-    </section>
     <section>
         <title>Landscape of Emergency Management in the United States</title>
         <para>FEMA was founded in 1979 by President Jimmy Carter. However, federal emergency
@@ -169,10 +167,9 @@
                 COVID-19 pandemic, hampering their response. [127] </para>
             <para>IKM can help unlock the full power of AI by ensuring data is of high quality,
                 complete, reliable, and interoperable. [128] </para>
-        </section>
-    </section>
-    <section>
-        <title>Conclusion</title>
+        
+    
+   
         <para>Organizations across local, state, federal, national, and international levels must
             continually navigate the complexities of adopting and implementing emerging technologies
             in diverse ways. Simultaneously, they not only need to keep up with the interoperability
@@ -191,7 +188,6 @@
             emergency response systems work as well-oiled machines with complex processes and actors
             spanning across every field. The use of IKM in emergency preparedness and response can
             sharpen these processes and facilitate timely decision making and a more successful
-            response. </para>
-    </section>
+            response. </para></section></section>
     
 </chapter>

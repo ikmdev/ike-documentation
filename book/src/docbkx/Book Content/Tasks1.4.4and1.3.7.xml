@@ -3,28 +3,25 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
     version="5.1">
-    <title>Tasks 1.4.4 &amp; 1.3.7 Framework for Continuous Integration and Continuous Deployment
-        &amp; Strategic Deployment Framework</title>
-    <section>
-        <title>Purpose</title>
-        <para>The purpose of this document is to describe the Strategic Deployment Framework, which
-            encompasses the Continuous Integration and Continuous Delivery (CI/CD) Framework, needed
-            to support the Systemic Harmonization and Interoperability Enhancement for Laboratory
-            Data (SHIELD) Integrated Knowledge Exchange (IKE) application, the Knowledge Management
-            Environment (Komet). These frameworks provide a structured CI/CD process and
-            architecture needed to deploy Komet and ensure that deployments are consistent,
-            reliable, and efficient. It outlines best practices, tools, and processes to effectively
-            manage the deployment lifecycle, thereby enhancing the harmonization and
-            interoperability of laboratory data across various systems. Additionally, this document
-            provides a roadmap of tasks and timelines that were implemented to complete the
-            migration to the target state. </para>
+    <title>Framework for CI/CD &amp; Strategic Deployment Framework</title>
+   
+     
+        <para>The purpose of this chapter is to describe the Strategic Deployment Framework, which
+        encompasses the Continuous Integration and Continuous Delivery (CI/CD) Framework, needed to
+        support the Systemic Harmonization and Interoperability Enhancement for Laboratory Data
+        (SHIELD) Integrated Knowledge Exchange (IKE) application, the Knowledge Management
+        Environment (Komet). These frameworks provide a structured CI/CD process and architecture
+        needed to deploy Komet and ensure that deployments are consistent, reliable, and efficient.
+        It outlines best practices, tools, and processes to effectively manage the deployment
+        lifecycle, thereby enhancing the harmonization and interoperability of laboratory data
+        across various systems. Additionally, this document provides a roadmap of tasks and
+        timelines that were implemented to complete the migration to the target state. </para>
         <para>This work serves as a follow-up to the initial frameworks defined in the first option
             year of this contract and will continue to evolve as we further our understanding of the
             requirements, priorities, and needs of IKE and its users.</para>
-    </section>
     <section>
-        <title><anchor xml:id="Toc198809511"/>Aims</title>
-        <para>This document aims to identify and outline a framework that enables accurate and
+        <title><anchor xml:id="Toc198809511"/>CI/CD Aims</title>
+        <para>This chapter aims to identify and outline a framework that enables accurate and
             consistent deployments across various environments to minimize downtime and mitigate
             deployment-related issues. Additionally, the implementation of this framework will
             enhance the scalability, security, and maintainability of systems to support long-term
@@ -32,7 +29,7 @@
             development and deployment workflows. </para>
     </section>
     <section>
-        <title><anchor xml:id="Toc198809512"/>Framework</title>
+        <title><anchor xml:id="Toc198809512"/>CI/CD Framework</title>
         <para>This Strategic Deployment Framework for software applications is a comprehensive
             approach designed to ensure seamless, efficient, and reliable deployment processes
             across various environments and platforms that utilize CI/CD. Our project utilizes CI/CD
@@ -80,7 +77,7 @@
         <para>Together, these sections form a robust framework that supports the strategic
             deployment of software applications through CI/CD.</para>
         <section>
-            <title><anchor xml:id="Toc198809513"/>People</title>
+            <title><anchor xml:id="Toc198809513"/>Key Roles in CI/CD Framework Development</title>
             <para>People play a crucial role in the successful deployment of software applications.
                 Their expertise, collaboration, and management skills are essential at every stage
                 of the deployment process. In this section, we define the key roles and their
@@ -236,7 +233,7 @@
                 infrastructure assets.</para>
         </section>
         <section>
-            <title><anchor xml:id="Toc198809518"/>Monitoring</title>
+            <title><anchor xml:id="Toc198809518"/>Infrastructure and Application Monitoring</title>
             <para>Monitoring is the process of continuously observing and analyzing the performance
                 and health of applications and infrastructure. Monitoring is a critical aspect of
                 maintaining the health and performance of both infrastructure and applications.
@@ -379,7 +376,7 @@
             </section>
         </section>
         <section>
-            <title><anchor xml:id="Toc198809522"/>Timeline</title>
+            <title><anchor xml:id="Toc198809522"/>Target Architecture Timeline</title>
             <para>The following roadmap (<xref linkend="SaaSRoadMap"></xref>) depicts the phases and timelines the team
                 followed to migrate to the target architecture. <figure xml:id="SaaSRoadMap">
                     <title><?oxy_custom_start type="oxy_content_highlight" color="255,64,0"?>Software
@@ -497,7 +494,7 @@
                 </itemizedlist>
             </section>
             <section>
-                <title>Assumptions</title>
+                <title>SaaS Roadmap Migration Assumptions</title>
                 <table>
                     <title>SaaS Roadmap Migration Assumptions</title>
                     <tgroup cols="2">
@@ -543,18 +540,17 @@
                     </tgroup>
                 </table>
                 <section>
-                    <title><anchor xml:id="Toc198809526"/>Source Code Repository</title>
-                    <para>The FDA SHIELD project uses GitHub as its source code repository. GitHub
-                        is a hosted Git repository service provided by Microsoft that is cloud
-                        enabled. GitHub clearly outlines the various libraries and dependencies in a
-                        project, allows users to configure their project infrastructure with code,
-                        and includes functionality to support issue tracking, developer
-                        collaboration tools, and security scanning and alerts.</para>
+                    <title><anchor xml:id="Toc198809526"/>SHIELD Source Code Repository</title>
+                    <para>The SHIELD project uses GitHub as its source code repository. GitHub is a
+                        hosted Git repository service provided by Microsoft that is cloud enabled.
+                        GitHub clearly outlines the various libraries and dependencies in a project,
+                        allows users to configure their project infrastructure with code, and
+                        includes functionality to support issue tracking, developer collaboration
+                        tools, and security scanning and alerts.</para>
                 </section>
                 <section>
-                    <title><anchor xml:id="Toc198809527"/>Artifact Repository</title>
-                    <para>The FDA SHIELD project utilizes the following artifact
-                        repositories:</para>
+                    <title><anchor xml:id="Toc198809527"/>SHIELD Artifact Repositories</title>
+                    <para>The SHIELD project utilizes the following artifact repositories:</para>
                     <orderedlist>
                         <listitem>
                             <para>Maven Central Artifact Repository -  Maven Central is a widely
@@ -588,8 +584,8 @@
                     </orderedlist>
                 </section>
                 <section>
-                    <title><anchor xml:id="Toc198809528"/>Build Automation</title>
-                    <para>The FDA SHIELD project uses GitHub Actions for its Build Automation
+                    <title><anchor xml:id="Toc198809528"/>SHIELD Build Automation</title>
+                    <para>The SHIELD project uses GitHub Actions for its Build Automation
                         functionality. GitHub Actions provides continuous feedback on code quality
                         and build status, automates the deployment process to development and test
                         environments, and has the potential to extend staging and production
@@ -599,7 +595,7 @@
                 </section>
             </section>
             <section>
-                <title>Code Quality</title>
+                <title>Komet Code Quality</title>
                 <para>Continually evaluating and ensuring the quality, accuracy, and functionality
                     of our Komet code is of the utmost importance. Our project relies on SonarCloud,
                     a cloud-based service that integrates with CI/CD pipelines, to ensure that code
@@ -626,7 +622,7 @@
             particularly focus on the Infrastructure and Monitoring aspects, which will be crucial
             for the scalability of IKE services in the future.</para>
         <section>
-            <title><anchor xml:id="Toc198809531"/>Infrastructure</title>
+            <title><anchor xml:id="Toc198809531"/>Infrastructure- Kubernetes</title>
             <para>As previously discussed, Kubernetes is the industry standard for containerization
                 of code and will likely be the focus for any next steps related to our code
                 infrastructure.</para>
@@ -705,7 +701,7 @@
             </section>
         </section>
         <section>
-            <title><anchor xml:id="Toc198809536"/>Monitoring</title>
+            <title><anchor xml:id="Toc198809536"/>Monitoring Komet</title>
             <para>As we continually monitor the performance and health of Komet, we will explore
                 opportunities for both infrastructure and application monitoring.</para>
             <orderedlist>
@@ -742,7 +738,7 @@
                         swapped out as needed.</para>
                 </listitem>
             </orderedlist>
-            <para>The FDA SHIELD project will look to employ a robust CI/CD monitoring framework for
+            <para>The SHIELD project will look to employ a robust CI/CD monitoring framework for
                 both infrastructure and applications. For infrastructure monitoring, AWS CloudWatch
                 and CloudTrail could be used to oversee cloud resources, while Prometheus and
                 Grafana can be used for gathering and visualizing metrics within Kubernetes
@@ -750,15 +746,13 @@
                 comprehensive monitoring capabilities. These tools offer flexibility, allowing for
                 customization or substitution based on specific needs, which must be explored as we
                 refine the needs of the project.</para>
+            <para>The Strategic Deployment and CI/CD framework in this document outlines the key
+                tools, processes, and areas supporting the iterative development of Komet. As we
+                continue to develop, test, and deploy Komet, our team will update and improve upon
+                this process to meet the evolving needs and requirements of a maturing solution. As
+                this process evolves, we will work to train the team to ensure they are proficient
+                with the tools and resources that support the efficient development and deployment
+                of our work.</para>
         </section>
-    </section>
-    <section>
-        <title>Conclusion and Next Steps</title>
-        <para>The Strategic Deployment and CI/CD framework in this document outlines the key tools,
-            processes, and areas supporting the iterative development of Komet. As we continue to
-            develop, test, and deploy Komet, our team will update and improve upon this process to
-            meet the evolving needs and requirements of a maturing solution. As this process
-            evolves, we will work to train the team to ensure they are proficient with the tools and
-            resources that support the efficient development and deployment of our work.</para>
     </section>
 </chapter>

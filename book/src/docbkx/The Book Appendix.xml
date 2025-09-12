@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    version="5.1">
     <title>Appendix</title>
-<xi:include href="../../../volume-appendix/quick-reference-guide/src/docbkx/Quick%20Reference%20Guide.xml"/>
+    <section>
+        <title>Abbreviations</title>
+        <xi:include href="../../../volume-appendix/quick-reference-guide/src/docbkx/Quick%20Reference%20Guide.xml"/>
 <xi:include
     href="../../../volume4-Tinkar-Ballot/chapter1-introduction-tinkar/src/docbkx/Introduction.xml"/>
 <xi:include
@@ -16,12 +21,14 @@
     href="../../../volume4-Tinkar-Ballot/chapter5-conclusion/src/docbkx/conclusion.xml"/>
 <xi:include href="../../../volume4-Tinkar-Ballot/chapter6-foundational-architecture/src/docbkx/Foundational-Architecture.xml"/>
 <xi:include href="../../../volume4-Tinkar-Ballot/chapter7-references/src/docbkx/Volume%204%20-%20References.xml"/>
-<chapter>
+    </section>
+    
+<section>    
     <title>(ANF) Statement Historical Implementations</title>
     <xi:include href="statement-openehr.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="statement-clinical-input-form.xml"
         xmlns:xi="http://www.w3.org/2001/XInclude"/>
-</chapter>
+
 <xi:include
     href="../../../volume6-ANF-Ballot/chapter1-introduction-anf/src/docbkx/introduction.xml"/>
 <xi:include
@@ -39,3 +46,10 @@
 <xi:include
     href="../../../volume6-ANF-Ballot/chapter8-bibliography/src/docbkx/bibliography.xml"
 />
+</section>
+<section>
+    <xi:include
+        href="Book%20Content/Book%20Playbook%20of%20Current%20Knowledge%20Management%20Technologies,%20Industry%20Coding%20Standards,%20and%20Knowledge%20Management%20Hosting%20Options.xml"
+        ><?oxy_comment_end?></xi:include></section>
+    
+</chapter>
