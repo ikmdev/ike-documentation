@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.1">
+    <title>Knowledge Sharing</title>
+    <section>
+        <title>What Are Coordinates</title>
+        <para>In this platform, coordinates are structured filters and settings used to
+            control:</para>
+        <itemizedlist>
+            <listitem>
+                <para>What data is shown</para>
+            </listitem>
+            <listitem>
+                <para>How it is displayed</para>
+            </listitem>
+            <listitem>
+                <para>How relationships are inferred or navigated</para>
+            </listitem>
+            <listitem>
+                <para>Which version or state of a concept is visible</para>
+            </listitem>
+        </itemizedlist>
+        <para> They are essential for the system’s logic and UI panels (search, navigator, reasoner,
+            etc.).</para>
+               </section><section> <title>Types of Coordinates and Their Purpose</title>
+                   <table><title>Types of Coordinates and Their Purpose</title>
+            <tgroup cols="3">
+                <colspec colnum="1" colname="col1"/>
+                <colspec colnum="2" colname="col2"/>
+                <colspec colnum="3" colname="col3"/>
+                <tbody>
+                    <row>
+                        <entry><emphasis role="bold">Coordinate Type</emphasis></entry>
+                        <entry><emphasis role="bold">Function</emphasis></entry>
+                        <entry><emphasis role="bold">Panels Affected</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry>Stamp Coordinate</entry>
+                        <entry>Filters by path, time, status (active/inactive), author, and
+                            module</entry>
+                        <entry>All panels (search, navigator, details, reasoner)</entry>
+                    </row>
+                    <row>
+                        <entry>Language Coordinate</entry>
+                        <entry>Controls which description (synonym/FQN), dialect, and language to
+                            show</entry>
+                        <entry>All panels (where text is shown)</entry>
+                    </row>
+                    <row>
+                        <entry>Navigation Coordinate</entry>
+                        <entry>Controls hierarchy view logic—what “parent/child” relationships to
+                            use</entry>
+                        <entry>Concept Navigator only</entry>
+                    </row>
+                    <row>
+                        <entry>Logic Coordinate</entry>
+                        <entry>Defines logical interpretation (used by reasoner)</entry>
+                        <entry>Reasoner only</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+               </section>
+        <section><title>View Coordinate vs Edit Coordinate</title>
+        <table><title>View Coordinate vs Edit Coordinate</title>
+            <tgroup cols="2">
+                <colspec colnum="1" colname="col1"/>
+                <colspec colnum="2" colname="col2"/>
+                <tbody>
+                    <row>
+                        <entry><emphasis role="bold">Concept</emphasis></entry>
+                        <entry><emphasis role="bold">Definition</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry>View Coordinate</entry>
+                        <entry>A container object that holds the stamp, logic, navigation, and
+                            language coordinates for a window.</entry>
+                    </row>
+                    <row>
+                        <entry>Edit Coordinate</entry>
+                        <entry>Used for setting default values when editing (e.g., author = Doug).
+                            Mainly used in backend logic.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <para>Every window or panel has its own View Coordinate. These are not shared
+            globally.</para>
+        <para>Orange highlight in the UI = panel has overridden the master view coordinate
+            setting.</para>
+        <para> </para></section>
+        <section><title>Stamp Coordinate: Deep Dive</title>
+        <para>
+            <emphasis role="bold">Filters on:</emphasis>
+        </para>
+        <itemizedlist>
+            <listitem>
+                <para>Path: (Primordial, Sandbox, Development, Master)</para>
+            </listitem>
+            <listitem>
+                <para>Status: Active, Inactive, or Both</para>
+            </listitem>
+            <listitem>
+                <para>Time Position: Used for time-based filtering</para>
+            </listitem>
+            <listitem>
+                <para>Module: Included/Excluded modules (often buggy or unstable)</para>
+            </listitem>
+        </itemizedlist>
+        <para>
+            <emphasis role="bold">Key Concept: </emphasis></para>
+        <para><emphasis role="bold">Path Precedence</emphasis>
+        </para>
+        <para>Each path is treated like a branch:</para>
+        <para>Primordial ← Sandbox ← Development ← Master</para>
+        <para>If you set your filter to Development, you will see: </para>
+        <itemizedlist>
+            <listitem>
+                <para>Concepts on Development</para>
+            </listitem>
+            <listitem>
+                <para>Concepts on paths it originated from (Sandbox, Primordial)</para>
+            </listitem>
+        </itemizedlist>
+        <para> But not vice versa.</para>
+        <para>
+            <emphasis role="bold">“Latest” Version Resolution:</emphasis></para>
+        <para> If two versions of a semantic exist: </para>
+        <itemizedlist>
+            <listitem>
+                <para>One on Development path, timestamp T1</para>
+            </listitem>
+            <listitem>
+                <para>One on Sandbox path, timestamp T2 (newer)</para>
+            </listitem>
+        </itemizedlist>
+        <para> If stamp filter is set to Development, it will prefer the Development version, even
+            if it’s older—path precedence overrides time.</para>
+        <para> </para></section>
+        <section><title>Language Coordinate</title>
+        <itemizedlist>
+            <listitem>
+                <para>Determines:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Language (e.g., English, Spanish)</para>
+                    </listitem>
+                    <listitem>
+                        <para>Preferred term type (synonym vs fully qualified name)</para>
+                    </listitem>
+                    <listitem>
+                        <para>Dialect (US vs GB)</para>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+            <listitem>
+                <para>Used everywhere a concept label is displayed.</para>
+            </listitem>
+        </itemizedlist>
+        <para>
+            <emphasis role="bold"> Behavior:</emphasis>
+        </para>
+        <itemizedlist>
+            <listitem>
+                <para>If no translation exists in selected language → displays negative ID or
+                    fallback.</para>
+            </listitem>
+            <listitem>
+                <para>Filter can be tested by changing language and term preferences in the Concept
+                    Navigator.</para>
+            </listitem>
+            <listitem>
+                <para>Multiple semantics with different languages/dialects were created for testing
+                    in the test dataset (TinkerExampleData 1.2.16 link below).</para>
+            </listitem>
+        </itemizedlist>
+        <para> </para></section>
+        <section><title>Navigation Coordinate</title>
+        <itemizedlist>
+            <listitem>
+                <para>Only relevant in the Concept Navigator panel</para>
+            </listitem>
+            <listitem>
+                <para>Switches between:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Stated relationships (authored)</para>
+                    </listitem>
+                    <listitem>
+                        <para>Inferred relationships (from reasoner)</para>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+        </itemizedlist>
+        <para> Used to define how parent/child links appear in the hierarchy.</para>
+        <para> </para></section>
+        <section><title>Logic Coordinate</title>
+        <itemizedlist>
+            <listitem>
+                <para>Used only by the reasoner to determine how to process logical
+                    definitions.</para>
+            </listitem>
+            <listitem>
+                <para>Currently supports:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ELK reasoner</para>
+                    </listitem>
+                    <listitem>
+                        <para>Previously: SnowRocket (deprecated) </para>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+        </itemizedlist>
+        <para><emphasis role="bold">Note:</emphasis>
+        </para>
+        <itemizedlist>
+            <listitem>
+                <para>Not interactive in the current UI.</para>
+            </listitem>
+            <listitem>
+                <para>Logic Coordinate options are set but not functionally changeable.</para>
+            </listitem>
+            <listitem>
+                <para>Present mainly because it is part of the View Coordinate container.</para>
+            </listitem>
+        </itemizedlist>
+        <para> </para></section>
+        <section><title>Master Coordinate Menu &amp; Override Logic</title>
+        <itemizedlist>
+            <listitem>
+                <para>Master coordinate = default for all panels</para>
+            </listitem>
+            <listitem>
+                <para>Panels can override it (manually or programmatically)</para>
+            </listitem>
+            <listitem>
+                <para>Orange indicator = override</para>
+            </listitem>
+            <listitem>
+                <para>Use “Remove Overrides” to reset </para>
+            </listitem>
+        </itemizedlist>
+        <para>Known Issue: Sometimes the override shows even when settings match. This is considered
+            a UI bug.</para>
+        <para> </para></section>
+        <section><title>Included/Excluded Modules</title>
+        <itemizedlist>
+            <listitem>
+                <para>Conceptually similar to “namespaces” or packages (e.g., “authoring”, “data
+                    cleaning”).</para>
+            </listitem>
+            <listitem>
+                <para>Not the same as paths.</para>
+            </listitem>
+            <listitem>
+                <para>Modules can be used for grouping content.</para>
+            </listitem>
+            <listitem>
+                <para>Currently unstable in the UI; triggers errors during filtering.</para>
+            </listitem>
+        </itemizedlist>
+        <para> </para></section>
+        <section><title>How to Test Coordinates</title>
+        <para> </para>
+        <para><emphasis role="bold">Use the TinkerExampleData 1.2.16 dataset:</emphasis>
+        </para>
+        <para><link
+                xlink:href="https://repo1.maven.org/maven2/dev/ikm/data/tinkar/tinkar-example-data/1.2.0+1.1.6/"
+                >Central Repository:
+            dev/ikm/data/tinkar/tinkar-example-data/1.2.0+1.1.6</link></para>
+        <itemizedlist>
+            <listitem>
+                <para>Contains concepts and semantics on all paths (Primordial → Master)</para>
+            </listitem>
+            <listitem>
+                <para>Includes:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Spanish and English synonyms/FQNs</para>
+                    </listitem>
+                    <listitem>
+                        <para>Multiple modules</para>
+                    </listitem>
+                    <listitem>
+                        <para>Various timestamps for path precedence testing</para>
+                    </listitem>
+                    <listitem>
+                        <para>Stated and inferred axioms</para>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+        </itemizedlist>
+        <para><emphasis role="bold">Common Testing Steps:</emphasis>
+        </para>
+        <itemizedlist>
+            <listitem>
+                <para>Switch stamp path to Primordial, run full reasoner</para>
+            </listitem>
+            <listitem>
+                <para>Verify hierarchy changes in navigator</para>
+            </listitem>
+            <listitem>
+                <para>Modify language coordinate to test label resolution</para>
+            </listitem>
+            <listitem>
+                <para>Filter by status (active/inactive) and verify visible results</para>
+            </listitem>
+            <listitem>
+                <para>Confirm that overriding a coordinate highlights the panel</para>
+            </listitem>
+            <listitem>
+                <para>Remove overrides and verify reversion to master</para>
+            </listitem>
+        </itemizedlist>
+        <para> </para></section><section><title>Bugs &amp; Edge Cases</title>
+        <table><title>Bugs &amp; Edge Cases</title>
+            <tgroup cols="2">
+                <colspec colnum="1" colname="col1"/>
+                <colspec colnum="2" colname="col2"/>
+                <tbody>
+                    <row>
+                        <entry><emphasis role="bold">Issue</emphasis></entry>
+                        <entry><emphasis role="bold">Recommendation</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry>Module filter causes errors</entry>
+                        <entry>Avoid for now; raise to Keith</entry>
+                    </row>
+                    <row>
+                        <entry>Language fallback shows negative numbers</entry>
+                        <entry>Expected unless new UI filters them can confirm with Keith</entry>
+                    </row>
+                    <row>
+                        <entry>Orange overrides showing despite matching master</entry>
+                        <entry>Known issue; raise to Keith</entry>
+                    </row>
+                    <row>
+                        <entry>Logic coordinate not functioning or not interactive</entry>
+                        <entry>Accept as a backend-only feature</entry>
+                    </row>
+                    <row>
+                        <entry>Path precedence overriding newer timestamps on lower paths</entry>
+                        <entry>Expected; working as designed</entry>
+                    </row>
+                    <row>
+                        <entry>Change Allowed vertex states allows to select all statuses</entry>
+                        <entry><link xlink:href="https://ikmdev.atlassian.net/browse/IIA-2254"
+                                >IIA-2254: LOW PRIORITY/READY FOR GROOMING - [Master Menu/Change
+                                Allowed vertex states] "Change allowed vertex states" allows to
+                                select all statusesBacklog</link></entry>
+                    </row>
+                    <row>
+                        <entry>Changing the Language or Navigation Coordinate in the Master
+                            Coordinates Menu Triggers Override in Children Menus (Concept Navigator,
+                            Search, Details Viewer)</entry>
+                        <entry><link xlink:href="https://ikmdev.atlassian.net/browse/IIA-2252"
+                                >IIA-2252: [Filter Override] Changing "Change description
+                                preference" in Parent Menu Activates Override Indication in All
+                                Child MenusDone</link></entry>
+                    </row>
+                    <row>
+                        <entry>Classic Komet Pattern Navigator’s Coordinate Menu does not have
+                            Starburst Icon</entry>
+                        <entry><link xlink:href="https://ikmdev.atlassian.net/browse/IIA-2244"
+                                >IIA-2244: LOW PRIORITY - Classic Komet Pattern Navigator’s
+                                Coordinate Menu does not have Starburst Icon Closed</link></entry>
+                    </row>
+                    <row>
+                        <entry>Change description preference" in Master Menu Throws Exception When
+                            Changed (1.52.2005)</entry>
+                        <entry><link xlink:href="https://ikmdev.atlassian.net/browse/IIA-2212"
+                                >IIA-2212: [Parent Menu] Changing "Change description preference"
+                                for the First Time Throws Exception and Does Not Update
+                                FilterDone</link></entry>
+                    </row>
+                    <row>
+                        <entry>"Change sort" allows multiple selections Selection</entry>
+                        <entry><link xlink:href="https://ikmdev.atlassian.net/browse/IIA-2188"
+                                >IIA-2188: LOW PRIORITY/READY FOR GROOMING - [General Coordinate]
+                                "Change sort" Should Only Allow One SelectionBacklog</link></entry>
+                    </row>
+                    <row>
+                        <entry>Coordinates - Navigation Coordinate has (fix) in the text</entry>
+                        <entry><link xlink:href="https://ikmdev.atlassian.net/browse/IIA-2186"
+                                >IIA-2186: Coordinates - Remove "(fix)" from Navigation
+                                CoordinateDone</link></entry>
+                    </row>
+                    <row>
+                        <entry>Logo and the master Coordinates Menu On Windows OS does not
+                            appear</entry>
+                        <entry><link xlink:href="https://ikmdev.atlassian.net/browse/IIA-2171"
+                                >IIA-2171: Logo and the master Coordinates Menu On Windows OS does
+                                not appearDone</link></entry>
+                    </row>
+                    <row>
+                        <entry>Changing the Language coordinate in Concept Navigation panel changes
+                            the starburst icon of the Window View panel to orange color</entry>
+                        <entry><link xlink:href="https://ikmdev.atlassian.net/browse/IIA-2260"
+                                >IIA-2260: [Filter Override] Changing "Change description
+                                preference" in Classic Navigator Activates Override Indication in
+                                All Other Child MenusDone</link></entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <para> </para></section>
+        <section><title>Summary Analogy</title>
+        <table><title>Summary Analogy</title>
+            <tgroup cols="3">
+                <colspec colnum="1" colname="col1"/>
+                <colspec colnum="2" colname="col2"/>
+                <colspec colnum="3" colname="col3"/>
+                <tbody>
+                    <row>
+                        <entry><emphasis role="bold">Coordinate</emphasis></entry>
+                        <entry><emphasis role="bold">Git Analogy</emphasis></entry>
+                        <entry><emphasis role="bold">Example Behavior</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry>Stamp</entry>
+                        <entry>Checking out a branch at a specific commit</entry>
+                        <entry>Filter to show only active components on Dev path</entry>
+                    </row>
+                    <row>
+                        <entry>Language</entry>
+                        <entry>Locale + display preferences</entry>
+                        <entry>Show preferred term in Spanish, fallback to English</entry>
+                    </row>
+                    <row>
+                        <entry>Navigation</entry>
+                        <entry>Choosing how to traverse the tree</entry>
+                        <entry>Use stated vs inferred relationships for hierarchy</entry>
+                    </row>
+                    <row>
+                        <entry>Logic</entry>
+                        <entry>Compiler or build mode</entry>
+                        <entry>Select reasoner algorithm to infer definitions</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <para><emphasis role="bold"> pointers for Testing Teams</emphasis>
+        </para>
+        <orderedlist>
+            <listitem>
+                <para>Use TinkerExampleData in Classic Komet</para>
+            </listitem>
+            <listitem>
+                <para>Focus on happy-path scenarios for each coordinate</para>
+            </listitem>
+            <listitem>
+                <para>Avoid testing logic coordinate interactions unless scoped</para>
+            </listitem>
+            <listitem>
+                <para>Track bugs (especially module filtering) and report to Keith</para>
+            </listitem>
+            <listitem>
+                <para>Use “Remove Overrides” often to avoid stale state</para>
+            </listitem>
+            <listitem>
+                <para>Focus on per-panel testing (e.g., Navigation Coordinate only affects Concept
+                    Navigator)</para>
+            </listitem>
+        </orderedlist></section>
+</chapter>
