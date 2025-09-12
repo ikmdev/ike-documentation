@@ -802,22 +802,22 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
             SAGE, and GEM, which aimed to incorporate a guideline’s logic into the executable part
             of decision logic, however these languages suffered due to a lack of maturity of
             standards to integrate the guideline engines into EHRs directly. [19] </para>
-        <para>In 1998, HL7 found the “curly brace” problem to be unsolvable by the Arden approach
-            and began efforts to create expression logic standards based on HL7 Version 3 Reference
+        <para>In 1998, HL7® found the “curly brace” problem to be unsolvable by the Arden approach
+            and began efforts to create expression logic standards based on HL7® Version 3 Reference
             Information Model (RIM). One attempt was the GELLO Expression Language, which in theory
             was supposed to access and manipulate clinical data by common clinical entities; however
             RIM was not proven to be a very practical representation of the complexity of real-world
             data. Only a small number of vendors were successfully able to implement RIM-based EHRs
-            and therefore the vision of GELLO and HL7 V3 efforts remained unproven. In 2013, HL7
+            and therefore the vision of GELLO and HL7® V3 efforts remained unproven. In 2013, HL7®
             replaced GELLO with “Event, Condition, Action” (ECA), an expression in XML data
             structures intended to abstract the representation of expression logic. Shortly
             thereafter, the standards community realized the benefit in aligning CDS logic
             expression with those of eCQMs, as the goals of CDS rules are often used to prompt
-            clinicians to achieve improved clinical quality outcomes. Therefore, HL7 defined the
+            clinicians to achieve improved clinical quality outcomes. Therefore, HL7® defined the
             Quality Improvement and Clinical Knowledge model (QUICK). QUICK and ECA have now been
             wrapped up into the Clinical Quality Language (CQL), which attempts to capture lessons
             learned from Arden, GELLO, and ECA. </para>
-        <para>An emerging HL7 International standard that might help with electronic processing of
+        <para>An emerging HL7® International standard that might help with electronic processing of
             eCQM and CDS logic is CQL, a new specification that focuses on a common model for
             representing expression logic for CQMs and Clinical Decision Support. According to CMS’
             eCQI Resource Center, CQL will be used in all quality measure specifications in the
@@ -825,13 +825,13 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
             on implementers for consuming measure artifacts. CQL representations of eCQMs will
             replace the QDM pseudocode historically published in HQMF files; it aims to provide a
             human-readable, conceptual-level language to define eCQMs and clinical decision support
-            independent of specific data models, such as the QDM or FHIR. </para>
+            independent of specific data models, such as the QDM or FHIR®. </para>
         <para>CMS is rapidly rolling out the CQL standard in its eCQMs and CDS for the 2019
             reporting year. The goal of CQL moving forward is to use emerging Application
-            Programming Interfaces like FHIR
+            Programming Interfaces like FHIR®
             <?oxy_comment_start author="steph" timestamp="20190610T095537-0600" comment="I don&apos;t think yoy need to spell this out again as you already did that in the preceding paragraph." flag="done"?><?oxy_comment_end?>as
             a way to allow for more direct access to clinical data that does not require the
-            overhead of RIM mapping. [20] The potential for FHIR and CQL in CDS and eCQM
+            overhead of RIM mapping. [20] The potential for FHIR® and CQL in CDS and eCQM
             implementations remains to be seen, however, the community is optimistic. </para>
     </section>
     <section>
@@ -1001,7 +1001,7 @@ I don&apos;t see this cited but adding it here"?>GAM<?oxy_comment_end?>)
                 interventions: 1) event condition action (ECA) rule (e.g., clinical reminder), 2)
                 order sets, and 3) documentation templates (VA has called them SMARTForms or PNCS
                 forms in the past). </para>
-            <para>KNARTs are a standard HL7 format. While they are not the actual executable CDS
+            <para>KNARTs are a standard HL7® format. While they are not the actual executable CDS
                 interventions, they provide the information that a developer can take and then
                 implement within an EHR. The key advantage of KNARTs lies in their standardization,
                 which allows healthcare organizations to share and adopt CDS content efficiently,

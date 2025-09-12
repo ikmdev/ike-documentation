@@ -87,10 +87,10 @@
             <title>Architecture and Documentation Review</title>
             <para>Identified through various stakeholder interviews were Unified Modeling Language
                 (UML) diagrams that detailed some aspects of Tinkar data structure and overall class
-                hierarchy. These were found within the HL7 informational ballot for Tinkar and some
-                HL7 Vocabulary working group presentations. There were also some identified attempts
-                at using JetBrains IntelliJ IDEA IDE to auto-generate UML class diagrams of core
-                Tinkar concepts.</para>
+                hierarchy. These were found within the HL7® informational ballot for Tinkar and some
+                HL7® Vocabulary working group presentations. There were also some identified
+                attempts at using JetBrains IntelliJ IDEA IDE to auto-generate UML class diagrams of
+                core Tinkar concepts.</para>
             <para>As mentioned previously, some pre-existing Jira and Confluence websites (Logica)
                 were identified and found to contain some outdated information regarding the
                 Knowledge Architecture.</para>
@@ -1148,7 +1148,7 @@
             <title>Packaging and Distribution</title>
             <para>Teams will be targeting Java archive (JAR) distributions to maven central. These
                 will be created via build server from an internal version control repository (VCS).
-                This code will be published to a public VCS (HL7 GitHub). The java packages (jars,
+                This code will be published to a public VCS (HL7® GitHub). The java packages (jars,
                 wars, etc) will be published to the local artifact repository, then promoted to
                 Sonatype via a managed sonatype account. This will then promote to maven central as
                 part of the release process.</para>

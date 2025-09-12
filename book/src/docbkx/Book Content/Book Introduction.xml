@@ -165,7 +165,7 @@
             requires a common understanding of data, a method to support knowledge representation,
             and clinical decision rules based on common terminology and statements to ultimately
             address the requirements of medical professionals. Current implementations of Health
-            Level Seven International (HL7), a variety of global standards for the transfer of
+            Level Seven International (HL7®), a variety of global standards for the transfer of
             health data, relies on profiles and templates to disambiguate statement and terminology
             and provide sufficient precision for transactions, documents, and standards-based
             Application Programming Interfaces (APIs). Therefore, the architectural approach
@@ -261,7 +261,7 @@
             blood pressure = 140 mmHg) or the categorical data (e.g., pregnancy induced hypertension
             vs. renal hypertension) within a standard data structure to facilitate information
             exchange or retrieval, such as within a standards-based clinical statement (i.e., Fast
-            Healthcare Interoperability Resources, or FHIR).</para>
+            Healthcare Interoperability Resources, or FHIR®).</para>
         <para>The <emphasis role="bold">Assertional Knowledge </emphasis>layer represents
             non-procedural statements, or facts, such as “Stage 2 high blood pressure is over 140
             systolic or 90 diastolic,” or “beta-blockers and Angiotensin converting enzyme (ACE)

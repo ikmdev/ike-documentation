@@ -65,7 +65,7 @@
             <listitem>
                 <para>Enhance the reproducibility of data exchange structures used to express
                     laboratory procedures and outcomes, such as Clinical Data Interchange Standards
-                    Consortium (CDISC), FHIR, and Integrating the Healthcare Enterprise (IHE)
+                    Consortium (CDISC), FHIR®, and Integrating the Healthcare Enterprise (IHE)
                     Laboratory Analytical Workflow (LAW)</para>
             </listitem>
             <listitem>
@@ -130,7 +130,7 @@
             safely and reliably support data analysis and be used to aggregate data using a standard
             or non-standard input form or exchange mechanism. Examples of such data models include
             Health Level 7 (HL7®) Clinical Information Modeling Initiative (CIMI) efforts, including
-            the HL7 Analysis Normal Form (ANF) specification. The model to support a Knowledge
+            the HL7® Analysis Normal Form (ANF) specification. The model to support a Knowledge
             Management Platform should meet the following evolutionary design criteria: </para>
             <itemizedlist>
                 <listitem>
@@ -181,16 +181,16 @@
                 </listitem>
             </orderedlist>
             <para>A number of options exist for expressing transformation logic and for executing
-                the transformation on specific instances of clinical data for normalization. These
-                range from transformation languages to expensive middleware options commonly used in
-                healthcare interfaces. The suitability of a chosen transformation language highly
-                depends on the format of the source data, and the quality and accuracy of the
-                transformation is left to the transformation author. Examples of transformation
-                languages include extensible Stylesheet Language Transformations (XSLT), FHIR
-                Mapping Language, and Query/View/Transformation (QVT). Often referred to as “data
-                wrangling”, these transformation processes often require mapping data from one “raw”
-                data form into another format with the intent of making it more valuable for
-                downstream purposes such as analytics. </para>
+            the transformation on specific instances of clinical data for normalization. These range
+            from transformation languages to expensive middleware options commonly used in
+            healthcare interfaces. The suitability of a chosen transformation language highly
+            depends on the format of the source data, and the quality and accuracy of the
+            transformation is left to the transformation author. Examples of transformation
+            languages include extensible Stylesheet Language Transformations (XSLT), FHIR® Mapping
+            Language, and Query/View/Transformation (QVT). Often referred to as “data wrangling”,
+            these transformation processes often require mapping data from one “raw” data form into
+            another format with the intent of making it more valuable for downstream purposes such
+            as analytics. </para>
         </section>
         <section>
             <title>Data Liquidity Overview</title>
@@ -236,7 +236,7 @@
             semantics, models, release cycles, and versioning mechanisms. [4] </para>
             <para>Ideally, to support RWE analytics and aggregation, enterprise terminology requires
             an integrated terminology using a common representation (metadata) and management. A
-            common terminology model, such as HL7 Standardized Terminology Knowledge Base (also
+            common terminology model, such as HL7® Standardized Terminology Knowledge Base (also
             known as TermINology Knowledge Architecture [Tinkar]) would allow the following
             analytics on top of aggregated RWE data sets [5]: </para>
             <para>
@@ -356,7 +356,7 @@
                         of Medicine Clinical Terms [SNOMED CT®])</para>
                 </listitem>
                 <listitem>
-                    <para>Standards to exchange those concepts (e.g., HL7)</para>
+                    <para>Standards to exchange those concepts (e.g., HL7®)</para>
                 </listitem>
                 <listitem>
                     <para>Supporting infrastructure (e.g., The United States Department of Health
@@ -376,21 +376,21 @@
                 coherent way between two disparate systems. Without an interface, two disparate
                 systems are unable to communicate in a common language. In the U.S. and elsewhere,
                 the most common and accepted messaging structural standard for EHR-to- Reference Lab
-                interfacing is the Health Level Seven (HL7) Version 2.x (V2.x) standard. While other
-                messaging standards exist and can be used, the HL7 V2.x messaging standard, first
-                released in 1987, is used in 95% of U.S. healthcare organizations and in more than
-                35 countries. [7] </para>
-            <para><xref linkend="ErroneousLoincMapping"/> below shows an example of an HL7 v2
+                interfacing is the Health Level Seven (HL7®) Version 2.x (V2.x) standard. While
+                other messaging standards exist and can be used, the HL7® V2.x messaging standard,
+                first released in 1987, is used in 95% of U.S. healthcare organizations and in more
+                than 35 countries. [7] </para>
+            <para><xref linkend="ErroneousLoincMapping"/> below shows an example of an HL7® v2
                 Observation (OBX) segment from two different mock lab result messages. In this
                 scenario, a laboratory has conducted two distinct blood glucose tests on two
                 distinct specimen sources. For the first test, a specimen from serum or plasma was
                 used. For the second test, the specimen was from whole blood. The figure below
-                illustrates how the HL7 v2 <emphasis role="italic">structure</emphasis> standard is
+                illustrates how the HL7® v2 <emphasis role="italic">structure</emphasis> standard is
                 populated using existing terminology standards for <emphasis role="italic">meaning,
-                </emphasis>in this case LOINC®. In the first HL7 segment for test 1, the LOINC® code
-                is for a “Glucose [Mass/volume] in Serum or Plasma”, whereas for test 2, the LOINC®
-                code is for a “Glucose [Mass/volume] in Blood”. Different tests were conducted and
-                therefore, different LOINC® codes were used in the HL7 v2 messages. </para>
+                </emphasis>in this case LOINC®. In the first HL7® segment for test 1, the LOINC®
+                code is for a “Glucose [Mass/volume] in Serum or Plasma”, whereas for test 2, the
+                LOINC® code is for a “Glucose [Mass/volume] in Blood”. Different tests were
+                conducted and therefore, different LOINC® codes were used in the HL7® v2 messages. </para>
             <figure xml:id="ErroneousLoincMapping">
                 <title>Erroneous LOINC® Mapping</title>
                 <mediaobject>
@@ -415,13 +415,13 @@
                 identification schemas that consist of a set of local codes and their associated
                 definitions. </para>
             <para>Because the receiving system will parse the identical local codes from the two
-                mock HL7 v2 segments above, it will interpret the lab result as having been produced
-                from identical lab tests. In simpler terms, the receiving system will interpret
-                these messages as the same glucose test with a “count of 2 observations” rather than
-                two different glucose tests, each with a “count of 1 observation.” Since the source
-                specimen and lab tests are different, but represented identically in the data
-                transmission, semantic meaning is lost compromising patient safety and accurate
-                reporting. The receiving system will interpret these two HL7 v2 segments as meaning
+                mock HL7® v2 segments above, it will interpret the lab result as having been
+                produced from identical lab tests. In simpler terms, the receiving system will
+                interpret these messages as the same glucose test with a “count of 2 observations”
+                rather than two different glucose tests, each with a “count of 1 observation.” Since
+                the source specimen and lab tests are different, but represented identically in the
+                data transmission, semantic meaning is lost compromising patient safety and accurate
+                reporting. The receiving system will interpret these two HL7® v2 segments as meaning
                 the “same thing” or representing the “same glucose test”; however, any terminologist
                 or laboratory professional would interpret this as “different glucose tests.”</para>
             <para>To improve the quality and safety of patient care, there is a need to refine data
@@ -440,7 +440,7 @@
                 one is to achieve interoperability. [8]</para>
         </section>
         <section>
-            <title>The Adoption of Three Key Terminology Standards: SNOMED CT®,  LOINC® and
+            <title>The Adoption of Three Key Terminology Standards: SNOMED CT®, LOINC®, and
                 RxNorm</title>
             <para>Over the last several decades, SNOMED CT®, LOINC®, and RxNorm have been
                 increasingly recognized as key resources for: <orderedlist>
@@ -522,7 +522,7 @@
                                 SARS-CoV-2 reporting and harmonizes how IVD test information is
                                 represented using LOINC®. The LIVD file format is currently led by
                                 IVD Industry Connectivity Consortium (IICC), and the JavaScript
-                                Object Notation (JSON) representation is a project at HL7.</para>
+                                Object Notation (JSON) representation is a project at HL7®.</para>
                         </listitem>
                     </itemizedlist>
                 </para>
@@ -530,9 +530,9 @@
                     <itemizedlist>
                         <listitem>
                             <para>Federal, State, and Local Public Health Reporting Requirements use
-                                messaging standards such as HL7. Inside these messages, laboratories
-                                and clinical systems use LOINC® codes to identify which test is
-                                being reported.</para>
+                                messaging standards such as HL7®. Inside these messages,
+                                laboratories and clinical systems use LOINC® codes to identify which
+                                test is being reported.</para>
                         </listitem>
                     </itemizedlist>
                 </para>

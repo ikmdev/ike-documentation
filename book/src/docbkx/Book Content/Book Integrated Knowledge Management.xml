@@ -55,7 +55,7 @@
                                 pharmacy management and drug interaction software [3] </entry>
                         </row>
                         <row>
-                            <entry>Fast Healthcare Interoperability Resources (FHIR)</entry>
+                            <entry>Fast Healthcare Interoperability Resources (FHIR®)</entry>
                             <entry>Application programming interface (API) focused standard that
                                 enables electronic health data to be quickly and efficiently
                                 exchanged [4]</entry>
@@ -67,7 +67,7 @@
             for Health Information Technology (ASTP/ONC) currently oversees and promotes SDOs and
             supports the adoption and application of health data standards in the U.S. healthcare
             space to ensure the structure, meaning, and integrity of data is maintained as it is
-            exchanged within and between systems. FHIR is an example of a standard that works to
+            exchanged within and between systems. FHIR® is an example of a standard that works to
             maintain the structure of data as it flows through systems, while terminology standards
             like SNOMED CT®, RxNorm, and LOINC® work to maintain the meaning of data. While SDOs,
             agencies, and medical terminology standards exist, the way they record, manage, and
@@ -203,12 +203,12 @@
             identifying equivalent concepts, transmitting data without losing key details or
             meaning, and ensuring the quality of data is a challenge. Through this body of work, we
             are aiming to improve IKM capabilities and advancing an existing Health Level Seven
-            International (HL7) project within the Vocabulary Working Group known as the ‘Guidelines
-            for a Standardized Terminology Knowledge base”, also known as TermINology Knowledge
-            Architecture (Tinkar). Tinkar is intended to provide an architecture that delivers
-            integrated terminology to the healthcare enterprise and its information systems. Tinkar
-            addresses the differences in management and structure across reference terminology, and
-            with local concepts and code lists/value sets. [5]</para>
+            International (HL7®) project within the Vocabulary Working Group known as the
+            ‘Guidelines for a Standardized Terminology Knowledge base”, also known as TermINology
+            Knowledge Architecture (Tinkar). Tinkar is intended to provide an architecture that
+            delivers integrated terminology to the healthcare enterprise and its information
+            systems. Tinkar addresses the differences in management and structure across reference
+            terminology, and with local concepts and code lists/value sets. [5]</para>
         <para>Tinkar is a self-describing and machine processed knowledge architecture that allows
             for effective and scalable querying of data, concepts, and information. Using locally
             defined concepts, Tinkar can integrate various terminology standards into the common

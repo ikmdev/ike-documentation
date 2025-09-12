@@ -87,7 +87,7 @@
                         <row>
                             <entry><emphasis role="bold">Deference to Expertise</emphasis></entry>
                             <entry>Engage experts in decision making</entry>
-                            <entry>Use informatics experts in HIT</entry>
+                            <entry>Use informatics experts in health IT</entry>
                         </row>
                     </tbody>
                 </tgroup>
@@ -185,40 +185,40 @@
                 Medicare and Medicaid Services (CMS) for health systems and provider organizations
                 to digitize their health information systems. From 2010-2020, MU program goals
                 included digital data collection, data sharing, advanced clinical processes, and
-                improved outcomes. Studies have shown that HIT has improved patient safety by
+                improved outcomes. Studies have shown that health IT has improved patient safety by
                 reducing medication errors, avoiding adverse drug reactions, and increasing
                 adherence to evidence-based medicine protocols. [34]</para>
-            <para>While HIT has improved some clinical outcomes, the adoption, configuration,
-                implementation, and maintenance of HIT has increased patient risk in other parts of
-                the health delivery system due to unintended consequences of poorly managed systems.
-                [35] First-generation HIT configurations have mostly been managed by HIT vendors who
-                mainly focused on billing data and other administrative and operational data
-                management functions (e.g., reimbursement, mandatory reporting, etc.). HIT adoption
-                radically changed historic clinical workflows in an effort to standardize data
-                inputs and system outputs, but this “one size fits all” approach was resisted by
-                clinicians creating configuration trade-offs, workarounds, and increased system
-                complexity. </para>
-            <para>Local configurations and local coding created unique HIT features and
+            <para>While health IT has improved some clinical outcomes, the adoption, configuration,
+                implementation, and maintenance of health IT has increased patient risk in other
+                parts of the health delivery system due to unintended consequences of poorly managed
+                systems. [35] First-generation health IT configurations have mostly been managed by
+                health IT vendors who mainly focused on billing data and other administrative and
+                operational data management functions (e.g., reimbursement, mandatory reporting,
+                etc.). Health IT adoption radically changed historic clinical workflows in an effort
+                to standardize data inputs and system outputs, but this “one size fits all” approach
+                was resisted by clinicians creating configuration trade-offs, workarounds, and
+                increased system complexity. </para>
+            <para>Local configurations and local coding created unique Health IT features and
                 functionality, which may have been needed based on hospital location or patient
                 population, also created variability from hospital to hospital even within the same
                 health network. For the most part, these local variations had few <emphasis
                     role="italic">visible</emphasis> negative consequences for patients and health
-                practitioners. Unfortunately, most HIT configurations did not optimize for patient
-                mobility – patients who received care in non-affiliated systems or for the need to
-                share precise data with other health systems, health registries, and public health
-                agencies.</para>
-            <para>Without new incentives, many organizations are unable to fully maintain their HIT
-                as vendor maintenance contract costs continue to increase. Experienced HIT personnel
-                have also become more expensive as technology companies search for qualified staff
-                in a decreasing talent pool, which has led Health systems to be more dependent on
-                vendors to fill the talent gap. Some under-resourced hospitals may be forced to
-                delay system upgrades and updates – even important changes in terminology, clinical
-                workflows, naming and coding, or other critical data quality enhancements due to
-                concerns over system failures, outages, or unexpected consequences from system
-                updates. These are real concerns and may lead to patient safety implications. The
-                recent CrowdStrike cybersecurity update failure in 2024 caused many health systems
-                to cancel surgeries and other non-critical services leading to over $2 billion in
-                losses to healthcare organizations. [36]</para>
+                practitioners. Unfortunately, most Health IT configurations did not optimize for
+                patient mobility – patients who received care in non-affiliated systems or for the
+                need to share precise data with other health systems, health registries, and public
+                health agencies.</para>
+            <para>Without new incentives, many organizations are unable to fully maintain their
+                Health IT as vendor maintenance contract costs continue to increase. Experienced
+                Health IT personnel have also become more expensive as technology companies search
+                for qualified staff in a decreasing talent pool, which has led Health systems to be
+                more dependent on vendors to fill the talent gap. Some under-resourced hospitals may
+                be forced to delay system upgrades and updates – even important changes in
+                terminology, clinical workflows, naming and coding, or other critical data quality
+                enhancements due to concerns over system failures, outages, or unexpected
+                consequences from system updates. These are real concerns and may lead to patient
+                safety implications. The recent CrowdStrike cybersecurity update failure in 2024
+                caused many health systems to cancel surgeries and other non-critical services
+                leading to over $2 billion in losses to healthcare organizations. [36]</para>
             <section>
                 <title>Addressing Patient Safety Gaps in the Current Health Data Ecosystem</title>
                 <para>Health data is a critical component of health care decisions and can directly
@@ -257,17 +257,18 @@
         </section>
         <section>
             <title>Summary of Patient Safety</title>
-            <para>Many other safety-critical industries are addressing the data quality of their safety
-                information to improve safety management of their aircraft, automobiles, power plants,
-                and search engines. In today’s digital healthcare ecosystem and with patients receiving
-                care in diverse health settings, even at home, patient safety does not just depend upon
-                highly skilled clinicians. Now, more than ever, patient safety depends on high quality
-                data. Producing high quality data depends on ensuring data is accurately encoded at the
-                source and exchanged or migrated without losing meaningful context for clinical decision
-                making no matter where a patient receives treatment. Health informaticists and HIT
-                professionals need tooling and support to ensure their organizations are producing high
-                data quality. IKE can provide this tooling and support to improve health data quality so
-                providers, leaders, and patients can trust their health data is safe to use.</para>
+            <para>Many other safety-critical industries are addressing the data quality of their
+                safety information to improve safety management of their aircraft, automobiles,
+                power plants, and search engines. In today’s digital healthcare ecosystem and with
+                patients receiving care in diverse health settings, even at home, patient safety
+                does not just depend upon highly skilled clinicians. Now, more than ever, patient
+                safety depends on high quality data. Producing high quality data depends on ensuring
+                data is accurately encoded at the source and exchanged or migrated without losing
+                meaningful context for clinical decision making no matter where a patient receives
+                treatment. Health informaticists and health IT professionals need tooling and
+                support to ensure their organizations are producing high data quality. IKE can
+                provide this tooling and support to improve health data quality so providers,
+                leaders, and patients can trust their health data is safe to use.</para>
         </section>
     </section>
 </section>

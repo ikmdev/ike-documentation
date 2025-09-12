@@ -2817,9 +2817,10 @@
             <para>For each ANF statement, SNOMED codes are used when available and accurate for the
                 attribute. When an appropriate SNOMED code is not available, a generate Public ID is
                 used. SNOMED codes used are accurate as of July 31, 2025. </para>
-            <para><emphasis role="underline">ANF Statement: Topic Male </emphasis></para>
+
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF Statement: Topic Male</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -2939,10 +2940,12 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF
+                        Statement Performance Circumstance: Topic Male</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -3124,11 +3127,12 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
-            <para><emphasis role="underline">ANF Statement: Chronological Age </emphasis></para>
+
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF Statement: Chronological Age</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -3247,10 +3251,12 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF
+                        Statement Performance Circumstance: Topic Chronological Age</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -3441,10 +3447,12 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
-            <para><emphasis role="underline">ANF Statement: Systolic BP</emphasis></para>
-            <informaltable>
+
+            <table>
+                <title>ANF Statement
+                    Context: Systolic Blood Pressure</title>
                 <tgroup cols="4">
                     <colspec colnum="1" colname="col1" align="center"/>
                     <colspec colnum="2" colname="col2"/>
@@ -3568,9 +3576,11 @@
                         </row>
                     </tbody>
                 </tgroup>
-            </informaltable>
+            </table>
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF
+                        Statement Performance Circumstance: Topic Systolic BP</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -3774,9 +3784,11 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
-            <informaltable>
+            <table>
+                <title>ANF Associated
+                    Statements</title>
                 <tgroup cols="4">
                     <colspec colnum="1" colname="col1" align="center"/>
                     <colspec colnum="2" colname="col2"/>
@@ -3833,10 +3845,11 @@
                         </row>
                     </tbody>
                 </tgroup>
-            </informaltable>
-            <para><emphasis role="underline">ANF Statement: Diastolic BP</emphasis></para>
+            </table>
+
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF Statement: Diastolic BP</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -3961,10 +3974,12 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF
+                        Statement Performance Circumstance: Diastolic Blood Pressure </title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -4168,10 +4183,12 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF
+                        Associated Statements: Diastolic BP </title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -4229,11 +4246,12 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
-            <para><emphasis role="underline">ANF Statement: Sitting Position</emphasis></para>
+
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF Statement: Sitting Position</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -4358,10 +4376,12 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF
+                        Statement Performance Circumstance: Sitting Position</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -4565,12 +4585,14 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
-            <para><emphasis role="underline">ANF Statement: Blood Pressure
-                Procedure</emphasis></para>
+
+               
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF Statement: Blood Pressure
+                        Procedure</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -4697,10 +4719,12 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF
+                        Statement Request Circumstance: Blood Pressure Procedure</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -4933,7 +4957,7 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
         </section>
         <section>
@@ -5156,7 +5180,9 @@
                     </tgroup>
                 </informaltable>
             </para>
-            <informaltable>
+            <table>
+                <title>ANF Statement
+                    Performance Circumstance: Template Female</title>
                 <tgroup cols="4">
                     <colspec colnum="1" colname="col1" align="center"/>
                     <colspec colnum="2" colname="col2"/>
@@ -5340,10 +5366,11 @@
                         </row>
                     </tbody>
                 </tgroup>
-            </informaltable>
-            <para><emphasis role="underline">ANF Statement: Chronological Age </emphasis></para>
+            </table>
+
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF Statement: Chronological Age </title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -5460,10 +5487,12 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF
+                        Statement Performance Circumstance: Chronological Age</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -5652,11 +5681,12 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
-            <para><emphasis role="underline">ANF Statement: Topic Hypertension</emphasis></para>
+
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF Statement: Topic Hypertension</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -5773,10 +5803,12 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF
+                        Statement Performance Circumstance:Statement Hypertension</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -5962,11 +5994,12 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
-            <para><emphasis role="underline">ANF Statement: Topic Prediabetes </emphasis></para>
+
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF Statement: Topic Prediabetes</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -6083,10 +6116,12 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF
+                        Statement Performance Circumstance: Statement Prediabetes </title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -6272,12 +6307,12 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
-            <para><emphasis role="underline">ANF Statement: Topic Lisinopril, 20 mg oral
-                    tablet</emphasis></para>
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF Statement: Topic Lisinopril, 20 mg oral
+                        tablet</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -6399,10 +6434,12 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF
+                        Statement Performance Circumstance: Lisinopril, 20 mg oral tablet</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -6605,11 +6642,12 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
-            <para><emphasis role="underline">ANF Statement: Medication Adherence </emphasis></para>
+
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF Statement: Medication Adherence</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -6731,10 +6769,12 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF
+                        Statement Performance Circumstance: Medication Adherence</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -6922,12 +6962,12 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
-            <para><emphasis role="underline">ANF Statement: Adverse Reaction caused by Drug
-                </emphasis></para>
+
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF Statement: Adverse Reaction caused by Drug</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -7049,10 +7089,12 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF
+                        Statement Performance Circumstance: Medication Adherence</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -7240,12 +7282,12 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
-            <para><emphasis role="underline">ANF Statement: Topic Hydrochlorothiazide 25 mg
-                </emphasis></para>
+
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF Statement: Topic Hydrochlorothiazide 25 mg</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -7366,10 +7408,13 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF
+                        Statement Performance Circumstance:Hydrochlorothiazide 25 mg oral
+                        tablet</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -7572,10 +7617,13 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF
+                        Associated Statements: Hydrochlorothiazide 25 mg oral
+                        tablet</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -7614,12 +7662,12 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
-            <para><emphasis role="underline">ANF Statement: Medication Side Effect
-                </emphasis></para>
+
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF Statement: Medication Side Effect</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -7735,10 +7783,13 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
             <para>
-                <informaltable>
+                <table>
+                    <title>ANF
+                        Statement Narrative Circumstance: Medication Side
+                        Effects</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -7816,7 +7867,7 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
         </section>
         <section>
@@ -7824,7 +7875,8 @@
             <para>The following table contains a list of all the attributes used in this user guide
                 to build ANF statements.</para>
             <para>
-                <informaltable>
+                <table>
+                    <title>List of Attributes Used in ANF Statements</title>
                     <tgroup cols="2">
                         <colspec colnum="1" colname="col1"/>
                         <colspec colnum="2" colname="col2"/>
@@ -8022,7 +8074,7 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
         </section>
     </section>

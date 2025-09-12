@@ -13,7 +13,7 @@
             this data from different sources. Information systems record and manage clinical
             statements using a variety of standard or ad-hoc models. However, reliable querying and
             information retrieval requires consistency not only at the format level (e.g., Clinical
-            Document Architecture (CDA), FHIR, HL7 V2) but also the content model (i.e., the
+            Document Architecture (CDA), FHIR®, HL7 V2) but also the content model (i.e., the
             information model such as HL7 CIMI model, or Observational Medical Outcomes Partnership
             (OMOP)), and, finally, the semantic and terminology model. There is not only a potential
             for a lack of consistency with representing disparate health data with current data

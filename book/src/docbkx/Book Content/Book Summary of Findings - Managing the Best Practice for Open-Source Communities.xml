@@ -481,18 +481,9 @@
             <title>Open-Source Licensing Within a Knowledge Architecture</title>
             <para>A Knowledge Architecture is a framework for clinical information that is organized
                 into distinct layers such that each higher layer relies upon artifacts from the
-                lower layer (<xref linkend="LayersWithinKnowledgeArchitecture"></xref>. It aims to define a standardized form of clinical statements and
+                lower layer (See Section 1.4 "The Knowledge Architecture"). It aims to define a standardized form of clinical statements and
                 harmonize existing terminologies together into a single system. </para>
-            <para>A knowledge architecture intended for use in the current Health IT ecosystem is
-                listed below: </para>
-            <figure xml:id="LayersWithinKnowledgeArchitecture">
-                <title>Layers Within Knowledge Architecture</title>
-                <mediaobject>
-                    <imageobject>
-                        <imagedata fileref="../images/New%20PASTF.svg" align="center" scale="10"/>
-                    </imageobject>
-                </mediaobject>
-            </figure>
+            
             <para>Rather than a broad transformation of existing licenses in a purely open-source
                 model, not all components of software and standard licensing require a pivot away
                 from proprietary oversight to lead to successful implementation of an IKM ecosystem.
@@ -524,7 +515,7 @@
                 licenses allow an IKM platform to reconcile variances. In the Statement Model, the
                 artifacts as defined below are reused and demonstrate how the data elements should
                 be packaged into clinical statements through clinical formatting, such as Health
-                Level 7 Fast Healthcare Interoperability Resources (HL7 FHIR) or Clinical
+                Level 7 Fast Healthcare Interoperability Resources (HL7® FHIR®) or Clinical
                 Informational Modeling Initiative (CIMI). The shift towards a permissive license in
                 regard to terminologies and standards improves the compatibility of how different
                 terminologies work together and thereby is integral to the functionality of higher
