@@ -198,6 +198,19 @@
                         right</para>
                 </listitem>
                 <listitem>
+                    <para>Select the author from the dropdown and add a password that matches the
+                        author name (<xref linkend="SelectUserandPassword"></xref>)</para>
+                    <figure xml:id="SelectUserandPassword">
+                        <title>Select User and Password</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="../../../book/src/docbkx/images/Select User and Password.svg" scale="15"
+                                    align="center"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem>
+                <listitem>
                     <para>Komet will open to the landing page (<xref linkend="KometInterface"></xref>)</para>
                     <figure xml:id="KometInterface">
                         <title>Komet Interface</title>
@@ -243,7 +256,8 @@
             <orderedlist>
                 <listitem>
                     <para>To find a concept, first, either open a new journal or utilize an open and
-                        existing journal, then, select the comment icon in the left-hand bar</para>
+                        existing journal, then, select the magnifying glass icon in the left-hand
+                        bar</para>
                 </listitem>
                 <listitem>
                     <para>Type the keyword or concept name into the search bar at the top of the
@@ -275,9 +289,9 @@
                         Concept"</para>
                 </listitem>
                 <listitem>
-                    <para>You can click the comment icon in the left-hand bar again to minimize the
-                        search panel for more space (this can be done for any icon in the left-hand
-                        bar)</para>
+                    <para>You can click the magnifying glass icon in the left-hand bar again to
+                        minimize the search panel for more space (this can be done for any icon in
+                        the left-hand bar)</para>
                 </listitem>
                 <listitem>
                     <para>Toggle the "Properties" button on and use the icons at the top right-hand
@@ -297,13 +311,16 @@
                     <para>The concept window can display additional information, including:</para>
                     <orderedlist>
                         <listitem>
-                            <para>Description Semantic with language and dialect</para>
+                            <para>Identicons</para>
                         </listitem>
                         <listitem>
                             <para>STAMP information</para>
                         </listitem>
                         <listitem>
                             <para>Identifiers</para>
+                        </listitem>
+                        <listitem>
+                            <para>Description Semantic with Language and Dialect</para>
                         </listitem>
                         <listitem>
                             <para>EL++ Stated terminological axioms showing hierarchical
@@ -535,10 +552,19 @@
                 </figure>
             </listitem>
             <listitem>
-                <para>To add STAMP properties of the new concept, select the ellipsis in the top
+                <para>To add STAMP properties of the new concept, select the STAMP box in the top
                     right of the concept window and select the options within each drop down menu to
-                    add the appropriate information for STAMP</para>
-                <para>In general (<xref linkend="PizzaEditSTAMP"></xref>):</para>
+                    add the appropriate information for STAMP(<xref linkend="NewSTAMP"></xref>)</para>
+                <figure xml:id="NewSTAMP">
+                    <title>New STAMP</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../book/src/docbkx/images/New%20STAMP.svg" scale="35" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <para>In general (<xref linkend="PizzaCreateSTAMP"></xref>):</para>
                 <itemizedlist>
                     <listitem>
                         <para>Primordial Modules and Paths should be used for starter
@@ -555,15 +581,18 @@
                 </itemizedlist>
                 <para>For this example, we use the Development module and Development path, but the
                     Pizza Knowledge Base Module is also appropriate</para>
-                <figure xml:id="PizzaEditSTAMP">
+                <figure xml:id="PizzaCreateSTAMP">
                     <title>Creating STAMP Properties</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Edit%20STAMP.svg" scale="25" align="center"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Create%20STAMP.svg" scale="25" align="center"
                             />
                         </imageobject>
                     </mediaobject>
                 </figure>
+            </listitem>
+            <listitem>
+                <para>Select Confirm</para>
             </listitem>
             <listitem>
                 <para>Select the pencil icon on the right-hand side of the description section of
@@ -871,8 +900,49 @@
                     the viewing window</para>
             </listitem>
             <listitem>
-                <para>You can directly edit a Fully Qualified Name or Other Name by clicking
-                    the respective name in the concept window (<xref linkend="PizzaEditaConcept2"></xref>)</para>
+                <para>To edit STAMP information and to create a new version of a concept, click on a
+                    STAMP and update either Status, Module or Path and select Submit (<xref linkend="PizzaEditSTAMP"></xref>)</para>
+                <figure xml:id="PizzaEditSTAMP">
+                    <title>Editing STAMP</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Edit%20STAMP.svg" scale="35" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>After updates are made, the STAMP will be updated to reflect the changes and
+                    the Author who performed the change (<xref linkend="PizzaEditSTAMP2"></xref>)</para>
+                
+                <figure xml:id="PizzaEditSTAMP2">
+                    <title>Updated STAMP</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Edit%20STAMP2.svg" scale="35" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>Any changes will be reflected in the History Tab as well(<xref linkend="PizzaEditSTAMP3"></xref>)</para>
+                
+                <figure xml:id="PizzaEditSTAMP3">
+                    <title>Updated STAMP</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Edit%20STAMP3.svg" scale="35" align="center"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+            <listitem>
+                <para>You can then directly edit a Fully Qualified Name or Other Name by clicking
+                    the respective name in the concept window (<xref linkend="PizzaEditaConcept2"
+                    />)</para>
                 <figure xml:id="PizzaEditaConcept2">
                     <title>Editing a Concept</title>
                     <mediaobject>
@@ -1060,7 +1130,7 @@
                         <title>Add Pattern STAMP</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../volume4-Tinkar-Ballot/src/docbkx/images/Add%20Pattern%20STAMP.svg" scale="25" align="center"
+                                <imagedata fileref="../../../Book/src/docbkx/images/Add%20Pattern%20STAMP.svg" scale="25" align="center"
                                 />
                             </imageobject>
                         </mediaobject>
@@ -1073,7 +1143,7 @@
                         <title>Add Pattern Definition</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../volume4-Tinkar-Ballot/src/docbkx/images/Add%20Pattern%20Definition.svg" scale="25" align="center"
+                                <imagedata fileref="../../../Book/src/docbkx/images/Add%20Pattern%20Definition.svg" scale="25" align="center"
                                 />
                             </imageobject>
                         </mediaobject>
@@ -1854,7 +1924,7 @@
                             <title>Git Sync Status</title>
                             <mediaobject>
                                 <imageobject>
-                                    <imagedata fileref="../../../book/src/docbkx/images/Sync Step1_TestingScript.svg" scale="45" align="center"/>
+                                    <imagedata fileref="../../../book/src/docbkx/images/GitSync Step1_TestingScript.svg" scale="45" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -1895,6 +1965,17 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata fileref="../../../book/src/docbkx/images/GitSync Step3B_TestingScript.svg" scale="45" align="center"/>
+                                </imageobject>
+                            </mediaobject>
+                        </figure>
+                    </listitem>
+                    <listitem>
+                        <para>Once connected to the repo, select option to “Trust Now” (<xref linkend="GitSyncTrustNow"></xref>)</para>
+                        <figure xml:id="GitSyncTrustNow">
+                            <title>Git Sync Trust Now</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="../../../book/src/docbkx/images/GitSync Step3C_TestingScript.svg" scale="45" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -1966,7 +2047,7 @@
                     <listitem>
                         <para>To ensure the Sync completed successfully, go to the repository you
                             created earlier to validate that the change sets were successfully
-                            completed. This process can take a minute or so, as the change sets are
+                            completed. This process can take a minute or so, as the change sets are pushed to GitHub
 
                         <figure xml:id="GitSyncTestingScript2"> 
                             <title>Validating Change Sets in Repository</title> 
@@ -1977,7 +2058,7 @@
                                 </imageobject> 
                             </mediaobject> 
                         </figure> 
-                 
+                        </para>
                     </listitem>
                 </orderedlist>
             </section>
