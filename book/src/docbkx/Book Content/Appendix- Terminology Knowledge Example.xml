@@ -127,11 +127,11 @@
         <section>
             <title>Terminology Knowledge Example Results</title>
             <para><emphasis>Aim 1: Review Workflow Schematic for Emerging Acute Chronic Infectious
-                    Diseases, specifically focused on Data Capture Elements and Long COVID Value
-                    Sets. </emphasis>The team downloaded and reviewed the COVID-19 VSAC value sets
-                outlined in the table below. The team used these value sets to extract an initial
-                list of generalized clinical concepts associated with a COVID-19 diagnosis that
-                could potentially contribute to a Long COVID diagnosis. [27]</para>
+                Diseases, specifically focused on Data Capture Elements and Long COVID Value Sets.
+            </emphasis>The team downloaded and reviewed the COVID-19 VSAC value sets outlined in the
+            table below. The team used these value sets to extract an initial list of generalized
+            clinical concepts associated with a COVID-19 diagnosis that could potentially contribute
+            to a Long COVID diagnosis. [1]</para>
                 <table>
                     <title>VSAC Value Sets</title>
                     <tgroup cols="3">
@@ -190,14 +190,14 @@
                     </tgroup>
                 </table>
             <para><emphasis>Aim 2: Draft Potential Questionnaires to Standardize Use Case Data
-                    Acquisition</emphasis>. An initial questionnaire was developed for the
-                generalized concepts extracted from the COVID-19 VSAC value sets that poses a simple
-                yes or no question for each of the concepts that could potentially aid in a Long
-                COVID diagnosis. This chapter focuses on potential questionnaires for ‘Signs and
-                Symptoms’ and ‘Non-Specific Respiratory Diagnoses’, outlined in <xref
-                    linkend="HypotheticalSignsandSymptomsQuestionnaires"/> and <xref
-                    linkend="HypotheticalNonSpecificRespiratoryDiagnosesQuestionnaire"/>
-                respectively. [2]</para>
+                Acquisition</emphasis>. An initial questionnaire was developed for the generalized
+            concepts extracted from the COVID-19 VSAC value sets that poses a simple yes or no
+            question for each of the concepts that could potentially aid in a Long COVID diagnosis.
+            This chapter focuses on potential questionnaires for ‘Signs and Symptoms’ and
+            ‘Non-Specific Respiratory Diagnoses’, outlined in <xref
+                linkend="HypotheticalSignsandSymptomsQuestionnaires"/> and <xref
+                linkend="HypotheticalNonSpecificRespiratoryDiagnosesQuestionnaire"/> respectively.
+            [2]</para>
             <figure xml:id="HypotheticalSignsandSymptomsQuestionnaires">
                 <title>Hypothetical Signs and Symptoms Questionnaires</title>
                 <mediaobject>
@@ -675,177 +675,187 @@
                 Diagnosis’ questionnaires represented in this chapter. </para>
         </section>
         <section>
-            <title>Technologies that Support ANF </title>
-            <para>While standardizing data collection methods is a critical step towards data
-                interoperability and ANF data transformations, there are still common sources of
-                errors associated with normalizing clinical data. Errors normalizing terminology
-                content, terminology semantics, and poorly defined interactions between the input
-                and presentation of clinical data are three key problems that still need to be
-                addressed. Several transformation languages and architectures exist for expressing
-                and executing transformation logic to address the issues above and to normalize
-                specific instances of clinical data into ANF. Users can choose a language that is
-                best tailored for the format of the data source, while transformation quality and
-                accuracy is left to the transformation author. Below is a list of four
-                transformation languages and the associated benefits and limitations. While each
-                option has its own limitations and cost, the ability to address or minimize common
-                normalization errors justifies their use.
-                [27]<?oxy_comment_start author="naylee" timestamp="20231130T110056-0600" comment="The table below needs to define QVT = Query/View/Transformation in the first colum of the table. "?></para><?oxy_comment_end?>
-            <table>
-                <title>Benefits and Limitations of Transformation
-                    Languages and Architecture</title>
-                <tgroup cols="3">
-                    <colspec colnum="1" colname="col1" align="left" rowsep="1"/>
-                    <colspec colnum="2" colname="col2" align="left" rowsep="1"/>
-                    <colspec colnum="3" colname="col3" align="left" rowsep="1"/>
-                    <thead>
-                        <row>
-                            <entry><emphasis role="bold">Standard or Language</emphasis></entry>
-                            <entry><emphasis role="bold">Benefits</emphasis></entry>
-                            <entry><emphasis role="bold">Limitations</emphasis></entry>
-                        </row>
-                    </thead>
-                    <tbody>
-                        <row>
-                            <entry>eXtensible Stylesheet Language Transformation (XSLT)</entry>
-                            <entry>
-                                <itemizedlist>
-                                    <listitem>
-                                        <para>Robust language </para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>Easily extensible via extension functions and
-                                            calls</para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>Auto matches templates to data</para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>Easy tooling</para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>Good documentation</para>
-                                    </listitem>
-                                </itemizedlist>
-                            </entry>
-                            <entry>
-                                <itemizedlist>
-                                    <listitem>
-                                        <para>Transformation specifications are difficult to read
-                                            and understand</para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>Transformations are syntactic </para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>XML input only, other formats not translated </para>
-                                    </listitem>
-                                </itemizedlist>
-                            </entry>
-                        </row>
-                        <row>
-                            <entry>FHIR Mapping Language (FML)</entry>
-                            <entry>
-                                <itemizedlist>
-                                    <listitem>
-                                        <para>Supports input formats other XML</para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>Semantic DAGs can be rendered in variety of
-                                            syntaxes</para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>Concise and easy to read mapping specifications</para>
-                                    </listitem>
-                                </itemizedlist>
-                            </entry>
-                            <entry>
-                                <itemizedlist>
-                                    <listitem>
-                                        <para>Input and output outside of FHIR logical models
-                                            require extra custom programming</para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>Only XML and JSON supported as output syntaxes,
-                                            otherwise custom programming is required</para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>To date, only one implementation </para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>Limited tools needed for editing and authoring
-                                            scripts</para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>Limited documentation sources</para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>Limited pool of knowledgeable programmers</para>
-                                    </listitem>
-                                </itemizedlist>
-                            </entry>
-                        </row>
-                        <row>
-                            <entry>QVT</entry>
-                            <entry>
-                                <itemizedlist>
-                                    <listitem>
-                                        <para>Great flexibility and configurability to create custom
-                                            transformation languages</para>
-                                    </listitem>
-                                </itemizedlist>
-                            </entry>
-                            <entry>
-                                <itemizedlist>
-                                    <listitem>
-                                        <para>Limited learning resources making it difficult to
-                                            learn and understand</para>
-                                    </listitem>
-                                </itemizedlist>
-                            </entry>
-                        </row>
-                        <row>
-                            <entry>Model Driven Message Interoperability (MDMI)</entry>
-                            <entry>
-                                <itemizedlist>
-                                    <listitem>
-                                        <para>Any-to-any transformations support reuse of
-                                            transformation models for different use cases</para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>Minimal changes to other models if model
-                                            changes</para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>Simplifies development, tooling supports development
-                                            by SMEs and not dependent on developers</para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>Enables automation tooling for models</para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>Available open-source models for HL7 formats</para>
-                                    </listitem>
-                                </itemizedlist>
-                            </entry>
-                            <entry>
-                                <itemizedlist>
-                                    <listitem>
-                                        <para>Limited experience working with transformations of
-                                            detailed clinical models.</para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>Lacking user documentation</para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>Complex runtime tool</para>
-                                    </listitem>
-                                </itemizedlist>
-                            </entry>
-                        </row>
-                    </tbody>
-                </tgroup>
-            </table>
-            <para> </para>
-        </section>
+        <title>Technologies that Support ANF </title>
+        <para>While standardizing data collection methods is a critical step towards data
+            interoperability and ANF data transformations, there are still common sources of errors
+            associated with normalizing clinical data. Errors normalizing terminology content,
+            terminology semantics, and poorly defined interactions between the input and
+            presentation of clinical data are three key problems that still need to be addressed.
+            Several transformation languages and architectures exist for expressing and executing
+            transformation logic to address the issues above and to normalize specific instances of
+            clinical data into ANF. Users can choose a language that is best tailored for the format
+            of the data source, while transformation quality and accuracy is left to the
+            transformation author. Below is a list of four transformation languages and the
+            associated benefits and limitations. While each option has its own limitations and cost,
+            the ability to address or minimize common normalization errors justifies their use.
+            [1]<?oxy_comment_start author="naylee" timestamp="20231130T110056-0600" comment="The table below needs to define QVT = Query/View/Transformation in the first colum of the table. "?></para><?oxy_comment_end?>
+        <table>
+            <title>Benefits and Limitations of Transformation Languages and Architecture</title>
+            <tgroup cols="3">
+                <colspec colnum="1" colname="col1" align="left" rowsep="1"/>
+                <colspec colnum="2" colname="col2" align="left" rowsep="1"/>
+                <colspec colnum="3" colname="col3" align="left" rowsep="1"/>
+                <thead>
+                    <row>
+                        <entry><emphasis role="bold">Standard or Language</emphasis></entry>
+                        <entry><emphasis role="bold">Benefits</emphasis></entry>
+                        <entry><emphasis role="bold">Limitations</emphasis></entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>eXtensible Stylesheet Language Transformation (XSLT)</entry>
+                        <entry>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Robust language </para>
+                                </listitem>
+                                <listitem>
+                                    <para>Easily extensible via extension functions and calls</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Auto matches templates to data</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Easy tooling</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Good documentation</para>
+                                </listitem>
+                            </itemizedlist>
+                        </entry>
+                        <entry>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Transformation specifications are difficult to read and
+                                        understand</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Transformations are syntactic </para>
+                                </listitem>
+                                <listitem>
+                                    <para>XML input only, other formats not translated </para>
+                                </listitem>
+                            </itemizedlist>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>FHIR Mapping Language (FML)</entry>
+                        <entry>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Supports input formats other XML</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Semantic DAGs can be rendered in variety of
+                                        syntaxes</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Concise and easy to read mapping specifications</para>
+                                </listitem>
+                            </itemizedlist>
+                        </entry>
+                        <entry>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Input and output outside of FHIR logical models require
+                                        extra custom programming</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Only XML and JSON supported as output syntaxes, otherwise
+                                        custom programming is required</para>
+                                </listitem>
+                                <listitem>
+                                    <para>To date, only one implementation </para>
+                                </listitem>
+                                <listitem>
+                                    <para>Limited tools needed for editing and authoring
+                                        scripts</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Limited documentation sources</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Limited pool of knowledgeable programmers</para>
+                                </listitem>
+                            </itemizedlist>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>QVT</entry>
+                        <entry>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Great flexibility and configurability to create custom
+                                        transformation languages</para>
+                                </listitem>
+                            </itemizedlist>
+                        </entry>
+                        <entry>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Limited learning resources making it difficult to learn
+                                        and understand</para>
+                                </listitem>
+                            </itemizedlist>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Model Driven Message Interoperability (MDMI)</entry>
+                        <entry>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Any-to-any transformations support reuse of transformation
+                                        models for different use cases</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Minimal changes to other models if model changes</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Simplifies development, tooling supports development by
+                                        SMEs and not dependent on developers</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Enables automation tooling for models</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Available open-source models for HL7 formats</para>
+                                </listitem>
+                            </itemizedlist>
+                        </entry>
+                        <entry>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Limited experience working with transformations of
+                                        detailed clinical models.</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Lacking user documentation</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Complex runtime tool</para>
+                                </listitem>
+                            </itemizedlist>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <para> </para>
+    </section>
+    <section>
+        <title>References</title>
+        <orderedlist>
+            <listitem>
+                <para>Covid-19 value sets in VSAC [Internet]. U.S. National Library of Medicine.
+                    National Institutes of Health; [cited 2023 Mar 10]. Available from:
+                    https://www.nlm.nih.gov/vsac/support/usingvsac/covid19valuesets.html</para>
+            </listitem>
+            <listitem>
+                <para>McDonald C, Huff SM, Suico J, Mercer K. Logical Observation Identifiers Names
+                    and Codes (LOINC) users’ guide. Indianapolis: Regenstrief Institute.<emphasis
+                        role="italic"> </emphasis>2004</para>
+            </listitem>
+        </orderedlist>
+    </section>
 </chapter>
-
