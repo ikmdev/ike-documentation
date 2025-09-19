@@ -88,10 +88,7 @@
         defined with inheritance. This is the same general approach taken by ANF except for the
         following differences. CIMI defines the topic as a structured tree where ANF defines topic
         as a post-coordinated SNOMED CT expression. Both CIMI and ANF define context as a structured
-        tree, but ANF has alternatively named 'context' to be 'circumstance'. This difference is
-        illustrated for Pulse rate in <xref linkend="anf_cimi_diff-anfPulse"
-            xrefstyle="select: label"/> and <xref linkend="anf_cimi_diff-cimiPulse"
-            xrefstyle="select: label"/>. </para>
+        tree, but ANF has alternatively named 'context' to be 'circumstance'. </para>
     <?oxy_comment_start author="kec" timestamp="20190721T184209-0700" comment="Use pulse and blood pressure as an example to illustrate."?><?oxy_comment_end?>
     <figure xml:id="cimi_msg_cstatement_0135">
         <title>CIMI Clinical Statement</title>
@@ -147,9 +144,7 @@
                     EvaluationResultTopic with a coded result in the Context, this would not be
                     possible in ANF because ANF does not allow coded results. Instead, this would
                     need to be modeled in an AssertionTopic style with the result moved into the
-                    topic to be representable by ANF. Again, this difference is illustrated for
-                    Pulse rate in <xref linkend="anf_cimi_diff-anfPulse" xrefstyle="select: label"/>
-                    and <xref linkend="anf_cimi_diff-cimiPulse" xrefstyle="select: label"/>.</para>
+                    topic to be representable by ANF. </para>
                 <?oxy_comment_start author="kec" timestamp="20190721T184817-0700" comment="Not necessarily post-coordinated expressions. Post-coordination is an option of a precoordinated code is not sufficient to define the necessary topic. "?><?oxy_comment_end?>
             </listitem>
         </varlistentry>
@@ -293,13 +288,11 @@
                 xrefstyle="select: label"/> and are described in the following sections. Each of
             these topic subtypes contain a collection of attributes that describe the given pattern.
             These patterns provide the foundational structure for detailed clinical model (DCM)
-            archetype instances that can be visualized at <ulink url="http://models.opencimi.org"
-                    ><citetitle>http://models.opencimi.org</citetitle></ulink>
-        </para>
+            archetype instances that can be visualized at http://models.opencimi.org" <citetitle>http://models.opencimi.org</citetitle></para>
         <para>ANF, on the other hand, does not create its own topic patterns, and instead relies on
             SNOMED CT post-coordinated expressions to represent the topic. ANF operates under the
             principle of separation of concerns, and believes that terminology should be a separate
-            concern from the ANF Statement data structure and its properties. </para>
+            concern from the ANF Statement data structure and its properties. 
         <figure xml:id="cimi_msg_topic_hierarchy_0135">
             <title>Topic Hierarchy</title>
             <mediaobject>
@@ -310,6 +303,8 @@
                 </imageobject>
             </mediaobject>
         </figure>
+        </para>
+        
         <section>
             <title>AssertionTopic</title>
             <para>The first CIMI topic type described here is the AssertionTopic pattern with its
