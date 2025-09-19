@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.1">
+    <title>Status Definition</title>
+    <para><emphasis role="bold">General Notes:</emphasis></para>
+    <itemizedlist>
+        <listitem>
+            <para>Status filtering will be handled at STAMP Coordinate-level.</para>
+        </listitem>
+        <listitem>
+            <para>Active/Inactive/Withdrawn should be retained in all necessary inclusion as part of
+                a complete history (exports, logs, etc.). Canceled should not be retained.</para>
+        </listitem>
+    </itemizedlist>
+    <para> </para>
+    <orderedlist>
+        <listitem>
+            <para><emphasis role="bold">Active </emphasis></para>
+            <itemizedlist>
+                <listitem>
+                    <para>A committed component that is currently in use and visible in the
+                        application.</para>
+                </listitem>
+                <listitem>
+                    <para>Represents the default “live” state for any concept or semantic.</para>
+                </listitem>
+                <listitem>
+                    <para>Displayed across all panels.</para>
+                </listitem>
+                <listitem>
+                    <para>Backend Behavior - Fully committed; included in all indexes and exports. Should be
+                        retained in all necessary inclusion as part of a complete history (exports, logs,
+                        etc.)</para>
+                </listitem>
+            </itemizedlist>
+            <para> </para></listitem>
+        <listitem>
+            <para><emphasis role="bold">Inactive</emphasis></para>
+            <itemizedlist>
+                <listitem>
+                    <para>A component that has been explicitly marked as no longer active but retained for
+                        history and traceability.</para>
+                </listitem>
+                <listitem>
+                    <para>Used when a component is superseded, deprecated, or needs to be hidden from active
+                        use but still viewable.</para>
+                </listitem>
+                <listitem>
+                    <para>Shown with inactive status; visible in history views and filters.</para>
+                </listitem>
+                <listitem>
+                    <para>Backend Behavior: Should be retained in all necessary inclusion as part of a
+                        complete history (exports, logs, etc.)</para>
+                </listitem>
+            </itemizedlist>
+            <para> </para></listitem>
+        <listitem>
+            <para><emphasis role="bold">Withdrawn</emphasis></para>
+            <itemizedlist>
+                <listitem>
+                    <para>A component that was released by mistake and must be treated as if it never
+                        existed (e.g., copyright violation, data breach, legal removal).</para>
+                </listitem>
+                <listitem>
+                    <para>Rare case; typically used under legal or policy mandates.</para>
+                </listitem>
+                <listitem>
+                    <para>Hidden from normal views; not shown in search or history unless explicitly
+                        surfaced.</para>
+                </listitem>
+                <listitem>
+                    <para>Backend Behavior: Still exists in the database but treated as “voided”; Should be
+                        retained in all necessary inclusion as part of a complete history (exports, logs,
+                        etc.) unless user specifies does not want Withdrawn concepts.</para>
+                </listitem>
+                <listitem>
+                    <para>A withdrawn status should never be recovered to be active or inactive.</para>
+                </listitem>
+                <listitem>
+                    <para>Important Note: Withdrawn is distinct from inactive because it suppresses
+                        visibility and treats the component as fully retracted from the system.</para>
+                </listitem>
+            </itemizedlist>
+            <para> </para></listitem>
+        <listitem>
+            <para><emphasis role="bold">Canceled</emphasis></para>
+            <itemizedlist>
+                <listitem>
+                    <para>A temporary/uncommitted component or version that was abandoned before being
+                        committed.</para>
+                </listitem>
+                <listitem>
+                    <para>Happens when a user cancels a creation or exits the app without saving
+                        changes.</para>
+                </listitem>
+                <listitem>
+                    <para>Never visible in the application; filtered from all user-facing views.</para>
+                </listitem>
+                <listitem>
+                    <para>Backend Behavior: Exists only in transient state (with a “canceled” stamp).
+                        Subject to garbage collection and cleanup. Not included in exports since it is not a
+                        retained part of the history.</para>
+                </listitem>
+            </itemizedlist>
+        </listitem></orderedlist>
+</chapter>
+
