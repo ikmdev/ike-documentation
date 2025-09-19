@@ -45,12 +45,12 @@
             <para>High reliability organization (HRO) principles from other safety critical
                 industries, such as commercial aviation and nuclear power, began to be adopted as a
                 patient safety framework in some healthcare settings. [25] These principles,
-                outlined in the table below, originated from social science as behaviors present in
+                outlined in the table below (<xref linkend="HROPrinciplesforHealthInformation"></xref>, originated from social science as behaviors present in
                 organizations that operate in extremely complex, high-risk environments with high
                 levels of system reliability believed to produce safer outcomes. Reliability is the
                 probability that a component or system will perform as designed under certain
                 conditions over time (i.e., checklists). </para>
-            <table>
+            <table xml:id="HROPrinciplesforHealthInformation">
                 <title>HRO Principles for Health Information</title>
                 <tgroup cols="3">
                     <colspec colnum="1" colname="col1"/>

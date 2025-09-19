@@ -339,9 +339,10 @@
                 Project Progress Reports </title>
             <para>Mapping LOINC® terms to SNOMED CT®, specifically for the laboratory component of
                 LOINC® required extensive discussion among stakeholders and an extension of the
-                SNOMED CT® concept model to accommodate LOINC® Axis properties. The table below
+                SNOMED CT® concept model to accommodate LOINC® Axis properties. The table below (<xref linkend="snomedtoloincaxistable"></xref>)
                 shows the SNOMED CT® attribute crosswalk to the LOINC® Axis. </para>
-            <informaltable>
+            <table xml:id="snomedtoloincaxistable">
+                <title>SNOMED CT® attribute crosswalk to the LOINC® Axis</title>
                 <tgroup cols="3">
                     <colspec colnum="1" colname="col1" align="left"/>
                     <colspec colnum="2" colname="col2" align="left"/>
@@ -405,7 +406,7 @@
                         </row>
                     </tbody>
                 </tgroup>
-            </informaltable>
+            </table>
             <para>Release notes acknowledge some terms defined by LOINC® Parts require additional
                 discussion before finalizing the modeling and terming. An example of this issue is
                 LOINC® terms defined by LOINC® Part Antibiotic XXX (‘other antibiotic’). In

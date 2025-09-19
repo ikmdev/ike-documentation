@@ -498,8 +498,8 @@
                 <table>
                     <title>SaaS Roadmap Migration Assumptions</title>
                     <tgroup cols="2">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
+                        <colspec colnum="1" colname="col1" align="left" colwidth="200"/>
+                        <colspec colnum="2" colname="col2" align="left" colwidth="285.75pt"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">#</emphasis></entry>

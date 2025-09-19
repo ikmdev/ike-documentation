@@ -196,9 +196,9 @@
         <para>In Analysis Normal Form (ANF), each statement is built from a standard structure which
             captures the clinical information. This standard structure will contain different data
             element types, depending on what kind of information is being captured. These data types
-            are summarized in Table 1 and are discussed in further detail below.</para>
+            are summarized in the table below (<xref linkend="DataTypeUsedinANFStatements"></xref>) and are discussed in further detail below.</para>
         <para>
-            <table>
+            <table xml:id="DataTypeUsedinANFStatements">
                 <title><emphasis role="italic">Data Types used in ANF statement
                         attributes</emphasis></title>
                 <tgroup cols="3">
@@ -338,8 +338,8 @@
                 statement can be determined and the specific attributes for Context and Circumstance
                 can be populated. In order to illustrate how to break down the clinical narrative,
                 determine the topic and populate the associated attributes, the following clinical
-                narrative will be used as an example. </para>
-            <table frame="all">
+                narrative will be used as an example (<xref linkend="ClinicalSyphilisUseCase"></xref>). </para>
+            <table frame="all" xml:id="ClinicalSyphilisUseCase">
                 <title><emphasis role="italic"> Clinical narrative for a
                         Syphilis Use Case </emphasis></title>
                 <tgroup cols="1">
@@ -401,11 +401,9 @@
             <para>The clinical narrative above contains multiple key Clinical Elements that can be
                 identified and separated into separate ANF statements, each with their own Topic and
                 relevant attributes. The first step is to identify the separate pieces of relevant
-                clinical information for the patient as seen in
-                <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161352-0500" comment="Update"?>Table
-                2<?oxy_comment_end?>. </para>
+                clinical information for the patient as seen in the table below (<xref linkend="IsolationClinicalNarrative"></xref>). </para>
             <para>
-                <table>
+                <table xml:id="IsolationClinicalNarrative">
                     <title><emphasis>Isolation of Clinical Elements for Syphilis use case narrative
                         </emphasis></title>
                     <tgroup cols="1">
@@ -489,21 +487,21 @@
                 “true” or “false.” The way in which these types of results are represented in the
                 ANF statement will be discussed later. </para>
             <para>Take for example the fact that the patient, Roberta, in the syphilis clinical
-                narrative in Figure 3, was 70 years old. It is easy to understand that the topic for
-                that Clinical Element would be “Current Chronological Age”, and the result would be
-                “70”. This is an example of a Quantitative Result ANF statement. The clinical
-                narrative also states that the patient is female. It may seem that the logical Topic
-                for this statement would be “Sex at Birth” with a result of “Female.” However, this
-                is an example of a qualitative ANF statement. As the ANF logical model does not
-                allow for the representation of a result as a String, and gender is not a
-                quantitative measure, the result will be “true” and thus the topic will be either
-                “Male”, “Female”, or “Intersex” depending on the individual patient that the
-                statement was about. </para>
+                narrative in (<xref linkend="SyphilisJuly2025"></xref>), was 70 years old. It is easy to understand that the topic for that
+                Clinical Element would be “Current Chronological Age”, and the result would be “70”.
+                This is an example of a Quantitative Result ANF statement. The clinical narrative
+                also states that the patient is female. It may seem that the logical Topic for this
+                statement would be “Sex at Birth” with a result of “Female.” However, this is an
+                example of a qualitative ANF statement. As the ANF logical model does not allow for
+                the representation of a result as a String, and gender is not a quantitative
+                measure, the result will be “true” and thus the topic will be either “Male”,
+                “Female”, or “Intersex” depending on the individual patient that the statement was
+                about. </para>
             <para>
-                <table>
+                <table xml:id="SyphilisJuly2025">
                     <title><emphasis>Isolated Clinical Elements and resulting Topics from the
-                            Syphilis use case Clinical Narrative (Figure 3). Table shows alignment
-                            with existing Clinical Terminology in SNOMED, current as of July 2025.
+                            Syphilis use case Clinical Narrative. Table shows alignment with
+                            existing Clinical Terminology in SNOMED, current as of July 2025.
                         </emphasis></title>
                     <tgroup cols="3">
                         <colspec colnum="1" colname="col1"/>
@@ -738,10 +736,10 @@
                 The Narrative Circumstance could contain the exact mutation contained in the BRCA1
                 gene. The Narrative Circumstance will be described in more detail in later sections. </para>
             <para>Going back to the Syphilis use case, a circumstance choice can be determined for
-                each ANF statement Topic (Table 4 below). To demonstrate, the ANF statement Topics
+                each ANF statement Topic (<xref linkend="CircumstandChoice"></xref>). To demonstrate, the ANF statement Topics
                 in the table are specific to the Patient Roberta in the Syphilis narrative. </para>
             <para>
-                <table>
+                <table xml:id="CircumstandChoice">
                     <title><emphasis>Circumstance Choice for each of the Topics for ANF statements
                             for the Syphilis Use Case (Figure 3) </emphasis></title>
                     <tgroup cols="3">
@@ -871,12 +869,10 @@
                 number of other associated attributes for the Context. Each of the potential
                 attributes for the Context of an ANF statement are discussed below. It is important
                 to note that not all attributes are required for every ANF statement. The following
-                simple clinical narrative for Systolic Blood Pressure
-                (<?oxy_comment_start author="rgeorgacopoulos" timestamp="20250829T161600-0500" comment="Update"?>Figure
-                5<?oxy_comment_end?>) will be used to demonstrate the attributes for the Context
-                component of an ANF statement.</para>
+                simple clinical narrative for Systolic Blood Pressure (<xref linkend="ClinicalSystolic"></xref>) will be used to demonstrate
+                the attributes for the Context component of an ANF statement.</para>
             <para>
-                <table frame="all">
+                <table frame="all" xml:id="ClinicalSystolic">
                     <title><emphasis>Clinical narrative example for a Systolic Blood Pressure Use
                             Case</emphasis></title>
                     <tgroup cols="1">
@@ -923,7 +919,7 @@
                 documented/asserted, like the time that the charting in an electronic health record
                 occurred. Time is expressed as a measure and is recorded in Unix Epoch time. For the
                 Time attribute, there are a number of data points represented in the table below
-                (Table 5). These data elements will be described in the context of the date of
+                (<xref linkend="TimeAttribute"></xref>). These data elements will be described in the context of the date of
                 charting for the example Systolic Blood Pressure clinical narrative (July
                     9<superscript>th</superscript>, 2019). </para>
             <para>The <emphasis role="italic">lowerBound (float)</emphasis> data element represents
@@ -952,7 +948,7 @@
                 Therefore, the Semantic or logical expression for this Time example is “Concept
                 Seconds.” </para>
             <para>
-                <table>
+                <table xml:id="TimeAttribute">
                     <title><emphasis>Data elements in the Time Attribute for Context
                         </emphasis></title>
                     <tgroup cols="4">
@@ -1014,9 +1010,9 @@
                     </emphasis></emphasis> The ID is a unique ID. This will typically be the ID
                 assigned to the patient or the patient chart by the healthcare practitioner or
                 organization creating the clinical ANF statement. The semantic/logical expression
-                for this attribute would be Concept “Patient” as seen in Table 6. </para>
+                for this attribute would be Concept “Patient” as seen in <xref linkend="subjectofrecord"></xref>. </para>
             <para>
-                <table>
+                <table xml:id="subjectofrecord">
                     <title><emphasis>Data elements in the subjectOfRecord Attribute for
                             Context</emphasis></title>
                     <tgroup cols="4">
@@ -1052,9 +1048,9 @@
                 attribute refers to the list of practitioners or others (social workers, etc.) that
                 authored the clinical statement. It should be noted that the Author could be the
                 patient if the information is from a patient-filled form. If the author is the
-                clinician, the ID would be their personal identifier ID (Table 7). </para>
+                clinician, the ID would be their personal identifier ID (<xref linkend="authorattributeforcontext"></xref>). </para>
             <para>
-                <table>
+                <table xml:id="authorattributeforcontext">
                     <title><emphasis>Data element in the author Attribute for
                         Context</emphasis></title>
                     <tgroup cols="4">
@@ -1093,8 +1089,8 @@
                 and donors. Thus, possible values for this attribute would include the semantics for
                 “subject of record” (which could be the patient), “family member,” or “donor.” The
                 majority of statements will have a value of “patient” since most statements in a
-                patient’s clinical record will be about the patient (Table 8). </para>
-            <table>
+                patient’s clinical record will be about the patient <xref linkend="subjectofinformation"></xref>. </para>
+            <table xml:id="subjectofinformation">
                 <title><emphasis>Data element in the subjectOfInformation Attribute for
                         Context</emphasis></title>
                 <tgroup cols="4">
@@ -1126,10 +1122,9 @@
                 action that is being requested, measured or observed. Principle 2 is that the Topic
                 must be able to exist on its own and still retain original intent and clarity of
                 meaning. The 3rd principal is that the Topic can only contain 1 concept. The Topic
-                data element is a semantic/logical code (Table 9). For the clinical narrative in
-                Figure 5, the Topic for one of the ANF statements would be “Systolic Blood
-                Pressure.”</para>
-            <table>
+                data element is a semantic/logical code (Table 9). For the clinical narrative in <xref linkend="topicattributeforcontext"></xref> ,
+                the Topic for one of the ANF statements would be “Systolic Blood Pressure.”</para>
+            <table xml:id="topicattributeforcontext">
                 <title><emphasis>Data element in the Topic Attribute for Context</emphasis></title>
                 <tgroup cols="4">
                     <colspec colnum="1" colname="col1"/>
@@ -1164,12 +1159,12 @@
                 blood pressure, or an appendectomy. A Performance Circumstance will have either a
                 qualitative or quantitative result. For example, in the clinical narrative for
                 Systolic blood pressure, the ANF statement with the Topic of systolic blood pressure
-                would be a Performance Circumstance (Table 10) and would have the quantitative
+                would be a Performance Circumstance (<xref linkend="DataElementTypeAttribute"></xref>) and would have the quantitative
                 result of 120 mmHg. For the ANF statement for the patient’s gender, the Topic would
                 be "male" and the result in the performance circumstance would be the qualitative
                 result of "true."</para>
             <para>
-                <table>
+                <table xml:id="DataElementTypeAttribute">
                     <title><emphasis>Data element in the Type Attribute for
                         Context</emphasis></title>
                     <tgroup cols="4">
@@ -1216,10 +1211,9 @@
                 regardless of the type of Circumstance, each Circumstance will have timing
                 associated with the Circumstance and, in some cases, a Purpose for the ANF
                 statement. To demonstrate the attributes of the Circumstance Choice, the following
-                clinical narrative for Urinary Tract Infection will be used by way of example
-                (Figure 6). </para>
+                clinical narrative for Urinary Tract Infection will be used by way of example (<xref linkend="UTIUSeCase"></xref>). </para>
             <para>
-                <table frame="all">
+                <table frame="all" xml:id="UTIUSeCase">
                     <title>Clinical narrative example for a Urinary Tract Infection Use Case</title>
                     <tgroup cols="1">
                         <colspec colnum="1" colname="c1"/>
@@ -1265,12 +1259,12 @@
                 time when an action or observation took place in the past. For a Request
                 Circumstance, the Circumstance timing would capture the time when the requested
                 action is to take place in the future. </para>
-            <para>In the UTI clinical narrative in Figure 6, the patient presented on July 9, 2023,
-                with dysuria which had started on July 7, 2023. For the timing for this Performance
-                Circumstance in this ANF statement with Topic dysuria, the time interval would be
-                July 7, 2023, through July 9, 2023.</para>
+            <para>In the UTI clinical narrative, the patient presented on July 9, 2023, with dysuria
+                which had started on July 7, 2023. For the timing for this Performance Circumstance
+                in this ANF statement with Topic dysuria, the time interval would be July 7, 2023,
+                through July 9, 2023.</para>
             <para>The data elements for the circumstance timing are the same as discussed for the
-                ANF statement timing (Table 11). In this case, the <emphasis role="italic">lowerBound (float)</emphasis> data element represents the lower bound of the
+                ANF statement timing (<xref linkend="TimeAttributesforPerformance"></xref>). In this case, the <emphasis role="italic">lowerBound (float)</emphasis> data element represents the lower bound of the
                 time (or time interval) for the dysuria symptom, i.e. when the symptom started.
                 Since we only have the date and not the time of the symptom starting, the lowerBound
                 of the Time would be 12:00:01 am on July 7<superscript>th</superscript>, 2023. This
@@ -1296,7 +1290,7 @@
                 bound would be included and this the entry would be “true.” The semantic associated
                 with this attribute is the unit of the Time measure, concept “Seconds.” </para>
             <para>
-                <table>
+                <table xml:id="TimeAttributesforPerformance">
                     <title><emphasis>Data elements in the Time Attribute for Performance
                             Circumstance</emphasis></title>
                     <tgroup cols="4">
@@ -1350,17 +1344,17 @@
                     </tgroup>
                 </table>
             </para>
-            <para>In the UTI clinical narrative in Figure 6, the patient is directed to return for
-                further evaluation if she developed fever or flank pain. This would be a Request
+            <para>In the UTI clinical narrative, the patient is directed to return for further
+                evaluation if she developed fever or flank pain. This would be a Request
                 Circumstance but the timing for when the request will happen is a bit unclear. If
                 the request had been to “return in 7 days for follow up urinalysis,” the timing for
                 the Request Circumstance would be clear, return to the office on July
                     16<superscript>th</superscript>, 2023, for a urinalysis. Given that the request
                 is for a conditional future occurrence, meaning only return when and if flank pain
                 or fever develop, the lower and upper bound for the time would be unknown, and
-                therefore the timing attribute for request Circumstance would be left blank (Table
-                12). </para>
-            <table>
+                therefore the timing attribute for request Circumstance would be left blank (<xref
+                    linkend="TimeAttributeforRequestCircumstance"/>). </para>
+            <table xml:id="TimeAttributeforRequestCircumstance">
                 <title><emphasis>Data elements in the Time Attribute for Request Circumstance with
                         conditional future occurrence</emphasis></title>
                 <tgroup cols="4">
@@ -1420,12 +1414,13 @@
                 therapeutic intent or diagnostic intent. The Purpose data element is a
                 semantic/logical expression. Not all ANF statements will have a documented purpose.
                 As an example, there is no purpose for a Chronological Age ANF statement.</para>
-            <para>In the UTI clinical narrative above (Figure 6), the Purpose of the request for the
-                patient to return if fever or flank pain develops is to assess for Kidney Infection.
-                As the purpose attribute requires a semantic as the data element, the concept would
-                be a combination of “has focus” and “kidney infection” (Table 13). </para>
+            <para>In the UTI clinical narrative above, the Purpose of the request for the patient to
+                return if fever or flank pain develops is to assess for Kidney Infection. As the
+                purpose attribute requires a semantic as the data element, the concept would be a
+                combination of “has focus” and “kidney infection” (<xref
+                    linkend="DataElementPurposeAttributeCirc"/>). </para>
             <para>
-                <table>
+                <table xml:id="DataElementPurposeAttributeCirc">
                     <title><emphasis>Data element in the Purpose Attribute for
                             Circumstance</emphasis></title>
                     <tgroup cols="4">
@@ -1463,11 +1458,12 @@
             <para>The <emphasis role="bold"><emphasis role="italic">Status</emphasis></emphasis> is
                 a coded value to representing the current status of the intervention or observation,
                 such as “performed,” “active” or “on hold.” For example, in the Urinary Tract
-                Infection narrative (Figure 6), a urinalysis was run, including test results for
-                leukocyte esterase, nitrites and white blood cells. Therefore, the status of ANF
-                statement with Topic of leukocyte esterase would be “performed” (Table 14).</para>
+                Infection narrative, a urinalysis was run, including test results for leukocyte
+                esterase, nitrites and white blood cells. Therefore, the status of ANF statement
+                with Topic of leukocyte esterase would be “performed” (<xref
+                    linkend="TopicLeukocyteEsterase"/>).</para>
             <para>
-                <table>
+                <table xml:id="TopicLeukocyteEsterase">
                     <title><emphasis>Data element in the Status Attribute for Circumstance for Topic
                             Leukocyte Esterase</emphasis></title>
                     <tgroup cols="4">
@@ -1506,23 +1502,23 @@
                 number result or a result range. The interval can be open or closed depending on
                 whether the upper and lower bounds are included in the measure interval. In cases
                 where the measurable element does not represent a range, upper and lower bound have
-                the same value. For instance, the clinical narrative for UTI (Figure 6) states that
-                a 32-year-old female is the patient. In this case, the number does not represent a
+                the same value. For instance, the clinical narrative for UTI states that a
+                32-year-old female is the patient. In this case, the number does not represent a
                 range, but the beginning and end points of the interval are the same value, 32,
                 meaning the value of the phenomenon is exactly 32. Therefore, for an ANF statement
                 with the Topic of Chronological age, the result would be the number 32, and the unit
-                of measure would be “years” as seen the in Table 15. </para>
+                of measure would be “years” as seen the in <xref linkend="AgeUTI"></xref>. </para>
             <para>The <emphasis role="bold"><emphasis role="italic">Resolution</emphasis></emphasis>
                 defines the possible or allowed increments in which the measured “thing” can be
-                counted. For the statement about the patient’s age in Table 15, the Resolution would
-                be “1” because “years old” can be counted in one-year increments. For the clinical
-                narrative in Figure 5 with the systolic blood pressure of 120 mmHg, the resolution
-                of this quantitative result would be “1” because the blood pressure measurement can
-                be counted in 1 mmHg increments. If the patient had a fever of 102.5, the resolution
+                counted. For the statement about the patient’s age, the Resolution would be “1”
+                because “years old” can be counted in one-year increments. For the clinical
+                narrative with the systolic blood pressure of 120 mmHg, the resolution of this
+                quantitative result would be “1” because the blood pressure measurement can be
+                counted in 1 mmHg increments. If the patient had a fever of 102.5, the resolution
                 would be 0.1, as the temperature can be counted in 1/10<superscript>th</superscript>
                 of a degree increments. </para>
             <para>
-                <table>
+                <table xml:id="AgeUTI">
                     <title><emphasis>Data elements in the Result Attribute for Circumstance
                             demonstrating the result for chronological age per the Urinary Tract
                             Infection Clinical Narrative</emphasis></title>
@@ -1580,15 +1576,16 @@
                 “false/no,” or “unknown. The expressions of the results are [0,0] for "no", [1,INF)
                 for "yes,” and [0,INF) for "unknown." For example, the clinical narrative for UTI
                 states that the 32-year patient is female. For an ANF statement with the topic
-                “Female,” the result would be [1, INF) for “true” as seen the in Table 16. This is a
-                Boolean result where there are only two possible values. These two possible results
-                represent a binary distinction and therefore, the <emphasis role="bold"><emphasis role="italic">Resolution</emphasis></emphasis> would be “1.” However, for a
+                “Female,” the result would be [1, INF) for “true” as seen the in <xref linkend="DataElementsUTI"></xref> . This is a Boolean
+                result where there are only two possible values. These two possible results
+                represent a binary distinction and therefore, the <emphasis role="bold"><emphasis
+                        role="italic">Resolution</emphasis></emphasis> would be “1.” However, for a
                 qualitative result dealing with a three-valued logic, such as “True,” “False” or
                 “Unknown,” the result would be a Ternary result with a resolution of “3.” Regardless
                 of whether the result is Boolean or ternary, the semantic could be “Countable
                 Quantity.”</para>
             <para>
-                <table>
+                <table xml:id="DataElementsUTI">
                     <title><emphasis>Data elements in the Result Attribute for Circumstance
                             demonstrating the result for female per the Urinary Tract Infection
                             Clinical Narrative</emphasis></title>
@@ -1648,11 +1645,11 @@
                 result with coded values to describe the health risk associated with the result of
                 an ANF statement, such as “low,” “normal,” “high,” “critically low,” or “critically
                 high.” This data element is optional. For example, in the clinical narrative for
-                Complete Blood Count (Figure 7), the patient value for Hemoglobin (HGB) was 7.7
+                Complete Blood Count<xref linkend="CompleteBloodCountUseCase"></xref>, the patient value for Hemoglobin (HGB) was 7.7
                 g/dl, which is out of the reference range of 11.8 g/dl – 16.8 g/dl. This result is
-                low and therefore is flagged as “Low” in the ANF statement (Table 17). </para>
+                low and therefore is flagged as “Low” in the ANF statement (<xref linkend="CBCClincalNarrative"></xref>) . </para>
             <para>
-                <table frame="all">
+                <table frame="all" xml:id="CompleteBloodCountUseCase">
                     <title><emphasis>Clinical narrative example for a Complete Blood Count Use Case
                         </emphasis></title>
                     <tgroup cols="1">
@@ -1721,7 +1718,7 @@
                 </table>
             </para>
             <para>
-                <table>
+                <table xml:id="CBCClincalNarrative">
                     <title><emphasis>Data elements in the Health Risk Attribute for Circumstance for
                             the Hemoglobin result in the CBC clinical narrative </emphasis></title>
                     <tgroup cols="4">
@@ -1755,14 +1752,14 @@
                 (Figure 7) the reference range for Hemoglobin (HGB) is 11.8 g/dl – 16.8 g/dl.
                 Therefore, the <emphasis role="italic">lowerBound</emphasis> of the reference range
                 for the ANF statement with topic Hemoglobin would be 11.8 and the <emphasis
-                    role="italic">upperBound</emphasis> would be 16.8 (Table 18). The range is
+                    role="italic">upperBound</emphasis> would be 16.8 (<xref linkend="DataReferenceCBC"></xref>). The range is
                 inclusive of the upperBound and lowerBound number and therefore the response to
                 including these numbers is “True.” The <emphasis role="italic">Resolution</emphasis>
                 for the Reference Range would be “0.1” g/dl because “g/dl” can be counted in
                 increments of one tenth. The <emphasis role="italic">Semantic</emphasis> for the
                 Attribute would be Concept “g/dl.”</para>
             <para>
-                <table>
+                <table xml:id="DataReferenceCBC">
                     <title><emphasis role="italic"> Data elements in the Reference Range Attribute
                             for Circumstance for the Hemoglobin result in the CBC clinical narrative
                         </emphasis></title>
@@ -1819,9 +1816,9 @@
                 identifies the practitioner(s) responsible for the result. If there is more than one
                 practitioner or individual responsible for the result, each would be listed
                 separately. For example, in the clinical narrative in Figure 5, Dr. Hannah Smith
-                (ID#47-3659) is responsible for the result for systolic Blood Pressure (Table 19). </para>
+                (ID#47-3659) is responsible for the result for systolic Blood Pressure (<xref linkend="ParticipantAttribute"></xref>). </para>
             <para>
-                <table>
+                <table xml:id="ParticipantAttribute">
                     <title><emphasis>Data elements in the Participant Attribute for Circumstance for
                             the Hemoglobin result in the CBC clinical narrative </emphasis></title>
                     <tgroup cols="4">
@@ -1860,14 +1857,14 @@
                 get the result for the ANF statement, and the data element is a list of string. Both
                 the test and the instrument (if applicable) are individual medical devices with
                 their own unique device identifiers. For example, in the clinical narrative for the
-                complete blood count (Figure 7). The collected whole blood was run on a Sysmex XN
-                series XN-10 analyzer, and for the WBC result, the reagents used were the Lysercell
-                WNR and Fluorocell WNR reagents, both made by Sysmex. For the ANF statement, the
-                Unique Device Identifiers (UDI) would be listed (Table 20). For the Sysmex XN series
-                XN-10 analyzer, the primary DI, per GUDID, is 04987562424214. The device identifier
-                for the reagents is 04987562422982. </para>
+                complete blood count. The collected whole blood was run on a Sysmex XN series XN-10
+                analyzer, and for the WBC result, the reagents used were the Lysercell WNR and
+                Fluorocell WNR reagents, both made by Sysmex. For the ANF statement, the Unique
+                Device Identifiers (UDI) would be listed (<xref linkend="DeviceIDAttributeCBC"></xref>). For the Sysmex XN series XN-10
+                analyzer, the primary DI, per GUDID, is 04987562424214. The device identifier for
+                the reagents is 04987562422982. </para>
             <para>
-                <table>
+                <table xml:id="DeviceIDAttributeCBC">
                     <title><emphasis>Data elements in the Device ID Attribute for Circumstance for
                             the WBC result in the CBC clinical narrative </emphasis></title>
                     <tgroup cols="4">
@@ -1897,10 +1894,10 @@
             <para><emphasis role="bold">Method</emphasis></para>
             <para>The Method Attribute captures the method applied, either on its own, or in
                 conjunction with the Device, if present, to obtain the result in the ANF statement.
-                As seen in Table 21, the Method used to obtain the WBC result in Figure 7 is “Flow
+                As seen in <xref linkend="MethodAttributesCBC"></xref>, the Method used to obtain the WBC result in Figure 7 is “Flow
                 Cytometry.” </para>
             <para>
-                <table>
+                <table xml:id="MethodAttributesCBC">
                     <title><emphasis>Data elements in the Method Attribute for Circumstance for the
                             WBC result in the CBC clinical narrative</emphasis>
                     </title>
@@ -1937,7 +1934,7 @@
                 or MRI scan, or patient fasting before an abdominal ultrasound or lipid
                 panel.</para>
             <para>
-                <table frame="all">
+                <table frame="all" xml:id="breastcancerclinicalnarrative">
                     <title><emphasis role="italic">Clinical narrative example for a patient with
                             Invasive Breast Cancer </emphasis></title>
                     <tgroup cols="1">
@@ -1969,13 +1966,12 @@
             </para>
             <para><emphasis role="bold">Location</emphasis></para>
             <para>The <emphasis role="italic">Location </emphasis>attribute refers to the anatomical
-                body location of the Topic of the ANF statement. For the clinical narrative in
-                Figure 8, the patient had a palpable mass in her left breast. The Location attribute
+                body location of the Topic of the ANF statement. For the clinical narrative in <xref linkend="breastcancerclinicalnarrative"></xref>, the patient had a palpable mass in her left breast. The Location attribute
                 allows for the designation of laterality. The ANF statement for the Topic Palpable
-                mass would have a location of “left breast” (Table 22). Had there been more detailed
+                mass would have a location of “left breast” (<xref linkend="invasivebreastcancerclinicalnarrative"></xref>). Had there been more detailed
                 location information, such as the palpable mass in the upper portion of left breast,
                 an additional semantic for “upper” could be added to the location. </para>
-            <table>
+            <table xml:id="invasivebreastcancerclinicalnarrative">
                 <title><emphasis>Data elements in the Location Attribute for Circumstance for the
                         palpable mass result in the invasive breast cancer clinical narrative
                     </emphasis></title>
@@ -2008,11 +2004,11 @@
             <para><emphasis role="bold">Specimen Type</emphasis></para>
             <para>The <emphasis role="italic">Specimen Type</emphasis> Attribute includes
                 information for the Substance being sampled or tested, such as whole blood, clean
-                catch urine sample, etc. For the invasive breast cancer narrative (Figure 8), a
+                catch urine sample, etc. For the invasive breast cancer narrative, a
                 breast biopsy is performed. For the ANF statement with the topic of “breast biopsy,”
-                the Specimen Type would be breast tissue or breast biopsy specimen (Table 23). </para>
+                the Specimen Type would be breast tissue or breast biopsy specimen (<xref linkend="dataelementsinvasivebreastcancer"></xref>). </para>
             <para>
-                <table>
+                <table xml:id="dataelementsinvasivebreastcancer">
                     <title><emphasis>Data elements in the Specimen Type Attribute for Circumstance
                             for the Breast Biopsy Topic in the invasive breast cancer clinical
                             narrative </emphasis></title>
@@ -2046,11 +2042,10 @@
             <para><emphasis role="bold">Specimen Source Site</emphasis></para>
             <para>The <emphasis role="italic">Specimen Source Site</emphasis> Attribute details the
                 body location from where the specimen was obtained. For the invasive breast cancer
-                narrative (Figure 8), a breast biopsy is performed. For the ANF statement with the
-                topic of “breast biopsy,” the Specimen Source Site would be “Left Breast” (Table
-                24). </para>
+                narrative, a breast biopsy is performed. For the ANF statement with the topic of
+                “breast biopsy,” the Specimen Source Site would be “Left Breast” (<xref linkend="breastbiopsytopicinvasivebreastcancer"></xref>). </para>
             <para>
-                <table>
+                <table xml:id="breastbiopsytopicinvasivebreastcancer">
                     <title><emphasis>Data elements in the Specimen Source Site Attribute for
                             Circumstance for the Breast Biopsy Topic in the invasive breast cancer
                             clinical narrative </emphasis></title>
@@ -2090,10 +2085,10 @@
                 set of conditions that must exist in order for request to be executed. For example,
                 in the clinical narrative in Figure 6, The patient is directed to return for further
                 evaluation if symptoms persist or worsen, or fever or flank pain develop. In this
-                case, the ANF statement would have 4 conditional triggers (Table 25), any one of
+                case, the ANF statement would have 4 conditional triggers (<xref linkend="dataelementsutifurtherevaluation"></xref>), any one of
                 which could trigger the request. </para>
             <para>
-                <table>
+                <table xml:id="dataelementsutifurtherevaluation">
                     <title><emphasis>Data elements in the Conditional Trigger Attribute for Request
                             Circumstance for the UTI clinical narrative with instructions to return
                             for further evaluation</emphasis></title>
@@ -2133,10 +2128,10 @@
                 The use of the Ibuprofen is conditional on the presence of back pain, so the logical
                 expression for the ANF statement for conditional Trigger with the Topic of Ibuprofen
                 400 mg tablet would be concept “Back Pain.” In the clinical narrative below for a
-                request for some routine bloodwork (Figure 9), the conditional trigger would be
+                request for some routine bloodwork (<xref linkend="routinebloodwork"></xref>), the conditional trigger would be
                 fasting for 8 hours prior to collection. </para>
             <para>
-                <table frame="all">
+                <table frame="all" xml:id="routinebloodwork">
                     <title><emphasis role="italic">Clinical narrative example for a patient
                             requiring routine bloodwork </emphasis></title>
                     <tgroup cols="1">
@@ -2168,18 +2163,18 @@
             <para>The <emphasis role="italic"><emphasis role="bold">Requested
                     Participant</emphasis></emphasis> Attribute is an optional list of either
                 specific persons or roles who perform and action, assist in performing an action or
-                are targets of the action. In the request for routine bloodwork in Figure 9, the
-                provider makes the specific request that the blood be drawn at Quest Diagnostic.
-                Therefore, the requested participant is a specific Quest Diagnostics lab and the ANF
-                statement would contain the unique identifier (CLIA identifier number) for the
-                designated lab (Table 26). If a specific laboratory had not been identified, the
-                Requested participant may have just listed the role of “laboratory” in the ANF
-                statement. Additional “roles” that could be involved as a Requested Participant
-                could be a “specialist” if the request was a referral, a “physical therapist, or
-                nutritionist. It could be the patient themselves if the request was for an action to
-                be taken solely by the patient, like daily blood pressure readings. </para>
+                are targets of the action. In the request for routine bloodwork, the provider makes
+                the specific request that the blood be drawn at Quest Diagnostic. Therefore, the
+                requested participant is a specific Quest Diagnostics lab and the ANF statement
+                would contain the unique identifier (CLIA identifier number) for the designated lab
+                (<xref linkend="dataelementscomprehensivemetabolicpanel"></xref>). If a specific laboratory had not been identified, the Requested
+                participant may have just listed the role of “laboratory” in the ANF statement.
+                Additional “roles” that could be involved as a Requested Participant could be a
+                “specialist” if the request was a referral, a “physical therapist, or nutritionist.
+                It could be the patient themselves if the request was for an action to be taken
+                solely by the patient, like daily blood pressure readings. </para>
             <para>
-                <table>
+                <table xml:id="dataelementscomprehensivemetabolicpanel">
                     <title><emphasis>Data elements in the Requested Participant Attribute for
                             Request Circumstance for the Comprehensive Metabolic Panel clinical
                             narrative</emphasis></title>
@@ -2224,9 +2219,9 @@
                 specific timeframe, pre-op/pre-procedure or pre follow up. All requests are
                 considered “routine” unless otherwise specified. For the clinical example in Figure
                 9, the patient is told to get the bloodwork within the next 48 hours, which would be
-                a routine request (Table 27). </para>
+                a routine request (<xref linkend="priorityattributecomprehensivemetabolicpanelclinical"></xref>). </para>
             <para>
-                <table>
+                <table xml:id="priorityattributecomprehensivemetabolicpanelclinical">
                     <title><emphasis>Data elements in the Priority Attribute for Request
                             Circumstance for the Comprehensive Metabolic Panel clinical
                             narrative</emphasis></title>
@@ -2260,18 +2255,18 @@
             <para><emphasis role="bold">Requested Result</emphasis></para>
             <para>The <emphasis role="italic"><emphasis role="bold">Requested
                     Result</emphasis></emphasis> Attribute contains data elements that specifies the
-                desired, measurable result of the request. In the clinical narrative in Figure 10,
+                desired, measurable result of the request. In the clinical narrative in <xref linkend="anklesprainclinicalnarrative"></xref>,
                 the patient is advised to take two 200 mg tablets of Ibuprofen every 6 hours as
                 needed for pain and inflammation. For the ANF statement with topic “200 mg oral
                 Ibuprofen tablet,” the requestedResult would be [2,2], with 2 for the upper bound
-                and 2 for the lower bound (Table 28). The range is inclusive of the upperBound and
+                and 2 for the lower bound (<xref linkend="dataelementssprainedankleclinical"></xref>). The range is inclusive of the upperBound and
                 lowerBound number and therefore the response to including these numbers is “True.”
                 The Resolution for the Reference Range would be “1” tablet because Tablets can be
                 counted in increments of one. The semantic would be “200 mg ibuprofen oral tablet.”
                 The request that it should be taken every 6 hours is taken if in the repetition
                 attribute below.</para>
             <para>
-                <table frame="all">
+                <table frame="all" xml:id="anklesprainclinicalnarrative">
                     <title><emphasis>Clinical narrative example for a patient with ankle
                             sprain</emphasis></title>
                     <tgroup cols="1">
@@ -2313,7 +2308,7 @@
                 specified with the correct result semantic. If a requestedResult is unspecified, the
                 value is set to [0, INF) with a result semantic of "Countable Quantity.”</para>
             <para>
-                <table>
+                <table xml:id="dataelementssprainedankleclinical">
                     <title><emphasis>Data elements in the Requested Result for Request Circumstance
                             for taking ibuprofen for the Sprained Ankle clinical
                             narrative</emphasis></title>
@@ -2426,9 +2421,9 @@
                 </listitem>
             </itemizedlist>
             <para>In terms of the ANF statement, the recommendation of taking Ibuprofen would be as
-                illustrated in Table 29.</para>
+                illustrated in <xref linkend="repetitionattributesprainedankleclinical"></xref>.</para>
             <para>
-                <table>
+                <table xml:id="repetitionattributesprainedankleclinical">
                     <title><emphasis>Data elements in the Repetition Attribute for Request
                             Circumstance for taking ibuprofen for the Sprained Ankle clinical
                             narrative</emphasis></title>
@@ -2520,9 +2515,9 @@
                 request circumstance as a specific method may not be specified in the request. An
                 example of a requested method could be a request for a molecular diagnostic for Flu.
                 The practitioner may not specify a specific manufacturer or specific test, but they
-                may request a PCR-based Molecular Test (Table 30). </para>
+                may request a PCR-based Molecular Test (<xref linkend="molecularinfluenzatest"></xref>). </para>
             <para>
-                <table>
+                <table xml:id="molecularinfluenzatest">
                     <title><emphasis>Data elements in the Method Attribute for Request Circumstance
                             for a molecular influenza test</emphasis></title>
                     <tgroup cols="4">
@@ -2561,10 +2556,9 @@
                 Topic of the request for the ANF statement. It is possible that there are multiple
                 allowable body locations for a request. For example, a request for a Blood pressure
                 measurement may allow for a body location of either left or right brachial artery.
-                In this case, there would be two concepts for the location as seen in Table
-                31.</para>
+                In this case, there would be two concepts for the location as seen in <xref linkend="locationattributebloodpressure"></xref>.</para>
             <para>
-                <table>
+                <table xml:id="locationattributebloodpressure">
                     <title><emphasis>Data elements in the Location Attribute for Request
                             Circumstance for Blood Pressure</emphasis></title>
                     <tgroup cols="4">
@@ -2601,9 +2595,9 @@
                 will be sampled or tested, such as whole blood, clean catch urine sample, etc. For
                 example, a physician may request that a nasopharyngeal swab specimen be collected to
                 run a SARS-CoV-2 PCR test but due to a septal deviation, the physician may specify
-                that the sample be taken from the right nostril (Table 32). </para>
+                that the sample be taken from the right nostril (<xref linkend="sarscovrightnostril"></xref>). </para>
             <para>
-                <table>
+                <table xml:id="sarscovrightnostril">
                     <title><emphasis>Data elements in the Specimen Type Attribute for Request
                             Circumstance for a SARS-CoV test using a nasopharyngeal swab and
                             swabbing the right nostril</emphasis></title>
@@ -2635,9 +2629,9 @@
                     Site</emphasis></emphasis> Attribute for the Request Circumstance is the same as
                 for the Performance Circumstance and details the body location from where the
                 specimen will be obtained. For the example of taking a nasopharyngeal swab from the
-                right nostril, the ANF statement is illustrated below (Table 33).</para>
+                right nostril, the ANF statement is illustrated below (<xref linkend="dataelementssarscovrightnostril"></xref>).</para>
             <para>
-                <table>
+                <table xml:id="dataelementssarscovrightnostril">
                     <title><emphasis>Data elements in the Specimen Source Site Attribute for Request
                             Circumstance for a SARS-CoV test using a nasopharyngeal swab and
                             swabbing the right nostril</emphasis></title>
@@ -2714,10 +2708,9 @@
                 from a clinical narrative, the following section will illustrate how to build all of
                 the required ANF statements for several clinical narratives. </para>
             <para>The first clinical narrative describes a systolic and diastolic blood pressure
-                measurement for a 62-year-old man during a routine clinical encounter (Figure
-                11).</para>
+                measurement for a 62-year-old man during a routine clinical encounter (<xref linkend="clinicalnarrativebloodpressure"></xref>).</para>
             <para>
-                <table frame="all">
+                <table frame="all" xml:id="clinicalnarrativebloodpressure">
                     <title><emphasis>Clinical narrative example for blood pressure
                             results</emphasis></title>
                     <tgroup cols="1">
@@ -2763,16 +2756,31 @@
                 in the context of this user guide. If a particular attribute is not relevant to the
                 Topic, the cell will be shaded gray. </para>
             <para>The first step is to identify the Key Clinical Elements from which the ANF
-                statements will be created (Table 34). There will be 7 ANF statements created for
-                this clinical narrative. The final two statements regarding sitting and urination
-                will be associated statements linked to the two Blood Pressure measurements, as they
-                clinically do not stand alone in the context of this narrative. These two clinical
-                elements are only important in the context of the blood pressure measurements. The
-                first 6 Clinical Elements include Performance Circumstances in the ANF statement.
-                The final Clinical Element of the blood pressure request includes a Request
-                Circumstance. </para>
+                statements will be created (<xref linkend="isolationclinicalelementsbloodpressure"
+                />). There will be 7 ANF statements created for this clinical narrative 
+                (<xref linkend="anftopicmale"></xref>)
+                (<xref linkend="anfstatementperformancetopicmale"></xref>)
+                (<xref linkend="anfchronologicalage"></xref>)
+                (<xref linkend="anfperformancetopicchronologicalage"></xref>)
+                (<xref linkend="anfsystolicbloodpressure"></xref>)
+                (<xref linkend="anftopicsystolicBP"></xref>)
+                (<xref linkend="anfassociatedstatements"></xref>)
+                (<xref linkend="anfdiastolicbp"></xref>)
+                (<xref linkend="anfperformancediastolicbloodpressure"></xref>)
+                (<xref linkend="anfassociatedstatementsdiastolicbp"></xref>)
+                (<xref linkend="anfsittingposition"></xref>)
+                (<xref linkend="anfperformancesittingposition"></xref>)
+                (<xref linkend="anfbloodpressureprocedure"></xref>)
+                (<xref linkend="andrequestcircumstancebpprocedure"></xref>)
+                . The final
+                two statements regarding sitting and urination will be associated statements linked
+                to the two Blood Pressure measurements, as they clinically do not stand alone in the
+                context of this narrative. These two clinical elements are only important in the
+                context of the blood pressure measurements. The first 6 Clinical Elements include
+                Performance Circumstances in the ANF statement. The final Clinical Element of the
+                blood pressure request includes a Request Circumstance. </para>
             <para>
-                <table>
+                <table xml:id="isolationclinicalelementsbloodpressure">
                     <title><emphasis>Isolation of Clinical Elements for Blood Pressure Use Case
                         </emphasis></title>
                     <tgroup cols="2">
@@ -2820,7 +2828,7 @@
                 used. SNOMED codes used are accurate as of July 31, 2025. </para>
 
             <para>
-                <table>
+                <table xml:id="anftopicmale">
                     <title>ANF Statement: Topic Male</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
@@ -2944,7 +2952,7 @@
                 </table>
             </para>
             <para>
-                <table>
+                <table xml:id="anfstatementperformancetopicmale">
                     <title>ANF
                         Statement Performance Circumstance: Topic Male</title>
                     <tgroup cols="4">
@@ -3132,7 +3140,7 @@
             </para>
 
             <para>
-                <table>
+                <table xml:id="anfchronologicalage">
                     <title>ANF Statement: Chronological Age</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
@@ -3255,7 +3263,7 @@
                 </table>
             </para>
             <para>
-                <table>
+                <table xml:id="anfperformancetopicchronologicalage">
                     <title>ANF
                         Statement Performance Circumstance: Topic Chronological Age</title>
                     <tgroup cols="4">
@@ -3451,7 +3459,7 @@
                 </table>
             </para>
 
-            <table>
+            <table xml:id="anfsystolicbloodpressure">
                 <title>ANF Statement
                     Context: Systolic Blood Pressure</title>
                 <tgroup cols="4">
@@ -3579,7 +3587,7 @@
                 </tgroup>
             </table>
             <para>
-                <table>
+                <table xml:id="anftopicsystolicBP">
                     <title>ANF
                         Statement Performance Circumstance: Topic Systolic BP</title>
                     <tgroup cols="4">
@@ -3787,7 +3795,7 @@
                     </tgroup>
                 </table>
             </para>
-            <table>
+            <table xml:id="anfassociatedstatements">
                 <title>ANF Associated
                     Statements</title>
                 <tgroup cols="4">
@@ -3849,7 +3857,7 @@
             </table>
 
             <para>
-                <table>
+                <table xml:id="anfdiastolicbp">
                     <title>ANF Statement: Diastolic BP</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
@@ -3978,7 +3986,7 @@
                 </table>
             </para>
             <para>
-                <table>
+                <table xml:id="anfperformancediastolicbloodpressure">
                     <title>ANF
                         Statement Performance Circumstance: Diastolic Blood Pressure </title>
                     <tgroup cols="4">
@@ -4187,7 +4195,7 @@
                 </table>
             </para>
             <para>
-                <table>
+                <table xml:id="anfassociatedstatementsdiastolicbp">
                     <title>ANF
                         Associated Statements: Diastolic BP </title>
                     <tgroup cols="4">
@@ -4251,7 +4259,7 @@
             </para>
 
             <para>
-                <table>
+                <table xml:id="anfsittingposition">
                     <title>ANF Statement: Sitting Position</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
@@ -4380,7 +4388,7 @@
                 </table>
             </para>
             <para>
-                <table>
+                <table xml:id="anfperformancesittingposition">
                     <title>ANF
                         Statement Performance Circumstance: Sitting Position</title>
                     <tgroup cols="4">
@@ -4591,7 +4599,7 @@
 
                
             <para>
-                <table>
+                <table xml:id="anfbloodpressureprocedure">
                     <title>ANF Statement: Blood Pressure
                         Procedure</title>
                     <tgroup cols="4">
@@ -4723,7 +4731,7 @@
                 </table>
             </para>
             <para>
-                <table>
+                <table xml:id="andrequestcircumstancebpprocedure">
                     <title>ANF
                         Statement Request Circumstance: Blood Pressure Procedure</title>
                     <tgroup cols="4">
@@ -4964,11 +4972,32 @@
         <section>
             <title>ANF Statements for Medication History</title>
             <para>The second clinical narrative describes a medication history for a patient with
-                hypertension and prediabetes (Figure 12). The first step is to identify the Key
-                Clinical Elements from which the ANF statements will be created (Table 29). There
-                will be 10 ANF statements created for this clinical narrative. </para>
+                hypertension and prediabetes (<xref linkend="medhistoryclinicalnarrative"/>). The
+                first step is to identify the Key Clinical Elements from which the ANF statements
+                will be created (<xref linkend="medhistoryusecase"/>). There will be 10 ANF
+                statements created for this clinical narrative: 
+                <xref linkend="medhistoryusecase"></xref>,
+                <xref linkend="ANFStatementTopicFemale"></xref>,
+                <xref linkend="ANFStatementPerformanceCircumstanceTemplateFemale"></xref>,
+                <xref linkend="anfstatementchronage"></xref>,
+                <xref linkend="anfstateperchronoage"></xref>,
+                <xref linkend="anftopichyperten"></xref>,
+                <xref linkend="anfstateperfcircstatehyper"></xref>,
+                <xref linkend="topicpredia"></xref>,
+                <xref linkend="anfperfcircstatepredia"></xref>,
+                <xref linkend="topiclisi20mgoral"></xref>,
+                <xref linkend="anfstateperfcirc20mgoraltablet"></xref>,
+                <xref linkend="anfstatemedadherence"></xref>,
+                <xref linkend="anfmedadherence"></xref>,
+                <xref linkend="anfadversereactioncausedbydrug"></xref>,
+                <xref linkend="anftopichydro25mg"></xref>,
+                <xref linkend="anfperfcirchydrochlor25moral"></xref>,
+                <xref linkend="anfhydrochloro25mgoral"></xref>,
+                <xref linkend="medsideeffect"></xref>,
+                <xref linkend="anfnarrativemedsideeffects"></xref>
+                . </para>
             <para>
-                <table frame="all">
+                <table frame="all" xml:id="medhistoryclinicalnarrative">
                     <title><emphasis>Medication History Clinical Narrative</emphasis></title>
                     <tgroup cols="1">
                         <colspec colnum="1" colname="c1"/>
@@ -5008,7 +5037,7 @@
                 </table>
             </para>
             <para>
-                <table>
+                <table xml:id="medhistoryusecase">
                     <title><emphasis>Isolation of Clinical Elements for Medication History Use Case
                         </emphasis></title>
                     <tgroup cols="2">
@@ -5063,9 +5092,10 @@
                     </tgroup>
                 </table>
             </para>
-            <para><emphasis role="underline">ANF Statement: Topic Female</emphasis></para>
+           
             <para>
-                <informaltable>
+                <table xml:id="ANFStatementTopicFemale">
+                    <title>ANF Statement: Topic Female</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
                         <colspec colnum="2" colname="col2"/>
@@ -5179,9 +5209,9 @@
                             </row>
                         </tbody>
                     </tgroup>
-                </informaltable>
+                </table>
             </para>
-            <table>
+            <table xml:id="ANFStatementPerformanceCircumstanceTemplateFemale">
                 <title>ANF Statement
                     Performance Circumstance: Template Female</title>
                 <tgroup cols="4">
@@ -5370,7 +5400,7 @@
             </table>
 
             <para>
-                <table>
+                <table xml:id="anfstatementchronage">
                     <title>ANF Statement: Chronological Age </title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
@@ -5491,7 +5521,7 @@
                 </table>
             </para>
             <para>
-                <table>
+                <table xml:id="anfstateperchronoage">
                     <title>ANF
                         Statement Performance Circumstance: Chronological Age</title>
                     <tgroup cols="4">
@@ -5686,7 +5716,7 @@
             </para>
 
             <para>
-                <table>
+                <table xml:id="anftopichyperten">
                     <title>ANF Statement: Topic Hypertension</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
@@ -5807,7 +5837,7 @@
                 </table>
             </para>
             <para>
-                <table>
+                <table xml:id="anfstateperfcircstatehyper">
                     <title>ANF
                         Statement Performance Circumstance:Statement Hypertension</title>
                     <tgroup cols="4">
@@ -5999,7 +6029,7 @@
             </para>
 
             <para>
-                <table>
+                <table xml:id="topicpredia">
                     <title>ANF Statement: Topic Prediabetes</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
@@ -6120,7 +6150,7 @@
                 </table>
             </para>
             <para>
-                <table>
+                <table xml:id="anfperfcircstatepredia">
                     <title>ANF
                         Statement Performance Circumstance: Statement Prediabetes </title>
                     <tgroup cols="4">
@@ -6311,7 +6341,7 @@
                 </table>
             </para>
             <para>
-                <table>
+                <table xml:id="topiclisi20mgoral">
                     <title>ANF Statement: Topic Lisinopril, 20 mg oral
                         tablet</title>
                     <tgroup cols="4">
@@ -6438,7 +6468,7 @@
                 </table>
             </para>
             <para>
-                <table>
+                <table xml:id="anfstateperfcirc20mgoraltablet">
                     <title>ANF
                         Statement Performance Circumstance: Lisinopril, 20 mg oral tablet</title>
                     <tgroup cols="4">
@@ -6647,7 +6677,7 @@
             </para>
 
             <para>
-                <table>
+                <table xml:id="anfstatemedadherence">
                     <title>ANF Statement: Medication Adherence</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
@@ -6773,7 +6803,7 @@
                 </table>
             </para>
             <para>
-                <table>
+                <table xml:id="anfmedadherence">
                     <title>ANF
                         Statement Performance Circumstance: Medication Adherence</title>
                     <tgroup cols="4">
@@ -6967,7 +6997,7 @@
             </para>
 
             <para>
-                <table>
+                <table xml:id="anfadversereactioncausedbydrug">
                     <title>ANF Statement: Adverse Reaction caused by Drug</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
@@ -7093,7 +7123,7 @@
                 </table>
             </para>
             <para>
-                <table>
+                <table xml:id="anfperfcircmedad">
                     <title>ANF
                         Statement Performance Circumstance: Medication Adherence</title>
                     <tgroup cols="4">
@@ -7287,7 +7317,7 @@
             </para>
 
             <para>
-                <table>
+                <table xml:id="anftopichydro25mg">
                     <title>ANF Statement: Topic Hydrochlorothiazide 25 mg</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
@@ -7412,7 +7442,7 @@
                 </table>
             </para>
             <para>
-                <table>
+                <table xml:id="anfperfcirchydrochlor25moral">
                     <title>ANF
                         Statement Performance Circumstance:Hydrochlorothiazide 25 mg oral
                         tablet</title>
@@ -7621,7 +7651,7 @@
                 </table>
             </para>
             <para>
-                <table>
+                <table xml:id="anfhydrochloro25mgoral">
                     <title>ANF
                         Associated Statements: Hydrochlorothiazide 25 mg oral
                         tablet</title>
@@ -7667,7 +7697,7 @@
             </para>
 
             <para>
-                <table>
+                <table xml:id="medsideeffect">
                     <title>ANF Statement: Medication Side Effect</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
@@ -7787,7 +7817,7 @@
                 </table>
             </para>
             <para>
-                <table>
+                <table xml:id="anfnarrativemedsideeffects">
                     <title>ANF
                         Statement Narrative Circumstance: Medication Side
                         Effects</title>

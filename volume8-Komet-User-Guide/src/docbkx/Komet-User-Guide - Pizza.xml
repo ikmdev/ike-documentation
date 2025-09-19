@@ -1077,8 +1077,8 @@
             need to create additional concepts that help define parts of the pattern or to actually
             create the pattern itself</para>
         <para>In this example, we will need to create the following concepts to help define a
-            Cooking Instruction pattern</para>
-        <table>
+            Cooking Instruction pattern (<xref linkend="conceptspatterncreationediting"></xref>)</para>
+        <table xml:id="conceptspatterncreationediting">
             <title>Concepts to Create for Pattern Creation and Editing</title>
             <tgroup cols="2">
                 <colspec colnum="1" colname="col1" align="center"/>
@@ -1305,8 +1305,8 @@
                 
                 
                     <para>When adding Fields to a pattern, you may need to add a data
-                        type depending on the pattern. The following list highlights some potential options:
-                        <table>
+                        type depending on the pattern. The following list highlights some potential options (<xref linkend="datageneralsemanticauthoring"></xref>):
+                        <table xml:id="datageneralsemanticauthoring">
                             <title>Data Types for Patterns and General Semantic Authoring</title>
                             <tgroup cols="2">
                                 <colspec colnum="1" colname="col1" align="center"/>
@@ -1411,7 +1411,8 @@
         <para>Depending on the data set and existing concepts, users may need to create additional
             concepts to create a semantic</para>
         <para>For this example, users will need to create concepts for Pizza Oven, Pizza Stone, and
-            420 Fahrenheit to fill out the information needed to complete the Cooking Instruction Pattern<table>
+            420 Fahrenheit to fill out the information needed to complete the Cooking Instruction Pattern (<xref linkend="conceptscreationeditingasemantic"></xref>)
+            <table xml:id="conceptscreationeditingasemantic">
                 <title>Concepts to Create for Creation and Editing a Semantic</title>
                 <tgroup cols="2">
                     <colspec colnum="1" colname="col1" align="center"/>

@@ -388,10 +388,10 @@ clinical trial: https://classic.clinicaltrials.gov/ct2/show/NCT02596087"?>IQ-MAP
                 is to reduce the burden on providers and health systems to each identify important
                 lessons on their own." [14]</para>
             <para>To address this need, a range of quality metrics can be used to assess the
-                effectiveness and impact of CDS interventions. The following Table provides examples
+                effectiveness and impact of CDS interventions. The following table (<xref linkend="examplemeasures"></xref>) provides examples
                 of commonly captured measures. </para>
             <para>
-                <table frame="all">
+                <table frame="all" xml:id="examplemeasures">
                     <title>Examples of Measures Commonly Captured to Measure the Effects of CDS
                         Interventions </title>
                     <tgroup cols="2">

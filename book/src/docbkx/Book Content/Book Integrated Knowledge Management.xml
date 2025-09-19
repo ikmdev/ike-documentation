@@ -22,7 +22,9 @@
         <title>The Problem IKM Addresses</title>
         <para>In healthcare, standards development organizations (SDOs) develop, maintain, and
             distribute or publish healthcare standards. SDOs exist in every industry, but in health
-            Information Technology (IT) the following are key examples of healthcare standards: <informaltable>
+            Information Technology (IT) the following are key examples of healthcare standards (<xref linkend="KeyExamplesofHealthcareStandards"></xref> 
+            <table xml:id="KeyExamplesofHealthcareStandards">
+                <title>Key Examples of Healthcare Standards</title>
                 <tgroup cols="2">
                     <colspec colnum="1" colname="col1"/>
                     <colspec colnum="2" colname="col2"/>
@@ -62,7 +64,7 @@
                         </row>
                     </tbody>
                 </tgroup>
-            </informaltable></para>
+            </table></para>
         <para>The Assistant Secretary for Technology Policy and Office of the National Coordinator
             for Health Information Technology (ASTP/ONC) currently oversees and promotes SDOs and
             supports the adoption and application of health data standards in the U.S. healthcare
