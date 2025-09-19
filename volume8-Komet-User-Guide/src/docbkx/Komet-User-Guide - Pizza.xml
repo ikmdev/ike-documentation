@@ -216,7 +216,7 @@
                         <title>Komet Interface</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../book/src/docbkx/images/Landing%20Page.svg" scale="30"
+                                <imagedata fileref="../../../book/src/docbkx/images/Landing%20Page.svg" scale="35"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -234,7 +234,7 @@
                         <title>New Journal</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../book/src/docbkx/images/New%20Journal%20Panel.svg" scale="20"
+                                <imagedata fileref="../../../book/src/docbkx/images/New%20Journal%20Panel.svg" scale="27"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -266,7 +266,7 @@
                         <title>Komet Concept Search</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Search.svg" scale="30"
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Search.svg" scale="40"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -301,7 +301,7 @@
                         <title>View Concept Details</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Concept%20Details.svg" scale="25"
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Concept%20Details.svg" scale="40"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -352,7 +352,7 @@
                                 <imageobject>
                                     <imagedata
                                         fileref="../../../book/src/docbkx/images/Pizza%20Hierarchy.svg"
-                                        scale="15" align="center"/>
+                                        scale="35" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -370,7 +370,7 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata
-                                        fileref="../../../book/src/docbkx/images/Pizza Hierarchical Navigation.svg" scale="25" align="center"/>
+                                        fileref="../../../book/src/docbkx/images/Pizza Hierarchical Navigation.svg" scale="35" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -385,7 +385,7 @@
                                 <imageobject>
                                     <imagedata
                                         fileref="../../../book/src/docbkx/images/Pizza%20Alternative%20Hierarchical%20Navigation.svg"
-                                        scale="25" align="center"/>
+                                        scale="35" align="center"/>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -432,7 +432,7 @@
                     <title>Versioning Panel</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Get%20to%20Versioning.svg" scale="25"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Get%20to%20Versioning.svg" scale="35"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -447,7 +447,7 @@
                     <title>Timeline Information</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Timeline%20Information.svg" scale="25"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Timeline%20Information.svg" scale="35"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -482,7 +482,7 @@
                     <title>Version Nodes</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Viewing%20Versioning2.svg" scale="25"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Viewing%20Versioning2.svg" scale="35"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -495,7 +495,7 @@
                     <title>Concept History Options</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20History%20Options.svg" scale="25"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20History%20Options.svg" scale="35"
                                 align="center"/>
                         </imageobject>
                     </mediaobject>
@@ -545,7 +545,7 @@
                     <title>New Concept</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../book/src/docbkx/images/New%20Concept.svg" scale="35" align="center"
+                            <imagedata fileref="../../../book/src/docbkx/images/New%20Concept.svg" scale="45" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -585,7 +585,7 @@
                     <title>Creating STAMP Properties</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Create%20STAMP.svg" scale="25" align="center"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Edit%20STAMP.svg" scale="35" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -632,7 +632,7 @@
                     <title>New Other Name</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20New%20Other%20Name.svg" scale="25" align="center"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20New%20Other%20Name.svg" scale="35" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -674,7 +674,7 @@
                     <title>Additional Sets</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Additional%20Sets.svg" scale="35" align="center"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Additional%20Sets.svg" scale="25" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -687,7 +687,7 @@
                     <title>Unique Identifier</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Unique%20Identifier.svg" scale="35" align="center"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Unique%20Identifier.svg" scale="25" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -813,7 +813,7 @@
                     <title>Choose a Role Restriction</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Concept%20Info5.svg" scale="35" align="center"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Concept%20Info5.svg" scale="25" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -840,7 +840,7 @@
                     <title>Update Concept Axiom</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Concept%20Info6.svg" scale="35" align="center"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Concept%20Info6.svg" scale="25" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -854,7 +854,7 @@
                     <title>T.O.M Axiom</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Concept%20Info7.svg" scale="35" align="center"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Concept%20Info7.svg" scale="25" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -877,7 +877,7 @@
                     <title>Axiom Hierarchy Viewing</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Concept%20Info8.svg" scale="25" align="center"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Concept%20Info8.svg" scale="35" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -920,7 +920,7 @@
                     <title>Updated STAMP</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Edit%20STAMP2.svg" scale="35" align="center"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Edit%20STAMP2.svg" scale="40" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -933,7 +933,7 @@
                     <title>Updated STAMP</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Edit%20STAMP3.svg" scale="35" align="center"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Edit%20STAMP3.svg" scale="30" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -958,7 +958,7 @@
                     <title>Alternate Editing a Concept</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Edit%20Concept.svg" scale="25" align="center"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Edit%20Concept.svg" scale="35" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -1025,7 +1025,7 @@
                         <title>Editing an Axiom</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Axiom%20Editing.svg" scale="25"
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Axiom%20Editing.svg" scale="35"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -1034,7 +1034,7 @@
                         <title>Adding Information to an Axiom</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Axiom%20Editing2.svg" scale="25"
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Axiom%20Editing2.svg" scale="40"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -1130,7 +1130,7 @@
                         <title>Add Pattern STAMP</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../Book/src/docbkx/images/Add%20Pattern%20STAMP.svg" scale="25" align="center"
+                                <imagedata fileref="../../../Book/src/docbkx/images/Add%20Pattern%20STAMP.svg" scale="45" align="center"
                                 />
                             </imageobject>
                         </mediaobject>
@@ -1143,7 +1143,7 @@
                         <title>Add Pattern Definition</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../Book/src/docbkx/images/Add%20Pattern%20Definition.svg" scale="25" align="center"
+                                <imagedata fileref="../../../Book/src/docbkx/images/Add%20Pattern%20Definition.svg" scale="45" align="center"
                                 />
                             </imageobject>
                         </mediaobject>
@@ -1162,7 +1162,7 @@
                         <title>Cooking Instructions Concept</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../book/src/docbkx/images/Pizza Cooking Instructions.svg" scale="15" align="center"
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza Cooking Instructions.svg" scale="35" align="center"
                                 />
                             </imageobject>
                         </mediaobject>
@@ -1175,7 +1175,7 @@
                         <title>Cooking Instructions Pattern Purpose and Meaning</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../book/src/docbkx/images/Pizza Cooking Instructions2.svg" scale="15" align="center"
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza Cooking Instructions2.svg" scale="35" align="center"
                                 />
                             </imageobject>
                         </mediaobject>
@@ -1225,7 +1225,7 @@
                         <title>Oven Type</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../book/src/docbkx/images/Pizza Oven Type.svg" scale="25" align="center"
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza Oven Type.svg" scale="35" align="center"
                                 />
                             </imageobject>
                         </mediaobject>
@@ -1234,7 +1234,7 @@
                         <title>Temperature</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../book/src/docbkx/images/Pizza Temperature.svg" scale="25" align="center"
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza Temperature.svg" scale="35" align="center"
                                 />
                             </imageobject>
                         </mediaobject>
@@ -1243,7 +1243,7 @@
                         <title>Cooking Equipment</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../book/src/docbkx/images/Pizza Cooking Equipment.svg" scale="25" align="center"
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza Cooking Equipment.svg" scale="35" align="center"
                                 />
                             </imageobject>
                         </mediaobject>
@@ -1259,7 +1259,7 @@
                         <title>Add Fields</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../book/src/docbkx/images/Edit%20Fields.svg" scale="35" align="center"
+                                <imagedata fileref="../../../book/src/docbkx/images/Edit%20Fields.svg" scale="45" align="center"
                                 />
                             </imageobject>
                         </mediaobject>
@@ -1279,7 +1279,7 @@
                     <title>Oven Type Field</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="../../../book/src/docbkx/images/Pizza Oven Type Field.svg" scale="35" align="center"
+                            <imagedata fileref="../../../book/src/docbkx/images/Pizza Oven Type Field.svg" scale="40" align="center"
                             />
                         </imageobject>
                     </mediaobject>
@@ -1288,7 +1288,7 @@
                         <title>Temperature Field</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../book/src/docbkx/images/Pizza Temperature Field.svg" scale="35" align="center"
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza Temperature Field.svg" scale="40" align="center"
                                 />
                             </imageobject>
                         </mediaobject>
@@ -1367,7 +1367,7 @@
                         <title>Edit Field</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../book/src/docbkx/images/Pizza Edit Field.svg" scale="25" align="center"
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza Edit Field.svg" scale="40" align="center"
                                 />
                             </imageobject>
                         </mediaobject>
@@ -1393,7 +1393,7 @@
                         <title>View Pattern Navigator</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Pattern%20Navigator.svg" scale="25" align="center"
+                                <imagedata fileref="../../../book/src/docbkx/images/Pizza%20Pattern%20Navigator.svg" scale="30" align="center"
                                 />
                             </imageobject>
                         </mediaobject>
@@ -1449,7 +1449,7 @@
                             <imageobject>
                                 <imagedata
                                     fileref="../../../Book/src/docbkx/images/Pizza Semantic Element.svg"
-                                    scale="25" align="center"/>
+                                    scale="40" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -1477,7 +1477,7 @@
                             <imageobject>
                                 <imagedata
                                     fileref="../../../book/src/docbkx/images/Pizza Semantic2.svg"
-                                    scale="35" align="center"/>
+                                    scale="30" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -1491,7 +1491,7 @@
                             <imageobject>
                                 <imagedata
                                     fileref="../../../book/src/docbkx/images/Pizza Semantic3.svg"
-                                    scale="15" align="center"/>
+                                    scale="35" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -1539,7 +1539,7 @@
                             <imageobject>
                                 <imagedata
                                     fileref="../../../book/src/docbkx/images/Pizza Semantic6.svg"
-                                    scale="25" align="center"/>
+                                    scale="35" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -1549,7 +1549,7 @@
                             <imageobject>
                                 <imagedata
                                     fileref="../../../book/src/docbkx/images/Pizza Semantic7.svg"
-                                    scale="25" align="center"/>
+                                    scale="35" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -1564,7 +1564,7 @@
                             <imageobject>
                                 <imagedata
                                     fileref="../../../book/src/docbkx/images/Pizza Semantic8.svg"
-                                    scale="25" align="center"/>
+                                    scale="30" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -1577,7 +1577,7 @@
                             <imageobject>
                                 <imagedata
                                     fileref="../../../book/src/docbkx/images/Pizza Semantic9.svg"
-                                    scale="35" align="center"/>
+                                    scale="30" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -1592,7 +1592,7 @@
                             <imageobject>
                                 <imagedata
                                     fileref="../../../book/src/docbkx/images/Pizza Semantic10.svg"
-                                    scale="35" align="center"/>
+                                    scale="30" align="center"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -1642,7 +1642,7 @@
                         <title>Exporting</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../../../book/src/docbkx/images/Exporting.svg" scale="30"
+                                <imagedata fileref="../../../book/src/docbkx/images/Exporting.svg" scale="40"
                                     align="center"/>
                             </imageobject>
                         </mediaobject>
@@ -1719,7 +1719,7 @@
                             <mediaobject> 
                                 <imageobject> 
                                     <imagedata fileref="../../../book/src/docbkx/images/GitSyncTestingScript.svg" 
-                                        scale="25" align="center"/> 
+                                        scale="55" align="center"/> 
                                 </imageobject> 
                             </mediaobject> 
                         </figure> 
