@@ -63,32 +63,46 @@
                 </imageobject>
             </inlinemediaobject>
         </para>   
-        <para>Assuming that the Solor value set specifications of a measure represent
-            “perfect” inclusion, then every newly included patient can be thought of as
-            needing the evidence-based therapy (such as aspirin for secondary prevention
-            of heart attacks) in order to avoid bad outcomes. Under the same assumption,
-            every dropped patient between value set versions of a measure can be thought
-            of as avoiding potential harm caused by the promoted therapy. For aspirin
-            use, Number-Needed-to- Treat (NNT) statistics show that of patients with
-            known cardiovascular risk who took aspirin, 1.3% were helped by preventing a
-            non-fatal heart attack, and 0.25% were harmed by a major bleeding event. In
-            the Cholan et al study [33], 121 (92%) of the patients dropped in the Solor
-            version of the Aspirin measure were also taking an anticoagulant medication,
-            so the Number-Needed-to-Harm (NNH) statistic for this subset of patients is
-            likely much higher, and for these clinics, 1 to 2 people may have been
-            harmed if the pre-Solor definition persisted, as Hansen et. al showed that
-            patients with combinations of aspirin, warfarin, and clopidogrel are
-            associated with up to a three-fold higher risk of bleeding for patients on
-            dual therapy and triple therapy.
-            <?oxy_comment_start author="ecundiff" timestamp="20250713T212002-0400" comment="Added citation"?>[34]<?oxy_comment_end?>
-            With another measure for statin therapy, 1 in 21 people have a repeat heart
-            attack, stroke or death avoided, so even 10 missed people have significant
-            risk of events. Similarly, 10% are harmed by muscle damage or pain, or ~1 of
-            the 14 inappropriately included.<citation>efficacy</citation> Even in this
-            small study, failure to include or exclude patients could have led to real
-            harm. With eCQM implementation and QI infrastructure increasing, the problem
-            of having, and using, antiquated CQM versions of value sets could have
-            significant potential negative impact on population health by not avoiding
-            events, and avoiding harms for patients.</para>
+        <para>Assuming that the Solor value set specifications of a measure represent “perfect”
+            inclusion, then every newly included patient can be thought of as needing the
+            evidence-based therapy (such as aspirin for secondary prevention of heart attacks) in
+            order to avoid bad outcomes. Under the same assumption, every dropped patient between
+            value set versions of a measure can be thought of as avoiding potential harm caused by
+            the promoted therapy. For aspirin use, Number-Needed-to- Treat (NNT) statistics show
+            that of patients with known cardiovascular risk who took aspirin, 1.3% were helped by
+            preventing a non-fatal heart attack, and 0.25% were harmed by a major bleeding event. In
+            the Cholan et al study [1], 121 (92%) of the patients dropped in the Solor version of
+            the Aspirin measure were also taking an anticoagulant medication, so the
+            Number-Needed-to-Harm (NNH) statistic for this subset of patients is likely much higher,
+            and for these clinics, 1 to 2 people may have been harmed if the pre-Solor definition
+            persisted, as Hansen et. al showed that patients with combinations of aspirin, warfarin,
+            and clopidogrel are associated with up to a three-fold higher risk of bleeding for
+            patients on dual therapy and triple therapy. [2] With another measure for statin
+            therapy, 1 in 21 people have a repeat heart attack, stroke or death avoided, so even 10
+            missed people have significant risk of events. Similarly, 10% are harmed by muscle
+            damage or pain, or ~1 of the 14 inappropriately included.<citation>efficacy</citation>
+            Even in this small study, failure to include or exclude patients could have led to real
+            harm. With eCQM implementation and QI infrastructure increasing, the problem of having,
+            and using, antiquated CQM versions of value sets could have significant potential
+            negative impact on population health by not avoiding events, and avoiding harms for
+            patients.</para>
+    </section>
+    <section>
+        <title>References</title>
+        <orderedlist>
+            <listitem>
+                <para>Cholan RA, Weiskopf NG, Rhoton DL, Colin NV, Ross RL, Marzullo MN, et al.
+                    Specifications of Clinical Quality Measures and Value Set Vocabularies Shift
+                    Over Time: A Study of Change through Implementation Differences. AMIA Annu Symp
+                    Proc. 2017;2017:575–84. </para>
+            </listitem>
+            <listitem>
+                <para>Hansen ML, Sørensen R, Clausen MT, Fog-Petersen ML, Raunsø J, Gadsbøll N, et
+                    al. Risk of Bleeding With Single, Dual, or Triple Therapy With Warfarin,
+                    Aspirin, and Clopidogrel in Patients With Atrial Fibrillation. Arch Intern Med
+                    [Internet]. 2010 Sep 13;170(16). Available from:
+                    http://archinte.jamanetwork.com/article.aspx?doi=10.1001/archinternmed.2010.271</para>
+            </listitem>
+        </orderedlist>
     </section>
 </chapter>
