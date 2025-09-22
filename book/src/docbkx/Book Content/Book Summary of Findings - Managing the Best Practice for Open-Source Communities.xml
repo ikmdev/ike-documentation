@@ -527,7 +527,7 @@
         <para>Achievement of interoperability within healthcare systems requires a multi-faceted
             approach through the extensive collaboration of various stakeholders involved. In its
             current form many licenses serve as unintended barriers to interoperability where
-            downstream patient harm can occur. The increasing interconnectedness of industries and
+            downstream patient harm can occur (<xref linkend="summarytable"></xref>). The increasing interconnectedness of industries and
             partners requires a reevaluation of existing licensing structures that impose barriers
             often antithetical to goals set out by issuing organizations themselves. For solutions
             like an Integrated Knowledge Platform to succeed, licensing must be structured to
@@ -536,11 +536,11 @@
             organizations. Advocacy towards open-source licensing must also occur internally by
             managing teams. Together, common solutioning reduces siloed company operations, moving
             one step closer to harmonization across the Health IT landscape. </para>
-    </section>
-    <section>
-        <title>LOINC® and SNOMED CT® Licensing Summary</title> 
-        <para>
-            <informaltable>
+    
+        
+     
+            <table xml:id="summarytable">
+                <title>LOINC® and SNOMED CT® Licensing Summary</title>
                 <tgroup cols="3">
                     <colspec colnum="1" colname="col1"/>
                     <colspec colnum="2" colname="col2"/>
@@ -648,7 +648,6 @@
                         </row>
                     </tbody>
                 </tgroup>
-            </informaltable>
-        </para>
+            </table>
     </section>    
 </chapter>

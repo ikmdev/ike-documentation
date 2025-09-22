@@ -851,8 +851,8 @@
                 <itemizedlist>
                     <listitem>
                         <para>Any concept with strings matching a set of search term that would
-                            indicate the inverse of another concept</para>
-                        <table>
+                            indicate the inverse of another concept (<xref linkend="InverseConceptsSearchTerms"></xref>)</para>
+                        <table xml:id="InverseConceptsSearchTerms">
                             <title>Inverse Concepts Search Terms</title>
                             <tgroup cols="2" align="left">
                                 <thead>
@@ -1081,9 +1081,9 @@
                     </listitem>
                     <listitem>
                         <para>Additional keywords were identified during the review process that
-                            should be added to future review efforts:</para>
+                            should be added to future review efforts (<xref linkend="AdditionalSearchTerms"></xref>):</para>
                         
-                        <table>
+                        <table xml:id="AdditionalSearchTerms">
                             <title>Inverse Concepts Search Terms</title>
                             <tgroup cols="2" align="left">
                                 <thead>
@@ -1426,11 +1426,11 @@
                                     <listitem>
                                         <para>Prior Inverse Assemblage work identified roughly 6,000
                                     concepts that needed to be reviewed to confirm missing opposing
-                                    concepts.  Some examples are shown below.</para>
+                                    concepts.  Some examples are shown below (<xref linkend="MissingOpposingConcepts"></xref>).</para>
                                     </listitem>
                                 </itemizedlist>
                                 
-                                <table frame="border" border="1">
+                                <table frame="border" border="1" xml:id="MissingOpposingConcepts">
                                     <caption>Example of missing opposing concepts</caption>
                                                 <thead>
                                                     <tr>
@@ -1551,8 +1551,8 @@
                                     <para><emphasis role="bold">Definition for radically different
                                             modeling:</emphasis>Inverse concept and its opposite
                                         where the modeling for each is not equivalent for data
-                                        retrieval and queries in the inferred view.</para>
-                                     <table frame="topbot" rowsep="0" colsep="0">
+                                        retrieval and queries in the inferred view (<xref linkend="RadicallyDifferent"></xref>, <xref linkend="NotRadically"></xref>).</para>
+                                     <table frame="topbot" rowsep="0" colsep="0" xml:id="RadicallyDifferent">
                                         <title>Examples for “radically different”</title>
                                          <tgroup cols="3" align="left">
                                              <thead>
@@ -1618,7 +1618,7 @@
                                             </tbody>
                                          </tgroup>
                                     </table>
-                                    <table>
+                                    <table xml:id="NotRadically">
                                         <title>Example for “different, but not radically”</title>
                                         <tgroup cols="3" align="left">
                                             <thead>

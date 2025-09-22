@@ -56,18 +56,18 @@
                             implying a one-to-one relationship between each pair of members in the
                             triangle, this simple diagram masks hidden complexity. Ogden and
                             Richards alluded to this complexity by the dotted line between a symbol
-                            and a referent, indicating that the link between a symbol and a referent
-                            can only be made indirectly through an interpreter, but the notion that
-                            a symbol does—or could—refer to a single thought and that a thought
-                            does—or could—refer to a single referent is a fallacy. Thus, it has been
-                            historically recognized that multiple terms may refer to the same object
-                            or idea, a single term may refer ambiguously to more than one object or
-                            idea, and terms may be confusing because they are out of date. It is
-                            within this context that we seek solutions to improve our ability to
-                            communicate about biomedical
-                        concepts.</quote><?oxy_comment_end?>[2]</para>
+                            and a referent (<xref linkend="SemioticTriangle"/>), indicating that the
+                            link between a symbol and a referent can only be made indirectly through
+                            an interpreter, but the notion that a symbol does—or could—refer to a
+                            single thought and that a thought does—or could—refer to a single
+                            referent is a fallacy. Thus, it has been historically recognized that
+                            multiple terms may refer to the same object or idea, a single term may
+                            refer ambiguously to more than one object or idea, and terms may be
+                            confusing because they are out of date. It is within this context that
+                            we seek solutions to improve our ability to communicate about biomedical
+                            concepts.</quote><?oxy_comment_end?>[2]</para>
                     <para>
-                        <figure>
+                        <figure xml:id="SemioticTriangle">
                             <title>Ogden and Richards semiotic triangle</title>
                             <mediaobject>
                                 <imageobject>
@@ -100,10 +100,11 @@
                         classification systems, categories are only allowed to exist in a single
                         monohierarchical representation. For example, in International
                         Classification of Diseases Tenth Revision (ICD-10) A39.0 Meningococcal
-                        meningitis only exists as a subtype of A39 Meningococcal infection. In this
-                        representation you can easily find all meningococcal infections, but if you
-                        need to find all types of meningitis you are required to know all the
-                        various codes that represent the different classifications of meningitis.<figure>
+                        meningitis only exists as a subtype of A39 Meningococcal infection (<xref
+                            linkend="Monoheirarchy"/>). In this representation you can easily find
+                        all meningococcal infections, but if you need to find all types of
+                        meningitis you are required to know all the various codes that represent the
+                        different classifications of meningitis.<figure xml:id="Monoheirarchy">
                             <title><?oxy_comment_start author="steph" timestamp="20190903T155353-0600" comment="Can you center the text in the boxes below and fix the first box where the text is cutoff?" flag="done"?><?oxy_comment_start author="steph" timestamp="20191016T113247-0600" comment="This is still a problem - the text is cutoff." mid="6"?>Monohierarchy
                                 Example<?oxy_comment_end?><?oxy_comment_end mid="6"?></title>
                             <mediaobject>
@@ -118,8 +119,9 @@
                         example,
                         <?oxy_comment_start author="tocrow" timestamp="20250716T010344-0400" comment="bacterial meningitis is a subtype of bacterial meingitis?" flag="done"?>B<?oxy_comment_start author="timowilliams" timestamp="20190430T201423-0500" comment="Add image representing the polyhierarchy" id="m3l_gb2_xhb" flag="done" mid="8"?><?oxy_comment_start author="rcholan" timestamp="20190528T215454-0400" comment="Adding initial image. Will re-create." parentID="m3l_gb2_xhb" flag="done" mid="9"?><?oxy_comment_start author="steph" timestamp="20190806T085004-0600" comment="Recommend removing most of the white space around the image that isn&apos;t needed and is forcing &quot;hierarchies&quot; to be hyphenated and shown before and after the image." flag="done" mid="10"?>acterial
                         Meningitis is both a subtype of <?oxy_comment_end?>Bacterial Infection of
-                        Central Nervous System and Infective Meningitis and should exist in both hierarchies.<?oxy_comment_end mid="10"?><?oxy_comment_end mid="9"?><?oxy_comment_end mid="8"?>
-                        <figure>
+                        Central Nervous System and Infective Meningitis and should exist in both
+                        hierarchies (<xref linkend="Polyheirarchy"/>).<?oxy_comment_end mid="10"?><?oxy_comment_end mid="9"?><?oxy_comment_end mid="8"?>
+                        <figure xml:id="Polyheirarchy">
                             <title>Polyhierarchy Example</title>
                             <mediaobject>
                                 <imageobject>
@@ -146,8 +148,9 @@
                         originally assign. In large terminologies, correctly adding all the possible
                         valid hierarchical relationships can be difficult as it requires the content
                         modeler to think of all the possible parents. By adding the additional
-                        information, like Finding Site in the example below, additional hierarchical
-                        relationships can be inferred.<figure>
+                        information, like Finding Site in the example below (<xref
+                            linkend="ContextModeler"/>), additional hierarchical relationships can
+                        be inferred.<figure xml:id="ContextModeler">
                             <?oxy_comment_start author="steph" timestamp="20190903T164307-0600" comment="Need to fix the text in circles to make it fit fully and not be cutoff, as it currently is.  With the text being white on a white background, the cutoff text cannot be read outside of the circles.  Same for the second diagram for inferred below." flag="done"?>
                             <?oxy_comment_start author="steph" timestamp="20191016T113507-0600" comment="Still not fixed.  I think it needs to be fixed; otherwise, it appears as sloppy work." mid="16"?>
                             <title>Relationships Stated by a Content
@@ -162,12 +165,8 @@
                     <para>Description Logic (DL) ontologies can be classified (i.e., some
                         relationships between concepts are inferred from the asserted class
                         descriptions) using a DL classifier and a new set of inferred relationships
-                        is created for
-                        <?oxy_comment_start author="rgeorgacopoulos" timestamp="20250310T211139-0500" comment="&quot;Solor provides both views of stated and inferred relationships, and allow users to compare the differences. Solor has blocks of necessary &amp; sufficient, necessary, and inherited (i.e., inferred) relationships.&quot; 
-
-deleted this as it is mentioned for the first time with no context of SOLOR
-
-this sentence was originally at the end of this paragraph " flag="done"?>concepts<?oxy_comment_end?>. <figure>
+                        is created for concepts (<xref linkend="InferredRealtionships"/>). <figure
+                            xml:id="InferredRealtionships">
                             <title>Inferred Relationships by DL Classifier</title>
                             <mediaobject>
                                 <imageobject>
@@ -199,15 +198,17 @@ this sentence was originally at the end of this paragraph " flag="done"?>concept
                         representing meaning at various levels, the display of the concepts that are
                         relevant to certain users should be able to be customized. Allowing users to
                         view concepts in a way that is intuitive will support the adoption of
-                        terminologies by making the terminology more usable. <figure>
+                        terminologies by making the terminology more usable (<xref
+                            linkend="MultipleConsistentViews"/>). <figure
+                            xml:id="MultipleConsistentViews">
                             <title>Multiple Consistent Views</title>
                             <mediaobject>
                                 <imageobject>
                                     <?oxy_comment_start author="steph" timestamp="20190610T132412-0600" comment="In the PDF, the &quot;After&quot; image is not shown, only the before image.  Either need to resize or move the &quot;After&quot; image below the &quot;Before&quot; image." flag="done"?>
-                                    <?oxy_comment_start author="timowilliams" timestamp="20190814T134943-0500" comment="convert to SVG" mid="19"?>
+                                    <?oxy_comment_start author="timowilliams" timestamp="20190814T134943-0500" comment="convert to SVG" mid="18"?>
                                     <imagedata fileref="../images/CranialNerves.svg" scalefit="1"
                                         width="100%" contentdepth="100%"
-                                        ><?oxy_comment_end?></imagedata><?oxy_comment_end mid="19"?>
+                                        ><?oxy_comment_end?></imagedata><?oxy_comment_end mid="18"?>
                                 </imageobject>
                             </mediaobject>
                         </figure>
@@ -301,15 +302,15 @@ this sentence was originally at the end of this paragraph " flag="done"?>concept
     <section>
         <title>LOINC® Current State</title>
         <?oxy_comment_start author="ecundiff" timestamp="20250710T134152-0400" comment="Removed LOINC overview section which was pulled directly from Bodenreider article and added callback to overview of terminologies in Part II: Background"?>
-        <para><?oxy_comment_start author="tocrow" timestamp="20250716T092503-0400" comment="If we don&apos;t have a link or something to the article, I would suggest removing this para. I think citing it throughout is enough" flag="done" mid="23"?><emphasis>
+        <para><?oxy_comment_start author="tocrow" timestamp="20250716T092503-0400" comment="If we don&apos;t have a link or something to the article, I would suggest removing this para. I think citing it throughout is enough" flag="done" mid="22"?><emphasis>
                 Please refer to“The Adoption of Three Key Terminology Standards: Systematized
                 Nomenclature of Medicine Clinical Terms (SNOMED CT ®), Logical Observation
                 Identifiers Names and Codes ® (LOINC ®) and RxNorm" found in Part II: Background for
                 a comprehensive overview of these terminologies. The subsequent content provides a
                 detailed examination of the current state and ongoing developments related to these
-                standards. </emphasis><?oxy_comment_end?><?oxy_comment_end mid="23"?></para>
+                standards. </emphasis><?oxy_comment_end?><?oxy_comment_end mid="22"?></para>
         <?oxy_comment_start author="ecundiff" timestamp="20250710T134045-0400" comment="Added high-level summary of LOINC, removed direct quote from Bodenreider and instead provided summary with citation" id="hmw_n45_zfc"?>
-        <?oxy_comment_start author="tocrow" timestamp="20250716T092543-0400" parentID="hmw_n45_zfc" comment="I like this!" mid="25"?>
+        <?oxy_comment_start author="tocrow" timestamp="20250716T092543-0400" parentID="hmw_n45_zfc" comment="I like this!" mid="24"?>
         <para>LOINC® is a global clinical terminology developed by the Regenstrief Institute to
             standardize the identification of health measurements, observations, and documents,
             addressing the challenge of inconsistent local codes in electronic health data exchange.
@@ -318,7 +319,7 @@ this sentence was originally at the end of this paragraph " flag="done"?>concept
             LOINC® codes for observations with result values, often using SNOMED CT® for the latter.
             Over the years, LOINC® has expanded beyond laboratory data and is maintained by
             committees focused on Laboratory, Clinical, and Radiology areas.
-            [4]<?oxy_comment_end mid="25"?><?oxy_comment_end?></para>
+            [4]<?oxy_comment_end mid="24"?><?oxy_comment_end?></para>
         <para>Regenstrief continues to update LOINC® and publish twice-yearly releases. New concepts
             are added to LOINC® based on submissions from end users. The current version contains
             more than 99,000 terms covering the full scope of laboratory testing (chemistry,
@@ -388,7 +389,7 @@ LOINC®, including syntax standards for data exchange and other terminology stan
 HL7 have a long-standing collaboration; a few joint work highlights include clinical genomics guides,
 claims attachments specifications, and approaches for representing vocabulary standards in Fast Healthcare
 Interoperability Resources (FHIR) terminology services. Regenstrief Institute made core LOINC®
-content available via a FHIR API as part of its normal release process beginning Summer 2018.&quot;" mid="27"?></para><?oxy_comment_end?><?oxy_comment_end mid="27"?>
+content available via a FHIR API as part of its normal release process beginning Summer 2018.&quot;" mid="26"?></para><?oxy_comment_end?><?oxy_comment_end mid="26"?>
             <itemizedlist>
                 <listitem>
                     <para>Beginning in April 2022, a FHIR®-based API was launched that allows for
@@ -569,7 +570,8 @@ content available via a FHIR API as part of its normal release process beginning
                     starting point towards formal knowledge representation, the current hierarchies
                     are limited, and still do not provide full definitions for LOINC® parts.
                     Furthermore, the use of the hierarchies and LOINC® parts are very restricted
-                    under the LOINC® Copyright Notice and License. [14]</para>
+                    under the LOINC® Copyright Notice and License (<xref
+                        linkend="RepresentationofASTinTheLOINCHierarchyBrowserTool"/>). [14]</para>
                 <figure xml:id="RepresentationofASTinTheLOINCHierarchyBrowserTool">
                     <title>Representation of AST in The LOINC® Hierarchy Browser Tool</title>
                     <mediaobject>
@@ -740,9 +742,10 @@ why-what-how-termlex/?trk=pulse-article"?>[19]<?oxy_comment_end?></para>
             and common drug vocabularies for the purpose of easing the exchange of clinical drug
             information between systems that use different drug vocabularies. Every concept in
             RxNorm is given a unique Concept Unique Identifiers (RxCUIs). The names and codes from
-            the common drug vocabularies are then linked to that RxCUI.</para>
+            the common drug vocabularies are then linked to that RxCUI (<xref linkend="RxNorm"
+            />).</para>
         <para>
-            <figure xml:id="RxNrom">
+            <figure xml:id="RxNorm">
                 <title>Representation of RxNorm</title>
                 <mediaobject>
                     <imageobject>
@@ -814,7 +817,7 @@ why-what-how-termlex/?trk=pulse-article"?>[19]<?oxy_comment_end?></para>
     </section>
     <section>
         <title>Comparing LOINC®, SNOMED CT® and RxNorm to Cimino’s
-            Desiderata<?oxy_custom_start type="oxy_content_highlight" color="0,128,128"?><?oxy_comment_start author="ecundiff" timestamp="20250711T063806-0400" comment="Removed table showing all three terminologies alignment with the Desiderata as it is essentially a compliation of each of the tables below, but with slightly less information" mid="39"?></title><?oxy_custom_end?><?oxy_comment_end mid="39"?>
+            Desiderata<?oxy_custom_start type="oxy_content_highlight" color="0,128,128"?><?oxy_comment_start author="ecundiff" timestamp="20250711T063806-0400" comment="Removed table showing all three terminologies alignment with the Desiderata as it is essentially a compliation of each of the tables below, but with slightly less information" mid="38"?></title><?oxy_custom_end?><?oxy_comment_end mid="38"?>
         <section>
             <title>Comparison of LOINC® to Cimino’s Desiderata</title>
             <para>Despite the guiding principles for terminology design and representation
@@ -824,8 +827,9 @@ why-what-how-termlex/?trk=pulse-article"?>[19]<?oxy_comment_end?></para>
                 logical inference between concepts, parts, and part elements.” [8] LOINC® is a
                 well-maintained terminology with a deprecation process and has concept permanence
                 where codes aren’t reused, but they do not establish the basic parameters of
-                hierarchy and polyhierarchy.</para>
-            <table>
+                hierarchy and polyhierarchy (<xref
+                    linkend="CorrespondenceofLOINCtoCiminosDesiderata"/>).</para>
+            <table xml:id="CorrespondenceofLOINCtoCiminosDesiderata">
                 <title>Correspondence of LOINC® to Cimino’s Desiderata</title>
                 <tgroup cols="2">
                     <colspec colnum="1" colname="col1" align="left"/>
@@ -888,8 +892,9 @@ why-what-how-termlex/?trk=pulse-article"?>[19]<?oxy_comment_end?></para>
                 submissions process for consideration into either the National or International
                 editions. This lack of agility, efficiency, and speed is apparent in crisis
                 situations such as COVID-19 pandemic, but has proven to be robust with a large
-                global community that can assist with its development and vetting.</para>
-            <table>
+                global community that can assist with its development and vetting (<xref
+                    linkend="SNOMEDCimino"/>).</para>
+            <table xml:id="SNOMEDCimino">
                 <title>Correspondence of SNOMED CT® to Cimino’s Desiderata</title>
                 <tgroup cols="2">
                     <colspec colnum="1" colname="col1" align="left"/>
@@ -970,8 +975,8 @@ why-what-how-termlex/?trk=pulse-article"?>[19]<?oxy_comment_end?></para>
                     Language (SPARQL).</emphasis>[21]</para>
             <para>This development may have a significant impact on improving knowledge management
                 as well as the ability to utilize Description Logics reasoners with its attendant
-                benefits.</para>
-            <table>
+                benefits (<xref linkend="RxNormCimino"/>).</para>
+            <table xml:id="RxNormCimino">
                 <title>Correspondence of RxNorm to Cimino’s Desiderata</title>
                 <tgroup cols="2">
                     <colspec colnum="1" colname="col1" align="left"/>
@@ -1103,8 +1108,9 @@ why-what-how-termlex/?trk=pulse-article"?>[19]<?oxy_comment_end?></para>
         <para>Descriptions in SNOMED CT® include one Fully Specified Name and at least one synonym
             for each language. The Preferred and Acceptable Synonyms per language are then specified
             in a Language Reference Set. Any additional synonyms, other than the preferred, that are
-            relevant for a language would be identified as acceptable.</para>
-        <table>
+            relevant for a language would be identified as acceptable (<xref
+                linkend="RefSetMyoCardial"/>).</para>
+        <table xml:id="RefSetMyoCardial">
             <title>Description and RefSet Values for Myocardial infarction</title>
             <tgroup cols="4">
                 <thead>
@@ -1164,9 +1170,9 @@ why-what-how-termlex/?trk=pulse-article"?>[19]<?oxy_comment_end?></para>
         <para>RxNorm identifies language in the RXNCONSO file in the STR field. The language of the
             name is specified in the LAT field and the source the name comes from is represented in
             the STT field. The names in the RXNCONSO are not unique as the same name can come from
-            multiple sources.</para>
+            multiple sources (<xref linkend="RxNormAceta"/>).</para>
         <para>
-            <table>
+            <table xml:id="RxNormAceta">
                 <title>RxNorm Strings Associated With "100 ML Acetaminophen 10 MG/ML
                     Injection"</title>
                 <tgroup cols="2">
@@ -1200,9 +1206,9 @@ why-what-how-termlex/?trk=pulse-article"?>[19]<?oxy_comment_end?></para>
         <para>LOINC® has names spread across multiple fields with the Fully Specified Name
             constructed as a concatenation of the six parts. It also contains a Long Common Name and
             a Short Name. The screenshot from Komet below exemplifies the 6 LOINC® parts: Component,
-            Method, Property, Scale, System, and Timing. </para>
+            Method, Property, Scale, System, and Timing (<xref linkend="LOINCGlucosePO"/>). </para>
         <para>
-            <table>
+            <table xml:id="LOINCGlucosePO">
                 <title>LOINC® Representation of "Glucose [Presence] in Urine by Test strip --4.5
                     hours post 75 g glucose PO"</title>
                 <tgroup cols="6">
@@ -1244,8 +1250,9 @@ why-what-how-termlex/?trk=pulse-article"?>[19]<?oxy_comment_end?></para>
                 another, for example
                 <?oxy_comment_start author="steph" timestamp="20190305T153845-0700" comment="Is there a reason that quotes weren&apos;t used with this, like they were in the prior example?" flag="done"?>&quot;napkin&quot;<?oxy_comment_end?>
                 in the US is used to describe a piece of cloth or paper used to wipe the hands and
-                mouth at a table while in the United Kingdom it is used to describe a diaper. </para>
-            <table>
+                mouth at a table while in the United Kingdom it is used to describe a diaper (<xref
+                    linkend="RefSetEpi"/>). </para>
+            <table xml:id="RefSetEpi">
                 <title>Description and RefSet Values for Epidural anesthesia</title>
                 <tgroup cols="4">
                     <thead>
@@ -1445,8 +1452,8 @@ why-what-how-termlex/?trk=pulse-article"?>[19]<?oxy_comment_end?></para>
                 that implements mathematical logic to support formal expressions, reasoning, and
                 formal proof. It is typically more expressive than propositional logic, which only
                 deals with fixed truth values, which may or may not be true
-                (<?oxy_comment_start author="steph" timestamp="20190305T155849-0700" comment="Should be &quot;e.g.&quot; instead of &quot;i.e.&quot;  Same for example below for books or temperature." id="cpw_mqc_1hb" flag="done"?><?oxy_comment_start author="erhwang" timestamp="20190307T083716-0700" comment="fixed" parentID="cpw_mqc_1hb" flag="done" mid="49"?>e.g.
-                <?oxy_comment_end mid="49"?><?oxy_comment_end?>"it is raining"), and cannot have
+                (<?oxy_comment_start author="steph" timestamp="20190305T155849-0700" comment="Should be &quot;e.g.&quot; instead of &quot;i.e.&quot;  Same for example below for books or temperature." id="cpw_mqc_1hb" flag="done"?><?oxy_comment_start author="erhwang" timestamp="20190307T083716-0700" comment="fixed" parentID="cpw_mqc_1hb" flag="done" mid="48"?>e.g.
+                <?oxy_comment_end mid="48"?><?oxy_comment_end?>"it is raining"), and cannot have
                 variables to represent 'things' (e.g. books or temperature). However, it is less
                 expressive than first-order logic, which assumes the world contains Objects,
                 Relations and Functions, allows variables and can quantify over non-logical objects.
@@ -1491,22 +1498,22 @@ why-what-how-termlex/?trk=pulse-article"?>[19]<?oxy_comment_end?></para>
                 effects, or will be handled separately from normal description logic
                 operations.</para>
             <section>
-                <title><?oxy_comment_start author="steph" timestamp="20190306T102924-0700" comment="Should this be change to representation of absence?" id="drx_vrc_1hb" flag="done"?><?oxy_comment_start author="erhwang" timestamp="20190307T084732-0700" comment="Represetation of absence is kind of Logical Negation. Logical Negation is a known &apos;phrase&apos; in Description Logic. Since this section is addressing what Solor WON&apos;T be addressing, I think it is best to leave it as Logical negation &amp; write a bit on it when this section is expanded with verbiage." parentID="drx_vrc_1hb" flag="done" mid="52"?><?oxy_comment_start author="steph" timestamp="20190402T154919-0600" comment="Okay" flag="done" mid="53"?>Logical<?oxy_comment_end mid="53"?><?oxy_comment_end mid="52"?><?oxy_comment_end?>
+                <title><?oxy_comment_start author="steph" timestamp="20190306T102924-0700" comment="Should this be change to representation of absence?" id="drx_vrc_1hb" flag="done"?><?oxy_comment_start author="erhwang" timestamp="20190307T084732-0700" comment="Represetation of absence is kind of Logical Negation. Logical Negation is a known &apos;phrase&apos; in Description Logic. Since this section is addressing what Solor WON&apos;T be addressing, I think it is best to leave it as Logical negation &amp; write a bit on it when this section is expanded with verbiage." parentID="drx_vrc_1hb" flag="done" mid="51"?><?oxy_comment_start author="steph" timestamp="20190402T154919-0600" comment="Okay" flag="done" mid="52"?>Logical<?oxy_comment_end mid="52"?><?oxy_comment_end mid="51"?><?oxy_comment_end?>
                     Negation</title>
                 <para>Logical Negation, or "Representation of absence" as it is described throughout
                     this document, is the notion of how to describe something that is not present.
                     The complexity of this topic is described
-                    <?oxy_comment_start author="ecundiff" timestamp="20250714T101122-0400" comment="This was previously a reference to &quot;[reference definitional_conceptAnalysis.xml, section 1.2.1]&quot;" id="st3_1rz_zfc"?><?oxy_comment_start author="tocrow" timestamp="20250717T021443-0400" parentID="st3_1rz_zfc" comment="do we have that content still? Do we need to pull any of that in?" flag="done" mid="55"?>further
+                    <?oxy_comment_start author="ecundiff" timestamp="20250714T101122-0400" comment="This was previously a reference to &quot;[reference definitional_conceptAnalysis.xml, section 1.2.1]&quot;" id="st3_1rz_zfc"?><?oxy_comment_start author="tocrow" timestamp="20250717T021443-0400" parentID="st3_1rz_zfc" comment="do we have that content still? Do we need to pull any of that in?" flag="done" mid="54"?>further
                     in the Topics of Concerns section
-                    below<?oxy_comment_end mid="55"?><?oxy_comment_end?> and illustrates why it is
+                    below<?oxy_comment_end mid="54"?><?oxy_comment_end?> and illustrates why it is
                     difficult to represent this notion of something that is not present.
                     Furthermore, it describes how current content in terminologies is inconsistently
                     represented. </para>
                 <para>The identification of content deemed as "absence" content is described in
                     greater
-                    <?oxy_comment_start author="ecundiff" timestamp="20250714T111446-0400" comment="This was previously a reference to &quot;[reference definitional_conceptAnalysis.xml, section 1.2]&quot;" id="u4q_1rz_zfc" flag="done"?><?oxy_comment_start author="tocrow" timestamp="20250717T021448-0400" parentID="u4q_1rz_zfc" comment="same as above" flag="done" mid="57"?>detail
+                    <?oxy_comment_start author="ecundiff" timestamp="20250714T111446-0400" comment="This was previously a reference to &quot;[reference definitional_conceptAnalysis.xml, section 1.2]&quot;" id="u4q_1rz_zfc" flag="done"?><?oxy_comment_start author="tocrow" timestamp="20250717T021448-0400" parentID="u4q_1rz_zfc" comment="same as above" flag="done" mid="56"?>detail
                     in the Absence Representation
-                    section<?oxy_comment_end mid="57"?><?oxy_comment_end?>. Recognizing these
+                    section<?oxy_comment_end mid="56"?><?oxy_comment_end?>. Recognizing these
                     concepts allows a system to handle the "absence" computation when they are
                     available. This approach allows for handling absence in a way that is separate
                     and more specialized than typical description logic operations.</para>
@@ -1540,7 +1547,7 @@ Title = Terminology in Action &gt; Section = Interoperability deep dive (this wa
         <section>
             <title>Inte<?oxy_comment_start author="tocrow" timestamp="20240624T173028-0400" comment="I think this is covered in other sections" flag="done"?>roperability
                 by
-                <?oxy_comment_start author="ecundiff" timestamp="20250713T093821-0400" comment="Agree this is touched on elsewhere, but this is a more comprehensive overview than is found in other sections. Content is similar, but not truly duplkicative IMO." flag="done" mid="100"?>Mappi<?oxy_comment_end?>ng<?oxy_comment_end mid="100"?></title>
+                <?oxy_comment_start author="ecundiff" timestamp="20250713T093821-0400" comment="Agree this is touched on elsewhere, but this is a more comprehensive overview than is found in other sections. Content is similar, but not truly duplkicative IMO." flag="done" mid="99"?>Mappi<?oxy_comment_end?>ng<?oxy_comment_end mid="99"?></title>
             <para>Today's health care terminology standards encompass methods, terminologies, and
                 specifications for the exchange, storage, and retrieval of information associated
                 with health care systems. These standards contain terminologies and concepts that
@@ -1647,22 +1654,25 @@ Title = Terminology in Action &gt; Section = Interoperability deep dive (this wa
                         for loss of information that may lead to a patient’s harm. SNOMED CT® and
                         other meaningful use standards are frequently used as targets of this
                         mapping, and their use is mandated as part of the Meaningful Use
-                        regulations. Tables 1 and 2 below show how equivalent concepts in two
+                        regulations. In the tables below show how equivalent concepts in two
                         different care settings leads to information loss when they are mapped to
                         SNOMED CT® because SNOMED CT® does not represent the equivalent meaning.
                         <?oxy_comment_start author="tocrow" timestamp="20250717T022551-0400" comment="we say table 1 and 2 but i dont see tables?" flag="done"?>In
-                        Tables 1 and 2, the Local Concept column represents the concept created by
+                        the tables below, the Local Concept column represents the concept created by
                         Hospital A during the care of a patient, the Map Type column specifies
                         broader than or narrower than or equivalent, and the SNOMED CT® Concept
                         column represents the concept to which the local concept has been mapped.
                         The Meaning Lost column describes the information lost due to mapping
                         because an equivalent match of the local concept is not found in SNOMED CT.
-                        In Table 1 <?oxy_comment_end?>below, the SNOMED CT® Concept is broader than
-                        the local concept, causing important tumor morphology information to be lost
-                        during mapping. In Table 2, the SNOMED CT® Concept is also broader than the
-                        local concept, causing important tumor location information to be lost in
-                        the mapping process.</para>
-                    <para><inlinemediaobject>
+                        In Hospital A Mapping Example <?oxy_comment_end?>below, the SNOMED CT®
+                        Concept is broader than the local concept, causing important tumor
+                        morphology information to be lost during mapping. In Medical Practice
+                        Mapping Example, the SNOMED CT® Concept is also broader than the local
+                        concept, causing important tumor location information to be lost in the
+                        mapping process.</para>
+                    <para>
+                        
+                        <inlinemediaobject>
                             <imageobject>
                                 <imagedata fileref="../images/Mapping.png" scale="50"/>
                             </imageobject>
