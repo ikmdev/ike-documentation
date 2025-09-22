@@ -50,7 +50,7 @@
         </section>
     <section>
         <title><anchor xml:id="Toc196843728"/>Tinkar Logical Model</title>
-        <para>Before representing a data set using the Tinkar Logical Model (see <xref linkend="TinkarLogicalModelExample"/> below, it is essential to
+        <para>Before representing a data set using the Tinkar Logical Model (see <xref linkend="TinkarLogicalModelExample"/>) below, it is essential to
             understand the Tinkar starter data of Concepts, Patterns, and Semantics. The goal is to
             use what already exists in Tinkar and only create new Components when needed. This
             section provides a basic overview of the Tinkar Logical Model. The full description of
@@ -122,14 +122,14 @@
                         </imageobject>
                     </mediaobject>
                 </figure>
-                <para>The table and figure below illustrate the Description Pattern as an example (<xref linkend="DescriptionPattern"></xref>, <xref linkend="DescriptionPatternFieldValues"/>.
+                <para>The table and figure below illustrate the Description Pattern as an example (<xref linkend="DescriptionPattern"></xref>, <xref linkend="DescriptionPatternFieldValues"/>).
                     The Description Pattern is one of the key Tinkar Patterns. It has four different
                     fields, each with associated field definitions. </para>
                 <table xml:id="DescriptionPattern">
                     <title>Description Pattern</title>
                     <tgroup cols="2">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col2">Description Pattern</entry>
@@ -213,22 +213,22 @@
                         <imageobject>
                             <imagedata
                                 fileref="../images/Starterset2.svg"
-                                scale="20" align="center"/>
+                                scale="10" align="center"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
                 <para>The meaning and purpose Concepts shown above for the Description Pattern are
-                    also types of Concepts in Tinkar, each with its own definitions. The table below (<xref linkend="DescriptionPatternMeaningandPurposeConcepts"></xref>
+                    also types of Concepts in Tinkar, each with its own definitions. The table below (<xref linkend="DescriptionPatternMeaningandPurposeConcepts"></xref>)
                     shows the definition for the meaning and purpose Concepts from the Description
                     Pattern table. Note how sometimes the meaning and the purpose is the
                     same.</para>
                 <table xml:id="DescriptionPatternMeaningandPurposeConcepts">
                     <title>Description Pattern Meaning and Purpose Concepts</title>
                     <tgroup cols="4">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Field</emphasis></entry>
@@ -358,7 +358,7 @@
                 change, a new change record and a new STAMP Coordinate are created. To track
                 information like when and who made the changes, a STAMP is assigned to each version
                 to record and preserve the history. The figure below details the STAMP Pattern
-                included in the starter set data (<xref linkend="StampStarterSetPattern"></xref>.</para>
+                included in the starter set data (<xref linkend="StampStarterSetPattern"/>).</para>
             <figure xml:id="StampStarterSetPattern">
                 <title>STAMP Pattern Field Values</title>
                 <mediaobject>
@@ -376,8 +376,8 @@
             <table xml:id="StatusParentConcept">
                 <title>Status Parent Concept</title>
                 <tgroup cols="2">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Parent Concept </emphasis></entry>
@@ -394,10 +394,10 @@
             <table xml:id="StatusChildrenConcepts">
                 <title>Status Children Concepts</title>
                 <tgroup cols="4">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
-                    <colspec colnum="3" colname="col3"/>
-                    <colspec colnum="4" colname="col4"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
+                    <colspec colnum="3" colname="col3" align="left"/>
+                    <colspec colnum="4" colname="col4" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Children Concept </emphasis></entry>
@@ -503,8 +503,8 @@
             <table xml:id="TimeParentConcept">
                 <title>Time Parent Concept</title>
                 <tgroup cols="2">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Parent Concept </emphasis></entry>
@@ -527,8 +527,8 @@
             <table xml:id="AuthorParentConcept">
                 <title>Author Parent Concept</title>
                 <tgroup cols="2">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Parent Concept </emphasis></entry>
@@ -550,8 +550,8 @@
             <table xml:id="ModuleParentConcept">
                 <title>Module Parent Concept</title>
                 <tgroup cols="2">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Parent Concept </emphasis></entry>
@@ -570,8 +570,8 @@
             <table xml:id="ModuleChildConcept">
                 <title>Module Child Concept</title>
                 <tgroup cols="2">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Child Concept </emphasis></entry>
@@ -592,13 +592,13 @@
             <para><emphasis role="bold">Path –</emphasis> The path specifies version control within
                 a development lifecycle, such as development, testing, staging, or production. A
                 path is identified by a Concept and may be annotated with additional information.
-                The tables below (<xref linkend="PathParentConcept"></xref>, <xref linkend="PathChildrenConcepts"></xref> show the parent and children Concepts aligned to Path. <anchor
+                The tables below (<xref linkend="PathParentConcept"></xref>, <xref linkend="PathChildrenConcepts"></xref>) show the parent and children Concepts aligned to Path. <anchor
                     xml:id="Ref168991129"/></para>
             <table xml:id="PathParentConcept">
                 <title>Path Parent Concept</title>
                 <tgroup cols="2">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Parent Concept </emphasis></entry>
@@ -619,8 +619,8 @@
                     need to organize development activities appropriately for a particular purpose
                     (sandbox paths, feature paths, …)</title>
                 <tgroup cols="2">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Children Concept </emphasis></entry>
@@ -654,18 +654,7 @@
                     </tbody>
                 </tgroup>
             </table>
-            <para>
-                <figure xml:id="PathDiagram">
-                    <title>Path Diagram</title>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata
-                                fileref="../images/Path%20Diagram.svg"
-                                scale="65" align="center"/>
-                        </imageobject>
-                    </mediaobject>
-                </figure>
-            </para>
+            
             <para><xref linkend="PathDiagram"/> illustrates the relationship between the five main paths detailed in
                 Table 10 through which the project flows. The project begins in the Prerequisite
                 Path, incorporating essential infrastructure Components shared across all paths. The
@@ -682,6 +671,18 @@
                 merges with the Master Path, creating a new version known as Master 2. This released
                 Master 2 merges back into the Development Path, allowing the project to progress
                 into the next phase of development.</para>
+            <para>
+                <figure xml:id="PathDiagram">
+                    <title>Path Diagram</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                fileref="../images/Path%20Diagram.svg"
+                                scale="65" align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </para>
             <section>
                 <title><anchor xml:id="Toc196843734"/>STAMP Progression Examples in Component
                     Versions</title>
@@ -696,9 +697,9 @@
                 <table xml:id="StampExample1">
                     <title>STAMP Example 1</title>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">STAMP</emphasis></entry>
@@ -748,9 +749,9 @@
                 <table xml:id="StampExample2">
                     <title>STAMP Example 2</title>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">STAMP</emphasis></entry>
@@ -802,9 +803,9 @@
                 <table xml:id="ExampleSTAMPPatterntoKeep">
                     <title>Example STAMP Pattern to Keep</title>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">STAMP</emphasis></entry>
@@ -851,9 +852,9 @@
                 <table xml:id="STAMPPatterntoRemove">
                     <title>Example STAMP Pattern to Remove</title>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">STAMP</emphasis></entry>
@@ -1063,7 +1064,7 @@
                 </emphasis></emphasis></para>
         <para>The example in <xref linkend="SNOMEDCTDescriptionDataExample"/>, shows a row of SNOMED CT® data that will be used to demonstrate how
             the data set was represented using the Description Semantics.</para>
-        <para>Source: <link
+        <para>Source:<link
                 xlink:href="https://confluence.ihtsdotools.org/display/DOCRELFMT/4.2.2.+Description+File+Specification"
                 >https://confluence.ihtsdotools.org/display/DOCRELFMT/4.2.2.+Description+File+Specification</link>.</para>
         <para/><figure xml:id="SNOMEDCTDescriptionDataExample">
@@ -1115,8 +1116,8 @@
             <table xml:id="LanguageConcepts">
                 <title>Language Concepts</title>
                 <tgroup cols="2">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Concept </emphasis></entry>
@@ -1190,8 +1191,8 @@
             <table xml:id="LanguageExamples">
                 <title>Language Examples</title>
                 <tgroup cols="2">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Example</emphasis></entry>
@@ -1246,8 +1247,8 @@
             <table xml:id="DescriptionString">
                 <title>Description String</title>
                 <tgroup cols="2">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Concept </emphasis></entry>
@@ -1265,8 +1266,8 @@
             <table xml:id="DescriptionStringExamples">
                 <title>Description String Examples</title>
                 <tgroup cols="2">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Example</emphasis></entry>
@@ -1311,8 +1312,8 @@
             <table xml:id="DescriptionCaseSignificance">
                 <title>Description Case Significance</title>
                 <tgroup cols="2">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Concept </emphasis></entry>
@@ -1337,8 +1338,8 @@
             <table xml:id="DescriptionCaseSigExamples">
                 <title>Description Case Significance Examples</title>
                 <tgroup cols="2">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Example</emphasis></entry>
@@ -1386,8 +1387,8 @@
             <table xml:id="DescriptionType">
                 <title>Description Type</title>
                 <tgroup cols="2">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Concept </emphasis></entry>
@@ -1404,8 +1405,8 @@
             <table xml:id="DescriptionTypeChildren">
                 <title>Description Type Children</title>
                 <tgroup cols="2">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Children Concept</emphasis></entry>
@@ -1441,8 +1442,8 @@
             <table xml:id="DescriptionTypeExamples">
                 <title>Description Type Examples</title>
                 <tgroup cols="2">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Example</emphasis></entry>
@@ -1488,8 +1489,8 @@
         <table xml:id="IdentifierPattern">
             <title>Identifier Pattern</title>
             <tgroup cols="2">
-                <colspec colnum="1" colname="col1"/>
-                <colspec colnum="2" colname="col2"/>
+                <colspec colnum="1" colname="col1" align="left"/>
+                <colspec colnum="2" colname="col2" align="left"/>
                 <tbody>
                     <row>
                         <entry namest="col1" nameend="col2"><anchor xml:id="Hlk196842095"
@@ -1539,10 +1540,10 @@
         <table xml:id="IdentifierPatternConcept">
             <title>Identifier Pattern Concept</title>
             <tgroup cols="4">
-                <colspec colnum="1" colname="col1"/>
-                <colspec colnum="2" colname="col2"/>
-                <colspec colnum="3" colname="col3"/>
-                <colspec colnum="4" colname="col4"/>
+                <colspec colnum="1" colname="col1" align="left"/>
+                <colspec colnum="2" colname="col2" align="left"/>
+                <colspec colnum="3" colname="col3" align="left"/>
+                <colspec colnum="4" colname="col4" align="left"/>
                 <tbody>
                     <row>
                         <entry><emphasis role="bold">Field</emphasis></entry>
@@ -1635,8 +1636,8 @@
             <table xml:id="UUIDConcept">
                 <title>UUID Concept</title>
                 <tgroup cols="2">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Children Concept </emphasis></entry>
@@ -1656,8 +1657,8 @@
             <table xml:id="IdentifierSourceExamples">
                 <title>Identifier Source Examples</title>
                 <tgroup cols="2">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Example</emphasis></entry>
@@ -1713,8 +1714,8 @@
             <table xml:id="IdentifierValueExampels">
                 <title>Identifier Value Examples</title>
                 <tgroup cols="2">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Example</emphasis></entry>
@@ -1807,10 +1808,10 @@
             <table xml:id="StatedDefinitionMeaningandPurposeConcepts">
                 <title>Stated Definition Meaning and Purpose Concepts</title>
                 <tgroup cols="4">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
-                    <colspec colnum="3" colname="col3"/>
-                    <colspec colnum="4" colname="col4"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
+                    <colspec colnum="3" colname="col3" align="left"/>
+                    <colspec colnum="4" colname="col4" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Field</emphasis></entry>
@@ -1858,8 +1859,8 @@
             <table xml:id="StatedDefinitionChildrenConcepts">
                 <title>Stated Definition Children Concepts</title>
                 <tgroup cols="2">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2" colwidth="150px"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Children Concept </emphasis></entry>
@@ -2002,8 +2003,8 @@
             <table xml:id="StatedDefinitionExamples">
                 <title>Stated Definition Examples</title>
                 <tgroup cols="2">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2" colwidth="150px"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" colwidth="150px" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Example</emphasis></entry>
@@ -2138,8 +2139,8 @@
             <table xml:id="FieldTypes">
                 <title>Field Types</title>
                 <tgroup cols="2">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Concept </emphasis></entry>
@@ -2262,8 +2263,8 @@
             <table xml:id="LOINCClassTypePatternswithNoFieldDefinitions">
                 <title>LOINC® ClassType Patterns with No Field Definitions</title>
                 <tgroup cols="2">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
                     <tbody>
                         <row>
                             <entry namest="col1" nameend="col2">Laboratory ClassType Pattern</entry>
@@ -2323,8 +2324,8 @@
             <table xml:id="ClassPatternwithFieldDefinitions">
                 <title>LOINC® Class Pattern with Field Definitions</title>
                 <tgroup cols="2">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
                     <tbody>
                         <row>
                             <entry namest="col1" nameend="col2"><anchor xml:id="Hlk196842781"
@@ -2459,8 +2460,8 @@
         <table xml:id="CommonTinkarDocuments">
             <title>Common Tinkar Documents</title>
             <tgroup cols="2">
-                <colspec colnum="1" colname="col1"/>
-                <colspec colnum="2" colname="col2"/>
+                <colspec colnum="1" colname="col1" align="left"/>
+                <colspec colnum="2" colname="col2" align="left"/>
                 <tbody>
                     <row>
                         <entry><emphasis role="bold">Artifact</emphasis></entry>
@@ -2493,9 +2494,9 @@
             <para>
                 <informaltable>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Term</emphasis></entry>
@@ -2592,11 +2593,11 @@
             <title>Tinkar Starter Data (Listed in alphabetical order)</title>
             <informaltable>
                 <tgroup cols="5">
-                    <colspec colnum="1" colname="col5" colwidth="85px"/>
-                    <colspec colnum="2" colname="col1" colwidth="85px"/>
-                    <colspec colnum="3" colname="col2" colwidth="85px"/>
-                    <colspec colnum="4" colname="col3" colwidth="85px"/>
-                    <colspec colnum="5" colname="col4" colwidth="85px"/>
+                    <colspec colnum="1" colname="col5" colwidth="85px" align="left"/>
+                    <colspec colnum="2" colname="col1" colwidth="85px" align="left"/>
+                    <colspec colnum="3" colname="col2" colwidth="85px" align="left"/>
+                    <colspec colnum="4" colname="col3" colwidth="85px" align="left"/>
+                    <colspec colnum="5" colname="col4" colwidth="85px" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Destinations</emphasis></entry>

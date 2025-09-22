@@ -202,9 +202,9 @@
                 <title><emphasis role="italic">Data Types used in ANF statement
                         attributes</emphasis></title>
                 <tgroup cols="3">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
-                    <colspec colnum="3" colname="col3"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
+                    <colspec colnum="3" colname="col3" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Data Type </emphasis></entry>
@@ -504,9 +504,9 @@
                             existing Clinical Terminology in SNOMED, current as of July 2025.
                         </emphasis></title>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Clinical Element</emphasis></entry>
@@ -697,7 +697,7 @@
                 circumstances. Allowing clinicians to choose between circumstance instances further
                 categorizes the flow of data, allowing for ease of access later. <figure
                     xml:id="Figure4CircumstanceChoice">
-                    <title>Figure 4: The Circumstance provides the clinical detail for the ANF
+                    <title>The Circumstance provides the clinical detail for the ANF
                         statement.</title>
                     <mediaobject>
                         <imageobject>
@@ -741,11 +741,11 @@
             <para>
                 <table xml:id="CircumstandChoice">
                     <title><emphasis>Circumstance Choice for each of the Topics for ANF statements
-                            for the Syphilis Use Case (Figure 3) </emphasis></title>
+                            for the Syphilis Use Case  </emphasis></title>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
                         <tbody>
                             <row>
                                 <entry>Clinical Element </entry>
@@ -952,10 +952,10 @@
                     <title><emphasis>Data elements in the Time Attribute for Context
                         </emphasis></title>
                     <tgroup cols="4">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -1016,10 +1016,10 @@
                     <title><emphasis>Data elements in the subjectOfRecord Attribute for
                             Context</emphasis></title>
                     <tgroup cols="4">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -1054,10 +1054,10 @@
                     <title><emphasis>Data element in the author Attribute for
                         Context</emphasis></title>
                     <tgroup cols="4">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -1094,10 +1094,10 @@
                 <title><emphasis>Data element in the subjectOfInformation Attribute for
                         Context</emphasis></title>
                 <tgroup cols="4">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
-                    <colspec colnum="3" colname="col3"/>
-                    <colspec colnum="4" colname="col4"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
+                    <colspec colnum="3" colname="col3" align="left"/>
+                    <colspec colnum="4" colname="col4" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -1127,10 +1127,10 @@
             <table xml:id="topicattributeforcontext">
                 <title><emphasis>Data element in the Topic Attribute for Context</emphasis></title>
                 <tgroup cols="4">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
-                    <colspec colnum="3" colname="col3"/>
-                    <colspec colnum="4" colname="col4"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
+                    <colspec colnum="3" colname="col3" align="left"/>
+                    <colspec colnum="4" colname="col4" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -1168,10 +1168,10 @@
                     <title><emphasis>Data element in the Type Attribute for
                         Context</emphasis></title>
                     <tgroup cols="4">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -1294,10 +1294,10 @@
                     <title><emphasis>Data elements in the Time Attribute for Performance
                             Circumstance</emphasis></title>
                     <tgroup cols="4">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -1358,10 +1358,10 @@
                 <title><emphasis>Data elements in the Time Attribute for Request Circumstance with
                         conditional future occurrence</emphasis></title>
                 <tgroup cols="4">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
-                    <colspec colnum="3" colname="col3"/>
-                    <colspec colnum="4" colname="col4"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
+                    <colspec colnum="3" colname="col3" align="left"/>
+                    <colspec colnum="4" colname="col4" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -1424,10 +1424,10 @@
                     <title><emphasis>Data element in the Purpose Attribute for
                             Circumstance</emphasis></title>
                     <tgroup cols="4">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -1467,10 +1467,10 @@
                     <title><emphasis>Data element in the Status Attribute for Circumstance for Topic
                             Leukocyte Esterase</emphasis></title>
                     <tgroup cols="4">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -1523,10 +1523,10 @@
                             demonstrating the result for chronological age per the Urinary Tract
                             Infection Clinical Narrative</emphasis></title>
                     <tgroup cols="4">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -1590,10 +1590,10 @@
                             demonstrating the result for female per the Urinary Tract Infection
                             Clinical Narrative</emphasis></title>
                     <tgroup cols="4">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -1722,10 +1722,10 @@
                     <title><emphasis>Data elements in the Health Risk Attribute for Circumstance for
                             the Hemoglobin result in the CBC clinical narrative </emphasis></title>
                     <tgroup cols="4">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -1764,10 +1764,10 @@
                             for Circumstance for the Hemoglobin result in the CBC clinical narrative
                         </emphasis></title>
                     <tgroup cols="4">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -1822,10 +1822,10 @@
                     <title><emphasis>Data elements in the Participant Attribute for Circumstance for
                             the Hemoglobin result in the CBC clinical narrative </emphasis></title>
                     <tgroup cols="4">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -1868,10 +1868,10 @@
                     <title><emphasis>Data elements in the Device ID Attribute for Circumstance for
                             the WBC result in the CBC clinical narrative </emphasis></title>
                     <tgroup cols="4">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -1902,10 +1902,10 @@
                             WBC result in the CBC clinical narrative</emphasis>
                     </title>
                     <tgroup cols="4">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -1976,10 +1976,10 @@
                         palpable mass result in the invasive breast cancer clinical narrative
                     </emphasis></title>
                 <tgroup cols="4">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
-                    <colspec colnum="3" colname="col3"/>
-                    <colspec colnum="4" colname="col4"/>
+                    <colspec colnum="1" colname="col1" align="left"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
+                    <colspec colnum="3" colname="col3" align="left"/>
+                    <colspec colnum="4" colname="col4" align="left"/>
                     <tbody>
                         <row>
                             <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -2013,10 +2013,10 @@
                             for the Breast Biopsy Topic in the invasive breast cancer clinical
                             narrative </emphasis></title>
                     <tgroup cols="4">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -2050,10 +2050,10 @@
                             Circumstance for the Breast Biopsy Topic in the invasive breast cancer
                             clinical narrative </emphasis></title>
                     <tgroup cols="4">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -2093,10 +2093,10 @@
                             Circumstance for the UTI clinical narrative with instructions to return
                             for further evaluation</emphasis></title>
                     <tgroup cols="4">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -2179,10 +2179,10 @@
                             Request Circumstance for the Comprehensive Metabolic Panel clinical
                             narrative</emphasis></title>
                     <tgroup cols="4">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -2226,10 +2226,10 @@
                             Circumstance for the Comprehensive Metabolic Panel clinical
                             narrative</emphasis></title>
                     <tgroup cols="4">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -2313,10 +2313,10 @@
                             for taking ibuprofen for the Sprained Ankle clinical
                             narrative</emphasis></title>
                     <tgroup cols="4">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -2428,10 +2428,10 @@
                             Circumstance for taking ibuprofen for the Sprained Ankle clinical
                             narrative</emphasis></title>
                     <tgroup cols="4">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -2521,10 +2521,10 @@
                     <title><emphasis>Data elements in the Method Attribute for Request Circumstance
                             for a molecular influenza test</emphasis></title>
                     <tgroup cols="4">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -2562,10 +2562,10 @@
                     <title><emphasis>Data elements in the Location Attribute for Request
                             Circumstance for Blood Pressure</emphasis></title>
                     <tgroup cols="4">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -2602,10 +2602,10 @@
                             Circumstance for a SARS-CoV test using a nasopharyngeal swab and
                             swabbing the right nostril</emphasis></title>
                     <tgroup cols="4">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -2636,10 +2636,10 @@
                             Circumstance for a SARS-CoV test using a nasopharyngeal swab and
                             swabbing the right nostril</emphasis></title>
                     <tgroup cols="4">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Attribute</emphasis></entry>
@@ -2832,9 +2832,9 @@
                     <title>ANF Statement: Topic Male</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -2957,9 +2957,9 @@
                         Statement Performance Circumstance: Topic Male</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -3144,9 +3144,9 @@
                     <title>ANF Statement: Chronological Age</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -3268,9 +3268,9 @@
                         Statement Performance Circumstance: Topic Chronological Age</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -3464,9 +3464,9 @@
                     Context: Systolic Blood Pressure</title>
                 <tgroup cols="4">
                     <colspec colnum="1" colname="col1" align="center"/>
-                    <colspec colnum="2" colname="col2"/>
-                    <colspec colnum="3" colname="col3"/>
-                    <colspec colnum="4" colname="col4"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
+                    <colspec colnum="3" colname="col3" align="left"/>
+                    <colspec colnum="4" colname="col4" align="left"/>
                     <tbody>
                         <row>
                             <entry namest="col1" nameend="col4"><emphasis role="bold">ANF Statement
@@ -3592,9 +3592,9 @@
                         Statement Performance Circumstance: Topic Systolic BP</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -3800,9 +3800,9 @@
                     Statements</title>
                 <tgroup cols="4">
                     <colspec colnum="1" colname="col1" align="center"/>
-                    <colspec colnum="2" colname="col2"/>
-                    <colspec colnum="3" colname="col3"/>
-                    <colspec colnum="4" colname="col4"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
+                    <colspec colnum="3" colname="col3" align="left"/>
+                    <colspec colnum="4" colname="col4" align="left"/>
                     <tbody>
                         <row>
                             <entry namest="col1" nameend="col4"><emphasis role="bold">ANF Associated
@@ -3861,9 +3861,9 @@
                     <title>ANF Statement: Diastolic BP</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -3991,9 +3991,9 @@
                         Statement Performance Circumstance: Diastolic Blood Pressure </title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -4200,9 +4200,9 @@
                         Associated Statements: Diastolic BP </title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -4263,9 +4263,9 @@
                     <title>ANF Statement: Sitting Position</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -4393,9 +4393,9 @@
                         Statement Performance Circumstance: Sitting Position</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -4604,9 +4604,9 @@
                         Procedure</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -4736,9 +4736,9 @@
                         Statement Request Circumstance: Blood Pressure Procedure</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -5098,9 +5098,9 @@
                     <title>ANF Statement: Topic Female</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -5216,9 +5216,9 @@
                     Performance Circumstance: Template Female</title>
                 <tgroup cols="4">
                     <colspec colnum="1" colname="col1" align="center"/>
-                    <colspec colnum="2" colname="col2"/>
-                    <colspec colnum="3" colname="col3"/>
-                    <colspec colnum="4" colname="col4"/>
+                    <colspec colnum="2" colname="col2" align="left"/>
+                    <colspec colnum="3" colname="col3" align="left"/>
+                    <colspec colnum="4" colname="col4" align="left"/>
                     <tbody>
                         <row>
                             <entry namest="col1" nameend="col4"><emphasis role="bold">ANF Statement
@@ -5404,9 +5404,9 @@
                     <title>ANF Statement: Chronological Age </title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -5526,9 +5526,9 @@
                         Statement Performance Circumstance: Chronological Age</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -5720,9 +5720,9 @@
                     <title>ANF Statement: Topic Hypertension</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -5842,9 +5842,9 @@
                         Statement Performance Circumstance:Statement Hypertension</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -6033,9 +6033,9 @@
                     <title>ANF Statement: Topic Prediabetes</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -6155,9 +6155,9 @@
                         Statement Performance Circumstance: Statement Prediabetes </title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -6346,9 +6346,9 @@
                         tablet</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -6473,9 +6473,9 @@
                         Statement Performance Circumstance: Lisinopril, 20 mg oral tablet</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -6681,9 +6681,9 @@
                     <title>ANF Statement: Medication Adherence</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -6808,9 +6808,9 @@
                         Statement Performance Circumstance: Medication Adherence</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -7001,9 +7001,9 @@
                     <title>ANF Statement: Adverse Reaction caused by Drug</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -7128,9 +7128,9 @@
                         Statement Performance Circumstance: Medication Adherence</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -7321,9 +7321,9 @@
                     <title>ANF Statement: Topic Hydrochlorothiazide 25 mg</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -7448,9 +7448,9 @@
                         tablet</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -7657,9 +7657,9 @@
                         tablet</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -7701,9 +7701,9 @@
                     <title>ANF Statement: Medication Side Effect</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -7823,9 +7823,9 @@
                         Effects</title>
                     <tgroup cols="4">
                         <colspec colnum="1" colname="col1" align="center"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
-                        <colspec colnum="4" colname="col4"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
+                        <colspec colnum="3" colname="col3" align="left"/>
+                        <colspec colnum="4" colname="col4" align="left"/>
                         <tbody>
                             <row>
                                 <entry namest="col1" nameend="col4"><emphasis role="bold">ANF
@@ -7909,8 +7909,8 @@
                 <table>
                     <title>List of Attributes Used in ANF Statements</title>
                     <tgroup cols="2">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
+                        <colspec colnum="1" colname="col1" align="left"/>
+                        <colspec colnum="2" colname="col2" align="left"/>
                         <tbody>
                             <row>
                                 <entry><emphasis role="bold">Attribute </emphasis></entry>
