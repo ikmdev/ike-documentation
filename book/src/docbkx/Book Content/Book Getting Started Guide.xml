@@ -480,11 +480,12 @@
         <para>This section will provide a high-level view of Komet’s software architecture to help
             contributors better understand the big picture of Komet’s framework and its development
             workflow.</para>
-        <para><figure xml:id="HighLevelArch_GSG">
+        <para>
+            <figure xml:id="HighLevelArch_GSG">
             <title>High Level Architecture</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/High%20Level%20Arch_GSG.svg" scale="35"
+                    <imagedata fileref="../images/High%20Level%20Arch_GSG.svg" scale="35"
                         align="center"/>
                 </imageobject>
             </mediaobject>

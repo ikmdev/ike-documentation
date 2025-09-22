@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
      <title>Use Cases</title>
     <section>
         <title>Use Case: Komet Application</title>
@@ -272,7 +272,7 @@
                     <title>Generalized Current State Long COVID Workflow</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/long%20covid%20workflow.svg" align="center" scale="25"/>
+                            <imagedata fileref="../images/long%20covid%20workflow.svg" align="center" scale="25"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -308,7 +308,7 @@
                     <title>Current State Outpatient Long COVID Workflow</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Current%20State%20Long%20Covid%20Workflow.svg" align="center" scale="17"/>
+                            <imagedata fileref="../images/Current%20State%20Long%20Covid%20Workflow.svg" align="center" scale="17"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -325,7 +325,7 @@
                     <title>Future State Outpatient Long COVID Workflow</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/Future%20State%20Long%20Covid%20Workflow.svg" align="center" scale="17"/>
+                            <imagedata fileref="../images/Future%20State%20Long%20Covid%20Workflow.svg" align="center" scale="17"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -346,7 +346,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata
-                                fileref="images/Future%20State%20Data%20Flows%20for%20Long%20Covid.svg" align="center" scale="13"/>
+                                fileref="../images/Future%20State%20Data%20Flows%20for%20Long%20Covid.svg" align="center" scale="13"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -687,8 +687,7 @@
                 field. Targeted and dynamic data collection methods will give organizations better
                 insight into the most pertinent questions that need to be answered for a variety of
                 emerging conditions and diseases.</para>
-        </section>
-        <section>
+
             <para>Our analysis of the Long COVID workflow uncovered several sources of RWD where
                 extra effort should be made to gather and represent relevant data. RWD, including
                 patient reported symptoms, are an opportunity to gather information that could lead
@@ -836,8 +835,9 @@
             </orderedlist>
         </para>
     </section>
-    <title>Summary of Findings – RWE Search and Query Methods</title>
-    <sect1>
+    <section>
+        <title>Summary of Findings – RWE Search and Query Methods</title>
+        <section>
         <title>Real World Evidence (RWE) Introduction</title>
         <para>Search and query methods are used for information retrieval to access unstructured
             data. Most health information is stored in an electronic health record (EHR), and most
@@ -876,8 +876,9 @@
             or substances can be evaluated for safety and efficacy. RWD needs to be collected,
             queried, and evaluated to test and validate the “hypothesis” of the regulatory
             exercise.</para>
-    </sect1>
-    <sect1>
+        </section>
+    </section>
+    <section>
         <title>Long COVID Use Case: Loosely Defined and/or Poorly Understood Scenarios</title>
         <para>Long COVID is a poorly understood sequela to a COVID infection. In general, it is
             characterized by a wide range of ongoing health symptoms lasting weeks or months
@@ -953,8 +954,8 @@
             diagnostic and treatment options. RWD may have considerable potential in clearly
             identifying patient cohorts to advance understanding of the disease and develop
             effective treatments. </para>
-    </sect1>
-    <sect1>
+    </section>
+    <section>
         <title>References</title>
         <orderedlist>
             <listitem>
@@ -983,6 +984,6 @@
                     https://www.ncbi.nlm.nih.gov/pubmed/22014137</para>
             </listitem>
         </orderedlist>
-    </sect1>
-</chapter>
+    </section>
+</section>
 
