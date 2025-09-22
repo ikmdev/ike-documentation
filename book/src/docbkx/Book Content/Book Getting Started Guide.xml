@@ -10,29 +10,31 @@
         <para>As a member of the IKM Community, we expect you to: </para>
         <itemizedlist>
             <listitem>
-                <para>Be respectful and considerate: Treat others with respect, valuing diverse
+                <para><emphasis role="bold">Be respectful and considerate</emphasis><emphasis
+                        role="bold">:</emphasis> Treat others with respect, valuing diverse
                     perspectives and backgrounds. Foster an inclusive and welcoming environment for
                     all. </para>
             </listitem>
         </itemizedlist>
         <itemizedlist>
             <listitem>
-                <para>Be open to constructive feedback: Embrace feedback as an opportunity for
-                    growth and improvement. Provide feedback to others in a respectful and
-                    constructive manner. </para>
+                <para><emphasis role="bold">Be open to constructive feedback:</emphasis> Embrace
+                    feedback as an opportunity for growth and improvement. Provide feedback to
+                    others in a respectful and constructive manner. </para>
             </listitem>
         </itemizedlist>
         <itemizedlist>
             <listitem>
-                <para>Be willing to learn and grow: Approach your contributions with a growth
-                    mindset, continuously seeking to expand your knowledge and skills. </para>
+                <para><emphasis role="bold">Be willing to learn and grow:</emphasis> Approach your
+                    contributions with a growth mindset, continuously seeking to expand your
+                    knowledge and skills. </para>
             </listitem>
         </itemizedlist>
         <itemizedlist>
             <listitem>
-                <para>Contribute with the best interests of the project in mind: Prioritize the
-                    collective goals and objectives of IKM, putting the project's needs ahead of
-                    personal agendas. </para>
+                <para><emphasis role="bold">Contribute with the best interests of the project in
+                        mind:</emphasis> Prioritize the collective goals and objectives of IKM,
+                    putting the project's needs ahead of personal agendas. </para>
             </listitem>
         </itemizedlist>
         <para>We have a zero-tolerance policy for any form of harassment, discrimination, or
@@ -40,47 +42,50 @@
             which outlines the standards of behavior and interaction within the IKM Community.
             Please review the Code of Conduct carefully to ensure a positive and inclusive
             experience for everyone. </para>
-        <para>Background: </para>
+        <para><emphasis role="bold">Background: </emphasis></para>
         <para>Before jumping into the project it is important that you understand the design
             principle and foundation from which this works is built. </para>
         <para>Knowledge architecture is an architectural design principle for clinical information
             that is organized into distinct layers such that each higher layer relies upon artifacts
             from the lower layer. The purpose of the knowledge architecture is to help provide a
-            framework for addressing the current gaps in standards for “Structure” and “Meaning”.
-            Each architectural layer addresses separate concerns that can be reused, developed, and
-            updated independently. A Knowledge Architecture can individually resolve issues in the
-            data within their layers vs a whole system, leading to much more agile improvement. </para>
-        <para>Foundational: The foundational architecture includes (a) the foundation and building
-            blocks of the common model, a standardized, normalized, and repeatable way to represent
-            data; (b) rules for how the repeatable transformation process of disparate standards
-            into the common model promotes interoperability with other environments; and (c) rules
-            for how the modules of the architecture are tightly version controlled over time. This
-            layer includes common elements of interoperability such as object identity, versioning,
+            framework for addressing the current gaps in standards for “Structure” and “Meaning”. </para>
+        <para>Each architectural layer addresses separate concerns that can be reused, developed,
+            and updated independently. A Knowledge Architecture can individually resolve issues in
+            the data within their layers vs a whole system, leading to much more agile improvement. </para>
+        <para><emphasis role="bold">Foundational: </emphasis></para>
+        <para>The foundational architecture includes (a) the foundation and building blocks of the
+            common model, a standardized, normalized, and repeatable way to represent data; (b)
+            rules for how the repeatable transformation process of disparate standards into the
+            common model promotes interoperability with other environments; and (c) rules for how
+            the modules of the architecture are tightly version controlled over time. This layer
+            includes common elements of interoperability such as object identity, versioning,
             modularity, exchange paradigms, and knowledge representation. </para>
-        <para>Terminology: The terminology knowledge layer builds upon the foundational architecture
-            to create artifacts with medical terminology and codes (i.e. SNOMED CT, LOINC, RxNorm)
-            that deﬁne concepts of interest, including descriptions, dialects, language, and
-            semantic hierarchy. This layer deﬁnes what valid codes or expressions may be used by
-            higher level layers. </para>
-        <para>Statement: The statement model layer is responsible for deﬁning how data elements are
-            combined to create a statement. This layer reuses the artifacts deﬁned in the
-            terminology knowledge layer to combine data elements into statements. This layer
-            includes standards-based clinical statements like Analysis Normal Form (ANF) and CIMI
-            and statement models that may be implemented using HL7 V2, CDA, FHIR, etc. </para>
-        <para>Assertional: The assertional knowledge layer makes use of terminology and statement
-            knowledge to specify non-deﬁning facts that may be used by procedural knowledge
-            algorithms based on relationships between data elements. Assertional knowledge may be
-            used to indicate what symptoms may be associated with a disorder or what treatment is
-            optimal for a condition. </para>
-        <para>Procedural: The procedural knowledge layer, also known as imperative knowledge, is the
-            knowledge exercised in the performance of some task. This is the action-oriented layer
-            that uses information from the assertional knowledge layer that can enable clinical
-            decision support for clinical alert rules, reminders, etc. that trigger actions or
-            recommend interventions to ultimately improve quality measurement and patient safety. </para>
+        <para><emphasis role="bold">Terminology: </emphasis></para>
+        <para>The terminology knowledge layer builds upon the foundational architecture to create
+            artifacts with medical terminology and codes (i.e. SNOMED CT, LOINC, RxNorm) that deﬁne
+            concepts of interest, including descriptions, dialects, language, and semantic
+            hierarchy. This layer deﬁnes what valid codes or expressions may be used by higher level
+            layers. </para>
+        <para><emphasis role="bold">Statement: </emphasis></para>
+        <para>The statement model layer is responsible for deﬁning how data elements are combined to
+            create a statement. This layer reuses the artifacts deﬁned in the terminology knowledge
+            layer to combine data elements into statements. This layer includes standards-based
+            clinical statements like Analysis Normal Form (ANF) and CIMI and statement models that
+            may be implemented using HL7 V2, CDA, FHIR, etc. </para>
+        <para><emphasis role="bold">Assertional: </emphasis></para>
+        <para>The assertional knowledge layer makes use of terminology and statement knowledge to
+            specify non-deﬁning facts that may be used by procedural knowledge algorithms based on
+            relationships between data elements. Assertional knowledge may be used to indicate what
+            symptoms may be associated with a disorder or what treatment is optimal for a condition. </para>
+        <para><emphasis role="bold">Procedural: </emphasis></para>
+        <para>The procedural knowledge layer, also known as imperative knowledge, is the knowledge
+            exercised in the performance of some task. This is the action-oriented layer that uses
+            information from the assertional knowledge layer that can enable clinical decision
+            support for clinical alert rules, reminders, etc. that trigger actions or recommend
+            interventions to ultimately improve quality measurement and patient safety. </para>
         <para>The Knowledge Architecture described above provide the foundation for robust
             conﬁguration management and quality assurance of health IT data while allowing for a
             standardized update and extension process. </para>
-        <para/>
     </section>
     <section>
         <title>Introduction to Komet</title>
@@ -239,19 +244,29 @@
                     the concept. Semantics themselves, are defined by patterns and field
                     definitions. Semantics sit at the core of the data model and are connected to
                     different information that provides additional information on the
-                    concept.</para>
-                <para><emphasis role="bold">Figure 1: Tinkar Logical Model</emphasis></para>
-                <para><inlinemediaobject>
-                        <imageobject>
-                            <imagedata fileref="../images/GSG%20Tinkar%20Logic%20Model.svg"/>
-                        </imageobject>
-                    </inlinemediaobject></para>
+                    concept.</para> 
+            </listitem>
+        </itemizedlist><figure xml:id="TinkarLogicalModel_GSG">
+            <title>Tinkar Logical Model</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/TinkarLogicalModel.svg" scale="35" align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure>         
                 <para>An example of the Tinkar Model in action can be seen below, where the Tinkar
                     Logical Model applies a Separation of Concerns approach where every concept has
                     associated semantics and patterns. The concept for Urine homocysteine derives
                     meaning from the semantics and patterns which describe it.</para>
-            </listitem>
-        </itemizedlist>
+        <para><figure xml:id="TinkarLogicalModelExample_GSG">
+            <title>Tinkar Logical Model Example</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/Tinkar%20Logical%20Model%20Example.svg" scale="35"
+                            align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure>         </para>
             <para>Now that we understand Concepts, Patterns, and Semantics, we want to dive into
                 STAMPs and how they are used. STAMP stands for status, time, author, module, and
                 path and each concept, semantic, and pattern must have an associated STAMP. While
@@ -286,12 +301,14 @@
                     </para>
                 </listitem>
             </itemizedlist>
-            <para><emphasis role="bold">Figure 2: Tinkar Logical Model Example</emphasis></para>
-        <para><inlinemediaobject>
+        <para><figure xml:id="StampCircle_GSG">
+            <title>STAMP Model</title>
+            <mediaobject>
                 <imageobject>
-                    <imagedata fileref="../images/GSG%20Tinkar%20Logical%20Model%20Example.svg"/>
+                    <imagedata fileref="../images/STAMP%20Circle_GSG.svg" scale="35" align="center"/>
                 </imageobject>
-            </inlinemediaobject></para>
+            </mediaobject>
+        </figure>       </para>
             <para>As terminology concepts evolve, new STAMPs are assigned to each version that allow
                 for concept provenance and a documented history for its evolution – the time, that
                 is signature to the STAMP, allows for the tracking and comparison of evolving
@@ -301,8 +318,30 @@
                 also required for each pattern and semantic, again supporting versioning, tracking,
                 and comparing the evolution of patterns and semantics associated with a given
                 concept.</para>
-            <para>enter pic</para>
-            <para>enter pic</para>
+        <para><figure xml:id="STAMPVersions_GSG">
+            <title>STAMP Versions</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/STAMP%20Versions_GSG.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure>       </para>
+        <para><figure xml:id="ApplicationArchEntityModel_GSG">
+            <title>Entity Model</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/Application%20Arch%20Entity%20Model_GSG.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure>     </para>
+        <para>Further reading: <link xlink:href="https://www.ikm.dev/Volume-4.pdf">Integrated
+                Knowledge Management (IKM) Volume 4 - Tinkar Ballot</link></para>
+        <para>HL7: <link
+                xlink:href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=573"
+                >HL7 Standards Product Brief - HL7 Logical Model: Standardized Terminology
+                Knowledgebase, Release 1 | HL7 International</link></para>
     </section>
     <section>
         <title>Version Property Graph (DRAFT)</title>
@@ -408,16 +447,12 @@
                         database is smaller than five gigabytes (gb) with the ultimate goal of being
                         less than 20gb, even with the higher demand on actions.</para>
                 </listitem>
-            </orderedlist>
-            <orderedlist>
                 <listitem>
                     <para>As we design and manage our Version Property Graph, we must ensure that
                         the database is scalable and adaptable. Despite our careful development and
                         use of reasoners, this will require optimization and manual input to ensure
                         it is maintained and evolving properly.</para>
                 </listitem>
-            </orderedlist>
-            <orderedlist>
                 <listitem>
                     <para>Ensuring we can get a wide range of syntax and data languages into our
                         database in a way that supports rapid querying and parsing is critical
@@ -445,7 +480,15 @@
         <para>This section will provide a high-level view of Komet’s software architecture to help
             contributors better understand the big picture of Komet’s framework and its development
             workflow.</para>
-        <para>enter pic</para>
+        <para><figure xml:id="HighLevelArch_GSG">
+            <title>High Level Architecture</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/High%20Level%20Arch_GSG.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure>    </para>
         <para>
             <informaltable>
                 <tgroup cols="2">
@@ -589,7 +632,15 @@
                 </tgroup>
             </informaltable>
         </para>
-        <para>enter pic</para>
+        <para><figure xml:id="AppArchPhysArch_GSG">
+            <title>IKM Modules and Definitions</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/AppArchPhysArch_GSG.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure> </para>
     </section>
     <section>
         <title>GitHub Repositories</title>
@@ -598,8 +649,8 @@
             belongs, how to build and run each one, and any other special characteristics.</para>
         <informaltable>
             <tgroup cols="2">
-                <colspec colnum="1" colname="col1"/>
-                <colspec colnum="2" colname="col2"/>
+                <colspec colnum="1" colname="col1" colwidth="1*"/>
+                <colspec colnum="2" colname="col2" colwidth="2.23*"/>
                 <tbody>
                     <row>
                         <entry><emphasis role="bold">Repositories</emphasis></entry>
@@ -682,8 +733,15 @@
             explore both library-level and class-level dependencies and will also dive into the
             tightly dependent relationship between komet and tinkar-core in more detail. All repos
             have a dependency on build-parent.</para>
-        <para>enter pic</para>
-        <para/>
+        <para><figure xml:id="Dependencies_GSG">
+            <title>Repository Dependencies</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/Dependencies_GSG.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure> </para>
     </section>
     <section>
         <title>NextGen Komet User Interface</title>
@@ -697,8 +755,8 @@
             allows users to:</para>
         <informaltable>
             <tgroup cols="2">
-                <colspec colnum="1" colname="col1"/>
-                <colspec colnum="2" colname="col2"/>
+                <colspec colnum="1" colname="col1" colwidth="1*"/>
+                <colspec colnum="2" colname="col2" colwidth="2.13*"/>
                 <tbody>
                     <row>
                         <entry>
@@ -715,13 +773,15 @@
                                 in the top left of the screen and typing the keyword or concept name
                                 into the search bar. </para>
                         </entry>
-                        <entry>Open Concept Search.svg<mediaobject>
+                        <entry><figure xml:id="ConceptSearch_GSG">
+                            <title>Concept Search</title>
+                            <mediaobject>
                                 <imageobject>
-                                    <imagedata
-                                        fileref="blob:https://ikmdev.atlassian.net/d3654066-8dba-49b7-870c-461a02a06440"
-                                    />
+                                    <imagedata fileref="../images/Concept%20Search_GSG.svg" scale="35"
+                                        align="center"/>
                                 </imageobject>
-                            </mediaobject></entry>
+                            </mediaobject>
+                        </figure> </entry>
                     </row>
                     <row>
                         <entry>
@@ -732,13 +792,15 @@
                                 relationships.</para>
                             <para> </para>
                         </entry>
-                        <entry>Open View Concept Details.svg<mediaobject>
+                        <entry><figure xml:id="ViewConceptDetails_GSG">
+                            <title>Concept View</title>
+                            <mediaobject>
                                 <imageobject>
-                                    <imagedata
-                                        fileref="blob:https://ikmdev.atlassian.net/ffe97aaf-85be-4791-813a-50c3ecc723ec"
-                                    />
+                                    <imagedata fileref="../images/View%20Concept%20Details_GSG.svg" scale="35"
+                                        align="center"/>
                                 </imageobject>
-                            </mediaobject></entry>
+                            </mediaobject>
+                        </figure> </entry>
                     </row>
                     <row>
                         <entry>
@@ -754,13 +816,15 @@
                                 certain characteristics or details were added or removed and when
                                 axiom changes were made.</para>
                         </entry>
-                        <entry>Open Viewing Versioning2.svg<mediaobject>
+                        <entry><figure xml:id="ViewVersioning_GSG">
+                            <title>Versioning</title>
+                            <mediaobject>
                                 <imageobject>
-                                    <imagedata
-                                        fileref="blob:https://ikmdev.atlassian.net/a71fd1bb-09a5-4518-9c1f-fd6ef191a851"
-                                    />
+                                    <imagedata fileref="../images/View%20Versioning_GSG.svg" scale="35"
+                                        align="center"/>
                                 </imageobject>
-                            </mediaobject></entry>
+                            </mediaobject>
+                        </figure> </entry>
                     </row>
                     <row>
                         <entry>
@@ -773,19 +837,23 @@
                                 can select the ellipsis and pencil icons to enter associated
                                 information like STAMP, stated relationships, and more.</para>
                         </entry>
-                        <entry>Open NewLIDRRecord.svg<mediaobject>
+                        <entry><figure xml:id="NewLIDRRecord_GSG">
+                            <title>New LIDR Record</title>
+                            <mediaobject>
                                 <imageobject>
-                                    <imagedata
-                                        fileref="blob:https://ikmdev.atlassian.net/221d32d0-9c2c-4f8e-ac7f-20aa56d0eadf"
-                                    />
+                                    <imagedata fileref="../images/New%20LIDR%20Record_GSG.svg" scale="35"
+                                        align="center"/>
                                 </imageobject>
-                            </mediaobject>Open New Concept.svg<mediaobject>
-                                <imageobject>
-                                    <imagedata
-                                        fileref="blob:https://ikmdev.atlassian.net/baa606f8-660d-4221-a58b-047f99a4b18f"
-                                    />
-                                </imageobject>
-                            </mediaobject></entry>
+                            </mediaobject>
+                        </figure><figure xml:id="NewConcept_GSG">
+                                <title>New Concept</title>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="../images/New%20Concept_GSG.svg" scale="35"
+                                            align="center"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </figure>  </entry>                      
                     </row>
                     <row>
                         <entry>
@@ -815,17 +883,20 @@
                                 define how data fields should be understood in the semantic,
                                 respectively. </para>
                         </entry>
-                        <entry>Open Screenshot 2024-10-22 at 2.15.07 PM.png<mediaobject>
+                        <entry><figure xml:id="ModifyConcept_GSG">
+                            <title>Modify Concept</title>
+                            <mediaobject>
                                 <imageobject>
-                                    <imagedata
-                                        fileref="blob:https://ikmdev.atlassian.net/d1039225-9b2f-4650-8b4d-b2cde4ada05d#media-blob-url=true&amp;id=a1dd4d78-dcb1-471d-85ec-13f3f3cd3c6d&amp;collection=contentId-284655617&amp;contextId=284655617&amp;mimeType=image%2Fpng&amp;name=Screenshot%202024-10-22%20at%202.15.07%E2%80%AFPM.png&amp;size=174727&amp;width=1253&amp;height=978&amp;alt="
-                                    />
+                                    <imagedata fileref="../images/Modify%20Concept_GSG.svg" scale="35"
+                                        align="center"/>
                                 </imageobject>
-                            </mediaobject><para> </para></entry>
+                            </mediaobject>
+                        </figure> </entry>
                     </row>
                     <row>
                         <entry>
-                            <para><emphasis role="underline">Author LIDR Data</emphasis>: </para>
+                            <para><emphasis role="underline"><emphasis role="bold">Author LIDR
+                                        Data</emphasis></emphasis>: </para>
                             <para>Users can create LIDR data and a new laboratory test by clicking
                                 the + icon at the top of the Komet window and selecting New LIDR
                                 Record. </para>
@@ -833,19 +904,26 @@
                                 (such as analyte, targets, and results) by selecting the ellipsis
                                 and pencil icons in the LIDR Viewer.</para>
                         </entry>
-                        <entry>Open NewLIDRRecord.svg<mediaobject>
-                                <imageobject>
-                                    <imagedata
-                                        fileref="blob:https://ikmdev.atlassian.net/1f4663e2-bde9-4316-87d1-6f0a441c6e18"
-                                    />
-                                </imageobject>
-                            </mediaobject>Open LIDR Viewer.svg<mediaobject>
-                                <imageobject>
-                                    <imagedata
-                                        fileref="blob:https://ikmdev.atlassian.net/9d6b2b24-01cd-43f6-91dd-4cc5e0f9e3c6"
-                                    />
-                                </imageobject>
-                            </mediaobject></entry>
+                        <entry>
+                            <figure xml:id="NewLIDRRecord_GSGCopy">
+                                <title>LIDR Record</title>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="../images/New%20LIDR%20Record_GSG%20-%20Copy.svg" scale="35"
+                                            align="center"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </figure>
+                            <figure xml:id="NewLIDRViewer_GSG">
+                                <title>New LIDR Viewer</title>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="../images/New%20LIDR%20Viewer_GSG.svg"
+                                            scale="35" align="center"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </figure>
+                             </entry>
                     </row>
                     <row>
                         <entry>
@@ -890,25 +968,35 @@
                             <para>Run incremental reasoner" has a maintenance backlog, and is
                                 intended for concept level edits only.</para>
                         </entry>
-                        <entry>Open Run Reasoner.svg<mediaobject>
+                        <entry>
+                            <figure xml:id="RunReasoner_GSG">
+                            <title>Run Reasoner</title>
+                            <mediaobject>
                                 <imageobject>
-                                    <imagedata
-                                        fileref="blob:https://ikmdev.atlassian.net/cc693aa4-a416-40bd-8511-50653da73f54"
-                                    />
+                                    <imagedata fileref="../images/Run%20Reasoner_GSG.svg"
+                                        scale="35" align="center"/>
                                 </imageobject>
-                            </mediaobject><para> </para>Open Reasoner Menu.jpg<mediaobject>
-                                <imageobject>
-                                    <imagedata
-                                        fileref="blob:https://ikmdev.atlassian.net/a8ed7ee0-9e1f-46ea-ab19-0c8e20ddf6cf#media-blob-url=true&amp;id=bf580768-0a25-47be-9091-675e501808fe&amp;collection=contentId-284655617&amp;contextId=284655617&amp;mimeType=image%2Fjpeg&amp;name=Reasoner%20Menu.jpg&amp;size=41785&amp;width=498&amp;height=474&amp;alt=Reasoner%20Menu.jpg"
-                                    />
-                                </imageobject>
-                            </mediaobject><para> </para>Open Reasoner part 2.jpg<mediaobject>
-                                <imageobject>
-                                    <imagedata
-                                        fileref="blob:https://ikmdev.atlassian.net/7431bc07-9334-4d84-82e9-33e1a0de44a4#media-blob-url=true&amp;id=7472a49a-8209-493a-beec-2d9edf7bd1e9&amp;collection=contentId-284655617&amp;contextId=284655617&amp;mimeType=image%2Fjpeg&amp;name=Reasoner%20part%202.jpg&amp;size=36432&amp;width=888&amp;height=190&amp;alt=Reasoner%20part%202.jpg"
-                                    />
-                                </imageobject>
-                            </mediaobject><para> </para></entry>
+                            </mediaobject>
+                        </figure>
+                            <figure xml:id="ReasonerMenu_GSG">
+                                <title>Reasoner Menu</title>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="../images/Reasoner%20Menu_GSG.svg" scale="35"
+                                            align="center"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </figure>
+                            <figure xml:id="ReasonerPart2_GSG">
+                                <title>Reasoner Part 2</title>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="../images/Reasoner%20Part%202_GSG.svg" scale="35"
+                                            align="center"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </figure>
+                            </entry>
                     </row>
                     <row>
                         <entry>
@@ -923,19 +1011,24 @@
                             <para> </para>
                             <para> </para>
                         </entry>
-                        <entry>Open image-20241021-185043.png<mediaobject>
+                        <entry><figure xml:id="Protobuf1_GSG">
+                            <title>Protobuf</title>
+                            <mediaobject>
                                 <imageobject>
-                                    <imagedata
-                                        fileref="blob:https://ikmdev.atlassian.net/728d601f-2db6-46a8-ba79-15b59375d046#media-blob-url=true&amp;id=1891aa55-6356-4e31-bbc9-3efe7dfc56fa&amp;collection=contentId-284655617&amp;contextId=284655617&amp;mimeType=image%2Fpng&amp;name=image-20241021-185043.png&amp;size=61247&amp;width=671&amp;height=762&amp;alt=Import%20and%20Export%20Buttons"
-                                    />
+                                    <imagedata fileref="../images/Protobuf%201_GSG%20.svg" scale="35"
+                                        align="center"/>
                                 </imageobject>
-                            </mediaobject>Import and Export ButtonsOpen image-20241021-185541.png<mediaobject>
-                                <imageobject>
-                                    <imagedata
-                                        fileref="blob:https://ikmdev.atlassian.net/9d192284-fca2-4686-9d4e-802f670741e0#media-blob-url=true&amp;id=08f56d56-0d1d-43d4-8b90-5f8f6e8ad536&amp;collection=contentId-284655617&amp;contextId=284655617&amp;mimeType=image%2Fpng&amp;name=image-20241021-185541.png&amp;size=98328&amp;width=1494&amp;height=1014&amp;alt=image-20241021-185541.png"
-                                    />
-                                </imageobject>
-                            </mediaobject></entry>
+                            </mediaobject>
+                        </figure>
+                            <figure xml:id="Protobuf2_GSG">
+                                <title>Protobuf</title>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="../images/Protobuf%202_GSG%20.svg" scale="35"
+                                            align="center"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </figure></entry>
                     </row>
                     <row>
                         <entry>
@@ -946,16 +1039,567 @@
                                 the user will see a pop-up that allows the user to select a database
                                 that is in protobuf format to import. </para>
                         </entry>
-                        <entry>Open image-20241021-185640.png<mediaobject>
+                        <entry><figure xml:id="ProtobufImport_GSG">
+                            <title>Protobuf Import</title>
+                            <mediaobject>
                                 <imageobject>
-                                    <imagedata
-                                        fileref="blob:https://ikmdev.atlassian.net/9c61acd7-9314-4d49-8b24-a8a03607c8fe#media-blob-url=true&amp;id=4f07e53f-8e85-48b1-ab90-23ef29026008&amp;collection=contentId-284655617&amp;contextId=284655617&amp;mimeType=image%2Fpng&amp;name=image-20241021-185640.png&amp;size=91537&amp;width=1265&amp;height=916&amp;alt=image-20241021-185640.png"
-                                    />
+                                    <imagedata fileref="../images/Protobuf%20Import_GSG%20.svg" scale="35"
+                                        align="center"/>
                                 </imageobject>
-                            </mediaobject></entry>
+                            </mediaobject>
+                        </figure></entry>
                     </row>
                 </tbody>
             </tgroup>
         </informaltable>
+    </section>
+    <section>
+        <title>Komet UI Framework</title>
+        <para><emphasis role="bold">Moving Away from Model-View-Controller (MVC)</emphasis></para>
+        <para>JavaFX’s default GUI architecture pattern is Model View Controller or MVC. Below is
+            code that will load a Pane (Parent) based on an FXML file loaded using the FXMLLoader
+            API. The loader can also load the associated controller.</para>
+        <para><figure xml:id="OverrideCodesnip_GSG">
+            <title>Override</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/OverrideCodesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+            </figure></para>
+        <para>Above, you’ll notice the loader is also able to load one View and one controller
+            instance. The view and controller are a one-to-one mapping.</para>
+        <para>When developing JavaFX form based applications you will typically create three
+            things:</para>
+        <orderedlist>
+            <listitem>
+                <para>Java Domain objects - Business objects such as Java object representing the
+                        <emphasis role="bold">Model</emphasis></para>
+            </listitem>
+            <listitem>
+                <para>FXML file - A JavaFX XML markup representing the <emphasis role="bold"
+                        >View</emphasis></para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Controller</emphasis> class - A Java class can contain
+                    bound UI controls, presentation logic, methods to update data and UI.</para>
+            </listitem>
+        </orderedlist>
+        <para>As you can see the <emphasis role="bold">Controller</emphasis> is doing way too much
+            and as a result can be often difficult if not impossible to test in isolation. Because
+            JavaFX uses it’s own dependency injection facility to reference UI components during
+            runtime it’s difficult or impossible to mock or test a controller’s presentation logic.
+            Often controls are bound to JavaFX properties in the same controller class. Because of
+            this one-to-one mapping (View &amp; Controller) you can not have multiple views
+            referencing one ViewModel. To simply and improve development within Komet, we leverage
+            the MVVM model described below.</para>
+        <para><emphasis role="bold">Model-View-ViewModel (MVVM)</emphasis></para>
+        <para>MVVM is an architectural pattern that isolates the business logic/back-end data from
+            the view. It was invented by Microsoft and designed to simplify event driven user
+            interfaces. According to Wikipedia the <link
+                xlink:href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel"
+                >MVVM</link> is a variation of <link
+                xlink:href="https://en.wikipedia.org/wiki/Martin_Fowler_(software_engineer)">Martin
+                Fowler</link>'s Presentation Model design pattern. The figure below shows how each
+            layer is notified when a data changes occur.</para>
+        <para><figure xml:id="MVVM_GSG">
+            <title>MVVM</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/MVVM_GSG.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para>The following is a break down of each layer within MVVM:</para>
+        <itemizedlist>
+            <listitem>
+                <para><emphasis role="bold">M — Model:</emphasis> is the access to the data layer,
+                    also known as the content for the view. This contains both business logic and
+                    data. Also known as the <emphasis role="italic">non-visual class </emphasis>that
+                    encapsulates the app’s data. In the context of Java, a Model is not necessarily
+                    the data but the data logic. For an example we can use Java domain objects as a
+                    developer to both define the data type/object we are creating and encapsulate it
+                    into a domain object for transfer.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">V — View: </emphasis>This represents what the user of a
+                    given application sees on the screen. It has the structure, layout, visuals,
+                    etc. The view contains zero business logic and is typically designed to bind to
+                    the ViewModel to receive data/cues. Multiple views can point to one view model.
+                    In JavaFX the view is typically composed of a FXML file (creates the layout of
+                    the UI components) and the controller class (adds functionality to UI
+                    components). The relationship between the controller class and FXML file is, the
+                    controller class is able to access each component of the UI via a FMXL
+                    identifier and set actions to occur when a component is interacted with.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">VM — ViewModel: </emphasis>An abstraction of the view
+                    because it reveals some properties that the view is not privy to. It listens for
+                    any changes of state and notifies the view of any. The View is bound to
+                    properties in the ViewModel so it can access the state of the data in the model.
+                    In JavaFX has Properties APIs that allow you to create View Models that will
+                    manage data properties that can be bound to UI form fields. A ViewModel will
+                    reference a domain model object such as a Java Bean or a POJO (plain old Java
+                    object). At any moment the domain object can be swapped out. Once the old object
+                    will no longer be firing property changes to ViewModel it was referenced.</para>
+            </listitem>
+        </itemizedlist>
+        <para><emphasis role="bold">Converting MVC to MVVM in JavaFX</emphasis></para>
+        <para>Converting JavaFX MVC code to MVVM, we will take on the follow steps:</para>
+        <orderedlist>
+            <listitem>
+                <para>Refactor controller class by removing presentation logic</para>
+            </listitem>
+            <listitem>
+                <para>Move presentation logic into the ViewModel class</para>
+            </listitem>
+            <listitem>
+                <para>Bind properties between the View properties and the ViewModel
+                    properties</para>
+            </listitem>
+            <listitem>
+                <para>Code to unbind properties</para>
+            </listitem>
+        </orderedlist>
+        <para>Shown below is a high level diagram of what this can look like:</para>
+        <para><figure xml:id="JAVMVCMVVM_GSG">
+            <title>Java MVC MVVM</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/JAVMVC%20MVVM_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para>Now that you know how to convert the traditional JavaFX MVC to MVVM, let’s look at
+            some proposed ViewModel APIs (code snippets) for common scenarios.</para>
+        <para><emphasis role="bold">A ViewModel API Using Inheritance</emphasis></para>
+        <para>If a GUI View Model API existed it could follow an inheritance model where a ViewModel
+            could be an interface with default methods or a concrete class that allows derived
+            classes.</para>
+        <para><emphasis role="bold">Pros</emphasis> of this approach is you can document UML on
+            derived classes. Also, derived classes can have a direct method for each property field
+            as opposed to a generic way to set/get properties by name.</para>
+        <para><emphasis role="bold">Cons</emphasis> of this approach is an addition class has to be
+            created and therefore must extend or implement the ViewModel class (or
+            interface).</para>
+        <para>Let’s look at the two common scenarios of MVVM as shown below.</para>
+        <para><emphasis role="bold">Scenario 1</emphasis>: User types into a JavaFX text
+            field</para>
+        <para>A user will type into the JavaFX text field which will update the view model which
+            will update the model. It can also update multiple views bound to the view model.</para>
+        <para><emphasis role="bold">Figure X. Title Goes Here</emphasis></para>
+        <para>
+            <figure xml:id="Scenario1Codesniop_GSG">
+            <title>Scenario 1</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/Scenario1Codesniop_GSG%20.svg" scale="55"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para><emphasis role="bold">Scenario 2</emphasis>: Background process updates model to
+            update ViewModel then JavaFX text field</para>
+        <para>Now we go in the other direction by updating the model which will notify the change to
+            the View Model which then updates the UI control TextField.</para>
+        <para>
+            <figure xml:id="Scenario2Codesnip_GSG ">
+            <title>Scenario 2</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/Scenario2Codesnip_GSG%20.svg" scale="60"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para><emphasis role="bold">An ViewModel API Using Generics</emphasis></para>
+        <para>Assuming a GUI View Model API existed it could follow a generic ViewModel strategy
+            utilizing Java’s generic type definition as shown below.</para>
+        <para><emphasis role="bold">Pros</emphasis> No need to have a derived class. Less code to
+            maintain.</para>
+        <para><emphasis role="bold">Cons</emphasis> of this approach is you’ll need to use generic
+            set/get methods to access named properties.</para>
+        <para>Let’s look at the two common scenarios of MVVM as shown below.</para>
+        <para><emphasis role="bold">Scenario 1</emphasis>: User types into a JavaFX text
+            field</para>
+        <para>
+            <figure xml:id="GenericsScen1Codesnip_GSG">
+            <title>Scenario 1</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/Generics%20Scen1%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para><emphasis role="bold">Scenario 2</emphasis>: Background process updates model to
+            update ViewModel then JavaFX text field</para>
+        <para>
+            <figure xml:id="GenericsScen2Codesnip_GSG ">
+            <title>Scenario 2</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/Generics%20Scen2%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para><emphasis role="bold">References:</emphasis></para>
+        <para><emphasis role="bold">JavaFX Frameworks:</emphasis>
+            <link xlink:href="https://github.com/mhrimaz/AwesomeJavaFX#frameworks">GitHub -
+                mhrimaz/AwesomeJavaFX: A curated list of awesome JavaFX libraries, books,
+                frameworks, etc...</link></para>
+        <para><emphasis role="bold">Wikipedia MVVM:</emphasis>
+            <link xlink:href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel"
+                >Model–view–viewmodel</link></para>
+        <para><emphasis role="bold">mvvmFX</emphasis>: <link
+                xlink:href="https://github.com/sialcasa/mvvmFX">itHub - sialcasa/mvvmFX: an
+                Application Framework for implementing the MVVM Pattern with JavaFX</link></para>
+        <para><emphasis role="bold">JGoodies Binding:</emphasis>
+            <link xlink:href="https://www.jgoodies.com/freeware/libraries/binding/"/></para>
+        <para><emphasis role="bold">GUI Architectures</emphasis> by Martin Fowler - <link
+                xlink:href="https://martinfowler.com/eaaDev/uiArchs.html">GUI
+            Architectures</link></para>
+    </section>
+    <section>
+        <title>Interacting with the Komet Database</title>
+        <para>This section will detail several examples of how to interact with the spined array
+            database as a developer. All of the samples assume that a spined array database has been
+            loaded.</para>
+        <para>You can use the following code to load a database:</para>
+        <para>
+            <figure xml:id="CachingCodesnip_GSG">
+            <title>Caching</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/Caching%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para>Please note that line two should be replaced with the fully qualified path of the
+            database. By convention, databases generally reside in the “Solor” directory within the
+            user’s home directory, as this is where Komet looks for available databases.</para>
+        <para>Additionally, it is good practice to explicitly shutdown the database when you are
+            done using it:</para>
+        <para>
+            <figure xml:id="PrimitiveCodesnip_GSG ">
+            <title>Primitive</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/Primitive%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para> The dataset used in the code samples is based off of the October 2024 SNOMED
+            International distribution.</para>
+        <para><emphasis role="bold">Code Samples</emphasis></para>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para><emphasis role="bold">Count all of Concepts</emphasis></para>
+                </listitem>
+            </orderedlist>
+        </para>
+        <para>
+            <figure xml:id="AtomicCodesnip_GSG">
+            <title>Atomic</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/Atomic%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para>Output:</para>
+        <para>
+            <figure xml:id="AtomicOutputCountCodesnip_GSG">
+            <title>Atomic Output</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/Atomic%20Output%20Count%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para><emphasis role="bold">Count Active Concepts</emphasis></para>
+                </listitem>
+            </orderedlist>
+        </para>
+        <para>Stamp Calculators act as filters. Here we check each Concept against the Stamp
+            Calculator which filters on only active Concepts on the development path.</para>        
+        <para>
+            <figure xml:id="ActiveConceptsAtomicCodesnip_GSG">
+            <title>Atomic Concepts</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/Active%20Concepts%20Atomic%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para>Output:</para>  
+        <figure xml:id="ActiveConceptsAtomicCountodesnip_GSG">
+            <title>Active Concepts Count</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/Active%20Concepts%20Atomic%20Count%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para><emphasis role="bold">Count Inactive Concepts</emphasis></para>
+                </listitem>
+            </orderedlist>
+        </para>
+        <para>Similarly, we can use the StampCalculator to retrieve the latest version of a concept
+            to count the number of inactive concepts. “Latest” acts like a Java Optional, so we can
+            use the same “ifPresent()” closure that only executes if the underlying concept
+            exists.</para>        
+        <para>
+            <figure xml:id="InactiveConceptsAtomicCodesnip_GSG">
+            <title>Inactive Concepts</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/Inactive%20Concepts%20Atomic%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para>Output:</para>        
+        <para>
+            <figure xml:id="InactiveConceptsAtomicCountCodesnip_GSG">
+            <title>Inactive Concepts Count</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/Inactive%20Concepts%20Atomic%20Count%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para><emphasis role="bold">Count the Number of Concepts Made Inactive by Year
+                            for the Last Ten Years</emphasis></para>
+                </listitem>
+            </orderedlist>
+        </para>
+        <para>Here we iterate through each concept and increment a count tracked by a map for the
+            year it went inactive. We then print out the count for the last ten years. Similar to
+            the above, note that the “Latest” class, returned by “latest()”, acts like an Optional
+            so we use “ifPresent()” to access the underlying concept.</para>        
+        <para>
+            <figure xml:id="ActiveConcepts10AtomicCodesnip_GSG">
+            <title>Active Concepts 10</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/Active%20Concepts%2010%20Atomic%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para>Output:</para>
+        <para>
+            <figure xml:id="ActiveConcepts10AtomicCountCodesnip_GSG">
+            <title>Active Concepts 10 Count</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/Active%20Concepts%2010%20Atomic%20Count%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para><emphasis role="bold">Retrieve the Various Names for a Concept in the US
+                            Language</emphasis></para>
+                </listitem>
+            </orderedlist>
+        </para>
+        <para>Components in the database are represented externally by UUIDs and internally by
+            “nids”. Here we look up a nid using the EntityService based on a UUID we got from
+            looking up a “chronic lung disease” from Komet. We then use this nid to get the
+            different types of names associated with this concept.</para>        
+        <para>
+            <figure xml:id="LanguageCodesnip_GSG ">
+            <title>Language</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/Language%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para>Output:</para>        
+        <para>
+            <figure xml:id="LanguageOutputCodesnip_GSG">
+            <title>Language</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/Language%20Output%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para><emphasis role="bold">Lookup the Definition for a
+                        Concept</emphasis></para>
+                </listitem>
+            </orderedlist>
+        </para>
+        <para>Here we lookup a definition for the concept “Capra Hircus” based off of the UUID we
+            found in Komet. To find the definition, we get a reference to the description pattern
+            from the latest StampCalculator. Then we iterate through each description semantic of
+            the pattern for the concept until we find the definition description type.</para>        
+        <para>
+            <figure xml:id="DefinitionCodesnip_GSG">
+            <title>Definition</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/Definition%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para>Output:</para>        
+        <para>
+            <figure xml:id="DefinitionOutputCodesnip_GSG ">
+            <title>Definition Output</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/Definition%20Output%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+    </section>
+    <section>
+        <title>Plugin Services</title>
+        <para>This section will explain how plugin services are used to build out Komet components.
+            The team is currently building plugin services for windows, menus, panels, and tasks.
+            Plugin services are implemented using Maven plugins.</para>
+        <para>This section will be available in the near future. </para>
+    </section>
+    <section>
+        <title>Data Artifact Management</title>
+        <para>This section will explain how different data artifacts are managed. Currently the team
+            is implementing a data architecture using Maven plugins and protobuf to streamline data
+            artifact storing for easier access via an API. This section will also dive into
+            datastores (inverted knowledge graphs), data import/export, different data IDs (public
+            IDs vs. native IDs vs. UUIDs), and other data components.</para>
+        <para>Future topics include:</para>
+        <itemizedlist>
+            <listitem>
+                <para>Datastore (hosting location, inverted knowledge graphs)</para>
+            </listitem>
+            <listitem>
+                <para>Data artifacts (maven plugins)</para>
+            </listitem>
+            <listitem>
+                <para>Import/export using maven and protobuf</para>
+            </listitem>
+            <listitem>
+                <para>Public IDs vs. Native IDs vs. UUIDs</para>
+            </listitem>
+        </itemizedlist>
+    </section>
+    <section>
+        <title>APIs</title>
+        <para>This section will explore all available APIs and data query services within komet and
+            tinkar-core. This includes STAMP coordinates/calculators, view coordinates/calculators,
+            the entity service, the search service, and methods for creating/editing
+            concepts.</para>
+        <para><emphasis role="bold">Coordinates and Calculators</emphasis></para>
+        <para>At a high level, Calculators are used to filter, compare, and order versions using the
+            five aspects of STAMPs, while Coordinates are used to capture the version processing
+            configurations / preferences which will drive this processing. Calculator responsiveness
+            directly impacts many functionalities surfaced in the UI, there is a large emphasis
+            placed on performance. There is a multi-dimensional spatial representation that allows
+            us to focus in on a certain subset of information in a given data store, using STAMPs.
+            STAMPs have five coordinates which were mentioned earlier, status, time, author, module,
+            and path and map to a five-dimensional hyperplane. Coordinates and calculators allow
+            developers to request only certain information by defining the STAMP field parameters
+            and filtering out only what is needed for the accurate permutation. Tinkar Core has a
+            module called coordinate which has different coordinates and calculators. For instance,
+            in StampCoordinateRecord there are different available STAMPs available. In the
+            StampCalculatorWithCache, developers can filter out the StampCoordinateRecord so that
+            only what was specified as the require STAMP is returned. Additionally,
+            LanguageCoordinateRecord, LogicCoordinateRecord and NavigationCoordinateRecord can be
+            used in order to filter out coordinates for logic, language semantics and navigation
+            semantics using their respective calculators. Lastly, ViewCoordinateRecord is the
+            highest level of filtering that can be done. It allows you to put in
+            EditCoordinateRecord and it is what Komet uses to populate the filtered records. It can
+            retrieve information from the other coordinates and their calculators. In short, the
+            calculators use the coordinates to filter out the desired records.</para>
+        <para>Below provides an example of how the StampCalculator is used to return a list of
+            PublicIds of Concepts that are active members of a particular membership pattern:</para>        
+        <para>
+            <figure xml:id="APICodesnip_GSG">
+            <title>API</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="../images/API%20Codesnip_GSG%20.svg" scale="35"
+                        align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
+        <para><emphasis role="bold">EntityService </emphasis></para>
+        <para>The data layer of Komet is managed by Tinker Core and contains the Disk/Memory
+            Datastore Providers. There is an abstraction on top of that which is the
+            PrimitiveDataService, with EntityService (handles data retrieval and processing for
+            semantic and conceptual entities)above that primitive data. With data stored in spined
+            arrays, the PrimitiveDataService and the Disk/Memory Datastore Providers allow data to
+            be processed and unpackaged from the ingested files. The EntityService takes the data
+            from there and makes it consumable objects in java, specifically semantics, patterns,
+            and concept objects. These are viewable and defined in the entity project. The
+            EntityProvider implements EntityService. From there the EntityService can get objects
+            from the database and use them as needed.</para>
+    </section>
+    <section>
+        <title>Tinkarizer</title>
+        <para>This section will dive into any element or process that interacts with Tinkar data.
+            This includes the Tinkarizer (module for importing and transforming Tinkar data sets),
+            Tinkar data, the Tinkar import process, starter data, change sets, and bindings.</para>
+        <para><emphasis role="italic">More on this topic will be made available at a later
+                time.</emphasis></para>
+    </section>
+    <section>
+        <title>Testing</title>
+        <para>This section will describe how integration and/or unit testing is done for Komet and
+            Tinkar data. It will provide different testing requirements for developers vs. testers
+            and provide instructions on how to run tests.</para>
+        <para><emphasis role="italic">More on this topic will be made available at a later
+                time.</emphasis></para>
+    </section>
+    <section>
+        <title>Knowledge Standards and Use Cases</title>
+        <para>This section will provide a high-level education on existing knowledge standards like
+            SNOMED, LOINC, LIVD/LIDR, and RxNorm to help developers solidify their understanding of
+            Tinkar data artifacts, which is heavily based on data elements in these
+            standards.</para>
+        <para><emphasis role="italic">More on this topic will be made available at a later
+                time.</emphasis></para>
+    </section>
+    <section>
+        <title>References</title>
+        <para>This section will provide helpful resources for further education and a list of
+            definitions for terms that are commonly used across the project but may not be common
+            knowledge.</para>
+        <para><emphasis role="italic">More on this topic will be made available at a later time.
+            </emphasis></para>
     </section>
 </chapter>
