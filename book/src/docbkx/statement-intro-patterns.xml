@@ -241,16 +241,14 @@
                 </itemizedlist>
 
                 <para>Among these criteria, reproducibility is arguably the most important in
-                    selecting an optimal design pattern for clinical statements, because the
-                    property of reproducibility most influences the value of clinical statements
-                    as <emphasis>standardized</emphasis> representations of clinical information
-                    that can be shared by different software modules and information systems. As
-                    illustrated in <xref linkend="_Ref474505861" xrefstyle="select:label"/>,
-                    multiple software modules may use the same clinical statement models to
-                    implement distinct functions. To ensure that the creation, use, and exchange of
-                    clinical data is done uniformly, the clinical statement models must not vary
-                    according to the contexts in which they are created or processed, i.e., they
-                    must be reproducible.</para>
+            selecting an optimal design pattern for clinical statements, because the property of
+            reproducibility most influences the value of clinical statements as
+                <emphasis>standardized</emphasis> representations of clinical information that can
+            be shared by different software modules and information systems. Multiple software
+            modules can utilize the same clinical statement models to implement different functions.
+            To ensure that the creation, use, and exchange of clinical data is done uniformly, the
+            clinical statement models must not vary according to the contexts in which they are
+            created or processed, i.e., they must be reproducible.</para>
 
                 <para>To help ensure reproducibility, modelers should follow at least two guidelines
                     when creating clinical statement models: Avoid arbitrary variation and
