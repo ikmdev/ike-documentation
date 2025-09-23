@@ -179,7 +179,7 @@ What does that mean for the table example I gave? Clearly it changes, which of t
         </figure>
         <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
                 linkend="anf-editorialrule-techniques"/></para>
-        <xi:include href="./editorial-rules.xml"
+        <xi:include href="../../../chapter2-anf-reference-model/src/docbkx/editorial-rules.xml"
             xpointer="element(anf-editorialrule-techniques-content)">
             <xi:fallback/>
         </xi:include>

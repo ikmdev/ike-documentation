@@ -14,10 +14,6 @@
             <title>Application of Terminology Knowledge Layer</title>
             <xi:include href="Book%20Content/Book%20Terminology_Application.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         </chapter>
-        
-    </part>
-    <part>
-        <title>ANF Statement Historical Implementations</title>
         <chapter>
             <title>ANF Statement Historical Implementations</title>
             <xi:include href="statement-openehr.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -37,7 +33,7 @@
         <xi:include href="../../../volume6-ANF-Ballot/chapter8-bibliography/src/docbkx/bibliography.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>   
     </part>
     <part>
-        <title>Terminology Knowledge</title>
+        <title>Terminology Knowledge Content</title>
         <xi:include href="Book%20Content/Appendix-%20Terminology%20Knowledge%20Example.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="Book%20Content/Appendix-%20Description%20Logic%20Definitional%20Operators.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="Book%20Content/Appendix-%20LOINC%20and%20SNOMED%20CT%20Licensing%20Information.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -63,8 +59,22 @@
         <xi:include href="../../../volume4-Tinkar-Ballot/chapter7-references/src/docbkx/Volume%204%20-%20References.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/> 
     </part>
     <part>
+        <title>Reworked Content</title>
+        <chapter>
+            <title>Ethical Considerations, Use Case, and Definitional Primer</title>
+        
+        <xi:include href="Book%20Content/Book%20Ethical%20and%20Practical%20Considerations%20in%20Localized%20Artificial%20Intelligence%20(AI)%20and%20Machine%20Learning%20(ML)%20Development.xml"/>
+        <xi:include href="Book%20Content/Book%20Use%20Case.xml"/>
+        <xi:include href="definitional_primer.xml"/>
+        </chapter>
+        <xi:include href="statement-intro-patterns.xml"/>
+        
+    </part>
+    <part>
         <title>Deliverables</title>
+        <xi:include href="Book%20Content/Book%20Playbook%20of%20Current%20Knowledge%20Management%20Technologies,%20Industry%20Coding%20Standards,%20and%20Knowledge%20Management%20Hosting%20Options.xml"/>
         <xi:include href="Book%20Content/Advanced%20Analytics%20Performance%20Monitoring%20Framework%20(Months%2013-24).xml"/>
+        <xi:include href="Safety%20Systems%20Impact%20for%20Knowledge%20Management%20and%20Advanced%20Analytics%20Constructs.xml"/>
         <xi:include href="Book%20Content/Book%201.2.2.xml"/>
         <xi:include href="Book%20Content/Book%202.2.4.xml"/>
         <xi:include href="Book%20Content/Book%204.1.1.xml"/>
@@ -93,6 +103,8 @@
     </part>
     <part>
         <title>Additional Confluence Documentation</title>
+        <xi:include href="Book%20Content/Book%20Getting%20Started%20Guide.xml"/>
+        <xi:include href="Book%20Content/Developers%20Onboarding%20Guide.xml"/>
         <xi:include href="Book%20Content/Change%20Sets%20Exchange%20Testing%20Script.xml"/>
         <xi:include href="Book%20Content/Data%20Types%20for%20General%20Semantic%20Authoring.xml"/>
         <xi:include href="Book%20Content/TipsandTricksforKomet.xml"/>

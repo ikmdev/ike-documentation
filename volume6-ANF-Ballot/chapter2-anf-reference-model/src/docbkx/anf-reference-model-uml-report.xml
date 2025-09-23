@@ -25,7 +25,7 @@
         <title>ANFStatement Structure</title>
         <mediaobject>
             <imageobject>
-                <imagedata fileref="images/New%20Clinical%20Statement.svg" scalefit="1"
+                <imagedata fileref="../../../src/docbkx/images/Clinical_Statement.svg" scalefit="1"
                     width="100%" contentdepth="100%" align="center"/>
             </imageobject>
         </mediaobject>
@@ -269,7 +269,7 @@
             <title>Circumstance</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/circumstance_hierarchy.svg" scalefit="1"
+                    <imagedata fileref="../../../src/docbkx/images/circumstance_hierarchy.png" scalefit="1"
                         width="100%" contentdepth="100%" align="center"/>
                 </imageobject>
             </mediaobject>
@@ -675,7 +675,7 @@
             <mediaobject>
                 <imageobject>
                     <?oxy_comment_start author="Ioana" timestamp="20190804T133814-0400" comment="updated invariants"?>
-                    <imagedata fileref="images/data_structures.svg" scalefit="1"
+                    <imagedata fileref="../../../src/docbkx/images/data_structures.png" scalefit="1"
                         width="100%" contentdepth="100%" align="center"/><?oxy_comment_end?>
                 </imageobject>
             </mediaobject>
@@ -1120,7 +1120,7 @@
             <title>References</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/reference_classes.svg"  scalefit="1"
+                    <imagedata fileref="../../../src/docbkx/images/reference_classes.png"  scalefit="1"
                         width="100%" contentdepth="100%" align="center"/>
                 </imageobject>
             </mediaobject>

@@ -17,7 +17,7 @@
             xreflabel="Performance versus request">
             <title>Performance versus request</title>
             <mathphrase>
-                <itemizedlist xml:id="anf-editorialrule-performanceRequest-content">
+                <itemizedlist xml:id="anf-editorialrule-performanceRequest-content2">
                     <listitem>
                         <para>This rule mandates that an ANF Statement must describe either the
                                 <emphasis>performance of an action</emphasis> or the
@@ -45,7 +45,7 @@
             xreflabel="Timing - past, present, or future">
             <title>Timing - past, present, or future</title>
             <mathphrase>
-                <itemizedlist xml:id="anf-editorialrule-timing-content">
+                <itemizedlist xml:id="anf-editorialrule-timing-content2">
                     <listitem>
                         <para>For a Performance of Action, the Timing can represent a time in the
                             past or a current time. If a history of a performance of action is to be
@@ -64,7 +64,7 @@
             xreflabel="Related statements should be associated">
             <title>Related statements should be associated</title>
             <mathphrase>
-                <itemizedlist xml:id="anf-editorialrule-associatedStatement-content">
+                <itemizedlist xml:id="anf-editorialrule-associatedStatement-content2">
                     <listitem>
                         <para>Use an associated statement when it is important for the
                             interpretation of one statement that the other statements were observed,
@@ -80,7 +80,7 @@
             xreflabel="Subject of information is used to represent family and donor history">
             <title>Subject of information is used to represent who the statement is about</title>
             <mathphrase>
-                <itemizedlist xml:id="anf-editorialrule-subjectOfInformation-content">
+                <itemizedlist xml:id="anf-editorialrule-subjectOfInformation-content2">
                     <listitem>
                         <para>The subjectOfInformation is used to represent who the statement is
                             about. This is normally the patient (Subject of record) unless
@@ -97,7 +97,7 @@
             xreflabel="Topics are always an action">
             <title>Topics are always an action</title>
             <mathphrase>
-                <itemizedlist xml:id="anf-editorialrule-topicsAreActions-content">
+                <itemizedlist xml:id="anf-editorialrule-topicsAreActions-content2">
                     <listitem>
                         <para>The particulars of how topics—and other statement fields—are modeled
                             <?oxy_comment_start author="Ioana" timestamp="20190806T115233-0400" comment="Update: &quot;is&quot; to &quot;as&quot;  based on technical writer&apos;s review." flag="done"?>as<?oxy_comment_end?>
@@ -153,7 +153,7 @@
             xreflabel="Prerequisites must be separated from the topic">
             <title>Prerequisites must be separated from the topic</title>
             <mathphrase>
-                <itemizedlist xml:id="anf-editorialrule-prerequisites-content">
+                <itemizedlist xml:id="anf-editorialrule-prerequisites-content2">
                     <listitem>
                         <para>A prerequisite must be separable from the topic and should be
                             expressed as a stand-alone clinical statement.</para>
@@ -171,7 +171,7 @@
             xreflabel="Separate compound topics">
             <title>Separate compound topics</title>
             <mathphrase>
-                <itemizedlist xml:id="anf-editorialrule-separateCompoundTopics-content">
+                <itemizedlist xml:id="anf-editorialrule-separateCompoundTopics-content2">
                     <listitem>
                         <para>For the purposes of ANF, a statement is a request or performance of an
                             action that should exist independently. Thus, if a compound topic
@@ -197,7 +197,7 @@
             xreflabel="Techniques are inseparable from the topic">
             <title>Techniques are inseparable from the topic</title>
             <mathphrase>
-                <itemizedlist xml:id="anf-editorialrule-techniques-content">
+                <itemizedlist xml:id="anf-editorialrule-techniques-content2">
                     <listitem>
                         <para>A technique must be true within the duration of the
                             performance.</para>
@@ -221,7 +221,7 @@
             xreflabel="Results are always a ranged quantity">
             <title>Results are always a ranged quantity</title>
             <mathphrase>
-                <itemizedlist xml:id="anf-editorialrule-resultsRangedQuantity-content">
+                <itemizedlist xml:id="anf-editorialrule-resultsRangedQuantity-content2">
                     <listitem>
                         <para>Results are always a Measure, which is a ranged quantity. Measure
                             includes both a numeric interval along with a Measure Semantic specified
@@ -240,7 +240,7 @@
             xreflabel="Presence and absence are a countable quantity">
             <title>Presence and absence are a countable quantity</title>
             <mathphrase>
-                <itemizedlist xml:id="anf-editorialrule-presenceAbsence-content">
+                <itemizedlist xml:id="anf-editorialrule-presenceAbsence-content2">
                     <listitem>
                         <para>Any statement that represents the Presence or implies Presence of a
                             Topic will have a Result with an upperBound of infinite (inf),
@@ -274,7 +274,7 @@
             xreflabel="Purpose indicates the reason for a request or performance">
             <title>Purpose indicates the reason for a request or performance</title>
             <mathphrase>
-                <itemizedlist xml:id="anf-editorialrule-purpose-content">
+                <itemizedlist xml:id="anf-editorialrule-purpose-content2">
                     <listitem>
                         <para>The purpose is why an action was requested or performed. The purpose
                             of the topic is typically some type of therapeutic intent, diagnostic
@@ -306,7 +306,7 @@
             xreflabel="HealthRisk indicates the clinical risk of the result">
             <title>healthRisk indicates the clinical risk of the result</title>
             <mathphrase>
-                <itemizedlist xml:id="anf-editorialrule-healthRisk-content">
+                <itemizedlist xml:id="anf-editorialrule-healthRisk-content2">
                     <listitem>
                         <para>In PerformanceCircumstance, healthRisk is used to flag a result with
                             coded values such as 'low', 'normal', high', and 'critical'. </para>
@@ -318,7 +318,7 @@
             xreflabel="Reference Range can be specified for a result">
             <title>reference can be specified for a result</title>
             <mathphrase>
-                <itemizedlist xml:id="anf-editorialrule-normalRange-content">
+                <itemizedlist xml:id="anf-editorialrule-normalRange-content2">
                     <listitem>
                         <para>In Performance Circumstance "referenceRange" is the interval of values
                             that are normal for the observation/finding described by the "topic" for
@@ -335,7 +335,7 @@
             xreflabel="Priority defaults to routine for a request">
             <title>Priority defaults to routine for a request</title>
             <mathphrase>
-                <itemizedlist xml:id="anf-editorialrule-priority-content">
+                <itemizedlist xml:id="anf-editorialrule-priority-content2">
                     <listitem>
                         <para>Priority is used to represent the priority for which a request is to
                             be carried out. By default a Request will be considered "routine" unless
@@ -349,7 +349,7 @@
             <title>Repetition is used to request multiple occurrences of the thing described in the
                 topic</title>
             <mathphrase>
-                <itemizedlist xml:id="anf-editorialrule-repetition-content">
+                <itemizedlist xml:id="anf-editorialrule-repetition-content2">
                     <listitem>
                         <para>Repetition is used to represent when an action is requested for more
                             than a single occurrence. </para>

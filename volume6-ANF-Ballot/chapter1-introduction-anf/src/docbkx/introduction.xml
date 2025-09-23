@@ -168,7 +168,7 @@
           <title>Blood Pressure Statement recorded by an EHR system</title>
           <mediaobject role="bordered">
             <imageobject>
-              <imagedata fileref="images/BP data capture.svg" scale="60" align="center" format="SVG"
+              <imagedata fileref="../../../src/docbkx/images/BP data capture.svg" scale="60" align="center" format="SVG"
               />
             </imageobject>
           </mediaobject>
@@ -204,7 +204,7 @@
         <title>Alternative Blood Pressure representation in a second EHR system</title>
         <mediaobject role="bordered">
           <imageobject>
-            <imagedata fileref="images/EHR-2.svg" scale="60" align="center" format="SVG"/>
+            <imagedata fileref="../../../src/docbkx/images/EHR-2.svg" scale="60" align="center" format="SVG"/>
           </imageobject>
         </mediaobject>
         <caption>
@@ -357,7 +357,7 @@ Not sure how ANF leads to agile improvement. Possibly just remove, and simplify 
 Add to the Shared Module System description: &quot;Shared version and module system&quot; &quot;Provides the structural foundation that supports change over time, modularity, and knowledge representation. &quot;
 
 Remove the definition from the figure, and link to glossary where appropriate. " flag="done"?>
-            <imagedata fileref="SoC.svg" scale="40" align="center"/><?oxy_comment_end?>
+            <imagedata fileref="../../../src/docbkx/images/SoC.svg" scale="40" align="center"/><?oxy_comment_end?>
           </imageobject>
         </mediaobject>
         <caption>
@@ -505,7 +505,7 @@ Remove the definition from the figure, and link to glossary where appropriate. "
         <title>Model Derivation based on SAIF-CD</title>
         <mediaobject role="bordered">
           <imageobject>
-            <imagedata fileref="images/Perspectives.svg" format="SVG" scale="60" align="center"/>
+            <imagedata fileref="../../../src/docbkx/images/Perspectives.svg" format="SVG" scale="60" align="center"/>
           </imageobject>
         </mediaobject>
         <caption>

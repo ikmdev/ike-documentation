@@ -12,7 +12,7 @@
             <title>Directed Hierarchy Tree Layout (Reigngold-Tilford algorithm)</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/DiTree1.1.svg" scale="25" align="center"/> 
+                    <imagedata fileref="../images/DiTree1.1.svg" scale="25" align="center"/> 
                 </imageobject>
             </mediaobject>
         </figure>
@@ -20,7 +20,7 @@
             <title>Undirected Network Force Directed Graph Layout(Fruchterman-Reingold algorithm)</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/DiTree1.2.svg" scale="25" align="center"/> 
+                    <imagedata fileref="../images/DiTree1.2.svg" scale="25" align="center"/> 
                 </imageobject>
             </mediaobject>
         </figure>
@@ -51,7 +51,7 @@
             <title>Example Edge</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/DiTree3.svg" scale="25" align="center"/> 
+                    <imagedata fileref="../images/DiTree3.svg" scale="25" align="center"/> 
                 </imageobject>
             </mediaobject>
         </figure>
@@ -64,7 +64,7 @@
             <title>Example Directed Edge</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/DiTree4.svg" scale="25" align="center"/> 
+                    <imagedata fileref="../images/DiTree4.svg" scale="25" align="center"/> 
                 </imageobject>
             </mediaobject>
         </figure>
@@ -84,7 +84,7 @@
             <title>Example Directed Graph</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/DiTree5.svg" scale="25" align="center"/> 
+                    <imagedata fileref="../images/DiTree5.svg" scale="25" align="center"/> 
                 </imageobject>
             </mediaobject>
         </figure>
@@ -95,7 +95,7 @@
             <title>A vertical display of a hierarchical tree or DiTree</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Picture10.svg" scale="25" align="center"/> 
+                    <imagedata fileref="../images/Picture10.svg" scale="25" align="center"/> 
                 </imageobject>
             </mediaobject>
         </figure>
@@ -103,7 +103,7 @@
             <title>A display of a hierarchical tree or DiTree vertically as boxes</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/DiTree6.svg" scale="25" align="center"/> 
+                    <imagedata fileref="../images/DiTree6.svg" scale="25" align="center"/> 
                 </imageobject>
             </mediaobject>
         </figure>
@@ -111,7 +111,7 @@
             <title>A radial hierarchical tree or DiTree - the center is the root node</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/DiTree8.svg" scale="25" align="center"/> 
+                    <imagedata fileref="../images/DiTree8.svg" scale="25" align="center"/> 
                 </imageobject>
             </mediaobject>
         </figure>

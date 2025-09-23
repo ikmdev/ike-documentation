@@ -12,7 +12,7 @@
             <title>No Task Running</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/TT1.svg" scale="25" align="center"/> 
+                    <imagedata fileref="../images/TT1.svg" scale="25" align="center"/> 
                 </imageobject>
             </mediaobject>
             <para><emphasis role="bold">Resolution </emphasis>- Please ensure that all instances of
@@ -41,7 +41,7 @@
                     <title>Update to Master Path</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/TT2.svg" scale="25" align="center"/> 
+                            <imagedata fileref="../images/TT2.svg" scale="25" align="center"/> 
                         </imageobject>
                     </mediaobject>
                     <para>Now user can update the path from Sandbox path to Master path.</para>
@@ -74,7 +74,7 @@
             <title>Delete Folders</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/TT3.svg" scale="25" align="center"/> 
+                    <imagedata fileref="../images/TT3.svg" scale="25" align="center"/> 
                 </imageobject>
             </mediaobject>
         </figure>
@@ -89,7 +89,7 @@
             <title>Correct Dataset</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/TT4.svg" scale="25" align="center"/> 
+                    <imagedata fileref="../images/TT4.svg" scale="25" align="center"/> 
                 </imageobject>
             </mediaobject>
         </figure>
@@ -103,7 +103,7 @@
             <title>Purpose/Meaning Fields</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/TT5.svg" scale="25" align="center"/> 
+                    <imagedata fileref="../images/TT5.svg" scale="25" align="center"/> 
                 </imageobject>
             </mediaobject>
         </figure>
@@ -117,7 +117,7 @@
             <title>Minimized Journal Window</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/TT6.svg" scale="25" align="center"/> 
+                    <imagedata fileref="../images/TT6.svg" scale="25" align="center"/> 
                 </imageobject>
             </mediaobject>
         </figure>
@@ -131,7 +131,7 @@
             <title>Main Build Version Check</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/TT7.svg" scale="25" align="center"/> 
+                    <imagedata fileref="../images/TT7.svg" scale="25" align="center"/> 
                 </imageobject>
             </mediaobject>
         </figure>
@@ -145,7 +145,7 @@
             <title>Next Gen Search</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/TT8.svg" scale="25" align="center"/> 
+                    <imagedata fileref="../images/TT8.svg" scale="25" align="center"/> 
                 </imageobject>
             </mediaobject>
         </figure>
@@ -159,7 +159,7 @@
             <title>Language Choice</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/TT9.svg" scale="25" align="center"/> 
+                    <imagedata fileref="../images/TT9.svg" scale="25" align="center"/> 
                 </imageobject>
             </mediaobject>
         </figure>
@@ -173,7 +173,7 @@
             <title>New Journal View</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/TT10.svg" scale="25" align="center"/> 
+                    <imagedata fileref="../images/TT10.svg" scale="25" align="center"/> 
                 </imageobject>
             </mediaobject>
         </figure>

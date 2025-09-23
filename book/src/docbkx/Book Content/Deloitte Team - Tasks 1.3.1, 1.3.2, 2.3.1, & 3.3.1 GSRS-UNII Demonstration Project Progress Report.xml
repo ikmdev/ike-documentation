@@ -88,11 +88,11 @@
                         codes in different terminological systems. Each ribbon starts at the segment
                         that contains the source code and ends at a segment that contains the target
                         code. </para>
-                        <para><figure xml:id="Networkofterminologicalsystemscontainingmedicationinformation">
+                        <para><figure xml:id="NetworkofterminologicalsystemscontainingmedicationinformationNetworkofterminologicalsystemscontainingmedicationinformation">
                                 <title>Network of terminological systems containing medication information</title>
                         <mediaobject>
                             <imageobject>
-                                <imagedata fileref="../images/Network%20of%20terminological%20systems%20containing%20medication%20information.png"
+                                <imagedata fileref="../images/Networkofterminologicalsystemscontainingmedicationinformation.svg"
                                     scale="50" align="center"/> 
                             </imageobject>
                         </mediaobject>

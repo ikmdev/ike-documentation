@@ -158,7 +158,7 @@ Doing family history, donor statements using subject of information is now the n
                     <mediaobject>
                         <imageobject>
                             <?oxy_comment_start author="kec" timestamp="20190722T172538-0700" comment="For topics where more than 1 is nonsensical, such as diabetes, maybe have the interval [1,1], and reserve the [1, inf) for situations where it is possible there is more than one, but we don&apos;t know how many there are... Dot, blot hemorrhage comes to mind: [1,inf), there is at least one dot blot hemorrhage. " flag="done"?>
-                            <imagedata fileref="images/dm_anf.svg" format="SVG" scalefit="1"
+                            <imagedata fileref="../../../src/docbkx/images/dm_anf.svg" format="SVG" scalefit="1"
                                 width="100%" contentdepth="100%"/><?oxy_comment_end?>
                         </imageobject>
                     </mediaobject>
@@ -190,7 +190,7 @@ Doing family history, donor statements using subject of information is now the n
                     <title>Diabetes Mellitus Type 2 Absent ANF Example</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/dm_absent_anf.svg" format="SVG" scalefit="1"
+                            <imagedata fileref="../../../src/docbkx/images/dm_absent_anf.svg" format="SVG" scalefit="1"
                                 width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
@@ -209,7 +209,7 @@ Doing family history, donor statements using subject of information is now the n
                     <mediaobject>
                         <imageobject>
                             <?oxy_comment_start author="timowilliams" timestamp="20190625T161253-0500" comment="How do the measureSemantic for this example match up with the 3 dot blot example below?" flag="done"?>
-                            <imagedata fileref="images/dbh_anf.svg" format="SVG" scalefit="1"
+                            <imagedata fileref="../../../src/docbkx/images/dbh_anf.svg" format="SVG" scalefit="1"
                                 width="100%" contentdepth="100%"/><?oxy_comment_end?>
                         </imageobject>
                     </mediaobject>
@@ -309,7 +309,7 @@ Doing family history, donor statements using subject of information is now the n
                     <mediaobject>
                         <imageobject>
                             <?oxy_comment_start author="kec" timestamp="20190722T172330-0700" comment="For a few of these, maybe have the range actually indicate an interval of certainty. Maybe [68,70], just because we can :-)"?>
-                            <imagedata fileref="images/pulse_rate_anf.svg" format="SVG" scalefit="1"
+                            <imagedata fileref="../../../src/docbkx/images/pulse_rate_anf.svg" format="SVG" scalefit="1"
                                 width="100%" contentdepth="100%"/><?oxy_comment_end?>
                         </imageobject>
                     </mediaobject>
@@ -375,7 +375,7 @@ Doing family history, donor statements using subject of information is now the n
                     <mediaobject>
                         <imageobject>
                             <?oxy_comment_start author="kec" timestamp="20190722T172755-0700" comment="Maybe make result [120,122] to indicate a resolution/precision of 2 millimeter of mercury? "?>
-                            <imagedata fileref="images/bp_complex_anf.svg" format="SVG" scalefit="1"
+                            <imagedata fileref="../../../src/docbkx/images/bp_complex_anf.svg" format="SVG" scalefit="1"
                                 width="100%" contentdepth="100%"/><?oxy_comment_end?>
                         </imageobject>
                     </mediaobject>
@@ -392,7 +392,7 @@ Doing family history, donor statements using subject of information is now the n
                         Example</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/bp_complex2_anf.svg"
+                            <imagedata fileref="../../../src/docbkx/images/bp_complex2_anf.svg"
                                 scalefit="1" width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
@@ -411,7 +411,7 @@ Doing family history, donor statements using subject of information is now the n
                             <?oxy_comment_start author="timowilliams" timestamp="20190625T204051-0500" comment="Should I add a timing here?" parentID="eys_3pz_23b" mid="25"?>
                             <?oxy_comment_start author="Ioana" timestamp="20191107T221111-0500" comment="The result = 30 minutes for &quot;micturition finding&quot; needs to be replaced with result = [1,1] and timing = no more 30 minutes before the main statement.
 The table representation is correct." mid="24"?>
-                            <imagedata fileref="images/bp_complex3_anf.svg"
+                            <imagedata fileref="../../../src/docbkx/images/bp_complex3_anf.svg"
                                 scalefit="1" width="100%" contentdepth="100%"
                             /><?oxy_comment_end?><?oxy_comment_end mid="25"?><?oxy_comment_end mid="24"?>
                         </imageobject>
@@ -435,7 +435,7 @@ The table representation is correct." mid="24"?>
                     <title>Three Retinal Hemorrhages ANF Example</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/three_dbh_anf.svg" format="SVG" scalefit="1"
+                            <imagedata fileref="../../../src/docbkx/images/three_dbh_anf.svg" format="SVG" scalefit="1"
                                 width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
@@ -449,7 +449,7 @@ The table representation is correct." mid="24"?>
                     <title>Positive Screen for Fall Risk ANF Example</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/pos_scree_fall_anf.svg" format="SVG"
+                            <imagedata fileref="../../../src/docbkx/images/pos_scree_fall_anf.svg" format="SVG"
                                 scalefit="1" width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
@@ -512,7 +512,7 @@ The table representation is correct." mid="24"?>
                     <title>Negative Screen for PTSD ANF Example</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/ptsd_neg_anf.svg" format="SVG" scalefit="1"
+                            <imagedata fileref="../../../src/docbkx/images/ptsd_neg_anf.svg" format="SVG" scalefit="1"
                                 width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
@@ -524,7 +524,7 @@ The table representation is correct." mid="24"?>
                     <title>Negative Screen for Depression ANF Example</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/depress_neg_anf.svg" format="SVG"
+                            <imagedata fileref="../../../src/docbkx/images/depress_neg_anf.svg" format="SVG"
                                 scalefit="1" width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
@@ -563,7 +563,7 @@ The table representation is correct." mid="24"?>
                     <title>Administration of Medication ANF Example</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/meds_anf.svg" format="SVG" scalefit="1"
+                            <imagedata fileref="../../../src/docbkx/images/meds_anf.svg" format="SVG" scalefit="1"
                                 width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
@@ -595,7 +595,7 @@ The table representation is correct." mid="24"?>
                     <title>Provision of Educational Material ANF Example</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/educ_perf_anf.svg" format="SVG" scalefit="1"
+                            <imagedata fileref="../../../src/docbkx/images/educ_perf_anf.svg" format="SVG" scalefit="1"
                                 width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
@@ -645,7 +645,7 @@ The table representation is correct." mid="24"?>
                     <title>Family History ANF Example</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/fh_ca_anf.svg" format="SVG" scalefit="1"
+                            <imagedata fileref="../../../src/docbkx/images/fh_ca_anf.svg" format="SVG" scalefit="1"
                                 width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
@@ -677,7 +677,7 @@ The table representation is correct." mid="24"?>
                         Example</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/bp_nr_hr_anf.svg" format="SVG" scalefit="1"
+                            <imagedata fileref="../../../src/docbkx/images/bp_nr_hr_anf.svg" format="SVG" scalefit="1"
                                 width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
@@ -759,7 +759,7 @@ The distinction with a performance clinical statement concerning giving him educ
                     <title>Laboratory Request ANF Example</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/lab_request_anf.svg" format="SVG"
+                            <imagedata fileref="../../../src/docbkx/images/lab_request_anf.svg" format="SVG"
                                 scalefit="1" width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
@@ -786,7 +786,7 @@ The distinction with a performance clinical statement concerning giving him educ
                     <title>Imaging Request ANF Example</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/xray_request_anf.svg" format="SVG"
+                            <imagedata fileref="../../../src/docbkx/images/xray_request_anf.svg" format="SVG"
                                 scalefit="1" width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
@@ -801,7 +801,7 @@ The distinction with a performance clinical statement concerning giving him educ
                     <title>Referral Request ANF Example</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/referral_anf.svg" format="SVG" scalefit="1"
+                            <imagedata fileref="../../../src/docbkx/images/referral_anf.svg" format="SVG" scalefit="1"
                                 width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
@@ -872,7 +872,7 @@ The distinction with a performance clinical statement concerning giving him educ
                     <mediaobject>
                         <imageobject>
                             <?oxy_comment_start author="timowilliams" timestamp="20190618T164552-0500" comment="Verify Repetition" flag="done"?>
-                            <imagedata fileref="images/meds_request_anf.svg" format="SVG"
+                            <imagedata fileref="../../../src/docbkx/images/meds_request_anf.svg" format="SVG"
                                 scalefit="1" width="100%" contentdepth="100%"/><?oxy_comment_end?>
                         </imageobject>
                     </mediaobject>
@@ -893,7 +893,7 @@ The distinction with a performance clinical statement concerning giving him educ
                     <title>Counseling Request ANF Example</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/counseling_request_anf.svg" format="SVG"
+                            <imagedata fileref="../../../src/docbkx/images/counseling_request_anf.svg" format="SVG"
                                 scalefit="1" width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
