@@ -250,7 +250,7 @@
             <title>Tinkar Logical Model</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="../images/TinkarLogicalModel.svg" scale="35" align="center"/>
+                    <imagedata fileref="../images/TinkarLogicalModel.svg" scale="20" align="center"/>
                 </imageobject>
             </mediaobject>
         </figure>         
@@ -262,7 +262,7 @@
             <title>Tinkar Logical Model Example</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="../images/Tinkar%20Logical%20Model%20Example.svg" scale="35"
+                    <imagedata fileref="../images/Tinkar%20Logical%20Model%20Example.svg" scale="20"
                             align="center"/>
                 </imageobject>
             </mediaobject>

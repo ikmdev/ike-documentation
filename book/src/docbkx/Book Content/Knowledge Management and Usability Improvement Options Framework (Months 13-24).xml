@@ -490,7 +490,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="../images/Centralized%20Drive.svg"
-                                scale="80" align="center"/> 
+                                scale="60" align="center"/> 
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -547,7 +547,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="../images/Centralized%20Data%20Service.svg"
-                                scale="80" align="center"/> 
+                                scale="70" align="center"/> 
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -634,7 +634,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata fileref="../images/Data%20Synchronization.svg"
-                                    scale="90" align="center"/> 
+                                    scale="70" align="center"/> 
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -719,7 +719,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="../images/Load%20Balanced%20with%20Dynamic%20All.svg"
-                                scale="80" align="center"/> 
+                                scale="60" align="center"/> 
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -817,7 +817,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="../images/Containerization.svg"
-                            scale="80" align="center"/> 
+                            scale="60" align="center"/> 
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -899,7 +899,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="../images/Deployment%20on%20Kubernetes.svg"
-                                scale="80" align="center"/> 
+                                scale="55" align="center"/> 
                         </imageobject>
                     </mediaobject>
                 </figure>

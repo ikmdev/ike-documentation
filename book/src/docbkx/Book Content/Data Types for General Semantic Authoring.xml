@@ -9,7 +9,7 @@
             <title>High Level Status</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="../images/HighLevelStatusTable1.svg" scale="80"
+                    <imagedata fileref="../images/HighLevelStatusTable1.svg" scale="35"
                         align="center"/>
                 </imageobject>
             </mediaobject>

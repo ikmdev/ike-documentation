@@ -471,7 +471,7 @@
                 <title>MDMI Standard</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="../../../src/docbkx/images/mdmi_standard.svg" align="center" width="100%" scale="70"/>
+                        <imagedata fileref="../../../src/docbkx/images/mdmi_standard.svg" align="center" scale="40"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -500,7 +500,7 @@
                 <title>MDMI Transformation Process</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="../../../src/docbkx/images/mdmi_transformation_process.svg" align="center" width="100%" scale="70"/>
+                        <imagedata fileref="../../../src/docbkx/images/mdmi_transformation_process.svg" align="center" scale="40"/>
                     </imageobject>
                 </mediaobject>
                 <caption><para><emphasis>The MDMI Transformation Process</emphasis></para></caption>
