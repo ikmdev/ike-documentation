@@ -70,7 +70,7 @@
                                 <mediaobject>
                                     <imageobject>
                                         <imagedata fileref="../images/GSRS%20Record%20for%20Potassium.svg"
-                                            scale="50" align="center"/> 
+                                            scale="40" align="center"/> 
                                     </imageobject>
                                 </mediaobject>
                         </figure>
@@ -300,7 +300,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata fileref="../images/Screenshot%20of%20RxNorm%20XML%20File.svg"
-                                    scale="80" align="center"/> 
+                                    scale="40" align="center"/> 
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -373,7 +373,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata fileref="../images/Screenshot%20of%20Contents%20of%20Tinkar%20Starter%20Data%20Artifact.svg"
-                                    scale="80" align="center"/> 
+                                    scale="50" align="center"/> 
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -492,7 +492,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata fileref="../images/Wireframe%20of%20Komet%20Home%20Page%20with%20Notifications.svg"
-                                    scale="80" align="center"/> 
+                                    scale="60" align="center"/> 
                             </imageobject>
                         </mediaobject>
                     </figure>

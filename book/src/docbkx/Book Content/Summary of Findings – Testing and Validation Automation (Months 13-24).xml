@@ -854,7 +854,7 @@
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="../images/Screenshot of Sprint Regression Suite in Jira.svg"
-                                scale="30" align="center"/> 
+                                scale="20" align="center"/> 
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -1154,7 +1154,7 @@
                             <mediaobject>
                                 <imageobject>
                                     <imagedata fileref="../images/An%20example%20of%20a%20SME%20QA%20Checklist%20for%20a%20LOINC%20release.svg"
-                                        scale="80" align="center"/> 
+                                        scale="50" align="center"/> 
                                 </imageobject>
                             </mediaobject>
                         </figure>

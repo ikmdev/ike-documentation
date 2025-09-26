@@ -47,7 +47,7 @@
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="../images/Performance%20Monitoring%20Framework%20Diagram.svg"
-                        scale="100" align="center"/> 
+                        scale="70" align="center"/> 
                 </imageobject>
             </mediaobject>
         </figure>
@@ -357,7 +357,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata fileref="../images/Applied%20Layover%20in%20Action.svg"
-                                    scale="50" align="center"/> 
+                                    scale="30" align="center"/> 
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -376,7 +376,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata fileref="../images/An%20example%20of%20Java%20VisualVM%20Running.svg"
-                                    scale="50" align="center"/> 
+                                    scale="30" align="center"/> 
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -392,7 +392,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata fileref="../images/Example%20of%20Running%20IntelliJ%20Profiler.svg"
-                                    scale="50" align="center"/> 
+                                    scale="40" align="center"/> 
                             </imageobject>
                         </mediaobject>
                     </figure>
